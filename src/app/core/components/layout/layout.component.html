@@ -1,0 +1,12 @@
+<mat-sidenav-container style="height: 100vh;">
+  <mat-sidenav #sidenav
+               mode="over"
+               position="end"
+               style="width: 80%;">
+    <div id="sidenav-outlet"
+         cdkPortalOutlet></div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
