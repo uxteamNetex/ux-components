@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "ntx",
+      "prefix": "app",
       "schematics": {},
       "architect": {
         "build": {
