@@ -39,7 +39,6 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { PortalModule } from '@angular/cdk/portal';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
@@ -82,8 +81,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    PortalModule,
-    BrowserAnimationsModule
+    PortalModule
   ]
 })
 export class SharedModule { }
