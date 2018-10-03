@@ -39,6 +39,7 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { PortalModule } from '@angular/cdk/portal';
+import { NtxMatDummyModule } from '@netex/ux-components';
 
 @NgModule({
   imports: [
@@ -81,7 +82,8 @@ import { PortalModule } from '@angular/cdk/portal';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    PortalModule
+    PortalModule,
+    NtxMatDummyModule
   ]
 })
 export class SharedModule { }
