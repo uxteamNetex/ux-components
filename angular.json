@@ -100,9 +100,9 @@
         }
       }
     },
-    "ntx-lib": {
-      "root": "projects/ntx-lib",
-      "sourceRoot": "projects/ntx-lib/src",
+    "@netex/ux-components": {
+      "root": "projects/netex/ux-components",
+      "sourceRoot": "projects/netex/ux-components/src",
       "projectType": "library",
       "prefix": "ntx",
       "schematics": {
@@ -133,15 +133,15 @@
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ntx-lib/tsconfig.lib.json",
-            "project": "projects/ntx-lib/ng-package.json"
+            "tsConfig": "projects/netex/ux-components/tsconfig.lib.json",
+            "project": "projects/netex/ux-components/ng-package.json"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ntx-lib/tsconfig.lib.json"
+              "projects/netex/ux-components/tsconfig.lib.json"
             ],
             "exclude": [
               "**/node_modules/**"

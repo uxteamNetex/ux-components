@@ -67,8 +67,9 @@ Añadimos los enrutados base a `app-routing.module.ts` y el enrutado al HomeComp
 
 * Creamos la librería
 ```
-    ng generate library ntx-lib --prefix ntx
+    ng generate library @netex/ux-components --prefix ntx
 ```
+  * _Necesitamos una organización "@netex" para luego indicar en el fichero .npmrc de las aplicaciones, de donde obtener las librerías de la organización_
 * Limpiamos los ficheros de test
 * Se añade sección schematics similar a la del padre para cambiar estilo a sass y evitar creación de specs
 * Se borran el servicio, modulo y componente creados por defecto
@@ -77,7 +78,7 @@ Añadimos los enrutados base a `app-routing.module.ts` y el enrutado al HomeComp
 
 Los módulos nos permitirán organizar los componentes y que la aplicación a desarrollar indique que módulos quiere importar (similar a material)
 
-    ng g module --project ntx-lib NtxMatDummy
+    ng g module --project @netex/ux-components NtxMatDummy
 
 Se añade al fichero `public_api.ts` el exports a la ruta del módulo (`export * from './lib/ntx-mat-dummy/ntx-mat-dummy.module';`) para que pueda ser usado por la aplicación
 
@@ -85,7 +86,7 @@ Se añade al fichero `public_api.ts` el exports a la ruta del módulo (`export *
 
 * Se genera el componente
 ```
-    ng g component --project ntx-lib ntx-mat-dummy/Dummy
+    ng g component --project @netex/ux-components ntx-mat-dummy/Dummy
 ```
 _En este caso, el selector será `ntx-dummy`, se puede especificar otro en la creación, o cambiarlo después_
 * Se añade a la sección exports del módulo NtxMatDummy (crearla en caso necesario)

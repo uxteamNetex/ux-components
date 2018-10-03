@@ -18,11 +18,11 @@
       "dom"
     ],
     "paths": {
-      "ntx-lib": [
-        "dist/ntx-lib"
+      "@netex/ux-components": [
+        "dist/netex/ux-components"
       ],
-      "ntx-lib/*": [
-        "dist/ntx-lib/*"
+      "@netex/ux-components/*": [
+        "dist/netex/ux-components/*"
       ]
     }
   }
