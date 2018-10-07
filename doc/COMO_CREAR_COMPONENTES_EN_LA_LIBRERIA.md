@@ -14,7 +14,6 @@ Se añade al fichero `public_api.ts` el exports a la ruta del módulo (`export *
 ```
 _En este caso, el selector será `ntx-dummy`, se puede especificar otro en la creación, o cambiarlo después_
 * Se añade a la sección exports del módulo NtxMatDummy (crearla en caso necesario)
-* Se añade al fichero `public_api.ts` el exports a la ruta del componente (`export * from './lib/ntx-mat-dummy/dummy/dummy.component';`)
 
 # Desarrollo
 
