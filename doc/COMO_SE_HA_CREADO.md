@@ -74,3 +74,8 @@ Añadimos los enrutados base a `app-routing.module.ts` y el enrutado al HomeComp
 * Se añade sección schematics similar a la del padre para cambiar estilo a sass y evitar creación de specs
 * Se borran el servicio, modulo y componente creados por defecto
 
+(Para la creación de módulos y componentes ver el fichero COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
+
+## Inclusión de estilos globales
+
+La construcción de la librería no añade los estilos globales, así que para pasar los ficheros sass globales a css instalamos la dependencia `sass-pack` y creamos nuevos scripts de utilidad en el fichero `package.json`

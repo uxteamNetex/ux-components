@@ -8,9 +8,9 @@ _**Nota**: esto se hace directamente desde el Jenkins, no hay que hacerlo localm
 ```
     npm login --registry=http://192.168.134.9:8081/repository/npm-snapshots/
 ```
-* Construcción de la librería
+* Construcción de la librería (construye librería angular y crea css de estilos globales)
 ``` 
-    ng build @netex/ux-components
+    npm run build-ux-components
 ```
 * Nos colocamos en la carpeta de la distribución de la librería
 ```
@@ -35,6 +35,7 @@ A partir de este momento ya podemos hacer un install normal de la librería:
 ```
     npm install @netex/ux-components
 ```
+e incluimos el tema css "node_modules/@netex/ux-components/themes/default.theme.css" dentro del array styles en el fichero angular.json (también podemos importarlo en el fichero styles.sass)
 
 _**Nota**: el arquetipo ya tendrá incluida esta dependencia_
 

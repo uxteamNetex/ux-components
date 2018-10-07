@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-ux-components-lib": "ng build @netex/ux-components",
+    "build-ux-components-styles": "sass-pack -s ./projects/netex/ux-components/src/themes/*.theme.sass -o ./dist/netex/ux-components/themes",
+    "build-ux-components": "rm -r dist/netex/ux-components && npm run build-ux-components-lib && npm run build-ux-components-styles"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +28,7 @@
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
     "rxjs": "^6.3.3",
+    "sass-pack": "^2.2.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
