@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "sass",
+          "styleext": "scss",
           "spec": false
         },
         "@schematics/angular:class": {
@@ -46,8 +46,8 @@
               "src/assets"
             ],
             "styles": [
-              "projects/netex/ux-components/src/themes/default.theme.sass",
-              "src/styles.sass"
+              "projects/netex/ux-components/src/themes/default.theme.scss",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -108,7 +108,7 @@
       "prefix": "ntx",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "sass",
+          "styleext": "scss",
           "spec": false
         },
         "@schematics/angular:class": {

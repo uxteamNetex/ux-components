@@ -5,7 +5,7 @@ import { MatSidenav } from '@angular/material';
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.sass']
+  styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
 

@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-ux-components-lib": "ng build @netex/ux-components",
-    "build-ux-components-styles": "sass-pack -s ./projects/netex/ux-components/src/themes/*.theme.sass -o ./dist/netex/ux-components/themes",
+    "build-ux-components-styles": "sass-pack -s ./projects/netex/ux-components/src/themes/*.theme.scss -o ./dist/netex/ux-components/themes",
     "build-ux-components": "rm -r dist/netex/ux-components && npm run build-ux-components-lib && npm run build-ux-components-styles"
   },
   "private": true,

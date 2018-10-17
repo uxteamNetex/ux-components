@@ -10,7 +10,7 @@
 
 ## Nuevo proyecto
 
-    ng new ux-components --routing --style sass --skip-tests
+    ng new ux-components --routing --style scss --skip-tests
 
 ## Angular material
 
@@ -32,8 +32,6 @@ Creamos un CoreModule que importamos en AppModule, y un SharedModule que importa
     ng g module shared -m core/core.module
 
 En el SharedModule importamos los componentes de material que queramos
-
-Eliminamos de `angular.json` la inclusión del fichero css indigo-pink.css y lo añadimos como import al fichero styles.sass, para que esté mas visible y se cambie posteriormente por los estilos incluidos en la librería que generemos
 
 ## Borramos todo lo relacionado con tests
 
@@ -71,11 +69,15 @@ Añadimos los enrutados base a `app-routing.module.ts` y el enrutado al HomeComp
 ```
   * _Necesitamos una organización "@netex" para luego indicar en el fichero .npmrc de las aplicaciones, de donde obtener las librerías de la organización_
 * Limpiamos los ficheros de test
-* Se añade sección schematics similar a la del padre para cambiar estilo a sass y evitar creación de specs
+* Se añade sección schematics similar a la del padre para cambiar estilo a scss y evitar creación de specs
 * Se borran el servicio, modulo y componente creados por defecto
 
 (Para la creación de módulos y componentes ver el fichero COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 
 ## Inclusión de estilos globales
+
+Eliminamos de `angular.json` la inclusión del fichero css indigo-pink.css y delegamos en el styles.scss de la librería
+
+//REVISAR. ¿sirve este preprocesador?
 
 La construcción de la librería no añade los estilos globales, así que para pasar los ficheros sass globales a css instalamos la dependencia `sass-pack` y creamos nuevos scripts de utilidad en el fichero `package.json`

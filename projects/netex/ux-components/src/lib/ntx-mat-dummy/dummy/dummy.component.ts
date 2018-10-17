@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'ntx-dummy',
   templateUrl: './dummy.component.html',
-  styleUrls: ['./dummy.component.sass']
+  styleUrls: ['./dummy.component.scss']
 })
 export class DummyComponent implements OnInit {
 

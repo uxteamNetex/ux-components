@@ -35,7 +35,7 @@ A partir de este momento ya podemos hacer un install normal de la librería:
 ```
     npm install @netex/ux-components
 ```
-e incluimos el tema css "node_modules/@netex/ux-components/themes/default.theme.css" dentro del array styles en el fichero angular.json (también podemos importarlo en el fichero styles.sass)
+e incluimos el tema css "node_modules/@netex/ux-components/themes/default.theme.css" dentro del array styles en el fichero angular.json (también podemos importarlo en el fichero styles.scss)
 
 _**Nota**: el arquetipo ya tendrá incluida esta dependencia_
 
