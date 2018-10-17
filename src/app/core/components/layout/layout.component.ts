@@ -9,34 +9,38 @@ import { MatSidenav } from '@angular/material';
 })
 export class LayoutComponent implements OnInit {
 
-  @ViewChild('sidenav') sidenavRef: MatSidenav;
+  //@ViewChild('sidenav') sidenavRef: MatSidenav;
 
   constructor(
     private sidenavService: SidenavService
   ) { }
 
   ngOnInit() {
-    this.listenOnSidenavOpen();
-    this.listenOnSidenavClose();
-    this.listenOnMatSidenavCloseFinish();
+    
   }
 
-  listenOnSidenavOpen() {
-    this.sidenavService.open$.subscribe(() => this.sidenavRef.open());
-  }
-
-  listenOnSidenavClose() {
-    this.sidenavService.close$.subscribe(() => this.sidenavRef.close());
-  }
-
-  listenOnMatSidenavCloseFinish() {
-    this.sidenavRef.openedChange.subscribe(
-      (status: boolean) => {
-        if (!status) {
-          this.sidenavService.detachComponent();
-        }
-      }
-    );
-  }
+//  ngOnInit() {
+//    this.listenOnSidenavOpen();
+//    this.listenOnSidenavClose();
+//    this.listenOnMatSidenavCloseFinish();
+//  }
+//
+//  listenOnSidenavOpen() {
+//    this.sidenavService.open$.subscribe(() => this.sidenavRef.open());
+//  }
+//
+//  listenOnSidenavClose() {
+//    this.sidenavService.close$.subscribe(() => this.sidenavRef.close());
+//  }
+//
+//  listenOnMatSidenavCloseFinish() {
+//    this.sidenavRef.openedChange.subscribe(
+//      (status: boolean) => {
+//        if (!status) {
+//          this.sidenavService.detachComponent();
+//        }
+//      }
+//    );
+//  }
 
 }
