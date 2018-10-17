@@ -23,9 +23,9 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 // that you are using.
 @include angular-material-theme($candy-app-theme);
 
-//Reset ¿necesario?
-//html, body { height: 100%; }
-//body { margin: 0; font-family: 'Roboto', sans-serif; }
+//Reset
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
 
 ntx-dummy {
   font-weight: bold;
