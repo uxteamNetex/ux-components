@@ -20,7 +20,7 @@ import {
   declarations: [],
   exports: [
     PortalModule,
-	MatButtonModule,
+    MatButtonModule,
     NtxMatDummyModule,
     NtxSidenavModule,
     NtxToolbarModule,

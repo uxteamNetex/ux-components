@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { DynamicComponent } from './dynamic/dynamic.component';
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import { HomeComponent } from './home.component';
     SharedModule,
     HomeRoutingModule
   ],
-  declarations: [HomeComponent]
+  declarations: [HomeComponent, DynamicComponent],
+  entryComponents: [DynamicComponent]
 })
 export class HomeModule { }

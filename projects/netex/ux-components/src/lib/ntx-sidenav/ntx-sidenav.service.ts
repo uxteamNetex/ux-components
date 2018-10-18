@@ -8,7 +8,7 @@ export const SIDENAV_DATA = new InjectionToken<{}>('SIDENAV_DATA');
 @Injectable({
   providedIn: 'root'
 })
-export class SidenavService {
+export class NtxSidenavService {
 
   private sidenavPortalOutlet: PortalOutlet;
 
@@ -53,5 +53,4 @@ export class SidenavService {
   detachComponent(): void {
     this.sidenavPortalOutlet.detach();
   }
-
 }
