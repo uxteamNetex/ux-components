@@ -1,5 +1,5 @@
 import { Injectable, InjectionToken, Injector, ComponentFactoryResolver, ApplicationRef } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, Observable } from 'rxjs';
 import { PortalInjector, PortalOutlet, DomPortalHost, ComponentPortal } from '@angular/cdk/portal';
 import { ComponentRef } from '@angular/core/src/render3';
 
