@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "././projects/netex/ux-components/src/styles/app/utils";
+@import "././projects/netex/ux-components/src/styles/fonts/styles";
+@import "././projects/netex/ux-components/src/styles/fonts/fonts";
+
+body{
+  font-family: Lato;
+}

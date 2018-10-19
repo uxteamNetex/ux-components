@@ -1,3 +1,12 @@
-<mat-toolbar color="primary">
-  <ng-content></ng-content>
+<mat-toolbar color="primary" class="mat-toolbar-header">
+  <mat-toolbar-row>
+    <span>Netex Material UI Library</span>
+    <span class="mat-toolbar-header__spacer"></span>
+    <button class="mat-toolbar-header__btn" mat-icon-button>
+      <mat-icon class="icon-netex icon-gear-solid"></mat-icon>
+    </button>
+    <button class="mat-toolbar-header__btn" mat-icon-button>
+      <mat-icon class="icon-netex icon-dashboard"></mat-icon>
+    </button>
+  </mat-toolbar-row>
 </mat-toolbar>

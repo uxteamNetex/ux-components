@@ -1,0 +1,30 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "mat-toolbar-header";
+
+.#{$block} {
+  box-shadow: $shadow-navbar;
+  &.mat-toolbar-multiple-rows {
+    min-height: 56px;
+  }
+  .mat-toolbar-row{
+    height: 56px;
+    .#{$block}__spacer {
+      flex: 1 1 auto;
+    }
+    .#{$block}__btn {
+      height: 48px;
+      margin: 0 4px;
+      width: 48px;
+      &:hover{
+        background: rgba($color: $color-white, $alpha: 0.3);
+      }
+    }
+  }
+}
+
+
+
+
+
+
