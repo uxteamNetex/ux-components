@@ -1,0 +1,31 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "mat-toolbar-header";
+
+.#{$block} {
+  box-shadow: $shadow-navbar;
+  z-index: 9;
+  &.mat-toolbar-multiple-rows {
+    min-height: $toolbarHeight;
+    .mat-toolbar-row{
+      height: $toolbarHeight;
+      &.toolbar-tabs{
+        height: 48px;
+      }
+    }
+  }
+  &.mat-toolbar-single-row{
+    height: $toolbarHeight;
+  }
+  .#{$block}__spacer {
+    flex: 1 1 auto;
+  }
+  .#{$block}__btn {
+    height: 48px;
+    margin: 0 2px;
+    width: 48px;
+    &:hover{
+      background: $icon-button-toolbar-hover;
+    }
+  }
+}

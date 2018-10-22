@@ -11,8 +11,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$app-primary: mat-palette($ntx-light-blue);
-$app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$app-primary: mat-palette($ntx-blue);
+$app-accent:  mat-palette($ntx-black);
 $app-warn:    mat-palette($mat-red); // The warn palette is optional (defaults to red).
 $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn); // Create the theme object (a Sass map containing all of the palettes).
 
@@ -24,12 +24,14 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn); // Create the
 
 
 //**** TEMA DOS PARA CONTENT ****//
-$content-primary: mat-palette($ntx-light-blue);
+$content-primary: mat-palette($ntx-blue);
 $content-accent:  mat-palette($mat-amber, A200, A100, A400);
-$content-theme:   mat-light-theme($content-primary, $content-accent);
+$content-secondary:  mat-palette($mat-red);
+$content-theme:   mat-light-theme($content-primary, $content-accent, $content-secondary);
 
-$content-toolbar-primary: mat-palette($ntx-light-magenta);
-$content-toolbar-theme: mat-light-theme($content-toolbar-primary, $content-accent);
+$content-toolbar-primary: mat-palette($ntx-magenta);
+$content-toolbar-secondary:  mat-palette($mat-red);
+$content-toolbar-theme: mat-light-theme($content-toolbar-primary, $content-toolbar-secondary);
 
 .theme-content {
   @include angular-material-theme($content-theme);
@@ -37,11 +39,11 @@ $content-toolbar-theme: mat-light-theme($content-toolbar-primary, $content-accen
 }
 
 //**** TEMA TRES PARA TALENT ****//
-$talent-primary: mat-palette($ntx-light-blue);
+$talent-primary: mat-palette($ntx-blue);
 $talent-accent:  mat-palette($mat-amber, A200, A100, A400);
 $talent-theme:   mat-light-theme($talent-primary, $talent-accent);
 
-$talent-toolbar-primary: mat-palette($ntx-light-yellow);
+$talent-toolbar-primary: mat-palette($ntx-yellow);
 $talent-toolbar-theme: mat-light-theme($talent-toolbar-primary, $talent-accent);
 
 .theme-talent {
@@ -54,7 +56,3 @@ $talent-toolbar-theme: mat-light-theme($talent-toolbar-primary, $talent-accent);
 //Reset
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
-
-ntx-dummy {
-  font-weight: bold;
-}

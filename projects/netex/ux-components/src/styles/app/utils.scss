@@ -1,5 +1,6 @@
 @import "variables";
 @import "colors";
+@import "mixings";
 
 $block: "utils";
 
@@ -35,6 +36,9 @@ $block: "utils";
 	}
 	&--margin-top-24 {
 		margin-top: $separation-24;
+	}
+	&--margin-top-60 {
+		margin-top: $separation-60;
 	}
 
 	&--margin-right-0 {

@@ -6,3 +6,6 @@ export * from './lib/ntx-mat-dummy/ntx-mat-dummy.module';
 export * from './lib/ntx-sidenav/ntx-sidenav.module';
 export * from './lib/ntx-sidenav/ntx-sidenav.service';
 export * from './lib/ntx-toolbar/ntx-toolbar.module';
+export * from './lib/ntx-buttons/ntx-buttons.module';
+export * from './lib/ntx-menus/ntx-menus.module';
+export * from './lib/ntx-tabs/ntx-tabs.module';

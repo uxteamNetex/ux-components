@@ -4,24 +4,35 @@ $block: "mat-toolbar-header";
 
 .#{$block} {
   box-shadow: $shadow-navbar;
+  z-index: 9;
   &.mat-toolbar-multiple-rows {
-    min-height: 56px;
-  }
-  .mat-toolbar-row{
-    height: 56px;
-    .#{$block}__spacer {
-      flex: 1 1 auto;
+    min-height: $toolbarHeight;
+    .mat-toolbar-row{
+      height: $toolbarHeight;
+
     }
-    .#{$block}__btn {
-      height: 48px;
-      margin: 0 4px;
-      width: 48px;
-      &:hover{
-        background: rgba($color: $color-white, $alpha: 0.3);
-      }
+  }
+  &.mat-toolbar-single-row{
+    height: $toolbarHeight;
+  }
+  .#{$block}__spacer {
+    flex: 1 1 auto;
+  }
+  .#{$block}__btn {
+    height: 48px;
+    margin: 0 2px;
+    width: 48px;
+    &:hover{
+      background: $icon-button-hover;
+    }
+  }
+  .mat-icon-button{
+    &:hover{
+        background-color: $icon-button-toolbar-hover;
     }
   }
 }
+
 
 
 

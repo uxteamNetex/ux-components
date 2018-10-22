@@ -14,6 +14,18 @@ const routes: Routes = [
   {
     path: 'toolbar',
     loadChildren: './toolbar/toolbar.module#ToolbarModule'
+  },
+  {
+    path: 'buttons',
+    loadChildren: './buttons-page/buttons-page.module#ButtonsPageModule'
+  },
+  {
+    path: 'menus',
+    loadChildren: './menus-page/menus-page.module#MenusPageModule'
+  },
+  {
+    path: 'tabs',
+    loadChildren: './tabs-page/tabs-page.module#TabsPageModule'
   }
 ];
 

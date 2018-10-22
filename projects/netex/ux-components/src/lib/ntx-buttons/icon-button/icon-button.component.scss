@@ -1,0 +1,28 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.mat-icon-button{
+    height: 48px;
+    line-height: 48px;
+    margin: 0 4px;
+    width: 48px;
+    &.mat-primary{
+        &[disabled]{
+            color: $color-primary;
+        }
+    }
+    &.mat-accent{
+        &[disabled]{
+            color: $color-accent;
+        }
+    }
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.4;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}

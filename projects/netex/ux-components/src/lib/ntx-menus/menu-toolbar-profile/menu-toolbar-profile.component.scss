@@ -1,0 +1,27 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+//Más opciones en el styles.scss
+
+.mat-icon-button{
+    height: 48px;
+    line-height: 48px;
+    margin: 0 2px;
+    width: 48px;
+    &:hover{
+        background-color: $icon-button-hover;
+    }
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.4;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+
+.menu-options-divider{
+    height: 1px;
+    background-color: $color-grey-400;
+    width: 100%;
+    margin: 8px 0;
+}

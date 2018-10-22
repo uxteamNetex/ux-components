@@ -11,6 +11,9 @@ import {
   NtxMatDummyModule,
   NtxSidenavModule,
   NtxToolbarModule,
+  NtxButtonsModule,
+  NtxMenusModule,
+  NtxTabsModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -24,6 +27,9 @@ import {
     NtxMatDummyModule,
     NtxSidenavModule,
     NtxToolbarModule,
+    NtxButtonsModule,
+    NtxMenusModule,
+    NtxTabsModule
   ]
 })
 export class SharedModule { }

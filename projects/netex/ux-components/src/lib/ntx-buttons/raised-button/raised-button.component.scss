@@ -1,0 +1,29 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.mat-raised-button{
+    border-radius: 4px;
+    box-shadow: $shadow;
+    margin: 0 4px;
+    &.mat-primary{
+        &:hover{
+            background-color: $color-primary-hover;
+        }
+        &[disabled]{
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+    &.mat-accent{
+        &:hover{
+            background-color: $color-accent-hover;
+        }
+        &[disabled]{
+            background-color: $color-accent;
+            color: $color-white;
+        }
+    }
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.4;
+    }
+}
