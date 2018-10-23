@@ -1,38 +1,50 @@
-<button mat-button [matMenuTriggerFor]="menuOptions">
-  <img mat-card-image src="projects/netex/ux-components/src/images/netex.png" alt="Netex">
+<button mat-icon-button class="menu-options-button profile-menu" [matMenuTriggerFor]="menuOptions">
+  <div class="profile-menu-image">
+      <img mat-card-image class="utils--vertical-align" src="projects/netex/ux-components/src/images/perfil.jpg" alt="User image">
+  </div>
 </button>
 
-<mat-menu #menuOptions="matMenu" class="mat-menu-options" [overlapTrigger]="false">
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 1</span>
+<mat-menu #menuOptions="matMenu" [overlapTrigger]="false" class="mat-menu-options mat-menu-toolbar-profile">
+
+  <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
+
+  <ntx-raised-button [color]="'primary'"></ntx-raised-button>
+
+  <mat-divider></mat-divider>
+
+  <button mat-menu-item class="mat-menu-options__menu-item">
+    <mat-icon class="icon-netex icon-bell"></mat-icon>
+    <span class="mat-menu-options__text-item">Notificaciones</span>
+    <span matBadgeOverlap="false"
+          [matBadge]="29"
+          [matBadgeHidden]="false"
+          matBadgeSize="medium"
+          class="mat-menu-options__badge-item"></span>
   </button>
-  <button mat-menu-item disabled>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 2 Disabled</span>
+  <button mat-menu-item class="mat-menu-options__menu-item">
+    <mat-icon class="icon-netex icon-star"></mat-icon>
+    <span class="mat-menu-options__text-item">Anuncios</span>
   </button>
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 3 con nombre muy largo para ver como se comporta</span>
+
+  <mat-divider></mat-divider>
+
+  <button mat-menu-item class="mat-menu-options__menu-item">
+    <mat-icon class="icon-netex icon-cloud"></mat-icon>
+    <span class="mat-menu-options__text-item">Novedades</span>
   </button>
-  <div class="menu-options-divider"></div>
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 4</span>
+  <button mat-menu-item class="mat-menu-options__menu-item">
+    <mat-icon class="icon-netex icon-file"></mat-icon>
+    <span class="mat-menu-options__text-item">Acceso a manuales</span>
   </button>
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 5</span>
+  <button mat-menu-item class="mat-menu-options__menu-item">
+    <mat-icon class="icon-netex icon-info-circle"></mat-icon>
+    <span class="mat-menu-options__text-item">Centro de ayuda</span>
   </button>
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 6</span>
-  </button>
-  <div class="menu-options-divider"></div>
-  <button mat-raised-button color="accent">
-    Botón de acción uno
-  </button>
-  <button mat-raised-button color="accent">
-    Botón de acción dos
+
+  <mat-divider></mat-divider>
+
+  <button mat-menu-item class="mat-menu-options__menu-item">
+    <mat-icon class="icon-netex icon-logout"></mat-icon>
+    <span class="mat-menu-options__text-item">Salir</span>
   </button>
 </mat-menu>

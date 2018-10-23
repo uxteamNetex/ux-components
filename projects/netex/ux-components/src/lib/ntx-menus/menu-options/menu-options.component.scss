@@ -1,27 +1,54 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-//Más opciones en el styles.scss
-
+//Botón
 .mat-icon-button{
+  &.menu-options-button{
     height: 48px;
     line-height: 48px;
     margin: 0 2px;
     width: 48px;
     &:hover{
-        background-color: $icon-button-hover;
+      background-color: $icon-button-hover;
     }
     &[disabled]{
-        cursor: not-allowed;
-        opacity: 0.4;
-        &:hover{
-            background-color: transparent;
-        }
+      cursor: not-allowed;
+      opacity: 0.4;
+      &:hover{
+          background-color: transparent;
+      }
     }
+  }
 }
 
-.menu-options-divider{
-    height: 1px;
-    background-color: $color-grey-400;
-    width: 100%;
-    margin: 8px 0;
+//Desplegable
+.mat-menu-panel{
+  &.mat-menu-options{
+    border-radius: 4px;
+    box-shadow: $shadow;
+    max-width: 320px;
+    min-width: 230px;
+    text-align: center;
+    .mat-menu-item{
+      padding: 0 24px;
+      &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.3;
+      }
+    }
+    .mat-raised-button{
+      &:first{
+        margin: 0;
+      }
+      border-radius: 4px;
+      box-shadow: none;
+      margin: 4px 0;
+      text-transform: uppercase;
+      width: calc(100% - 32px);
+    }
+    .mat-divider{
+      &.mat-divider-horizontal{
+        margin: 8px 0;
+      }
+    }
+  }
 }

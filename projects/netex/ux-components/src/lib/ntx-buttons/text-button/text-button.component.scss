@@ -2,6 +2,7 @@
 
 .mat-button{
     margin: 0 4px;
+    text-transform: uppercase;
     &.mat-primary{
         &[disabled]{
             color: $color-primary;

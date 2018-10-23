@@ -6,11 +6,17 @@ import { NtxMenusRoutingModule } from './ntx-menus-routing.module';
 import { MenuOptionsComponent } from './menu-options/menu-options.component';
 import { MenuToolbarProfileComponent } from './menu-toolbar-profile/menu-toolbar-profile.component';
 
+import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
+import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
+
+
 @NgModule({
   imports: [
     CommonModule,
     NtxSharedModule,
-    NtxMenusRoutingModule
+    NtxMenusRoutingModule,
+    NtxListsModule,
+    NtxButtonsModule
   ],
   declarations: [
     MenuOptionsComponent,

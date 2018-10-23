@@ -2,26 +2,76 @@
 
 //Más opciones en el styles.scss
 
+//Botón
 .mat-icon-button{
-    height: 48px;
-    line-height: 48px;
-    margin: 0 2px;
-    width: 48px;
-    &:hover{
-        background-color: $icon-button-hover;
-    }
-    &[disabled]{
-        cursor: not-allowed;
-        opacity: 0.4;
-        &:hover{
-            background-color: transparent;
+  &.menu-options-button{
+    &.profile-menu{
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      margin: 0 2px;
+      width: 48px;
+      .profile-menu-image{
+        border-radius: 50%;
+        height: 32px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        width: 32px;
+        img{
+          height: 100%;
         }
+      }
     }
+  }
 }
 
-.menu-options-divider{
-    height: 1px;
-    background-color: $color-grey-400;
-    width: 100%;
-    margin: 8px 0;
+$block: "mat-menu-options";
+//Desplegable
+.mat-menu-panel{
+  &.mat-menu-options{
+    &.mat-menu-toolbar-profile{
+      border-radius: 4px;
+      box-shadow: $shadow;
+      max-width: 320px;
+      min-width: 230px;
+      .#{$block}__menu-item{
+        padding: 0 24px;
+        &[disabled]{
+          cursor: not-allowed;
+          opacity: 0.3;
+        }
+        .#{$block}__text-item{
+          color: $color-grey-700;
+          font-size: $font-size-icon;
+        }
+        .#{$block}__badge-item{
+          position: absolute;
+          right: 46px;
+          top: 50%;
+        }
+      }
+      .mat-list{
+        &.list-two-lines{
+          padding: 8px 0 0;
+          text-align: left;
+          .mat-2-line{
+            height: 40px;
+            text-align: left;
+          }
+        }
+      }
+      .mat-divider{
+        &.mat-divider-horizontal{
+          margin: 8px 0;
+        }
+      }
+      .mat-raised-button{
+        &.mat-primary{
+          margin: 16px 0 12px 70px;
+          width: auto;
+        }
+      }
+    }
+  }
 }

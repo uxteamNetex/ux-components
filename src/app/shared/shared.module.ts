@@ -13,7 +13,8 @@ import {
   NtxToolbarModule,
   NtxButtonsModule,
   NtxMenusModule,
-  NtxTabsModule
+  NtxTabsModule,
+  NtxListsModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -29,7 +30,8 @@ import {
     NtxToolbarModule,
     NtxButtonsModule,
     NtxMenusModule,
-    NtxTabsModule
+    NtxTabsModule,
+    NtxListsModule
   ]
 })
 export class SharedModule { }

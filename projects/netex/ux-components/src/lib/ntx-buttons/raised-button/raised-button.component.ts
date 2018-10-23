@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'ntx-raised-button',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RaisedButtonComponent implements OnInit {
 
+  @Input() color: string;
+  @Input() disabled: string;
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

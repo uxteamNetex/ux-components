@@ -1,22 +1,37 @@
-<div class="mi-contenedor">
+<div class="page-container">
 
     <a mat-button
     color="accent"
     routerLink="/home">Volver al home</a>
 
     <h3 class="utils--margin-top-24">Botones de texto</h3>
-    <ntx-text-button></ntx-text-button>
+    <ntx-text-button [color]="'primary'"></ntx-text-button>
+    <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
+    <ntx-text-button [color]="'accent'"></ntx-text-button>
+    <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
 
     <h3 class="utils--margin-top-60">Botones con fondo</h3>
-    <ntx-raised-button></ntx-raised-button>
+    <ntx-raised-button [color]="'primary'"></ntx-raised-button>
+    <ntx-raised-button [color]="'primary'" [disabled]="'true'"></ntx-raised-button>
+    <ntx-raised-button [color]="'accent'"></ntx-raised-button>
+    <ntx-raised-button [color]="'accent'" [disabled]="'true'"></ntx-raised-button>
 
     <h3 class="utils--margin-top-60">Botones de icono</h3>
-    <ntx-icon-button></ntx-icon-button>
+    <ntx-icon-button [color]="'primary'"></ntx-icon-button>
+    <ntx-icon-button [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
+    <ntx-icon-button [color]="'accent'"></ntx-icon-button>
+    <ntx-icon-button [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
 
     <h3 class="utils--margin-top-60">Botones redondos</h3>
-    <ntx-fab-button></ntx-fab-button>
+    <ntx-fab-button [color]="'primary'"></ntx-fab-button>
+    <ntx-fab-button [color]="'primary'" [disabled]="'true'"></ntx-fab-button>
+    <ntx-fab-button [color]="'accent'"></ntx-fab-button>
+    <ntx-fab-button [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
 
     <h3 class="utils--margin-top-60">Botones redondos mini</h3>
-    <ntx-mini-fab-button></ntx-mini-fab-button>
+    <ntx-mini-fab-button [color]="'primary'"></ntx-mini-fab-button>
+    <ntx-mini-fab-button [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
+    <ntx-mini-fab-button [color]="'accent'"></ntx-mini-fab-button>
+    <ntx-mini-fab-button [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
 
   </div>

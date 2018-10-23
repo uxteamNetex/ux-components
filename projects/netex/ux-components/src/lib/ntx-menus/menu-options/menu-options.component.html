@@ -1,4 +1,4 @@
-<button mat-icon-button [matMenuTriggerFor]="menuOptions">
+<button mat-icon-button class="menu-options-button" color="accent" [matMenuTriggerFor]="menuOptions">
   <mat-icon class="icon-netex icon-more-options"></mat-icon>
 </button>
 
@@ -15,7 +15,9 @@
     <mat-icon class="icon-netex icon-heart"></mat-icon>
     <span>Option 3 con nombre muy largo para ver como se comporta</span>
   </button>
-  <div class="menu-options-divider"></div>
+
+  <mat-divider></mat-divider>
+
   <button mat-menu-item>
     <mat-icon class="icon-netex icon-heart"></mat-icon>
     <span>Option 4</span>
@@ -28,11 +30,10 @@
     <mat-icon class="icon-netex icon-heart"></mat-icon>
     <span>Option 6</span>
   </button>
-  <div class="menu-options-divider"></div>
-  <button mat-raised-button color="accent">
-    Botón de acción uno
-  </button>
-  <button mat-raised-button color="accent">
-    Botón de acción dos
-  </button>
+
+  <mat-divider></mat-divider>
+
+  <ntx-raised-button [color]="'accent'"></ntx-raised-button>
+  <ntx-raised-button [color]="'accent'"></ntx-raised-button>
+
 </mat-menu>

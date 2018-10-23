@@ -25,13 +25,11 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn); // Create the
 
 //**** TEMA DOS PARA CONTENT ****//
 $content-primary: mat-palette($ntx-blue);
-$content-accent:  mat-palette($mat-amber, A200, A100, A400);
-$content-secondary:  mat-palette($mat-red);
-$content-theme:   mat-light-theme($content-primary, $content-accent, $content-secondary);
+$content-accent:  mat-palette($ntx-black);
+$content-theme:   mat-light-theme($content-primary, $content-accent);
 
 $content-toolbar-primary: mat-palette($ntx-magenta);
-$content-toolbar-secondary:  mat-palette($mat-red);
-$content-toolbar-theme: mat-light-theme($content-toolbar-primary, $content-toolbar-secondary);
+$content-toolbar-theme: mat-light-theme($content-toolbar-primary, $content-accent);
 
 .theme-content {
   @include angular-material-theme($content-theme);
@@ -40,7 +38,7 @@ $content-toolbar-theme: mat-light-theme($content-toolbar-primary, $content-toolb
 
 //**** TEMA TRES PARA TALENT ****//
 $talent-primary: mat-palette($ntx-blue);
-$talent-accent:  mat-palette($mat-amber, A200, A100, A400);
+$talent-accent:  mat-palette($ntx-black);
 $talent-theme:   mat-light-theme($talent-primary, $talent-accent);
 
 $talent-toolbar-primary: mat-palette($ntx-yellow);

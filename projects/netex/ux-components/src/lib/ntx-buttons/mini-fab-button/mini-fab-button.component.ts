@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'ntx-mini-fab-button',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mini-fab-button.component.scss']
 })
 export class MiniFabButtonComponent implements OnInit {
+
+  @Input() color: string;
+  @Input() disabled: string;
 
   constructor() { }
 

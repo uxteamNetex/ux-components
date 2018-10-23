@@ -1,0 +1,33 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list-multiline-lines";
+
+.#{$block} {
+  .#{$block}__item{
+    margin-bottom: 60px;
+    .mat-list-item-content {
+      display: flex;
+      align-items: start;
+      .#{$block}__item--icon{
+        color: $color-grey-600;
+        font-size: 36px;
+        height: 36px;
+        padding: 0;
+        width: 36px;
+      }
+      .#{$block}__item--title{
+        color: $color-grey-800;
+        font-family: LatoBold;
+        font-size: 18px;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+      .#{$block}__item--subtitle-link{
+        color: $color-primary;
+        font-size: 16px;
+        margin-bottom: 8px;
+        text-decoration: none;
+      }
+    }
+  }
+}
