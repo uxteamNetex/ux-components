@@ -1,16 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'ntx-tabs',
   templateUrl: './tabs.component.html',
-  styleUrls: ['./tabs.component.scss']
+  styleUrls: ['./tabs.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TabsComponent implements OnInit {
 
   constructor() { }
 
-  links = ['First', 'Second', 'Third'];
-  activeLink = this.links[0];
+  links = ['First', 'Second', 'Third', 'Fourth'];
+  selectedIndex : number = 0;
 
   ngOnInit() {
   }
