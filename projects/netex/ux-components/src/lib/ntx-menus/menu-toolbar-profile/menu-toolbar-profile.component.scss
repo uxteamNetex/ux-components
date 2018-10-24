@@ -11,6 +11,9 @@
       line-height: 48px;
       margin: 0 2px;
       width: 48px;
+      &:hover{
+        background-color: $icon-button-toolbar-hover;
+      }
       .profile-menu-image{
         border-radius: 50%;
         height: 32px;
@@ -35,6 +38,7 @@ $block: "mat-menu-options";
       box-shadow: $shadow;
       max-width: 320px;
       min-width: 230px;
+      text-align: left;
       .#{$block}__menu-item{
         padding: 0 24px;
         &[disabled]{
@@ -68,7 +72,7 @@ $block: "mat-menu-options";
       }
       .mat-raised-button{
         &.mat-primary{
-          margin: 16px 0 12px 70px;
+          margin: 16px 0 12px 72px;
           width: auto;
         }
       }
