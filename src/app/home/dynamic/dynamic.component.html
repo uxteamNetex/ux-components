@@ -1,6 +1,20 @@
-<button mat-button
-        color="primary"
-        (click)="onCloseSidenav()">
-  close
-</button>
-<p>dynamic works!</p>
+<div class="dynamic-component__container">
+    <mat-toolbar class="dynamic-component__toolbar">
+      <button 
+        type="button"
+        mat-icon-button
+        style="height: 0;position: absolute;">
+      </button>
+      <button type="button"
+              class="dynamic-component__toolbar--close"
+              i18n-aria-label
+              mat-icon-button
+              (click)="onCloseSidenav()">
+        <mat-icon class="icon icon-netex icon-cross"></mat-icon>
+      </button>
+      <span class="dynamic-component__header-text"
+            i18n>SIDENAV TITLE</span>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
+    <div class="dynamic-component__panel"></div>
+  </div>

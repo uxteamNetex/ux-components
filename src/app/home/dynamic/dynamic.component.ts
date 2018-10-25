@@ -6,7 +6,7 @@ import { Subject, Subscription } from 'rxjs';
 @Component({
   selector: 'app-dynamic',
   templateUrl: './dynamic.component.html',
-  styleUrls: ['./dynamic.component.css']
+  styleUrls: ['./dynamic.component.scss']
 })
 export class DynamicComponent implements OnInit, OnDestroy {
 

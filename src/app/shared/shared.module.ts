@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PortalModule } from '@angular/cdk/portal';
 
 import {
-  MatButtonModule
+  MatButtonModule, MatToolbarModule, MatDividerModule, MatIconModule
 } from '@angular/material';
 
 import {
@@ -25,6 +25,9 @@ import {
   exports: [
     PortalModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatDividerModule,
+    MatIconModule,
     NtxMatDummyModule,
     NtxSidenavModule,
     NtxToolbarModule,
