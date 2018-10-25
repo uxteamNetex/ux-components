@@ -22,7 +22,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit() { }
 
   onButtonClick() {
-    console.log("click");
     const data = this.sidenavService.createData({ title: 'Hello', info: 'World' });
     const portal = new ComponentPortal(DynamicComponent, undefined, data);
 
@@ -36,7 +35,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    console.log("destroy");
     //this.emitterSubscription.unsubscribe();
   }
 

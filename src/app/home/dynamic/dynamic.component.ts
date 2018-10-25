@@ -27,7 +27,6 @@ export class DynamicComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    console.log('destroy');
   }
 
 }

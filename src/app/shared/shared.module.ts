@@ -8,13 +8,13 @@ import {
 } from '@angular/material';
 
 import {
-  NtxMatDummyModule,
   NtxSidenavModule,
   NtxToolbarModule,
   NtxButtonsModule,
   NtxMenusModule,
   NtxTabsModule,
-  NtxListsModule
+  NtxListsModule,
+  NtxHeadersModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -28,13 +28,13 @@ import {
     MatToolbarModule,
     MatDividerModule,
     MatIconModule,
-    NtxMatDummyModule,
     NtxSidenavModule,
     NtxToolbarModule,
     NtxButtonsModule,
     NtxMenusModule,
     NtxTabsModule,
-    NtxListsModule
+    NtxListsModule,
+    NtxHeadersModule
   ]
 })
 export class SharedModule { }
