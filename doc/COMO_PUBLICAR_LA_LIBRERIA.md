@@ -6,7 +6,9 @@ _**Nota**: esto se hace directamente desde el Jenkins, no hay que hacerlo localm
 
 * Login en el registro que queremos publicar
 ```
-    npm login --registry=http://192.168.134.9:8081/repository/npm-snapshots/
+    npm login --registry=https://nexus.netexlearning.com/repository/npm-netex-snapshots/ --scope=@netex
+    ó
+    npm login --registry=https://nexus.netexlearning.com/repository/npm-netex-releases/ --scope=@netex
 ```
 * Construcción de la librería (construye librería angular y crea css de estilos globales)
 ``` 
@@ -18,9 +20,9 @@ _**Nota**: esto se hace directamente desde el Jenkins, no hay que hacerlo localm
 ```
 * Publicamos la librería indicando el registro
 ```
-    npm publish --registry=http://192.168.134.9:8081/repository/npm-snapshots/
+    npm publish --registry=https://nexus.netexlearning.com/repository/npm-netex-snapshots/
     ó
-    npm publish --registry=http://192.168.134.9:8081/repository/npm-releases/
+    npm publish --registry=https://nexus.netexlearning.com/repository/npm-netex-releases/
 ```
 
 # Uso de la librería
@@ -28,12 +30,17 @@ _**Nota**: esto se hace directamente desde el Jenkins, no hay que hacerlo localm
 Debemos añadir en el fichero .npmrc (ya sea en el proyecto o en el global) donde está el registro de las librerías "netex", para ellos añadimos:
 
 ```
-    @netex:registry=http://192.168.134.9:8081/repository/npm-group/
+    @netex:registry=https://nexus.netexlearning.com/repository/npm-internal/
+```
+
+Debemos logarnos en nexus para poder descargar la librería, con nuestro usuario de netex:
+```
+    npm login --registry=https://nexus.netexlearning.com/repository/npm-internal/ --scope=@netex
 ```
 
 A partir de este momento ya podemos hacer un install normal de la librería:
 ```
-    npm install @netex/ux-components
+    npm install @netex/ux-components@0.0.1 --save
 ```
 e incluimos el tema css "node_modules/@netex/ux-components/themes/default.theme.css" dentro del array styles en el fichero angular.json (también podemos importarlo en el fichero styles.scss)
 

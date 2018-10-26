@@ -3,7 +3,7 @@
 * node versión LTS y npm. Descargándo el zip de la página web y estableciéndolo en el PATH del usuario es suficiente (no se necesitan permisos de root)
 * angular-cli:
 ```
-    npm i -g @angular/cli
+    npm i -g @angular/cli@v6-lts
 ```
 
 # Preparación del proyecto
@@ -77,7 +77,5 @@ Añadimos los enrutados base a `app-routing.module.ts` y el enrutado al HomeComp
 ## Inclusión de estilos globales
 
 Eliminamos de `angular.json` la inclusión del fichero css indigo-pink.css y delegamos en el styles.scss de la librería
-
-//REVISAR. ¿sirve este preprocesador?
 
 La construcción de la librería no añade los estilos globales, así que para pasar los ficheros sass globales a css instalamos la dependencia `sass-pack` y creamos nuevos scripts de utilidad en el fichero `package.json`
