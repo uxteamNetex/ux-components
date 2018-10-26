@@ -1,44 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import "projects/netex/ux-components/src/styles/app/utils";
-@import "projects/netex/ux-components/src/styles/fonts/styles";
-@import "projects/netex/ux-components/src/styles/fonts/fonts";
 
-body{
-  font-family: Lato;
-}
+// Importamos los estilos de la librería
+@import "projects/netex/ux-components/src/themes/default.theme.scss";
+@import "projects/netex/ux-components/src/styles/styles.scss";
 
-.section-title{
-  color: $color-grey-700;
-  font-family: LatoMedium;
-  font-size: 18px;
-  font-weight: normal;
-  text-transform: uppercase;
-  .section-subtitle{
-    color: $color-grey-600;
-    font-family: LatoLight;
-    font-size: 16px;
-    text-transform: lowercase;
-  }
-}
-
-.page-container{
-  padding: 60px 0;
-  margin: 0 auto;
-  max-width: 768px;
-  min-height: 100%;
-}
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .page-container{
-    max-width: 768px;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1480px) {
-  .page-container{
-    max-width: 900px;
-  }
-}
-@media (min-width: 1480px) {
-  .page-container{
-    max-width: 1240px;
-  }
-}
+// WARNING: A partir de aquí, lo que se incluya directamente no irá en la librería

@@ -11,13 +11,10 @@
     "build-ux-components-lib": "ng build @netex/ux-components",
     "build-ux-components-themes": "sass-pack -s ./projects/netex/ux-components/src/themes/*.theme.scss -o ./dist/netex/ux-components/themes",
     "build-ux-components-images": "cp -R ./projects/netex/ux-components/src/images ./dist/netex/ux-components/",
-    "build-ux-components-stl1": "cp -R ./projects/netex/ux-components/src/styles ./dist/netex/ux-components/",
-    "build-ux-components-stl2": "sass-pack -s ./projects/netex/ux-components/src/styles/app/utils.scss -o ./dist/netex/ux-components/styles/app",
-    "build-ux-components-stl3": "sass-pack -s ./projects/netex/ux-components/src/styles/fonts/styles.scss -o ./dist/netex/ux-components/styles/fonts",
-    "build-ux-components-stl4": "sass-pack -s ./projects/netex/ux-components/src/styles/fonts/fonts.scss -o ./dist/netex/ux-components/styles/fonts",
-    "build-ux-components-stl5": "rm ./dist/netex/ux-components/styles/app/*.scss ./dist/netex/ux-components/styles/fonts/*.scss",
-    "build-ux-components-styles": "npm run build-ux-components-stl1 && npm run build-ux-components-stl2 && npm run build-ux-components-stl3 && npm run build-ux-components-stl4 && npm run build-ux-components-stl5",
-    "build-ux-components": "rm -r dist/netex/ux-components && npm run build-ux-components-lib && npm run build-ux-components-themes && npm run build-ux-components-images && npm run build-ux-components-styles"
+    "build-ux-components-fonts": "mkdir -p ./dist/netex/ux-components/styles/fonts && cp -R ./projects/netex/ux-components/src/styles/fonts/Lato ./dist/netex/ux-components/styles/fonts",
+    "build-ux-components-icons": "mkdir -p ./dist/netex/ux-components/styles/fonts && cp -R ./projects/netex/ux-components/src/styles/fonts/icons ./dist/netex/ux-components/styles/fonts",
+    "build-ux-components-styles": "sass-pack -s ./projects/netex/ux-components/src/styles/styles.scss -o ./dist/netex/ux-components/styles/",
+    "build-ux-components": "rm -rf dist/netex/ux-components && npm run build-ux-components-lib && npm run build-ux-components-themes && npm run build-ux-components-images && npm run build-ux-components-styles"
   },
   "private": true,
   "dependencies": {

@@ -46,7 +46,6 @@
               "src/assets"
             ],
             "styles": [
-              "projects/netex/ux-components/src/themes/default.theme.scss",
               "src/styles.scss"
             ],
             "scripts": []
