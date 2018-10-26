@@ -10,11 +10,10 @@
     "e2e": "ng e2e",
     "build-ux-components-lib": "ng build @netex/ux-components",
     "build-ux-components-themes": "sass-pack -s ./projects/netex/ux-components/src/themes/*.theme.scss -o ./dist/netex/ux-components/themes",
-    "build-ux-components-images": "cp -R ./projects/netex/ux-components/src/images ./dist/netex/ux-components/",
-    "build-ux-components-fonts": "mkdir -p ./dist/netex/ux-components/styles/fonts && cp -R ./projects/netex/ux-components/src/styles/fonts/Lato ./dist/netex/ux-components/styles/fonts",
-    "build-ux-components-icons": "mkdir -p ./dist/netex/ux-components/styles/fonts && cp -R ./projects/netex/ux-components/src/styles/fonts/icons ./dist/netex/ux-components/styles/fonts",
+    "build-ux-components-images": "mkdir -p ./dist/netex/ux-components/assets && cp -R ./src/assets/images ./dist/netex/ux-components/assets",
+    "build-ux-components-fonts-icons": "mkdir -p ./dist/netex/ux-components/assets && cp -R ./src/assets/fonts ./dist/netex/ux-components/assets",
     "build-ux-components-styles": "sass-pack -s ./projects/netex/ux-components/src/styles/styles.scss -o ./dist/netex/ux-components/styles/",
-    "build-ux-components": "rm -rf dist/netex/ux-components && npm run build-ux-components-lib && npm run build-ux-components-themes && npm run build-ux-components-images && npm run build-ux-components-styles"
+    "build-ux-components": "rm -rf dist/netex/ux-components && npm run build-ux-components-lib && npm run build-ux-components-themes && npm run build-ux-components-images && npm run build-ux-components-styles && npm run build-ux-components-fonts-icons"
   },
   "private": true,
   "dependencies": {
