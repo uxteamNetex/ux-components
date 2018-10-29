@@ -24,6 +24,11 @@ $block: "utils";
     top: 50%;
   }
 
+  //Colores
+  &--grey-600 {
+		color: $color-grey-600;
+  }
+
   //Márgenes
   &--margin-0 {
 		margin: $separation-0 !important;

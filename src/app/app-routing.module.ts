@@ -30,6 +30,14 @@ const routes: Routes = [
   {
     path: 'lists',
     loadChildren: './lists-page/lists-page.module#ListsPageModule'
+  },
+  {
+    path: 'cards',
+    loadChildren: './cards-page/cards-page.module#CardsPageModule'
+  },
+  {
+    path: 'icons',
+    loadChildren: './icons-page/icons-page.module#IconsPageModule'
   }
 ];
 

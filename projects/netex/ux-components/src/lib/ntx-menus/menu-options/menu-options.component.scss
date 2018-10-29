@@ -29,6 +29,8 @@
     min-width: 230px;
     text-align: center;
     .mat-menu-item{
+      color: $color-grey-700;
+      font-size: $font-size-icon;
       padding: 0 24px;
       &[disabled]{
         cursor: not-allowed;

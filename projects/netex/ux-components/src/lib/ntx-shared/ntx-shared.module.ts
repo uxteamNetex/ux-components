@@ -9,7 +9,8 @@ import {
    MatToolbarModule,
    MatMenuModule,
    MatTabsModule,
-   MatBadgeModule
+   MatBadgeModule,
+   MatCardModule
  } from '@angular/material';
 
 @NgModule({
@@ -22,7 +23,8 @@ import {
     MatToolbarModule,
     MatMenuModule,
     MatTabsModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatCardModule
   ],
   declarations: [],
   exports: [
@@ -34,7 +36,8 @@ import {
     MatToolbarModule,
     MatMenuModule,
     MatTabsModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatCardModule
   ]
 })
 export class NtxSharedModule { }

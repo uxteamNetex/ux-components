@@ -11,6 +11,25 @@
   font-style: normal;
 }
 
+.mat-icon{
+  &.icon-netex{
+    height: auto;
+    width: auto;
+    &.icon-small{
+      font-size: $font-size-icon-small;
+    }
+    &.icon-netex{
+      font-size: $font-size-icon;
+    }
+    &.icon-medium{
+      font-size: $font-size-icon-medium;
+    }
+    &.icon-big{
+      font-size: $font-size-icon-big;
+    }
+  }
+}
+
 .icon-netex {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
