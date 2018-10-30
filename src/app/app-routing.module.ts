@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'toolbars',
     loadChildren: './ui-pages/toolbars/toolbars.module#ToolbarsModule'
   },
+  {
+    path: 'icons',
+    loadChildren: './ui-pages/icons/icons.module#IconsModule'
+  },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'

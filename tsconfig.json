@@ -23,7 +23,10 @@
       ],
       "@netex/ux-components/*": [
         "dist/netex/ux-components/*"
-      ]
+      ],
+      "@env/*": [
+				"src/environments/*"
+			]
     }
   }
 }

@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SidenavService } from './shared/services/sidenav.service';
 import { TabsHeaderService } from './shared/services/tabs-header.service';
 import { SharedModule } from './shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserAnimationsModule,
+    HttpClientModule,
     CoreModule,
     SharedModule,
     AppRoutingModule

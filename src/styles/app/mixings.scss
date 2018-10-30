@@ -1,0 +1,35 @@
+@mixin calc($prop, $val) {
+  #{$prop}: calc(#{$val});
+  #{$prop}: -moz-calc(#{$val});
+  #{$prop}: -webkit-calc(#{$val});
+  #{$prop}: -o-calc(#{$val});
+}
+
+@mixin calc_important($prop, $val) {
+  #{$prop}: calc_important(#{$val} !important);
+  #{$prop}: -moz-calc_important(#{$val} !important);
+  #{$prop}: -webkit-calc_important(#{$val} !important);
+  #{$prop}: -o-calc_important(#{$val} !important);
+}
+
+@mixin ellipsis($max-lines: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-lines: $max-lines;
+}
+
+@mixin ellipsis-multiline($_lines, $_height) {
+  //http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+  max-height: $_height;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  margin: 0 auto;
+  //-webkit-line-clamp: $_lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  //height: (1.5em *  $_lines ); /* exactly x lines */
+}
