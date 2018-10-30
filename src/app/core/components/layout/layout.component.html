@@ -1,8 +1,14 @@
-<ntx-sidenav-container>
-  <!-- toolbar -->
-  <ntx-toolbar-tabs></ntx-toolbar-tabs>
-
-  <!-- content -->
-  <ng-content></ng-content>
-
-</ntx-sidenav-container>
+<mat-sidenav-container class="layout">
+  <mat-sidenav #menu role="navigation">
+    <ng-content select="app-sidebar"></ng-content>
+  </mat-sidenav>
+  <mat-sidenav #panel
+    mode="over"
+    position="end"
+    [style.width] = "panelWidth + '%'">
+      <div id="panel-outlet" cdkPortalOutlet></div>
+</mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

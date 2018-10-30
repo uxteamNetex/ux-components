@@ -1,43 +1,27 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
     path: 'home',
-    loadChildren: './home/home.module#HomeModule'
-  },
-  {
-    path: 'toolbar',
-    loadChildren: './toolbar/toolbar.module#ToolbarModule'
+    component: HomePageComponent
   },
   {
     path: 'buttons',
-    loadChildren: './buttons-page/buttons-page.module#ButtonsPageModule'
+    loadChildren: './ui-pages/buttons/buttons.module#ButtonsModule'
   },
   {
-    path: 'menus',
-    loadChildren: './menus-page/menus-page.module#MenusPageModule'
+    path: 'panels',
+    loadChildren: './ui-pages/panels/panels.module#PanelsModule'
   },
   {
-    path: 'tabs',
-    loadChildren: './tabs-page/tabs-page.module#TabsPageModule'
+    path: 'toolbars',
+    loadChildren: './ui-pages/toolbars/toolbars.module#ToolbarsModule'
   },
-  {
-    path: 'lists',
-    loadChildren: './lists-page/lists-page.module#ListsPageModule'
-  },
-  {
-    path: 'cards',
-    loadChildren: './cards-page/cards-page.module#CardsPageModule'
-  },
-  {
-    path: 'icons',
-    loadChildren: './icons-page/icons-page.module#IconsPageModule'
+  { path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 
@@ -46,3 +30,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

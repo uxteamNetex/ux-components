@@ -1,0 +1,15 @@
+.panel__container  {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.panel__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel__button {
+    margin: 0 12px;
+}

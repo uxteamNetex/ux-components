@@ -1,0 +1,20 @@
+<div class="dummy__container">
+    <mat-toolbar class="dummy__toolbar">
+        <button class="hack-autofocus-disable"
+            type="button"
+            mat-icon-button>
+          </button>
+        <button type="button"
+            class="dummy__close"
+            i18n-aria-label
+            mat-icon-button
+            (click)="onCloseSidenav()">
+            <mat-icon class="icon icon-netex icon-cross"></mat-icon>
+        </button>
+        <span 
+            class="dummy__title"
+            i18n>{{'panel ' + width + '%' | uppercase}}</span>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
+    <div class="dummy__info"></div>
+  </div>
