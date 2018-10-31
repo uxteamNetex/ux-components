@@ -1,0 +1,24 @@
+[
+    {
+        "label": "texto",
+        "selector": "<ntx-text-button>"
+
+    },
+    {
+        "label": "fondo",
+        "selector": "<ntx-raised-button>"
+
+    },
+    {
+        "label": "icono",
+        "selector": "<ntx-icon-button>"
+    },
+    {
+        "label": "redondos",
+        "selector": "<ntx-fab-button>"
+    },
+    {
+        "label": "redondos mini",
+        "selector": "<ntx-mini-fab-button>"
+    }
+]

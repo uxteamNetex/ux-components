@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'icons',
     loadChildren: './ui-pages/icons/icons.module#IconsModule'
   },
+  {
+    path: 'cards',
+    loadChildren: './ui-pages/cards/cards.module#CardsModule'
+  },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'

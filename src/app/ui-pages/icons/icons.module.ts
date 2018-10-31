@@ -7,15 +7,16 @@ import { IconsDocComponent } from './documentation/icons-doc.component';
 import { MatIconModule, MatCardModule, MatGridListModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 
-
+import {
+  NtxCardsModule
+} from '@netex/ux-components';
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
     IconsRoutingModule,
     MatIconModule,
-    MatCardModule,
-    MatGridListModule
+    NtxCardsModule
   ],
   declarations: [
     IconsExamplesComponent,

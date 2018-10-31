@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'ntx-card-simple',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardSimpleComponent implements OnInit {
 
+  @Input() title: string;
+  @Input() subtitle: string;
+
   constructor() { }
 
   ngOnInit() {
-  }
+   }
 
 }

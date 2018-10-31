@@ -13,6 +13,17 @@ import {
   MatToolbarModule
 } from '@angular/material';
 
+import {
+  NtxSidenavModule,
+  NtxToolbarModule,
+  NtxButtonsModule,
+  NtxMenusModule,
+  NtxTabsModule,
+  NtxListsModule,
+  NtxHeadersModule,
+  NtxCardsModule
+} from '@netex/ux-components';
+
 import { AppRoutingModule } from '../app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
@@ -42,7 +53,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatTabsModule,
     PortalModule,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    NtxSidenavModule,
+    NtxToolbarModule,
+    NtxButtonsModule,
+    NtxMenusModule,
+    NtxTabsModule,
+    NtxListsModule,
+    NtxHeadersModule,
+    NtxCardsModule
   ],
   declarations: [
     HeaderComponent,

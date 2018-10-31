@@ -30,10 +30,12 @@ body{
 }
 
 .page-container{
-  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  max-width: 768px;
-  min-height: 100%;
+    &__page {
+      margin: 40px 0;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
   .page-container{

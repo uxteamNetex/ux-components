@@ -1,4 +1,4 @@
-<nav mat-tab-nav-bar *ngIf="router.url != '/home'">
+<nav class="tabs" mat-tab-nav-bar *ngIf="router.url != '/home'">
   <a mat-tab-link *ngFor="let tab of tabs"
       [routerLink]="path + tab.pathSegment"
       [routerLinkActiveOptions]="{exact:true}"
