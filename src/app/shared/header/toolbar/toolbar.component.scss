@@ -1,0 +1,21 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "toolbar-app";
+
+.#{$block}{
+    background-color: $color-primary;
+    .#{$block}__button-menu{
+        border-radius: 50%;
+        color: $color-white;
+        height: 48px;
+        margin-right: $separation-16;
+        width: 48px;
+        &:hover{
+            background-color: $icon-button-toolbar-hover;
+        }
+    }
+    .#{$block}__title{
+        color: $color-white;
+        font-family: LatoLight;
+    }
+}

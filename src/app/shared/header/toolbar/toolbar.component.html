@@ -1,8 +1,8 @@
-<mat-toolbar>
+<mat-toolbar class="toolbar-app">
     <mat-toolbar-row>
-        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="toggleMenu()" color="primary">
-            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <button type="button" class="toolbar-app__button-menu" aria-label="Toggle sidenav" mat-icon-button (click)="toggleMenu()" color="primary">
+            <mat-icon class="icon-netex icon-menu" aria-label="Side nav toggle icon"></mat-icon>
         </button>
-        <span routerLink="home">Netex Material UI Library</span>
+        <span class="toolbar-app__title" routerLink="home">Netex Material UI Library</span>
     </mat-toolbar-row>
 </mat-toolbar>

@@ -11,6 +11,7 @@ $block: "list-two-lines";
     }
     .#{$block}__item--subtitle{
       color: $color-grey-600;
+      font-family: Lato;
     }
   }
 }

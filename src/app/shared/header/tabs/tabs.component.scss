@@ -1,4 +1,24 @@
-.tabs {
-    background-color: white;
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "toolbar-tabs-app";
+
+.#{$block}{
+    background-color: $color-primary;
+    border-bottom: none;
+    box-shadow: $shadow-navbar;
+    padding: 0 16px;
     z-index: 2;
+    .#{$block}__link{
+        color: $color-white;
+        font-family: Lato;
+        min-width: auto;
+        padding: 0 16px;
+        text-transform: uppercase;
+        &.cdk-focused{
+            opacity: 1;
+        }
+        &:hover{
+            background-color: $icon-button-toolbar-hover;
+        }
+    }
 }

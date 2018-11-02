@@ -1,29 +1,32 @@
-.dummy__toolbar {
-    color: #666;
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "panel";
+
+.#{$block}{
+  .#{$block}__toolbar{
+    background-color: $color-white;
+    color: $color-grey-700;
     font-family: Lato;
-    font-size: 16px;
+    font-size: $font-size-16;
     line-height: 1.19;
-    height: 56px;
+    height: $toolbarHeight;
     padding: 0 12px 0 4px;
     .hack-autofocus-disable {
-        position: absolute;
-        height: 0;
+      position: absolute;
+      height: 0;
     }
-}
-
-.dummy__close {
-    height: 48px;
-    margin-right: 20px;
-    width: 48px;
-    &:hover {
-        background:rgba(0,0,0,.1) ;
+    .panel__close {
+      height: 48px;
+      margin-right: $separation-16;
+      width: 48px;
+      &:hover {
+          background-color: $icon-button-hover;
+      }
     }
+  }
 }
 
-.dummy__title {
-
-}
 
 .dynamic-component__header-text {
-    margin-left: 0px;
+  margin-left: 0px;
 }
