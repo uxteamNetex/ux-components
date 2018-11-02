@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { TabsHeaderService } from '../../services/tabs-header.service';
@@ -22,7 +22,8 @@ const TABS = [
 @Component({
   selector: 'app-tabs',
   templateUrl: './tabs.component.html',
-  styleUrls: ['./tabs.component.scss']
+  styleUrls: ['./tabs.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TabsComponent implements OnInit {
 
@@ -38,13 +39,6 @@ export class TabsComponent implements OnInit {
     this.tabsHeaderService.getPath().subscribe((val: string) => {
       this.path = val;
     });
-    console.log('init tabs');
   }
-
-  // ngOnDestroy() {
-  //   //Called once, before the instance is destroyed.
-  //   //Add 'implements OnDestroy' to the class.
-  //   console.log('on destroy tabs');
-  // }
 
 }

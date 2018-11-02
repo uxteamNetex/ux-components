@@ -11,10 +11,6 @@
 @import "./styles/fonts/styles.scss";
 @import "./styles/fonts/fonts.scss";
 
-body{
-  font-family: Lato;
-}
-
 .section-title{
   color: $color-grey-700;
   font-family: LatoMedium;
@@ -33,10 +29,11 @@ body{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-    &__page {
-      margin: 40px 0;
-    }
+  ntx-card-simple mat-card{
+    margin: 40px 0;
+  }
 }
+
 @media (min-width: 1024px) and (max-width: 1280px) {
   .page-container{
     max-width: 768px;

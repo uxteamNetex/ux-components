@@ -27,6 +27,18 @@ const routes: Routes = [
     path: 'cards',
     loadChildren: './ui-pages/cards/cards.module#CardsModule'
   },
+  {
+    path: 'lists',
+    loadChildren: './ui-pages/lists/lists.module#ListsModule'
+  },
+  {
+    path: 'tabs',
+    loadChildren: './ui-pages/tabs/tabs.module#TabsModule'
+  },
+  {
+    path: 'menus',
+    loadChildren: './ui-pages/menus/menus.module#MenusModule'
+  },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'

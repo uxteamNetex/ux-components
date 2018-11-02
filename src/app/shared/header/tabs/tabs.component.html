@@ -1,10 +1,10 @@
 <nav class="toolbar-tabs-app" mat-tab-nav-bar *ngIf="router.url != '/home'">
-  <a mat-tab-link *ngFor="let tab of tabs"
+  <a mat-tab-link disableRipple *ngFor="let tab of tabs"
       class="toolbar-tabs-app__link"
       [routerLink]="path + tab.pathSegment"
       [routerLinkActiveOptions]="{exact:true}"
       [routerLinkActive] #rla="routerLinkActive"
       [active]="rla.isActive">
-      {{tab.label}}
+      {{ tab.label | uppercase }}
   </a>
 </nav>

@@ -1,8 +1,7 @@
-<mat-nav-list class="sidebar-container">
-  <p>Netex Material UI Library</p>
-  <a mat-list-item routerLink='buttons' (click)="setPath('buttons')">BUTTON</a>
-  <a mat-list-item routerLink='toolbars' (click)="setPath('toolbars')">TOOLBAR</a>
-  <a mat-list-item routerLink='panels' (click)="setPath('panels')">PANEL</a>
-  <a mat-list-item routerLink='icons' (click)="setPath('icons')">ICONS</a>
-  <a mat-list-item routerLink='cards' (click)="setPath('cards')">CARDS</a>
+<mat-nav-list disableRipple class="sidebar__container">
+  <p class="sidebar__title">Netex Material UI Library</p>
+  <a class="sidebar__links" *ngFor="let link of links" 
+    mat-list-item 
+    [routerLink]=link 
+    (click)="setPath(link)">{{ link | titlecase }}</a>
 </mat-nav-list>

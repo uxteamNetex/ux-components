@@ -2,12 +2,26 @@ import { Component, OnInit } from '@angular/core';
 import { SidenavService } from '../services/sidenav.service';
 import { TabsHeaderService } from '../services/tabs-header.service';
 
+
+const LINKS = [
+  "buttons",
+  "toolbars",
+  "panels",
+  "icons",
+  "cards",
+  "lists",
+  "tabs",
+  "menus"
+];
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+
+  links: string[] = LINKS;
 
   constructor(
     private sidenavService: SidenavService,

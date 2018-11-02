@@ -1,4 +1,4 @@
-@import "././projects/netex/ux-components/src/styles/app/utils";
+@import "utils";
 
 $block: "toolbar-tabs-app";
 
@@ -21,4 +21,8 @@ $block: "toolbar-tabs-app";
             background-color: $icon-button-toolbar-hover;
         }
     }
+    &.mat-tab-nav-bar.mat-primary .mat-tab-links .mat-ink-bar {
+		height: 2px;
+		background-color: #ffffff !important;
+	}
 }

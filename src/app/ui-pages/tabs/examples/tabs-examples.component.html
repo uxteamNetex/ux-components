@@ -1,4 +1,4 @@
-<div class="page-container">
+<!-- <div class="page-container">
 
     <a mat-button
     color="primary"
@@ -26,4 +26,14 @@
       </h3>
       <ntx-tabs-navigation></ntx-tabs-navigation>
 
-</div>
+</div> -->
+<ntx-card-simple 
+  title="{{'Pestañas' | uppercase }}" 
+  subtitle="{{ '<ntx-tabs>' }}">
+    <ntx-tabs></ntx-tabs>
+</ntx-card-simple>
+<ntx-card-simple 
+  title="{{'Pastañas con navegación' | uppercase }}" 
+  subtitle="{{ '<ntx-tabs-navigation>' }}">
+    <ntx-tabs-navigation></ntx-tabs-navigation>
+</ntx-card-simple>

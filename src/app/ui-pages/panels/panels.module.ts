@@ -6,6 +6,9 @@ import { PanelsRoutingModule } from './panels-routing.module';
 import { DummyComponent } from './dummy/dummy.component';
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule } from '@angular/material';
 
+import {
+  NtxCardsModule
+} from '@netex/ux-components';
 
 @NgModule({
   imports: [
@@ -14,7 +17,8 @@ import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule } fr
     MatButtonModule,
     MatDividerModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    NtxCardsModule
   ],
   declarations: [
       DummyComponent,
