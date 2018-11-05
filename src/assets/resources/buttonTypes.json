@@ -10,6 +10,11 @@
 
     },
     {
+      "label": "borde",
+      "selector": "<ntx-stroked-button>"
+
+    },
+    {
         "label": "icono",
         "selector": "<ntx-icon-button>"
     },

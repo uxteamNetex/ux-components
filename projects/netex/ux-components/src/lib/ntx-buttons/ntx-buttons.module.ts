@@ -8,6 +8,7 @@ import { TextButtonComponent } from './text-button/text-button.component';
 import { IconButtonComponent } from './icon-button/icon-button.component';
 import { FabButtonComponent } from './fab-button/fab-button.component';
 import { MiniFabButtonComponent } from './mini-fab-button/mini-fab-button.component';
+import { StrokedButtonComponent } from './stroked-button/stroked-button.component';
 
 @NgModule({
   imports: [
@@ -20,14 +21,16 @@ import { MiniFabButtonComponent } from './mini-fab-button/mini-fab-button.compon
     TextButtonComponent,
     IconButtonComponent,
     FabButtonComponent,
-    MiniFabButtonComponent
+    MiniFabButtonComponent,
+    StrokedButtonComponent
   ],
   exports: [
     RaisedButtonComponent,
     TextButtonComponent,
     IconButtonComponent,
     FabButtonComponent,
-    MiniFabButtonComponent
+    MiniFabButtonComponent,
+    StrokedButtonComponent
   ]
 })
 export class NtxButtonsModule { }

@@ -1,0 +1,36 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.mat-white{
+    .mat-stroked-button{
+        border-color: $color-white;
+        color: $color-white;
+        &:hover{
+            background-color: $icon-button-toolbar-hover;
+        }
+        &[disabled]{
+            color: $color-white;
+            cursor: not-allowed;
+            opacity: 0.4;
+        }
+    }
+}
+.mat-stroked-button{
+  border-radius: 4px;
+  box-shadow: none;
+  font-family: Lato;
+  margin: 0 4px;
+  text-transform: uppercase;
+  &.mat-primary{
+    &:hover{
+      background-color: $icon-button-hover;
+    }
+    &[disabled]{
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+  &[disabled]{
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}

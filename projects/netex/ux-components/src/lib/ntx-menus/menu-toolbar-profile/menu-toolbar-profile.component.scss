@@ -38,7 +38,13 @@ $block: "mat-menu-options";
       box-shadow: $shadow;
       max-width: 320px;
       min-width: 230px;
-      text-align: left;
+      text-align: center;
+      .#{$block}__button{
+        .mat-stroked-button{
+          margin: 0;
+          width: calc(100% - 48px);
+        }
+      }
       .#{$block}__menu-item{
         padding: 0 24px;
         &[disabled]{
@@ -74,7 +80,7 @@ $block: "mat-menu-options";
       }
       .mat-raised-button{
         &.mat-primary{
-          margin: 16px 0 12px 72px;
+          margin: 16px 0 12px 4px;
           width: auto;
         }
       }
