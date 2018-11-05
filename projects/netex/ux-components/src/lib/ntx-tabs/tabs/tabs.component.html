@@ -1,6 +1,7 @@
-<mat-tab-group [selectedIndex]="selectedIndex">
-  <mat-tab 
-    *ngFor="let link of links; let i = index" 
+<mat-tab-group class="tabs-group" [selectedIndex]="selectedIndex">
+  <mat-tab
+    class="tabs-group__tab"
+    *ngFor="let link of links; let i = index"
     [label]="link">
     Content of {{link | lowercase}} tab
   </mat-tab>

@@ -13,6 +13,9 @@ const LINKS = [
   "tabs",
   "menus"
 ];
+const LINKSHELPERS = [
+  "paddings"
+];
 
 @Component({
   selector: 'app-sidebar',
@@ -22,6 +25,7 @@ const LINKS = [
 export class SidebarComponent implements OnInit {
 
   links: string[] = LINKS;
+  linkshelpers: string[] = LINKSHELPERS;
 
   constructor(
     private sidenavService: SidenavService,

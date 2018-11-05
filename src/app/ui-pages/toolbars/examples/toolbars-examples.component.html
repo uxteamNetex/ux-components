@@ -1,6 +1,7 @@
-<ntx-card-simple *ngFor="let type of toolbarTypes" 
+<ntx-card-simple *ngFor="let type of toolbarTypes"
   title="{{'cabecera ' + type.label | uppercase }}"
   subtitle="{{ type.selector }}">
     <ntx-toolbar *ngIf="type.label==='simple'"></ntx-toolbar>
+    <ntx-toolbar-back *ngIf="type.label==='back'"></ntx-toolbar-back>
     <ntx-toolbar-tabs *ngIf="type.label==='con pestañas'"></ntx-toolbar-tabs>
 </ntx-card-simple>

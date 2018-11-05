@@ -10,7 +10,8 @@ import {
    MatMenuModule,
    MatTabsModule,
    MatBadgeModule,
-   MatCardModule
+   MatCardModule,
+   MatTableModule
  } from '@angular/material';
 
 @NgModule({
@@ -24,7 +25,8 @@ import {
     MatMenuModule,
     MatTabsModule,
     MatBadgeModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   declarations: [],
   exports: [
@@ -37,7 +39,8 @@ import {
     MatMenuModule,
     MatTabsModule,
     MatBadgeModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ]
 })
 export class NtxSharedModule { }

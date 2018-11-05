@@ -21,7 +21,8 @@ import {
   NtxTabsModule,
   NtxListsModule,
   NtxHeadersModule,
-  NtxCardsModule
+  NtxCardsModule,
+  NtxTablesModule
 } from '@netex/ux-components';
 
 import { AppRoutingModule } from '../app-routing.module';
@@ -61,7 +62,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NtxTabsModule,
     NtxListsModule,
     NtxHeadersModule,
-    NtxCardsModule
+    NtxCardsModule,
+    NtxTablesModule
   ],
   declarations: [
     HeaderComponent,

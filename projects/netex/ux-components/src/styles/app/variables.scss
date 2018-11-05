@@ -5,8 +5,10 @@ $font-size-icon-medium:       36px;
 $font-size-icon-big:          48px;
 
 //Variables para tamaños de texto
+$font-size-12:        12px;
 $font-size-14:        14px;
 $font-size-16:        16px;
+$font-size-20:        20px;
 
 //Variables para márgenes y paddings
 $separation-0: 0;
@@ -37,3 +39,7 @@ $icon-button-toolbar-hover: rgba(255, 255, 255, 0.16);
 
 //Toolbar
 $toolbarHeight: 56px;
+
+//Table
+$tableHeaderHeight: 48px;
+$tableRowHeight: 52px;

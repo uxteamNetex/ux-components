@@ -1,0 +1,26 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "mat-basic-table";
+
+.#{$block}{
+  border-radius: 4px;
+  box-shadow: $shadow;
+  width: 100%;
+  .#{$block}__header{
+    background-color: $color-table-header-background;
+    color: $color-table-header-text;
+    font-family: LatoSemibold;
+    font-size: $font-size-12;
+    height: $tableHeaderHeight;
+    text-transform: uppercase;
+    th{
+      border-bottom: none;
+    }
+  }
+  .#{$block}__row{
+    height: $tableRowHeight;
+    td{
+      color: $color-grey-700;
+    }
+  }
+}

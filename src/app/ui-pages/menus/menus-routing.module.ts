@@ -14,10 +14,10 @@ const routes: Routes = [
       component: MenusDocComponent
   },
   {
-      path: '',
-      redirectTo: 'examples',
-      pathMatch: 'full'
-    }
+    path: '',
+    redirectTo: 'examples',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

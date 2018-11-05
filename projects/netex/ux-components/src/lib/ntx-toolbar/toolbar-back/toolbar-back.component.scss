@@ -14,6 +14,10 @@ $block: "mat-toolbar-header";
   &.mat-toolbar-single-row{
     height: $toolbarHeight;
   }
+  .#{$block}__title {
+    font-size: $font-size-20;
+    margin-left: 18px;
+  }
   .#{$block}__spacer {
     flex: 1 1 auto;
   }
@@ -31,9 +35,3 @@ $block: "mat-toolbar-header";
     }
   }
 }
-
-
-
-
-
-

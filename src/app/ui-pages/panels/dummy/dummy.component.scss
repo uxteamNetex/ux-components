@@ -23,6 +23,9 @@ $block: "panel";
           background-color: $icon-button-hover;
       }
     }
+    .panel__spacer{
+      flex: 1 1 auto;
+    }
   }
 }
 

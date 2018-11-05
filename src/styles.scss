@@ -28,9 +28,16 @@
 .page-container{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  ntx-card-simple mat-card{
-    margin: 40px 0;
+  margin: 40px auto;
+  ntx-card-simple{
+    &:first-of-type{
+      mat-card{
+        margin: 0;
+      }
+    }
+    mat-card{
+      margin: 40px 0;
+    }
   }
 }
 

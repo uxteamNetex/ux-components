@@ -7,7 +7,8 @@ import { DummyComponent } from './dummy/dummy.component';
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule } from '@angular/material';
 
 import {
-  NtxCardsModule
+  NtxCardsModule,
+  NtxButtonsModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -18,7 +19,8 @@ import {
     MatDividerModule,
     MatIconModule,
     MatToolbarModule,
-    NtxCardsModule
+    NtxCardsModule,
+    NtxButtonsModule
   ],
   declarations: [
       DummyComponent,

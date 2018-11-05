@@ -1,1 +1,25 @@
-//Más estilos en el styles.css. La clase específica para este componente es .tabs-group
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "tabs-group";
+
+.#{$block}{
+    .mat-tab-label{
+        color: $color-grey-700;
+        min-width: 64px;
+        padding: 0 16px;
+        text-transform: uppercase;
+        &.mat-tab-label-active{
+            opacity: 1;
+        }
+        &[disabled]{
+            opacity: 0.4;
+            &:hover{
+                background-color: transparent;
+                cursor: not-allowed;
+            }
+        }
+        &:hover{
+            background-color: $icon-button-hover;
+        }
+    }
+}

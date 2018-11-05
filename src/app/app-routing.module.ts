@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'menus',
     loadChildren: './ui-pages/menus/menus.module#MenusModule'
   },
+  {
+    path: 'paddings',
+    loadChildren: './ui-pages/paddings/paddings.module#PaddingsModule'
+  },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'

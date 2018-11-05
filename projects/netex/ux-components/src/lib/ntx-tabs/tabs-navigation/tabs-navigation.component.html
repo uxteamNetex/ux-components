@@ -1,8 +1,10 @@
-<nav mat-tab-nav-bar class="tabs-toolbar">
+<nav mat-tab-nav-bar class="tabs-navegation">
     <a mat-tab-link
+      class="tabs-navegation__tab"
       *ngFor="let link of links"
       (click)="activeLink = link"
       [active]="activeLink == link"> {{link}} </a>
-    <a mat-tab-link disabled>Disabled Link</a>
+    <a mat-tab-link
+      class="tabs-navegation__tab"
+      disabled>Disabled Link</a>
   </nav>
-  

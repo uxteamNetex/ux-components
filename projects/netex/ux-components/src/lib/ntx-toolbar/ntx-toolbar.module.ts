@@ -8,6 +8,7 @@ import { ToolbarTabsComponent } from './toolbar-tabs/toolbar-tabs.component';
 
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxTabsModule } from '../ntx-tabs/ntx-tabs.module';
+import { ToolbarBackComponent } from './toolbar-back/toolbar-back.component';
 
 @NgModule({
   imports: [
@@ -19,12 +20,14 @@ import { NtxTabsModule } from '../ntx-tabs/ntx-tabs.module';
   declarations: [
     ToolbarComponent,
     ToolbarLogoComponent,
-    ToolbarTabsComponent
+    ToolbarTabsComponent,
+    ToolbarBackComponent
   ],
   exports: [
     ToolbarComponent,
     ToolbarLogoComponent,
-    ToolbarTabsComponent
+    ToolbarTabsComponent,
+    ToolbarBackComponent
   ]
 })
 export class NtxToolbarModule { }

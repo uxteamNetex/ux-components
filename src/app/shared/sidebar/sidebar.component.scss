@@ -7,15 +7,17 @@
   }
   &__title {
     color: $color-primary;
+    font-family: LatoBold;
     font-size: $font-size-18;
-    font-weight: bold;
     margin: 16px 24px;
   }
   &__links {
     color: $color-grey-700;
     font-size: $font-size-16;
-    font-weight: 600;
     height: auto !important;
-    margin: 36px 8px;
+    padding: 16px 8px;
+    &:hover{
+      background-color: #f9f9f9;
+    }
   }
 }

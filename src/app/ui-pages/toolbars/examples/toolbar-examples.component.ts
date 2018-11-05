@@ -13,15 +13,19 @@ export interface ToolbarType {
 export class ToolbarsExamplesComponent implements OnInit {
 
   toolbarTypes: ToolbarType[] = [
-    { 
+    {
       label: "simple",
       selector: "<ntx-toolbar>"
     },
-    { 
+    {
+      label: "back",
+      selector: "<ntx-toolbar-back>"
+    },
+    {
       label: "con pestañas",
       selector: "<ntx-toolbar-tabs>"
     }];
-    
+
   constructor() { }
 
   ngOnInit() {

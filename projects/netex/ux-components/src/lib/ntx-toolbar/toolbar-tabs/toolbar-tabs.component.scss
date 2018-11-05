@@ -11,20 +11,22 @@ $block: "mat-toolbar-header";
       height: $toolbarHeight;
       &.toolbar-tabs{
         height: 48px;
-        .mat-tab-nav-bar{
-          &.tabs-toolbar{
-            .mat-tab-links{
-              .mat-tab-link{
-                min-width: 64px;
-                padding: 0 16px;
-                text-transform: uppercase;
-                &:hover{
-                  background-color: $icon-button-hover;
-                }
+
+        //Tabs navegation dentro de un toolbar
+        .tabs-navegation{
+          &.mat-tab-nav-bar{
+            .tabs-navegation__tab{
+              color: $color-white;
+              &:hover{
+                background-color: $icon-button-toolbar-hover;
               }
+            }
+            .mat-ink-bar{
+              background-color: $color-white;
             }
           }
         }
+
       }
     }
   }
