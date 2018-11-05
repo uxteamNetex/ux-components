@@ -1,54 +1,40 @@
-<div class="page-container__page" *ngFor="let type of buttonTypes; let i = index" >
-    <ntx-card-simple
-      title="{{'botones de ' + type.label | uppercase }}"
-      subtitle="{{ type.selector }}">
-    <div *ngIf="type.label==='texto'">
-        <ntx-text-button [color]="'primary'"></ntx-text-button>
-        <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
-        <ntx-text-button [color]="'accent'"></ntx-text-button>
-        <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
-    </div>
-    <div *ngIf="type.label==='fondo'">
-        <ntx-raised-button [color]="'primary'"></ntx-raised-button>
-        <ntx-raised-button [color]="'primary'" [disabled]="'true'"></ntx-raised-button>
-        <ntx-raised-button [color]="'accent'"></ntx-raised-button>
-        <ntx-raised-button [color]="'accent'" [disabled]="'true'"></ntx-raised-button>
-    </div>
-    <div *ngIf="type.label==='borde'">
-      <ntx-stroked-button [color]="'primary'"></ntx-stroked-button>
-      <ntx-stroked-button [color]="'primary'" [disabled]="'true'"></ntx-stroked-button>
-      <ntx-stroked-button [color]="'accent'"></ntx-stroked-button>
-      <ntx-stroked-button [color]="'accent'" [disabled]="'true'"></ntx-stroked-button>
-    </div>
-    <div *ngIf="type.label==='icono'">
-        <ntx-icon-button
-          [color]="'primary'"></ntx-icon-button>
-        <ntx-icon-button
-          [color]="'primary'"
-          [disabled]="'true'"></ntx-icon-button>
-        <ntx-icon-button
-          [color]="'accent'"></ntx-icon-button>
-        <ntx-icon-button
-          [color]="'accent'"
-          [disabled]="'true'"></ntx-icon-button>
-    </div>
-    <div *ngIf="type.label==='redondos'">
-        <ntx-fab-button
-          [color]="'primary'"></ntx-fab-button>
-        <ntx-fab-button
-          [color]="'primary'"
-          [disabled]="'true'"></ntx-fab-button>
-        <ntx-fab-button
-          [color]="'accent'"></ntx-fab-button>
-        <ntx-fab-button
-          [color]="'accent'"
-          [disabled]="'true'"></ntx-fab-button>
-    </div>
-    <div *ngIf="type.label==='redondos mini'">
-        <ntx-mini-fab-button [color]="'primary'"></ntx-mini-fab-button>
-        <ntx-mini-fab-button [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
-        <ntx-mini-fab-button [color]="'accent'"></ntx-mini-fab-button>
-        <ntx-mini-fab-button [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
-    </div>
-  </ntx-card-simple>
-</div>
+<ntx-card-simple *ngFor="let type of buttonTypes;"
+  title="{{'botones de ' + type.label | uppercase }}"
+  subtitle="{{ type.selector }}">
+  <div *ngIf="type.label==='texto'">
+      <ntx-text-button [color]="'primary'"></ntx-text-button>
+      <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
+      <ntx-text-button [color]="'accent'"></ntx-text-button>
+      <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
+  </div>
+  <div *ngIf="type.label==='fondo'">
+      <ntx-raised-button [color]="'primary'"></ntx-raised-button>
+      <ntx-raised-button [color]="'primary'" [disabled]="'true'"></ntx-raised-button>
+      <ntx-raised-button [color]="'accent'"></ntx-raised-button>
+      <ntx-raised-button [color]="'accent'" [disabled]="'true'"></ntx-raised-button>
+  </div>
+  <div *ngIf="type.label==='borde'">
+    <ntx-stroked-button [color]="'primary'"></ntx-stroked-button>
+    <ntx-stroked-button [color]="'primary'" [disabled]="'true'"></ntx-stroked-button>
+    <ntx-stroked-button [color]="'accent'"></ntx-stroked-button>
+    <ntx-stroked-button [color]="'accent'" [disabled]="'true'"></ntx-stroked-button>
+  </div>
+  <div *ngIf="type.label==='icono'">
+      <ntx-icon-button [color]="'primary'"></ntx-icon-button>
+      <ntx-icon-button [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
+      <ntx-icon-button [color]="'accent'"></ntx-icon-button>
+      <ntx-icon-button [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
+  </div>
+  <div *ngIf="type.label==='redondos'">
+      <ntx-fab-button [color]="'primary'"></ntx-fab-button>
+      <ntx-fab-button [color]="'primary'" [disabled]="'true'"></ntx-fab-button>
+      <ntx-fab-button [color]="'accent'"></ntx-fab-button>
+      <ntx-fab-button [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
+  </div>
+  <div *ngIf="type.label==='redondos mini'">
+      <ntx-mini-fab-button [color]="'primary'"></ntx-mini-fab-button>
+      <ntx-mini-fab-button [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
+      <ntx-mini-fab-button [color]="'accent'"></ntx-mini-fab-button>
+      <ntx-mini-fab-button [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
+  </div>
+</ntx-card-simple>

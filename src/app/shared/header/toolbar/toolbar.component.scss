@@ -1,9 +1,10 @@
-@import "././projects/netex/ux-components/src/styles/app/utils";
+@import "utils";
 
 $block: "toolbar-app";
 
 .#{$block}{
-    background-color: $color-primary;
+    min-height: $toolbarHeight;
+    height: $toolbarHeight;
     .#{$block}__button-menu{
         border-radius: 50%;
         color: $color-white;

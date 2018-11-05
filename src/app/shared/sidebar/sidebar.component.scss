@@ -1,3 +1,21 @@
-.sidebar-container{
-  width: 320px;
+@import "utils.scss";
+
+.sidebar{
+  &__container {
+    font-family: Lato;
+    width: 320px;
+  }
+  &__title {
+    color: $color-primary;
+    font-size: $font-size-18;
+    font-weight: bold;
+    margin: 16px 24px;
+  }
+  &__links {
+    color: $color-grey-700;
+    font-size: $font-size-16;
+    font-weight: 600;
+    height: auto !important;
+    margin: 36px 8px;
+  }
 }
