@@ -5,13 +5,16 @@ import { TabsHeaderService } from '../services/tabs-header.service';
 
 const LINKS = [
   "buttons",
-  "toolbars",
-  "panels",
-  "icons",
   "cards",
+  "chips",
+  "dialogs",
+  "forms",
+  "icons",
   "lists",
+  "menus",
+  "panels",
   "tabs",
-  "menus"
+  "toolbars"
 ];
 const LINKSHELPERS = [
   "paddings"

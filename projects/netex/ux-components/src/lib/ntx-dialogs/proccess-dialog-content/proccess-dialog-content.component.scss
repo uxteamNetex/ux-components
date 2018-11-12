@@ -1,0 +1,51 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.mat-dialog-container{
+  border-radius: 4px;
+  display: inline-table;
+  max-width: 900px;
+  padding: 48px 24px 0;
+  text-align: center;
+  width: 900px;
+  .proccess-dialog-title-image{
+    height: 180px;
+    margin: 0 auto 24px;
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+    .proccess-dialog-title-image__image{
+      height: 100%;
+    }
+  }
+  .proccess-dialog-title{
+    color: $color-grey-800;
+    font-family: latoLight;
+    font-size: $font-size-36;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+  .proccess-dialog-content{
+    margin-bottom: 40px;
+    .proccess-dialog-content__text{
+      color: $color-grey-600;
+      font-family: latoLight;
+      font-size: $font-size-24;
+      line-height: 29px;
+      margin: 0 0 24px 0;
+    }
+    .proccess-dialog-content__list{
+      color: $color-grey-800;
+      font-family: latoBold;
+      font-size: $font-size-18;
+      line-height: 22px;
+      margin: 0 0 16px 0;
+    }
+  }
+  .proccess-dialog-actions{
+    margin: 0 -16px 8px 0;
+    padding: 0;
+    .proccess-dialog-actions__button{
+      text-transform: uppercase;
+    }
+  }
+}

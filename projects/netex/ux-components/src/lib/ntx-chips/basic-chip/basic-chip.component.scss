@@ -1,0 +1,42 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "chip-container";
+
+.mat-chip-list{
+  &.#{$block}{
+    .#{$block}__chip{
+      &.mat-primary{
+        background-color: $color-primary;
+        color: $color-white;
+      }
+      &.mat-accent{
+        background-color: $color-accent;
+        color: $color-white;
+      }
+      height: 32px;
+      padding: 4px 8px 4px 16px;
+      .#{$block}__chip-text{
+        margin-right: 8px;
+        text-transform: uppercase;
+      }
+      .#{$block}__chip-button{
+        height: 24px;
+        line-height: 24px;
+        width: 24px;
+        .mat-icon{
+          font-size: $font-size-12;
+        }
+        &:hover{
+          background-color: $icon-button-hover;
+        }
+      }
+      &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.4;
+        .#{$block}__chip-button{
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

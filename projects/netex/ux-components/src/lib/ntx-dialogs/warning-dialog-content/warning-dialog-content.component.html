@@ -1,0 +1,14 @@
+<div class="warning-dialog-title-icon">
+  <mat-icon class="icon-netex icon-warning icon-big"></mat-icon>
+</div>
+<h2 mat-dialog-title class="warning-dialog-title">Oups!</h2>
+
+<mat-dialog-content class="warning-dialog-content">
+  <p class="warning-dialog-content__text">Learn one way to build applications with Angular and reuse your code and abilities to build apps for?</p>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="warning-dialog-actions">
+    <button mat-button color="accent" mat-dialog-close class="warning-dialog-actions__button">Cancel</button>
+    <button mat-button color="primary" [mat-dialog-close]="true" class="warning-dialog-actions__button">Action 2</button>
+    <button mat-button color="primary" [mat-dialog-close]="true" cdkFocusInitial class="warning-dialog-actions__button">Action 1</button>
+</mat-dialog-actions>

@@ -1,0 +1,13 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "form-container";
+
+.#{$block}{
+  min-width: 150px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  .#{$block}__form-full-width{
+    width: 100%;
+  }
+}

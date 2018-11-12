@@ -1,0 +1,17 @@
+<mat-chip-list class="chip-container">
+
+  <mat-chip class="chip-container__chip"
+            *ngFor="let i of Arr(num).fill(1)"
+            [color]="color"
+            [disabled]="disabled"
+            [removable]="removable">
+
+    <span class="chip-container__chip-text">Mary Joe Wright</span>
+
+    <button mat-icon-button class="chip-container__chip-button">
+      <mat-icon class="icon-netex icon-cross"></mat-icon>
+    </button>
+
+  </mat-chip>
+
+</mat-chip-list>

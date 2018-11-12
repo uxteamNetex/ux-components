@@ -1,0 +1,10 @@
+<h2 mat-dialog-title class="simple-dialog-title">Modal tittle</h2>
+
+<mat-dialog-content class="simple-dialog-content">
+  <p class="simple-dialog-content__text">Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.</p>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="simple-dialog-actions">
+    <button mat-button color="accent" mat-dialog-close class="simple-dialog-actions__button">Cancel</button>
+    <button mat-button color="primary" [mat-dialog-close]="true" cdkFocusInitial class="simple-dialog-actions__button">Action</button>
+</mat-dialog-actions>

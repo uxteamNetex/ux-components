@@ -1,0 +1,16 @@
+<div class="proccess-dialog-title-image">
+  <img class="proccess-dialog-title-image__image" src="assets/images/launch_rocket.png" alt="Image_name">
+</div>
+
+<h2 mat-dialog-title class="proccess-dialog-title">Prepare to launch</h2>
+
+<mat-dialog-content class="proccess-dialog-content">
+  <p class="proccess-dialog-content__text">You're about to send a evaluation to:</p>
+  <p class="proccess-dialog-content__list">25 Receivers</p>
+  <p class="proccess-dialog-content__list">13 Evaluators</p>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="proccess-dialog-actions">
+    <button mat-button color="accent" mat-dialog-close class="proccess-dialog-actions__button">Cancel</button>
+    <button mat-button color="primary" [mat-dialog-close]="true" cdkFocusInitial class="proccess-dialog-actions__button">Action</button>
+</mat-dialog-actions>

@@ -2,7 +2,8 @@
 
 $block: "list-multiline-lines";
 
-.#{$block} {
+.#{$block}{
+  padding: 0;
   .#{$block}__item{
     margin-bottom: 60px;
     .mat-list-item-content {

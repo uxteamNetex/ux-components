@@ -1,0 +1,30 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.mat-dialog-container{
+  border-radius: 4px;
+  display: inline-table;
+  max-width: 560px;
+  padding: 16px 24px 0;
+  width: 560px;
+  .simple-dialog-title{
+    color: $color-black;
+    font-family: latoBold;
+    margin-bottom: 16px;
+  }
+  .simple-dialog-content{
+    margin-bottom: 24px;
+    .simple-dialog-content__text{
+      color: $color-grey-600;
+      font-family: lato;
+      line-height: 24px;
+      margin: 0;
+    }
+  }
+  .simple-dialog-actions{
+    margin: 0 -16px 8px 0;
+    padding: 0;
+    .simple-dialog-actions__button{
+      text-transform: uppercase;
+    }
+  }
+}

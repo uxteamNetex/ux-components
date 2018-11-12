@@ -12,6 +12,18 @@ const routes: Routes = [
     loadChildren: './ui-pages/buttons/buttons.module#ButtonsModule'
   },
   {
+    path: 'chips',
+    loadChildren: './ui-pages/chips/chips.module#ChipsModule'
+  },
+  {
+    path: 'dialogs',
+    loadChildren: './ui-pages/dialogs/dialogs.module#DialogsModule'
+  },
+  {
+    path: 'forms',
+    loadChildren: './ui-pages/forms/forms.module#FormsModule'
+  },
+  {
     path: 'panels',
     loadChildren: './ui-pages/panels/panels.module#PanelsModule'
   },

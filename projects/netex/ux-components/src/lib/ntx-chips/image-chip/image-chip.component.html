@@ -1,0 +1,21 @@
+<mat-chip-list class="image-chip-container">
+
+  <mat-chip class="image-chip-container__chip"
+            *ngFor="let i of Arr(num).fill(1)"
+            [color]="color"
+            [disabled]="disabled"
+            [removable]="removable">
+
+    <div class="image-chip-container__chip-image">
+        <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
+    </div>
+
+    <span class="image-chip-container__chip-text">Mary Joe Wright</span>
+
+    <button mat-icon-button class="image-chip-container__chip-button">
+      <mat-icon class="icon-netex icon-cross"></mat-icon>
+    </button>
+
+  </mat-chip>
+
+</mat-chip-list>

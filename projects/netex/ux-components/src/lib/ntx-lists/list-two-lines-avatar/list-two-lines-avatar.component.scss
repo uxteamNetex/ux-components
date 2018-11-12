@@ -2,7 +2,8 @@
 
 $block: "list-two-lines";
 
-.#{$block} {
+.#{$block}{
+  padding: 0;
   .#{$block}__item{
     .#{$block}__item--title{
       color: $color-grey-800;

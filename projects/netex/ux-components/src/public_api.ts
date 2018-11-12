@@ -12,3 +12,6 @@ export * from './lib/ntx-lists/ntx-lists.module';
 export * from './lib/ntx-headers/ntx-headers.module';
 export * from './lib/ntx-cards/ntx-cards.module';
 export * from './lib/ntx-tables/ntx-tables.module';
+export * from './lib/ntx-chips/ntx-chips.module';
+export * from './lib/ntx-dialogs/ntx-dialogs.module';
+export * from './lib/ntx-forms/ntx-forms.module';
