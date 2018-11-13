@@ -3,6 +3,9 @@
             "className": "icon-archive"
         },
         {
+            "className": "icon-archive-solid"
+        },
+        {
             "className": "icon-arrow-back"
         },
         {
@@ -52,6 +55,9 @@
         },
         {
             "className": "icon-chat-bubble"
+        },
+        {
+            "className": "icon-chat-bubbles"
         },
         {
             "className": "icon-chat-bubble-solid"
@@ -489,6 +495,9 @@
             "className": "icon-orderby"
         },
         {
+            "className": "icon-paperclip"
+        },
+        {
             "className": "icon-paperplane"
         },
         {
@@ -607,6 +616,9 @@
         },
         {
             "className": "icon-user-card"
+        },
+        {
+            "className": "icon-user-change"
         },
         {
             "className": "icon-user-circle"

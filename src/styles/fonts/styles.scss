@@ -45,6 +45,26 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-archive-solid {
+  &:before {
+    content: $icon-archive-solid;
+  }
+}
+.icon-chat-bubbles {
+  &:before {
+    content: $icon-chat-bubbles;
+  }
+}
+.icon-paperclip {
+  &:before {
+    content: $icon-paperclip;
+  }
+}
+.icon-user-change {
+  &:before {
+    content: $icon-user-change;
+  }
+}
 .icon-archive {
   &:before {
     content: $icon-archive;

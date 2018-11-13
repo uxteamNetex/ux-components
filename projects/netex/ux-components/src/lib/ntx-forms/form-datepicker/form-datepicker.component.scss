@@ -7,16 +7,31 @@ $block: "form-container";
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
-  .#{$block}__form-full-width{
+  .#{$block}__form-half-width{
     &.mat-form-field{
       &.mat-form-field-appearance-legacy{
-        width: 100%;
+        width: 50%;
         .mat-form-field-wrapper{
           .mat-form-field-flex{
+            align-items: center;
             .mat-form-field-infix{
-              .#{$block}__form-input{
+              .#{$block}__form-datepicker{
                 font-size: $font-size-16;
                 line-height: 24px;
+              }
+            }
+            .mat-form-field-suffix{
+              .mat-icon-button{
+                height: 24px;
+                width: 24px;
+                &:hover{
+                  background-color: $icon-button-hover;
+                }
+                .mat-icon{
+                  font-size: $font-size-18;
+                  height: 18px;
+                  width: 18px;
+                }
               }
             }
           }
