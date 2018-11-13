@@ -8,6 +8,18 @@ $block: "form-container";
   max-width: 600px;
   width: 100%;
   .#{$block}__form-full-width{
-    width: 100%;
+    &.mat-form-field{
+      &.mat-form-field-appearance-legacy{
+        width: 100%;
+        .mat-form-field-wrapper{
+          .mat-form-field-underline{
+            background-color: $color-grey-400;
+          }
+          .mat-form-field-subscript-wrapper{
+
+          }
+        }
+      }
+    }
   }
 }
