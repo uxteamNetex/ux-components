@@ -10,7 +10,8 @@ import {
   MatListModule,
   MatSidenavModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatTableModule
 } from '@angular/material';
 
 import {
@@ -43,6 +44,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatIconModule,
     MatListModule,
     MatToolbarModule,
+    MatTableModule,
     MatSidenavModule,
     MatTabsModule,
     AppRoutingModule
@@ -53,6 +55,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatIconModule,
     MatListModule,
     MatToolbarModule,
+    MatTableModule,
     MatSidenavModule,
     MatTabsModule,
     PortalModule,

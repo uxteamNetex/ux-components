@@ -1,0 +1,23 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "radiobutton-group";
+
+.mat-radio-group{
+  &.#{$block}{
+    .#{$block}__radiobutton{
+      margin-left: 8px;
+      .mat-radio-container{
+        .mat-radio-outer-circle{
+          border-color: $color-grey-400;
+          border-width: 1px;
+        }
+        .mat-radio-inner-circle{
+          height: 24px;
+          left: -2px;
+          top: -2px;
+          width: 24px;
+        }
+      }
+    }
+  }
+}

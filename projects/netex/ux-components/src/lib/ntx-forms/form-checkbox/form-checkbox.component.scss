@@ -1,0 +1,16 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.checkbox {
+  &.mat-checkbox{
+    margin-left: 8px;
+    &.mat-checkbox-disabled{
+      cursor: not-allowed;
+    }
+    .mat-checkbox-inner-container{
+      .mat-checkbox-frame{
+        border-color: $color-grey-400;
+        border-width: 1px;
+      }
+    }
+  }
+}

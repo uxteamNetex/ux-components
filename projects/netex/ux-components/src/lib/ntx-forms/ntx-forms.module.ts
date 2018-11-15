@@ -9,6 +9,9 @@ import { NtxFormsRoutingModule } from './ntx-forms-routing.module';
 import { FormInputComponent } from './form-input/form-input.component';
 import { FormTextareaComponent } from './form-textarea/form-textarea.component';
 import { FormDatepickerComponent } from './form-datepicker/form-datepicker.component';
+import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
+import { FormRadiobuttonComponent } from './form-radiobutton/form-radiobutton.component';
+import { FormSlidetoggleComponent } from './form-slidetoggle/form-slidetoggle.component';
 
 @NgModule({
   imports: [
@@ -22,7 +25,10 @@ import { FormDatepickerComponent } from './form-datepicker/form-datepicker.compo
   declarations: [
     FormInputComponent,
     FormTextareaComponent,
-    FormDatepickerComponent
+    FormDatepickerComponent,
+    FormCheckboxComponent,
+    FormRadiobuttonComponent,
+    FormSlidetoggleComponent
   ],
   entryComponents: [
     FormInputComponent,
@@ -31,7 +37,10 @@ import { FormDatepickerComponent } from './form-datepicker/form-datepicker.compo
   exports: [
     FormInputComponent,
     FormTextareaComponent,
-    FormDatepickerComponent
+    FormDatepickerComponent,
+    FormCheckboxComponent,
+    FormRadiobuttonComponent,
+    FormSlidetoggleComponent
   ]
 })
 export class NtxFormsModule { }

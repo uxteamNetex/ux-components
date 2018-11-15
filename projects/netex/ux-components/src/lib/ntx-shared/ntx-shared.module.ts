@@ -15,7 +15,10 @@ import {
    MatChipsModule,
    MatDialogModule,
    MatInputModule,
-   MatDatepickerModule
+   MatDatepickerModule,
+   MatCheckboxModule,
+   MatRadioModule,
+   MatSlideToggleModule
  } from '@angular/material';
 
 @NgModule({
@@ -34,7 +37,10 @@ import {
     MatChipsModule,
     MatDialogModule,
     MatInputModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatSlideToggleModule
   ],
   declarations: [],
   exports: [
@@ -52,7 +58,10 @@ import {
     MatChipsModule,
     MatDialogModule,
     MatInputModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatSlideToggleModule
   ]
 })
 export class NtxSharedModule { }
