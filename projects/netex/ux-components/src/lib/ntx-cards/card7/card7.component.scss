@@ -1,0 +1,75 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card7";
+
+.mat-card{
+    &.#{$block}{
+        border-radius: 4px;
+        box-shadow: $shadow;
+        display: inline-flex;
+        margin: 8px;
+        padding: 20px 6px 16px 8px;
+        width: calc(23% - 16px);
+        .mat-card-header{
+          .#{$block}__title{
+            color: $color-grey-800;
+            font-family: latoBold;
+            margin-bottom: 16px;
+            max-height: 24px;
+            word-wrap: break-word;
+            overflow: hidden;
+            .#{$block}__title--text{
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              /* autoprefixer: off */
+              -webkit-box-orient: vertical;
+            }
+          }
+          .#{$block}__subtitle{
+            color: $color-grey-600;
+            margin: 0;
+            max-height: 33px;
+            word-wrap: break-word;
+            overflow: hidden;
+            .#{$block}__subtitle--text{
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              /* autoprefixer: off */
+              -webkit-box-orient: vertical;
+            }
+          }
+          .#{$block}__options{
+            margin-top: -12px;
+          }
+        }
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1024px) {
+  .mat-card{
+    &.#{$block}{
+      width: calc(47% - 16px);
+    }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .mat-card{
+    &.#{$block}{
+      width: calc(47% - 16px);
+    }
+  }
+}
+@media (min-width: 1280px) and (max-width: 1480px) {
+  .mat-card{
+    &.#{$block}{
+      width: calc(30% - 16px);
+    }
+  }
+}
+@media (min-width: 1480px) {
+  .mat-card{
+    &.#{$block}{
+      width: calc(23% - 16px);
+    }
+  }
+}

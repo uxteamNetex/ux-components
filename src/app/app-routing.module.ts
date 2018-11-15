@@ -12,6 +12,26 @@ const routes: Routes = [
     loadChildren: './ui-pages/buttons/buttons.module#ButtonsModule'
   },
   {
+    path: 'card4',
+    loadChildren: './ui-pages/card4/card4.module#Card4Module'
+  },
+  {
+    path: 'card7',
+    loadChildren: './ui-pages/card7/card7.module#Card7Module'
+  },
+  {
+    path: 'card8',
+    loadChildren: './ui-pages/card8/card8.module#Card8Module'
+  },
+  {
+    path: 'card9',
+    loadChildren: './ui-pages/card9/card9.module#Card9Module'
+  },
+  {
+    path: 'cards',
+    loadChildren: './ui-pages/cards/cards.module#CardsModule'
+  },
+  {
     path: 'chips',
     loadChildren: './ui-pages/chips/chips.module#ChipsModule'
   },
@@ -34,10 +54,6 @@ const routes: Routes = [
   {
     path: 'icons',
     loadChildren: './ui-pages/icons/icons.module#IconsModule'
-  },
-  {
-    path: 'cards',
-    loadChildren: './ui-pages/cards/cards.module#CardsModule'
   },
   {
     path: 'lists',
