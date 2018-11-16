@@ -1,0 +1,27 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.mat-button{
+  &.text-icon-button{
+    margin: 0 4px;
+    padding: 0 16px 0 12px;
+    font-family: Lato;
+    text-transform: uppercase;
+    &.mat-primary{
+      &[disabled]{
+        color: $color-primary;
+      }
+    }
+    &.mat-accent{
+      &[disabled]{
+        color: $color-accent;
+      }
+    }
+    &[disabled]{
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
+    .text-icon-button__icon{
+      margin-right: 4px;
+    }
+  }
+}

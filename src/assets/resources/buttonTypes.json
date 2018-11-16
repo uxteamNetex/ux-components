@@ -4,6 +4,10 @@
         "selector": "<ntx-text-button>"
     },
     {
+        "label": "texto con icono",
+        "selector": "<ntx-text-icon-button>"
+    },
+    {
         "label": "fondo",
         "selector": "<ntx-raised-button>"
     },
@@ -14,6 +18,10 @@
     {
       "label": "borde",
       "selector": "<ntx-stroked-button>"
+    },
+    {
+      "label": "borde con icono",
+      "selector": "<ntx-stroked-icon-button>"
     },
     {
         "label": "icono",

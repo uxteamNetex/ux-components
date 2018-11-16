@@ -1,4 +1,4 @@
-<ntx-card-simple *ngFor="let type of buttonTypes;"
+<ntx-card-simple class="utils--bc-grey-100" *ngFor="let type of buttonTypes;"
   title="{{'botones de ' + type.label | uppercase }}"
   subtitle="{{ type.selector }}">
   <div *ngIf="type.label==='texto'">
@@ -6,6 +6,12 @@
       <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
       <ntx-text-button [color]="'accent'"></ntx-text-button>
       <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
+  </div>
+  <div *ngIf="type.label==='texto con icono'">
+      <ntx-text-icon-button [color]="'primary'"></ntx-text-icon-button>
+      <ntx-text-icon-button [color]="'primary'" [disabled]="'true'"></ntx-text-icon-button>
+      <ntx-text-icon-button [color]="'accent'"></ntx-text-icon-button>
+      <ntx-text-icon-button [color]="'accent'" [disabled]="'true'"></ntx-text-icon-button>
   </div>
   <div *ngIf="type.label==='fondo'">
       <ntx-raised-button [color]="'primary'"></ntx-raised-button>
@@ -24,6 +30,16 @@
     <ntx-stroked-button [color]="'primary'" [disabled]="'true'"></ntx-stroked-button>
     <ntx-stroked-button [color]="'accent'"></ntx-stroked-button>
     <ntx-stroked-button [color]="'accent'" [disabled]="'true'"></ntx-stroked-button>
+    <ntx-stroked-button [color]="'white'"></ntx-stroked-button>
+    <ntx-stroked-button [color]="'white'" [disabled]="'true'"></ntx-stroked-button>
+  </div>
+  <div *ngIf="type.label==='borde con icono'">
+    <ntx-stroked-icon-button [color]="'primary'"></ntx-stroked-icon-button>
+    <ntx-stroked-icon-button [color]="'primary'" [disabled]="'true'"></ntx-stroked-icon-button>
+    <ntx-stroked-icon-button [color]="'accent'"></ntx-stroked-icon-button>
+    <ntx-stroked-icon-button [color]="'accent'" [disabled]="'true'"></ntx-stroked-icon-button>
+    <ntx-stroked-icon-button [color]="'white'"></ntx-stroked-icon-button>
+    <ntx-stroked-icon-button [color]="'white'" [disabled]="'true'"></ntx-stroked-icon-button>
   </div>
   <div *ngIf="type.label==='icono'">
       <ntx-icon-button [color]="'primary'"></ntx-icon-button>

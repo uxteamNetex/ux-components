@@ -1,7 +1,7 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-.mat-raised-button{
-  &.raised-icon-button{
+.mat-stroked-button{
+  &.stroked-icon-button{
     border-radius: 4px;
     box-shadow: none;
     font-family: Lato;
@@ -10,27 +10,30 @@
     text-transform: uppercase;
     &.mat-primary{
       &:hover{
-        background-color: $color-primary-hover;
+        background-color: $icon-button-hover;
       }
       &[disabled]{
         background-color: $color-primary;
         color: $color-white;
       }
     }
-    &.mat-accent{
+    &.mat-white{
+      border-color: $color-white;
+      color: $color-white;
       &:hover{
-        background-color: $color-accent-hover;
+        background-color: $icon-button-toolbar-hover;
       }
       &[disabled]{
-        background-color: $color-accent;
         color: $color-white;
+        cursor: not-allowed;
+        opacity: 0.4;
       }
     }
     &[disabled]{
       cursor: not-allowed;
       opacity: 0.4;
     }
-    .raised-icon-button__icon{
+    .stroked-icon-button__icon{
       margin-right: 4px;
     }
   }

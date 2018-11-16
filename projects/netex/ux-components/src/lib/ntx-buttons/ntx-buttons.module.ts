@@ -10,6 +10,8 @@ import { FabButtonComponent } from './fab-button/fab-button.component';
 import { MiniFabButtonComponent } from './mini-fab-button/mini-fab-button.component';
 import { StrokedButtonComponent } from './stroked-button/stroked-button.component';
 import { RaisedIconButtonComponent } from './raised-icon-button/raised-icon-button.component';
+import { TextIconButtonComponent } from './text-icon-button/text-icon-button.component';
+import { StrokedIconButtonComponent } from './stroked-icon-button/stroked-icon-button.component';
 
 @NgModule({
   imports: [
@@ -24,7 +26,9 @@ import { RaisedIconButtonComponent } from './raised-icon-button/raised-icon-butt
     FabButtonComponent,
     MiniFabButtonComponent,
     StrokedButtonComponent,
-    RaisedIconButtonComponent
+    RaisedIconButtonComponent,
+    TextIconButtonComponent,
+    StrokedIconButtonComponent
   ],
   exports: [
     RaisedButtonComponent,
@@ -33,7 +37,9 @@ import { RaisedIconButtonComponent } from './raised-icon-button/raised-icon-butt
     FabButtonComponent,
     MiniFabButtonComponent,
     StrokedButtonComponent,
-    RaisedIconButtonComponent
+    RaisedIconButtonComponent,
+    TextIconButtonComponent,
+    StrokedIconButtonComponent
   ]
 })
 export class NtxButtonsModule { }

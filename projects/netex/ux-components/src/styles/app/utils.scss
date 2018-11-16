@@ -29,6 +29,11 @@ $block: "utils";
 		color: $color-grey-600;
   }
 
+  //Colores de fondo
+  &--bc-grey-100 {
+    background-color: $color-grey-100;
+  }
+
   //Márgenes
   &--margin-0 {
 		margin: $separation-0 !important;
