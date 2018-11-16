@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatNativeDateModule} from '@angular/material';
+import { MatNativeDateModule } from '@angular/material';
 import { NtxSharedModule } from '../ntx-shared/ntx-shared.module';
 
 import { NtxFormsRoutingModule } from './ntx-forms-routing.module';
@@ -12,6 +12,7 @@ import { FormDatepickerComponent } from './form-datepicker/form-datepicker.compo
 import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
 import { FormRadiobuttonComponent } from './form-radiobutton/form-radiobutton.component';
 import { FormSlidetoggleComponent } from './form-slidetoggle/form-slidetoggle.component';
+import { FormCheckboxCircleComponent } from './form-checkbox-circle/form-checkbox-circle.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { FormSlidetoggleComponent } from './form-slidetoggle/form-slidetoggle.co
     FormDatepickerComponent,
     FormCheckboxComponent,
     FormRadiobuttonComponent,
-    FormSlidetoggleComponent
+    FormSlidetoggleComponent,
+    FormCheckboxCircleComponent
   ],
   entryComponents: [
     FormInputComponent,
@@ -40,7 +42,8 @@ import { FormSlidetoggleComponent } from './form-slidetoggle/form-slidetoggle.co
     FormDatepickerComponent,
     FormCheckboxComponent,
     FormRadiobuttonComponent,
-    FormSlidetoggleComponent
+    FormSlidetoggleComponent,
+    FormCheckboxCircleComponent
   ]
 })
 export class NtxFormsModule { }

@@ -3,12 +3,12 @@ import { Input } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'ntx-form-checkbox',
-  templateUrl: './form-checkbox.component.html',
-  styleUrls: ['./form-checkbox.component.scss'],
+  selector: 'ntx-form-checkbox-circle',
+  templateUrl: './form-checkbox-circle.component.html',
+  styleUrls: ['./form-checkbox-circle.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class FormCheckboxComponent implements OnInit {
+export class FormCheckboxCircleComponent implements OnInit {
 
   @Input() color: string;
   @Input() checked: string;

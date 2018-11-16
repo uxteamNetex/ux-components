@@ -2,17 +2,18 @@
     {
         "label": "texto",
         "selector": "<ntx-text-button>"
-
     },
     {
         "label": "fondo",
         "selector": "<ntx-raised-button>"
-
+    },
+    {
+        "label": "fondo con icono",
+        "selector": "<ntx-raised-icon-button>"
     },
     {
       "label": "borde",
       "selector": "<ntx-stroked-button>"
-
     },
     {
         "label": "icono",

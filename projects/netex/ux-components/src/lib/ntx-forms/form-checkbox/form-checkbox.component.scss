@@ -5,6 +5,10 @@
     margin-left: 8px;
     &.mat-checkbox-disabled{
       cursor: not-allowed;
+      opacity: 0.5;
+      .mat-checkbox-inner-container{
+        background-color: $color-grey-200;
+      }
     }
     .mat-checkbox-inner-container{
       .mat-checkbox-frame{

@@ -13,6 +13,12 @@
       <ntx-raised-button [color]="'accent'"></ntx-raised-button>
       <ntx-raised-button [color]="'accent'" [disabled]="'true'"></ntx-raised-button>
   </div>
+  <div *ngIf="type.label==='fondo con icono'">
+    <ntx-raised-icon-button [color]="'primary'"></ntx-raised-icon-button>
+    <ntx-raised-icon-button [color]="'primary'" [disabled]="'true'"></ntx-raised-icon-button>
+    <ntx-raised-icon-button [color]="'accent'"></ntx-raised-icon-button>
+    <ntx-raised-icon-button [color]="'accent'" [disabled]="'true'"></ntx-raised-icon-button>
+  </div>
   <div *ngIf="type.label==='borde'">
     <ntx-stroked-button [color]="'primary'"></ntx-stroked-button>
     <ntx-stroked-button [color]="'primary'" [disabled]="'true'"></ntx-stroked-button>
