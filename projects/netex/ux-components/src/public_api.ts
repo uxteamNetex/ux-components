@@ -15,3 +15,4 @@ export * from './lib/ntx-tables/ntx-tables.module';
 export * from './lib/ntx-chips/ntx-chips.module';
 export * from './lib/ntx-dialogs/ntx-dialogs.module';
 export * from './lib/ntx-forms/ntx-forms.module';
+export * from './lib/ntx-drag-and-drop/ntx-drag-and-drop.module';

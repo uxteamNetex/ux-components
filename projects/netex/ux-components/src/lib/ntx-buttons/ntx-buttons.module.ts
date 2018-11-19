@@ -12,6 +12,7 @@ import { StrokedButtonComponent } from './stroked-button/stroked-button.componen
 import { RaisedIconButtonComponent } from './raised-icon-button/raised-icon-button.component';
 import { TextIconButtonComponent } from './text-icon-button/text-icon-button.component';
 import { StrokedIconButtonComponent } from './stroked-icon-button/stroked-icon-button.component';
+import { SquareButtonComponent } from './square-button/square-button.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { StrokedIconButtonComponent } from './stroked-icon-button/stroked-icon-b
     StrokedButtonComponent,
     RaisedIconButtonComponent,
     TextIconButtonComponent,
-    StrokedIconButtonComponent
+    StrokedIconButtonComponent,
+    SquareButtonComponent
   ],
   exports: [
     RaisedButtonComponent,
@@ -39,7 +41,8 @@ import { StrokedIconButtonComponent } from './stroked-icon-button/stroked-icon-b
     StrokedButtonComponent,
     RaisedIconButtonComponent,
     TextIconButtonComponent,
-    StrokedIconButtonComponent
+    StrokedIconButtonComponent,
+    SquareButtonComponent
   ]
 })
 export class NtxButtonsModule { }

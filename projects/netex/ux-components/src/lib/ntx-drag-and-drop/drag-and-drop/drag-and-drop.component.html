@@ -1,0 +1,9 @@
+<div class="file-upload"
+    (click)="browseInput.click()">
+  <div class="file-upload__empty">
+    <mat-icon class="icon-netex icon-upload file-upload__empty--icon"></mat-icon>
+    <div class="file-upload__empty--title" i18n>Drop image or <strong>click upload</strong></div>
+    <div class="file-upload__empty--subtitle" i18n>JPG, PNG or GIF. Minimum width 200px. Maximum size 3MB</div>
+  </div>
+</div>
+<input #browseInput type="file" name="file" hidden="true">

@@ -1,0 +1,8 @@
+<button mat-button
+        class="square-button"
+        [disabled]="disabled"
+        (click)="clickEvent()"
+        [ngClass]="isSelected ? 'square-button--selected' : ' '">
+          <mat-icon class="icon-netex icon-plus-circle square-button__icon"></mat-icon>
+          Acción
+</button>

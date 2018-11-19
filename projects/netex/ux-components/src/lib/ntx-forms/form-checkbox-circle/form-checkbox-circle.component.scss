@@ -18,21 +18,24 @@
         }
       }
     }
-    .mat-checkbox-inner-container{
-      height: 24px;
-      margin: 0;
-      width: 24px;
-      .mat-checkbox-ripple{
-        border-radius: 50%;
-        height: 32px;
-        left: calc(50% - 16px);
-        top: calc(50% - 16px);
-        width: 32px;
-      }
-      .mat-checkbox-frame{
-        border-color: $color-grey-400;
-        border-radius: 50%;
-        border-width: 1px;
+    .mat-checkbox-layout{
+      align-items: center;
+      .mat-checkbox-inner-container{
+        height: 24px;
+        margin: 0 8px 0 0;
+        width: 24px;
+        .mat-checkbox-ripple{
+          border-radius: 50%;
+          height: 32px;
+          left: calc(50% - 16px);
+          top: calc(50% - 16px);
+          width: 32px;
+        }
+        .mat-checkbox-frame{
+          border-color: $color-grey-400;
+          border-radius: 50%;
+          border-width: 1px;
+        }
       }
     }
   }

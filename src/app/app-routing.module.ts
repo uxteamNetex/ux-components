@@ -40,7 +40,11 @@ const routes: Routes = [
     loadChildren: './ui-pages/dialogs/dialogs.module#DialogsModule'
   },
   {
-    path: 'forms',
+    path: 'drag and drop',
+    loadChildren: './ui-pages/drag-and-drop/drag-and-drop.module#DragAndDropModule'
+  },
+  {
+    path: 'form controls',
     loadChildren: './ui-pages/forms/forms.module#FormsModule'
   },
   {

@@ -34,5 +34,9 @@
     {
         "label": "redondos mini",
         "selector": "<ntx-mini-fab-button>"
+    },
+    {
+        "label": "cuadrados",
+        "selector": "<ntx-square-button>"
     }
 ]

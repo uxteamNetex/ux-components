@@ -1,0 +1,38 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: 'square-button';
+
+.mat-button{
+  &.#{$block}{
+    border: 1px solid $color-grey-300;
+    border-radius: 4px;
+    box-shadow: none;
+    color: $color-grey-800;
+    font-family: LatoBold;
+    font-size: $font-size-16;
+    height: 188px;
+    margin: 0 4px;
+    width: 188px;
+    &:hover{
+      background-color: $color-white;
+      border: 3px solid $color-primary;
+      border-radius: 5px;
+      outline-color: $color-white;
+      padding: 0 10px;
+    }
+    &[disabled]{
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
+    &.#{$block}--selected{
+      border: 3px solid $color-primary;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+    .#{$block}__icon{
+      display: block;
+      font-size: 52px;
+      margin-bottom: 8px;
+    }
+  }
+}

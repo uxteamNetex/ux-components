@@ -13,17 +13,16 @@
         background-color: $icon-button-hover;
       }
       &[disabled]{
-        background-color: $color-primary;
-        color: $color-white;
+        border-color: $color-primary;
+        color: $color-primary;
       }
     }
     &.mat-white{
       border-color: $color-white;
       color: $color-white;
-      &:hover{
-        background-color: $icon-button-toolbar-hover;
-      }
       &[disabled]{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-color: $color-white;
         color: $color-white;
         cursor: not-allowed;
         opacity: 0.4;
@@ -32,6 +31,9 @@
     &[disabled]{
       cursor: not-allowed;
       opacity: 0.4;
+      &:hover{
+        background-color: transparent;
+      }
     }
     .stroked-icon-button__icon{
       margin-right: 4px;
