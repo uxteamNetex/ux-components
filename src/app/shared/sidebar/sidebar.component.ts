@@ -18,6 +18,7 @@ const LINKS = [
   "lists",
   "menus",
   "panels",
+  "progress bar",
   "tabs",
   "toolbars"
 ];

@@ -3,7 +3,7 @@
     <a mat-button
     color="primary"
     routerLink="/home">Volver al home</a>
-  
+
     <h3 class="utils--margin-top-24 section-title">
       Menu de opciones
       <span class="section-subtitle">
@@ -14,7 +14,7 @@
       </span>
     </h3>
     <ntx-menu-options></ntx-menu-options>
-  
+
     <h3 class="utils--margin-top-24 section-title">
       Menu de opciones de usuario toolbar
       <span class="section-subtitle">
@@ -25,16 +25,20 @@
       </span>
     </h3>
     <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
-   
+
 </div>
 -->
-<ntx-card-simple 
-  title="{{'Menu de opciones' | uppercase }}" 
+
+<ntx-card-simple
+  title="{{'Menu de opciones' | uppercase }}"
   subtitle="{{ '<ntx-menu-options>' }}">
     <ntx-menu-options></ntx-menu-options>
 </ntx-card-simple>
-<ntx-card-simple 
-  title="{{'Menú de opciones de usuario toolbar' | uppercase }}" 
+
+<ntx-card-simple
+  title="{{'Menú de opciones de usuario toolbar' | uppercase }}"
   subtitle="{{ '<ntx-menu-toolbar-profile>' }}">
-    <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
+    <ntx-menu-toolbar-profile>
+      <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
+    </ntx-menu-toolbar-profile>
 </ntx-card-simple>

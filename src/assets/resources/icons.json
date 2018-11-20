@@ -642,6 +642,9 @@
             "className": "icon-users"
         },
         {
+            "className": "icon-view-bounding-box"
+        },
+        {
             "className": "icon-video"
         },
         {

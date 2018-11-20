@@ -10,11 +10,14 @@ import { WarningDialogContentComponent } from './warning-dialog-content/warning-
 import { ProccessDialogComponent } from './proccess-dialog/proccess-dialog.component';
 import { ProccessDialogContentComponent } from './proccess-dialog-content/proccess-dialog-content.component';
 
+import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
+
 @NgModule({
   imports: [
     CommonModule,
     NtxSharedModule,
-    NtxDialogsRoutingModule
+    NtxDialogsRoutingModule,
+    NtxFormsModule
   ],
   declarations: [
     SimpleDialogComponent,

@@ -1,0 +1,17 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "progress-bar";
+
+.#{$block}{
+  &.mat-progress-bar{
+    border-radius: 50px;
+    width: 180px;
+    .mat-progress-bar-buffer{
+      background-color: $color-grey-200;
+      border-radius: 50px;
+    }
+    .mat-progress-bar-fill{
+      border-radius: 50px;
+    }
+  }
+}

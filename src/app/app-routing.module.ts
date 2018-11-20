@@ -52,6 +52,10 @@ const routes: Routes = [
     loadChildren: './ui-pages/panels/panels.module#PanelsModule'
   },
   {
+    path: 'progress bar',
+    loadChildren: './ui-pages/progress-bar/progress-bar.module#ProgressBarModule'
+  },
+  {
     path: 'toolbars',
     loadChildren: './ui-pages/toolbars/toolbars.module#ToolbarsModule'
   },

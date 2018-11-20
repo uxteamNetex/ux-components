@@ -18,7 +18,8 @@ import {
    MatDatepickerModule,
    MatCheckboxModule,
    MatRadioModule,
-   MatSlideToggleModule
+   MatSlideToggleModule,
+   MatProgressBarModule
  } from '@angular/material';
 
 @NgModule({
@@ -40,7 +41,8 @@ import {
     MatDatepickerModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatProgressBarModule
   ],
   declarations: [],
   exports: [
@@ -61,7 +63,8 @@ import {
     MatDatepickerModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatProgressBarModule
   ]
 })
 export class NtxSharedModule { }

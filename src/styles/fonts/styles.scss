@@ -45,6 +45,11 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-view-bounding-box {
+  &:before {
+    content: $icon-view-bounding-box;
+  }
+}
 .icon-archive-solid {
   &:before {
     content: $icon-archive-solid;

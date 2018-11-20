@@ -1,0 +1,13 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card9";
+
+.mat-card{
+  &.#{$block}{
+    border-radius: 4px;
+    box-shadow: $shadow;
+    margin: 0 auto;
+    padding: 0;
+    width: 576px;
+  }
+}

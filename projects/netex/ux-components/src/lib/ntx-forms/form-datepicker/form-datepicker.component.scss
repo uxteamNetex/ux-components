@@ -7,10 +7,10 @@ $block: "form-container";
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
-  .#{$block}__form-half-width{
+  .#{$block}__form-full-width{
     &.mat-form-field{
       &.mat-form-field-appearance-legacy{
-        width: 50%;
+        width: 100%;
         .mat-form-field-wrapper{
           .mat-form-field-flex{
             align-items: center;

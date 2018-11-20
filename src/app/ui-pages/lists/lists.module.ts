@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import {
   NtxCardsModule,
+  NtxMenusModule,
   NtxListsModule
 } from '@netex/ux-components';
 
@@ -16,6 +17,7 @@ import { ListsExamplesComponent } from './examples/lists-examples.component';
     CommonModule,
     ListsRoutingModule,
     NtxCardsModule,
+    NtxMenusModule,
     NtxListsModule
   ],
   declarations: [
