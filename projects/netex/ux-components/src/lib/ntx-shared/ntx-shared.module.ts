@@ -19,7 +19,8 @@ import {
    MatCheckboxModule,
    MatRadioModule,
    MatSlideToggleModule,
-   MatProgressBarModule
+   MatProgressBarModule,
+   MatTreeModule
  } from '@angular/material';
 
 @NgModule({
@@ -42,7 +43,8 @@ import {
     MatCheckboxModule,
     MatRadioModule,
     MatSlideToggleModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTreeModule
   ],
   declarations: [],
   exports: [
@@ -64,7 +66,8 @@ import {
     MatCheckboxModule,
     MatRadioModule,
     MatSlideToggleModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTreeModule
   ]
 })
 export class NtxSharedModule { }

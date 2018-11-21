@@ -48,6 +48,22 @@ const routes: Routes = [
     loadChildren: './ui-pages/forms/forms.module#FormsModule'
   },
   {
+    path: 'icons',
+    loadChildren: './ui-pages/icons/icons.module#IconsModule'
+  },
+  {
+    path: 'lists',
+    loadChildren: './ui-pages/lists/lists.module#ListsModule'
+  },
+  {
+    path: 'menus',
+    loadChildren: './ui-pages/menus/menus.module#MenusModule'
+  },
+  {
+    path: 'paddings',
+    loadChildren: './ui-pages/paddings/paddings.module#PaddingsModule'
+  },
+  {
     path: 'panels',
     loadChildren: './ui-pages/panels/panels.module#PanelsModule'
   },
@@ -60,24 +76,12 @@ const routes: Routes = [
     loadChildren: './ui-pages/toolbars/toolbars.module#ToolbarsModule'
   },
   {
-    path: 'icons',
-    loadChildren: './ui-pages/icons/icons.module#IconsModule'
-  },
-  {
-    path: 'lists',
-    loadChildren: './ui-pages/lists/lists.module#ListsModule'
-  },
-  {
     path: 'tabs',
     loadChildren: './ui-pages/tabs/tabs.module#TabsModule'
   },
   {
-    path: 'menus',
-    loadChildren: './ui-pages/menus/menus.module#MenusModule'
-  },
-  {
-    path: 'paddings',
-    loadChildren: './ui-pages/paddings/paddings.module#PaddingsModule'
+    path: 'trees',
+    loadChildren: './ui-pages/trees/trees.module#TreesModule'
   },
   { path: '',
     redirectTo: '/home',

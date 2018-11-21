@@ -1,0 +1,19 @@
+.tree-container-example{
+  display: flex;
+  height: calc(100vh - 180px);
+  justify-content: flex-start;
+  .tree-box-example{
+    height: 100%;
+    min-width: 356px;
+    max-width: 356px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .tree-content-example{
+    color: #999;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="tree-checked">
+  <mat-tree-node class="tree-checked__mat-tree-node" *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
+    <button mat-icon-button disabled class="tree-checked__mat-tree-node--button"></button>
+    <mat-checkbox class="checklist-leaf-node tree-checked__mat-tree-node--check"
+                  [checked]="checklistSelection.isSelected(node)"
+                  (change)="checkRootNodeSelection(node)">
+                    <mat-icon class="icon-netex icon-folder-closed-solid tree-checked__mat-tree-node--icon"></mat-icon>
+                    <span class="tree-checked__mat-tree-node--title">{{node.item}}</span>
+                </mat-checkbox>
+  </mat-tree-node>
+
+  <mat-tree-node class="tree-checked__mat-tree-node" *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+    <button mat-icon-button matTreeNodeToggle
+            class="tree-checked__mat-tree-node--button"
+            [attr.aria-label]="'toggle ' + node.filename">
+            <mat-icon class="icon-netex tree-checked__mat-tree-node--icon {{treeControl.isExpanded(node) ? 'icon-caret-down' : 'icon-caret-right'}} "></mat-icon>
+    </button>
+    <mat-checkbox class="checklist-leaf-node tree-checked__mat-tree-node--check"
+                  [checked]="checklistSelection.isSelected(node)"
+                  (change)="checkRootNodeSelection(node)">
+                    <mat-icon class="icon-netex icon-folder-closed-solid tree-checked__mat-tree-node--icon"></mat-icon>
+                    <span class="tree-checked__mat-tree-node--title">{{node.item}}</span>
+                </mat-checkbox>
+  </mat-tree-node>
+</mat-tree>

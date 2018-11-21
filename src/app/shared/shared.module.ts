@@ -28,7 +28,8 @@ import {
   NtxDialogsModule,
   NtxFormsModule,
   NtxDragAndDropModule,
-  NtxProgressBarModule
+  NtxProgressBarModule,
+  NtxTreesModule
 } from '@netex/ux-components';
 
 import { AppRoutingModule } from '../app-routing.module';
@@ -76,7 +77,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NtxDialogsModule,
     NtxFormsModule,
     NtxDragAndDropModule,
-    NtxProgressBarModule
+    NtxProgressBarModule,
+    NtxTreesModule
   ],
   declarations: [
     HeaderComponent,

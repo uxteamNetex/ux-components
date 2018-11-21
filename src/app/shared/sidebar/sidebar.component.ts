@@ -20,7 +20,8 @@ const LINKS = [
   "panels",
   "progress bar",
   "tabs",
-  "toolbars"
+  "toolbars",
+  "trees"
 ];
 const LINKSHELPERS = [
   "paddings"
