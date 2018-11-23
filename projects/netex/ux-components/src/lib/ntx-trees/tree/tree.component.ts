@@ -42,7 +42,25 @@ const TREE_DATA = {
     'Subfolder 1 level 2',
     'Subfolder 2 level 2',
     'Subfolder 3 level 2'
-  ]
+  ],
+  'Folder 3': {
+    'Subfolder 1 level 2': null,
+    'Subfolder 2 level 2': null,
+    'Subfolder 3 level 2': null,
+    'Subfolder 4 level 2': {
+      'Subfolder 1 level 2': null,
+      'Subfolder 2 level 2': [
+        'Subfolder 1 level 3',
+        'Subfolder 2 level 3'
+      ],
+      'Subfolder 3 level 2': null
+    }
+  },
+  'Folder 4': {
+    'Subfolder 1 level 2': null,
+    'Subfolder 2 level 2': null,
+    'Subfolder 3 level 2': null
+  },
 };
 
 /**

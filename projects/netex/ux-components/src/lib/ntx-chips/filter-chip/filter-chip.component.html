@@ -1,0 +1,11 @@
+<mat-radio-group class="radiobutton-chip-group">
+
+  <div class="radiobutton-chip-group__chip" *ngFor="let radiobutton of radiobuttons">
+    <mat-radio-button
+      class="radiobutton-chip-group__radiobutton"
+      [value]="radiobutton">
+        {{radiobutton}}
+    </mat-radio-button>
+  </div>
+
+</mat-radio-group>

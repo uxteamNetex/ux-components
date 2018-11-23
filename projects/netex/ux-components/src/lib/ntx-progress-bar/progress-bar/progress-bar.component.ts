@@ -11,6 +11,7 @@ import { ViewEncapsulation } from '@angular/core';
 export class ProgressBarComponent implements OnInit {
 
   @Input() color: string;
+  @Input() value: number;
 
   constructor() { }
 

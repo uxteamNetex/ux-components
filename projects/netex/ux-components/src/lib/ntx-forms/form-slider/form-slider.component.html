@@ -1,0 +1,10 @@
+<div class="slider-container">
+  <mat-slider class="slider-container__slider"
+              #matslider
+              min="0"
+              max="100"
+              [disabled]="disabled"
+              (input)="slider($event)">
+  </mat-slider>
+  <span class="slider-container__value">{{ matslider.value }}%</span>
+</div>

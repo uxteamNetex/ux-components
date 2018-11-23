@@ -1,0 +1,43 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "radiobutton-chip-group";
+
+.#{$block}{
+  .#{$block}__chip{
+    display: inline-block;
+    &.mat-primary{
+      background-color: $color-accent;
+      color: $color-white;
+    }
+    &.mat-accent{
+      background-color: $color-accent;
+      color: $color-white;
+    }
+    .#{$block}__radiobutton{
+      align-items: center;
+      background-color: $color-accent;
+      border-radius: 24px;
+      color: $color-white;
+      cursor: pointer;
+      display: inline-flex;
+      height: 36px;
+      margin: 0 4px;
+      transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+      &.mat-radio-checked{
+        background-color: $color-primary;
+      }
+      .mat-radio-label{
+        .mat-radio-container{
+          display: none;
+        }
+        .mat-radio-label-content{
+          font-size: 13px;
+          height: 36px;
+          line-height: 36px;
+          padding: 0 16px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

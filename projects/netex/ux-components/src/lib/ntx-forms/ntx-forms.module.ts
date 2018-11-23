@@ -13,6 +13,7 @@ import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
 import { FormRadiobuttonComponent } from './form-radiobutton/form-radiobutton.component';
 import { FormSlidetoggleComponent } from './form-slidetoggle/form-slidetoggle.component';
 import { FormCheckboxCircleComponent } from './form-checkbox-circle/form-checkbox-circle.component';
+import { FormSliderComponent } from './form-slider/form-slider.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { FormCheckboxCircleComponent } from './form-checkbox-circle/form-checkbo
     FormCheckboxComponent,
     FormRadiobuttonComponent,
     FormSlidetoggleComponent,
-    FormCheckboxCircleComponent
+    FormCheckboxCircleComponent,
+    FormSliderComponent
   ],
   entryComponents: [
     FormInputComponent,
@@ -43,7 +45,8 @@ import { FormCheckboxCircleComponent } from './form-checkbox-circle/form-checkbo
     FormCheckboxComponent,
     FormRadiobuttonComponent,
     FormSlidetoggleComponent,
-    FormCheckboxCircleComponent
+    FormCheckboxCircleComponent,
+    FormSliderComponent
   ]
 })
 export class NtxFormsModule { }

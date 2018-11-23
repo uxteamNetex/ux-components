@@ -1,0 +1,59 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "slider-container";
+
+.#{$block}{
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  .#{$block}__value{
+    color: $color-grey-800;
+    font-size: $font-size-16;
+    margin-right: 16px;
+    text-align: right;
+    width: 42px;
+  }
+  .#{$block}__slider{
+    width: 260px;
+    &.mat-slider-disabled{
+      cursor: not-allowed;
+      opacity: 0.3;
+      ~ .slider-container__value{
+        opacity: 0.3;
+      }
+      .mat-slider-wrapper{
+        .mat-slider-thumb-container{
+          .mat-slider-thumb{
+            background-color: $color-grey-400;
+          }
+        }
+      }
+    }
+    .mat-slider-wrapper{
+      .mat-slider-track-wrapper{
+        background-color: $color-grey-300;
+        border-radius: 10px;
+        height: 4px;
+        .mat-slider-track-background{
+          background-color: $color-grey-300;
+          height: 4px;
+        }
+        .mat-slider-track-fill{
+          background-color: $color-grey-300;
+          height: 4px;
+        }
+      }
+      .mat-slider-thumb-container{
+        .mat-slider-thumb{
+          background-color: $color-primary;
+          width: 14px;
+          height: 14px;
+          border: none;
+          transform: none;
+          bottom: -8px;
+        }
+      }
+    }
+  }
+}

@@ -1,17 +1,43 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-$block: "progress-bar";
+$block: "progress-bar-container";
 
 .#{$block}{
-  &.mat-progress-bar{
-    border-radius: 50px;
-    width: 180px;
-    .mat-progress-bar-buffer{
-      background-color: $color-grey-200;
+  position: relative;
+  .#{$block}__bolita{
+    background-color: $color-grey-400;
+    border-radius: 2px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    width: 4px;
+  }
+  .#{$block}__bar{
+    &.mat-progress-bar{
       border-radius: 50px;
-    }
-    .mat-progress-bar-fill{
-      border-radius: 50px;
+      height: 4px;
+      width: 180px;
+      &.mat-success{
+        .mat-progress-bar-fill{
+          &:after{
+            background-color: $color-success;
+          }
+        }
+      }
+      &.mat-error{
+        .mat-progress-bar-fill{
+          &:after{
+            background-color: $color-error;
+          }
+        }
+      }
+      .mat-progress-bar-buffer{
+        background-color: $color-grey-200;
+        border-radius: 50px;
+      }
+      .mat-progress-bar-fill{
+        border-radius: 50px;
+      }
     }
   }
 }
