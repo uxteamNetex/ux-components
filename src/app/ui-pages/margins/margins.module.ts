@@ -5,14 +5,14 @@ import { SharedModule } from '../../shared/shared.module';
 
 import { MatTableModule } from '@angular/material';
 
-import { PaddingsRoutingModule } from './paddings-routing.module';
+import { MarginsRoutingModule } from './margins-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    PaddingsRoutingModule,
+    MarginsRoutingModule,
     MatTableModule
   ],
   declarations: [
@@ -20,4 +20,4 @@ import { ExamplesComponent } from './examples/examples.component';
     ExamplesComponent
   ]
 })
-export class PaddingsModule { }
+export class MarginsModule { }

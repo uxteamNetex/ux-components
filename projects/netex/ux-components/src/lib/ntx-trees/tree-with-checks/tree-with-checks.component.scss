@@ -1,0 +1,49 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "tree-check";
+
+.#{$block}{
+  &.mat-tree{
+    background-color: transparent;
+    padding: 12px;
+    .#{$block}__mat-tree-node{
+      cursor: pointer;
+      padding-left: 4px;
+      &:hover{
+        background-color: $color-grey-300;
+      }
+      .#{$block}__mat-tree-node--button{
+        margin-right: 4px;
+        &[disabled]{
+          &:hover{
+            background-color: transparent;
+          }
+        }
+        &:hover{
+          background-color: $icon-button-hover;
+        }
+        .#{$block}__mat-tree-node--icon{
+          color: $color-grey-700;
+          margin: 0;
+        }
+      }
+      .#{$block}__mat-tree-node--check{
+        margin-right: 12px;
+      }
+      .#{$block}__mat-tree-node--icon{
+        color: $color-grey-600;
+        margin-right: 4px;
+      }
+      .#{$block}__mat-tree-node--title{
+        color: $color-grey-700;
+        line-height: 16px;
+        max-height: 32px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}

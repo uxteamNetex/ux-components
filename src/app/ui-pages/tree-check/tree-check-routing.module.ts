@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
+import { DocumentationComponent } from './documentation/documentation.component';
 
 const routes: Routes = [
   {
@@ -13,9 +13,9 @@ const routes: Routes = [
       component: DocumentationComponent
   },
   {
-    path: '',
-    redirectTo: 'examples',
-    pathMatch: 'full'
+      path: '',
+      redirectTo: 'examples',
+      pathMatch: 'full'
   }
 ];
 
@@ -23,4 +23,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PaddingsRoutingModule { }
+export class TreeCheckRoutingModule { }

@@ -2,9 +2,78 @@
 @import "colors";
 @import "mixings";
 
+h1{
+  color: $color-grey-800;
+  font-family: latoLight;
+  font-size: $font-size-42;
+  line-height: 52px;
+  margin: 0;
+}
+h2{
+  color: $color-grey-800;
+  font-family: latoLight;
+  font-size: $font-size-36;
+  line-height: 44px;
+  margin: 0;
+}
+h3{
+  color: $color-grey-800;
+  font-family: lato;
+  font-size: $font-size-28;
+  line-height: 36px;
+  margin: 0;
+}
+h4{
+  color: $color-grey-800;
+  font-family: latoBold;
+  font-size: $font-size-24;
+  line-height: 30px;
+  margin: 0;
+}
+h5{
+  color: $color-grey-800;
+  font-family: latoBold;
+  font-size: $font-size-18;
+  line-height: 24px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
 $block: "utils";
 
 .#{$block} {
+  //Textos
+  &--title-large {
+    color: $color-grey-800;
+    font-family: latoBold;
+    font-size: $font-size-20;
+    line-height: 26px;
+    margin: 0;
+  }
+  &--title-medium {
+    color: $color-grey-800;
+    font-family: latoBold;
+    font-size: $font-size-18;
+    line-height: 22px;
+    margin: 0;
+  }
+  &--title-small {
+    color: $color-grey-800;
+    font-family: latoBold;
+    font-size: $font-size-16;
+    line-height: 20px;
+    margin: 0;
+  }
+  &--row-title {
+    color: $color-grey-700;
+    font-family: latoSemibold;
+    font-size: $font-size-18;
+    line-height: 20px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
 	&--uppercase {
 		text-transform: uppercase;
 	}
@@ -38,7 +107,6 @@ $block: "utils";
   &--margin-0 {
 		margin: $separation-0 !important;
   }
-
 	&--margin-top-0 {
 		margin-top: $separation-0 !important;
 	}
@@ -59,11 +127,13 @@ $block: "utils";
 	}
 	&--margin-top-24 {
 		margin-top: $separation-24;
+  }
+  &--margin-top-32 {
+		margin-top: $separation-32;
 	}
 	&--margin-top-60 {
 		margin-top: $separation-60;
 	}
-
 	&--margin-right-0 {
 		margin-right: $separation-0 !important;
 	}
@@ -84,8 +154,10 @@ $block: "utils";
 	}
 	&--margin-right-24 {
 		margin-right: $separation-24;
+  }
+  &--margin-right-32 {
+		margin-right: $separation-32;
 	}
-
 	&--margin-bottom-0 {
 		margin-bottom: $separation-0 !important;
 	}
@@ -106,8 +178,10 @@ $block: "utils";
 	}
 	&--margin-bottom-24 {
 		margin-bottom: $separation-24;
+  }
+  &--margin-bottom-32 {
+		margin-bottom: $separation-32;
 	}
-
 	&--margin-left-0 {
 		margin-left: $separation-0 !important;
 	}
@@ -128,13 +202,15 @@ $block: "utils";
 	}
 	&--margin-left-24 {
 		margin-left: $separation-24;
+  }
+  &--margin-left-32 {
+		margin-left: $separation-32;
 	}
 
   //Paddings
   &--padding-0 {
 		padding: $separation-0 !important;
   }
-
 	&--padding-top-0 {
 		padding-top: $separation-0 !important;
 	}
@@ -156,7 +232,6 @@ $block: "utils";
 	&--padding-top-24 {
 		padding-top: $separation-24;
 	}
-
 	&--padding-right-0 {
 		padding-right: $separation-0 !important;
 	}
@@ -178,7 +253,6 @@ $block: "utils";
 	&--padding-right-24 {
 		padding-right: $separation-24;
 	}
-
 	&--padding-bottom-0 {
 		padding-bottom: $separation-0 !important;
 	}
@@ -200,7 +274,6 @@ $block: "utils";
 	&--padding-bottom-24 {
 		padding-bottom: $separation-24;
 	}
-
 	&--padding-left-0 {
 		padding-left: $separation-0 !important;
 	}

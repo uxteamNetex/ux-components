@@ -363,7 +363,13 @@
             "className": "icon-file-abc"
         },
         {
+            "className": "icon-file-arrow-up"
+        },
+        {
             "className": "icon-file-pdf"
+        },
+        {
+            "className": "icon-file-plus"
         },
         {
             "className": "icon-file-zip"
@@ -382,6 +388,9 @@
         },
         {
             "className": "icon-folder-closed-solid"
+        },
+        {
+            "className": "icon-folder-plus"
         },
         {
             "className": "icon-forbidden"

@@ -1,6 +1,6 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-$block: "tree-checked";
+$block: "tree-selected";
 
 .#{$block}{
   &.mat-tree{
@@ -28,9 +28,9 @@ $block: "tree-checked";
         }
       }
       .#{$block}__mat-tree-node--check{
-        &.mat-checkbox-checked{
-          .mat-checkbox-layout{
-            .mat-checkbox-label{
+        &.mat-radio-checked{
+          .mat-radio-label{
+            .mat-radio-label-content{
               .#{$block}__mat-tree-node--icon{
                 color: $color-primary;
               }
@@ -41,12 +41,12 @@ $block: "tree-checked";
             }
           }
         }
-        .mat-checkbox-layout{
+        .mat-radio-label{
           white-space: initial;
-          .mat-checkbox-inner-container{
+          .mat-radio-container{
             display: none;
           }
-          .mat-checkbox-label{
+          .mat-radio-label-content{
             display: flex;
             height: 48px;
             align-items: center;

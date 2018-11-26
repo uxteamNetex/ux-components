@@ -45,6 +45,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-folder-plus {
+  &:before {
+    content: $icon-folder-plus;
+  }
+}
+.icon-file-arrow-up {
+  &:before {
+    content: $icon-file-arrow-up;
+  }
+}
+.icon-file-plus {
+  &:before {
+    content: $icon-file-plus;
+  }
+}
+.icon-view-bounding-box {
+  &:before {
+    content: $icon-view-bounding-box;
+  }
+}
 .icon-archive-solid {
   &:before {
     content: $icon-archive-solid;
@@ -1156,10 +1176,5 @@
 .icon-user-settings {
   &:before {
     content: $icon-user-settings;
-  }
-}
-.icon-view-bounding-box {
-  &:before {
-    content: $icon-view-bounding-box;
   }
 }

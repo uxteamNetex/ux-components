@@ -48,12 +48,20 @@ const routes: Routes = [
     loadChildren: './ui-pages/forms/forms.module#FormsModule'
   },
   {
+    path: 'headings and texts',
+    loadChildren: './ui-pages/headings-and-texts/headings-and-texts.module#HeadingsAndTextsModule'
+  },
+  {
     path: 'icons',
     loadChildren: './ui-pages/icons/icons.module#IconsModule'
   },
   {
     path: 'lists',
     loadChildren: './ui-pages/lists/lists.module#ListsModule'
+  },
+  {
+    path: 'margins',
+    loadChildren: './ui-pages/margins/margins.module#MarginsModule'
   },
   {
     path: 'menus',
@@ -80,8 +88,12 @@ const routes: Routes = [
     loadChildren: './ui-pages/tabs/tabs.module#TabsModule'
   },
   {
-    path: 'trees',
+    path: 'tree',
     loadChildren: './ui-pages/trees/trees.module#TreesModule'
+  },
+  {
+    path: 'tree check',
+    loadChildren: './ui-pages/tree-check/tree-check.module#TreeCheckModule'
   },
   { path: '',
     redirectTo: '/home',

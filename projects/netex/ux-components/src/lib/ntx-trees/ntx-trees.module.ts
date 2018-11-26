@@ -4,6 +4,7 @@ import { NtxSharedModule } from '../ntx-shared/ntx-shared.module';
 
 import { NtxTreesRoutingModule } from './ntx-trees-routing.module';
 import { TreeComponent } from './tree/tree.component';
+import { TreeWithChecksComponent } from './tree-with-checks/tree-with-checks.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,7 @@ import { TreeComponent } from './tree/tree.component';
     NtxTreesRoutingModule,
     NtxSharedModule
   ],
-  declarations: [TreeComponent],
-  exports: [TreeComponent]
+  declarations: [TreeComponent, TreeWithChecksComponent],
+  exports: [TreeComponent, TreeWithChecksComponent]
 })
 export class NtxTreesModule { }

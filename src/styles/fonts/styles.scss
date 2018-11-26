@@ -45,6 +45,21 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-folder-plus {
+  &:before {
+    content: $icon-folder-plus;
+  }
+}
+.icon-file-arrow-up {
+  &:before {
+    content: $icon-file-arrow-up;
+  }
+}
+.icon-file-plus {
+  &:before {
+    content: $icon-file-plus;
+  }
+}
 .icon-view-bounding-box {
   &:before {
     content: $icon-view-bounding-box;

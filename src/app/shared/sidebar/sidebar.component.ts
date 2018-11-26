@@ -21,9 +21,12 @@ const LINKS = [
   "progress bar",
   "tabs",
   "toolbars",
-  "trees"
+  "tree",
+  "tree check"
 ];
 const LINKSHELPERS = [
+  "headings and texts",
+  "margins",
   "paddings"
 ];
 

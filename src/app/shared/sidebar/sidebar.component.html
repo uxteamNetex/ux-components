@@ -1,5 +1,7 @@
 <mat-nav-list disableRipple class="sidebar__container">
   <p class="sidebar__title">Netex Material UI Library</p>
+
+  <label class="sidebar__section-title">Components</label>
   <a class="sidebar__links" *ngFor="let link of links"
     mat-list-item
     [routerLink]=link
@@ -7,6 +9,7 @@
 
   <mat-divider class="utils--margin-bottom-8 utils--margin-top-8"></mat-divider>
 
+  <label class="sidebar__section-title">Helpers</label>
   <a class="sidebar__links" *ngFor="let linkhelpers of linkshelpers"
     mat-list-item
     [routerLink]=linkhelpers

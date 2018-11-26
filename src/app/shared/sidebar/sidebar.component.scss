@@ -11,6 +11,14 @@
     font-size: $font-size-18;
     margin: 16px 24px;
   }
+  &__section-title{
+    color: $color-grey-800;
+    display: block;
+    font-family: latoBold;
+    font-size: $font-size-14;
+    margin: 32px 24px 4px;
+    text-transform: uppercase;
+  }
   &__links {
     color: $color-grey-700;
     font-size: $font-size-16;

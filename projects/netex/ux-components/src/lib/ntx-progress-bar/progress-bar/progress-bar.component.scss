@@ -8,6 +8,7 @@ $block: "progress-bar-container";
     background-color: $color-grey-400;
     border-radius: 2px;
     height: 4px;
+    opacity: 0;
     position: absolute;
     top: 0;
     width: 4px;
@@ -17,6 +18,11 @@ $block: "progress-bar-container";
       border-radius: 50px;
       height: 4px;
       width: 180px;
+      &[aria-valuenow="0"]{
+        ~ .#{$block}__bolita{
+          opacity: 1;
+        }
+      }
       &.mat-success{
         .mat-progress-bar-fill{
           &:after{
