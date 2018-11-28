@@ -10,6 +10,11 @@
     margin: 40px 16px;
     max-width: calc(12% - 16px);
     min-width: calc(12% - 16px);
+    position: relative;
+    .mat-icon{
+      display: list-item;
+      overflow: hidden;
+    }
     label{
       font-size: 14px;
       margin-top: 12px;
