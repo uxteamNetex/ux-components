@@ -7,8 +7,9 @@
   padding: 16px 24px 0;
   width: 560px;
   .simple-dialog-title{
-    color: $color-black;
+    color: $color-grey-800;
     font-family: latoBold;
+    font-size: $font-size-20;
     margin-bottom: 16px;
   }
   .simple-dialog-content{
@@ -16,12 +17,14 @@
     .simple-dialog-content__text{
       color: $color-grey-600;
       font-family: lato;
+      font-size: $font-size-16;
       line-height: 24px;
       margin: 0;
     }
   }
   .simple-dialog-actions{
     margin: 0 -16px 8px 0;
+    min-height: inherit;
     padding: 0;
     .simple-dialog-actions__button{
       text-transform: uppercase;

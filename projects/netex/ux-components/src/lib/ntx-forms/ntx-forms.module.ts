@@ -15,6 +15,9 @@ import { FormSlidetoggleComponent } from './form-slidetoggle/form-slidetoggle.co
 import { FormCheckboxCircleComponent } from './form-checkbox-circle/form-checkbox-circle.component';
 import { FormSliderComponent } from './form-slider/form-slider.component';
 import { FormSelectComponent } from './form-select/form-select.component';
+import { FormSelectButtonComponent } from './form-select-button/form-select-button.component';
+import { FormSelectNoBorderComponent } from './form-select-no-border/form-select-no-border.component';
+import { FormSelectBorderButtonComponent } from './form-select-border-button/form-select-border-button.component';
 
 @NgModule({
   imports: [
@@ -34,7 +37,10 @@ import { FormSelectComponent } from './form-select/form-select.component';
     FormSlidetoggleComponent,
     FormCheckboxCircleComponent,
     FormSliderComponent,
-    FormSelectComponent
+    FormSelectComponent,
+    FormSelectButtonComponent,
+    FormSelectNoBorderComponent,
+    FormSelectBorderButtonComponent
   ],
   entryComponents: [
     FormInputComponent,
@@ -49,7 +55,10 @@ import { FormSelectComponent } from './form-select/form-select.component';
     FormSlidetoggleComponent,
     FormCheckboxCircleComponent,
     FormSliderComponent,
-    FormSelectComponent
+    FormSelectComponent,
+    FormSelectButtonComponent,
+    FormSelectNoBorderComponent,
+    FormSelectBorderButtonComponent
   ]
 })
 export class NtxFormsModule { }

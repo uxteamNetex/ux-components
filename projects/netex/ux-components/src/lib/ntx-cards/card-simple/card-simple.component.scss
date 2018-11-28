@@ -6,5 +6,12 @@ $block: "card-simple";
     &.#{$block}{
         border-radius: 4px;
         box-shadow: $shadow;
+        .mat-card-header{
+          .mat-card-header-text{
+            .mat-card-title{
+               font-size: $font-size-16;
+            }
+          }
+        }
     }
 }

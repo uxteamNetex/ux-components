@@ -1,16 +1,16 @@
-<mat-nav-list disableRipple class="sidebar__container">
-  <p class="sidebar__title">Netex Material UI Library</p>
+<mat-nav-list disableRipple class="sidebar-container">
+  <p class="sidebar-container__title">Netex Material UI Library</p>
 
-  <label class="sidebar__section-title">Components</label>
-  <a class="sidebar__links" *ngFor="let link of links"
+  <label class="sidebar-container__section-title">Components</label>
+  <a class="sidebar-container__links" *ngFor="let link of links"
     mat-list-item
     [routerLink]=link
     (click)="setPath(link)">{{ link | titlecase }}</a>
 
   <mat-divider class="utils--margin-bottom-8 utils--margin-top-8"></mat-divider>
 
-  <label class="sidebar__section-title">Helpers</label>
-  <a class="sidebar__links" *ngFor="let linkhelpers of linkshelpers"
+  <label class="sidebar-container__section-title">Helpers</label>
+  <a class="sidebar-container__links" *ngFor="let linkhelpers of linkshelpers"
     mat-list-item
     [routerLink]=linkhelpers
     (click)="setPath(linkhelpers)">{{ linkhelpers | titlecase }}</a>

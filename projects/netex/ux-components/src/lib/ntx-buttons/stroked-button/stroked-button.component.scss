@@ -7,6 +7,7 @@
   margin: 0 4px;
   text-transform: uppercase;
   &.mat-primary{
+    border-color: $color-primary;
     &:hover{
       background-color: $icon-button-hover;
     }

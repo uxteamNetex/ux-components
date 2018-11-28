@@ -1,7 +1,7 @@
 <form class="form-container">
 
-  <mat-form-field class="form-container__form-full-width form-select">
-    <mat-select placeholder="Choose an option" class="form-container__form-select" [disabled]="disableSelect.value">
+  <mat-form-field class="form-container__form-full-width select-no-border">
+    <mat-select class="form-container__form-select-no-border" [(value)]="selected" [disabled]="disableSelect.value">
       <mat-option *ngFor="let option of options" [value]="option.value" [disabled]="option.disabled">
         {{option.viewValue}}
       </mat-option>
@@ -9,6 +9,3 @@
   </mat-form-field>
 
 </form>
-
-
-

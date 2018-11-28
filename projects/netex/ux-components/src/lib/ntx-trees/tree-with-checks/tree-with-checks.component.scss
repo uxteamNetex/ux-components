@@ -28,7 +28,30 @@ $block: "tree-check";
         }
       }
       .#{$block}__mat-tree-node--check{
-        margin-right: 12px;
+        &.mat-radio-button{
+          margin-right: 12px;
+          .mat-radio-container{
+            .mat-radio-outer-circle{
+              border-color: $color-grey-600;
+              border-width: 1px;
+            }
+            .mat-radio-inner-circle{
+              height: 24px;
+              left: -2px;
+              top: -2px;
+              width: 24px;
+            }
+          }
+        }
+        &.mat-checkbox{
+          margin-right: 12px;
+          .mat-checkbox-inner-container{
+            .mat-checkbox-frame{
+              border-color: $color-grey-600;
+              border-width: 1px;
+            }
+          }
+        }
       }
       .#{$block}__mat-tree-node--icon{
         color: $color-grey-600;

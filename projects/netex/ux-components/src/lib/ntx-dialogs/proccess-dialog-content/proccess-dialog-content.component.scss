@@ -43,7 +43,7 @@
     .proccess-dialog-content__selects{
       display: flex;
       justify-content: center;
-      margin-top: 24px;
+      margin-top: 40px;
       > *{
         margin: 0 20px;
       }
@@ -51,6 +51,7 @@
   }
   .proccess-dialog-actions{
     margin: 0 -16px 8px 0;
+    min-height: inherit;
     padding: 0;
     .proccess-dialog-actions__button{
       text-transform: uppercase;

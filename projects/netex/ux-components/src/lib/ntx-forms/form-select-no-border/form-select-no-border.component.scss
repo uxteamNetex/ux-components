@@ -1,0 +1,47 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "form-container";
+
+.#{$block}{
+  min-width: 150px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  .#{$block}__form-full-width{
+    &.mat-form-field{
+      &.mat-form-field-appearance-legacy{
+        width: 100%;
+        &.select-no-border{
+          &.mat-focused{
+            .mat-form-field-ripple{
+              background-color: transparent;
+            }
+          }
+          .mat-form-field-wrapper{
+            .mat-form-field-flex{
+              .mat-form-field-infix{
+                border-top: 0;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                .#{$block}__form-select-no-border{
+                  font-family: lato;
+                  font-size: $font-size-14;
+                  line-height: 19px;
+                  .mat-select-trigger{
+                    .mat-select-value{
+                      margin-right: 8px;
+                    }
+                  }
+                }
+              }
+            }
+            .mat-form-field-underline{
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

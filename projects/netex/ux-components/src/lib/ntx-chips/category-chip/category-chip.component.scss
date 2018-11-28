@@ -4,6 +4,9 @@ $block: "category-chip-container";
 
 .mat-chip-list{
   &.#{$block}{
+    &:focus{
+      outline: none;
+    }
     .#{$block}__chip{
       &.mat-primary{
         background-color: $color-primary;

@@ -30,6 +30,11 @@
   flex-direction: column;
   margin: 40px auto;
   ntx-card-simple{
+    &.white-content{
+      mat-card{
+        background-color: $color-grey-300;
+      }
+    }
     &:first-of-type{
       mat-card{
         margin: 0;

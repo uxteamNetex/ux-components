@@ -4,7 +4,13 @@ $block: "image-chip-container";
 
 .mat-chip-list{
   &.#{$block}{
+    &:focus{
+      outline: none;
+    }
     .#{$block}__chip{
+      border-radius: 40px;
+      height: 44px;
+      padding: 0px 8px 0px 4px;
       &.mat-primary{
         background-color: $color-primary;
         color: $color-white;
@@ -13,7 +19,6 @@ $block: "image-chip-container";
         background-color: $color-accent;
         color: $color-white;
       }
-      padding: 4px 8px 4px 4px;
       .#{$block}__chip-image{
         border-radius: 50%;
         height: 36px;

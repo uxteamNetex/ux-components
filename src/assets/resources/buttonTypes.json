@@ -16,14 +16,6 @@
         "selector": "<ntx-raised-icon-button>"
     },
     {
-      "label": "borde",
-      "selector": "<ntx-stroked-button>"
-    },
-    {
-      "label": "borde con icono",
-      "selector": "<ntx-stroked-icon-button>"
-    },
-    {
         "label": "icono",
         "selector": "<ntx-icon-button>"
     },

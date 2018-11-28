@@ -6,12 +6,17 @@ import { ToolbarsExamplesComponent } from './examples/toolbar-examples.component
 import { ToolbarsRoutingModule } from './toolbars-routing.module';
 
 import {
-  NtxToolbarModule, NtxCardsModule
+  NtxToolbarModule,
+  NtxMenusModule,
+  NtxCardsModule,
+  NtxListsModule
 } from '@netex/ux-components';
 @NgModule({
   imports: [
     CommonModule,
     NtxCardsModule,
+    NtxMenusModule,
+    NtxListsModule,
     NtxToolbarModule,
     ToolbarsRoutingModule
   ],

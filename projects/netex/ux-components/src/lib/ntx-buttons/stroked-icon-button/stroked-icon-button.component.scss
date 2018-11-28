@@ -9,6 +9,7 @@
     padding: 0 16px 0 12px;
     text-transform: uppercase;
     &.mat-primary{
+      border-color: $color-primary;
       &:hover{
         background-color: $icon-button-hover;
       }

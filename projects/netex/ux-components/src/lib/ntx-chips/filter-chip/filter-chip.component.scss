@@ -3,6 +3,9 @@
 $block: "radiobutton-chip-group";
 
 .#{$block}{
+  &:focus{
+    outline: none;
+  }
   .#{$block}__chip{
     display: inline-block;
     &.mat-primary{
