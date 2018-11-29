@@ -84,6 +84,10 @@ const routes: Routes = [
     loadChildren: './ui-pages/toolbars/toolbars.module#ToolbarsModule'
   },
   {
+    path: 'table selectable',
+    loadChildren: './ui-pages/table-selectable/table-selectable.module#TableSelectableModule'
+  },
+  {
     path: 'tabs',
     loadChildren: './ui-pages/tabs/tabs.module#TabsModule'
   },

@@ -4,18 +4,27 @@ import { NtxSharedModule } from '../ntx-shared/ntx-shared.module';
 
 import { NtxTablesRoutingModule } from './ntx-tables-routing.module';
 import { BasicTableComponent } from './basic-table/basic-table.component';
+import { SelectableTableComponent } from './selectable-table/selectable-table.component';
+
+import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
+import { MultiSelectOptionsComponent } from './multi-select-options/multi-select-options.component';
 
 @NgModule({
   imports: [
     CommonModule,
     NtxSharedModule,
-    NtxTablesRoutingModule
+    NtxTablesRoutingModule,
+    NtxMenusModule
   ],
   declarations: [
-    BasicTableComponent
+    BasicTableComponent,
+    SelectableTableComponent,
+    MultiSelectOptionsComponent
   ],
   exports: [
-    BasicTableComponent
+    BasicTableComponent,
+    SelectableTableComponent,
+    MultiSelectOptionsComponent
   ]
 })
 export class NtxTablesModule { }

@@ -19,6 +19,7 @@ const LINKS = [
   "menus",
   "panels",
   "progress bar",
+  "table selectable",
   "tabs",
   "toolbars",
   "tree",

@@ -1,0 +1,44 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list-one-line-navigable";
+
+.#{$block}{
+  &.mat-list-base{
+    padding: 0;
+    .#{$block}__option{
+      height: 54px;
+      .mat-list-item-content{
+        padding: 0 8px 0 16px;
+        .mat-pseudo-checkbox{
+          display: none;
+        }
+        .mat-list-text{
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0;
+          width: 100%;
+          .#{$block}__button{
+            &:hover{
+              background-color: $icon-button-hover;
+            }
+          }
+        }
+        .#{$block}__option--image{
+          align-items: center;
+          background-color: $color-grey-400;
+          border-radius: 40px;
+          display: flex;
+          height: 40px;
+          justify-content: center;
+          width: 40px;
+          .#{$block}__option--initial{
+            color: $color-white;
+            font-size: $font-size-16;
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,8 +9,16 @@ $block: "tree-selected";
     .#{$block}__mat-tree-node{
       cursor: pointer;
       padding-left: 4px;
+      position: relative;
       &:hover{
         background-color: $color-grey-300;
+        ntx-menu-options{
+          .menu-options-button{
+            &.mat-icon-button{
+              display: inline-block;
+            }
+          }
+        }
       }
       .#{$block}__mat-tree-node--button{
         margin-right: 4px;
@@ -47,9 +55,10 @@ $block: "tree-selected";
             display: none;
           }
           .mat-radio-label-content{
+            align-items: center;
             display: flex;
             height: 48px;
-            align-items: center;
+            padding-right: 48px;
             .#{$block}__mat-tree-node--icon{
               color: $color-grey-600;
               margin-right: 4px;
@@ -64,6 +73,21 @@ $block: "tree-selected";
               /* autoprefixer: off */
               -webkit-box-orient: vertical;
             }
+          }
+        }
+      }
+      ntx-menu-options{
+        position: absolute;
+        right: 0;
+        .menu-options-button{
+          &.mat-icon-button{
+            &[aria-expanded="true"]{
+              display: inline-block;
+            }
+            display: none;
+            height: 40px;
+            line-height: 40px;
+            width: 40px;
           }
         }
       }

@@ -6,9 +6,12 @@ import { NtxListsRoutingModule } from './ntx-lists-routing.module';
 import { ListTwoLinesAvatarComponent } from './list-two-lines-avatar/list-two-lines-avatar.component';
 import { ListMultilinesIconComponent } from './list-multilines-icon/list-multilines-icon.component';
 import { ListOneLineOptionsComponent } from './list-one-line-options/list-one-line-options.component';
+import { ListOneLineNavigableComponent } from './list-one-line-navigable/list-one-line-navigable.component';
 
+import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.module';
+
 
 
 @NgModule({
@@ -17,17 +20,20 @@ import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.modul
     NtxSharedModule,
     NtxProgressBarModule,
     NtxMenusModule,
-    NtxListsRoutingModule
+    NtxListsRoutingModule,
+    NtxButtonsModule
   ],
   declarations: [
     ListTwoLinesAvatarComponent,
     ListMultilinesIconComponent,
-    ListOneLineOptionsComponent
+    ListOneLineOptionsComponent,
+    ListOneLineNavigableComponent
   ],
   exports: [
     ListTwoLinesAvatarComponent,
     ListMultilinesIconComponent,
-    ListOneLineOptionsComponent
+    ListOneLineOptionsComponent,
+    ListOneLineNavigableComponent
   ]
 })
 export class NtxListsModule { }

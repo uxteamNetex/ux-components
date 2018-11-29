@@ -22,7 +22,8 @@ import {
    MatProgressBarModule,
    MatTreeModule,
    MatSliderModule,
-   MatSelectModule
+   MatSelectModule,
+   MatPaginatorModule
  } from '@angular/material';
 
 @NgModule({
@@ -48,7 +49,8 @@ import {
     MatProgressBarModule,
     MatTreeModule,
     MatSliderModule,
-    MatSelectModule
+    MatSelectModule,
+    MatPaginatorModule
   ],
   declarations: [],
   exports: [
@@ -73,7 +75,8 @@ import {
     MatProgressBarModule,
     MatTreeModule,
     MatSliderModule,
-    MatSelectModule
+    MatSelectModule,
+    MatPaginatorModule
   ]
 })
 export class NtxSharedModule { }
