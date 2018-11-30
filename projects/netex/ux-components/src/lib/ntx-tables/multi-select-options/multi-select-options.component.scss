@@ -25,4 +25,9 @@ $block: "multi-select-header";
       background: $icon-button-hover;
     }
   }
+  .menu-options-button{
+    &.mat-icon-button{
+      color: $color-white;
+    }
+  }
 }

@@ -41,81 +41,86 @@ $block: "table-selectable";
   }
 
   /*Table*/
-  .#{$block}{
-    width: 100%;
-    .#{$block}__header{
-      background-color: $color-table-header-background;
-      color: $color-table-header-text;
-      font-family: LatoSemibold;
-      font-size: $font-size-12;
-      height: $tableHeaderHeight;
-      text-transform: uppercase;
-      th{
-        &.mat-header-cell{
-          border-bottom: none;
-          padding: 0 12px;
-          &:first-of-type{
-            padding: 0 24px;
-            width: 24px;
-          }
-          .mat-checkbox{
-            &.mat-checkbox-disabled{
-              cursor: not-allowed;
-              opacity: 0.5;
-              .mat-checkbox-inner-container{
-                background-color: $color-grey-200;
-              }
+  .table-container__table{
+    min-width: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    .#{$block}{
+      width: 100%;
+      .#{$block}__header{
+        background-color: $color-table-header-background;
+        color: $color-table-header-text;
+        font-family: LatoSemibold;
+        font-size: $font-size-12;
+        height: $tableHeaderHeight;
+        text-transform: uppercase;
+        th{
+          &.mat-header-cell{
+            border-bottom: none;
+            padding: 0 12px;
+            &:first-of-type{
+              padding: 0 24px;
+              width: 24px;
             }
-            .mat-checkbox-inner-container{
-              .mat-checkbox-frame{
-                border-color: $color-grey-600;
-                border-width: 1px;
+            .mat-checkbox{
+              &.mat-checkbox-disabled{
+                cursor: not-allowed;
+                opacity: 0.5;
+                .mat-checkbox-inner-container{
+                  background-color: $color-grey-200;
+                }
+              }
+              .mat-checkbox-inner-container{
+                .mat-checkbox-frame{
+                  border-color: $color-grey-600;
+                  border-width: 1px;
+                }
               }
             }
           }
         }
       }
-    }
-    .#{$block}__row{
-      height: $tableRowHeight;
-      &:hover{
-        background-color: $color-grey-100;
-      }
-      td{
-        &.mat-cell{
-          color: $color-grey-700;
-          max-width: 200px;
-          padding: 0 12px;
-          &:first-of-type{
-            padding: 0 24px;
-            width: 24px;
-          }
-          .mat-checkbox{
-            &.mat-checkbox-disabled{
-              cursor: not-allowed;
-              opacity: 0.5;
+      .#{$block}__row{
+        height: $tableRowHeight;
+        &:hover{
+          background-color: $color-grey-100;
+        }
+        td{
+          &.mat-cell{
+            color: $color-grey-700;
+            max-width: 148px;
+            padding: 0 12px;
+            &:first-of-type{
+              padding: 0 24px;
+              width: 24px;
+            }
+            .mat-checkbox{
+              &.mat-checkbox-disabled{
+                cursor: not-allowed;
+                opacity: 0.5;
+                .mat-checkbox-inner-container{
+                  background-color: $color-grey-200;
+                }
+              }
               .mat-checkbox-inner-container{
-                background-color: $color-grey-200;
+                .mat-checkbox-frame{
+                  border-color: $color-grey-600;
+                  border-width: 1px;
+                }
               }
             }
-            .mat-checkbox-inner-container{
-              .mat-checkbox-frame{
-                border-color: $color-grey-600;
-                border-width: 1px;
-              }
+            span{
+              display: block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
             }
-          }
-          span{
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-          }
-          .mat-icon-button{
-            &.menu-options-button{
-              height: 40px;
-              line-height: 40px;
-              width: 40px;
+            .mat-icon-button{
+              &.menu-options-button{
+                height: 40px;
+                line-height: 40px;
+                width: 40px;
+              }
             }
           }
         }
