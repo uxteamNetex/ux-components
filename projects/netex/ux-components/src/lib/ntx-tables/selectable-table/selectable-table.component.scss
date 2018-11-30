@@ -9,7 +9,8 @@ $block: "table-selectable";
   .table-container__header{
     background-color: $color-white;
     border-radius: 4px 4px 0 0;
-		height: $tableHeaderOptionsHeight;
+    height: $tableHeaderOptionsHeight;
+    position: relative;
     .table-container__header--items{
       align-items: center;
       display: flex;
@@ -33,6 +34,9 @@ $block: "table-selectable";
     }
     .table-container__header--options{
       height: $tableHeaderOptionsHeight;
+      position: absolute;
+      top: 0px;
+      width: 100%;
     }
   }
 

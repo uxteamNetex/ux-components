@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NtxSharedModule } from '../ntx-shared/ntx-shared.module';
+import { FormsModule } from '@angular/forms';
 
 import { NtxTablesRoutingModule } from './ntx-tables-routing.module';
 import { BasicTableComponent } from './basic-table/basic-table.component';
@@ -14,7 +15,8 @@ import { MultiSelectOptionsComponent } from './multi-select-options/multi-select
     CommonModule,
     NtxSharedModule,
     NtxTablesRoutingModule,
-    NtxMenusModule
+    NtxMenusModule,
+    FormsModule
   ],
   declarations: [
     BasicTableComponent,

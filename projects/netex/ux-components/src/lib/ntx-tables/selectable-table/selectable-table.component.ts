@@ -4,7 +4,6 @@ import { MatPaginator, MatTableDataSource } from '@angular/material';
 import { ViewEncapsulation } from '@angular/core';
 import { Input } from '@angular/core';
 
-
 export interface PeriodicElement {
   name: string;
   project: string;
@@ -60,12 +59,23 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class SelectableTableComponent implements OnInit {
 
+  show = false;
+  checkboxValue: boolean;
+
   @Input() color: string;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   displayedColumns: string[] = ['select', 'name', 'project', 'type', 'modification', 'options'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
+
+  showMultiselecToolbar() {
+    if (!this.checkboxValue) {
+      this.show = false;
+    } else {
+      this.show = true;
+    }
+  }
 
   /** Whether the number of selected elements matches the total number of rows. */
   isAllSelected() {

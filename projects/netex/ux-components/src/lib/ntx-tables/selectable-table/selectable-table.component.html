@@ -10,8 +10,7 @@
       </div>
     </div>
     <div class="table-container__header--options">
-      <ntx-multi-select-options [selectAllActive]="false">
-      </ntx-multi-select-options>
+      <ntx-multi-select-options *ngIf="show"></ntx-multi-select-options>
     </div>
   </div>
 
@@ -20,15 +19,15 @@
     <!-- Checkbox Column -->
     <ng-container matColumnDef="select">
       <th mat-header-cell *matHeaderCellDef>
-        <mat-checkbox (change)="$event ? masterToggle() : null"
-                      [color]="'primary'"
-                      [checked]="selection.hasValue() && isAllSelected()"
-                      [indeterminate]="selection.hasValue() && !isAllSelected()">
+        <mat-checkbox (change)="showMultiselecToolbar()"
+                      [(ngModel)]="checkboxValue"
+                      [color]="'primary'">
         </mat-checkbox>
       </th>
       <td mat-cell *matCellDef="let row">
         <mat-checkbox [color]="'primary'"
-                      [checked]="selection.isSelected(row)">
+                      (change)="showMultiselecToolbar()"
+                      [(ngModel)]="checkboxValue">
         </mat-checkbox>
       </td>
     </ng-container>

@@ -9,9 +9,6 @@ import { Component, ComponentFactoryResolver, EventEmitter, Injector, Input, OnI
 })
 export class MultiSelectOptionsComponent implements OnInit {
 
-@Input() selectAllActive = false;
-
-
   constructor(
 
   ) { }
