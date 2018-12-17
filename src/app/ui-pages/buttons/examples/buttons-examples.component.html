@@ -1,4 +1,4 @@
-<ntx-card-simple title="{{'Botones de borde' | uppercase }}"
+<ntx-card-simple title="{{'Stroked buttons' | uppercase }}"
                   subtitle="{{ '<ntx-stroked-button>' }}"
                   class="white-content">
   <ntx-stroked-button [color]="'primary'"></ntx-stroked-button>
@@ -9,8 +9,8 @@
   <ntx-stroked-button [color]="'white'" [disabled]="'true'"></ntx-stroked-button>
 </ntx-card-simple>
 
-<ntx-card-simple title="{{'Botones de borde con icono' | uppercase }}"
-                  subtitle="{{ '<ntx-stroked-button>' }}"
+<ntx-card-simple title="{{'Icon stroked buttons' | uppercase }}"
+                  subtitle="{{ '<ntx-stroked-icon-button>' }}"
                   class="white-content">
   <ntx-stroked-icon-button [color]="'primary'"></ntx-stroked-icon-button>
   <ntx-stroked-icon-button [color]="'primary'" [disabled]="'true'"></ntx-stroked-icon-button>
@@ -22,51 +22,51 @@
 
 
 <ntx-card-simple *ngFor="let type of buttonTypes;"
-  title="{{'botones de ' + type.label | uppercase }}"
-  subtitle="{{ type.selector }}">
-  <div *ngIf="type.label==='texto'" class="white-content">
+                  title="{{type.label + ' buttons' | uppercase }}"
+                  subtitle="{{ type.selector }}">
+  <div *ngIf="type.label==='text'" class="white-content">
       <ntx-text-button [color]="'primary'"></ntx-text-button>
       <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
       <ntx-text-button [color]="'accent'"></ntx-text-button>
       <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
   </div>
-  <div *ngIf="type.label==='texto con icono'">
+  <div *ngIf="type.label==='icon text'">
       <ntx-text-icon-button [color]="'primary'"></ntx-text-icon-button>
       <ntx-text-icon-button [color]="'primary'" [disabled]="'true'"></ntx-text-icon-button>
       <ntx-text-icon-button [color]="'accent'"></ntx-text-icon-button>
       <ntx-text-icon-button [color]="'accent'" [disabled]="'true'"></ntx-text-icon-button>
   </div>
-  <div *ngIf="type.label==='fondo'">
+  <div *ngIf="type.label==='raised'">
       <ntx-raised-button [color]="'primary'"></ntx-raised-button>
       <ntx-raised-button [color]="'primary'" [disabled]="'true'"></ntx-raised-button>
       <ntx-raised-button [color]="'accent'"></ntx-raised-button>
       <ntx-raised-button [color]="'accent'" [disabled]="'true'"></ntx-raised-button>
   </div>
-  <div *ngIf="type.label==='fondo con icono'">
+  <div *ngIf="type.label==='icon raised'">
     <ntx-raised-icon-button [color]="'primary'"></ntx-raised-icon-button>
     <ntx-raised-icon-button [color]="'primary'" [disabled]="'true'"></ntx-raised-icon-button>
     <ntx-raised-icon-button [color]="'accent'"></ntx-raised-icon-button>
     <ntx-raised-icon-button [color]="'accent'" [disabled]="'true'"></ntx-raised-icon-button>
   </div>
-  <div *ngIf="type.label==='icono'">
+  <div *ngIf="type.label==='icon'">
       <ntx-icon-button [color]="'primary'"></ntx-icon-button>
       <ntx-icon-button [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
       <ntx-icon-button [color]="'accent'"></ntx-icon-button>
       <ntx-icon-button [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
   </div>
-  <div *ngIf="type.label==='redondos'">
+  <div *ngIf="type.label==='fab'">
       <ntx-fab-button [color]="'primary'"></ntx-fab-button>
       <ntx-fab-button [color]="'primary'" [disabled]="'true'"></ntx-fab-button>
       <ntx-fab-button [color]="'accent'"></ntx-fab-button>
       <ntx-fab-button [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
   </div>
-  <div *ngIf="type.label==='redondos mini'">
+  <div *ngIf="type.label==='mini fab'">
       <ntx-mini-fab-button [color]="'primary'"></ntx-mini-fab-button>
       <ntx-mini-fab-button [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
       <ntx-mini-fab-button [color]="'accent'"></ntx-mini-fab-button>
       <ntx-mini-fab-button [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
   </div>
-  <div *ngIf="type.label==='cuadrados'">
+  <div *ngIf="type.label==='square'">
       <ntx-square-button></ntx-square-button>
   </div>
 

@@ -23,7 +23,8 @@ import {
    MatTreeModule,
    MatSliderModule,
    MatSelectModule,
-   MatPaginatorModule
+   MatPaginatorModule,
+   MatGridListModule
  } from '@angular/material';
 
 @NgModule({
@@ -50,7 +51,8 @@ import {
     MatTreeModule,
     MatSliderModule,
     MatSelectModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatGridListModule
   ],
   declarations: [],
   exports: [
@@ -76,7 +78,8 @@ import {
     MatTreeModule,
     MatSliderModule,
     MatSelectModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatGridListModule
   ]
 })
 export class NtxSharedModule { }

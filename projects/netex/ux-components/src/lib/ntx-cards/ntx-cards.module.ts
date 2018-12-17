@@ -14,6 +14,7 @@ import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
+import { Card1Component } from './card1/card1.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
   ],
   declarations: [
     CardSimpleComponent,
+    Card1Component,
     Card4Component,
     Card7Component,
     Card8Component,
@@ -36,6 +38,7 @@ import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
   ],
   exports: [
     CardSimpleComponent,
+    Card1Component,
     Card4Component,
     Card7Component,
     Card8Component,

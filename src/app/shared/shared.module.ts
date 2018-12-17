@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { PortalModule } from '@angular/cdk/portal';
 
@@ -11,7 +12,8 @@ import {
   MatSidenavModule,
   MatTabsModule,
   MatToolbarModule,
-  MatTableModule
+  MatTableModule,
+  MatGridListModule
 } from '@angular/material';
 
 import {
@@ -50,7 +52,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatTableModule,
     MatSidenavModule,
     MatTabsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatGridListModule
   ],
   exports: [
     MatButtonModule,
@@ -78,7 +81,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NtxFormsModule,
     NtxDragAndDropModule,
     NtxProgressBarModule,
-    NtxTreesModule
+    NtxTreesModule,
+    MatGridListModule,
+    LayoutModule
   ],
   declarations: [
     HeaderComponent,

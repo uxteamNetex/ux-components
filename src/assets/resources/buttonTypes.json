@@ -1,34 +1,34 @@
 [
     {
-        "label": "texto",
+        "label": "text",
         "selector": "<ntx-text-button>"
     },
     {
-        "label": "texto con icono",
+        "label": "icon text",
         "selector": "<ntx-text-icon-button>"
     },
     {
-        "label": "fondo",
+        "label": "raised",
         "selector": "<ntx-raised-button>"
     },
     {
-        "label": "fondo con icono",
+        "label": "icon raised",
         "selector": "<ntx-raised-icon-button>"
     },
     {
-        "label": "icono",
+        "label": "icon",
         "selector": "<ntx-icon-button>"
     },
     {
-        "label": "redondos",
+        "label": "fab",
         "selector": "<ntx-fab-button>"
     },
     {
-        "label": "redondos mini",
+        "label": "mini fab",
         "selector": "<ntx-mini-fab-button>"
     },
     {
-        "label": "cuadrados",
+        "label": "square",
         "selector": "<ntx-square-button>"
     }
 ]

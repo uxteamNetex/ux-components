@@ -10,6 +10,8 @@ import { TabsHeaderService } from './shared/services/tabs-header.service';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     CoreModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]

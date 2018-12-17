@@ -14,15 +14,15 @@ export class ToolbarsExamplesComponent implements OnInit {
 
   toolbarTypes: ToolbarType[] = [
     {
-      label: "simple",
+      label: "basic toolbar",
       selector: "<ntx-toolbar>"
     },
     {
-      label: "back",
+      label: "back toolbar",
       selector: "<ntx-toolbar-back>"
     },
     {
-      label: "con pestañas",
+      label: "toolbar with tabs",
       selector: "<ntx-toolbar-tabs>"
     }];
 

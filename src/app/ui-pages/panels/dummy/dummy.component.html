@@ -1,22 +1,21 @@
 <div class="panel">
-    <mat-toolbar class="panel__toolbar">
-        <button class="hack-autofocus-disable"
+  <mat-toolbar class="panel__toolbar">
+    <button class="hack-autofocus-disable"
             type="button"
             mat-icon-button>
-          </button>
-        <button type="button"
+    </button>
+    <button type="button"
             class="panel__close"
             i18n-aria-label
             mat-icon-button
             (click)="onCloseSidenav()">
-            <mat-icon class="icon icon-netex icon-cross"></mat-icon>
-        </button>
-        <span
-            class="dummy__title"
-            i18n>{{'panel ' + width + '%' | uppercase}}</span>
-        <span class="panel__spacer"></span>
-        <ntx-raised-button [color]="'primary'"></ntx-raised-button>
-    </mat-toolbar>
-    <mat-divider></mat-divider>
-    <div class="panel__info"></div>
-  </div>
+        <mat-icon class="icon icon-netex icon-cross"></mat-icon>
+    </button>
+    <span class="panel__title"
+          i18n>{{'panel ' + width + '%' | uppercase}}</span>
+    <span class="panel__spacer"></span>
+    <ntx-raised-button [color]="'primary'"></ntx-raised-button>
+  </mat-toolbar>
+  <mat-divider></mat-divider>
+  <div class="panel__info"></div>
+</div>

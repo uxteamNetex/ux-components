@@ -5,6 +5,7 @@ import { TabsHeaderService } from '../services/tabs-header.service';
 
 const LINKS = [
   "buttons",
+  "card1",
   "card4",
   "card7",
   "card8",
