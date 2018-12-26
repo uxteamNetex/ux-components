@@ -22,17 +22,28 @@ pipeline {
                 sh 'npm install'
                 sh 'npm run build-ux-components'
                 sh "npm run-script ng build -- --base-href /ng-${BASE_TAG}/"
-                stash name: "dist", includes: "dist/ux-components"
+                stash name: "dist", includes: "dist/ux-components/**"
+            }
+            post {
+                always {
+                    deleteDir() /* clean up our workspace */
+                }
             }
         }
         stage ('Build docker image') {
             agent {label 'master'}
             steps {
+                unstash "dist"
                 sh "docker build -t ${NEXUS_URL}${IMAGE}:${BASE_TAG} ."
                 withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'jenkins-at-nexus.netexlearning.com',
                         usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                     sh "docker login ${NEXUS_URL} -u ${USERNAME} -p ${PASSWORD}"
                     sh "docker push ${NEXUS_URL}${IMAGE}:${BASE_TAG}"
+                }
+            }
+            post {
+                always {
+                    deleteDir() /* clean up our workspace */
                 }
             }
         }
@@ -51,11 +62,6 @@ pipeline {
                     """
                 }
             }
-        }
-    }
-    post {
-        always {
-            deleteDir() /* clean up our workspace */
         }
     }
 }
