@@ -1,17 +1,16 @@
 def BASE_TAG = JOB_BASE_NAME.replace('/','-').replace("%2F",'-') as String
 def DOCKER_SNAPSHOTS_REGISTRY = 'nexus.netexlearning.com:5001'
 def IMAGE = 'netexlearning/ux-components'
+def ip_nebula = '192.168.134.10'
 
 pipeline {
     options {
         buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '15'))
     }
     agent none
-
     environment{
         SSH_COMMAND = "ssh root@${ip_nebula}  -o StrictHostKeyChecking=no -o UserKnownHostsFile=no "
     }
-
     stages {
         stage ('Build') {
             agent {
