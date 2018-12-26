@@ -55,10 +55,11 @@ pipeline {
                     sh "$SSH_COMMAND docker pull ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}"
                     sh "$SSH_COMMAND \"docker rm -f ng-${BASE_TAG} || true\""
                     sh """
-                        $SSH_COMMAND docker run --restart=always --name ng-${BASE_TAG} 
+                        $SSH_COMMAND docker run -d --restart=always --name ng-${BASE_TAG} 
                         --label traefik.port=80 
-                        --label traefik.frontend.rule=PathPrefix:/ng-${BASE_TAG}
+                        --label traefik.frontend.rule=PathPrefixStrip:/ng-${BASE_TAG}
                         --network ux-components-nebula_default
+                        ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}
                     """
                 }
             }
