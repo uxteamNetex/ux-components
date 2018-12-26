@@ -24,11 +24,6 @@ pipeline {
                 sh "npm run-script ng build -- --base-href /ng-${BASE_TAG}/"
                 stash name: "dist", includes: "dist/ux-components/**"
             }
-            post {
-                always {
-                    deleteDir() /* clean up our workspace */
-                }
-            }
         }
         stage ('Build docker image') {
             agent {label 'master'}
@@ -41,11 +36,7 @@ pipeline {
                     sh "docker push ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}"
                 }
             }
-            post {
-                always {
-                    deleteDir() /* clean up our workspace */
-                }
-            }
+
         }
         stage ('Deploy') {
             agent any
@@ -63,6 +54,11 @@ pipeline {
                     """
                 }
             }
+        }
+    }
+    post {
+        always {
+            deleteDir() /* clean up our workspace */
         }
     }
 }
