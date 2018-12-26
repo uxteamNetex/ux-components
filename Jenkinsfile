@@ -51,9 +51,9 @@ pipeline {
             agent any
             steps {
                 sshagent(['ssh@lcloudtheme']) {
-                    sh '$SSH_COMMAND docker login ${DOCKER_SNAPSHOTS_REGISTRY} -u maquinas_desarrollo -p m4qU1N4s-D3s4rr0ll0'
-                    sh '$SSH_COMMAND docker pull ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}'
-                    sh '$SSH_COMMAND "docker rm -f ng-${BASE_TAG} || true"'
+                    sh "$SSH_COMMAND docker login ${DOCKER_SNAPSHOTS_REGISTRY} -u maquinas_desarrollo -p m4qU1N4s-D3s4rr0ll0"
+                    sh "$SSH_COMMAND docker pull ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}"
+                    sh "$SSH_COMMAND \"docker rm -f ng-${BASE_TAG} || true\""
                     sh """
                         $SSH_COMMAND docker run --restart=always --name ng-${BASE_TAG} 
                         --label traefik.port=80 
