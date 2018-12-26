@@ -48,7 +48,7 @@ pipeline {
             }
         }
         stage ('Deploy') {
-            agent none
+            agent any
             steps {
                 sshagent(['ssh@lcloudtheme']) {
                     sh '$SSH_COMMAND docker login ${DOCKER_SNAPSHOTS_REGISTRY} -u maquinas_desarrollo -p m4qU1N4s-D3s4rr0ll0'
