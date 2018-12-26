@@ -34,11 +34,11 @@ pipeline {
             agent {label 'master'}
             steps {
                 unstash "dist"
-                sh "docker build -t ${DOCKER_SNAPSHOTS_REGISTRY}${IMAGE}:${BASE_TAG} ."
+                sh "docker build -t ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG} ."
                 withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'jenkins-at-nexus.netexlearning.com',
                         usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                     sh "docker login ${DOCKER_SNAPSHOTS_REGISTRY} -u ${USERNAME} -p ${PASSWORD}"
-                    sh "docker push ${DOCKER_SNAPSHOTS_REGISTRY}${IMAGE}:${BASE_TAG}"
+                    sh "docker push ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}"
                 }
             }
             post {
@@ -52,7 +52,7 @@ pipeline {
             steps {
                 sshagent(['ssh@lcloudtheme']) {
                     sh '$SSH_COMMAND docker login ${DOCKER_SNAPSHOTS_REGISTRY} -u maquinas_desarrollo -p m4qU1N4s-D3s4rr0ll0'
-                    sh '$SSH_COMMAND docker pull ${DOCKER_SNAPSHOTS_REGISTRY}${IMAGE}:${BASE_TAG}'
+                    sh '$SSH_COMMAND docker pull ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}'
                     sh '$SSH_COMMAND "docker rm -f ng-${BASE_TAG} || true"'
                     sh """
                         $SSH_COMMAND docker run --restart=always --name ng-${BASE_TAG} 
