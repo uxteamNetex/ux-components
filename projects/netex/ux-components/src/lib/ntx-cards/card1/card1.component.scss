@@ -11,7 +11,10 @@ $block: "card1";
     margin: 8px;
     padding: 0;
     text-align: center;
-    //width: calc(21% - 16px);
+    &:hover{
+      box-shadow: $shadow-hover;
+      cursor: pointer;
+    }
     .mat-card-content{
       .#{$block}__options{
         position: absolute;
@@ -19,6 +22,9 @@ $block: "card1";
         top: 4px;
       }
       .#{$block}__image{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 50%;
         height: 88px;
         margin: 32px auto 16px;
@@ -56,36 +62,6 @@ $block: "card1";
         font-size: $font-size-14;
         margin: 0 24px;
       }
-    }
-  }
-}
-
-
-@media (min-width: 400px) and (max-width: 1024px) {
-  .mat-card{
-    &.#{$block}{
-      //width: calc(43% - 16px);
-    }
-  }
-}
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .mat-card{
-    &.#{$block}{
-      //width: calc(28% - 16px);
-    }
-  }
-}
-@media (min-width: 1280px) and (max-width: 1480px) {
-  .mat-card{
-    &.#{$block}{
-      //width: calc(28% - 16px);
-    }
-  }
-}
-@media (min-width: 1480px) {
-  .mat-card{
-    &.#{$block}{
-      //width: calc(21% - 16px);
     }
   }
 }

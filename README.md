@@ -12,7 +12,18 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 COMMITS:
   v.x.x.x:
     Cards:
-      -Card1 (ntx-card1)
+      -Cambios css componente Card4 (ntx-card4)
+      -Cambios css componente Card7 (ntx-card7)
+      -Cambios css componente Card8 (ntx-card8)
+      -Cambios css componente Tabs (ntx-tabs)
+      -Cambios css componente Navigation Tabs (ntx-tabs-navigation)
+      -Nuevo componente Card1 (ntx-card1)
+      -Nuevo componente Card2 (ntx-card2)
+      -Nuevo componente Card3 (ntx-card3)
+      -Nuevo componente Card5 (ntx-card5)
+      -Nuevo componente Card10 (ntx-card10)
+      -Nuevo componente Panel Tabs (app-panel-tabs)
+      -Nuevo componente Input Form Without Label (ntx-form-input-no-label)
 
 
   v.2.0.0 - Primera entrega de componentes:

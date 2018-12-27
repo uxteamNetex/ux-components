@@ -1,0 +1,49 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card5";
+
+.mat-card{
+  &.#{$block}{
+    border-radius: 4px;
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    height: 56px;
+    margin: 8px;
+    padding: 0;
+    &:hover{
+      box-shadow: $shadow-hover;
+      cursor: pointer;
+    }
+    .mat-card-content{
+      display: flex;
+      .#{$block}__title{
+        color: $color-grey-800;
+        display: inline-flex;
+        font-size: $font-size-14;
+        line-height: 18px;
+        margin: 20px 8px 0 16px;
+        max-height: 18px;
+        word-wrap: break-word;
+        overflow: hidden;
+        .#{$block}__title--text{
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          /* autoprefixer: off */
+          -webkit-box-orient: vertical;
+        }
+      }
+      .#{$block}__options{
+        margin: 10px 2px 0 0;
+        .mat-icon-button{
+          &.menu-options-button{
+            height: 36px;
+            line-height: 36px;
+            width: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+

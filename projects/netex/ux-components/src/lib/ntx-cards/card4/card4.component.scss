@@ -3,55 +3,59 @@
 $block: "card4";
 
 .mat-card{
-    &.#{$block}{
-        border-radius: 4px;
-        box-shadow: $shadow;
-        display: inline-flex;
-        margin: 8px;
-        padding: 16px 6px 24px 16px;
-        width: calc(23% - 16px);
-        .mat-card-header{
-          .#{$block}__image{
-            border-radius: 50%;
-            height: 60px;
-            overflow: hidden;
-            position: relative;
-            width: 60px;
-            img{
-              height: 100%;
-              z-index: 1;
-            }
-            .#{$block}__image--initials{
-              color: $color-white;
-              font-family: latoLight;
-              font-size: $font-size-20;
-              position: absolute;
-            }
-          }
-          .#{$block}__title{
-            color: $color-grey-800;
-            font-family: latoBold;
-            font-size: $font-size-18;
-            max-height: 48px;
-            word-wrap: break-word;
-            overflow: hidden;
-            .#{$block}__title--text{
-              display: -webkit-box;
-              -webkit-line-clamp: 2;
-              /* autoprefixer: off */
-              -webkit-box-orient: vertical;
-            }
-          }
-          .#{$block}__subtitle{
-            color: $color-grey-600;
-            font-size: $font-size-12;
-            margin: 0;
-          }
-          .#{$block}__options{
-            margin-top: -8px;
-          }
-        }
+  &.#{$block}{
+    border-radius: 4px;
+    box-shadow: $shadow;
+    display: inline-flex;
+    margin: 8px;
+    padding: 16px 6px 24px 16px;
+    width: calc(23% - 16px);
+    &:hover{
+      box-shadow: $shadow-hover;
+      cursor: pointer;
     }
+    .mat-card-header{
+      .#{$block}__image{
+        border-radius: 50%;
+        height: 60px;
+        overflow: hidden;
+        position: relative;
+        width: 60px;
+        img{
+          height: 100%;
+          z-index: 1;
+        }
+        .#{$block}__image--initials{
+          color: $color-white;
+          font-family: latoLight;
+          font-size: $font-size-20;
+          position: absolute;
+        }
+      }
+      .#{$block}__title{
+        color: $color-grey-800;
+        font-family: latoBold;
+        font-size: $font-size-18;
+        max-height: 48px;
+        word-wrap: break-word;
+        overflow: hidden;
+        .#{$block}__title--text{
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          /* autoprefixer: off */
+          -webkit-box-orient: vertical;
+        }
+      }
+      .#{$block}__subtitle{
+        color: $color-grey-600;
+        font-size: $font-size-12;
+        margin: 0;
+      }
+      .#{$block}__options{
+        margin-top: -8px;
+      }
+    }
+  }
 }
 
 @media (min-width: 400px) and (max-width: 1024px) {

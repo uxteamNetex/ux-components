@@ -1,10 +1,18 @@
 <ntx-card-simple title="Paneles de la aplicación con distintos anchos" subtitle="Click en el botón para abrir cada panel">
   <div class="panels__container">
     <button mat-raised-button *ngFor="let width of panelWidths"
-        color="primary"
-        class="panels__button"
-        (click) = "onButtonClick(width)">
-        {{ width + '% panel' | uppercase }} 
-    </button>  
-  </div>    
+            color="primary"
+            class="panels__button"
+            (click) = "onButtonClick(width)">
+        {{ width + '% panel' | uppercase }}
+    </button>
+
+    <button mat-raised-button
+            color="primary"
+            class="panels__button utils--uppercase"
+            (click) = "onButtonClick2(width)">
+      tabs panel
+    </button>
+
+  </div>
 </ntx-card-simple>

@@ -18,23 +18,15 @@ export class ExamplesComponent implements AfterContentInit {
     xs: 1
   };
 
-
   constructor(private observableMedia: ObservableMedia) { }
+
+  // tslint:disable-next-line:use-life-cycle-interface
+  ngOnInit() {}
 
   ngAfterContentInit() {
     this.observableMedia.asObservable().subscribe((change: MediaChange) => {
       this.grid.cols = this.gridByBreakpoint[change.mqAlias];
     });
   }
-
-  // breakpoint: number;
-
-  // ngOnInit() {
-  //   this.breakpoint = (window.innerWidth <= 400) ? 2 : 3;
-  // }
-
-  // onResize(event) {
-  //   this.breakpoint = (event.target.innerWidth <= 400) ? 2 : 3;
-  // }
 
 }

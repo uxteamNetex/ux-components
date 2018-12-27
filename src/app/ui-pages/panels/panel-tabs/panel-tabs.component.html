@@ -1,0 +1,23 @@
+<div class="panel-tabs">
+  <mat-toolbar class="panel-tabs__toolbar">
+    <button class="hack-autofocus-disable"
+            type="button"
+            mat-icon-button>
+    </button>
+    <button type="button"
+            class="panel-tabs__close"
+            i18n-aria-label
+            mat-icon-button
+            (click)="onCloseSidenav()">
+        <mat-icon class="icon icon-netex icon-cross"></mat-icon>
+    </button>
+    <span class="panel-tabs__title"
+          i18n>{{'tabs panel' | uppercase}}</span>
+    <span class="panel-tabs__spacer"></span>
+    <ntx-raised-button [color]="'primary'"></ntx-raised-button>
+  </mat-toolbar>
+
+  <ntx-tabs-navigation></ntx-tabs-navigation>
+
+  <div class="panel-tabs__info"></div>
+</div>

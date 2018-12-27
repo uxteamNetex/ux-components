@@ -10,7 +10,11 @@ $block: "tabs-navegation";
       padding: 0 16px;
       text-transform: uppercase;
       &.mat-tab-label-active{
+        color: $color-primary;
         opacity: 1;
+        &:hover{
+          color: $color-primary-hover;
+        }
       }
       &[disabled]{
         opacity: 0.4;

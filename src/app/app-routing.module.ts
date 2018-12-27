@@ -16,8 +16,20 @@ const routes: Routes = [
     loadChildren: './ui-pages/card1/card1.module#Card1Module'
   },
   {
+    path: 'card2',
+    loadChildren: './ui-pages/card2/card2.module#Card2Module'
+  },
+  {
+    path: 'card3',
+    loadChildren: './ui-pages/card3/card3.module#Card3Module'
+  },
+  {
     path: 'card4',
     loadChildren: './ui-pages/card4/card4.module#Card4Module'
+  },
+  {
+    path: 'card5',
+    loadChildren: './ui-pages/card5/card5.module#Card5Module'
   },
   {
     path: 'card7',
@@ -30,6 +42,10 @@ const routes: Routes = [
   {
     path: 'card9',
     loadChildren: './ui-pages/card9/card9.module#Card9Module'
+  },
+  {
+    path: 'card10',
+    loadChildren: './ui-pages/card10/card10.module#Card10Module'
   },
   {
     path: 'cards',

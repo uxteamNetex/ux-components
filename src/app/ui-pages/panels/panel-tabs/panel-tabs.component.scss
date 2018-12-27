@@ -1,0 +1,40 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "panel-tabs";
+
+.#{$block}{
+  box-shadow: $shadow-navbar;
+  .#{$block}__toolbar{
+    background-color: $color-white;
+    color: $color-grey-700;
+    font-family: Lato;
+    font-size: $font-size-16;
+    line-height: 1.19;
+    height: $toolbarHeight;
+    padding: 0 12px 0 4px;
+    .hack-autofocus-disable {
+      position: absolute;
+      height: 0;
+    }
+    .#{$block}__close {
+      height: 48px;
+      margin-right: $separation-16;
+      width: 48px;
+      &:hover {
+          background-color: $icon-button-hover;
+      }
+    }
+    .#{$block}__spacer{
+      flex: 1 1 auto;
+    }
+  }
+  .tabs-navegation{
+    border-bottom: none;
+    padding: 0 16px;
+  }
+}
+
+
+.dynamic-component__header-text {
+  margin-left: 0px;
+}

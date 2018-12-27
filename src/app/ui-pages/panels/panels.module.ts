@@ -4,11 +4,13 @@ import { PanelsDocComponent } from './documentation/panels-doc.component';
 import { PanelsExamplesComponent } from './examples/panels-examples.component';
 import { PanelsRoutingModule } from './panels-routing.module';
 import { DummyComponent } from './dummy/dummy.component';
+import { PanelTabsComponent } from './panel-tabs/panel-tabs.component';
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule } from '@angular/material';
 
 import {
   NtxCardsModule,
-  NtxButtonsModule
+  NtxButtonsModule,
+  NtxTabsModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -20,15 +22,18 @@ import {
     MatIconModule,
     MatToolbarModule,
     NtxCardsModule,
-    NtxButtonsModule
+    NtxButtonsModule,
+    NtxTabsModule
   ],
   declarations: [
       DummyComponent,
       PanelsDocComponent,
-      PanelsExamplesComponent
+      PanelsExamplesComponent,
+      PanelTabsComponent
   ],
   entryComponents: [
-    DummyComponent
+    DummyComponent,
+    PanelTabsComponent
   ]
 })
 export class PanelsModule { }

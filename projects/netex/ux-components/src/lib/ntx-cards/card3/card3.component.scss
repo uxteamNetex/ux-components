@@ -1,0 +1,78 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card3";
+
+.mat-card{
+  &.#{$block}{
+    border-radius: 4px;
+    box-shadow: $shadow;
+    display: inline-flex;
+    height: 264px;
+    margin: 8px;
+    padding: 0;
+    text-align: center;
+    &:hover{
+      box-shadow: $shadow-hover;
+      cursor: pointer;
+    }
+    .mat-card-content{
+      .#{$block}__options{
+        position: absolute;
+        right: 2px;
+        top: 4px;
+      }
+      .#{$block}__image{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        height: 88px;
+        margin: 32px auto 16px;
+        overflow: hidden;
+        position: relative;
+        width: 88px;
+        img{
+          height: 100%;
+          z-index: 1;
+        }
+        .#{$block}__image--initials{
+          color: $color-white;
+          font-family: latoLight;
+          font-size: $font-size-22;
+          position: absolute;
+        }
+      }
+      .#{$block}__title{
+        color: $color-grey-800;
+        font-family: latoBold;
+        font-size: $font-size-20;
+        margin: 0 24px 8px;
+        max-height: 48px;
+        word-wrap: break-word;
+        overflow: hidden;
+        .#{$block}__title--text{
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          /* autoprefixer: off */
+          -webkit-box-orient: vertical;
+        }
+      }
+      .#{$block}__subtitle{
+        color: $color-grey-600;
+        font-size: $font-size-14;
+        margin: 0 24px;
+        &:first-of-type{
+          margin-bottom: 8px;
+        }
+        .#{$block}__subtitle-state-open{
+          color: $color-success;
+          text-transform: uppercase;
+        }
+        .#{$block}__subtitle-state-closed{
+          color: $color-error;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

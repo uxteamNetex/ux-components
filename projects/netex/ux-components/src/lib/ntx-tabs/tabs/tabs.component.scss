@@ -3,23 +3,27 @@
 $block: "tabs-group";
 
 .#{$block}{
-    .mat-tab-label{
-        color: $color-grey-700;
-        min-width: 64px;
-        padding: 0 16px;
-        text-transform: uppercase;
-        &.mat-tab-label-active{
-            opacity: 1;
-        }
-        &[disabled]{
-            opacity: 0.4;
-            &:hover{
-                background-color: transparent;
-                cursor: not-allowed;
-            }
-        }
-        &:hover{
-            background-color: $icon-button-hover;
-        }
+  .mat-tab-label{
+    color: $color-grey-700;
+    min-width: 64px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    &.mat-tab-label-active{
+      color: $color-primary;
+      opacity: 1;
+      &:hover{
+        color: $color-primary-hover;
+      }
     }
+    &[disabled]{
+      opacity: 0.4;
+      &:hover{
+        background-color: transparent;
+        cursor: not-allowed;
+      }
+    }
+    &:hover{
+      background-color: $icon-button-hover;
+    }
+  }
 }
