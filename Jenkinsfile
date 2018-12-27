@@ -36,7 +36,11 @@ pipeline {
                     sh "docker push ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}"
                 }
             }
-
+            post {
+                always {
+                    deleteDir() /* clean up our workspace */
+                }
+            }
         }
         stage ('Deploy') {
             agent any
@@ -54,11 +58,6 @@ pipeline {
                     """
                 }
             }
-        }
-    }
-    post {
-        always {
-            deleteDir() /* clean up our workspace */
         }
     }
 }
