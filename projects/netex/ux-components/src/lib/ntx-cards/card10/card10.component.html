@@ -1,10 +1,16 @@
 <mat-card class="card10">
   <mat-card-header>
-    <mat-card-title class="card10__title">
-      <ntx-form-input-no-label></ntx-form-input-no-label>
-    </mat-card-title>
-    <mat-card-subtitle class="card10__subtitle">
-      <ntx-form-input-no-label></ntx-form-input-no-label>
-    </mat-card-subtitle>
+    <div class="card10__number">
+      <span>6</span>
+    </div>
+    <div class="card10__content">
+      <mat-card-title class="card10__title">
+        <ntx-form-input-no-label></ntx-form-input-no-label>
+      </mat-card-title>
+      <mat-card-subtitle class="card10__subtitle">
+        <ntx-form-input-no-label></ntx-form-input-no-label>
+      </mat-card-subtitle>
+      <ntx-progress-bar [color]="'primary'" [value]="'52'"></ntx-progress-bar>
+    </div>
   </mat-card-header>
 </mat-card>

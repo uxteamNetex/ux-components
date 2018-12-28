@@ -14,6 +14,8 @@ const LINKS = [
   "card8",
   "card9",
   "card10",
+  "card11",
+  "card12",
   "cards",
   "chips",
   "drag and drop",

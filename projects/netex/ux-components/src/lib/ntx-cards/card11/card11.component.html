@@ -1,0 +1,27 @@
+<div class="card11">
+
+  <mat-radio-button class="radiobutton-group__radiobutton"
+                    value='1'
+                    [color]="'primary'"
+                    (change)="onChange()"
+                    [ngClass]="status ? 'check-selected' : ' '">
+  </mat-radio-button>
+
+  <mat-card class="card11__card">
+    <mat-card-header>
+      <div class="card11__number">
+        <span>6</span>
+      </div>
+      <div class="card11__content">
+        <mat-card-title class="card11__title">
+          <span class="card11__title--text">Card title lorem ipsum dolor sit amet consectetuer adipiscing</span>
+        </mat-card-title>
+        <mat-card-subtitle class="card11__subtitle">
+          <span class="card11__subtitle--text">Card subtitle lorem ipsum dolor sit amet consectetuer</span>
+        </mat-card-subtitle>
+        <ntx-progress-bar [color]="'primary'" [value]="'52'"></ntx-progress-bar>
+      </div>
+    </mat-card-header>
+  </mat-card>
+
+</div>

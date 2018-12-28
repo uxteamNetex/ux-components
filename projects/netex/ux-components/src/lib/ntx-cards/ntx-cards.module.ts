@@ -14,12 +14,14 @@ import { Card7Component } from './card7/card7.component';
 import { Card8Component } from './card8/card8.component';
 import { Card9Component } from './card9/card9.component';
 import { Card10Component } from './card10/card10.component';
+import { Card11Component } from './card11/card11.component';
+import { Card12Component } from './card12/card12.component';
 
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
-
+import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.module';
 
 @NgModule({
   imports: [
@@ -32,6 +34,7 @@ import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
     NtxCardsRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NtxProgressBarModule
   ],
   declarations: [
     CardSimpleComponent,
@@ -43,7 +46,9 @@ import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
     Card7Component,
     Card8Component,
     Card9Component,
-    Card10Component
+    Card10Component,
+    Card11Component,
+    Card12Component
   ],
   exports: [
     CardSimpleComponent,
@@ -55,7 +60,9 @@ import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
     Card7Component,
     Card8Component,
     Card9Component,
-    Card10Component
+    Card10Component,
+    Card11Component,
+    Card12Component
   ]
 })
 export class NtxCardsModule { }

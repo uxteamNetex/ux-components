@@ -22,6 +22,8 @@ COMMITS:
       -Nuevo componente Card3 (ntx-card3)
       -Nuevo componente Card5 (ntx-card5)
       -Nuevo componente Card10 (ntx-card10)
+      -Nuevo componente Card11 (ntx-card11)
+      -Nuevo componente Card12 (ntx-card12)
       -Nuevo componente Panel Tabs (app-panel-tabs)
       -Nuevo componente Input Form Without Label (ntx-form-input-no-label)
 

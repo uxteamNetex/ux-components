@@ -1,0 +1,110 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card11";
+
+ntx-card11{
+  &:last-of-type{
+    .#{$block}{
+      .mat-card{
+        &.#{$block}__card{
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .#{$block}{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 560px;
+    .radiobutton-group__radiobutton{
+      margin-right: 46px;
+      .mat-radio-container{
+        .mat-radio-outer-circle{
+          border-color: $color-grey-600;
+          border-width: 1px;
+        }
+        .mat-radio-inner-circle{
+          height: 24px;
+          left: -2px;
+          top: -2px;
+          width: 24px;
+        }
+      }
+      &.check-selected{
+        + .mat-card{
+          &.#{$block}__card{
+            border: 3px solid $color-primary;
+            padding: 15px 35px 23px 35px;
+          }
+        }
+      }
+    }
+    .mat-card{
+      &.#{$block}__card{
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        box-shadow: none;
+        margin: 0 auto 16px;
+        padding: 16px 36px 24px 36px;
+        width: 497px;
+        .mat-card-header{
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          .mat-card-header-text{
+            margin: 0;
+          }
+          .#{$block}__number{
+            align-items: center;
+            background-color: $color-grey-200;
+            border-radius: 50%;
+            display: flex;
+            height: 32px;
+            justify-content: center;
+            margin-right: 24px;
+            width: 32px;
+            span{
+            color: $color-grey-700;
+            font-family: LatoSemibold;
+            }
+          }
+          .#{$block}__content{
+            width: calc(100% - 56px);
+            .#{$block}__title{
+              color: $color-grey-700;
+              font-family: lato;
+              font-size: $font-size-16;
+              font-style:italic;
+              margin-bottom: 8px;
+              max-height: 24px;
+              word-wrap: break-word;
+              overflow: hidden;
+              .#{$block}__title--text{
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                /* autoprefixer: off */
+                -webkit-box-orient: vertical;
+              }
+            }
+            .#{$block}__subtitle{
+              color: $color-grey-800;
+              font-size: $font-size-16;
+              margin: 0 0 16px 0;
+              max-height: 48px;
+              word-wrap: break-word;
+              overflow: hidden;
+              .#{$block}__subtitle--text{
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                /* autoprefixer: off */
+                -webkit-box-orient: vertical;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
