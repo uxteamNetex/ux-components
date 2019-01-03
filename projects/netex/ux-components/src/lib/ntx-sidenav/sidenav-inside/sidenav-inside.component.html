@@ -1,0 +1,29 @@
+<mat-drawer-container class="sidenav-inside__container" autosize>
+
+  <!--Inside panel-->
+  <mat-drawer #drawer class="sidenav-inside__sidenav" mode="side" position="end">
+    <div class="sidenav-inside__header">
+      <div class="sidenav-inside__header--close">
+      </div>
+      <div mat-card-avatar class="sidenav-inside__header--image" style="background-image: url(assets/images/writting.jpg)" alt="User image">
+        <span class="sidenav-inside__header--image-initials utils--vertical-align" style="display:none">PN</span>
+      </div>
+      <mat-card-title class="sidenav-inside__header--title">
+        <span>Project name that could be longer than just one line</span>
+      </mat-card-title>
+    </div>
+    <p>Auto-resizing sidenav</p>
+    <p>Dummy content: Id pharetra vivamus dictumst lobortis interdum porttitor ad nostra condimentum, natoque gravida orci vehicula aliquam in hendrerit leo nam, bibendum urna quam cubilia luctus ridiculus euismod odio. Ad habitant ut odio penatibus magna congue, litora condimentum senectus erat montes lobortis, porttitor elementum eros nostra placerat. Fringilla primis est posuere dictumst leo vivamus suscipit pharetra, dui non congue elementum imperdiet placerat eros etiam nisl, tellus nostra lacus consequat id nam mollis.</p>
+  </mat-drawer>
+
+  <!--Content page-->
+  <div class="page-layout">
+    <div class="page-container">
+      <ng-content></ng-content>
+      <button type="button" mat-raised-button color="primary" class="utils--uppercase" (click)="drawer.toggle()">
+        Inside panel
+      </button>
+    </div>
+  </div>
+
+</mat-drawer-container>

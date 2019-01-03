@@ -1,13 +1,17 @@
-<ntx-card-simple *ngFor="let type of toolbarTypes"
-  title="{{ type.label | uppercase }}"
-  subtitle="{{ type.selector }}">
-    <ntx-toolbar *ngIf="type.label==='basic toolbar'">
-      <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
-    </ntx-toolbar>
-    <ntx-toolbar-back *ngIf="type.label==='back toolbar'">
-      <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
-    </ntx-toolbar-back>
-    <ntx-toolbar-tabs *ngIf="type.label==='toolbar with tabs'">
-      <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
-    </ntx-toolbar-tabs>
-</ntx-card-simple>
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple *ngFor="let type of toolbarTypes"
+      title="{{ type.label | uppercase }}"
+      subtitle="{{ type.selector }}">
+        <ntx-toolbar *ngIf="type.label==='basic toolbar'">
+          <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
+        </ntx-toolbar>
+        <ntx-toolbar-back *ngIf="type.label==='back toolbar'">
+          <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
+        </ntx-toolbar-back>
+        <ntx-toolbar-tabs *ngIf="type.label==='toolbar with tabs'">
+          <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
+        </ntx-toolbar-tabs>
+    </ntx-card-simple>
+  </div>
+</div>

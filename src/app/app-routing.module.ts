@@ -108,6 +108,10 @@ const routes: Routes = [
     loadChildren: './ui-pages/progress-bar/progress-bar.module#ProgressBarModule'
   },
   {
+    path: 'sidenavs',
+    loadChildren: './ui-pages/sidenav/sidenav.module#SidenavModule'
+  },
+  {
     path: 'toolbars',
     loadChildren: './ui-pages/toolbars/toolbars.module#ToolbarsModule'
   },

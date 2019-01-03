@@ -13,6 +13,7 @@ import {
   NtxTabsModule
 } from '@netex/ux-components';
 
+
 @NgModule({
   imports: [
     CommonModule,

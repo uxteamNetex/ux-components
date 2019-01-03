@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 import { SidenavService } from '../../../shared/services/sidenav.service';
 import { PanelService } from '../../../shared/services/panel.service';
+import {FormControl} from '@angular/forms';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
@@ -10,12 +12,14 @@ import { PanelService } from '../../../shared/services/panel.service';
 })
 export class LayoutComponent implements OnInit {
 
+  @Input() mode: string;
+
   @ViewChild('menu') menuRef: MatSidenav;
   @ViewChild('panel') panelRef: MatSidenav;
 
   public panelWidth: string;
-  
-  constructor( 
+
+  constructor(
     private sidenavService: SidenavService,
     private panelService: PanelService
   ) {}

@@ -30,5 +30,9 @@
     {
         "label": "square",
         "selector": "<ntx-square-button>"
-    }
+    },
+    {
+      "label": "speed dial",
+      "selector": "<ntx-fab-speed-dial-button>"
+  }
 ]

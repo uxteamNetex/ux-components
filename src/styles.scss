@@ -25,46 +25,54 @@
   }
 }
 
-.page-container{
-  display: flex;
-  flex-direction: column;
-  margin: 40px auto;
-  ntx-card-simple{
-    &.white-content{
+.page-layout{
+  height: calc(100vh - 104px);
+  overflow: auto;
+  .page-container{
+    margin: 40px auto;
+    ntx-card-simple{
+      &.white-content{
+        mat-card{
+          background-color: $color-grey-300;
+        }
+      }
+      &:first-of-type{
+        mat-card{
+          margin: 0;
+        }
+      }
       mat-card{
-        background-color: $color-grey-300;
+        margin: 40px 0;
       }
     }
-    &:first-of-type{
-      mat-card{
-        margin: 0;
+    .documentation-text{
+      line-height: 26px;
+      .documentation-code{
+        background-color: $color-grey-400;
+        padding: 4px;
       }
-    }
-    mat-card{
-      margin: 40px 0;
-    }
-  }
-  .documentation-text{
-    line-height: 26px;
-    .documentation-code{
-      background-color: $color-grey-400;
-      padding: 4px;
     }
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .page-container{
-    max-width: 768px;
+  .page-layout{
+    .page-container{
+      max-width: 768px;
+    }
   }
 }
 @media (min-width: 1280px) and (max-width: 1480px) {
-  .page-container{
-    max-width: 900px;
+  .page-layout{
+    .page-container{
+      max-width: 900px;
+    }
   }
 }
 @media (min-width: 1480px) {
-  .page-container{
-    max-width: 1240px;
+  .page-layout{
+    .page-container{
+      max-width: 1240px;
+    }
   }
 }
