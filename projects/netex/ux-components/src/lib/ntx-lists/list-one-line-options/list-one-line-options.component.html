@@ -1,10 +1,10 @@
-<mat-list class="list-one-line">
-  <mat-list-item *ngFor="let text of texts" class="list-one-line__item">
-    <div matListAvatar class="list-one-line__item--image">
-      <span class="list-one-line__item--initial">L</span>
+<mat-list class="list-one-line-options">
+  <mat-list-item *ngFor="let text of texts" class="list-one-line-options__item">
+    <div matListAvatar class="list-one-line-options__item--image">
+      <span class="list-one-line-options__item--initial">L</span>
     </div>
-    <div class="list-one-line__item--content">
-      <h4 mat-line class="list-one-line__item--title">{{text.title}}</h4>
+    <div class="list-one-line-options__item--content">
+      <h4 mat-line class="list-one-line-options__item--title">{{text.title}}</h4>
       <ntx-progress-bar [color]="'primary'" [value]="'52'"></ntx-progress-bar>
       <ntx-menu-options></ntx-menu-options>
     </div>

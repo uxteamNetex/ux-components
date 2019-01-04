@@ -1,25 +1,25 @@
-<mat-drawer-container class="sidenav-inside__container" autosize>
+<mat-drawer-container class="sidenav-filters__container" autosize>
 
   <!--Inside panel-->
-  <mat-drawer #drawer class="sidenav-inside__sidenav" mode="side" position="end">
-    <div class="sidenav-inside__header">
+  <mat-drawer #filtersPanel class="sidenav-filters__sidenav" mode="side" position="end">
+    <div class="sidenav-filters__header">
 
       <button type="button"
-              class="sidenav-inside__header--close"
+              class="sidenav-filters__header--close"
               i18n-aria-label
               mat-icon-button
-              (click)="drawer.close()">
+              (click)="filtersPanel.close()">
         <mat-icon class="icon icon-netex icon-cross"></mat-icon>
       </button>
 
-      <div mat-card-avatar class="sidenav-inside__header--image" style="background-image: url(assets/images/writting.jpg)" alt="User image">
-        <span class="sidenav-inside__header--image-initials utils--vertical-align" style="display:none">PN</span>
+      <div mat-card-avatar class="sidenav-filters__header--image" style="background-image: url(assets/images/writting.jpg)" alt="User image">
+        <span class="sidenav-filters__header--image-initials utils--vertical-align" style="display:none">PN</span>
       </div>
-      <mat-card-title class="sidenav-inside__header--title">
-        <span class="sidenav-inside__header--title-text">Project name that could be longer than just one line and it will be shown with three dots</span>
+      <mat-card-title class="sidenav-filters__header--title">
+        <span class="sidenav-filters__header--title-text">Project name that could be longer than just one line and it will be shown with three dots</span>
       </mat-card-title>
     </div>
-    <div class="sidenav-inside__content">
+    <div class="sidenav-filters__content">
       <p class="utils--section-title utils--margin-bottom-4">Description</p>
       <p class="utils--basic-text">Dummy content: Id pharetra vivamus dictumst lobortis interdum porttitor ad nostra condimentum, natoque gravida orci vehicula aliquam.</p>
 
@@ -27,13 +27,13 @@
       <ntx-list-horizontal></ntx-list-horizontal>
 
       <p class="utils--section-title utils--margin-top-40 utils--margin-bottom-4">Team</p>
-      <div class="sidenav-inside__content-team">
+      <div class="sidenav-filters__content-team">
         <mat-icon class="icon-netex icon-user-settings"></mat-icon>
         <span class="utils--margin-left-8">Product Owner</span>
       </div>
       <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
 
-      <div class="sidenav-inside__content-team utils--margin-top-20">
+      <div class="sidenav-filters__content-team utils--margin-top-20">
         <mat-icon class="icon-netex icon-user-edit"></mat-icon>
         <span class="utils--margin-left-8">Users</span>
       </div>
@@ -50,8 +50,8 @@
   <div class="page-layout">
     <div class="page-container">
       <ng-content></ng-content>
-      <button type="button" mat-raised-button color="primary" class="utils--uppercase" (click)="drawer.toggle()">
-        Inside panel
+      <button type="button" mat-raised-button color="primary" class="utils--uppercase" (click)="filtersPanel.toggle()">
+        Inside filters panel
       </button>
     </div>
   </div>

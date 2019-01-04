@@ -29,6 +29,8 @@ COMMITS:
       -Nuevo componente Input Form Without Label (ntx-form-input-no-label)
       -Nuevo componente Speed Dial Button (ntx-fab-speed-dial-button)
       -Nuevo componente Inside Panel (ntx-sidenav-inside)
+      -Nuevo componente List Horizontal (ntx-list-horizontal)
+      -Nuevo componente One Line List Avatar (ntx-list-one-line-avatar)
 
 
   v.2.0.0 - Primera entrega de componentes:

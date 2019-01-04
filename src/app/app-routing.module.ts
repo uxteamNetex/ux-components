@@ -112,6 +112,10 @@ const routes: Routes = [
     loadChildren: './ui-pages/sidenav/sidenav.module#SidenavModule'
   },
   {
+    path: 'sidenav filters',
+    loadChildren: './ui-pages/sidenav-filters/sidenav-filters.module#SidenavFiltersModule'
+  },
+  {
     path: 'toolbars',
     loadChildren: './ui-pages/toolbars/toolbars.module#ToolbarsModule'
   },

@@ -1,0 +1,24 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list-one-line-avatar";
+
+.#{$block}{
+  &.mat-list-base{
+    padding: 0;
+    .#{$block}__item{
+      height: 48px;
+      .mat-list-item-content{
+        padding: 0;
+        .#{$block}__item--image{
+          height: 32px;
+          width: 32px;
+        }
+        .#{$block}__item--title{
+          color: $color-grey-700;
+          font-family: Lato;
+          font-size: $font-size-14;
+        }
+      }
+    }
+  }
+}
