@@ -6,12 +6,14 @@ import { SidenavInsideComponent } from './sidenav-inside/sidenav-inside.componen
 import { SidenavFiltersComponent } from './sidenav-filters/sidenav-filters.component';
 
 import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
+import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 
 @NgModule({
   imports: [
     CommonModule,
     NtxSharedModule,
-    NtxListsModule
+    NtxListsModule,
+    NtxFormsModule
   ],
   declarations: [
     SidenavContainerComponent,

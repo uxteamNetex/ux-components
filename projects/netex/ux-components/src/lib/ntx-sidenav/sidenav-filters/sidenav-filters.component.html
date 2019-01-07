@@ -3,7 +3,8 @@
   <!--Inside panel-->
   <mat-drawer #filtersPanel class="sidenav-filters__sidenav" mode="side" position="end">
     <div class="sidenav-filters__header">
-
+      <p class="sidenav-filters__header--title">Filters</p>
+      <span class="sidenav-filters__header--spacer"></span>
       <button type="button"
               class="sidenav-filters__header--close"
               i18n-aria-label
@@ -11,38 +12,26 @@
               (click)="filtersPanel.close()">
         <mat-icon class="icon icon-netex icon-cross"></mat-icon>
       </button>
-
-      <div mat-card-avatar class="sidenav-filters__header--image" style="background-image: url(assets/images/writting.jpg)" alt="User image">
-        <span class="sidenav-filters__header--image-initials utils--vertical-align" style="display:none">PN</span>
-      </div>
-      <mat-card-title class="sidenav-filters__header--title">
-        <span class="sidenav-filters__header--title-text">Project name that could be longer than just one line and it will be shown with three dots</span>
-      </mat-card-title>
     </div>
     <div class="sidenav-filters__content">
-      <p class="utils--section-title utils--margin-bottom-4">Description</p>
-      <p class="utils--basic-text">Dummy content: Id pharetra vivamus dictumst lobortis interdum porttitor ad nostra condimentum, natoque gravida orci vehicula aliquam.</p>
+      <p class="utils--section-title utils--margin-bottom-4">Date</p>
+      <ntx-form-select></ntx-form-select>
+      <ntx-form-select></ntx-form-select>
 
-      <p class="utils--section-title utils--margin-top-40 utils--margin-bottom-4">Specifications</p>
-      <ntx-list-horizontal></ntx-list-horizontal>
+      <p class="utils--section-title utils--margin-bottom-4 utils--margin-top-40">Job role</p>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
 
-      <p class="utils--section-title utils--margin-top-40 utils--margin-bottom-4">Team</p>
-      <div class="sidenav-filters__content-team">
-        <mat-icon class="icon-netex icon-user-settings"></mat-icon>
-        <span class="utils--margin-left-8">Product Owner</span>
-      </div>
-      <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
+      <p class="utils--section-title utils--margin-bottom-4 utils--margin-top-40">Department</p>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
 
-      <div class="sidenav-filters__content-team utils--margin-top-20">
-        <mat-icon class="icon-netex icon-user-edit"></mat-icon>
-        <span class="utils--margin-left-8">Users</span>
-      </div>
-      <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
-      <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
-      <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
-      <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
-      <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
-
+      <p class="utils--section-title utils--margin-bottom-4 utils--margin-top-40">Location</p>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
+      <ntx-form-checkbox class="sidenav-filters__content--checkbox" [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
     </div>
   </mat-drawer>
 

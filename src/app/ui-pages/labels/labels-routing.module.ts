@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ListsExamplesComponent } from './examples/lists-examples.component';
-import { ListsDocComponent } from './documentation/lists-doc.component';
+import { ExamplesComponent } from './examples/examples.component';
+import { DocumentationComponent } from './documentation/documentation.component';
 
 const routes: Routes = [
   {
       path: 'examples',
-      component: ListsExamplesComponent
+      component: ExamplesComponent
   },
   {
       path: 'documentation',
-      component: ListsDocComponent
+      component: DocumentationComponent
   },
   {
       path: '',
@@ -23,4 +23,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ListsRoutingModule { }
+export class LabelsRoutingModule { }

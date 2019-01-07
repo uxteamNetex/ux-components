@@ -84,6 +84,10 @@ const routes: Routes = [
     loadChildren: './ui-pages/icons/icons.module#IconsModule'
   },
   {
+    path: 'labels',
+    loadChildren: './ui-pages/labels/labels.module#LabelsModule'
+  },
+  {
     path: 'lists',
     loadChildren: './ui-pages/lists/lists.module#ListsModule'
   },

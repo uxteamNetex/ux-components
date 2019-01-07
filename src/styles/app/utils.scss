@@ -25,8 +25,22 @@ $block: "utils";
   }
 
   //Colores
+  &--text-black {
+		color: $color-black;
+  }
   &--grey-600 {
 		color: $color-grey-600;
+  }
+  &--text-orange {
+		color: $color-orange;
+  }
+
+  //Colores de fondo
+  &--bc-grey-100 {
+    background-color: $color-grey-100;
+  }
+  &--bc-orange {
+    background-color: $color-orange;
   }
 
   //Márgenes

@@ -22,6 +22,7 @@ const LINKS = [
   "drag and drop",
   "form controls",
   "icons",
+  "labels",
   "lists",
   "menus",
   "panels",

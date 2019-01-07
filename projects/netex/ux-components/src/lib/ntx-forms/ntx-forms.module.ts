@@ -19,6 +19,7 @@ import { FormSelectButtonComponent } from './form-select-button/form-select-butt
 import { FormSelectNoBorderComponent } from './form-select-no-border/form-select-no-border.component';
 import { FormSelectBorderButtonComponent } from './form-select-border-button/form-select-border-button.component';
 import { FormInputNoLabelComponent } from './form-input-no-label/form-input-no-label.component';
+import { FormSearchboxComponent } from './form-searchbox/form-searchbox.component';
 
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { FormInputNoLabelComponent } from './form-input-no-label/form-input-no-l
     FormSelectButtonComponent,
     FormSelectNoBorderComponent,
     FormSelectBorderButtonComponent,
-    FormInputNoLabelComponent
+    FormInputNoLabelComponent,
+    FormSearchboxComponent
   ],
   entryComponents: [
     FormInputComponent,
@@ -61,7 +63,8 @@ import { FormInputNoLabelComponent } from './form-input-no-label/form-input-no-l
     FormSelectButtonComponent,
     FormSelectNoBorderComponent,
     FormSelectBorderButtonComponent,
-    FormInputNoLabelComponent
+    FormInputNoLabelComponent,
+    FormSearchboxComponent
   ]
 })
 export class NtxFormsModule { }

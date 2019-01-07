@@ -12,9 +12,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 COMMITS:
   v.x.x.x:
     Cards:
-      -Cambios css componente Card4 (ntx-card4)
-      -Cambios css componente Card7 (ntx-card7)
-      -Cambios css componente Card8 (ntx-card8)
+      -Cambios css y añadir tooltip en componente Card4 (ntx-card4)
+      -Cambios css y añadir tooltip en componente Card7 (ntx-card7)
+      -Cambios css y añadir tooltip en componente Card8 (ntx-card8)
       -Cambios css componente Tabs (ntx-tabs)
       -Cambios css componente Navigation Tabs (ntx-tabs-navigation)
       -Cambios css componente Sidenav Container (ntx-sidenav-container)
@@ -31,6 +31,8 @@ COMMITS:
       -Nuevo componente Inside Panel (ntx-sidenav-inside)
       -Nuevo componente List Horizontal (ntx-list-horizontal)
       -Nuevo componente One Line List Avatar (ntx-list-one-line-avatar)
+      -Nuevo componente Form Searchbox (ntx-form-searchbox)
+      -Nuevo componente Label (ntx-label)
 
 
   v.2.0.0 - Primera entrega de componentes:

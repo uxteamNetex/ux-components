@@ -1,0 +1,25 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.label{
+  background-color: $color-grey-400;
+  border-radius: 4px;
+  box-shadow: none;
+  color: $color-white;
+  display: inline-block;
+  font-family: LatoMedium;
+  font-size: $font-size-10;
+  margin: 0 4px;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.label-black{
+  .label{
+    background-color: $color-black;
+  }
+}
+.label-orange{
+  .label{
+    background-color: $color-orange;
+  }
+}
