@@ -1,53 +1,52 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SelectionModel } from '@angular/cdk/collections';
-import { MatPaginator, MatTableDataSource } from '@angular/material';
+import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 import { ViewEncapsulation } from '@angular/core';
 import { Input } from '@angular/core';
 
 export interface PeriodicElement {
   name: string;
   project: string;
-  type: string;
   modification: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
   // tslint:disable-next-line:max-line-length
-  {name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', type: 'No editable', modification: '29/11/2018'},
+  {name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  modification: '29/11/2018'},
   // tslint:disable-next-line:max-line-length
-  {name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'},
-  {name: 'Element name', project: 'Project name', type: 'No editable', modification: '29/11/2018'}
+  {name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'},
+  {name: 'Element name', project: 'Project name', modification: '29/11/2018'}
 ];
 
 
@@ -64,6 +63,7 @@ export class SelectableTableComponent implements OnInit {
 
   @Input() color: string;
   @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   displayedColumns: string[] = ['select', 'name', 'project', 'type', 'modification', 'options'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
@@ -94,6 +94,7 @@ export class SelectableTableComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
   }
 

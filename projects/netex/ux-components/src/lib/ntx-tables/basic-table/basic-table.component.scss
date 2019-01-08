@@ -2,25 +2,97 @@
 
 $block: "mat-basic-table";
 
-.#{$block}{
+.table-container{
   border-radius: 4px;
   box-shadow: $shadow;
-  width: 100%;
-  .#{$block}__header{
-    background-color: $color-table-header-background;
-    color: $color-table-header-text;
-    font-family: LatoSemibold;
-    font-size: $font-size-12;
-    height: $tableHeaderHeight;
-    text-transform: uppercase;
-    th{
-      border-bottom: none;
+  position: relative;
+  .table-container__table{
+    min-width: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    .#{$block}{
+      border-radius: 4px 4px 0 0;
+      width: 100%;
+      .#{$block}__header{
+        background-color: $color-table-header-background;
+        color: $color-table-header-text;
+        font-family: LatoSemibold;
+        font-size: $font-size-12;
+        height: $tableHeaderHeight;
+        th{
+          border-bottom: none;
+          color: $color-table-header-text;
+          padding: 0 12px;
+          &:first-of-type{
+            border-radius: 4px 0 0 0;
+            padding-left: 24px;
+          }
+          &:last-of-type{
+            border-radius: 0 4px 0 0;
+            padding-right: 24px;
+          }
+          .mat-sort-header-container{
+            .mat-sort-header-button{
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .#{$block}__row{
+        height: $tableRowHeight;
+        &:last-of-type{
+          td{
+            &.mat-cell{
+              &:first-of-type{
+                border-radius: 0 0 0 4px;
+              }
+              &:last-of-type{
+                border-radius: 0 0 4px 0;
+              }
+            }
+          }
+        }
+        td{
+          &.mat-cell{
+            border-bottom-color: $color-grey-200;
+            color: $color-grey-700;
+            padding: 0 12px;
+            max-width: 148px;
+            &:first-of-type{
+              padding-left: 24px;
+            }
+            &:last-of-type{
+              padding-right: 24px;
+            }
+            .#{$block}__row-name{
+              align-items: center;
+              display: flex;
+              .#{$block}__row-image{
+                border-radius: 50%;
+                flex-shrink: 0;
+                height: 24px;
+                margin-right: 16px;
+                overflow: hidden;
+                width: 24px;
+                img{
+                  height: 100%;
+                }
+              }
+            }
+            span{
+              &.#{$block}__row-text{
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
     }
   }
-  .#{$block}__row{
-    height: $tableRowHeight;
-    td{
-      color: $color-grey-700;
-    }
+  .#{$block}__paginator{
+    border-radius: 0 0 4px 4px;
   }
 }

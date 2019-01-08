@@ -124,6 +124,14 @@ const routes: Routes = [
     loadChildren: './ui-pages/toolbars/toolbars.module#ToolbarsModule'
   },
   {
+    path: 'table',
+    loadChildren: './ui-pages/table/table.module#TableModule'
+  },
+  {
+    path: 'table evaluation',
+    loadChildren: './ui-pages/table-evaluation/table-evaluation.module#TableEvaluationModule'
+  },
+  {
     path: 'table selectable',
     loadChildren: './ui-pages/table-selectable/table-selectable.module#TableSelectableModule'
   },

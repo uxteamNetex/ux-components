@@ -18,6 +18,7 @@ COMMITS:
       -Cambios css componente Tabs (ntx-tabs)
       -Cambios css componente Navigation Tabs (ntx-tabs-navigation)
       -Cambios css componente Sidenav Container (ntx-sidenav-container)
+      -Cambios html, css y ts componente Table Selectable (ntx-selectable-table)
       -Nuevo componente Card1 (ntx-card1)
       -Nuevo componente Card2 (ntx-card2)
       -Nuevo componente Card3 (ntx-card3)
@@ -33,6 +34,8 @@ COMMITS:
       -Nuevo componente One Line List Avatar (ntx-list-one-line-avatar)
       -Nuevo componente Form Searchbox (ntx-form-searchbox)
       -Nuevo componente Label (ntx-label)
+      -Nuevo componente Table (ntx-basic-table)
+      -Nuevo componente Evaluation Table (ntx-evaluation-table)
 
 
   v.2.0.0 - Primera entrega de componentes:

@@ -16,9 +16,9 @@
 
   <div class="table-container__table">
     <!-- Table -->
-    <table mat-table [dataSource]="dataSource" class="table-selectable">
+    <table mat-table [dataSource]="dataSource" matSort class="table-selectable">
       <!-- Checkbox Column -->
-      <ng-container matColumnDef="select">
+      <ng-container matColumnDef="select" sticky>
         <th mat-header-cell *matHeaderCellDef>
           <mat-checkbox (change)="showMultiselecToolbar()"
                         [(ngModel)]="checkboxValue"
@@ -35,7 +35,7 @@
 
       <!-- Column 1 -->
       <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
         <td mat-cell *matCellDef="let element">
           <span>{{element.name}}</span>
         </td>
@@ -43,7 +43,7 @@
 
       <!-- Column 2 -->
       <ng-container matColumnDef="project">
-        <th mat-header-cell *matHeaderCellDef> Project </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project </th>
         <td mat-cell *matCellDef="let element">
           <span>{{element.project}}</span>
         </td>
@@ -51,23 +51,23 @@
 
       <!-- Column 3 -->
       <ng-container matColumnDef="type">
-        <th mat-header-cell *matHeaderCellDef> Type </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Type </th>
         <td mat-cell *matCellDef="let element">
-          <span>{{element.type}}</span>
+          <ntx-label></ntx-label>
         </td>
       </ng-container>
 
       <!-- Column 4 -->
       <ng-container matColumnDef="modification">
-        <th mat-header-cell *matHeaderCellDef> Last modification </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Last modification </th>
         <td mat-cell *matCellDef="let element">
           <span>{{element.modification}}</span>
         </td>
       </ng-container>
 
       <!-- Column 5 -->
-      <ng-container matColumnDef="options">
-        <th mat-header-cell *matHeaderCellDef> </th>
+      <ng-container matColumnDef="options" stickyEnd>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
         <td mat-cell *matCellDef="let element">
           <ntx-menu-options></ntx-menu-options>
         </td>
@@ -80,6 +80,6 @@
   </div>
 
   <!-- Paginator -->
-  <mat-paginator class="table-container__paginator" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  <mat-paginator class="table-container__paginator" [pageSizeOptions]="[10, 25, 50]" showFirstLastButtons></mat-paginator>
 
 </div>

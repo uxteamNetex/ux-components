@@ -1,6 +1,6 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-$block: "table-selectable";
+$block: "table-evaluation";
 
 .table-container{
   border-radius: 4px;
@@ -11,27 +11,6 @@ $block: "table-selectable";
     border-radius: 4px 4px 0 0;
     height: $tableHeaderOptionsHeight;
     position: relative;
-    .table-container__header--items{
-      align-items: center;
-      display: flex;
-      height: 100%;
-      justify-content: space-between;
-      padding: 0 24px;
-      .table-container__header--items-selected{
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 36px;
-        span{
-          color: $color-grey-700;
-          font-family: latoMedium;
-          font-size: $font-size-16;
-          font-weight: normal;
-        }
-      }
-    }
     .table-container__header--options{
       height: $tableHeaderOptionsHeight;
       position: absolute;
@@ -48,16 +27,15 @@ $block: "table-selectable";
     .#{$block}{
       width: 100%;
       .#{$block}__header{
-        background-color: $color-table-header-background;
-        color: $color-table-header-text;
-        font-family: LatoSemibold;
-        font-size: $font-size-12;
-        height: $tableHeaderHeight;
-        text-transform: uppercase;
+        height: $tableEvaluationHeaderHeight;
         th{
           &.mat-header-cell{
-            border-bottom: none;
+            border-bottom: 1px solid $color-grey-300;
+            color: $color-grey-800;
+            font-family: LatoSemibold;
+            font-size: $font-size-16;
             padding: 0 12px;
+            text-transform: uppercase;
             &:first-of-type{
               padding: 0 24px;
               width: 24px;
@@ -80,6 +58,27 @@ $block: "table-selectable";
             .mat-sort-header-container{
               .mat-sort-header-button{
                 text-transform: uppercase;
+              }
+            }
+            .#{$block}__header-texts{
+              align-items: flex-start;
+              display: flex;
+              flex-direction: column;
+              .#{$block}__header-subtitle{
+                color: $color-grey-600;
+                font-family: lato;
+                font-style: italic;
+                text-transform: none;
+              }
+            }
+            .#{$block}__header-icon{
+              color: $color-primary;
+              height: 48px;
+              line-height: 48px;
+              margin: 0 4px;
+              width: 48px;
+              &:hover{
+                background-color: $icon-button-hover;
               }
             }
           }
@@ -138,5 +137,4 @@ $block: "table-selectable";
     border-radius: 0 0 4px 4px;
   }
 }
-
 

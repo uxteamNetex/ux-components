@@ -29,6 +29,8 @@ const LINKS = [
   "progress bar",
   "sidenavs",
   "sidenav filters",
+  "table",
+  "table evaluation",
   "table selectable",
   "tabs",
   "toolbars",
