@@ -5,31 +5,32 @@ $block: "table-evaluation";
 .table-container{
   border-radius: 4px;
   box-shadow: $shadow;
-  /*Header*/
-  .table-container__header{
-    background-color: $color-white;
-    border-radius: 4px 4px 0 0;
-    height: $tableHeaderOptionsHeight;
-    position: relative;
-    .table-container__header--options{
-      height: $tableHeaderOptionsHeight;
-      position: absolute;
-      top: 0px;
-      width: 100%;
-    }
-  }
-
   /*Table*/
   .table-container__table{
+    height: 70vh;
     min-width: 500px;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: auto;
+    position: relative;
+    /*Header selection*/
+    .table-container__header{
+      .table-container__header--options{
+        ntx-evaluation-multi-select-options {
+          border-radius: 4px 4px 0 0;
+          height: 84px;
+          position: absolute;
+          width: 100%;
+          z-index: 9;
+        }
+      }
+    }
     .#{$block}{
       width: 100%;
       .#{$block}__header{
         height: $tableEvaluationHeaderHeight;
         th{
           &.mat-header-cell{
+            background-color: $color-white;
             border-bottom: 1px solid $color-grey-300;
             color: $color-grey-800;
             font-family: LatoSemibold;
@@ -37,8 +38,13 @@ $block: "table-evaluation";
             padding: 0 12px;
             text-transform: uppercase;
             &:first-of-type{
-              padding: 0 24px;
+              padding: 0 0 0 16px;
               width: 24px;
+            }
+            &.mat-table-sticky{
+              .mat-sort-header-container{
+                justify-content: flex-start;
+              }
             }
             .mat-checkbox{
               &.mat-checkbox-disabled{
@@ -56,6 +62,7 @@ $block: "table-evaluation";
               }
             }
             .mat-sort-header-container{
+              justify-content: center;
               .mat-sort-header-button{
                 text-transform: uppercase;
               }
@@ -73,10 +80,10 @@ $block: "table-evaluation";
             }
             .#{$block}__header-icon{
               color: $color-primary;
-              height: 48px;
-              line-height: 48px;
-              margin: 0 4px;
-              width: 48px;
+              height: 24px;
+              line-height: 24px;
+              margin: 0 0 0 12px;
+              width: 24px;
               &:hover{
                 background-color: $icon-button-hover;
               }
@@ -85,18 +92,38 @@ $block: "table-evaluation";
         }
       }
       .#{$block}__row{
-        height: $tableRowHeight;
-        &:hover{
-          background-color: $color-grey-100;
+        height: $tableEvaluationRowHeight;
+        &:nth-child(odd){
+          td{
+            &.mat-cell{
+               background-color: $color-bg-table;
+            }
+          }
+        }
+        &:nth-child(even){
+          td{
+            &.mat-cell{
+              background-color: $color-white;
+            }
+          }
         }
         td{
           &.mat-cell{
-            color: $color-grey-700;
-            max-width: 148px;
+            border-bottom: none;
+            color: $color-grey-800;
+            min-width: 140px;
             padding: 0 12px;
+            text-align: center;
             &:first-of-type{
-              padding: 0 24px;
-              width: 24px;
+              padding: 0 0 0 16px;
+              min-width: 28px;
+              width: 28px;
+            }
+            &:nth-child(2){
+              border-right: 1px solid $color-grey-300;
+            }
+            &.mat-table-sticky{
+              text-align: left;
             }
             .mat-checkbox{
               &.mat-checkbox-disabled{
@@ -113,11 +140,54 @@ $block: "table-evaluation";
                 }
               }
             }
+            .#{$block}__row-name{
+              align-items: center;
+              display: flex;
+              position: relative;
+              .#{$block}__row-image-check{
+                background-color: $color-white;
+                border-radius: 50px;
+                color: $color-success;
+                height: 24px;
+                left: 34px;
+                position: absolute;
+                top: 0;
+                width: 24px;
+                z-index: 99;
+              }
+              .#{$block}__row-image{
+                border-radius: 50%;
+                flex-shrink: 0;
+                height: 48px;
+                margin-right: 16px;
+                overflow: hidden;
+                position: relative;
+                width: 48px;
+                img{
+                  height: 100%;
+                }
+              }
+              span{
+                &.#{$block}__row-text{
+                  max-width: 140px;
+                  width: 140px;
+                  &.#{$block}__row-job{
+                    padding-left: 48px;
+                  }
+                }
+                &.#{$block}__row-alert{
+                  padding-left: 40px;
+                }
+              }
+            }
             span{
-              display: block;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
+              &.#{$block}__row-text{
+                display: block;
+                font-size: $font-size-16;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
             }
             .mat-icon-button{
               &.menu-options-button{
@@ -135,6 +205,7 @@ $block: "table-evaluation";
   /*Paginator*/
   .table-container__paginator{
     border-radius: 0 0 4px 4px;
+    border-top: 1px solid $color-grey-300;
   }
 }
 

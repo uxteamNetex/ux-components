@@ -11,6 +11,7 @@ import { EvaluationTableComponent } from './evaluation-table/evaluation-table.co
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxLabelsModule } from '../ntx-labels/ntx-labels.module';
 import { MultiSelectOptionsComponent } from './multi-select-options/multi-select-options.component';
+import { EvaluationMultiSelectOptionsComponent } from './evaluation-multi-select-options/evaluation-multi-select-options.component';
 
 
 @NgModule({
@@ -26,13 +27,15 @@ import { MultiSelectOptionsComponent } from './multi-select-options/multi-select
     BasicTableComponent,
     SelectableTableComponent,
     MultiSelectOptionsComponent,
-    EvaluationTableComponent
+    EvaluationTableComponent,
+    EvaluationMultiSelectOptionsComponent
   ],
   exports: [
     BasicTableComponent,
     SelectableTableComponent,
     MultiSelectOptionsComponent,
-    EvaluationTableComponent
+    EvaluationTableComponent,
+    EvaluationMultiSelectOptionsComponent
   ]
 })
 export class NtxTablesModule { }

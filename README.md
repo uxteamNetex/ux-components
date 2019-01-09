@@ -34,6 +34,7 @@ COMMITS:
       -Nuevo componente One Line List Avatar (ntx-list-one-line-avatar)
       -Nuevo componente Form Searchbox (ntx-form-searchbox)
       -Nuevo componente Label (ntx-label)
+      -Nuevo componente Label Error (ntx-label-error)
       -Nuevo componente Table (ntx-basic-table)
       -Nuevo componente Evaluation Table (ntx-evaluation-table)
 

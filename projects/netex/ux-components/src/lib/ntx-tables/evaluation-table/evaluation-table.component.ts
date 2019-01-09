@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SelectionModel } from '@angular/cdk/collections';
-import { MatSort, MatTableDataSource } from '@angular/material';
+import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 import { ViewEncapsulation } from '@angular/core';
 import { Input } from '@angular/core';
 
@@ -13,8 +13,49 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
+  // tslint:disable-next-line:max-line-length
+  {receivers: 'Amanda Matterson Cooper Amanda Matterson Cooper', job: 'Web developer Web developer Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
   {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
-  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'}
+  {receivers: 'Angeline Kerber', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'},
+  {receivers: 'Amanda Matterson Cooper', job: 'Web developer', superiors: '2', pairs: '10', subordinates: '3'},
+  {receivers: 'Angeline Kerber Peterson', job: 'Marketing assistant', superiors: '1', pairs: '23', subordinates: '14'}
 ];
 
 
@@ -30,9 +71,10 @@ export class EvaluationTableComponent implements OnInit {
   checkboxValue: boolean;
 
   @Input() color: string;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  displayedColumns: string[] = ['select', 'receivers', 'job', 'superiors', 'pairs', 'subordinates'];
+  displayedColumns: string[] = ['select', 'receivers', 'superiors', 'pairs', 'subordinates'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 
@@ -62,6 +104,7 @@ export class EvaluationTableComponent implements OnInit {
 
   ngOnInit() {
     this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
 
 }

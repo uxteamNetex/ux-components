@@ -1,0 +1,42 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "evaluation-multi-select-header";
+
+.#{$block} {
+  z-index: 9;
+  height: $tableEvaluationHeaderHeight;
+  .#{$block}__total-items {
+    .checkbox {
+      &.mat-checkbox{
+        margin: 0 16px 0 0;
+        .mat-checkbox-inner-container{
+          .mat-checkbox-frame{
+            border-color: $color-white;
+            border-width: 1px;
+          }
+          .mat-checkbox-background{
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    span{
+      color: $color-white;
+      font-family: latoMedium;
+      font-size: $font-size-16;
+      font-weight: normal;
+    }
+  }
+  .#{$block}__spacer {
+    flex: 1 1 auto;
+  }
+  .#{$block}__button {
+    color: $color-white;
+    font-family: Lato;
+    margin: 0 4px;
+    text-transform: uppercase;
+    &:hover{
+      background: $icon-button-hover;
+    }
+  }
+}

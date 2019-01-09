@@ -1,15 +1,16 @@
 <div class="table-container mat-elevation-z8">
 
-  <!-- Header -->
-  <div class="table-container__header">
-    <div class="table-container__header--options">
-      <ntx-multi-select-options *ngIf="show"></ntx-multi-select-options>
-    </div>
-  </div>
-
   <div class="table-container__table">
+    <!-- Header Selection-->
+    <div class="table-container__header">
+      <div class="table-container__header--options">
+        <ntx-evaluation-multi-select-options *ngIf="show"></ntx-evaluation-multi-select-options>
+      </div>
+    </div>
+
     <!-- Table -->
     <table mat-table [dataSource]="dataSource" matSort class="table-evaluation">
+
       <!-- Checkbox Column -->
       <ng-container matColumnDef="select" sticky>
         <th mat-header-cell *matHeaderCellDef>
@@ -35,24 +36,21 @@
           </button>
         </th>
         <td mat-cell *matCellDef="let element">
-          <span>{{element.receivers}}</span>
+          <div class="table-evaluation__row-name">
+            <mat-icon class="icon-netex icon-check-circle-solid table-evaluation__row-image-check"></mat-icon>
+            <div class="table-evaluation__row-image">
+              <img mat-card-image class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
+            </div>
+            <span class="table-evaluation__row-text" matTooltip="User name that could be longer">{{element.receivers}}</span>
+            <span class="table-evaluation__row-text table-evaluation__row-job" matTooltip="User job that could be longer">{{element.job}}</span>
+            <span class="table-evaluation__row-alert">
+              <ntx-label-error></ntx-label-error>
+            </span>
+          </div>
         </td>
       </ng-container>
 
       <!-- Column 2 -->
-      <ng-container matColumnDef="job" sticky>
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>
-          <span>Job</span>
-          <button mat-icon-button class="table-evaluation__header-icon">
-            <mat-icon class="icon-netex icon-plus-circle"></mat-icon>
-          </button>
-        </th>
-        <td mat-cell *matCellDef="let element">
-          <span>{{element.job}}</span>
-        </td>
-      </ng-container>
-
-      <!-- Column 3 -->
       <ng-container matColumnDef="superiors">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <div class="table-evaluation__header-texts">
@@ -64,11 +62,11 @@
           </button>
         </th>
         <td mat-cell *matCellDef="let element">
-          <span>{{element.superiors}}</span>
+          <span class="table-evaluation__row-text">{{element.superiors}}</span>
         </td>
       </ng-container>
 
-      <!-- Column 4 -->
+      <!-- Column 3 -->
       <ng-container matColumnDef="pairs">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <div class="table-evaluation__header-texts">
@@ -80,11 +78,11 @@
           </button>
         </th>
         <td mat-cell *matCellDef="let element">
-          <span>{{element.pairs}}</span>
+          <span class="table-evaluation__row-text">{{element.pairs}}</span>
         </td>
       </ng-container>
 
-      <!-- Column 5 -->
+      <!-- Column 4 -->
       <ng-container matColumnDef="subordinates">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>
           <div class="table-evaluation__header-texts">
@@ -96,14 +94,17 @@
           </button>
         </th>
         <td mat-cell *matCellDef="let element">
-          <span>{{element.subordinates}}</span>
+          <span class="table-evaluation__row-text">{{element.subordinates}}</span>
         </td>
       </ng-container>
 
-      <tr class="table-evaluation__header" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr class="table-evaluation__header" mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
       <tr class="table-evaluation__row" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
     </table>
   </div>
+
+  <!-- Paginator -->
+  <mat-paginator class="table-container__paginator" [pageSizeOptions]="[10, 25, 50]" showFirstLastButtons></mat-paginator>
 
 </div>
