@@ -81,6 +81,14 @@ $block: "utils";
     margin: 0;
     text-transform: uppercase;
   }
+  &--section-title-grey {
+    color: $color-grey-600;
+    font-family: lato;
+    font-size: $font-size-14;
+    line-height: 17px;
+    margin: 0;
+    text-transform: uppercase;
+  }
   &--basic-text {
     color: $color-grey-600;
     font-family: lato;
@@ -108,9 +116,17 @@ $block: "utils";
     top: 50%;
   }
 
+  //Tamaños fuente
+  &--text-16 {
+		font-size: $font-size-16;
+  }
+
   //Colores
   &--text-black {
 		color: $color-black;
+  }
+  &--grey-700 {
+		color: $color-grey-700;
   }
   &--grey-600 {
 		color: $color-grey-600;

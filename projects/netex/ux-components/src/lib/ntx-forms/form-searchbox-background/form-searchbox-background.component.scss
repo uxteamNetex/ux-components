@@ -1,62 +1,64 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-$block: "form-searchbox";
+$block: "form-searchbox-background";
 
 .#{$block}{
+  width: 100%;
   &.mat-form-field{
     &.mat-form-field-appearance-legacy{
       &.mat-focused{
         .mat-form-field-wrapper{
           .mat-form-field-flex{
             .mat-form-field-infix{
-              input{
-                padding-left: 50px;
-                width: 300px;
-                &:hover{
-                  +.mat-button{
-                    background: inherit;
-                  }
+              .mat-form-field-label-wrapper{
+                .mat-form-field-label {
+                  color: $color-grey-700;
                 }
-              }
-              .mat-icon.icon-netex{
               }
             }
           }
           .mat-form-field-underline{
-            height: 1;
+            .mat-form-field-ripple{
+              height: 0;
+            }
           }
         }
       }
       .mat-form-field-wrapper{
+        padding-bottom: 0;
         .mat-form-field-flex{
+          background-color: $color-grey-200;
+          border-radius: 4px;
+          padding: 0 4px;
           .mat-form-field-infix{
-            width: auto;
-            display: flex;
             align-items: center;
-            justify-content: flex-end;
-            position: relative;
-            height: 42px;
+            border: none;
+            display: flex;
+            height: 48px;
+            margin: 0;
             padding: 0;
+            position: relative;
+            width: auto;
             input{
-              height: 42px;
-              -webkit-transition: width .6s;
-              transition: width .6s;
-              width: 48px;
-              z-index: 9;
-              cursor: pointer;
-              &:hover{
-                +.mat-button{
-                  background: $icon-button-hover;
-                }
-              }
+              font-size: $font-size-16;
+              height: 48px;
+              width: 300px;
             }
             .mat-button{
               height: 42px;
-              left: 0;
-              position: absolute;
+              margin: 0 4px 0 0;
               width: 42px;
               &:hover{
                 background: $icon-button-hover;
+              }
+            }
+            .mat-form-field-label-wrapper{
+              left: 50px;
+              width: calc(100% - 50px);
+              .mat-form-field-label {
+                color: $color-grey-600;
+                font-size: $font-size-16;
+                top: 27px;
               }
             }
           }
@@ -77,8 +79,6 @@ $block: "form-searchbox";
         }
         .mat-form-field-underline{
           height: 0;
-          -webkit-transition: height .6s;
-          transition: height .6s;
         }
       }
     }

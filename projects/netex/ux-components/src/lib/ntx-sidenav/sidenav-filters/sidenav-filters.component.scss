@@ -37,7 +37,7 @@ $block: "sidenav-filters";
       }
     }
     .#{$block}__content{
-      padding: 20px 16px;
+      padding: 12px 16px 20px 16px;
       .#{$block}__content--checkbox{
         align-items: center;
         display: flex;

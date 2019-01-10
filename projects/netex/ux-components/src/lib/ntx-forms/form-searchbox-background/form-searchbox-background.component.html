@@ -1,10 +1,10 @@
-<mat-form-field class="form-searchbox" floatLabel="never">
-
-  <input class="form-searchbox__input" matInput type="search" [(ngModel)]="value">
+<mat-form-field class="form-searchbox-background" floatLabel="never">
 
   <button class="search" mat-button mat-icon-button aria-label="search">
     <mat-icon class="icon-netex icon-search"></mat-icon>
   </button>
+
+  <input class="form-searchbox-background__input" placeholder="Search..." matInput type="search" [(ngModel)]="value">
 
   <button class="close" mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
     <mat-icon class="icon-netex icon-cross"></mat-icon>

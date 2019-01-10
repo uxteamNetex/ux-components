@@ -16,6 +16,7 @@ const LINKS = [
   "card10",
   "card11",
   "card12",
+  "card13",
   "cards",
   "chips",
   "dialogs",

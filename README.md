@@ -15,10 +15,6 @@ COMMITS:
       -Cambios css y añadir tooltip en componente Card4 (ntx-card4)
       -Cambios css y añadir tooltip en componente Card7 (ntx-card7)
       -Cambios css y añadir tooltip en componente Card8 (ntx-card8)
-      -Cambios css componente Tabs (ntx-tabs)
-      -Cambios css componente Navigation Tabs (ntx-tabs-navigation)
-      -Cambios css componente Sidenav Container (ntx-sidenav-container)
-      -Cambios html, css y ts componente Table Selectable (ntx-selectable-table)
       -Nuevo componente Card1 (ntx-card1)
       -Nuevo componente Card2 (ntx-card2)
       -Nuevo componente Card3 (ntx-card3)
@@ -26,17 +22,41 @@ COMMITS:
       -Nuevo componente Card10 (ntx-card10)
       -Nuevo componente Card11 (ntx-card11)
       -Nuevo componente Card12 (ntx-card12)
-      -Nuevo componente Panel Tabs (app-panel-tabs)
-      -Nuevo componente Input Form Without Label (ntx-form-input-no-label)
-      -Nuevo componente Speed Dial Button (ntx-fab-speed-dial-button)
-      -Nuevo componente Inside Panel (ntx-sidenav-inside)
-      -Nuevo componente List Horizontal (ntx-list-horizontal)
-      -Nuevo componente One Line List Avatar (ntx-list-one-line-avatar)
-      -Nuevo componente Form Searchbox (ntx-form-searchbox)
-      -Nuevo componente Label (ntx-label)
-      -Nuevo componente Label Error (ntx-label-error)
+      -Nuevo componente Card13 (ntx-card13)
+    
+    Tabs:
+      -Cambios css componente Tabs (ntx-tabs)
+      -Cambios css componente Navigation Tabs (ntx-tabs-navigation)
+    
+    Sidenavs:
+      -Cambios css componente Sidenav Container (ntx-sidenav-container)
+
+    Tables:
+      -Cambios html, css y ts componente Table Selectable (ntx-selectable-table)
       -Nuevo componente Table (ntx-basic-table)
       -Nuevo componente Evaluation Table (ntx-evaluation-table)
+      
+    Panels:
+      -Nuevo componente Panel Tabs (app-panel-tabs)
+      -Nuevo componente Inside Panel (ntx-sidenav-inside)
+
+    Form controls:
+      -Nuevo componente Input Form Without Label (ntx-form-input-no-label)
+      -Nuevo componente Form Searchbox (ntx-form-searchbox)
+      -Nuevo componente Form Searchbox with background (ntx-form-searchbox-background)
+      -Nuevo componente Form Select Thin (ntx-form-select-thin)
+
+    Buttons:
+      -Nuevo componente Speed Dial Button (ntx-fab-speed-dial-button)
+    
+    Lists:
+      -Nuevo componente List Horizontal (ntx-list-horizontal)
+      -Nuevo componente One Line List Avatar (ntx-list-one-line-avatar)
+
+    Labels:
+      -Nuevo componente Label (ntx-label)
+      -Nuevo componente Label Error (ntx-label-error)
+      
 
 
   v.2.0.0 - Primera entrega de componentes:

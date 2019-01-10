@@ -8,7 +8,6 @@ export interface Option {
   disabled: boolean;
 }
 
-
 @Component({
   selector: 'ntx-form-select-border-button',
   templateUrl: './form-select-border-button.component.html',
