@@ -6,17 +6,18 @@ $block: "card5";
   &.#{$block}{
     border-radius: 4px;
     box-shadow: $shadow;
-    display: flex;
-    flex-direction: column;
+    display: block;
     height: 56px;
     margin: 8px;
     padding: 0;
+    width: auto;
     &:hover{
       box-shadow: $shadow-hover;
       cursor: pointer;
     }
     .mat-card-content{
       display: flex;
+      justify-content: space-between;
       .#{$block}__title{
         color: $color-grey-800;
         display: inline-flex;
@@ -28,6 +29,7 @@ $block: "card5";
         overflow: hidden;
         .#{$block}__title--text{
           display: -webkit-box;
+          margin-right: 4px;
           -webkit-line-clamp: 1;
           /* autoprefixer: off */
           -webkit-box-orient: vertical;

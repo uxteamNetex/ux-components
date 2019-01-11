@@ -6,11 +6,11 @@ $block: "card2";
   &.#{$block}{
     border-radius: 4px;
     box-shadow: $shadow;
-    display: flex;
-    flex-direction: column;
+    display: block;
     height: 245px;
     margin: 8px;
     padding: 0;
+    width: auto;
     &:hover{
       box-shadow: $shadow-hover;
       cursor: pointer;
@@ -21,7 +21,9 @@ $block: "card2";
       width: 100%;
     }
     .mat-card-content{
-      display: flex;
+      display: inline-flex;
+      margin-top: -5px;
+      width: 100%;
       .#{$block}__title{
         color: $color-grey-800;
         font-family: latoBold;
@@ -31,6 +33,7 @@ $block: "card2";
         max-height: 48px;
         word-wrap: break-word;
         overflow: hidden;
+        width: calc(100% - 56px);
         .#{$block}__title--text{
           display: -webkit-box;
           -webkit-line-clamp: 2;

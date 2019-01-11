@@ -6,16 +6,18 @@ $block: "card3";
   &.#{$block}{
     border-radius: 4px;
     box-shadow: $shadow;
-    display: inline-flex;
+    display: block;
     height: 264px;
     margin: 8px;
     padding: 0;
     text-align: center;
+    width: auto;
     &:hover{
       box-shadow: $shadow-hover;
       cursor: pointer;
     }
     .mat-card-content{
+      padding-top: 32px;
       .#{$block}__options{
         position: absolute;
         right: 2px;
@@ -27,7 +29,7 @@ $block: "card3";
         background-size: cover;
         border-radius: 50%;
         height: 88px;
-        margin: 32px auto 16px;
+        margin: 0 auto 16px;
         overflow: hidden;
         position: relative;
         width: 88px;

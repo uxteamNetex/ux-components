@@ -6,17 +6,18 @@ $block: "card7";
   &.#{$block}{
     border-radius: 4px;
     box-shadow: $shadow;
-    display: inline-flex;
+    display: block;
     margin: 8px;
     padding: 20px 8px 16px 16px;
-    width: calc(23% - 16px);
+    width: auto;
     &:hover{
       box-shadow: $shadow-hover;
       cursor: pointer;
     }
-    .mat-card-header{
-      .mat-card-header-text{
-        margin: 0 8px 0 0;
+    .mat-card-content{
+      display: flex;
+      justify-content: space-between;
+      .#{$block}__texts{
         .#{$block}__title{
           color: $color-grey-800;
           font-family: latoBold;
@@ -51,35 +52,6 @@ $block: "card7";
         margin-right: -6px;
         margin-top: -16px;
       }
-    }
-  }
-}
-
-@media (min-width: 400px) and (max-width: 1024px) {
-  .mat-card{
-    &.#{$block}{
-      width: calc(47% - 16px);
-    }
-  }
-}
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .mat-card{
-    &.#{$block}{
-      width: calc(47% - 16px);
-    }
-  }
-}
-@media (min-width: 1280px) and (max-width: 1480px) {
-  .mat-card{
-    &.#{$block}{
-      width: calc(30% - 16px);
-    }
-  }
-}
-@media (min-width: 1480px) {
-  .mat-card{
-    &.#{$block}{
-      width: calc(23% - 16px);
     }
   }
 }
