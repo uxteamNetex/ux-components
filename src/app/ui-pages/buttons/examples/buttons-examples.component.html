@@ -23,22 +23,32 @@
       <ntx-stroked-icon-button [color]="'white'" [disabled]="'true'"></ntx-stroked-icon-button>
     </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Text buttons' | uppercase }}"
+                      subtitle="{{ '<ntx-text-button>' }}"
+                      class="white-content">
+        <ntx-text-button [color]="'primary'"></ntx-text-button>
+        <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
+        <ntx-text-button [color]="'accent'"></ntx-text-button>
+        <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
+        <ntx-text-button [color]="'white'"></ntx-text-button>
+        <ntx-text-button [color]="'white'" [disabled]="'true'"></ntx-text-button>
+    </ntx-card-simple>
+
+    <ntx-card-simple title="{{'Icon text buttons' | uppercase }}"
+                      subtitle="{{ '<ntx-text-icon-button>' }}"
+                      class="white-content">
+        <ntx-text-icon-button [color]="'primary'"></ntx-text-icon-button>
+        <ntx-text-icon-button [color]="'primary'" [disabled]="'true'"></ntx-text-icon-button>
+        <ntx-text-icon-button [color]="'accent'"></ntx-text-icon-button>
+        <ntx-text-icon-button [color]="'accent'" [disabled]="'true'"></ntx-text-icon-button>
+        <ntx-text-icon-button [color]="'white'"></ntx-text-icon-button>
+        <ntx-text-icon-button [color]="'white'" [disabled]="'true'"></ntx-text-icon-button>
+    </ntx-card-simple>
+
 
     <ntx-card-simple *ngFor="let type of buttonTypes;"
                       title="{{type.label + ' buttons' | uppercase }}"
                       subtitle="{{ type.selector }}">
-      <div *ngIf="type.label==='text'" class="white-content">
-          <ntx-text-button [color]="'primary'"></ntx-text-button>
-          <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
-          <ntx-text-button [color]="'accent'"></ntx-text-button>
-          <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
-      </div>
-      <div *ngIf="type.label==='icon text'">
-          <ntx-text-icon-button [color]="'primary'"></ntx-text-icon-button>
-          <ntx-text-icon-button [color]="'primary'" [disabled]="'true'"></ntx-text-icon-button>
-          <ntx-text-icon-button [color]="'accent'"></ntx-text-icon-button>
-          <ntx-text-icon-button [color]="'accent'" [disabled]="'true'"></ntx-text-icon-button>
-      </div>
       <div *ngIf="type.label==='raised'">
           <ntx-raised-button [color]="'primary'"></ntx-raised-button>
           <ntx-raised-button [color]="'primary'" [disabled]="'true'"></ntx-raised-button>

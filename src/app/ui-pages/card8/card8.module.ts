@@ -9,11 +9,16 @@ import {
   NtxCardsModule
 } from '@netex/ux-components';
 
+import {
+  MatGridListModule
+} from '@angular/material';
+
 @NgModule({
   imports: [
     CommonModule,
     NtxCardsModule,
-    Card8RoutingModule
+    Card8RoutingModule,
+    MatGridListModule
   ],
   declarations: [DocumentationComponent, ExamplesComponent]
 })

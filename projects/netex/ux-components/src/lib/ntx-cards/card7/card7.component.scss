@@ -7,8 +7,9 @@ $block: "card7";
     border-radius: 4px;
     box-shadow: $shadow;
     display: block;
+    height: 100px;
     margin: 8px;
-    padding: 20px 8px 16px 16px;
+    padding: 0;
     width: auto;
     &:hover{
       box-shadow: $shadow-hover;
@@ -17,6 +18,7 @@ $block: "card7";
     .mat-card-content{
       display: flex;
       justify-content: space-between;
+      padding: 20px 8px 16px 16px;
       .#{$block}__texts{
         .#{$block}__title{
           color: $color-grey-800;

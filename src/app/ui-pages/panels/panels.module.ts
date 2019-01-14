@@ -5,6 +5,7 @@ import { PanelsExamplesComponent } from './examples/panels-examples.component';
 import { PanelsRoutingModule } from './panels-routing.module';
 import { DummyComponent } from './dummy/dummy.component';
 import { PanelTabsComponent } from './panel-tabs/panel-tabs.component';
+import { PanelUserProfileComponent } from './panel-user-profile/panel-user-profile.component';
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule } from '@angular/material';
 
 import {
@@ -12,6 +13,7 @@ import {
   NtxButtonsModule,
   NtxTabsModule
 } from '@netex/ux-components';
+
 
 
 @NgModule({
@@ -30,11 +32,13 @@ import {
       DummyComponent,
       PanelsDocComponent,
       PanelsExamplesComponent,
-      PanelTabsComponent
+      PanelTabsComponent,
+      PanelUserProfileComponent
   ],
   entryComponents: [
     DummyComponent,
-    PanelTabsComponent
+    PanelTabsComponent,
+    PanelUserProfileComponent
   ]
 })
 export class PanelsModule { }

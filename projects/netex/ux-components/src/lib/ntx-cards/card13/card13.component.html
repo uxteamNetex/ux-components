@@ -1,19 +1,21 @@
 <mat-card class="card13"
           (click)="clickEvent()"
           [ngClass]="status ? 'card-selected' : ' '">
-  <mat-card-header>
-    <mat-card-title class="card13__title">
-      <span class="card13__title--text" matTooltip="Competency title with a very long text">Competency title with a very long text</span>
-    </mat-card-title>
-    <mat-card-subtitle class="card13__subtitle">
-      <span class="card13__subtitle--text" matTooltip="Description in a few words that could be one or two lines maximum and then three dots">Description in a few words that could be one or two lines maximum and then three dots</span>
-    </mat-card-subtitle>
-
+  <mat-card-content>
+    <div class="card13__texts">
+      <mat-card-title class="card13__title">
+        <span class="card13__title--text" matTooltip="Competency title with a very long text">Competency title with a very long text</span>
+      </mat-card-title>
+      <mat-card-subtitle class="card13__subtitle">
+        <span class="card13__subtitle--text" matTooltip="Description in a few words that could be one or two lines maximum and then three dots">Description in a few words that could be one or two lines maximum and then three dots</span>
+      </mat-card-subtitle>
+      <ntx-form-select-thin></ntx-form-select-thin>
+    </div>
     <div class="card13__options">
       <ntx-form-checkbox-circle [hidden]="'true'"></ntx-form-checkbox-circle>
     </div>
-  </mat-card-header>
-  <mat-card-content>
-
+    <div class="card13__label-state" style="display:none;">
+      <span>Added</span>
+    </div>
   </mat-card-content>
 </mat-card>

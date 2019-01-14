@@ -1,0 +1,54 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block : 'file-added';
+
+.#{$block} {
+  background-color: $color-grey-100;
+  cursor: pointer;
+  height: 340px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  &:hover{
+    background-color: $color-grey-200;
+  }
+  &__file{
+    background-color: $color-white;
+    border: 1px solid $color-grey-300;
+    border-radius: 4px;
+    height: 165px;
+    width: 180px;
+    &--close{
+      color: $color-grey-600;
+      height: 32px;
+      line-height: 32px;
+      position: absolute;
+      right: -16px;
+      top: -16px;
+      width: 32px;
+      &:hover{
+        color: $color-grey-700;
+      }
+      .mat-icon.icon-netex{
+        font-size: $font-size-32;
+      }
+    }
+    &--icon{
+      &.mat-icon{
+        color: $color-grey-700;
+        font-size: $font-size-56;
+        margin-bottom: 8px;
+        margin-top: 24px;
+      }
+    }
+    &--title{
+      color: $color-grey-800;
+      font-family: latoBold;
+      font-size: $font-size-14;
+      line-height: 20px;
+      margin: 16px 12px;
+      text-align: center;
+      word-break: break-all;
+    }
+  }
+}

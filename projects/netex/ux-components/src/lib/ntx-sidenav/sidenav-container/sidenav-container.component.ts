@@ -11,9 +11,7 @@ export class SidenavContainerComponent implements OnInit {
 
   @ViewChild('sidenav') sidenavRef: MatSidenav;
 
-  constructor(
-    private sidenavService: NtxSidenavService
-  ) { }
+  constructor(private sidenavService: NtxSidenavService) { }
 
   ngOnInit() {
     this.listenOnSidenavOpen();

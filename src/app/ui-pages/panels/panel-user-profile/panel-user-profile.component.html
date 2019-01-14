@@ -1,0 +1,45 @@
+<div class="panel-user-profile">
+  <mat-toolbar class="panel-user-profile__toolbar">
+    <button class="hack-autofocus-disable"
+            type="button"
+            mat-icon-button>
+    </button>
+    <button type="button"
+            class="panel-user-profile__close"
+            i18n-aria-label
+            mat-icon-button
+            (click)="onCloseSidenav()">
+        <mat-icon class="icon icon-netex icon-cross"></mat-icon>
+    </button>
+    <span class="panel-user-profile__spacer"></span>
+    <ntx-text-icon-button [color]="'white'"></ntx-text-icon-button>
+    <ntx-text-icon-button [color]="'white'"></ntx-text-icon-button>
+  </mat-toolbar>
+
+  <div class="panel-user-profile__info">
+    <div mat-card-avatar class="panel-user-profile__info--image">
+      <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
+    </div>
+    <p class="panel-user-profile__info--text">User name</p>
+    <div class="panel-user-profile__info--details">
+      <div class="panel-user-profile__info--detail">
+        <mat-icon class="icon icon-netex icon-briefcase"></mat-icon>
+        <div class="panel-user-profile__info--detail-texts">
+          <p>Department</p>
+          <p>UX Department</p>
+        </div>
+      </div>
+      <div class="panel-user-profile__info--detail">
+        <div class="panel-user-profile__info--detail-image">
+          <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
+        </div>
+        <div class="panel-user-profile__info--detail-texts">
+          <p>Supervisor</p>
+          <p>Carolina Martínez</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-user-profile__mask"></div>
+  <div class="panel-user-profile__background" style="background-image: url(assets/images/writting.jpg)"></div>
+</div>

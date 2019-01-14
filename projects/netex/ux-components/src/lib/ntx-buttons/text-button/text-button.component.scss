@@ -14,6 +14,21 @@
             color: $color-accent;
         }
     }
+    &.mat-white{
+      color: $color-white;
+      &:hover{
+        background-color: $icon-button-hover;
+      }
+      &[disabled]{
+        background-color: rgba(255, 255, 255, 0.3);
+        color: $color-white;
+        cursor: not-allowed;
+        opacity: 0.4;
+        &:hover{
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
     &[disabled]{
         cursor: not-allowed;
         opacity: 0.4;

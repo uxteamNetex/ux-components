@@ -6,20 +6,27 @@ $block: "card13";
   &.#{$block}{
     border-radius: 4px;
     box-shadow: $shadow;
-    display: inline-flex;
+    display: block;
+    height: 144px;
     margin: 8px;
-    padding: 20px 8px 16px 16px;
+    padding: 0;
+    width: auto;
     &:hover{
       box-shadow: $shadow-hover;
       cursor: pointer;
     }
     &.card-selected{
       border: 3px solid $color-primary;
-      padding: 17px 5px 13px 13px;
+      padding: 0;
+      .mat-card-content{
+        padding: 20px 5px 13px 13px;
+      }
     }
-    .mat-card-header{
-      .mat-card-header-text{
-        margin: 0 8px 0 0;
+    .mat-card-content{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 8px 20px 16px;
+      .#{$block}__texts{
         .#{$block}__title{
           color: $color-grey-800;
           font-family: latoBold;
@@ -38,7 +45,7 @@ $block: "card13";
         .#{$block}__subtitle{
           color: $color-grey-600;
           font-size: $font-size-14;
-          margin: 0;
+          margin: 0 0 16px 0;
           max-height: 33px;
           word-wrap: break-word;
           overflow: hidden;
@@ -54,7 +61,12 @@ $block: "card13";
         margin-top: -12px;
         margin-right: -8px;
       }
+      .#{$block}__label-state{
+        color: $color-grey-600;
+        font-family: latoBold;
+        font-size: $font-size-12;
+        text-transform: uppercase;
+      }
     }
   }
 }
-

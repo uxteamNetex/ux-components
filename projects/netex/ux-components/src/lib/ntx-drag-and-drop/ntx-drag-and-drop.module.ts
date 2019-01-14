@@ -4,6 +4,7 @@ import { NtxSharedModule } from '../ntx-shared/ntx-shared.module';
 
 import { NtxDragAndDropRoutingModule } from './ntx-drag-and-drop-routing.module';
 import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
+import { DragAndDropAddedComponent } from './drag-and-drop-added/drag-and-drop-added.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,7 @@ import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
     NtxSharedModule,
     NtxDragAndDropRoutingModule
   ],
-  declarations: [DragAndDropComponent],
-  exports: [DragAndDropComponent]
+  declarations: [DragAndDropComponent, DragAndDropAddedComponent],
+  exports: [DragAndDropComponent, DragAndDropAddedComponent]
 })
 export class NtxDragAndDropModule { }

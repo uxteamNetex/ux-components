@@ -14,7 +14,7 @@ COMMITS:
     Cards:
       -Cambios css, html y añadir tooltip en componente Card4 (ntx-card4)
       -Cambios css, html y añadir tooltip en componente Card7 (ntx-card7)
-      -Cambios css y añadir tooltip en componente Card8 (ntx-card8)
+      -Cambios css, html y añadir tooltip en componente Card8 (ntx-card8)
       -Nuevo componente Card1 (ntx-card1)
       -Nuevo componente Card2 (ntx-card2)
       -Nuevo componente Card3 (ntx-card3)
@@ -39,6 +39,7 @@ COMMITS:
     Panels:
       -Nuevo componente Panel Tabs (app-panel-tabs)
       -Nuevo componente Inside Panel (ntx-sidenav-inside)
+      -Nuevo componente Panel User Profile (app-panel-user-profile)
 
     Form controls:
       -Nuevo componente Input Form Without Label (ntx-form-input-no-label)
@@ -48,6 +49,10 @@ COMMITS:
 
     Buttons:
       -Nuevo componente Speed Dial Button (ntx-fab-speed-dial-button)
+      -Cambios css componente Stroked Buttons (ntx-stroked-button)
+      -Cambios css componente Icon Stroked Buttons (ntx-stroked-icon-button)
+      -Cambios css componente Text Buttons (ntx-text-button)
+      -Cambios css componente Icon Text Buttons (ntx-text-icon-button)
     
     Lists:
       -Nuevo componente List Horizontal (ntx-list-horizontal)
@@ -56,6 +61,9 @@ COMMITS:
     Labels:
       -Nuevo componente Label (ntx-label)
       -Nuevo componente Label Error (ntx-label-error)
+
+    Drag and Drop:
+      -Nuevo componente drag and Drop Added (ntx-drag-and-drop-added)
       
 
 

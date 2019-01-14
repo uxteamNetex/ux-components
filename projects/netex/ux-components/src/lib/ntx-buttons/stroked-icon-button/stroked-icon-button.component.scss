@@ -21,12 +21,18 @@
     &.mat-white{
       border-color: $color-white;
       color: $color-white;
+      &:hover{
+        background-color: $icon-button-hover;
+      }
       &[disabled]{
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.3);
         border-color: $color-white;
         color: $color-white;
         cursor: not-allowed;
         opacity: 0.4;
+        &:hover{
+          background-color: rgba(255, 255, 255, 0.3);
+        }
       }
     }
     &[disabled]{

@@ -1,13 +1,5 @@
 [
     {
-        "label": "text",
-        "selector": "<ntx-text-button>"
-    },
-    {
-        "label": "icon text",
-        "selector": "<ntx-text-icon-button>"
-    },
-    {
         "label": "raised",
         "selector": "<ntx-raised-button>"
     },

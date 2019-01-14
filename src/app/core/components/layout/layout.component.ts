@@ -35,8 +35,7 @@ export class LayoutComponent implements OnInit {
   getPanelWidth() {
     this.panelService.panelWidth$.subscribe((value: string) => {
       this.panelWidth = value;
-    })
-    console.log('sidenavWidth', this.panelWidth);
+    });
   }
 
   listenOnSidenavOpen() {
