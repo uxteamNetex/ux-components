@@ -57,6 +57,7 @@ $block: "card12";
             word-wrap: break-word;
             overflow: hidden;
             text-transform: uppercase;
+            white-space: normal;
             .#{$block}__title--text{
               display: -webkit-box;
               -webkit-line-clamp: 2;

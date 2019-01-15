@@ -8,6 +8,8 @@ import { PanelTreeComponent } from './panel-tree/panel-tree.component';
 
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule } from '@angular/material';
 
+import { DragScrollModule } from 'ngx-drag-scroll';
+
 import {
   NtxCardsModule,
   NtxButtonsModule,
@@ -25,7 +27,8 @@ import {
     MatToolbarModule,
     NtxCardsModule,
     NtxButtonsModule,
-    NtxTabsModule
+    NtxTabsModule,
+    DragScrollModule
   ],
   entryComponents: [
     PanelTreeComponent

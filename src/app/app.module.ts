@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { DragScrollModule } from 'ngx-drag-scroll';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CoreModule,
     SharedModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    DragScrollModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]

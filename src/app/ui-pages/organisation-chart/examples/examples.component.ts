@@ -2,11 +2,13 @@ import { Component, OnInit, ComponentFactoryResolver, Injector, ComponentRef } f
 import { PanelService } from '../../../shared/services/panel.service';
 import { ComponentPortal } from '@angular/cdk/portal';
 import { PanelTreeComponent } from '../panel-tree/panel-tree.component';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-examples',
   templateUrl: './examples.component.html',
-  styleUrls: ['./examples.component.scss']
+  styleUrls: ['./examples.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ExamplesComponent implements OnInit {
 
