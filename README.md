@@ -64,6 +64,9 @@ COMMITS:
 
     Drag and Drop:
       -Nuevo componente drag and Drop Added (ntx-drag-and-drop-added)
+
+    Organisation charts:
+      -Nuevo componente Panel tree (app-panel-tree)
       
 
 

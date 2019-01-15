@@ -78,7 +78,7 @@ export class EvaluationTableComponent implements OnInit {
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 
-  showMultiselecToolbar() {
+  showMultiselecToolbarEvaluation() {
     if (!this.checkboxValue) {
       this.show = false;
     } else {

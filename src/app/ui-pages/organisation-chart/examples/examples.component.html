@@ -1,0 +1,14 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple title="Organisation chart" subtitle="Click on the button to open the panel">
+      <div class="panels__container">
+        <button mat-raised-button *ngFor="let width of panelWidths"
+                color="primary"
+                class="panels__button"
+                (click) = "onButtonClick(width)">
+            {{ 'organisation chart' | uppercase }}
+        </button>
+      </div>
+    </ntx-card-simple>
+  </div>
+</div>

@@ -104,6 +104,10 @@ const routes: Routes = [
     loadChildren: './ui-pages/menus/menus.module#MenusModule'
   },
   {
+    path: 'organisation chart',
+    loadChildren: './ui-pages/organisation-chart/organisation-chart.module#OrganisationChartModule'
+  },
+  {
     path: 'paddings',
     loadChildren: './ui-pages/paddings/paddings.module#PaddingsModule'
   },

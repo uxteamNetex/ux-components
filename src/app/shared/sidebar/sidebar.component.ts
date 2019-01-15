@@ -26,6 +26,7 @@ const LINKS = [
   "labels",
   "lists",
   "menus",
+  "organisation chart",
   "panels",
   "progress bar",
   "sidenavs",
