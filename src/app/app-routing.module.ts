@@ -68,19 +68,23 @@ const routes: Routes = [
     loadChildren: './ui-pages/chips/chips.module#ChipsModule'
   },
   {
+    path: 'colours',
+    loadChildren: './ui-pages/colours/colours.module#ColoursModule'
+  },
+  {
     path: 'dialogs',
     loadChildren: './ui-pages/dialogs/dialogs.module#DialogsModule'
   },
   {
-    path: 'drag and drop',
+    path: 'drag-and-drop',
     loadChildren: './ui-pages/drag-and-drop/drag-and-drop.module#DragAndDropModule'
   },
   {
-    path: 'form controls',
+    path: 'form-controls',
     loadChildren: './ui-pages/forms/forms.module#FormsModule'
   },
   {
-    path: 'headings and texts',
+    path: 'headings-and-texts',
     loadChildren: './ui-pages/headings-and-texts/headings-and-texts.module#HeadingsAndTextsModule'
   },
   {
@@ -104,7 +108,7 @@ const routes: Routes = [
     loadChildren: './ui-pages/menus/menus.module#MenusModule'
   },
   {
-    path: 'organisation chart',
+    path: 'organisation-chart',
     loadChildren: './ui-pages/organisation-chart/organisation-chart.module#OrganisationChartModule'
   },
   {
@@ -116,7 +120,11 @@ const routes: Routes = [
     loadChildren: './ui-pages/panels/panels.module#PanelsModule'
   },
   {
-    path: 'progress bar',
+    path: 'panel-tabs',
+    loadChildren: './ui-pages/panel-tabs/panel-tabs.module#PanelTabsModule'
+  },
+  {
+    path: 'progress-bar',
     loadChildren: './ui-pages/progress-bar/progress-bar.module#ProgressBarModule'
   },
   {
@@ -124,7 +132,7 @@ const routes: Routes = [
     loadChildren: './ui-pages/sidenav/sidenav.module#SidenavModule'
   },
   {
-    path: 'sidenav filters',
+    path: 'sidenav-filters',
     loadChildren: './ui-pages/sidenav-filters/sidenav-filters.module#SidenavFiltersModule'
   },
   {
@@ -136,11 +144,11 @@ const routes: Routes = [
     loadChildren: './ui-pages/table/table.module#TableModule'
   },
   {
-    path: 'table evaluation',
+    path: 'table-evaluation',
     loadChildren: './ui-pages/table-evaluation/table-evaluation.module#TableEvaluationModule'
   },
   {
-    path: 'table selectable',
+    path: 'table-selectable',
     loadChildren: './ui-pages/table-selectable/table-selectable.module#TableSelectableModule'
   },
   {
@@ -152,8 +160,12 @@ const routes: Routes = [
     loadChildren: './ui-pages/trees/trees.module#TreesModule'
   },
   {
-    path: 'tree check',
+    path: 'tree-check',
     loadChildren: './ui-pages/tree-check/tree-check.module#TreeCheckModule'
+  },
+  {
+    path: 'user-profile-panel',
+    loadChildren: './ui-pages/user-profile-panel/user-profile-panel.module#UserProfilePanelModule'
   },
   { path: '',
     redirectTo: '/home',

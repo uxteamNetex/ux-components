@@ -1,28 +1,19 @@
-.panels__container {
-  display: flex;
-  justify-content: center;
-  .panels__button {
-      margin: 0 12px;
-  }
-}
+@import "././projects/netex/ux-components/src/styles/app/utils";
 
-drag-scroll {
+.organisation-tree {
   cursor: grab;
+  display: flex;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  user-select: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-}
-.organisation-tree {
-  display: flex;
-  height: 100%;
-  padding: 0;
-  position: relative;
   ul {
     display: flex;
-    flex-layout: row;
     justify-content: space-between;
     padding-top: 60px;
     position: relative;
@@ -30,9 +21,12 @@ drag-scroll {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     width: 100%;
+    &.organisation-tree--container{
+      padding-bottom: 60px;
+    }
     /*Time to add downward connectors from parents*/
     ul::before{
-      border-left: 1px solid #ccc;
+      border-left: 1px solid $color-grey-400;
       content: '';
       height: 60px;
       left: 50%;
@@ -52,7 +46,7 @@ drag-scroll {
     -moz-transition: all 0.5s;
     /*We will use ::before and ::after to draw the connectors*/
     &::before, &::after{
-      border-top: 1px solid #ccc;
+      border-top: 1px solid $color-grey-400;
       content: '';
       height: 60px;
       position: absolute;
@@ -61,7 +55,7 @@ drag-scroll {
       width: 50%;
     }
     &::after{
-      border-left: 1px solid #ccc;
+      border-left: 1px solid $color-grey-400;
       left: 50%;
       right: auto;
     }
@@ -81,7 +75,7 @@ drag-scroll {
     }
     /*Adding back the vertical connector to the last nodes*/
     &:last-child::before{
-      border-right: 1px solid #ccc;
+      border-right: 1px solid $color-grey-400;
       border-radius: 0 5px 0 0;
       -webkit-border-radius: 0 5px 0 0;
       -moz-border-radius: 0 5px 0 0;
@@ -99,42 +93,42 @@ drag-scroll {
       &.granate{
         .card12.mat-card{
           .card12__contenido{
-            background-color: #9b2761;
+            background-color: $color-random3;
           }
         }
       }
       &.green{
         .card12.mat-card{
           .card12__contenido{
-            background-color: #199aa8;
+            background-color: $color-random7;
           }
         }
       }
       &.yellow{
         .card12.mat-card{
           .card12__contenido{
-            background-color: #ee9a37;
+            background-color: $color-random8;
           }
         }
       }
       &.purple{
         .card12.mat-card{
           .card12__contenido{
-            background-color: #b182a6;
+            background-color: $color-random9;
           }
         }
       }
       &.blue{
         .card12.mat-card{
           .card12__contenido{
-            background-color: #279ed6;
+            background-color: $color-random2;
           }
         }
       }
       &.pink{
         .card12.mat-card{
           .card12__contenido{
-            background-color: #e53b78;
+            background-color: $color-random4;
           }
         }
       }
@@ -143,12 +137,12 @@ drag-scroll {
       &:hover, &:hover+ul li ntx-card12{
         .card12.mat-card{
           .card12__contenido{
-            background-color: #ccc;
-            color: #000;
+            background-color: $color-grey-400;
+            color: $color-black;
             .mat-card-header{
               .card12__options{
                 .mat-icon-button.menu-options-button{
-                  color: #000;
+                  color: $color-black;
                 }
               }
             }
@@ -157,7 +151,7 @@ drag-scroll {
       }
       /*Connector styles on hover*/
       &:hover+ul li::after, &:hover+ul li::before, &:hover+ul::before, &:hover+ul ul::before{
-        border-color:  #999;
+        border-color:  $color-grey-600;
       }
     }
   }

@@ -4,19 +4,19 @@ import { ButtonsDocComponent } from './documentation/buttons-doc.component';
 import { ButtonsExamplesComponent } from './examples/buttons-examples.component';
 
 const routes: Routes = [
-    {
-        path: 'examples',
-        component: ButtonsExamplesComponent
-    },
-    {
-        path: 'documentation',
-        component: ButtonsDocComponent
-    },
-    {
-        path: '',
-        redirectTo: 'examples',
-        pathMatch: 'full'
-      }
+  {
+      path: 'examples',
+      component: ButtonsExamplesComponent
+  },
+  {
+      path: 'documentation',
+      component: ButtonsDocComponent
+  },
+  {
+      path: '',
+      redirectTo: 'examples',
+      pathMatch: 'full'
+  }
 ];
 
 @NgModule({

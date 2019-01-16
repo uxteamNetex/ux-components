@@ -45,6 +45,21 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-user-less {
+  &:before {
+    content: $icon-user-less;
+  }
+}
+.icon-binoculars {
+  &:before {
+    content: $icon-binoculars;
+  }
+}
+.icon-binoculars-off {
+  &:before {
+    content: $icon-binoculars-off;
+  }
+}
 .icon-flag-unitedkingdom .path1 {
   position: absolute;
   left: 0;

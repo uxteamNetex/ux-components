@@ -30,6 +30,12 @@
             "className": "icon-bell"
         },
         {
+          "className": "icon-binoculars"
+        },
+        {
+          "className": "icon-binoculars-off"
+        },
+        {
             "className": "icon-block"
         },
         {
@@ -637,6 +643,9 @@
         },
         {
             "className": "icon-user-group"
+        },
+        {
+          "className": "icon-user-less"
         },
         {
             "className": "icon-user-plus"

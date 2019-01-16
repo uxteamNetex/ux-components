@@ -117,33 +117,193 @@ $block: "utils";
   }
 
   //Tamaños fuente
+  &--text-10 {
+		font-size: $font-size-10 !important;
+  }
+  &--text-12 {
+		font-size: $font-size-12 !important;
+  }
+  &--text-14 {
+		font-size: $font-size-14 !important;
+  }
   &--text-16 {
-		font-size: $font-size-16;
+		font-size: $font-size-16 !important;
+  }
+  &--text-18 {
+		font-size: $font-size-18 !important;
+  }
+  &--text-20 {
+		font-size: $font-size-20 !important;
+  }
+  &--text-22 {
+		font-size: $font-size-22 !important;
+  }
+  &--text-24 {
+		font-size: $font-size-24 !important;
+  }
+  &--text-26 {
+		font-size: $font-size-26 !important;
+  }
+  &--text-28 {
+		font-size: $font-size-28 !important;
+  }
+  &--text-32 {
+		font-size: $font-size-32 !important;
+  }
+  &--text-36 {
+		font-size: $font-size-36 !important;
+  }
+  &--text-42 {
+		font-size: $font-size-42 !important;
+  }
+  &--text-56 {
+		font-size: $font-size-56 !important;
   }
 
   //Colores
   &--text-black {
-		color: $color-black;
+		color: $color-black !important;
   }
-  &--grey-700 {
-		color: $color-grey-700;
+  &--text-grey-900 {
+		color: $color-grey-900 !important;
   }
-  &--grey-600 {
-		color: $color-grey-600;
+  &--text-grey-800 {
+		color: $color-grey-800 !important;
+  }
+  &--text-grey-700 {
+		color: $color-grey-700 !important;
+  }
+  &--text-grey-600 {
+		color: $color-grey-600 !important;
+  }
+  &--text-grey-500 {
+		color: $color-grey-500 !important;
+  }
+  &--text-grey-400 {
+		color: $color-grey-400 !important;
+  }
+  &--text-grey-300 {
+		color: $color-grey-300 !important;
+  }
+  &--text-grey-200 {
+		color: $color-grey-200 !important;
+  }
+  &--text-grey-100 {
+		color: $color-grey-100 !important;
+  }
+  &--text-white {
+		color: $color-white !important;
   }
   &--text-orange {
-		color: $color-orange;
+		color: $color-orange !important;
   }
 
-  //Colores de fondo
+  //Colores de fondo - Escala de grises
+  &--bc-black {
+    background-color: $color-black !important;
+  }
+  &--bc-grey-900 {
+    background-color: $color-grey-900 !important;
+  }
+  &--bc-grey-800 {
+    background-color: $color-grey-800 !important;
+  }
+  &--bc-grey-700 {
+    background-color: $color-grey-700 !important;
+  }
+  &--bc-grey-600 {
+    background-color: $color-grey-600 !important;
+  }
+  &--bc-grey-500 {
+    background-color: $color-grey-500 !important;
+  }
   &--bc-grey-400 {
-    background-color: $color-grey-400;
+    background-color: $color-grey-400 !important;
+  }
+  &--bc-grey-300 {
+    background-color: $color-grey-300 !important;
+  }
+  &--bc-grey-200 {
+    background-color: $color-grey-200 !important;
   }
   &--bc-grey-100 {
-    background-color: $color-grey-100;
+    background-color: $color-grey-100 !important;
   }
+  &--bc-white {
+    background-color: $color-white !important;
+  }
+
+  //Colores de fondo - Colores corporativos
+  &--bc-content {
+    background-color: $color-contentcloud !important;
+  }
+  &--bc-talent {
+    background-color: $color-talentcloud !important;
+  }
+
+  //Colores de fondo - Colores random
+  &--bc-random1 {
+    background-color: $color-random1 !important;
+  }
+  &--bc-random2 {
+    background-color: $color-random2 !important;
+  }
+  &--bc-random3 {
+    background-color: $color-random3 !important;
+  }
+  &--bc-random4 {
+    background-color: $color-random4 !important;
+  }
+  &--bc-random5 {
+    background-color: $color-random5 !important;
+  }
+  &--bc-random6 {
+    background-color: $color-random6 !important;
+  }
+  &--bc-random7 {
+    background-color: $color-random7 !important;
+  }
+  &--bc-random8 {
+    background-color: $color-random8 !important;
+  }
+  &--bc-random9 {
+    background-color: $color-random9 !important;
+  }
+  &--bc-random10 {
+    background-color: $color-random10 !important;
+  }
+  &--bc-random11 {
+    background-color: $color-random11 !important;
+  }
+
+  //Colores de fondo - Colores acción
+  &--bc-primary {
+    background-color: $color-primary !important;
+  }
+  &--bc-primary-hover {
+    background-color: $color-primary-hover !important;
+  }
+  &--bc-accent {
+    background-color: $color-accent !important;
+  }
+  &--bc-accent-hover {
+    background-color: $color-accent-hover !important;
+  }
+
+  //Colores de fondo - Colores estados
+  &--bc-success {
+    background-color: $color-success !important;
+  }
+  &--bc-warning {
+    background-color: $color-warning !important;
+  }
+  &--bc-error {
+    background-color: $color-error !important;
+  }
+
+  //Colores de fondo - Colores labels
   &--bc-orange {
-    background-color: $color-orange;
+    background-color: $color-orange !important;
   }
 
   //Márgenes
