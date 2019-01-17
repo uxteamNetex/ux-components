@@ -18,7 +18,7 @@ export class ListOneLineOptionsComponent implements OnInit {
 
   texts: Section[] = [
     {
-      title: 'List name'
+      title: 'List name with a very large name and three dots'
     }
   ];
 

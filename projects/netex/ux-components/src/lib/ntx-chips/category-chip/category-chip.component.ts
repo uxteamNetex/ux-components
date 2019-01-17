@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
+import { MatChipInputEvent } from '@angular/material';
+
+export interface Chip {
+  label: string;
+  name: string;
+}
 
 @Component({
   selector: 'ntx-category-chip',
@@ -8,12 +14,23 @@ import { Input } from '@angular/core';
 })
 export class CategoryChipComponent implements OnInit {
 
-  Arr = Array;
-  num:number = 3;
-
   removable = true;
   @Input() color: string;
   @Input() disabled: string;
+
+  chips: Chip[] = [
+    {label: 'Department', name: 'Marketing'},
+    {label: 'Depart', name: 'UX'},
+    {label: 'Department', name: 'Example chip with a very long name'},
+  ];
+
+  remove(chip: Chip): void {
+    const index = this.chips.indexOf(chip);
+
+    if (index >= 0) {
+      this.chips.splice(index, 1);
+    }
+  }
 
   constructor() { }
 

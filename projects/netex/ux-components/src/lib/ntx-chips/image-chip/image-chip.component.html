@@ -1,18 +1,22 @@
 <mat-chip-list class="image-chip-container">
 
   <mat-chip class="image-chip-container__chip"
-            *ngFor="let i of Arr(num).fill(1)"
+            *ngFor="let chip of chips"
             [color]="color"
             [disabled]="disabled"
-            [removable]="removable">
+            [removable]="removable"
+            (removed)="remove(chip)">
 
     <div class="image-chip-container__chip-image">
         <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
     </div>
 
-    <span class="image-chip-container__chip-text">Mary Joe Wright</span>
+    <span class="image-chip-container__chip-text" matTooltip="{{chip.name}}">{{chip.name}}</span>
 
-    <button mat-icon-button class="image-chip-container__chip-button">
+    <button mat-icon-button
+            matChipRemove
+            class="image-chip-container__chip-button"
+            *ngIf="removable">
       <mat-icon class="icon-netex icon-cross"></mat-icon>
     </button>
 

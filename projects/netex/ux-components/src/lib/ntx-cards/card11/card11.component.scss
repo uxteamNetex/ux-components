@@ -78,7 +78,7 @@ ntx-card11{
               font-size: $font-size-16;
               font-style:italic;
               margin-bottom: 8px;
-              max-height: 24px;
+              max-height: 20px;
               word-wrap: break-word;
               overflow: hidden;
               .#{$block}__title--text{
@@ -92,7 +92,7 @@ ntx-card11{
               color: $color-grey-800;
               font-size: $font-size-16;
               margin: 0 0 16px 0;
-              max-height: 48px;
+              max-height: 40px;
               word-wrap: break-word;
               overflow: hidden;
               .#{$block}__subtitle--text{

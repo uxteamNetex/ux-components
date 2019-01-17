@@ -8,6 +8,7 @@ $block: "radiobutton-chip-group";
   }
   .#{$block}__chip{
     display: inline-block;
+    max-width: 260px;
     &.mat-primary{
       background-color: $color-accent;
       color: $color-white;
@@ -30,6 +31,7 @@ $block: "radiobutton-chip-group";
         background-color: $color-primary;
       }
       .mat-radio-label{
+        white-space: normal;
         .mat-radio-container{
           display: none;
         }
@@ -37,8 +39,15 @@ $block: "radiobutton-chip-group";
           font-size: 13px;
           height: 36px;
           line-height: 36px;
+          overflow: hidden;
           padding: 0 16px;
           text-transform: uppercase;
+          .#{$block}__radiobutton-text{
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            /* autoprefixer: off */
+            -webkit-box-orient: vertical;
+          }
         }
       }
     }

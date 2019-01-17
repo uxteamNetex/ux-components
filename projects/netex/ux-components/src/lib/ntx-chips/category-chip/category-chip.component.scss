@@ -18,12 +18,22 @@ $block: "category-chip-container";
       }
       height: 32px;
       padding: 4px 8px 4px 16px;
+      max-width: 260px;
       .#{$block}__chip-text{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
         margin-right: 8px;
+        text-transform: uppercase;
+        max-height: 17px;
+        overflow: hidden;
       }
       .#{$block}__chip-button{
+        color: $color-white;
         height: 24px;
         line-height: 24px;
+        opacity: 1;
         width: 24px;
         .mat-icon{
           font-size: $font-size-12;

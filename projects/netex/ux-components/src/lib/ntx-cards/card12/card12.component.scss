@@ -44,6 +44,7 @@ $block: "card12";
         display: flex;
         justify-content: space-between;
         .mat-card-header-text{
+          height: 63px;
           margin: 0;
           text-align: left;
           width: calc(100% - 52px);
@@ -53,7 +54,7 @@ $block: "card12";
             font-size: $font-size-12;
             line-height: 16px;
             margin: 16px 0 16px 20px;
-            max-height: 36px;
+            max-height: 32px;
             word-wrap: break-word;
             overflow: hidden;
             text-transform: uppercase;

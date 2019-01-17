@@ -15,7 +15,7 @@ export class FilterChipComponent implements OnInit {
     'One',
     'Two',
     'Three',
-    'Four'
+    'Option example with a very long name'
   ];
 
   ngOnInit() {

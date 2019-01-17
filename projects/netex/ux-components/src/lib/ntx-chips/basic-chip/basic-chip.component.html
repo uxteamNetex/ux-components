@@ -1,14 +1,18 @@
 <mat-chip-list class="chip-container">
 
   <mat-chip class="chip-container__chip"
-            *ngFor="let i of Arr(num).fill(1)"
+            *ngFor="let chip of chips"
             [color]="color"
             [disabled]="disabled"
-            [removable]="removable">
+            [removable]="removable"
+            (removed)="remove(chip)">
 
-    <span class="chip-container__chip-text">Mary Joe Wright</span>
+    <span class="chip-container__chip-text" matTooltip="{{chip.name}}">{{chip.name}}</span>
 
-    <button mat-icon-button class="chip-container__chip-button">
+    <button mat-icon-button
+            matChipRemove
+            class="chip-container__chip-button"
+            *ngIf="removable">
       <mat-icon class="icon-netex icon-cross"></mat-icon>
     </button>
 

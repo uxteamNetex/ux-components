@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { OrganisationChartRoutingModule } from './organisation-chart-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
-import { PanelTreeComponent } from './panel-tree/panel-tree.component';
 
 import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule } from '@angular/material';
 
@@ -17,7 +16,7 @@ import {
 } from '@netex/ux-components';
 
 @NgModule({
-  declarations: [DocumentationComponent, ExamplesComponent, PanelTreeComponent],
+  declarations: [DocumentationComponent, ExamplesComponent],
   imports: [
     CommonModule,
     OrganisationChartRoutingModule,
@@ -29,9 +28,6 @@ import {
     NtxButtonsModule,
     NtxTabsModule,
     DragScrollModule
-  ],
-  entryComponents: [
-    PanelTreeComponent
   ]
 })
 export class OrganisationChartModule { }
