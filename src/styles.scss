@@ -30,6 +30,9 @@
   overflow: auto;
   .page-container{
     margin: 40px auto;
+    &.documentation{
+      max-width: 900px;
+    }
     ntx-card-simple{
       &.white-content{
         mat-card{
@@ -46,9 +49,13 @@
       }
     }
     .documentation-text{
+      color: $color-grey-800;
+      font-family: lato;
+      font-size: $font-size-16;
       line-height: 26px;
       .documentation-code{
-        background-color: $color-grey-400;
+        color: $color-random4;
+        font-size: 87%;
         padding: 4px;
       }
     }

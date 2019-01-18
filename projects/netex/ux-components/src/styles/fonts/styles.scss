@@ -45,6 +45,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-hard-disk {
+  &:before {
+    content: $icon-hard-disk;
+  }
+}
 .icon-user-less {
   &:before {
     content: $icon-user-less;

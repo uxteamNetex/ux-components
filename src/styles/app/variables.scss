@@ -1,13 +1,27 @@
+$layout-breakpoint-md:     1480px !default;
+
 //Variables para tamaños de iconos
 $font-size-icon-small:        12px;
 $font-size-icon:              24px;
 $font-size-icon-medium:       36px;
 $font-size-icon-big:          48px;
+$font-size-icon-large:        60px;
 
 //Variables para tamaños de texto
+$font-size-10:        10px;
+$font-size-12:        12px;
 $font-size-14:        14px;
 $font-size-16:        16px;
 $font-size-18:        18px;
+$font-size-20:        20px;
+$font-size-22:        22px;
+$font-size-24:        24px;
+$font-size-26:        26px;
+$font-size-28:        28px;
+$font-size-32:        32px;
+$font-size-36:        36px;
+$font-size-42:        42px;
+$font-size-56:        56px;
 
 //Variables para márgenes y paddings
 $separation-0: 0;
@@ -38,3 +52,11 @@ $icon-button-toolbar-hover: rgba(255, 255, 255, 0.16);
 
 //Toolbar
 $toolbarHeight: 56px;
+$headerHeight: 104px;
+
+//Table
+$tableEvaluationHeaderHeight: 84px;
+$tableEvaluationRowHeight: 80px;
+$tableHeaderOptionsHeight: 62px;
+$tableHeaderHeight: 48px;
+$tableRowHeight: 52px;
