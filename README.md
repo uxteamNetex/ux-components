@@ -10,7 +10,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 
 COMMITS:
-  v.x.x.x:
+  v.3.0.0:
     Cards:
       -Cambios css, html y añadir tooltip en componente Card4 (ntx-card4)
       -Cambios css, html y añadir tooltip en componente Card7 (ntx-card7)
