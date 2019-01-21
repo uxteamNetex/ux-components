@@ -131,7 +131,7 @@ COMMITS:
       -User toolbar options menu (ntx-menu-toolbar-profile)
 
     Panels:
-      -Panel (app-dummy-component)
+      -Panel (app-panel-content)
 
     Progress bars:
       -Progress bar (ntx-progress-bar)

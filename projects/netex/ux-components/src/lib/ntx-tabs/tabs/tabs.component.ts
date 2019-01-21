@@ -10,8 +10,25 @@ export class TabsComponent implements OnInit {
 
   constructor() { }
 
-  links = ['First', 'Second', 'Third', 'Fourth'];
-  selectedIndex : number = 0;
+  links = [
+    'Tab one',
+    'Tab two',
+    'Tab three',
+    'Tab four',
+    'Tab five',
+    'Tab six',
+    'Tab seven',
+    'Tab eight',
+    'Tab nine',
+    'Tab ten',
+    'Tab eleven',
+    'Tab twelve',
+    'Tab thirteen',
+    'Tab fourteen',
+    'Tab fifteen',
+    'Tab sixteen'
+    ];
+  selectedIndex = 0;
 
   ngOnInit() {
   }

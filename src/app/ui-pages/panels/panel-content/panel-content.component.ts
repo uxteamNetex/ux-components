@@ -1,19 +1,19 @@
 import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
 import { Subject, Subscription } from 'rxjs';
 import { PANEL_DATA, PanelService } from '../../../shared/services/panel.service';
-import { DummyDataInterface } from './dummy-data.interface';
+import { PanelContentDataInterface } from './panel-content-data.interface';
 
 @Component({
-  selector: 'app-dummy-component',
-  templateUrl: './dummy.component.html',
-  styleUrls: ['./dummy.component.scss']
+  selector: 'app-panel-content',
+  templateUrl: './panel-content.component.html',
+  styleUrls: ['./panel-content.component.scss']
 })
-export class DummyComponent implements OnInit, OnDestroy {
+export class PanelContentComponent implements OnInit, OnDestroy {
 
   width: string;
 
   constructor(
-    @Inject(PANEL_DATA) private panelData: DummyDataInterface,
+    @Inject(PANEL_DATA) private panelData: PanelContentDataInterface,
     private panelService: PanelService
   ) { }
 
