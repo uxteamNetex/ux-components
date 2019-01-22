@@ -30,10 +30,10 @@
             "className": "icon-bell"
         },
         {
-          "className": "icon-binoculars"
+            "className": "icon-binoculars"
         },
         {
-          "className": "icon-binoculars-off"
+            "className": "icon-binoculars-off"
         },
         {
             "className": "icon-block"
@@ -90,10 +90,16 @@
             "className": "icon-chevron-up"
         },
         {
-            "className": "icon-construction-barrier"
+            "className": "icon-circle-90"
         },
         {
-            "className": "icon-cross-circle-solid"
+            "className": "icon-circle-180"
+        },
+        {
+            "className": "icon-circle-270"
+        },
+        {
+            "className": "icon-circle-360"
         },
         {
             "className": "icon-clear"
@@ -117,10 +123,22 @@
             "className": "icon-collections"
         },
         {
+            "className": "icon-compass"
+        },
+        {
             "className": "icon-compose"
         },
         {
+            "className": "icon-construction-barrier"
+        },
+        {
             "className": "icon-cross"
+        },
+        {
+            "className": "icon-cross-circle-solid"
+        },
+        {
+            "className": "icon-davinci"
         },
         {
             "className": "icon-dashboard"
@@ -432,7 +450,7 @@
             "className": "icon-grid"
         },
         {
-          "className": "icon-hard-disk"
+            "className": "icon-hard-disk"
         },
         {
             "className": "icon-heart"
@@ -513,6 +531,9 @@
             "className": "icon-orderby"
         },
         {
+            "className": "icon-organisation-chart"
+        },
+        {
             "className": "icon-paperclip"
         },
         {
@@ -520,6 +541,9 @@
         },
         {
             "className": "icon-pencil"
+        },
+        {
+            "className": "icon-pencil-circle-dotted"
         },
         {
             "className": "icon-plus"
@@ -585,6 +609,9 @@
             "className": "icon-tags"
         },
         {
+            "className": "icon-teacher"
+        },
+        {
             "className": "icon-telephone"
         },
         {
@@ -642,13 +669,16 @@
             "className": "icon-user-circle"
         },
         {
+            "className": "icon-user-clipboard"
+        },
+        {
             "className": "icon-user-edit"
         },
         {
             "className": "icon-user-group"
         },
         {
-          "className": "icon-user-less"
+            "className": "icon-user-less"
         },
         {
             "className": "icon-user-plus"
@@ -661,6 +691,9 @@
         },
         {
             "className": "icon-users"
+        },
+        {
+            "className": "icon-users-plus"
         },
         {
             "className": "icon-view-bounding-box"

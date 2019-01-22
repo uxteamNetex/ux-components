@@ -10,6 +10,22 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 
 COMMITS:
+  v.x.x.x:
+    Icons:
+      -New icons:
+        icon-users-plus
+        icon-pencil-circle-dotted
+        icon-flag-catalonia
+        icon-circle-90
+        icon-circle-180
+        icon-circle-270
+        icon-circle-360
+        icon-compass
+        icon-davinci
+        icon-organisation-chart
+        icon-teacher
+        icon-user-clipboard
+
   v.3.0.0:
     Cards:
       -Cambios css, html y añadir tooltip en componente Card4 (ntx-card4)

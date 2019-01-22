@@ -45,6 +45,120 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-users-plus {
+  &:before {
+    content: $icon-users-plus;
+  }
+}
+.icon-pencil-circle-dotted {
+  &:before {
+    content: $icon-pencil-circle-dotted;
+  }
+}
+.icon-flag-catalonia .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path1;
+    color: rgb(255, 205, 5);
+  }
+}
+.icon-flag-catalonia .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path2;
+    margin-left: -1em;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-catalonia .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path3;
+    margin-left: -1em;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-catalonia .path4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path4;
+    margin-left: -1em;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-catalonia .path5 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path5;
+    margin-left: -1em;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-circle-90 {
+  &:before {
+    content: $icon-circle-90;
+  }
+}
+.icon-circle-180 {
+  &:before {
+    content: $icon-circle-180;
+  }
+}
+.icon-circle-270 {
+  &:before {
+    content: $icon-circle-270;
+  }
+}
+.icon-circle-360 {
+  &:before {
+    content: $icon-circle-360;
+  }
+}
+.icon-compass {
+  &:before {
+    content: $icon-compass;
+  }
+}
+.icon-davinci {
+  &:before {
+    content: $icon-davinci;
+  }
+}
+.icon-organisation-chart {
+  &:before {
+    content: $icon-organisation-chart;
+  }
+}
+.icon-teacher {
+  &:before {
+    content: $icon-teacher;
+  }
+}
+.icon-user-clipboard {
+  &:before {
+    content: $icon-user-clipboard;
+  }
+}
 .icon-hard-disk {
   &:before {
     content: $icon-hard-disk;
