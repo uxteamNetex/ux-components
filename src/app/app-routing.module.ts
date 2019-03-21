@@ -80,6 +80,22 @@ const routes: Routes = [
     loadChildren: './ui-pages/drag-and-drop/drag-and-drop.module#DragAndDropModule'
   },
   {
+    path: 'error-page-403',
+    loadChildren: './ui-pages/error-page-403/error-page-403.module#ErrorPage403Module'
+  },
+  {
+    path: 'error-page-404',
+    loadChildren: './ui-pages/error-page-404/error-page-404.module#ErrorPage404Module'
+  },
+  {
+    path: 'error-page-500',
+    loadChildren: './ui-pages/error-page-500/error-page-500.module#ErrorPage500Module'
+  },
+  {
+    path: 'error-page-503',
+    loadChildren: './ui-pages/error-page-503/error-page-503.module#ErrorPage503Module'
+  },
+  {
     path: 'form-controls',
     loadChildren: './ui-pages/forms/forms.module#FormsModule'
   },

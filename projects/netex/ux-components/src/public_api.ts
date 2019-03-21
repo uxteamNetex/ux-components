@@ -19,3 +19,4 @@ export * from './lib/ntx-drag-and-drop/ntx-drag-and-drop.module';
 export * from './lib/ntx-progress-bar/ntx-progress-bar.module';
 export * from './lib/ntx-trees/ntx-trees.module';
 export * from './lib/ntx-labels/ntx-labels.module';
+export * from './lib/ntx-error-pages/ntx-error-pages.module';

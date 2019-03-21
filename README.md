@@ -44,6 +44,14 @@ COMMITS:
     Trees:
       -Nueva documentación en la página del componente
 
+    Error pages:
+      -Nuevo componente error page 403 (ntx-error403)
+      -Nuevo componente error page 404 (ntx-error404)
+      -Nuevo componente error page 500 (ntx-error500)
+      -Nuevo componente error page 503 (ntx-error503)
+
+
+
   v.3.0.0:
     Cards:
       -Cambios css, html y añadir tooltip en componente Card4 (ntx-card4)
