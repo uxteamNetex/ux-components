@@ -13,6 +13,21 @@ COMMITS:
   v.x.x.x:
     Icons:
       -New icons:
+        icon-face-sad
+        icon-editor-audio-gallery-item
+        icon-editor-audio-gallery
+        icon-editor-close-button
+        icon-editor-glossary-links-item
+        icon-editor-help-popup
+        icon-editor-project-data-link
+        icon-editor-popup-single
+        icon-editor-show-search
+        icon-editor-show-close-button
+        icon-editor-scorm-player
+        icon-editor-logo
+        icon-editor-interactive-timeline-item
+        icon-editor-glossary-popup
+        icon-editor-downloads-popup
         icon-users-plus
         icon-pencil-circle-dotted
         icon-flag-catalonia
@@ -25,6 +40,9 @@ COMMITS:
         icon-organisation-chart
         icon-teacher
         icon-user-clipboard
+
+    Trees:
+      -Nueva documentación en la página del componente
 
   v.3.0.0:
     Cards:

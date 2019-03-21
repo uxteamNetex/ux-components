@@ -45,6 +45,81 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-face-sad {
+  &:before {
+    content: $icon-face-sad;
+  }
+}
+.icon-editor-audio-gallery-item {
+  &:before {
+    content: $icon-editor-audio-gallery-item;
+  }
+}
+.icon-editor-audio-gallery {
+  &:before {
+    content: $icon-editor-audio-gallery;
+  }
+}
+.icon-editor-close-button {
+  &:before {
+    content: $icon-editor-close-button;
+  }
+}
+.icon-editor-glossary-links-item {
+  &:before {
+    content: $icon-editor-glossary-links-item;
+  }
+}
+.icon-editor-help-popup {
+  &:before {
+    content: $icon-editor-help-popup;
+  }
+}
+.icon-editor-project-data-link {
+  &:before {
+    content: $icon-editor-project-data-link;
+  }
+}
+.icon-editor-popup-single {
+  &:before {
+    content: $icon-editor-popup-single;
+  }
+}
+.icon-editor-show-search {
+  &:before {
+    content: $icon-editor-show-search;
+  }
+}
+.icon-editor-show-close-button {
+  &:before {
+    content: $icon-editor-show-close-button;
+  }
+}
+.icon-editor-scorm-player {
+  &:before {
+    content: $icon-editor-scorm-player;
+  }
+}
+.icon-editor-logo {
+  &:before {
+    content: $icon-editor-logo;
+  }
+}
+.icon-editor-interactive-timeline-item {
+  &:before {
+    content: $icon-editor-interactive-timeline-item;
+  }
+}
+.icon-editor-glossary-popup {
+  &:before {
+    content: $icon-editor-glossary-popup;
+  }
+}
+.icon-editor-downloads-popup {
+  &:before {
+    content: $icon-editor-downloads-popup;
+  }
+}
 .icon-users-plus {
   &:before {
     content: $icon-users-plus;

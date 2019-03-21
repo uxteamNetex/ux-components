@@ -174,6 +174,12 @@
             "className": "icon-editor-audio"
         },
         {
+            "className": "icon-editor-audio-gallery"
+        },
+        {
+            "className": "icon-editor-audio-gallery-item"
+        },
+        {
             "className": "icon-editor-before-after"
         },
         {
@@ -189,6 +195,9 @@
             "className": "icon-editor-clicksmap"
         },
         {
+            "className": "icon-editor-close-button"
+        },
+        {
             "className": "icon-editor-column"
         },
         {
@@ -199,6 +208,9 @@
         },
         {
             "className": "icon-editor-copyright"
+        },
+        {
+            "className": "icon-editor-downloads-popup"
         },
         {
             "className": "icon-editor-drag-activity"
@@ -234,7 +246,16 @@
             "className": "icon-editor-glossary-connector"
         },
         {
+            "className": "icon-editor-glossary-links-item"
+        },
+        {
+            "className": "icon-editor-glossary-popup"
+        },
+        {
             "className": "icon-editor-grid"
+        },
+        {
+            "className": "icon-editor-help-popup"
         },
         {
             "className": "icon-editor-hotspot"
@@ -247,6 +268,9 @@
         },
         {
             "className": "icon-editor-instruction"
+        },
+        {
+            "className": "icon-editor-interactive-timeline-item"
         },
         {
             "className": "icon-editor-launcher"
@@ -262,6 +286,9 @@
         },
         {
             "className": "icon-editor-linker-question"
+        },
+        {
+            "className": "icon-editor-logo"
         },
         {
             "className": "icon-editor-matrix-multiple-activity"
@@ -291,10 +318,16 @@
             "className": "icon-editor-pdf"
         },
         {
+            "className": "icon-editor-popup-single"
+        },
+        {
             "className": "icon-editor-positive-feedback"
         },
         {
             "className": "icon-editor-presentation"
+        },
+        {
+            "className": "icon-editor-project-data-link"
         },
         {
             "className": "icon-editor-quiz"
@@ -310,6 +343,15 @@
         },
         {
             "className": "icon-editor-row"
+        },
+        {
+            "className": "icon-editor-show-close-button"
+        },
+        {
+            "className": "icon-editor-show-search"
+        },
+        {
+            "className": "icon-editor-scorm-player"
         },
         {
             "className": "icon-editor-screen"
@@ -379,6 +421,9 @@
         },
         {
             "className": "icon-eye"
+        },
+        {
+            "className": "icon-face-sad"
         },
         {
             "className": "icon-file"
