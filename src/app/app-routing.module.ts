@@ -144,6 +144,10 @@ const routes: Routes = [
     loadChildren: './ui-pages/progress-bar/progress-bar.module#ProgressBarModule'
   },
   {
+    path: 'progress-spinner',
+    loadChildren: './ui-pages/progress-spinner/progress-spinner.module#ProgressSpinnerModule'
+  },
+  {
     path: 'sidenavs',
     loadChildren: './ui-pages/sidenav/sidenav.module#SidenavModule'
   },

@@ -7,6 +7,7 @@ import { BasicChipComponent } from './basic-chip/basic-chip.component';
 import { CategoryChipComponent } from './category-chip/category-chip.component';
 import { ImageChipComponent } from './image-chip/image-chip.component';
 import { FilterChipComponent } from './filter-chip/filter-chip.component';
+import { ImageSubtitleChipComponent } from './image-subtitle-chip/image-subtitle-chip.component';
 
 @NgModule({
   imports: [
@@ -18,13 +19,15 @@ import { FilterChipComponent } from './filter-chip/filter-chip.component';
     BasicChipComponent,
     CategoryChipComponent,
     ImageChipComponent,
-    FilterChipComponent
+    FilterChipComponent,
+    ImageSubtitleChipComponent
   ],
   exports: [
     BasicChipComponent,
     CategoryChipComponent,
     ImageChipComponent,
-    FilterChipComponent
+    FilterChipComponent,
+    ImageSubtitleChipComponent
   ]
 })
 export class NtxChipsModule { }

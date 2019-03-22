@@ -6,6 +6,12 @@
       <ntx-image-chip [color]="'primary'" [disabled]="'true'"></ntx-image-chip>
     </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Chip with image and subtitle' | uppercase }}"
+          subtitle="{{ '<ntx-image-subtitle-chip>' }}">
+      <ntx-image-subtitle-chip [color]="'primary'"></ntx-image-subtitle-chip>
+      <ntx-image-subtitle-chip [color]="'primary'" [disabled]="'true'"></ntx-image-subtitle-chip>
+    </ntx-card-simple>
+
     <ntx-card-simple title="{{'Basic chip' | uppercase }}"
                       subtitle="{{ '<ntx-basic-chip>' }}">
       <ntx-basic-chip [color]="'primary'"></ntx-basic-chip>

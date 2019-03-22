@@ -34,6 +34,7 @@ const LINKS = [
   'panels',
   'panel-tabs',
   'progress-bar',
+  'progress-spinner',
   'sidenavs',
   'sidenav-filters',
   'table',

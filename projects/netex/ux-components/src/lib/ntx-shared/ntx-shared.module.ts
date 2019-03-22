@@ -26,7 +26,8 @@ import {
    MatSelectModule,
    MatPaginatorModule,
    MatGridListModule,
-   MatTooltipModule
+   MatTooltipModule,
+   MatProgressSpinnerModule
  } from '@angular/material';
 
 @NgModule({
@@ -56,7 +57,8 @@ import {
     MatSelectModule,
     MatPaginatorModule,
     MatGridListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatProgressSpinnerModule
   ],
   declarations: [],
   exports: [
@@ -85,7 +87,8 @@ import {
     MatSelectModule,
     MatPaginatorModule,
     MatGridListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatProgressSpinnerModule
   ]
 })
 export class NtxSharedModule { }
