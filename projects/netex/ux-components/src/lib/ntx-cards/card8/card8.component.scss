@@ -2,71 +2,37 @@
 
 $block: "card8";
 
-.mat-card{
-  &.#{$block}{
-    border-radius: 4px;
-    box-shadow: $shadow;
-    display: block;
-    height: 100px;
-    margin: 8px;
-    padding: 0;
-    width: auto;
-    &:hover{
-      box-shadow: $shadow-hover;
-      cursor: pointer;
+.#{$block} {
+  box-sizing: border-box;
+  box-shadow: $shadow;
+  &:hover{
+    box-shadow: $shadow-hover;
+  }
+  &.card-selected {
+    box-shadow: 0 0 0 3px $color-primary;
+  }
+  .#{$block}__header {
+    .mat-card-header-text {
+      margin:0;
+      width: calc(100% - 39.9653px);
     }
-    &.card-selected{
-      border: 3px solid $color-primary;
-      padding: 0;
-      .mat-card-content{
-        padding: 20px 5px 13px 13px;
-      }
+    &--check {
+      margin-left: auto;
+      position: relative;
+      top: -8px;
+      right: -16px;
     }
-    .mat-card-content{
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 8px 16px 16px;
-      .#{$block}__texts{
-        .#{$block}__title{
-          color: $color-grey-800;
-          font-family: latoBold;
-          font-size: $font-size-14;
-          margin-bottom: 16px;
-          max-height: 18px;
-          word-wrap: break-word;
-          overflow: hidden;
-          .#{$block}__title--text{
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            /* autoprefixer: off */
-            -webkit-box-orient: vertical;
-          }
-        }
-        .#{$block}__subtitle{
-          color: $color-grey-600;
-          font-size: $font-size-14;
-          margin: 0;
-          max-height: 36px;
-          word-wrap: break-word;
-          overflow: hidden;
-          .#{$block}__subtitle--text{
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            /* autoprefixer: off */
-            -webkit-box-orient: vertical;
-          }
-        }
-      }
-      .#{$block}__options{
-        margin-top: -12px;
-        margin-right: -8px;
-      }
-      .#{$block}__label-state{
-        color: $color-grey-600;
-        font-family: latoBold;
-        font-size: $font-size-12;
-        text-transform: uppercase;
-      }
-    }
+  }
+  .#{$block}__title {
+    color: $color-grey-800;
+    font-family: latoBold;
+    font-size: $font-size-14;
+    max-height: 18px;
+  }
+  .#{$block}__subtitle {
+    color: $color-grey-600;
+    font-size: $font-size-14;
+    overflow: hidden;
+    max-height: 36px;
   }
 }
