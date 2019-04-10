@@ -1,6 +1,7 @@
 <mat-checkbox class="checkbox-circle"
-              [color]="'primary'"
+              [color]="color"
               [checked]="checked"
-              [disabled]="disabled">
+              [disabled]="disabled"
+              (change)="onChangeCheckbox($event)">
   <span [hidden]="hidden">I'm a circle checkbox</span>
 </mat-checkbox>

@@ -61,22 +61,21 @@ $block: "form-container";
         }
       }
     }
-  }
-}
-
-.cdk-overlay-pane{
-  .mat-select-panel{
-    &.mat-primary{
-      max-width: 320px;
-      padding: 8px 0;
-      .mat-option{
-        color: $color-grey-700;
-        &.mat-option-disabled{
-          cursor: not-allowed;
-          opacity: 0.5;
-        }
-        &.mat-selected{
-          background-color: $color-grey-200;
+    .cdk-overlay-pane{
+      .mat-select-panel{
+        &.mat-primary{
+          max-width: 320px;
+          padding: 8px 0;
+          .mat-option{
+            color: $color-grey-700;
+            &.mat-option-disabled{
+              cursor: not-allowed;
+              opacity: 0.5;
+            }
+            &.mat-selected{
+              background-color: $color-grey-200;
+            }
+          }
         }
       }
     }
