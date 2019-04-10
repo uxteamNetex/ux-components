@@ -15,6 +15,9 @@ $block: "form-select-thin";
       background-color: transparent;
       border: 1px solid $color-grey-400;
       border-radius: 4px;
+      &:hover {
+        background-color: $icon-button-hover;
+      }
       .mat-form-field-infix{
         border-top: 0;
         padding: 2px 8px;
