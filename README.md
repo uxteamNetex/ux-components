@@ -12,34 +12,48 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 COMMITS:
   v.x.x.x:
     Icons:
+      -Archivos tocados:
+        ux-components/src/styles/app/utils.scss
+        ux-components/src/styles/app/variables.scss
+        ux-components/src/styles/fonts/styles.scss
+        ux-components/src/styles/fonts/variables.scss
+
       -New icons:
-        icon-face-sad
-        icon-editor-audio-gallery-item
-        icon-editor-audio-gallery
-        icon-editor-close-button
-        icon-editor-glossary-links-item
-        icon-editor-help-popup
-        icon-editor-project-data-link
-        icon-editor-popup-single
-        icon-editor-show-search
-        icon-editor-show-close-button
-        icon-editor-scorm-player
-        icon-editor-logo
-        icon-editor-interactive-timeline-item
-        icon-editor-glossary-popup
-        icon-editor-downloads-popup
-        icon-users-plus
-        icon-pencil-circle-dotted
-        icon-flag-catalonia
         icon-circle-90
         icon-circle-180
         icon-circle-270
         icon-circle-360
         icon-compass
         icon-davinci
+        icon-desktop
+        icon-editor-audio-gallery
+        icon-editor-audio-gallery-item
+        icon-editor-close-button
+        icon-editor-downloads-popup
+        icon-editor-glossary-links-item
+        icon-editor-glossary-popup
+        icon-editor-help-popup
+        icon-editor-interactive-timeline-item
+        icon-editor-logo
+        icon-editor-popup-single
+        icon-editor-project-data-link
+        icon-editor-scorm-player
+        icon-editor-show-close-button
+        icon-editor-show-search
+        icon-face-sad
+        icon-flag-catalonia
+        icon-laptop
+        icon-lock-solid
+        icon-mobile
         icon-organisation-chart
+        icon-pencil-circle-dotted
+        icon-redo
+        icon-tablet
         icon-teacher
+        icon-undo
         icon-user-clipboard
+        icon-users-plus
+        icon-versions
 
     Trees:
       -Nueva documentación en la página del componente
