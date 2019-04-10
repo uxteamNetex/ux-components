@@ -45,6 +45,46 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-desktop {
+  &:before {
+    content: $icon-desktop;
+  }
+}
+.icon-laptop {
+  &:before {
+    content: $icon-laptop;
+  }
+}
+.icon-lock-solid {
+  &:before {
+    content: $icon-lock-solid;
+  }
+}
+.icon-mobile {
+  &:before {
+    content: $icon-mobile;
+  }
+}
+.icon-redo {
+  &:before {
+    content: $icon-redo;
+  }
+}
+.icon-tablet {
+  &:before {
+    content: $icon-tablet;
+  }
+}
+.icon-undo {
+  &:before {
+    content: $icon-undo;
+  }
+}
+.icon-versions {
+  &:before {
+    content: $icon-versions;
+  }
+}
 .icon-face-sad {
   &:before {
     content: $icon-face-sad;
