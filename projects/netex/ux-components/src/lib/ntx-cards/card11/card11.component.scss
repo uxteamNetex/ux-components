@@ -15,7 +15,7 @@ ntx-card11{
   .#{$block}{
     align-items: center;
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     width: 560px;
     .radiobutton-group__radiobutton{
       margin-right: 46px;
@@ -42,7 +42,7 @@ ntx-card11{
     .mat-card{
       &.#{$block}__card{
         box-shadow: 0 0 0 2px $color-grey-300;
-        margin: 0 auto 16px;
+        margin: 0 auto;
         padding: 16px 36px 24px 36px;
         width: 497px;
         .mat-card-header{
