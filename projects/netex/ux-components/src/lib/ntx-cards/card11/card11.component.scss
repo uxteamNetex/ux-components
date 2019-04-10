@@ -34,17 +34,14 @@ ntx-card11{
       &.check-selected{
         + .mat-card{
           &.#{$block}__card{
-            border: 3px solid $color-primary;
-            padding: 15px 35px 23px 35px;
+            box-shadow: 0 0 0 3px $color_primary; 
           }
         }
       }
     }
     .mat-card{
       &.#{$block}__card{
-        border: 2px solid #ddd;
-        border-radius: 4px;
-        box-shadow: none;
+        box-shadow: 0 0 0 2px $color-grey-300;
         margin: 0 auto 16px;
         padding: 16px 36px 24px 36px;
         width: 497px;
@@ -66,8 +63,8 @@ ntx-card11{
             margin-right: 24px;
             width: 32px;
             span{
-            color: $color-grey-700;
-            font-family: LatoSemibold;
+              color: $color-grey-700;
+              font-family: LatoSemibold;
             }
           }
           .#{$block}__content{
@@ -79,28 +76,12 @@ ntx-card11{
               font-style:italic;
               margin-bottom: 8px;
               max-height: 20px;
-              word-wrap: break-word;
-              overflow: hidden;
-              .#{$block}__title--text{
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                /* autoprefixer: off */
-                -webkit-box-orient: vertical;
-              }
             }
             .#{$block}__subtitle{
               color: $color-grey-800;
               font-size: $font-size-16;
               margin: 0 0 16px 0;
               max-height: 40px;
-              word-wrap: break-word;
-              overflow: hidden;
-              .#{$block}__subtitle--text{
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                /* autoprefixer: off */
-                -webkit-box-orient: vertical;
-              }
             }
           }
         }
