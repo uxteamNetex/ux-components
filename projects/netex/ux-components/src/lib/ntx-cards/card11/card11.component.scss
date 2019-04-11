@@ -76,12 +76,14 @@ ntx-card11{
               font-style:italic;
               margin-bottom: 8px;
               max-height: 20px;
+              overflow: hidden;
             }
             .#{$block}__subtitle{
               color: $color-grey-800;
               font-size: $font-size-16;
               margin: 0 0 16px 0;
               max-height: 40px;
+              overflow: hidden;
             }
           }
         }
