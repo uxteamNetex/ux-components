@@ -39,6 +39,21 @@
             "className": "icon-block"
         },
         {
+            "className": "icon-border-all"
+        },
+        {
+            "className": "icon-border-down"
+        },
+        {
+            "className": "icon-border-left"
+        },
+        {
+            "className": "icon-border-right"
+        },
+        {
+            "className": "icon-border-up"
+        },
+        {
             "className": "icon-briefcase"
         },
         {
@@ -100,6 +115,18 @@
         },
         {
             "className": "icon-circle-360"
+        },
+        {
+            "className": "icon-city-berlin"
+        },
+        {
+            "className": "icon-city-tokyo"
+        },
+        {
+            "className": "icon-city-vegas"
+        },
+        {
+            "className": "icon-city-vienna"
         },
         {
             "className": "icon-clear"
@@ -624,6 +651,9 @@
             "className": "icon-redo"
         },
         {
+            "className": "icon-redo-filled"
+        },
+        {
             "className": "icon-refresh"
         },
         {
@@ -712,6 +742,9 @@
         },
         {
             "className": "icon-undo"
+        },
+        {
+            "className": "icon-undo-filled"
         },
         {
             "className": "icon-unlock"

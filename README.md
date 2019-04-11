@@ -19,10 +19,19 @@ COMMITS:
         ux-components/src/styles/fonts/variables.scss
 
       -New icons:
+        icon-border-all
+        icon-border-down
+        icon-border-left
+        icon-border-right
+        icon-border-up
         icon-circle-90
         icon-circle-180
         icon-circle-270
         icon-circle-360
+        icon-city-berlin
+        icon-city-tokyo
+        icon-city-vegas
+        icon-city-vienna
         icon-compass
         icon-davinci
         icon-desktop
@@ -48,9 +57,11 @@ COMMITS:
         icon-organisation-chart
         icon-pencil-circle-dotted
         icon-redo
+        icon-redo-filled
         icon-tablet
         icon-teacher
         icon-undo
+        icon-undo-filled
         icon-user-clipboard
         icon-users-plus
         icon-versions

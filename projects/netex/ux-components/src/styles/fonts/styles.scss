@@ -45,6 +45,61 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-border-all {
+  &:before {
+    content: $icon-border-all;
+  }
+}
+.icon-border-down {
+  &:before {
+    content: $icon-border-down;
+  }
+}
+.icon-border-left {
+  &:before {
+    content: $icon-border-left;
+  }
+}
+.icon-border-right {
+  &:before {
+    content: $icon-border-right;
+  }
+}
+.icon-border-up {
+  &:before {
+    content: $icon-border-up;
+  }
+}
+.icon-city-berlin {
+  &:before {
+    content: $icon-city-berlin;
+  }
+}
+.icon-city-tokyo {
+  &:before {
+    content: $icon-city-tokyo;
+  }
+}
+.icon-city-vegas {
+  &:before {
+    content: $icon-city-vegas;
+  }
+}
+.icon-city-vienna {
+  &:before {
+    content: $icon-city-vienna;
+  }
+}
+.icon-redo-filled {
+  &:before {
+    content: $icon-redo-filled;
+  }
+}
+.icon-undo-filled {
+  &:before {
+    content: $icon-undo-filled;
+  }
+}
 .icon-desktop {
   &:before {
     content: $icon-desktop;
