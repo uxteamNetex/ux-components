@@ -9,7 +9,7 @@ pipeline {
     }
     agent none
     triggers {
-       cron(env.BRANCH_NAME == 'development' ? 'H 11 * * *' : '')
+       cron(env.BRANCH_NAME == 'development' ? 'H 02 * * *' : '')
     }
     environment{
         SSH_COMMAND = "ssh root@192.168.134.10  -o StrictHostKeyChecking=no -o UserKnownHostsFile=no "
