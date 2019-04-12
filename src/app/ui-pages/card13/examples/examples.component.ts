@@ -12,11 +12,11 @@ export class ExamplesComponent implements AfterContentInit {
 	@ViewChild('grid') grid: MatGridList;
 
 	gridByBreakpoint = {
-		xl: 5,
-		lg: 4,
-		md: 3,
-		sm: 2,
-		xs: 1
+		'ntx.xl': 4,
+		'ntx.lg': 3,
+		'ntx.md': 2,
+		'ntx.sm': 2,
+		'ntx.xs': 1
 	};
 
 	constructor(private observableMedia: ObservableMedia) { }

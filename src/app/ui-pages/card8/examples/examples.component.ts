@@ -7,15 +7,15 @@ import { MatGridList } from '@angular/material';
 	templateUrl: './examples.component.html',
 	styleUrls: ['./examples.component.scss']
 })
-export class ExamplesComponent implements OnInit {
+export class ExamplesComponent implements OnInit, AfterContentInit {
 	@ViewChild('grid') grid: MatGridList;
 
 	gridByBreakpoint = {
-		xl: 5,
-		lg: 4,
-		md: 3,
-		sm: 2,
-		xs: 1
+		'ntx.xl': 4,
+		'ntx.lg': 3,
+		'ntx.md': 2,
+		'ntx.sm': 2,
+		'ntx.xs': 1
 	};
 
 	constructor(private observableMedia: ObservableMedia) { }
@@ -23,10 +23,10 @@ export class ExamplesComponent implements OnInit {
 	ngOnInit() {
 	}
 
-	// tslint:disable-next-line:use-life-cycle-interface
 	ngAfterContentInit() {
 		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
 			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
+			console.log('a', change);
 		});
 	}
 
