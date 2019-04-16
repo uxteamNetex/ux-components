@@ -1,20 +1,16 @@
-<mat-toolbar color="primary" class="multi-select-header">
+<mat-toolbar [ngClass]="{'selected': itemsSelected }" class="multi-select-header">
 
   <div class="multi-select-header__total-items">
-    <span>12 items selected</span>
+    <span>{{ numSelectedItems | i18nPlural: itemPluralMapping }} selected</span>
   </div>
 
   <span class="multi-select-header__spacer"></span>
 
-  <button mat-button
-          color="primary"
-          class="multi-select-header__button">publish</button>
-  <button mat-button
-          color="primary"
-          class="multi-select-header__button">delete</button>
-  <button mat-button
-          color="primary"
-          class="multi-select-header__button">download</button>
+  <div class="multi-select-header__options" *ngIf="itemsSelected">
+    <ntx-text-button [color]="'white'"></ntx-text-button>
+    <ntx-text-button [color]="'white'"></ntx-text-button>
+    <ntx-text-button [color]="'white'"></ntx-text-button>
+    <ntx-menu-options></ntx-menu-options>
+  </div>
 
-  <ntx-menu-options></ntx-menu-options>
 </mat-toolbar>
