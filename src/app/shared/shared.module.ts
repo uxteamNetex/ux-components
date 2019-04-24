@@ -34,7 +34,8 @@ import {
   NtxTreesModule,
   NtxLabelsModule,
   NtxErrorPagesModule,
-  NtxProgressSpinnerModule
+  NtxProgressSpinnerModule,
+  NtxEmptyPagesModule
 } from '@netex/ux-components';
 
 import { AppRoutingModule } from '../app-routing.module';
@@ -89,7 +90,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LayoutModule,
     NtxLabelsModule,
     NtxErrorPagesModule,
-    NtxProgressSpinnerModule
+    NtxProgressSpinnerModule,
+    NtxEmptyPagesModule
   ],
   declarations: [
     HeaderComponent,

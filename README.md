@@ -76,10 +76,13 @@ COMMITS:
       -Nuevo componente error page 503 (ntx-error503)
 
     Chips:
-      -Nuevo componente chip con imagen y sustítulo (ntx-image-subtitle-chip)
+      -Nuevo componente chip con imagen y subtítulo (ntx-image-subtitle-chip)
 
     Progress spinner:
       -Nuevo componente progress spinner (ntx-progress-spinner)
+
+    Empty pages:
+      -Nuevo componente empty pages (ntx-empty-page)
 
 
 

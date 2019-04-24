@@ -82,6 +82,10 @@ const routes: Routes = [
 	{
 		path: 'drag-and-drop',
 		loadChildren: './ui-pages/drag-and-drop/drag-and-drop.module#DragAndDropModule'
+  },
+  {
+		path: 'empty-pages',
+		loadChildren: './ui-pages/empty-pages/empty-pages.module#EmptyPagesModule'
 	},
 	{
 		path: 'error-page-403',
