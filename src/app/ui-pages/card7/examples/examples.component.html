@@ -1,45 +1,9 @@
 <div class="page-layout">
   <div class="page-container">
 
-    <mat-grid-list #grid rowHeight="126px" gutterSize="0">
+    <mat-grid-list #grid rowHeight="116px" gutterSize="0">
 
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card7></ntx-card7>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
+      <mat-grid-tile *ngFor="let item of counter(16)">
         <ntx-card7></ntx-card7>
       </mat-grid-tile>
 
