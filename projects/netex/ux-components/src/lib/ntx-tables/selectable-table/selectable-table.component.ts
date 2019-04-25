@@ -5,24 +5,27 @@ import { Input } from '@angular/core';
 import { MatPaginator, MatSort, MatTableDataSource, PageEvent } from '@angular/material';
 
 export interface PeriodicElement {
+	avatar: string;
 	name: string;
 	project: string;
+	type: string;
 	modification: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-	// tslint:disable-next-line:max-line-length
-	{name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  modification: '29/11/2018'},
-	// tslint:disable-next-line:max-line-length
-	{name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  modification: '29/11/2018'},
-	{name: 'Element name', project: 'Project name', modification: '29/11/2018'},
-	{name: 'Element name', project: 'Project name', modification: '29/11/2018'},
-	{name: 'Element name', project: 'Project name', modification: '29/11/2018'},
-	{name: 'Element name', project: 'Project name', modification: '29/11/2018'},
-	{name: 'Element name', project: 'Project name', modification: '29/11/2018'},
-	{name: 'Element name', project: 'Project name', modification: '29/11/2018'},
-	{name: 'Element name', project: 'Project name', modification: '29/11/2018'},
-	{name: 'Element name', project: 'Project name', modification: '29/11/2018'}
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'long type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'very long type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'very long type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
 ];
 
 
@@ -37,7 +40,7 @@ export class SelectableTableComponent implements OnInit {
 
 	constructor() { }
 
-	displayedColumns: string[] = ['select', 'name', 'project', 'type', 'modification', 'options'];
+	displayedColumns: string[] = ['select', 'avatar', 'name', 'project', 'type', 'modification', 'options'];
 	dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 	selection = new SelectionModel<PeriodicElement>(true, []);
 
