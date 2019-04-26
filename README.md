@@ -85,7 +85,6 @@ COMMITS:
       -Nuevo componente empty pages (ntx-empty-page)
 
 
-
   v.3.0.0:
     Cards:
       -Cambios css, html y añadir tooltip en componente Card4 (ntx-card4)

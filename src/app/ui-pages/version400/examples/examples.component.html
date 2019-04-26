@@ -20,25 +20,25 @@
 
         <div class="whatsnew__content-block">
           <h4>Empty pages</h4>
-          <p class="whatsnew__content-block--text utils--text-18">Arrancamos la nueva versión de la librería con el nuevo componente <span class="documentation-code">ntx-empty-page</span> para poner en nuestras pantallas vacías e indicarle al usuario que aún no hay contenido en esa pantalla.</p>
+          <p class="whatsnew__content-block--text utils--text-18">We start the new version of the library with the new <span class="documentation-code">ntx-empty-page</span> component to put on our empty screens and tell the user that there is still no content on that screen.</p>
           <img class="whatsnew__content-block--image" src="assets/images/empty_page.png" alt="Empty page example">
         </div>
 
         <div class="whatsnew__content-block">
           <h4>Error pages</h4>
-          <p class="whatsnew__content-block--text utils--text-18">Nuestra siguiente novedad son las necesitadas páginas de error. Estos son los componentes:</p>
+          <p class="whatsnew__content-block--text utils--text-18">Our next novelty are the needed error pages. These are the components:</p>
           <ul class="whatsnew__content-block--points">
             <li class="whatsnew__content-block--text">
-              <strong>Error page 403</strong> — Las páginas de error 403 se representarán con el componente <span class="documentation-code">ntx-error403</span>
+              <strong>Error page 403</strong> — Error pages 403 will be represented with the component <span class="documentation-code">ntx-error403</span>
             </li>
             <li class="whatsnew__content-block--text">
-              <strong>Error page 404</strong> — Las páginas de error 404 se representarán con el componente <span class="documentation-code">ntx-error404</span>
+              <strong>Error page 404</strong> — Error pages 404 will be represented with the component <span class="documentation-code">ntx-error404</span>
             </li>
             <li class="whatsnew__content-block--text">
-              <strong>Error page 500</strong> — Las páginas de error 500 se representarán con el componente <span class="documentation-code">ntx-error500</span>
+              <strong>Error page 500</strong> — Error pages 500 will be represented with the component <span class="documentation-code">ntx-error500</span>
             </li>
             <li class="whatsnew__content-block--text">
-              <strong>Error page 503</strong> — Las páginas de error 503 se representarán con el componente <span class="documentation-code">ntx-error503</span>
+              <strong>Error page 503</strong> — Error pages 503 will be represented with the component <span class="documentation-code">ntx-error503</span>
             </li>
           </ul>
           <img class="whatsnew__content-block--image" src="assets/images/error403.png" alt="Error 403 page example">
@@ -46,7 +46,7 @@
 
         <div class="whatsnew__content-block">
           <h4>New icons</h4>
-          <p class="whatsnew__content-block--text utils--text-18">Con esta actualización sacamos un nuevo lote de iconos. Para ello se han tocado varios archivos css que debeis actualizar:</p>
+          <p class="whatsnew__content-block--text utils--text-18">With this update we have a new batch of icons. For this, several css files have been touched, which you must update to see the icons correctly:</p>
           <ul class="whatsnew__content-block--points">
             <li>ux-components/src/styles/app/utils.scss</li>
             <li>ux-components/src/styles/app/variables.scss</li>
@@ -252,26 +252,21 @@
         </div>
 
         <div class="whatsnew__content-block">
-          <h4>Trees</h4>
-          <p class="whatsnew__content-block--text utils--text-18">En esta versión aportamos nueva documentación de qué es, para qué sirve y cómo se configura el componente <span class="documentation-code">ntx-tree</span></p>
-        </div>
-
-        <div class="whatsnew__content-block">
           <h4>Chips</h4>
-          <p class="whatsnew__content-block--text utils--text-18">Estrenamos un nuevo modelo de chip <span class="documentation-code">ntx-image-subtitle-chip</span> con imagen, título y subtítulo para aportar la información más relevante a simple vista.</p>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new chip model, <span class="documentation-code">ntx-image-subtitle-chip</span> that contains image, title and subtitle to provide the most relevant information at a glance.</p>
           <ntx-image-subtitle-chip [color]="'primary'"></ntx-image-subtitle-chip>
         </div>
 
         <div class="whatsnew__content-block">
           <h4>Progress spinner</h4>
-          <p class="whatsnew__content-block--text utils--text-18">Ya tenemos en la librería el componente <span class="documentation-code">ntx-progress-spinner</span> para indicar a nuestros usuarios que hay un proceso de carga en curso.</p>
+          <p class="whatsnew__content-block--text utils--text-18">We already have in the library the <span class="documentation-code">ntx-progress-spinner</span> component to tell our users that there is a loading process in progress.</p>
           <ntx-progress-spinner class="utils--margin-top-24 utils--margin-bottom-24" [color]="'primary'" [diameter]="60" [strokeWidth]="3"></ntx-progress-spinner>
         </div>
 
         <div class="whatsnew__content-block">
           <h4>Card 14</h4>
-          <p class="whatsnew__content-block--text utils--text-18">Lanzamos una nueva versión de cards, el componente <span class="documentation-code">ntx-card14</span> que es una versión de la card8 que indica que esa card ya ha sido añadida.</p>
-          <div class="whatsnew__content-block--card">
+          <p class="whatsnew__content-block--text utils--text-18">We launched a new version of cards, <span class="documentation-code">ntx-card14</span> component that is a version of the card8 that indicates that the card has already been added.</p>
+          <div class="whatsnew__content-block--card w50">
             <ntx-card14></ntx-card14>
           </div>
         </div>
@@ -281,17 +276,78 @@
         </h2>
 
         <div class="whatsnew__content-block">
-          <h4>Puntos de corte del contenido</h4>
-          <p class="whatsnew__content-block--text utils--text-18">El contenido de cada aplicación va contenida dentro de un contenedor que irá variando su tamaño según la resolución de la pantalla y hemos configurado nuestros puntos de corte custom:</p>
+          <h4>Form checkbox</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, bugs have been fixed in the <span class="documentation-code">ntx-form-checkbox</span> component and html changes have been affected. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-forms/form-checkbox/form-checkbox.component.html</li>
+            <li>ux-components/src/lib/ntx-forms/form-checkbox/form-checkbox.component.ts</li>
+          </ul>
+          <ntx-form-checkbox [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Form checkbox circle</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, bugs have been fixed in the <span class="documentation-code">ntx-form-checkbox-circle</span> component and html changes have been affected. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-forms/form-checkbox-circle/form-checkbox-circle.component.html</li>
+            <li>ux-components/src/lib/ntx-forms/form-checkbox-circle/form-checkbox-circle.component.ts</li>
+          </ul>
+          <ntx-form-checkbox-circle [color]="'primary'" [checked]="'true'"></ntx-form-checkbox-circle>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Form select border button</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, bugs have been fixed in the <span class="documentation-code">ntx-form-select-border-button</span> component and html changes have been affected. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-forms/form-select-border-button/form-select-border-button.component.html</li>
+          </ul>
+          <ntx-form-select-border-button></ntx-form-select-border-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Form select thin</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, bugs have been fixed in the <span class="documentation-code">ntx-form-select-thin</span> component and both css changes and html changes have been affected. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-forms/form-select-thin/form-select-thin.component.html</li>
+            <li>ux-components/src/lib/ntx-forms/form-select-thin/form-select-thin.component.scss</li>
+            <li>ux-components/src/lib/ntx-forms/form-select-thin/form-select-thin.component.ts</li>
+          </ul>
+          <ntx-form-select-thin></ntx-form-select-thin>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Label</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, bugs have been fixed in the <span class="documentation-code">ntx-label</span> component and both css changes and html changes have been affected. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-labels/label/label.component.html</li>
+            <li>ux-components/src/lib/ntx-labels/label/label.component.scss</li>
+          </ul>
+          <ntx-label [className]="'label-orange'"></ntx-label>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Label error</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, bugs have been fixed in the <span class="documentation-code">ntx-label-error</span> component and both css changes and html changes have been affected. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-labels/label-error/label-error.component.html</li>
+            <li>ux-components/src/lib/ntx-labels/label-error/label-error.component.scss</li>
+            <li>ux-components/src/lib/ntx-labels/label-error/label-error.component.ts</li>
+          </ul>
+          <ntx-label-error text="2 alerts"></ntx-label-error>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Content breakpoints</h4>
+          <p class="whatsnew__content-block--text utils--text-18">The content of each application is contained within a container that will vary its size according to the resolution of the screen and we have configured our custom cutting points:</p>
           <table mat-table [dataSource]="dataSource" class="mat-basic-table mat-elevation-z8">
 
             <ng-container matColumnDef="screensize">
-              <th mat-header-cell *matHeaderCellDef> Medida pantalla </th>
+              <th mat-header-cell *matHeaderCellDef> Screen size </th>
               <td mat-cell *matCellDef="let element"> {{element.screensize}} </td>
             </ng-container>
 
             <ng-container matColumnDef="containersize">
-              <th mat-header-cell *matHeaderCellDef> Medida contenedor </th>
+              <th mat-header-cell *matHeaderCellDef> Container size </th>
               <td mat-cell *matCellDef="let element"> {{element.containersize}} </td>
             </ng-container>
 
@@ -302,6 +358,19 @@
         </div>
 
         <div class="whatsnew__content-block">
+          <h4>Card 2</h4>
+          <p class="whatsnew__content-block--text utils--text-18">En esta versión se han corregido bugs en el componente <span class="documentation-code">ntx-card2</span> y se han visto afectados tanto cambios de css somo de html. Debereis actualizaros son los nuevos cambios para que este componente se vea correctamente. Los archivos cambiados son:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-cards/card2/card2.component.html</li>
+            <li>ux-components/src/lib/ntx-cards/card2/card2.component.scss</li>
+            <li>ux-components/src/lib/ntx-cards/card2/card2.component.ts</li>
+          </ul>
+          <div class="whatsnew__content-block--card w33">
+            <ntx-card2></ntx-card2>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>Card 7</h4>
           <p class="whatsnew__content-block--text utils--text-18">En esta versión se han corregido bugs en el componente <span class="documentation-code">ntx-card7</span> y se han visto afectados tanto cambios de css somo de html. Debereis actualizaros son los nuevos cambios para que este componente se vea correctamente. Los archivos cambiados son:</p>
           <ul class="whatsnew__content-block--points">
@@ -309,7 +378,7 @@
             <li>ux-components/src/lib/ntx-cards/card7/card7.component.scss</li>
             <li>ux-components/src/lib/ntx-cards/card7/card7.component.ts</li>
           </ul>
-          <div class="whatsnew__content-block--card">
+          <div class="whatsnew__content-block--card w50">
             <ntx-card7></ntx-card7>
           </div>
         </div>
@@ -322,7 +391,7 @@
             <li>ux-components/src/lib/ntx-cards/card7/card7.component.scss</li>
             <li>ux-components/src/lib/ntx-cards/card7/card7.component.ts</li>
           </ul>
-          <div class="whatsnew__content-block--card">
+          <div class="whatsnew__content-block--card w50">
             <ntx-card8></ntx-card8>
           </div>
         </div>
@@ -335,7 +404,7 @@
             <li>ux-components/src/lib/ntx-cards/card7/card7.component.scss</li>
             <li>ux-components/src/lib/ntx-cards/card7/card7.component.ts</li>
           </ul>
-          <div class="whatsnew__content-block--card">
+          <div class="whatsnew__content-block--card w50">
             <ntx-card11></ntx-card11>
           </div>
         </div>
@@ -348,7 +417,7 @@
             <li>ux-components/src/lib/ntx-cards/card7/card7.component.scss</li>
             <li>ux-components/src/lib/ntx-cards/card7/card7.component.ts</li>
           </ul>
-          <div class="whatsnew__content-block--card">
+          <div class="whatsnew__content-block--card w50">
             <ntx-card13></ntx-card13>
           </div>
         </div>
@@ -356,7 +425,7 @@
         <div class="whatsnew__content-block">
           <h4>Table selectable</h4>
           <p class="whatsnew__content-block--text utils--text-18">En esta versión se han corregido bugs en el componente <span class="documentation-code">ntx-selectable-table</span> y se h</p>
-          <ntx-selectable-table></ntx-selectable-table>
+          <img class="whatsnew__content-block--image" src="assets/images/table-selectable.png" alt="Table selectable example">
         </div>
 
       </div>

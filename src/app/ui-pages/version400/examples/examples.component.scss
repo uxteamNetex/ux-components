@@ -112,7 +112,12 @@ $block: "whatsnew";
             }
           }
           .#{$block}__content-block--card{
-            width: 50%;
+            &.w33{
+              width: 33%;
+            }
+            &.w50{
+              width: 50%;
+            }
             ntx-card7 {
               width: 100%;
               margin: 0 8px;
@@ -204,3 +209,4 @@ $block: "whatsnew";
     }
   }
 }
+

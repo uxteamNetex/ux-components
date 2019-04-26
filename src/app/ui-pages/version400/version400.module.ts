@@ -9,7 +9,9 @@ import {
   NtxCardsModule,
   NtxChipsModule,
   NtxProgressSpinnerModule,
-  NtxTablesModule
+  NtxTablesModule,
+  NtxFormsModule,
+  NtxLabelsModule
 } from '@netex/ux-components';
 
 import { Version400RoutingModule } from './version400-routing.module';
@@ -27,7 +29,9 @@ import { ExamplesComponent } from './examples/examples.component';
     NtxCardsModule,
     NtxChipsModule,
     NtxProgressSpinnerModule,
-    NtxTablesModule
+    NtxTablesModule,
+    NtxFormsModule,
+    NtxLabelsModule
   ]
 })
 export class Version400Module { }
