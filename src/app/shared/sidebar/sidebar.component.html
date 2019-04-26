@@ -14,4 +14,15 @@
     mat-list-item
     [routerLink]=linkhelpers
     (click)="setPath(linkhelpers)">{{ linkhelpers | titlecase }}</a>
+
+  <mat-divider class="utils--margin-bottom-8 utils--margin-top-8"></mat-divider>
+
+  <label class="sidebar-container__section-title">What's new</label>
+  <a class="sidebar-container__links" *ngFor="let whatsnew of whatsnews"
+    mat-list-item
+    [routerLink]=whatsnew
+    (click)="setPath(whatsnew)">{{ whatsnew | titlecase }}</a>
+
+  <mat-divider class="utils--margin-bottom-8 utils--margin-top-8"></mat-divider>
+
 </mat-nav-list>

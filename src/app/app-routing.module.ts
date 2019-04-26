@@ -194,6 +194,10 @@ const routes: Routes = [
 	{
 		path: 'user-profile-panel',
 		loadChildren: './ui-pages/user-profile-panel/user-profile-panel.module#UserProfilePanelModule'
+  },
+  {
+		path: 'version400',
+		loadChildren: './ui-pages/version400/version400.module#Version400Module'
 	},
 	{ path: '',
 		redirectTo: '/home',

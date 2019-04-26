@@ -1,0 +1,367 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.0.0: Error pages, progress spinner and more</h1>
+          <p class="whatsnew__header--subtitle">29 abril 2019</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our monthly update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Empty pages</h4>
+          <p class="whatsnew__content-block--text utils--text-18">Arrancamos la nueva versión de la librería con el nuevo componente <span class="documentation-code">ntx-empty-page</span> para poner en nuestras pantallas vacías e indicarle al usuario que aún no hay contenido en esa pantalla.</p>
+          <img class="whatsnew__content-block--image" src="assets/images/empty_page.png" alt="Empty page example">
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Error pages</h4>
+          <p class="whatsnew__content-block--text utils--text-18">Nuestra siguiente novedad son las necesitadas páginas de error. Estos son los componentes:</p>
+          <ul class="whatsnew__content-block--points">
+            <li class="whatsnew__content-block--text">
+              <strong>Error page 403</strong> — Las páginas de error 403 se representarán con el componente <span class="documentation-code">ntx-error403</span>
+            </li>
+            <li class="whatsnew__content-block--text">
+              <strong>Error page 404</strong> — Las páginas de error 404 se representarán con el componente <span class="documentation-code">ntx-error404</span>
+            </li>
+            <li class="whatsnew__content-block--text">
+              <strong>Error page 500</strong> — Las páginas de error 500 se representarán con el componente <span class="documentation-code">ntx-error500</span>
+            </li>
+            <li class="whatsnew__content-block--text">
+              <strong>Error page 503</strong> — Las páginas de error 503 se representarán con el componente <span class="documentation-code">ntx-error503</span>
+            </li>
+          </ul>
+          <img class="whatsnew__content-block--image" src="assets/images/error403.png" alt="Error 403 page example">
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New icons</h4>
+          <p class="whatsnew__content-block--text utils--text-18">Con esta actualización sacamos un nuevo lote de iconos. Para ello se han tocado varios archivos css que debeis actualizar:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/styles/app/utils.scss</li>
+            <li>ux-components/src/styles/app/variables.scss</li>
+            <li>ux-components/src/styles/fonts/styles.scss</li>
+            <li>ux-components/src/styles/fonts/variables.scss</li>
+            <li>ux-components/src/assets/fonts/icons/netex.eot</li>
+            <li>ux-components/src/assets/fonts/icons/netex.svg</li>
+            <li>ux-components/src/assets/fonts/icons/netex.ttf</li>
+            <li>ux-components/src/assets/fonts/icons/netex.woff</li>
+          </ul>
+          <div class="icons-container">
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-border-all icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-border-all</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-border-down icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-border-down</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-border-left icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-border-left</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-border-right icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-border-right</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-border-up icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-border-up</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-circle-90 icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-circle-90</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-circle-180 icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-circle-180</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-circle-270 icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-circle-270</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-circle-360 icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-circle-360</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-city-berlin icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-city-berlin</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-city-tokyo icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-city-tokyo</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-city-vegas icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-city-vegas</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-city-vienna icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-city-vienna</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-compass icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-compass</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-davinci icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-davinci</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-desktop icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-desktop</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-audio-gallery icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-audio-gallery</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-audio-gallery-item icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-audio-gallery-item</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-close-button icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-close-button</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-downloads-popup icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-downloads-popup</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-glossary-links-item icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-glossary-links-item</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-glossary-popup icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-glossary-popup</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-help-popup icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-help-popup</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-interactive-timeline-item icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-interactive-timeline-item</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-logo icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-logo</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-popup-single icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-popup-single</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-project-data-link icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-project-data-link</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-scorm-player icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-scorm-player</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-show-close-button icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-show-close-button</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-editor-show-search icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-editor-show-search</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-face-sad icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-face-sad</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-flag-catalonia icon-big utils--text-grey-600">
+                <span class="path1"></span>
+                <span class="path2"></span>
+                <span class="path3"></span>
+                <span class="path4"></span>
+                <span class="path5"></span>
+              </mat-icon>
+              <label>icon-flag-catalonia</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-laptop icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-laptop</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-lock-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-lock-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-mobile icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-mobile</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-organisation-chart icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-organisation-chart</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-pencil-circle-dotted icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-pencil-circle-dotted</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-redo icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-redo</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-redo-filled icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-redo-filled</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-tablet icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-tablet</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-teacher icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-teacher</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-undo icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-undo</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-undo-filled icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-undo-filled</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-user-clipboard icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-user-clipboard</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-users-plus icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-users-plus</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-versions icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-versions</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Trees</h4>
+          <p class="whatsnew__content-block--text utils--text-18">En esta versión aportamos nueva documentación de qué es, para qué sirve y cómo se configura el componente <span class="documentation-code">ntx-tree</span></p>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Chips</h4>
+          <p class="whatsnew__content-block--text utils--text-18">Estrenamos un nuevo modelo de chip <span class="documentation-code">ntx-image-subtitle-chip</span> con imagen, título y subtítulo para aportar la información más relevante a simple vista.</p>
+          <ntx-image-subtitle-chip [color]="'primary'"></ntx-image-subtitle-chip>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Progress spinner</h4>
+          <p class="whatsnew__content-block--text utils--text-18">Ya tenemos en la librería el componente <span class="documentation-code">ntx-progress-spinner</span> para indicar a nuestros usuarios que hay un proceso de carga en curso.</p>
+          <ntx-progress-spinner class="utils--margin-top-24 utils--margin-bottom-24" [color]="'primary'" [diameter]="60" [strokeWidth]="3"></ntx-progress-spinner>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card 14</h4>
+          <p class="whatsnew__content-block--text utils--text-18">Lanzamos una nueva versión de cards, el componente <span class="documentation-code">ntx-card14</span> que es una versión de la card8 que indica que esa card ya ha sido añadida.</p>
+          <div class="whatsnew__content-block--card">
+            <ntx-card14></ntx-card14>
+          </div>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">Bug fixing</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Puntos de corte del contenido</h4>
+          <p class="whatsnew__content-block--text utils--text-18">El contenido de cada aplicación va contenida dentro de un contenedor que irá variando su tamaño según la resolución de la pantalla y hemos configurado nuestros puntos de corte custom:</p>
+          <table mat-table [dataSource]="dataSource" class="mat-basic-table mat-elevation-z8">
+
+            <ng-container matColumnDef="screensize">
+              <th mat-header-cell *matHeaderCellDef> Medida pantalla </th>
+              <td mat-cell *matCellDef="let element"> {{element.screensize}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="containersize">
+              <th mat-header-cell *matHeaderCellDef> Medida contenedor </th>
+              <td mat-cell *matCellDef="let element"> {{element.containersize}} </td>
+            </ng-container>
+
+            <tr class="mat-basic-table__header" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr class="mat-basic-table__row" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+          </table>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card 7</h4>
+          <p class="whatsnew__content-block--text utils--text-18">En esta versión se han corregido bugs en el componente <span class="documentation-code">ntx-card7</span> y se han visto afectados tanto cambios de css somo de html. Debereis actualizaros son los nuevos cambios para que este componente se vea correctamente. Los archivos cambiados son:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.html</li>
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.scss</li>
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.ts</li>
+          </ul>
+          <div class="whatsnew__content-block--card">
+            <ntx-card7></ntx-card7>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card 8</h4>
+          <p class="whatsnew__content-block--text utils--text-18">En esta versión se han corregido bugs en el componente <span class="documentation-code">ntx-card8</span> y se han visto afectados tanto cambios de css somo de html. Debereis actualizaros son los nuevos cambios para que este componente se vea correctamente. Los archivos cambiados son:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.html</li>
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.scss</li>
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.ts</li>
+          </ul>
+          <div class="whatsnew__content-block--card">
+            <ntx-card8></ntx-card8>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card 11</h4>
+          <p class="whatsnew__content-block--text utils--text-18">En esta versión se han corregido bugs en el componente <span class="documentation-code">ntx-card11</span> y se han visto afectados tanto cambios de css somo de html. Debereis actualizaros son los nuevos cambios para que este componente se vea correctamente. Los archivos cambiados son:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.html</li>
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.scss</li>
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.ts</li>
+          </ul>
+          <div class="whatsnew__content-block--card">
+            <ntx-card11></ntx-card11>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card 13</h4>
+          <p class="whatsnew__content-block--text utils--text-18">En esta versión se han corregido bugs en el componente <span class="documentation-code">ntx-card13</span> y se han visto afectados tanto cambios de css somo de html. Debereis actualizaros son los nuevos cambios para que este componente se vea correctamente. Los archivos cambiados son:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.html</li>
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.scss</li>
+            <li>ux-components/src/lib/ntx-cards/card7/card7.component.ts</li>
+          </ul>
+          <div class="whatsnew__content-block--card">
+            <ntx-card13></ntx-card13>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Table selectable</h4>
+          <p class="whatsnew__content-block--text utils--text-18">En esta versión se han corregido bugs en el componente <span class="documentation-code">ntx-selectable-table</span> y se h</p>
+          <ntx-selectable-table></ntx-selectable-table>
+        </div>
+
+      </div>
+
+
+    </ntx-card-simple>
+  </div>
+</div>

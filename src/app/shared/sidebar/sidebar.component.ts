@@ -52,7 +52,10 @@ const LINKSHELPERS = [
 	'colours',
 	'headings-and-texts',
 	'margins',
-	'paddings'
+  'paddings'
+];
+const WHATSNEWS = [
+	'version400'
 ];
 
 @Component({
@@ -63,7 +66,8 @@ const LINKSHELPERS = [
 export class SidebarComponent implements OnInit {
 
 	links: string[] = LINKS;
-	linkshelpers: string[] = LINKSHELPERS;
+  linkshelpers: string[] = LINKSHELPERS;
+  whatsnews: string[] = WHATSNEWS;
 
 	constructor(
 		private sidenavService: SidenavService,
