@@ -97,8 +97,12 @@ $block: "table-evaluation";
               justify-content: center;
               overflow: hidden;
               border-radius: 50%;
-              img {
+              img.mat-card-image {
                 height: 100%;
+                width: auto;
+                &:first-child {
+                  margin: 0 ;
+                }
               }
             }
             .avatar-icon {

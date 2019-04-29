@@ -30,7 +30,6 @@ $block: "card2";
 
     .mat-card-content{
       display: inline-flex;
-      margin-top: -5px;
       width: 100%;
       .#{$block}__title{
         color: $color-grey-800;
