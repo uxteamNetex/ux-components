@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
+import { MatRadioChange } from '@angular/material';
 
 export interface PeriodicElement {
   screensize: string;
@@ -23,9 +24,23 @@ export class ExamplesComponent implements OnInit {
   displayedColumns: string[] = ['screensize', 'containersize'];
   dataSource = ELEMENT_DATA;
 
+  selectedCardIndex: number;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  counter(i: number) {
+    return new Array(i);
+  }
+
+  onRadiobuttonChange(event: MatRadioChange) {
+    this.selectedCardIndex = event.value;
+  }
+
+  checkIfSelected(i: number) {
+    return this.selectedCardIndex === i;
   }
 
 

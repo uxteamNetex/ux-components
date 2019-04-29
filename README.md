@@ -10,7 +10,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 
 COMMITS:
-  v.x.x.x:
+  v.4.0.0:
     Icons:
       -Archivos tocados:
         ux-components/src/styles/app/utils.scss
@@ -84,6 +84,26 @@ COMMITS:
     Empty pages:
       -Nuevo componente empty pages (ntx-empty-page)
 
+    Cards:   
+      -Cambios css, html y ts en componente Card2 (ntx-card2)
+      -Cambios css, html y ts en componente Card7 (ntx-card7)
+      -Cambios css, html y ts en componente Card8 (ntx-card8)
+      -Cambios css, html y ts en componente Card11 (ntx-card11)
+      -Cambios css, html y ts en componente Card13 (ntx-card13)
+      -Nuevo componente Card14 (ntx-card14)
+
+    Form checkbox, Form checkbox circle, Form select thin y Form select border button:
+      -Cambios en archivos css, html y ts para permitir emitir eventos a los componentes padre.
+
+    Label y Label error:
+      -Cambios en archivos css, html y ts para permitir parametrizar el texto que muestra la label.
+
+    Table selectable:
+      -Cambios en archivos css, html y ts para corregir selección de filas en la tabla (ntx-selectable-table).
+
+    Sidenavs:
+      -Cambios en archivos css para corregir aparición de doble scroll (ntx-sidenav-inside y ntx-sidenav-filters)
+      
 
   v.3.0.0:
     Cards:
