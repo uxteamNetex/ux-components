@@ -5,6 +5,8 @@ $block: "sidenav-inside";
 .#{$block}__container{
   background-color: transparent;
   height: calc(100% - #{$headerHeight});
+  position: relative;
+  top: 104px;
   .#{$block}__sidenav{
     background-color: $color-white;
     box-shadow: $shadow;
@@ -84,6 +86,9 @@ $block: "sidenav-inside";
         height: 36px;
       }
     }
+  }
+  .page-layout {
+    top: 0;
   }
 }
 
