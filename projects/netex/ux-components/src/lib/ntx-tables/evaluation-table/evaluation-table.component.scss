@@ -163,8 +163,12 @@ $block: "table-evaluation";
                 overflow: hidden;
                 position: relative;
                 width: 48px;
-                img{
+                img.mat-card-image{
                   height: 100%;
+                  width: auto;
+                  &:first-child {
+                    margin: 0 ;
+                  }
                 }
               }
               span{

@@ -45,6 +45,286 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-border-all {
+  &:before {
+    content: $icon-border-all;
+  }
+}
+.icon-border-down {
+  &:before {
+    content: $icon-border-down;
+  }
+}
+.icon-border-left {
+  &:before {
+    content: $icon-border-left;
+  }
+}
+.icon-border-right {
+  &:before {
+    content: $icon-border-right;
+  }
+}
+.icon-border-up {
+  &:before {
+    content: $icon-border-up;
+  }
+}
+.icon-city-berlin {
+  &:before {
+    content: $icon-city-berlin;
+  }
+}
+.icon-city-tokyo {
+  &:before {
+    content: $icon-city-tokyo;
+  }
+}
+.icon-city-vegas {
+  &:before {
+    content: $icon-city-vegas;
+  }
+}
+.icon-city-vienna {
+  &:before {
+    content: $icon-city-vienna;
+  }
+}
+.icon-redo-filled {
+  &:before {
+    content: $icon-redo-filled;
+  }
+}
+.icon-undo-filled {
+  &:before {
+    content: $icon-undo-filled;
+  }
+}
+.icon-desktop {
+  &:before {
+    content: $icon-desktop;
+  }
+}
+.icon-laptop {
+  &:before {
+    content: $icon-laptop;
+  }
+}
+.icon-lock-solid {
+  &:before {
+    content: $icon-lock-solid;
+  }
+}
+.icon-mobile {
+  &:before {
+    content: $icon-mobile;
+  }
+}
+.icon-redo {
+  &:before {
+    content: $icon-redo;
+  }
+}
+.icon-tablet {
+  &:before {
+    content: $icon-tablet;
+  }
+}
+.icon-undo {
+  &:before {
+    content: $icon-undo;
+  }
+}
+.icon-versions {
+  &:before {
+    content: $icon-versions;
+  }
+}
+.icon-face-sad {
+  &:before {
+    content: $icon-face-sad;
+  }
+}
+.icon-editor-audio-gallery-item {
+  &:before {
+    content: $icon-editor-audio-gallery-item;
+  }
+}
+.icon-editor-audio-gallery {
+  &:before {
+    content: $icon-editor-audio-gallery;
+  }
+}
+.icon-editor-close-button {
+  &:before {
+    content: $icon-editor-close-button;
+  }
+}
+.icon-editor-glossary-links-item {
+  &:before {
+    content: $icon-editor-glossary-links-item;
+  }
+}
+.icon-editor-help-popup {
+  &:before {
+    content: $icon-editor-help-popup;
+  }
+}
+.icon-editor-project-data-link {
+  &:before {
+    content: $icon-editor-project-data-link;
+  }
+}
+.icon-editor-popup-single {
+  &:before {
+    content: $icon-editor-popup-single;
+  }
+}
+.icon-editor-show-search {
+  &:before {
+    content: $icon-editor-show-search;
+  }
+}
+.icon-editor-show-close-button {
+  &:before {
+    content: $icon-editor-show-close-button;
+  }
+}
+.icon-editor-scorm-player {
+  &:before {
+    content: $icon-editor-scorm-player;
+  }
+}
+.icon-editor-logo {
+  &:before {
+    content: $icon-editor-logo;
+  }
+}
+.icon-editor-interactive-timeline-item {
+  &:before {
+    content: $icon-editor-interactive-timeline-item;
+  }
+}
+.icon-editor-glossary-popup {
+  &:before {
+    content: $icon-editor-glossary-popup;
+  }
+}
+.icon-editor-downloads-popup {
+  &:before {
+    content: $icon-editor-downloads-popup;
+  }
+}
+.icon-users-plus {
+  &:before {
+    content: $icon-users-plus;
+  }
+}
+.icon-pencil-circle-dotted {
+  &:before {
+    content: $icon-pencil-circle-dotted;
+  }
+}
+.icon-flag-catalonia .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path1;
+    color: rgb(255, 205, 5);
+  }
+}
+.icon-flag-catalonia .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path2;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-catalonia .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path3;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-catalonia .path4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path4;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-catalonia .path5 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-catalonia-path5;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-circle-90 {
+  &:before {
+    content: $icon-circle-90;
+  }
+}
+.icon-circle-180 {
+  &:before {
+    content: $icon-circle-180;
+  }
+}
+.icon-circle-270 {
+  &:before {
+    content: $icon-circle-270;
+  }
+}
+.icon-circle-360 {
+  &:before {
+    content: $icon-circle-360;
+  }
+}
+.icon-compass {
+  &:before {
+    content: $icon-compass;
+  }
+}
+.icon-davinci {
+  &:before {
+    content: $icon-davinci;
+  }
+}
+.icon-organisation-chart {
+  &:before {
+    content: $icon-organisation-chart;
+  }
+}
+.icon-teacher {
+  &:before {
+    content: $icon-teacher;
+  }
+}
+.icon-user-clipboard {
+  &:before {
+    content: $icon-user-clipboard;
+  }
+}
 .icon-hard-disk {
   &:before {
     content: $icon-hard-disk;

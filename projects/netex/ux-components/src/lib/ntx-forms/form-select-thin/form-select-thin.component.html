@@ -1,41 +1,24 @@
-<form class="form-container">
-
-  <mat-form-field class="form-container__form form-select-border-thin">
-    <mat-select class="form-container__form-select-border-thin" [(value)]="selected" [disabled]="disableSelect.value">
-
-      <mat-option value="option-0" class="form-container-first-option">
-        <mat-radio-button [color]="'primary'">
-          No level assigned
-        </mat-radio-button>
-      </mat-option>
-
-      <mat-divider></mat-divider>
-
-      <mat-option value="option-1">
-        <mat-radio-button [color]="'primary'">
-          Does not apply
-        </mat-radio-button>
-      </mat-option>
-
-      <mat-option value="option-2">
-        <mat-radio-button [color]="'primary'">
-          Bad
-        </mat-radio-button>
-      </mat-option>
-
-      <mat-option value="option-3">
-        <mat-radio-button [color]="'primary'">
-          Good
-        </mat-radio-button>
-      </mat-option>
-
-      <mat-option value="option-4">
-        <mat-radio-button [color]="'primary'">
-          Excellent
-        </mat-radio-button>
-      </mat-option>
-
-    </mat-select>
-  </mat-form-field>
-
+<form class="form-select-thin__container">
+<mat-form-field class="form-select-thin"
+                [ngClass]="{'selected': selected.value}">
+  <mat-select [formControl]="selected"
+              panelClass="form-select-thin__select">
+    <mat-option class="form-select-thin__option" 
+                [value]="firstOption.value">
+      <mat-radio-button class="form-select-thin__option--radio-button" 
+                        color="primary">
+        {{ firstOption.label }}
+      </mat-radio-button>
+    </mat-option>
+    <mat-divider></mat-divider> 
+    <mat-option class="form-select-thin__option" 
+                *ngFor="let option of options | slice:1" 
+                [value]="option.value">
+      <mat-radio-button class="form-select-thin__option--radio-button" 
+                        color="primary">
+        {{ option.label }}
+      </mat-radio-button>
+    </mat-option>
+  </mat-select>
+</mat-form-field>
 </form>

@@ -1,0 +1,24 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.error-container{
+  text-align: center;
+  width: 500px;
+  .error-container__image{
+    margin: 0 auto;
+    width: 350px;
+  }
+  .error-container__title{
+    color: $color-warning;
+    font-family: LatoBold;
+    font-size: $font-size-48;
+    margin: 32px 0 12px;
+  }
+  .error-container__subtitle{
+    color: $color-grey-600;
+    font-family: Lato;
+    font-size: $font-size-16;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    min-height: 52px;
+  }
+}

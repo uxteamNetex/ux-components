@@ -3,11 +3,11 @@
 $block: "multi-select-header";
 
 .#{$block} {
-  z-index: 9;
+  background-color: $color-white;
   height: $tableHeaderOptionsHeight;
   .#{$block}__total-items {
     span{
-      color: $color-white;
+      color: $color-grey-700;
       font-family: latoMedium;
       font-size: $font-size-16;
       font-weight: normal;
@@ -16,17 +16,20 @@ $block: "multi-select-header";
   .#{$block}__spacer {
     flex: 1 1 auto;
   }
-  .#{$block}__button {
-    color: $color-white;
-    font-family: Lato;
-    margin: 0 4px;
-    text-transform: uppercase;
-    &:hover{
-      background: $icon-button-hover;
+  &.selected {
+    background-color: $color-primary;
+    .#{$block}__total-items {
+      span{
+        color: $color-white;
+      }
     }
-  }
-  .menu-options-button{
-    &.mat-icon-button{
+    .#{$block}__options {
+      .mat-button {
+        text-transform: uppercase;
+        color: $color-white;
+      }
+    }
+    .menu-options-button{
       color: $color-white;
     }
   }

@@ -25,9 +25,35 @@
   }
 }
 
+.page-layout-home{
+  height: calc(100vh - 56px);
+  overflow: auto;
+  position: relative;
+  top: 56px;
+  .page-container{
+    width: 900px;
+    margin: 88px auto;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      color: #333;
+      font-family: LatoLight;
+      font-size: 44px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__text{
+      line-height: 26px;
+      text-align: justify;
+    }
+  }
+}
+
 .page-layout{
   height: calc(100vh - 104px);
   overflow: auto;
+  position: relative;
+  top: 104px;
   .page-container{
     margin: 40px auto;
     &.documentation{

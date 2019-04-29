@@ -1,0 +1,29 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "empty-page-container";
+
+.#{$block}{
+  text-align: center;
+  width: 364px;
+  .#{$block}__icon{
+    mat-icon{
+      color: $color-grey-400;
+      font-size: $font-size-icon-xxxlarge;
+    }
+  }
+  .#{$block}__title{
+    color: $color-grey-700;
+    font-family: LatoBold;
+    font-size: $font-size-22;
+    line-height: 27px;
+    margin: 12px 0 16px;
+  }
+  .#{$block}__subtitle{
+    color: $color-grey-600;
+    font-family: Lato;
+    font-size: $font-size-14;
+    line-height: 17px;
+    margin: 0;
+    min-height: 42px;
+  }
+}

@@ -1,19 +1,28 @@
-import { ComponentPortal } from '@angular/cdk/portal';
-import { Component, ComponentFactoryResolver, EventEmitter, Injector, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'ntx-multi-select-options',
-  templateUrl: './multi-select-options.component.html',
-  styleUrls: ['./multi-select-options.component.scss'],
-  encapsulation: ViewEncapsulation.None
+	selector: 'ntx-multi-select-options',
+	templateUrl: './multi-select-options.component.html',
+	styleUrls: ['./multi-select-options.component.scss'],
+	encapsulation: ViewEncapsulation.None
 })
-export class MultiSelectOptionsComponent implements OnInit {
+export class MultiSelectOptionsComponent implements OnInit, OnChanges {
 
-  constructor(
+	itemsSelected: boolean;
+	@Input() numSelectedItems: number;
 
-  ) { }
+	itemPluralMapping = {
+		'=0': '0 items',
+		'=1': '1 item' ,
+		'other': '# items'
+	};
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() { }
+
+	ngOnChanges(changes: SimpleChanges) {
+		this.itemsSelected = changes.numSelectedItems.currentValue;
+	}
 
 }

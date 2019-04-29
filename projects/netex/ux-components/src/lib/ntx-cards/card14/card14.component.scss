@@ -1,0 +1,38 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card14";
+
+.#{$block}.mat-card {
+  box-sizing: border-box;
+  box-shadow: $shadow;
+  padding: 20px 16px 16px;
+  &:hover{
+    box-shadow: $shadow-hover;
+  }
+  .#{$block}__header {
+    .mat-card-header-text {
+      margin:0;
+    }
+    .#{$block}__title.mat-card-title {
+      font-family: latoBold;
+      max-height: 16px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      opacity: 0.5;
+    }
+    .icon-netex {
+      margin-left: auto;
+    }
+    span {
+      line-height: 1.5;
+    }
+  }
+  .#{$block}__subtitle {
+    overflow: hidden;
+    max-height: 36px;
+    opacity: 0.5;
+  }
+  span {
+    line-height: 1.43;
+  }
+}

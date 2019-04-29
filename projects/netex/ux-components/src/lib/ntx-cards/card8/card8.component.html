@@ -1,20 +1,17 @@
 <mat-card class="card8"
-          (click)="clickEvent()"
-          [ngClass]="status ? 'card-selected' : ' '">
-  <mat-card-content>
-    <div class="card8__texts">
-      <mat-card-title class="card8__title">
-        <span class="card8__title--text" matTooltip="Competency title with a very long text">Competency title with a very long text</span>
-      </mat-card-title>
-      <mat-card-subtitle class="card8__subtitle">
-          <span class="card8__subtitle--text" matTooltip="Description in a few words that could be one or two lines maximum and then three dots">Description in a few words that could be one or two lines maximum and then three dots</span>
-      </mat-card-subtitle>
-    </div>
-    <div class="card8__options">
-        <ntx-form-checkbox-circle [hidden]="'true'"></ntx-form-checkbox-circle>
-    </div>
-    <div class="card8__label-state" style="display:none;">
-      <span>Added</span>
-    </div>
+          [ngClass]="{'card-selected': selected}">
+  <mat-card-header class="card8__header">
+    <mat-card-title class="card8__title">
+      <span class="utils--truncate1" [matTooltip]="data.title">{{ data.title }}</span>
+    </mat-card-title>
+    <ntx-form-checkbox-circle class="card8__header--check" 
+          [color]="'primary'"
+          (checkboxChange)="onCardCheckboxChange($event)"
+          [hidden]="'true'"></ntx-form-checkbox-circle>
+  </mat-card-header>
+  <mat-card-content class="card8__content">
+    <mat-card-subtitle class="card8__subtitle">
+      <span class="utils--truncate2" [matTooltip]="data.description">{{ data.description }}</span>
+    </mat-card-subtitle>      
   </mat-card-content>
 </mat-card>

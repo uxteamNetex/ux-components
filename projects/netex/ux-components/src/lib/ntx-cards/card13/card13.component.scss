@@ -2,71 +2,42 @@
 
 $block: "card13";
 
-.mat-card{
-  &.#{$block}{
-    border-radius: 4px;
-    box-shadow: $shadow;
-    display: block;
-    height: 144px;
-    margin: 8px;
-    padding: 0;
-    width: auto;
-    &:hover{
-      box-shadow: $shadow-hover;
-      cursor: pointer;
+.#{$block}.mat-card {
+  box-sizing: border-box;
+  box-shadow: $shadow;
+  padding: 20px 16px;
+  &:hover{
+    box-shadow: $shadow-hover;
+  }
+  &.card-selected {
+    box-shadow: 0 0 0 3px $color-primary;
+  }
+  .#{$block}__header {
+    margin-right: -16px;
+    .mat-card-header-text {
+      margin:0;
     }
-    &.card-selected{
-      border: 3px solid $color-primary;
-      padding: 0;
-      .mat-card-content{
-        padding: 20px 5px 13px 13px;
-      }
+    &--check {
+      margin-left: auto;
+      position: relative;
+      top: -12px;
     }
-    .mat-card-content{
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 8px 20px 16px;
-      .#{$block}__texts{
-        .#{$block}__title{
-          color: $color-grey-800;
-          font-family: latoBold;
-          font-size: $font-size-14;
-          margin-bottom: 16px;
-          max-height: 18px;
-          word-wrap: break-word;
-          overflow: hidden;
-          .#{$block}__title--text{
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            /* autoprefixer: off */
-            -webkit-box-orient: vertical;
-          }
-        }
-        .#{$block}__subtitle{
-          color: $color-grey-600;
-          font-size: $font-size-14;
-          margin: 0 0 16px 0;
-          max-height: 36px;
-          word-wrap: break-word;
-          overflow: hidden;
-          .#{$block}__subtitle--text{
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            /* autoprefixer: off */
-            -webkit-box-orient: vertical;
-          }
-        }
-      }
-      .#{$block}__options{
-        margin-top: -12px;
-        margin-right: -8px;
-      }
-      .#{$block}__label-state{
-        color: $color-grey-600;
-        font-family: latoBold;
-        font-size: $font-size-12;
-        text-transform: uppercase;
-      }
+    .#{$block}__title.mat-card-title {
+      color: $color-grey-800;
+      font-family: latoBold;
+      font-size: $font-size-14;
+      max-height: 16px;
+      margin-bottom: 16px;
+      overflow: hidden;
     }
+  }
+  .#{$block}__subtitle {
+    color: $color-grey-600;
+    font-size: $font-size-14;
+    overflow: hidden;
+    max-height: 36px;
+  }
+  span {
+    line-height: 1.43;
   }
 }

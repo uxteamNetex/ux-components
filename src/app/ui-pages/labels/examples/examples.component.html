@@ -4,16 +4,16 @@
     <ntx-card-simple title="{{'Label' | uppercase }}"
                       subtitle="{{ '<ntx-label>' }}">
 
-      <ntx-label [className]="'label-black'"></ntx-label>
-      <ntx-label></ntx-label>
-      <ntx-label [className]="'label-orange'"></ntx-label>
+      <ntx-label text="label" [className]="'label-black'"></ntx-label>
+      <ntx-label text="label"></ntx-label>
+      <ntx-label text="label" [className]="'label-orange'"></ntx-label>
 
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Label error' | uppercase }}"
                       subtitle="{{ '<ntx-label-error>' }}">
 
-      <ntx-label-error></ntx-label-error>
+      <ntx-label-error text="2 alerts"></ntx-label-error>
 
     </ntx-card-simple>
 

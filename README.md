@@ -10,6 +10,101 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 
 COMMITS:
+  v.4.0.0:
+    Icons:
+      -Archivos tocados:
+        ux-components/src/styles/app/utils.scss
+        ux-components/src/styles/app/variables.scss
+        ux-components/src/styles/fonts/styles.scss
+        ux-components/src/styles/fonts/variables.scss
+
+      -New icons:
+        icon-border-all
+        icon-border-down
+        icon-border-left
+        icon-border-right
+        icon-border-up
+        icon-circle-90
+        icon-circle-180
+        icon-circle-270
+        icon-circle-360
+        icon-city-berlin
+        icon-city-tokyo
+        icon-city-vegas
+        icon-city-vienna
+        icon-compass
+        icon-davinci
+        icon-desktop
+        icon-editor-audio-gallery
+        icon-editor-audio-gallery-item
+        icon-editor-close-button
+        icon-editor-downloads-popup
+        icon-editor-glossary-links-item
+        icon-editor-glossary-popup
+        icon-editor-help-popup
+        icon-editor-interactive-timeline-item
+        icon-editor-logo
+        icon-editor-popup-single
+        icon-editor-project-data-link
+        icon-editor-scorm-player
+        icon-editor-show-close-button
+        icon-editor-show-search
+        icon-face-sad
+        icon-flag-catalonia
+        icon-laptop
+        icon-lock-solid
+        icon-mobile
+        icon-organisation-chart
+        icon-pencil-circle-dotted
+        icon-redo
+        icon-redo-filled
+        icon-tablet
+        icon-teacher
+        icon-undo
+        icon-undo-filled
+        icon-user-clipboard
+        icon-users-plus
+        icon-versions
+
+    Trees:
+      -Nueva documentación en la página del componente
+
+    Error pages:
+      -Nuevo componente error page 403 (ntx-error403)
+      -Nuevo componente error page 404 (ntx-error404)
+      -Nuevo componente error page 500 (ntx-error500)
+      -Nuevo componente error page 503 (ntx-error503)
+
+    Chips:
+      -Nuevo componente chip con imagen y subtítulo (ntx-image-subtitle-chip)
+
+    Progress spinner:
+      -Nuevo componente progress spinner (ntx-progress-spinner)
+
+    Empty pages:
+      -Nuevo componente empty pages (ntx-empty-page)
+
+    Cards:   
+      -Cambios css, html y ts en componente Card2 (ntx-card2)
+      -Cambios css, html y ts en componente Card7 (ntx-card7)
+      -Cambios css, html y ts en componente Card8 (ntx-card8)
+      -Cambios css, html y ts en componente Card11 (ntx-card11)
+      -Cambios css, html y ts en componente Card13 (ntx-card13)
+      -Nuevo componente Card14 (ntx-card14)
+
+    Form checkbox, Form checkbox circle, Form select thin y Form select border button:
+      -Cambios en archivos css, html y ts para permitir emitir eventos a los componentes padre.
+
+    Label y Label error:
+      -Cambios en archivos css, html y ts para permitir parametrizar el texto que muestra la label.
+
+    Table selectable:
+      -Cambios en archivos css, html y ts para corregir selección de filas en la tabla (ntx-selectable-table).
+
+    Sidenavs:
+      -Cambios en archivos css para corregir aparición de doble scroll (ntx-sidenav-inside y ntx-sidenav-filters)
+      
+
   v.3.0.0:
     Cards:
       -Cambios css, html y añadir tooltip en componente Card4 (ntx-card4)

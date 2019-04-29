@@ -1,0 +1,32 @@
+<mat-chip-list class="image-chip-container">
+
+  <mat-chip class="image-chip-container__chip"
+            *ngFor="let chip of chips"
+            [color]="color"
+            [disabled]="disabled"
+            [removable]="removable"
+            (removed)="remove(chip)">
+
+    <div class="image-chip-container__chip-image">
+        <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
+    </div>
+
+    <div class="image-chip-container__chip-text">
+      <p class="image-chip-container__chip-title" matTooltip="{{chip.name}}">
+        <span>{{chip.name}}</span>
+      </p>
+      <p class="image-chip-container__chip-subtitle" matTooltip="{{chip.role}}">
+        <span>{{chip.role}}</span>
+      </p>
+    </div>
+
+    <button mat-icon-button
+            matChipRemove
+            class="image-chip-container__chip-button"
+            *ngIf="removable">
+      <mat-icon class="icon-netex icon-cross"></mat-icon>
+    </button>
+
+  </mat-chip>
+
+</mat-chip-list>

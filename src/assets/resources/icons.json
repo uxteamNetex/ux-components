@@ -30,13 +30,28 @@
             "className": "icon-bell"
         },
         {
-          "className": "icon-binoculars"
+            "className": "icon-binoculars"
         },
         {
-          "className": "icon-binoculars-off"
+            "className": "icon-binoculars-off"
         },
         {
             "className": "icon-block"
+        },
+        {
+            "className": "icon-border-all"
+        },
+        {
+            "className": "icon-border-down"
+        },
+        {
+            "className": "icon-border-left"
+        },
+        {
+            "className": "icon-border-right"
+        },
+        {
+            "className": "icon-border-up"
         },
         {
             "className": "icon-briefcase"
@@ -90,10 +105,28 @@
             "className": "icon-chevron-up"
         },
         {
-            "className": "icon-construction-barrier"
+            "className": "icon-circle-90"
         },
         {
-            "className": "icon-cross-circle-solid"
+            "className": "icon-circle-180"
+        },
+        {
+            "className": "icon-circle-270"
+        },
+        {
+            "className": "icon-circle-360"
+        },
+        {
+            "className": "icon-city-berlin"
+        },
+        {
+            "className": "icon-city-tokyo"
+        },
+        {
+            "className": "icon-city-vegas"
+        },
+        {
+            "className": "icon-city-vienna"
         },
         {
             "className": "icon-clear"
@@ -117,13 +150,28 @@
             "className": "icon-collections"
         },
         {
+            "className": "icon-compass"
+        },
+        {
             "className": "icon-compose"
+        },
+        {
+            "className": "icon-construction-barrier"
         },
         {
             "className": "icon-cross"
         },
         {
+            "className": "icon-cross-circle-solid"
+        },
+        {
+            "className": "icon-davinci"
+        },
+        {
             "className": "icon-dashboard"
+        },
+        {
+            "className": "icon-desktop"
         },
         {
             "className": "icon-download"
@@ -156,6 +204,12 @@
             "className": "icon-editor-audio"
         },
         {
+            "className": "icon-editor-audio-gallery"
+        },
+        {
+            "className": "icon-editor-audio-gallery-item"
+        },
+        {
             "className": "icon-editor-before-after"
         },
         {
@@ -171,6 +225,9 @@
             "className": "icon-editor-clicksmap"
         },
         {
+            "className": "icon-editor-close-button"
+        },
+        {
             "className": "icon-editor-column"
         },
         {
@@ -181,6 +238,9 @@
         },
         {
             "className": "icon-editor-copyright"
+        },
+        {
+            "className": "icon-editor-downloads-popup"
         },
         {
             "className": "icon-editor-drag-activity"
@@ -216,7 +276,16 @@
             "className": "icon-editor-glossary-connector"
         },
         {
+            "className": "icon-editor-glossary-links-item"
+        },
+        {
+            "className": "icon-editor-glossary-popup"
+        },
+        {
             "className": "icon-editor-grid"
+        },
+        {
+            "className": "icon-editor-help-popup"
         },
         {
             "className": "icon-editor-hotspot"
@@ -229,6 +298,9 @@
         },
         {
             "className": "icon-editor-instruction"
+        },
+        {
+            "className": "icon-editor-interactive-timeline-item"
         },
         {
             "className": "icon-editor-launcher"
@@ -244,6 +316,9 @@
         },
         {
             "className": "icon-editor-linker-question"
+        },
+        {
+            "className": "icon-editor-logo"
         },
         {
             "className": "icon-editor-matrix-multiple-activity"
@@ -273,10 +348,16 @@
             "className": "icon-editor-pdf"
         },
         {
+            "className": "icon-editor-popup-single"
+        },
+        {
             "className": "icon-editor-positive-feedback"
         },
         {
             "className": "icon-editor-presentation"
+        },
+        {
+            "className": "icon-editor-project-data-link"
         },
         {
             "className": "icon-editor-quiz"
@@ -292,6 +373,15 @@
         },
         {
             "className": "icon-editor-row"
+        },
+        {
+            "className": "icon-editor-show-close-button"
+        },
+        {
+            "className": "icon-editor-show-search"
+        },
+        {
+            "className": "icon-editor-scorm-player"
         },
         {
             "className": "icon-editor-screen"
@@ -363,6 +453,9 @@
             "className": "icon-eye"
         },
         {
+            "className": "icon-face-sad"
+        },
+        {
             "className": "icon-file"
         },
         {
@@ -432,7 +525,7 @@
             "className": "icon-grid"
         },
         {
-          "className": "icon-hard-disk"
+            "className": "icon-hard-disk"
         },
         {
             "className": "icon-heart"
@@ -453,6 +546,12 @@
             "className": "icon-info-circle-solid"
         },
         {
+            "className": "icon-laptop"
+        },
+        {
+            "className": "icon-less-circle"
+        },
+        {
             "className": "icon-light-bulb"
         },
         {
@@ -462,13 +561,13 @@
             "className": "icon-list"
         },
         {
-            "className": "icon-less-circle"
-        },
-        {
             "className": "icon-location"
         },
         {
             "className": "icon-lock"
+        },
+        {
+            "className": "icon-lock-solid"
         },
         {
             "className": "icon-logo-cloud"
@@ -504,6 +603,9 @@
             "className": "icon-mission-block-right"
         },
         {
+            "className": "icon-mobile"
+        },
+        {
             "className": "icon-more-options"
         },
         {
@@ -513,6 +615,9 @@
             "className": "icon-orderby"
         },
         {
+            "className": "icon-organisation-chart"
+        },
+        {
             "className": "icon-paperclip"
         },
         {
@@ -520,6 +625,9 @@
         },
         {
             "className": "icon-pencil"
+        },
+        {
+            "className": "icon-pencil-circle-dotted"
         },
         {
             "className": "icon-plus"
@@ -538,6 +646,12 @@
         },
         {
             "className": "icon-recycle"
+        },
+        {
+            "className": "icon-redo"
+        },
+        {
+            "className": "icon-redo-filled"
         },
         {
             "className": "icon-refresh"
@@ -582,7 +696,13 @@
             "className": "icon-star-solid"
         },
         {
+            "className": "icon-tablet"
+        },
+        {
             "className": "icon-tags"
+        },
+        {
+            "className": "icon-teacher"
         },
         {
             "className": "icon-telephone"
@@ -621,6 +741,12 @@
             "className": "icon-trophy"
         },
         {
+            "className": "icon-undo"
+        },
+        {
+            "className": "icon-undo-filled"
+        },
+        {
             "className": "icon-unlock"
         },
         {
@@ -642,13 +768,16 @@
             "className": "icon-user-circle"
         },
         {
+            "className": "icon-user-clipboard"
+        },
+        {
             "className": "icon-user-edit"
         },
         {
             "className": "icon-user-group"
         },
         {
-          "className": "icon-user-less"
+            "className": "icon-user-less"
         },
         {
             "className": "icon-user-plus"
@@ -661,6 +790,12 @@
         },
         {
             "className": "icon-users"
+        },
+        {
+            "className": "icon-users-plus"
+        },
+        {
+            "className": "icon-versions"
         },
         {
             "className": "icon-view-bounding-box"

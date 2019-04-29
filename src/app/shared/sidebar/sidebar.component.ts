@@ -4,71 +4,82 @@ import { TabsHeaderService } from '../services/tabs-header.service';
 
 
 const LINKS = [
-  'buttons',
-  'card1',
-  'card2',
-  'card3',
-  'card4',
-  'card5',
-  'card7',
-  'card8',
-  'card9',
-  'card10',
-  'card11',
-  'card12',
-  'card13',
-  'cards',
-  'chips',
+	'buttons',
+	'card1',
+	'card2',
+	'card3',
+	'card4',
+	'card5',
+	'card7',
+	'card8',
+	'card9',
+	'card10',
+	'card11',
+	'card12',
+	'card13',
+	'card14',
+	'cards',
+	'chips',
   'dialogs',
-  'drag-and-drop',
-  'form-controls',
-  'icons',
-  'labels',
-  'lists',
-  'menus',
-  'organisation-chart',
-  'panels',
-  'panel-tabs',
-  'progress-bar',
-  'sidenavs',
-  'sidenav-filters',
-  'table',
-  'table-evaluation',
-  'table-selectable',
-  'tabs',
-  'toolbars',
-  'tree',
-  'tree-check',
-  'user-profile-panel'
+  'empty-pages',
+	'error-page-403',
+	'error-page-404',
+	'error-page-500',
+	'error-page-503',
+	'drag-and-drop',
+	'form-controls',
+	'icons',
+	'labels',
+	'lists',
+	'menus',
+	'organisation-chart',
+	'panels',
+	'panel-tabs',
+	'progress-bar',
+	'progress-spinner',
+	'sidenavs',
+	'sidenav-filters',
+	'table',
+	'table-evaluation',
+	'table-selectable',
+	'tabs',
+	'toolbars',
+	'tree',
+	'tree-check',
+	'user-profile-panel'
 ];
 const LINKSHELPERS = [
-  'colours',
-  'headings-and-texts',
-  'margins',
+	'colours',
+	'headings-and-texts',
+	'margins',
   'paddings'
+];
+const WHATSNEWS = [
+	'version400'
 ];
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+	selector: 'app-sidebar',
+	templateUrl: './sidebar.component.html',
+	styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
 
-  links: string[] = LINKS;
+	links: string[] = LINKS;
   linkshelpers: string[] = LINKSHELPERS;
+  whatsnews: string[] = WHATSNEWS;
 
-  constructor(
-    private sidenavService: SidenavService,
-    private tabsHeaderService: TabsHeaderService
-  ) { }
+	constructor(
+		private sidenavService: SidenavService,
+		private tabsHeaderService: TabsHeaderService
+	) { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
-  setPath(value: string) {
-    this.sidenavService.menu.close();
-    this.tabsHeaderService.setPath(value);
-  }
+	setPath(value: string) {
+		this.sidenavService.menu.close();
+		this.tabsHeaderService.setPath(value);
+	}
 
 }

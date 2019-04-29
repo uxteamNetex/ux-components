@@ -1,122 +1,94 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-$block: "form-container";
+$block: "form-select-thin";
 
 .#{$block}{
-  min-width: 150px;
-  margin: 0 auto;
-  max-width: 600px;
   width: 100%;
-  .#{$block}__form{
-    &.mat-form-field{
-      &.mat-form-field-appearance-legacy{
-        &.form-select-border-thin{
-          width: 100%;
-          &.mat-focused{
-            .mat-form-field-ripple{
-              background-color: transparent;
-            }
+  &__container {
+    min-width: 150px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .mat-form-field-wrapper {
+    padding: 0;
+    .mat-form-field-flex {
+      background-color: transparent;
+      border: 1px solid $color-grey-400;
+      border-radius: 4px;
+      &:hover {
+        background-color: $icon-button-hover;
+      }
+      .mat-form-field-infix{
+        border-top: 0;
+        padding: 2px 8px;
+        .mat-select-value-text {
+          font-family: lato;
+          font-size: $font-size-14;
+          line-height: 19px;
+          color:$color-grey-700;
+        }
+      }
+    }
+    .mat-form-field-underline {
+      display: none;
+    }
+  }
+  &.mat-form-field.mat-focused.mat-primary {
+    .mat-select-arrow {
+      color: $color-grey-700;
+    }
+  }
+
+  &__option {
+    &:first-of-type {
+      .mat-option-text {
+        color: $color-grey-600;
+        font-style: italic;
+      }
+      & + .mat-divider-horizontal {
+        margin: 8px 0;
+      }
+    }
+    &--radio-button{
+      width: 100%;
+      .mat-radio-label {
+        width: 100%;
+        .mat-radio-container{
+          width: 40px;
+          height: 40px;
+          .mat-radio-outer-circle{
+            border-color: $color-grey-600;
+            border-width: 1px;
+            left: 10px;
+            top: 10px;
           }
-          .mat-form-field-wrapper{
-            padding-bottom: 0;
-            .mat-form-field-flex{
-              background-color: transparent;
-              border: 1px solid $color-grey-400;
-              border-radius: 4px;
-              &:hover{
-                background-color: $icon-button-hover;
-              }
-              .mat-form-field-infix{
-                border-top: 0;
-                margin: 0;
-                padding: 2px 8px;
-                width: auto;
-                .#{$block}__form-select-border-thin{
-                  font-family: lato;
-                  font-size: $font-size-14;
-                  line-height: 19px;
-                  .mat-select-trigger{
-                    .mat-select-value{
-                      margin-right: 8px;
-                      .mat-select-value-text{
-                        color: $color-grey-700;
-                      }
-                    }
-                    .mat-select-arrow-wrapper{
-                      .mat-select-arrow{
-                        color: $color-grey-700;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            .mat-form-field-underline{
-              background-color: transparent;
-            }
+          .mat-radio-inner-circle{
+            height: 24px;
+            width: 24px;
+            left: 8px;
+            top: 8px;
           }
         }
       }
     }
   }
-}
-
-.cdk-overlay-pane{
-  .mat-select-panel{
-    &.mat-primary{
-      max-width: 320px;
-      padding: 8px 0;
-      .mat-option{
-        color: $color-grey-700;
-        &.mat-option-disabled{
-          cursor: not-allowed;
-          opacity: 0.5;
-        }
-        &.mat-selected{
-          background-color: $color-grey-200;
-        }
-        &.form-container-first-option{
-          .mat-option-text{
-            .mat-radio-button{
-              .mat-radio-label{
-                .mat-radio-label-content{
-                  color: $color-grey-600;
-                  font-style: italic;
-                }
-              }
-            }
+  &.selected {
+    .mat-form-field-wrapper {
+      background-color: $color-primary;
+      border-radius: 6px;
+      .mat-form-field-flex {
+        .mat-form-field-infix {
+          .mat-select-value-text {
+            color: $color-white;
           }
-        }
-        .mat-option-text{
-          .mat-radio-button{
-            width: 100%;
-            .mat-radio-label{
-              width: 100%;
-              .mat-radio-container{
-                width: 40px;
-                height: 40px;
-                .mat-radio-outer-circle{
-                  border-color: $color-grey-600;
-                  border-width: 1px;
-                  left: 10px;
-                  top: 10px;
-                }
-                .mat-radio-inner-circle{
-                  height: 24px;
-                  width: 24px;
-                  left: 8px;
-                  top: 8px;
-                }
-              }
-            }
-          }
-        }
-      }
-      .mat-divider{
-        &.mat-divider-horizontal{
-          margin: 8px 0;
         }
       }
     }
+    .mat-select-arrow {
+      color: $color-white;
+    }
+  }
+  &__select.mat-select-panel {
+    padding: 8px 0;
   }
 }
