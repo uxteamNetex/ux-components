@@ -26,7 +26,6 @@ export class ExamplesComponent implements OnInit, AfterContentInit {
 	ngAfterContentInit() {
 		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
 			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
-			console.log('a', change);
 		});
 	}
 

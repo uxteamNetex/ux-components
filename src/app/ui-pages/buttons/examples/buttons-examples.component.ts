@@ -23,7 +23,6 @@ export class ButtonsExamplesComponent implements OnInit {
     this.buttonTypesService.getButtonTypes().subscribe(
       result => {
         this.buttonTypes = result;
-        console.log(this.buttonTypes);
       }
     )
   }

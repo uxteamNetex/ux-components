@@ -26,7 +26,6 @@ export class IconsExamplesComponent implements OnInit {
     this.iconsService.getIcons().subscribe(
       result => {
         this.icons = result;
-        console.log(this.icons);
 
       })
   }
