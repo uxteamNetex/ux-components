@@ -1,118 +1,111 @@
-<div class="table-evaluation__wrapper">
+<div class="table-container mat-elevation-z8">
+
+    <div class="table-container__table">
+      <!-- Header Selection-->
+      <div class="table-container__header">
+        <div class="table-container__header--options">
+          <ntx-evaluation-multi-select-options *ngIf="show"></ntx-evaluation-multi-select-options>
+        </div>
+      </div>
   
-  <div class="table-evaluation__container" #tableContainer
-       [ngClass]="{'selected': selection.hasValue()}">
-    <mat-table [dataSource]="dataSource" matSort class="table-evaluation__table mat-elevation-z8">
-        <!-- Select Column -->
+      <!-- Table -->
+      <table mat-table [dataSource]="dataSource" matSort class="table-evaluation">
+  
+        <!-- Checkbox Column -->
+        <ng-container matColumnDef="select" sticky>
+          <th mat-header-cell *matHeaderCellDef>
+            <mat-checkbox (change)="showMultiselecToolbarEvaluation()"
+                          [(ngModel)]="checkboxValue"
+                          [color]="'primary'">
+            </mat-checkbox>
+          </th>
+          <td mat-cell *matCellDef="let row">
+            <mat-checkbox [color]="'primary'"
+                          (change)="showMultiselecToolbarEvaluation()"
+                          [(ngModel)]="checkboxValue">
+            </mat-checkbox>
+          </td>
+        </ng-container>
+  
+        <!-- Column 1 -->
         <ng-container matColumnDef="receivers" sticky>
-          <mat-header-cell *matHeaderCellDef mat-sort-header>
-            <div class="table-evaluation__cell">
-              <mat-checkbox class="table-evaluation__checkbox" 
-                (change)="onHeaderCheckboxChange($event)"
-                [checked]="selection.hasValue() && isAllSelected()"
-                [indeterminate]="selection.hasValue() && !isAllSelected()"
-                [color]="'primary'">
-              </mat-checkbox>
-            </div>
-            <div class="table-evaluation__cell">receivers</div>
-          </mat-header-cell>
-          <mat-cell *matCellDef="let row; let element">
-            <div class="table-evaluation__cell">
-              <mat-checkbox class="table-evaluation__checkbox" 
-                (click)="$event.stopPropagation()"
-                (change)="onRowCheckboxChange($event, row)"
-                [checked]="selection.isSelected(row)"
-                [color]="'primary'">
-              </mat-checkbox>
-            </div>
-            <div class="table-evaluation__cell">
-              <div class="wrapper">
-                <div class="avatar-img">
-                  <img mat-card-image src="assets/images/perfil.jpg" alt="User image">
-                </div>
-                <mat-icon *ngIf="element.evaluated" class="icon-netex icon-check-circle-solid avatar-icon"></mat-icon>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            <span>Receivers</span>
+            <button mat-icon-button class="table-evaluation__header-icon">
+              <mat-icon class="icon-netex icon-plus-circle"></mat-icon>
+            </button>
+          </th>
+          <td mat-cell *matCellDef="let element">
+            <div class="table-evaluation__row-name">
+              <mat-icon class="icon-netex icon-check-circle-solid table-evaluation__row-image-check"></mat-icon>
+              <div class="table-evaluation__row-image">
+                <img mat-card-image class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
               </div>
+              <span class="table-evaluation__row-text" matTooltip="User name that could be longer">{{element.receivers}}</span>
+              <span class="table-evaluation__row-text table-evaluation__row-job" matTooltip="User job that could be longer">{{element.job}}</span>
+              <span class="table-evaluation__row-alert">
+                <ntx-label-error></ntx-label-error>
+              </span>
             </div>
-            <div class="table-evaluation__cell utils--truncate"> {{element.receiver}} </div>
-            <div class="table-evaluation__cell utils--truncate"> {{element.job}} </div>
-            <div class="table-evaluation__cell utils--truncate">
-              <ntx-label-error *ngIf="element.alertMsg" [text]="element.alertMsg | i18nPlural: alertPluralMapping"></ntx-label-error>
-            </div>
-          </mat-cell>
+          </td>
         </ng-container>
-      
-        <!-- Superiors Column -->
+  
+        <!-- Column 2 -->
         <ng-container matColumnDef="superiors">
-          <mat-header-cell *matHeaderCellDef mat-sort-header>
-            <div class="table-evaluation__cell">
-              <p class="title">superiors</p>   
-              <p class="subtitle">33% weight</p>   
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            <div class="table-evaluation__header-texts">
+                <span class="table-evaluation__header-title">Superiors</span>
+                <span class="table-evaluation__header-subtitle">33% weight</span>
             </div>
-            <button mat-icon-button class="add-icon">
-                <mat-icon class="icon-netex icon-plus-circle"></mat-icon>
+            <button mat-icon-button class="table-evaluation__header-icon">
+              <mat-icon class="icon-netex icon-plus-circle"></mat-icon>
             </button>
-          </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.superiors}} </mat-cell>
+          </th>
+          <td mat-cell *matCellDef="let element">
+            <span class="table-evaluation__row-text">{{element.superiors}}</span>
+          </td>
         </ng-container>
-    
-        <!-- Pairs Column -->
+  
+        <!-- Column 3 -->
         <ng-container matColumnDef="pairs">
-          <mat-header-cell *matHeaderCellDef mat-sort-header>
-            <div class="table-evaluation__cell">
-              <p class="title">pairs</p>   
-              <p class="subtitle">33% weight</p>   
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            <div class="table-evaluation__header-texts">
+                <span class="table-evaluation__header-title">Pairs</span>
+                <span class="table-evaluation__header-subtitle">33% weight</span>
             </div>
-            <button mat-icon-button class="add-icon">
+            <button mat-icon-button class="table-evaluation__header-icon">
               <mat-icon class="icon-netex icon-plus-circle"></mat-icon>
             </button>
-          </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.pairs}} </mat-cell>
+          </th>
+          <td mat-cell *matCellDef="let element">
+            <span class="table-evaluation__row-text">{{element.pairs}}</span>
+          </td>
         </ng-container>
-    
-        <!-- Subordinates Column -->
+  
+        <!-- Column 4 -->
         <ng-container matColumnDef="subordinates">
-          <mat-header-cell *matHeaderCellDef mat-sort-header>
-            <div class="table-evaluation__cell">
-              <p class="title">subordinates</p>   
-              <p class="subtitle">33% weight</p>   
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            <div class="table-evaluation__header-texts">
+                <span class="table-evaluation__header-title">Subordinates</span>
+                <span class="table-evaluation__header-subtitle">33% weight</span>
             </div>
-            <button mat-icon-button class="add-icon">
+            <button mat-icon-button class="table-evaluation__header-icon">
               <mat-icon class="icon-netex icon-plus-circle"></mat-icon>
             </button>
-          </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.subordinates}} </mat-cell>
+          </th>
+          <td mat-cell *matCellDef="let element">
+            <span class="table-evaluation__row-text">{{element.subordinates}}</span>
+          </td>
         </ng-container>
-        
-        <!-- Selection header -->
-        <ng-container matColumnDef="selection-header">
-          <mat-header-cell *matHeaderCellDef class="table-evaluation__selection-header"
-                            [ngStyle]="selectionHeaderStyle">
-            <div class="table-evaluation__cell">
-              <mat-checkbox class="table-evaluation__checkbox" 
-                [ngClass]="{'selected': selection.hasValue()}"
-                (change)="onHeaderCheckboxChange($event)"
-                [checked]="selection.hasValue() && isAllSelected()"
-                [indeterminate]="selection.hasValue() && !isAllSelected()"
-                [color]="'primary'">
-              </mat-checkbox>
-            </div>
-            <div class="table-evaluation__cell">
-              <span class="table-evaluation__selected-items-text">{{ selection.selected.length | i18nPlural: itemPluralMapping }} selected</span>
-            </div>
-          
-            <span class="table-evaluation__spacer"></span>
-          
-            <div class="table-evaluation__options">
-              <ntx-text-button [color]="'white'"></ntx-text-button>
-              <ntx-text-button [color]="'white'"></ntx-text-button>
-            </div>
-          </mat-header-cell>
-        </ng-container>
-      
-        <mat-header-row *matHeaderRowDef="selection.hasValue()?['selection-header']:displayedColumns; sticky: true"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-      </mat-table>
+  
+        <tr class="table-evaluation__header" mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr class="table-evaluation__row" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+      </table>
     </div>
+  
     <!-- Paginator -->
     <mat-paginator class="table-container__paginator" [pageSizeOptions]="[10, 25, 50]" showFirstLastButtons></mat-paginator>
+  
   </div>
+  
