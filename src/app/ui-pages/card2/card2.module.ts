@@ -10,16 +10,16 @@ import {
 } from '@netex/ux-components';
 
 import {
-  MatGridListModule
+  MatGridListModule, MatExpansionModule
 } from '@angular/material';
-
 @NgModule({
   declarations: [DocumentationComponent, ExamplesComponent],
   imports: [
     CommonModule,
     Card2RoutingModule,
     NtxCardsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatExpansionModule
   ],
   exports: [
     MatGridListModule

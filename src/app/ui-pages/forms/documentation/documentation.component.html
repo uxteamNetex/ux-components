@@ -1,19 +1,142 @@
 <div class="page-layout">
   <div class="page-container documentation">
-    <h1 class="section-title">Forms</h1>
+    <p class="utils--text-32 utils--margin-top-60 utils--margin-bottom-0">Forms</p>
     <p class="documentation-text">
       All of the attributes that can be used in a form will be part of ntx-form.
     </p>
-
-    <h1 class="section-title utils--margin-top-60">Forms types</h1>
+    
+    <p class="utils--text-32 utils--margin-top-60 utils--margin-bottom-0">Forms types</p>
     <p class="documentation-text">
       These are all the types of nxt-list: <span class="documentation-code">ntx-form-input</span>, <span class="documentation-code">ntx-form-input-no-label</span>, <span class="documentation-code">ntx-form-textarea</span>, <span class="documentation-code">ntx-form-select</span>, <span class="documentation-code">ntx-form-select-no-border</span>, <span class="documentation-code">ntx-form-select-button</span>, <span class="documentation-code">ntx-form-select-border-button</span>, <span class="documentation-code">ntx-form-select-thin</span>, <span class="documentation-code">ntx-form-datepicker</span>, <span class="documentation-code">ntx-form-checkbox</span>, <span class="documentation-code">ntx-form-checkbox-circle</span>, <span class="documentation-code">ntx-form-radiobutton</span>, <span class="documentation-code">ntx-form-slidetoggle</span>, <span class="documentation-code">ntx-form-slider</span>, <span class="documentation-code">ntx-form-searchbox</span> y <span class="documentation-code">ntx-form-searchbox-background</span>.
     </p>
 
-    <h1 class="section-title utils--margin-top-60">Configuration</h1>
+    <p class="utils--text-32 utils--margin-top-60 utils--margin-bottom-0">Configuration</p>
     <p class="documentation-text">
       The configuration of each ntx-form is being shown in its own .ts file.
     </p>
+
+    <p class="utils--text-32 utils--margin-top-60 utils--margin-bottom-0">Checkbox v4.0.0</p>
+    <ul class="documentation-text">
+      <li>Bind the expression <span class="documentation-code">color</span> to the input element's <span class="documentation-code">color</span> property.</li>
+      <li>Define an <span class="documentation-code">output(@Output)</span> element's <span class="documentation-code">checkboxChange</span> property.</li>
+    </ul>
+
+    <div class="documentation-wrapper-pre">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ux-components/src/lib/ntx-forms/form-checkbox/form-checkbox.component.html
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <pre class="documentation-pre">
+            <code> {{ code1 }} </code>
+          </pre>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ux-components/src/lib/ntx-forms/form-checkbox/form-checkbox.component.ts
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <pre class="documentation-pre">
+            <code> {{code2 }} </code>
+          </pre>
+        </mat-expansion-panel>
+      </mat-accordion>  
+    </div>
+    
+    <p class="utils--text-32 utils--margin-top-60 utils--margin-bottom-0">Checkbox circle v4.0.0</p>
+    <ul class="documentation-text">
+      <li>Bind the expression <span class="documentation-code">color</span> to the input element's <span class="documentation-code">color</span> property.</li>
+      <li>Define an <span class="documentation-code">output(@Output)</span> element's <span class="documentation-code">checkboxChange</span> property.</li>
+      <li>Bind the implicit event <span class="documentation-code">change</span> to element's <span class="documentation-code">onChangeCheckbox</span> method.</li>
+    </ul>
+
+    <div class="documentation-wrapper-pre">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ux-components/src/lib/ntx-forms/form-checkbox-circle/form-checkbox-circle.component.html
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <pre class="documentation-pre">
+            <code> {{ code3 }} </code>
+          </pre>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ux-components/src/lib/ntx-forms/form-checkbox-circle/form-checkbox-circle.component.ts
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <pre class="documentation-pre">
+            <code> {{code4 }} </code>
+          </pre>
+        </mat-expansion-panel>
+      </mat-accordion>  
+    </div>
+
+    <p class="utils--text-32 utils--margin-top-60 utils--margin-bottom-0">Form select border button v4.0.0</p>
+    <ul class="documentation-text">
+      <li>Fix <span class="documentation-code">.cdk-overlay-pane</span> selector anidation to avoid overlaying styles of select panel</li>
+    </ul>
+    <div class="documentation-wrapper-pre">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ux-components/src/lib/ntx-forms/form-select-border-button/form-select-border-button.component.scss
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <pre class="documentation-pre">
+            <code> {{ code5 }} </code>
+          </pre>
+        </mat-expansion-panel>
+      </mat-accordion>  
+    </div>
+
+    <p class="utils--text-32 utils--margin-top-60 utils--margin-bottom-0">Form select thin v4.0.0</p>
+    <ul class="documentation-text">
+      <li>Use structural directive <span class="documentation-code">*ngFor</span> to avoid hardcoding list options in html file.</li>
+      <li>Use <span class="documentation-code">ngClass</span> directive to bind class name to component's <span class="documentation-code">selected</span> property.</li>
+      <li>Use <span class="documentation-code">panelClass</span> property to avoid overlaying styles of select panel.</li>
+    </ul>
+
+    <div class="documentation-wrapper-pre">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ux-components/src/lib/ntx-forms/form-select-thin/form-select-thin.component.html
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <pre class="documentation-pre">
+            <code> {{ code6 }} </code>
+          </pre>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ux-components/src/lib/ntx-forms/form-select-thin/form-select-thin.component.ts
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <pre class="documentation-pre">
+            <code> {{ code7 }} </code>
+          </pre>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              ux-components/src/lib/ntx-forms/form-select-thin/form-select-thin.component.scss
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <pre class="documentation-pre">/* No code summary available. Get entire code from repository*/</pre>
+        </mat-expansion-panel>
+      </mat-accordion>  
+    </div>
+
   </div>
 </div>
 

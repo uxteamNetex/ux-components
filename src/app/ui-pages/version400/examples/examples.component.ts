@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 import { MatRadioChange } from '@angular/material';
+import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 
 export interface PeriodicElement {
   screensize: string;
@@ -26,7 +27,9 @@ export class ExamplesComponent implements OnInit {
 
   selectedCardIndex: number;
 
-  constructor() { }
+  constructor(
+    private tabsHeaderService: TabsHeaderService
+  ) { }
 
   ngOnInit() {
   }
@@ -43,5 +46,8 @@ export class ExamplesComponent implements OnInit {
     return this.selectedCardIndex === i;
   }
 
+  setPath(value: string) {
+    this.tabsHeaderService.setPath(value);
+  }
 
 }

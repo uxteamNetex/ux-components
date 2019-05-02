@@ -85,7 +85,19 @@
         padding: 4px;
       }
     }
+    .documentation-wrapper-pre {
+      padding: 0 24px;
+      .documentation-pre {
+        background-color: $color-grey-200;
+        font-size: $font-size-12;
+      }
+    }
+    /* unvisited link */
+    a:link,a:visited,a:hover,a:active {
+      color: #1AA9E2;
+    }
   }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {

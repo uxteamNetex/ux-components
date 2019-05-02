@@ -8,12 +8,14 @@ import {
 import { TableSelectableRoutingModule } from './table-selectable-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
+import { MatExpansionModule } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     TableSelectableRoutingModule,
-    NtxTablesModule
+    NtxTablesModule,
+    MatExpansionModule
   ],
   declarations: [
     DocumentationComponent,

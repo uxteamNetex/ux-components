@@ -17,6 +17,7 @@ import {
 import { Version400RoutingModule } from './version400-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
+import {MatExpansionModule} from '@angular/material/expansion'
 
 @NgModule({
   declarations: [DocumentationComponent, ExamplesComponent],
@@ -26,6 +27,7 @@ import { ExamplesComponent } from './examples/examples.component';
     MatTableModule,
     MatIconModule,
     MatGridListModule,
+    MatExpansionModule,
     NtxCardsModule,
     NtxChipsModule,
     NtxProgressSpinnerModule,

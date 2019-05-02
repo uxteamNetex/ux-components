@@ -10,7 +10,7 @@ import {
 } from '@netex/ux-components';
 
 import {
-  MatGridListModule
+  MatGridListModule, MatExpansionModule
 } from '@angular/material';
 
 @NgModule({
@@ -18,7 +18,8 @@ import {
     CommonModule,
     NtxCardsModule,
     Card7RoutingModule,
-    MatGridListModule
+    MatGridListModule,
+    MatExpansionModule
   ],
   declarations: [
     DocumentationComponent,
