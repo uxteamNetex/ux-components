@@ -43,6 +43,7 @@ $block: "image-chip-container";
           margin: 0;
           word-wrap: break-word;
           overflow: hidden;
+          height: 17px;
           span{
             display: -webkit-box;
             -webkit-line-clamp: 1;
@@ -58,6 +59,7 @@ $block: "image-chip-container";
           word-wrap: break-word;
           opacity: 0.6;
           overflow: hidden;
+          height: 14px;
           span{
             display: -webkit-box;
             -webkit-line-clamp: 1;
