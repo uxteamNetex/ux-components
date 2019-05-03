@@ -14,16 +14,16 @@ import {
   NtxLabelsModule
 } from '@netex/ux-components';
 
-import { Version400RoutingModule } from './version400-routing.module';
+import { Version401RoutingModule } from './version401-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
-import {MatExpansionModule} from '@angular/material/expansion'
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [DocumentationComponent, ExamplesComponent],
   imports: [
     CommonModule,
-    Version400RoutingModule,
+    Version401RoutingModule,
     MatTableModule,
     MatIconModule,
     MatGridListModule,
@@ -36,4 +36,4 @@ import {MatExpansionModule} from '@angular/material/expansion'
     NtxLabelsModule
   ]
 })
-export class Version400Module { }
+export class Version401Module { }
