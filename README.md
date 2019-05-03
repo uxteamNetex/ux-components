@@ -10,6 +10,22 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 
 COMMITS:
+  v.4.0.1:
+    Documentación añadida para los siguientes componentes:
+      ntx-form-checkbox
+      ntx-form-checkbox-circle
+      ntx-form-select-border-button
+      ntx-form-select-thin
+      ntx-label
+      ntx-label-error
+      ntx-card2
+      ntx-card7
+      ntx-card8
+      ntx-card11
+      ntx-card13
+      ntx-selectable-table
+      ntx-sidenav-inside
+      ntx-sidenav-filters
   v.4.0.0:
     Icons:
       -Archivos tocados:

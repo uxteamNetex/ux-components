@@ -55,7 +55,7 @@ const LINKSHELPERS = [
   'paddings'
 ];
 const WHATSNEWS = [
-	'version400'
+	'version401'
 ];
 
 @Component({

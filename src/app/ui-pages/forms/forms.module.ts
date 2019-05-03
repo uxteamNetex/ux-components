@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MatExpansionModule } from '@angular/material/expansion';
+
 import {
   NtxFormsModule,
   NtxCardsModule
@@ -15,7 +17,8 @@ import { ExamplesComponent } from './examples/examples.component';
     CommonModule,
     NtxFormsModule,
     NtxCardsModule,
-    FormsRoutingModule
+    FormsRoutingModule,
+    MatExpansionModule
   ],
   declarations: [
     DocumentationComponent,

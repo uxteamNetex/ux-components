@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule } from '@angular/material';
+import { MatIconModule, MatToolbarModule, MatButtonModule, MatDividerModule, MatExpansionModule } from '@angular/material';
 
 import {
   NtxSidenavModule,
@@ -21,6 +21,7 @@ import { ExamplesComponent } from './examples/examples.component';
     MatDividerModule,
     MatIconModule,
     MatToolbarModule,
+    MatExpansionModule,
     NtxSidenavModule,
     NtxCardsModule,
     NtxButtonsModule
