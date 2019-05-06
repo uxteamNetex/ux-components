@@ -109,6 +109,77 @@ export class DocumentationComponent implements OnInit {
     ...
     }`;
 
+  code8 = `
+  <mat-form-field class="form-searchbox"
+                  floatLabel="never"
+                  [ngClass]="{'active': active }">
+    <button mat-icon-button
+            (click)="active = true">
+      <mat-icon matPrefix
+                class="icon-netex icon-search"></mat-icon>
+    </button>
+    <input matInput [(ngModel)]="searchTerm">
+    <button mat-icon-button
+            *ngIf="searchTerm"
+            (click) = "active = false; searchTerm = ''">
+      <mat-icon matSuffix
+                class="icon-netex icon-cross"></mat-icon>
+    </button>
+  </mat-form-field>` ;
+  code9 = `
+
+  @Component({ ... })
+  export class FormSearchboxComponent implements OnInit {
+
+    searchTerm: string;
+    active: boolean;
+
+    constructor() { }
+
+    ngOnInit() { }
+
+  }` ;
+
+  code10 = `
+  @import "././projects/netex/ux-components/src/styles/app/utils";
+
+  $block: "form-searchbox";
+
+  .#{$block}.mat-form-field {
+    width: 48px;
+    .mat-form-field-underline{
+      visibility: hidden;
+    }
+    .mat-form-field-infix {
+      display: flex;
+      padding-bottom: 0;
+      .mat-input-element {
+        visibility: hidden;
+      }
+      .mat-icon-button:hover {
+        background: $icon-button-hover;
+      }
+    }
+    &.active.mat-form-field {
+      width: 100%;
+      .mat-form-field-infix {
+        visibility: visible;
+        .mat-input-element {
+          visibility: visible;
+        }
+        .mat-icon-button:first-of-type:hover {
+          background: none;
+        }
+      }
+      .mat-form-field-underline{
+        visibility: visible;
+        height: 0;
+        -webkit-transition: height .6s;
+        transition: height .6s;
+      }
+    }
+  }`;
+
   ngOnInit() {
   }
 

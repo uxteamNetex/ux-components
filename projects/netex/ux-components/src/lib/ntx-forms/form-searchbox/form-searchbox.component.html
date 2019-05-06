@@ -1,13 +1,17 @@
-<mat-form-field class="form-searchbox" floatLabel="never">
-
-  <input class="form-searchbox__input" matInput type="search" [(ngModel)]="value">
-
-  <button class="search" mat-button mat-icon-button aria-label="search">
-    <mat-icon class="icon-netex icon-search"></mat-icon>
+<mat-form-field class="form-searchbox" 
+                floatLabel="never"
+                [ngClass]="{'active': active }">
+  <button mat-icon-button
+          (click)="active = true">
+    <mat-icon matPrefix 
+              class="icon-netex icon-search"></mat-icon>
   </button>
-
-  <button class="close" mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-    <mat-icon class="icon-netex icon-cross"></mat-icon>
+  <input matInput [(ngModel)]="searchTerm">
+  <button mat-icon-button
+          *ngIf="searchTerm"
+          (click) = "active = false; searchTerm = ''">
+    <mat-icon matSuffix 
+              class="icon-netex icon-cross"></mat-icon>
   </button>
-
 </mat-form-field>
+

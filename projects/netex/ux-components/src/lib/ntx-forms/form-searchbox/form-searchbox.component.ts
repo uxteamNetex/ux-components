@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
+import { MatInput } from '@angular/material';
 
 @Component({
   selector: 'ntx-form-searchbox',
@@ -9,11 +10,11 @@ import { ViewEncapsulation } from '@angular/core';
 })
 export class FormSearchboxComponent implements OnInit {
 
-  value = '';
+  searchTerm: string;
+  active: boolean;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

@@ -2,85 +2,37 @@
 
 $block: "form-searchbox";
 
-.#{$block}{
-  &.mat-form-field{
-    &.mat-form-field-appearance-legacy{
-      &.mat-focused{
-        .mat-form-field-wrapper{
-          .mat-form-field-flex{
-            .mat-form-field-infix{
-              input{
-                padding-left: 50px;
-                width: 300px;
-                &:hover{
-                  +.mat-button{
-                    background: inherit;
-                  }
-                }
-              }
-              .mat-icon.icon-netex{
-              }
-            }
-          }
-          .mat-form-field-underline{
-            height: 1;
-          }
-        }
+.#{$block}.mat-form-field {
+  width: 48px;
+  .mat-form-field-underline{
+    visibility: hidden;
+  }
+  .mat-form-field-infix {
+    display: flex;
+    padding-bottom: 2px;
+    .mat-input-element {
+      visibility: hidden;
+    }
+    .mat-icon-button:hover {
+      background: $icon-button-hover;
+    }
+  }
+  &.active.mat-form-field {
+    width: 100%;
+    .mat-form-field-infix {
+      visibility: visible;
+      .mat-input-element {
+        visibility: visible;
       }
-      .mat-form-field-wrapper{
-        .mat-form-field-flex{
-          .mat-form-field-infix{
-            width: auto;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            position: relative;
-            height: 42px;
-            padding: 0;
-            input{
-              height: 42px;
-              -webkit-transition: width .6s;
-              transition: width .6s;
-              width: 48px;
-              z-index: 9;
-              cursor: pointer;
-              &:hover{
-                +.mat-button{
-                  background: $icon-button-hover;
-                }
-              }
-            }
-            .mat-button{
-              height: 42px;
-              left: 0;
-              position: absolute;
-              width: 42px;
-              &:hover{
-                background: $icon-button-hover;
-              }
-            }
-          }
-          .mat-form-field-suffix{
-            .mat-button{
-              height: 42px;
-              width: 42px;
-              &:hover{
-                background: $icon-button-hover;
-              }
-              .mat-button-wrapper{
-                .mat-icon.icon-netex{
-                  font-size: 24px;
-                }
-              }
-            }
-          }
-        }
-        .mat-form-field-underline{
-          height: 0;
-          -webkit-transition: height .6s;
-          transition: height .6s;
-        }
+      .mat-icon-button:first-of-type:hover {
+        background: none;
       }
+    }
+    .mat-form-field-underline{
+      visibility: visible;
+      height: 0;
+      -webkit-transition: height .6s;
+      transition: height .6s;
     }
   }
 }
