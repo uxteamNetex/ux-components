@@ -10,6 +10,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 
 COMMITS:
+  v.4.X.X:
+    Cambios css, html y ts en el componente Formsearchbox (ntx-form-searchbox)
+    Documentación añadida en el componente Formsearchbox (ntx-form-searchbox)
   v.4.0.1:
     Documentación añadida para los siguientes componentes:
       ntx-form-checkbox
