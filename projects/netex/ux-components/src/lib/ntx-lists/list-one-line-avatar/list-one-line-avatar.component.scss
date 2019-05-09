@@ -10,8 +10,14 @@ $block: "list-one-line-avatar";
       .mat-list-item-content{
         padding: 0;
         .#{$block}__item--image{
+          border-radius: 50%;
           height: 32px;
+          overflow: hidden;
+          position: relative;
           width: 32px;
+          img{
+            height: 100%;
+          }
         }
         .#{$block}__item--title{
           color: $color-grey-700;

@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
+import { MatExpansionModule } from '@angular/material/expansion';
+
 import {
   NtxCardsModule,
   NtxMenusModule,
@@ -18,7 +20,8 @@ import { ListsExamplesComponent } from './examples/lists-examples.component';
     ListsRoutingModule,
     NtxCardsModule,
     NtxMenusModule,
-    NtxListsModule
+    NtxListsModule,
+    MatExpansionModule
   ],
   declarations: [
     ListsExamplesComponent,
