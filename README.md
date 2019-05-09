@@ -11,6 +11,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 COMMITS:
   v.X.X.X:
+    Sidenavs:
+      -Cambios en el css en el componente sidenav-inside (ntx-sidenav-inside)
+
     Lists:
       -Cambios en el html y css en el componente one line list with avatar (ntx-list-one-line-avatar)
       -Cambios en el html y css en el componente two lines list with avatar (ntx-list-two-lines-avatar)
@@ -20,8 +23,6 @@ COMMITS:
 
     Forms:
       -Cambios css, html y ts en el componente Formsearchbox (ntx-form-searchbox)
-      -Documentación añadida en el componente Formsearchbox (ntx-form-searchbox)
-
 
   v.4.0.1:
     Documentación añadida para los siguientes componentes:
