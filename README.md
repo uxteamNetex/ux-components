@@ -11,6 +11,12 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 COMMITS:
   v.X.X.X:
+    Trees:
+      -Cambios en el css en el componente tree (ntx-tree)
+
+    Tables:
+      -Cambios en el html y css en el componente selectable-table (ntx-selectable-table)
+
     Sidenavs:
       -Cambios en el css en el componente sidenav-inside (ntx-sidenav-inside)
 

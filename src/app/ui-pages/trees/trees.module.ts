@@ -9,13 +9,15 @@ import {
 import { TreesRoutingModule } from './trees-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
+import { MatExpansionModule } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     TreesRoutingModule,
     NtxTreesModule,
-    NtxCardsModule
+    NtxCardsModule,
+    MatExpansionModule
   ],
   declarations: [DocumentationComponent, ExamplesComponent]
 })

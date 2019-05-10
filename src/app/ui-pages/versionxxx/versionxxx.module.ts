@@ -9,7 +9,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import {
   NtxCardsModule,
   NtxListsModule,
-  NtxFormsModule
+  NtxFormsModule,
+  NtxTreesModule
 } from '@netex/ux-components';
 
 import { VersionxxxRoutingModule } from './versionxxx-routing.module';
@@ -27,7 +28,8 @@ import { ExamplesComponent } from './examples/examples.component';
     MatExpansionModule,
     NtxCardsModule,
     NtxListsModule,
-    NtxFormsModule
+    NtxFormsModule,
+    NtxTreesModule
   ]
 })
 export class VersionxxxModule { }
