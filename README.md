@@ -57,11 +57,13 @@ COMMITS:
         ux-components/src/styles/fonts/variables.scss
 
       -New icons:
+        icon-apple
         icon-border-all
         icon-border-down
         icon-border-left
         icon-border-right
         icon-border-up
+        icon-chat-bubble-smile
         icon-circle-90
         icon-circle-180
         icon-circle-270
@@ -70,7 +72,10 @@ COMMITS:
         icon-city-tokyo
         icon-city-vegas
         icon-city-vienna
+        icon-columns
+        icon-columns-solid
         icon-compass
+        icon-cross-circle
         icon-davinci
         icon-desktop
         icon-editor-audio-gallery
@@ -89,17 +94,22 @@ COMMITS:
         icon-editor-show-search
         icon-face-sad
         icon-flag-catalonia
+        icon-flag-greece
+        icon-index
+        icon-index-off
         icon-laptop
-        icon-lock-solid
         icon-mobile
+        icon-move
         icon-organisation-chart
         icon-pencil-circle-dotted
         icon-redo
         icon-redo-filled
+        icon-save-solid
         icon-tablet
         icon-teacher
         icon-undo
         icon-undo-filled
+        icon-unlock-solid
         icon-user-clipboard
         icon-users-plus
         icon-versions

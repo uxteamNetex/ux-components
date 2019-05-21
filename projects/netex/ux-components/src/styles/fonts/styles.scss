@@ -45,6 +45,133 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-save-solid {
+  &:before {
+    content: $icon-save-solid;
+  }
+}
+.icon-move {
+  &:before {
+    content: $icon-move;
+  }
+}
+.icon-index-off {
+  &:before {
+    content: $icon-index-off;
+  }
+}
+.icon-index {
+  &:before {
+    content: $icon-index;
+  }
+}
+.icon-columns-solid {
+  &:before {
+    content: $icon-columns-solid;
+  }
+}
+.icon-columns {
+  &:before {
+    content: $icon-columns;
+  }
+}
+.icon-unlock-solid {
+  &:before {
+    content: $icon-unlock-solid;
+  }
+}
+.icon-chat-bubble-smile {
+  &:before {
+    content: $icon-chat-bubble-smile;
+  }
+}
+.icon-cross-circle {
+  &:before {
+    content: $icon-cross-circle;
+  }
+}
+.icon-flag-greece .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-greece-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-greece .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-greece-path2;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-greece .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-greece-path3;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-greece .path4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-greece-path4;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-greece .path5 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-greece-path5;
+    color: rgb(63, 81, 181);
+  }
+}
+.icon-flag-greece .path6 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-greece-path6;
+    color: rgb(63, 81, 181);
+  }
+}
+.icon-flag-greece .path7 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-greece-path7;
+    color: rgb(63, 81, 181);
+  }
+}
+.icon-apple {
+  &:before {
+    content: $icon-apple;
+  }
+}
 .icon-border-all {
   &:before {
     content: $icon-border-all;
@@ -108,11 +235,6 @@
 .icon-laptop {
   &:before {
     content: $icon-laptop;
-  }
-}
-.icon-lock-solid {
-  &:before {
-    content: $icon-lock-solid;
   }
 }
 .icon-mobile {
@@ -244,7 +366,6 @@
   top: 0;
   &:before {
     content: $icon-flag-catalonia-path2;
-    margin-left: -1em;
     color: rgb(237, 31, 36);
   }
 }
@@ -256,7 +377,6 @@
   top: 0;
   &:before {
     content: $icon-flag-catalonia-path3;
-    margin-left: -1em;
     color: rgb(237, 31, 36);
   }
 }
@@ -268,7 +388,6 @@
   top: 0;
   &:before {
     content: $icon-flag-catalonia-path4;
-    margin-left: -1em;
     color: rgb(237, 31, 36);
   }
 }
@@ -280,7 +399,6 @@
   top: 0;
   &:before {
     content: $icon-flag-catalonia-path5;
-    margin-left: -1em;
     color: rgb(237, 31, 36);
   }
 }

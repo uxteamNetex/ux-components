@@ -1,5 +1,8 @@
 [
         {
+            "className": "icon-apple"
+        },
+        {
             "className": "icon-archive"
         },
         {
@@ -78,10 +81,13 @@
             "className": "icon-chat-bubble"
         },
         {
-            "className": "icon-chat-bubbles"
+            "className": "icon-chat-bubble-smile"
         },
         {
             "className": "icon-chat-bubble-solid"
+        },
+        {
+            "className": "icon-chat-bubbles"
         },
         {
             "className": "icon-check"
@@ -150,6 +156,12 @@
             "className": "icon-collections"
         },
         {
+            "className": "icon-columns"
+        },
+        {
+            "className": "icon-columns-solid"
+        },
+        {
             "className": "icon-compass"
         },
         {
@@ -160,6 +172,9 @@
         },
         {
             "className": "icon-cross"
+        },
+        {
+            "className": "icon-cross-circle"
         },
         {
             "className": "icon-cross-circle-solid"
@@ -540,6 +555,12 @@
             "className": "icon-image"
         },
         {
+            "className": "icon-index"
+        },
+        {
+            "className": "icon-index-off"
+        },
+        {
             "className": "icon-info-circle"
         },
         {
@@ -565,9 +586,6 @@
         },
         {
             "className": "icon-lock"
-        },
-        {
-            "className": "icon-lock-solid"
         },
         {
             "className": "icon-logo-cloud"
@@ -607,6 +625,9 @@
         },
         {
             "className": "icon-more-options"
+        },
+        {
+            "className": "icon-move"
         },
         {
             "className": "icon-open-book"
@@ -667,6 +688,9 @@
         },
         {
             "className": "icon-save"
+        },
+        {
+            "className": "icon-save-solid"
         },
         {
             "className": "icon-search"
@@ -748,6 +772,9 @@
         },
         {
             "className": "icon-unlock"
+        },
+        {
+            "className": "icon-unlock-solid"
         },
         {
             "className": "icon-upload"
