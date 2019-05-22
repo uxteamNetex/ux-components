@@ -10,7 +10,8 @@ import {
   NtxCardsModule,
   NtxListsModule,
   NtxFormsModule,
-  NtxTreesModule
+  NtxTreesModule,
+  NtxLabelsModule
 } from '@netex/ux-components';
 
 import { VersionxxxRoutingModule } from './versionxxx-routing.module';
@@ -29,7 +30,8 @@ import { ExamplesComponent } from './examples/examples.component';
     NtxCardsModule,
     NtxListsModule,
     NtxFormsModule,
-    NtxTreesModule
+    NtxTreesModule,
+    NtxLabelsModule
   ]
 })
 export class VersionxxxModule { }

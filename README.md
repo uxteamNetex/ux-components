@@ -50,6 +50,9 @@ COMMITS:
     Forms:
       -Cambios css, html y ts en el componente Formsearchbox (ntx-form-searchbox)
 
+    Labels:
+      -Cambios en el html y css en el componente label error (ntx-label-error)
+
 
   v.4.0.1:
     Documentación añadida para los siguientes componentes:
