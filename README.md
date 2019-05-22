@@ -11,6 +11,26 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 COMMITS:
   v.X.X.X:
+    Icons:
+      -Archivos tocados:
+        ux-components/src/styles/app/utils.scss
+        ux-components/src/styles/app/variables.scss
+        ux-components/src/styles/fonts/styles.scss
+        ux-components/src/styles/fonts/variables.scss
+
+      -New icons:
+        icon-apple
+        icon-chat-bubble-smile
+        icon-columns
+        icon-columns-solid
+        icon-cross-circle
+        icon-flag-greece
+        icon-index
+        icon-index-off
+        icon-move
+        icon-save-solid
+        icon-unlock-solid
+
     Trees:
       -Cambios en el css en el componente tree (ntx-tree)
 
@@ -29,6 +49,7 @@ COMMITS:
 
     Forms:
       -Cambios css, html y ts en el componente Formsearchbox (ntx-form-searchbox)
+
 
   v.4.0.1:
     Documentación añadida para los siguientes componentes:
@@ -57,13 +78,11 @@ COMMITS:
         ux-components/src/styles/fonts/variables.scss
 
       -New icons:
-        icon-apple
         icon-border-all
         icon-border-down
         icon-border-left
         icon-border-right
         icon-border-up
-        icon-chat-bubble-smile
         icon-circle-90
         icon-circle-180
         icon-circle-270
@@ -72,10 +91,7 @@ COMMITS:
         icon-city-tokyo
         icon-city-vegas
         icon-city-vienna
-        icon-columns
-        icon-columns-solid
         icon-compass
-        icon-cross-circle
         icon-davinci
         icon-desktop
         icon-editor-audio-gallery
@@ -94,22 +110,16 @@ COMMITS:
         icon-editor-show-search
         icon-face-sad
         icon-flag-catalonia
-        icon-flag-greece
-        icon-index
-        icon-index-off
         icon-laptop
         icon-mobile
-        icon-move
         icon-organisation-chart
         icon-pencil-circle-dotted
         icon-redo
         icon-redo-filled
-        icon-save-solid
         icon-tablet
         icon-teacher
         icon-undo
         icon-undo-filled
-        icon-unlock-solid
         icon-user-clipboard
         icon-users-plus
         icon-versions
@@ -211,7 +221,6 @@ COMMITS:
     Organisation charts:
       -Nuevo componente Panel tree (app-panel-tree)
       
-
 
   v.2.0.0 - Primera entrega de componentes:
     Buttons:
