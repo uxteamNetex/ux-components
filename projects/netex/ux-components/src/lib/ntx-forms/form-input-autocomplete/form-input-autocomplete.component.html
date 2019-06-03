@@ -1,0 +1,22 @@
+<form class="form-container">
+
+    <mat-form-field class="form-container__form-full-width">
+      <input matInput
+             class="form-container__form-input"
+             type="text"
+             placeholder="Enter a tag..."
+             aria-label="Tag"
+             [formControl]="myControl"
+             [matAutocomplete]="auto">
+
+      <mat-autocomplete #auto="matAutocomplete"
+                        class="form-container__form-autocomplete"
+                        [displayWith]="displayFn">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{ option.name }}
+        </mat-option>
+      </mat-autocomplete>
+
+    </mat-form-field>
+
+  </form>

@@ -49,6 +49,7 @@ COMMITS:
 
     Forms:
       -Cambios css, html y ts en el componente Formsearchbox (ntx-form-searchbox)
+      -Nuevo componente form input with autocomplete (ntx-form-input-autocomplete)
 
     Labels:
       -Cambios en el html y css en el componente label error (ntx-label-error)

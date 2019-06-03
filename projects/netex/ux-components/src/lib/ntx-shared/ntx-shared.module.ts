@@ -27,7 +27,8 @@ import {
    MatPaginatorModule,
    MatGridListModule,
    MatTooltipModule,
-   MatProgressSpinnerModule
+   MatProgressSpinnerModule,
+   MatAutocompleteModule
  } from '@angular/material';
 
 @NgModule({
@@ -58,7 +59,8 @@ import {
     MatPaginatorModule,
     MatGridListModule,
     MatTooltipModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatAutocompleteModule
   ],
   declarations: [],
   exports: [
@@ -88,7 +90,8 @@ import {
     MatPaginatorModule,
     MatGridListModule,
     MatTooltipModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatAutocompleteModule
   ]
 })
 export class NtxSharedModule { }

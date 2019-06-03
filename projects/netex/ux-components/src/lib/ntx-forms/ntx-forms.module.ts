@@ -22,6 +22,7 @@ import { FormInputNoLabelComponent } from './form-input-no-label/form-input-no-l
 import { FormSearchboxComponent } from './form-searchbox/form-searchbox.component';
 import { FormSearchboxBackgroundComponent } from './form-searchbox-background/form-searchbox-background.component';
 import { FormSelectThinComponent } from './form-select-thin/form-select-thin.component';
+import { FormInputAutocompleteComponent } from './form-input-autocomplete/form-input-autocomplete.component';
 
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import { FormSelectThinComponent } from './form-select-thin/form-select-thin.com
     FormInputNoLabelComponent,
     FormSearchboxComponent,
     FormSearchboxBackgroundComponent,
-    FormSelectThinComponent
+    FormSelectThinComponent,
+    FormInputAutocompleteComponent
   ],
   entryComponents: [
     FormInputComponent,
@@ -70,7 +72,8 @@ import { FormSelectThinComponent } from './form-select-thin/form-select-thin.com
     FormInputNoLabelComponent,
     FormSearchboxComponent,
     FormSearchboxBackgroundComponent,
-    FormSelectThinComponent
+    FormSelectThinComponent,
+    FormInputAutocompleteComponent
   ]
 })
 export class NtxFormsModule { }
