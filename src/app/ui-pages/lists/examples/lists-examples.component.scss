@@ -1,0 +1,9 @@
+.horizontal-cards{
+  .card-simple{
+    &.mat-card{
+      .mat-card-content{
+        display: flex;
+      }
+    }
+  }
+}
