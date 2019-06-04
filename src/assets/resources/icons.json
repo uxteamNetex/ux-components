@@ -645,6 +645,9 @@
             "className": "icon-paperplane"
         },
         {
+            "className": "icon-pathway"
+        },
+        {
             "className": "icon-pencil"
         },
         {
@@ -691,6 +694,9 @@
         },
         {
             "className": "icon-save-solid"
+        },
+        {
+            "className": "icon-scanning"
         },
         {
             "className": "icon-search"

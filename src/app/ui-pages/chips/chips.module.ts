@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatExpansionModule } from '@angular/material';
 
 import {
   NtxChipsModule,
@@ -15,7 +16,8 @@ import { ExamplesComponent } from './examples/examples.component';
     CommonModule,
     NtxChipsModule,
     NtxCardsModule,
-    ChipsRoutingModule
+    ChipsRoutingModule,
+    MatExpansionModule,
   ],
   declarations: [
     DocumentationComponent,

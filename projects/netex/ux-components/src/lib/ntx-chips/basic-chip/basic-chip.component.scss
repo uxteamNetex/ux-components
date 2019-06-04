@@ -17,22 +17,23 @@ $block: "chip-container";
         color: $color-white;
       }
       height: 32px;
-      padding: 4px 8px 4px 16px;
-      max-width: 260px;
+      padding: 4px 4px 4px 16px;
+      max-width: 180px;
       .#{$block}__chip-text{
         display: -webkit-box;
         -webkit-line-clamp: 1;
         /* autoprefixer: off */
         -webkit-box-orient: vertical;
         margin-right: 8px;
-        text-transform: uppercase;
-        max-height: 17px;
+        max-height: 16px;
         overflow: hidden;
+        word-break: break-all;
       }
       .#{$block}__chip-button{
         color: $color-white;
         height: 24px;
         line-height: 24px;
+        margin: 0;
         opacity: 1;
         width: 24px;
         .mat-icon{

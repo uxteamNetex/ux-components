@@ -1,0 +1,66 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "form-container";
+
+.#{$block}{
+  min-width: 150px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  .#{$block}__form-full-width{
+    &.mat-form-field{
+      &.mat-form-field-appearance-legacy{
+        width: 100%;
+        .mat-form-field-wrapper{
+          .mat-form-field-flex{
+            .mat-form-field-infix{
+              .#{$block}__form-chip{
+                &.mat-primary{
+                  background-color: $color-primary;
+                  color: $color-white;
+                }
+                height: 32px;
+                padding: 4px 4px 4px 16px;
+                max-width: 180px;
+                .#{$block}__form-chip--text{
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  /* autoprefixer: off */
+                  -webkit-box-orient: vertical;
+                  margin-right: 8px;
+                  max-height: 16px;
+                  overflow: hidden;
+                  word-break: break-all;
+                }
+                .#{$block}__form-chip--button{
+                  color: $color-white;
+                  height: 24px;
+                  line-height: 24px;
+                  margin: 0;
+                  opacity: 1;
+                  width: 24px;
+                  .mat-icon{
+                    font-size: $font-size-12;
+                  }
+                  &:hover{
+                    background-color: $icon-button-hover;
+                  }
+                }
+              }
+              .#{$block}__form-input{
+                font-size: $font-size-16;
+                line-height: 24px;
+              }
+              .#{$block}__form-autocomplete{
+
+              }
+            }
+          }
+          .mat-form-field-underline{
+            background-color: $color-grey-400;
+          }
+        }
+      }
+    }
+  }
+}

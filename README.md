@@ -28,7 +28,9 @@ COMMITS:
         icon-index
         icon-index-off
         icon-move
+        icon-pathway
         icon-save-solid
+        icon-scanning
         icon-unlock-solid
 
     Trees:
@@ -53,6 +55,14 @@ COMMITS:
 
     Labels:
       -Cambios en el html y css en el componente label error (ntx-label-error)
+
+    Chips:
+      -Cambios en el css del componente chip with image (ntx-image-chip)
+      -Cambios en el css del componente chip with image and subtitle (ntx-image-subtitle-chip)
+      -Cambios en el css del componente basic chip (ntx-basic-chip)
+      -Cambios en el css del componente chip with categories (ntx-category-chip)
+      -Cambios en el css del componente chip with filters (ntx-filter-chip)
+      -Nuevo componente autocomplete chip (ntx-autocomplete-chip)
 
 
   v.4.0.1:

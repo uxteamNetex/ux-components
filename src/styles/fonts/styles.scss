@@ -45,6 +45,16 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pathway {
+  &:before {
+    content: $icon-pathway;
+  }
+}
+.icon-scanning {
+  &:before {
+    content: $icon-scanning;
+  }
+}
 .icon-save-solid {
   &:before {
     content: $icon-save-solid;

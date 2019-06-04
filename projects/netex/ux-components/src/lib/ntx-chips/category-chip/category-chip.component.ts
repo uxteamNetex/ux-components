@@ -19,8 +19,8 @@ export class CategoryChipComponent implements OnInit {
   @Input() disabled: string;
 
   chips: Chip[] = [
-    {label: 'Department', name: 'Marketing'},
-    {label: 'Depart', name: 'UX'},
+    {label: 'Department', name: 'UX'},
+    {label: 'Job', name: 'Designer'},
     {label: 'Department', name: 'Example chip with a very long name'},
   ];
 
