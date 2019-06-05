@@ -10,6 +10,7 @@ import { ListOneLineNavigableComponent } from './list-one-line-navigable/list-on
 import { ListHorizontalComponent } from './list-horizontal/list-horizontal.component';
 import { ListOneLineAvatarComponent } from './list-one-line-avatar/list-one-line-avatar.component';
 import { ListTwoLinesAvatarVerticalComponent } from './list-two-lines-avatar-vertical/list-two-lines-avatar-vertical.component';
+import { ListHorizontalIconComponent } from './list-horizontal-icon/list-horizontal-icon.component';
 
 import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
@@ -31,7 +32,8 @@ import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.modul
     ListOneLineNavigableComponent,
     ListHorizontalComponent,
     ListOneLineAvatarComponent,
-    ListTwoLinesAvatarVerticalComponent
+    ListTwoLinesAvatarVerticalComponent,
+    ListHorizontalIconComponent
   ],
   exports: [
     ListTwoLinesAvatarComponent,
@@ -40,7 +42,8 @@ import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.modul
     ListOneLineNavigableComponent,
     ListHorizontalComponent,
     ListOneLineAvatarComponent,
-    ListTwoLinesAvatarVerticalComponent
+    ListTwoLinesAvatarVerticalComponent,
+    ListHorizontalIconComponent
   ]
 })
 export class NtxListsModule { }

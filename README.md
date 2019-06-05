@@ -46,6 +46,7 @@ COMMITS:
       -Cambios en el html y css en el componente one line list with avatar (ntx-list-one-line-avatar)
       -Cambios en el html y css en el componente two lines list with avatar (ntx-list-two-lines-avatar)
       -Nuevo componente two lines vertical list with avatar (ntx-list-two-lines-avatar-vertical)
+      -Nuevo componente List horizontal with icons (ntx-list-horizontal-icon)
 
     Helpers:
       -Corrección de código de colores en la página de colores
