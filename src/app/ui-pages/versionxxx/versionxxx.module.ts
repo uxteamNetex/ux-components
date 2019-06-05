@@ -27,7 +27,8 @@ import {
   NtxLabelsModule,
   NtxChipsModule,
   NtxButtonsModule,
-  NtxTabsModule
+  NtxTabsModule,
+  NtxMenusModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -49,7 +50,8 @@ import {
     NtxLabelsModule,
     NtxChipsModule,
     NtxButtonsModule,
-    NtxTabsModule
+    NtxTabsModule,
+    NtxMenusModule
   ],
   entryComponents: [
     EntityDetailPanelComponent

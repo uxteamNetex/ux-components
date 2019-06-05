@@ -68,6 +68,9 @@ COMMITS:
     Panels:
       -Nuevo componente entity detail panel (app-entity-detail-panel)
 
+    Menus:
+      -Nuevo componente menu de opciones simple (ntx-menu-options-simple)
+
 
   v.4.0.1:
     Documentación añadida para los siguientes componentes:
