@@ -74,6 +74,10 @@ const routes: Routes = [
 	{
 		path: 'colours',
 		loadChildren: './ui-pages/colours/colours.module#ColoursModule'
+  },
+  {
+		path: 'detail-panel',
+		loadChildren: './ui-pages/detail-panel/detail-panel.module#DetailPanelModule'
 	},
 	{
 		path: 'dialogs',

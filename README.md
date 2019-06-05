@@ -65,6 +65,9 @@ COMMITS:
       -Cambios en el css del componente chip with filters (ntx-filter-chip)
       -Nuevo componente autocomplete chip (ntx-autocomplete-chip)
 
+    Panels:
+      -Nuevo componente entity detail panel (app-entity-detail-panel)
+
 
   v.4.0.1:
     Documentación añadida para los siguientes componentes:

@@ -1,20 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, ComponentFactoryResolver, Injector, ComponentRef } from '@angular/core';
-import { MatRadioChange } from '@angular/material';
-import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 import { PanelService } from '../../../shared/services/panel.service';
 import { ComponentPortal } from '@angular/cdk/portal';
-import { EntityDetailPanelComponent } from '../../detail-panel/entity-detail-panel/entity-detail-panel.component';
-
-export interface PeriodicElement {
-  screensize: string;
-  containersize: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {screensize: '>1480px', containersize: '1240px'},
-  {screensize: '1479px - 1280px', containersize: '900px'},
-  {screensize: '1279px - 1024px', containersize: '768px'},
-];
+import { EntityDetailPanelComponent } from '../entity-detail-panel/entity-detail-panel.component';
 
 @Component({
   selector: 'app-examples',
@@ -24,39 +11,17 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ExamplesComponent implements OnInit {
 
-  displayedColumns: string[] = ['screensize', 'containersize'];
-  dataSource = ELEMENT_DATA;
-
-  selectedCardIndex: number;
-
   public panelWidths = [80];
 
   private entitydetailpanelComponent: ComponentRef<EntityDetailPanelComponent>;
 
   constructor(
-    private tabsHeaderService: TabsHeaderService,
     private panelService: PanelService,
     private componentFactoryResolver: ComponentFactoryResolver,
     private injector: Injector
   ) { }
 
   ngOnInit() {
-  }
-
-  counter(i: number) {
-    return new Array(i);
-  }
-
-  onRadiobuttonChange(event: MatRadioChange) {
-    this.selectedCardIndex = event.value;
-  }
-
-  checkIfSelected(i: number) {
-    return this.selectedCardIndex === i;
-  }
-
-  setPath(value: string) {
-    this.tabsHeaderService.setPath(value);
   }
 
   onButtonClick(width: string) {

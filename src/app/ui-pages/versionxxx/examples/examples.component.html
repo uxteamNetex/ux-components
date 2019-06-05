@@ -118,6 +118,17 @@
           </div>
         </div>
 
+        <div class="whatsnew__content-block">
+          <h4>Entity detail panel</h4>
+          <p class="whatsnew__content-block--text utils--text-18">Our next innovation is a detail panel, <span class="documentation-code">app-entity-detail-panel</span>, which shows us the detail of an entity in the header of a panel.</p>
+          <button mat-raised-button *ngFor="let width of panelWidths"
+                  color="primary"
+                  class="panels__button"
+                  (click) = "onButtonClick(width)">
+                  {{ 'Detail panel' | uppercase }}
+          </button>
+        </div>
+
         <h2 class="whatsnew__separation">
           <span class="whatsnew__separation--text">Bug fixing</span>
         </h2>
