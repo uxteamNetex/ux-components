@@ -11,6 +11,11 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 COMMITS:
   v.X.X.X:
+    Card7:
+      -Archivos modificados:
+        ux-components/src/lib/ntx-cards/card7/card7.component.html
+        ux-components/src/lib/ntx-cards/card7/card7.component.scss
+        ux-components/src/lib/ntx-cards/card7/card7.component.ts
     Icons:
       -Archivos tocados:
         ux-components/src/styles/app/utils.scss

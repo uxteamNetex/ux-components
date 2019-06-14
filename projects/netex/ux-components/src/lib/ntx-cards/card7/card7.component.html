@@ -1,15 +1,13 @@
 <mat-card class="card7">
-  <mat-card-content>
-    <div class="card7__texts">
-      <mat-card-title class="card7__title">
-          <span class="card7__title--text" matTooltip="Competency title with a very long text">Competency title with a very long text</span>
-        </mat-card-title>
-        <mat-card-subtitle class="card7__subtitle">
-            <span class="card7__subtitle--text" matTooltip="Description in a few words that could be one or two lines maximum and then three dots">Description in a few words that could be one or two lines maximum and then three dots</span>
-        </mat-card-subtitle>
-    </div>
-    <div class="card7__options">
-        <ntx-menu-options></ntx-menu-options>
-    </div>
+  <mat-card-header class="card7__header">
+    <mat-card-title class="card7__title">
+      <span class="utils--truncate1" [matTooltip]="data.title">{{ data.title }}</span>
+    </mat-card-title>
+      <ntx-menu-options></ntx-menu-options>
+  </mat-card-header>
+  <mat-card-content class="card7__content">
+    <mat-card-subtitle class="card7__subtitle">
+      <span class="utils--truncate2" [matTooltip]="data.description">{{ data.description }}</span>
+    </mat-card-subtitle>      
   </mat-card-content>
 </mat-card>

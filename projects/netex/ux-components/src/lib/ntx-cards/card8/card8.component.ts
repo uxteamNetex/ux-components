@@ -3,6 +3,7 @@ import { ViewEncapsulation } from '@angular/core';
 import { MatCheckboxChange } from '@angular/material';
 
 @Component({
+	// tslint:disable-next-line:indent
 	selector: 'ntx-card8',
 	templateUrl: './card8.component.html',
 	styleUrls: ['./card8.component.scss'],
