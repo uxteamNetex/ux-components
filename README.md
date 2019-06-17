@@ -11,6 +11,14 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 COMMITS:
   v.X.X.X:
+    Dialogs:
+      -Archivos modificados:
+        ux-components/src/lib/ntx-dialogs/simple-dialog/simple-dialog.component.ts
+        ux-components/src/lib/ntx-dialogs/simple-dialog/simple-dialog.component.scss
+        ux-components/src/lib/ntx-dialogs/proccess-dialog/proccess-dialog.component.ts
+        ux-components/src/lib/ntx-dialogs/proccess-dialog/proccess-dialog.component.scss
+        ux-components/src/lib/ntx-dialogs/warning-dialog/warning-dialog.component.ts
+        ux-components/src/lib/ntx-dialogs/warning-dialog/warning-dialog.component.scss
     Card7:
       -Archivos modificados:
         ux-components/src/lib/ntx-cards/card7/card7.component.html

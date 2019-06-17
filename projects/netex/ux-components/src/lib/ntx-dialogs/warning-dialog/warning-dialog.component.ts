@@ -15,7 +15,9 @@ export class WarningDialogComponent implements OnInit {
   constructor(private dialog: MatDialog) { }
 
   openDialog() {
-    const dialogRef = this.dialog.open(WarningDialogContentComponent);
+    const dialogRef = this.dialog.open(WarningDialogContentComponent, {
+      panelClass: 'warningDialog'
+    });
   }
 
   ngOnInit() {
