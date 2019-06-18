@@ -213,8 +213,16 @@ export class TreeWithChecksComponent implements OnInit {
 
   /** Toggle the to-do item selection. Select/deselect all the descendants node */
   todoItemSelectionToggle(node: TodoItemFlatNode): void {
-    this.checklistSelection.toggle(node);
+    const parentNode = this.getParentNode(node);
     const descendants = this.treeControl.getDescendants(node);
+
+    if (!parentNode) {
+      if (!this.checklistSelection.isSelected(node)) {
+        this.checklistSelection.clear();
+        this.checklistSelection.deselect(...descendants);
+      }
+    }
+    this.checklistSelection.toggle(node);
     this.checklistSelection.isSelected(node)
       ? this.checklistSelection.select(...descendants)
       : this.checklistSelection.deselect(...descendants);
