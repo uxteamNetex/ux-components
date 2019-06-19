@@ -63,4 +63,13 @@ $block: "form-container";
       }
     }
   }
+  &__item{
+    &--matched {
+      color: $color-primary;
+      font-weight: bold;
+    }
+    &--unmatched {
+      color: $color-grey-700;
+    }
+  }
 }

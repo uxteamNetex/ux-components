@@ -31,7 +31,8 @@
                       class="form-container__form-autocomplete"
                       (optionSelected)="selected($event)">
       <mat-option *ngFor="let tag of filteredTags | async" [value]="tag">
-        {{tag}}
+        <span class="form-container__item--matched">{{ getMatchedString(tag) }}</span>
+        <span class="form-container__item--unmatched">{{ getUnmatchedString(tag) }}</span>
       </mat-option>
     </mat-autocomplete>
 

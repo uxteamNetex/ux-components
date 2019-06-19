@@ -21,7 +21,7 @@ export class AutocompleteChipComponent implements OnInit {
   tagCtrl = new FormControl();
   filteredTags: Observable<string[]>;
   tags: string[] = ['Lemon'];
-  allTags: string[] = ['Apple', 'Lemon', 'Lime', 'Orange', 'Strawberry'];
+  allTags: string[] = ['Apple', 'Lemon', 'Lime', 'Olive', 'Orange', 'Strawberry'];
 
   @ViewChild('tagInput') tagInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
@@ -71,8 +71,15 @@ export class AutocompleteChipComponent implements OnInit {
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
-
     return this.allTags.filter(tag => tag.toLowerCase().indexOf(filterValue) === 0);
+  }
+
+  getMatchedString(tag: string) {
+    return this.tagCtrl.value ? tag.slice(0, (this.tagCtrl.value).length) : '';
+  }
+
+  getUnmatchedString(tag: string) {
+    return this.tagCtrl.value ? tag.slice((this.tagCtrl.value).length) : tag;
   }
 
 }
