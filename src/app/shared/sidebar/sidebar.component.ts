@@ -1,10 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { SidenavService } from '../services/sidenav.service';
 import { TabsHeaderService } from '../services/tabs-header.service';
 
-
 const LINKS = [
 	'buttons',
+	'chips',
+	'detail-panel',
+	'dialogs',
+	'drag-and-drop',
+	'empty-pages',
+	'form-controls',
+	'icons',
+	'labels',
+	'lists',
+	'menus',
+	'organisation-chart',
+	'tabs',
+	'toolbars',
+	'user-profile-panel'
+];
+
+const CARDS = [
 	'card1',
 	'card2',
 	'card3',
@@ -18,58 +34,81 @@ const LINKS = [
 	'card12',
 	'card13',
 	'card14',
-	'cards',
-  'chips',
-  'detail-panel',
-  'dialogs',
-  'drag-and-drop',
-  'empty-pages',
+	'cards'
+];
+
+const ERROR_PAGES = [
 	'error-page-403',
 	'error-page-404',
 	'error-page-500',
 	'error-page-503',
-	'form-controls',
-	'icons',
-	'labels',
-	'lists',
-	'menus',
-	'organisation-chart',
-	'panels',
-	'panel-tabs',
-	'progress-bar',
-	'progress-spinner',
-	'sidenavs',
-	'sidenav-filters',
-	'table',
-	'table-evaluation',
-	'table-selectable',
-	'tabs',
-	'toolbars',
-	'tree',
-	'tree-check',
-	'user-profile-panel'
 ];
+
 const LINKSHELPERS = [
 	'colours',
 	'headings-and-texts',
 	'margins',
-  'paddings'
-];
-const WHATSNEWS = [
-  'version401',
-  'versionxxx'
+	'paddings'
 ];
 
+const PANELS =  [
+	'panels',
+	'panel-tabs'
+];
+
+const PROGRESS = [
+	'progress-bar',
+	'progress-spinner'
+];
+
+const SIDENAVS = [
+	'sidenavs',
+	'sidenav-filters'
+];
+
+const TABLES = [
+	'table',
+	'table-evaluation',
+	'table-selectable'
+];
+
+const TREE = [
+	'tree',
+	'tree-check'
+];
+
+const WHATSNEWS = [
+	'version401',
+	'versionxxx'
+];
+
+const CATEGORIES = {
+	cards: { title: 'cards', links: CARDS },
+	error_pages: { title: 'error pages', links: ERROR_PAGES },
+	panels: { title: 'panels', links: PANELS},
+	progress: { title: 'progress', links: PROGRESS },
+	sidenavs: { title: 'sidenavs', links: SIDENAVS },
+	table: { title: 'table', links: TABLES },
+	tree: { title: 'tree', links: TREE }
+};
+
+export interface Category {
+	title: string;
+	links: string[];
+}
+
 @Component({
-	selector: 'app-sidebar',
-	templateUrl: './sidebar.component.html',
-	styleUrls: ['./sidebar.component.scss']
+		selector: 'app-sidebar',
+		templateUrl: './sidebar.component.html',
+		styleUrls: ['./sidebar.component.scss'],
+		encapsulation: ViewEncapsulation.None
 })
 export class SidebarComponent implements OnInit {
 
+	categories = CATEGORIES;
 	links: string[] = LINKS;
-  linkshelpers: string[] = LINKSHELPERS;
-  whatsnews: string[] = WHATSNEWS;
+	linkshelpers: string[] = LINKSHELPERS;
+	whatsnews: string[] = WHATSNEWS;
 
 	constructor(
 		private sidenavService: SidenavService,

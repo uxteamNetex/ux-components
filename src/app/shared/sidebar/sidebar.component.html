@@ -1,28 +1,194 @@
 <mat-nav-list disableRipple class="sidebar-container">
   <p class="sidebar-container__title">Netex Material UI Library</p>
-
+  <!-- COMPONENTS -->
   <label class="sidebar-container__section-title">Components</label>
-  <a class="sidebar-container__links" *ngFor="let link of links"
+  <!-- Buttons -->
+  <a class="sidebar-container__links"
     mat-list-item
-    [routerLink]=link
-    (click)="setPath(link)">{{ link | titlecase }}</a>
-
+    routerLink="buttons"
+    (click)="setPath('buttons')">Buttons</a>
+  <!-- Cards  -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="sidebar-container__links">{{ categories['cards'].title | titlecase }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item *ngFor="let link of categories['cards'].links">
+        <a class="sidebar-container__links"     
+          mat-list-item
+          [routerLink]=link
+          (click)="setPath(link)">{{ link | titlecase }}</a>
+      </mat-list-item>  
+    </mat-list>
+  </mat-expansion-panel>
+  <!-- Chips -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="chips"
+    (click)="setPath('chips')">Chips</a>
+  <!-- Detail panel -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="detail-panel"
+    (click)="setPath('detail-panel')">Detail-panel</a>
+  <!-- Dialogs -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="dialogs"
+    (click)="setPath('dialogs')">Dialogs</a>
+  <!-- Drag and drop -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="drag-and-drop"
+    (click)="setPath('drag-and-drop')">Drag-and-drop</a>
+  <!-- Empty pages -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="empty-pages"
+    (click)="setPath('empty-pages')">Empty-pages</a>
+  <!-- Error pages   -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="sidebar-container__links">{{ categories['error_pages'].title | titlecase }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item *ngFor="let link of categories['error_pages'].links">
+        <a class="sidebar-container__links"     
+          mat-list-item
+          [routerLink]=link
+          (click)="setPath(link)">{{ link | titlecase }}</a>
+      </mat-list-item>  
+    </mat-list>
+  </mat-expansion-panel>
+  <!-- Form controls -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="form-controls"
+    (click)="setPath('form-controls')">Form-controls</a>
+  <!-- Icons -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="icons"
+    (click)="setPath('icons')">Icons</a>
+  <!-- Labels -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="labels"
+    (click)="setPath('labels')">Labels</a>
+  <!-- Lists -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="lists"
+    (click)="setPath('lists')">Lists</a>
+  <!-- Menus -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="menus"
+    (click)="setPath('menus')">Menus</a>
+  <!-- Organisation chart -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="organisation-chart"
+    (click)="setPath('organisation-chart')">Organisation-chart</a>
+  <!-- Panels   -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="sidebar-container__links">{{ categories['panels'].title | titlecase  }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item *ngFor="let link of categories['panels'].links">
+        <a class="sidebar-container__links"     
+          mat-list-item
+          [routerLink]=link
+          (click)="setPath(link)">{{ link | titlecase }}</a>
+      </mat-list-item>  
+    </mat-list>
+  </mat-expansion-panel>
+  <!-- Progress -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="sidebar-container__links">{{ categories['progress'].title | titlecase  }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item *ngFor="let link of categories['progress'].links">
+        <a class="sidebar-container__links"     
+          mat-list-item
+          [routerLink]=link
+          (click)="setPath(link)">{{ link | titlecase }}</a>
+      </mat-list-item>  
+    </mat-list>
+  </mat-expansion-panel>
+  <!-- Sidenavs -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="sidebar-container__links">{{ categories['sidenavs'].title | titlecase  }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item *ngFor="let link of categories['sidenavs'].links">
+        <a class="sidebar-container__links"     
+          mat-list-item
+          [routerLink]=link
+          (click)="setPath(link)">{{ link | titlecase }}</a>
+      </mat-list-item>  
+    </mat-list>
+  </mat-expansion-panel>
+  <!-- Table -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="sidebar-container__links">{{ categories['table'].title | titlecase  }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item *ngFor="let link of categories['table'].links">
+        <a class="sidebar-container__links"     
+          mat-list-item
+          [routerLink]=link
+          (click)="setPath(link)">{{ link | titlecase }}</a>
+      </mat-list-item>  
+    </mat-list>
+  </mat-expansion-panel>
+  <!-- Tabs -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="tabs"
+    (click)="setPath('tabs')">Tabs</a>
+  <!-- Toolbars -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="toolbars"
+    (click)="setPath('toolbars')">Toolbars</a>
+  <!-- Tree -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title class="sidebar-container__links">{{ categories['tree'].title | titlecase  }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item *ngFor="let link of categories['tree'].links">
+        <a class="sidebar-container__links"     
+          mat-list-item
+          [routerLink]=link
+          (click)="setPath(link)">{{ link | titlecase }}</a>
+      </mat-list-item>  
+    </mat-list>
+  </mat-expansion-panel>
+  <!-- User profile panel -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="user-profile-panel"
+    (click)="setPath('user-profile-panel')">User-profile-panel</a>
+  <!-- Divider -->
   <mat-divider class="utils--margin-bottom-8 utils--margin-top-8"></mat-divider>
-
+  <!-- HELPERS -->
   <label class="sidebar-container__section-title">Helpers</label>
   <a class="sidebar-container__links" *ngFor="let linkhelpers of linkshelpers"
     mat-list-item
     [routerLink]=linkhelpers
     (click)="setPath(linkhelpers)">{{ linkhelpers | titlecase }}</a>
-
+  <!-- Divider -->
   <mat-divider class="utils--margin-bottom-8 utils--margin-top-8"></mat-divider>
-
+  <!-- WHAT´S NEW -->
   <label class="sidebar-container__section-title">What's new</label>
   <a class="sidebar-container__links" *ngFor="let whatsnew of whatsnews"
     mat-list-item
     [routerLink]=whatsnew
     (click)="setPath(whatsnew)">{{ whatsnew | titlecase }}</a>
-
-  <mat-divider class="utils--margin-bottom-8 utils--margin-top-8"></mat-divider>
-
 </mat-nav-list>

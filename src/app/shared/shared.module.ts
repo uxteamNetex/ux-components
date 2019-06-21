@@ -13,7 +13,9 @@ import {
   MatTabsModule,
   MatToolbarModule,
   MatTableModule,
-  MatGridListModule
+  MatGridListModule,
+  MatExpansionModule,
+  MatFormFieldModule
 } from '@angular/material';
 
 import {
@@ -57,7 +59,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatSidenavModule,
     MatTabsModule,
     AppRoutingModule,
-    MatGridListModule
+    MatGridListModule,
+    MatExpansionModule,
+    MatFormFieldModule
   ],
   exports: [
     MatButtonModule,

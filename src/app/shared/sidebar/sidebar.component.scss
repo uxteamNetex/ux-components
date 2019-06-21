@@ -3,6 +3,23 @@
 $block: "sidebar-container";
 
 .#{$block}{
+  .mat-expansion-panel {
+    box-shadow: none;
+    mat-panel-title.sidebar-container__links{ 
+      padding-left: 24px;
+    }
+    .mat-expansion-panel-header {
+      padding: 0 24px 0 0;
+    }
+    .mat-expansion-panel-body {
+      padding: 0 0 16px;
+    }
+    .sidebar-container__links {
+      .mat-list-item-content {
+        padding-left:24px;
+      }
+    }
+  }
   &.mat-list-base{
     font-family: Lato;
     width: 320px;
