@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run build-ux-components'
-                sh "npm run-script ng build -- --base-href /ng-${BASE_TAG}/"
+                sh "npm run-script ng build -- "
                 stash name: "dist", includes: "dist/ux-components/**"
             }
         }
@@ -56,7 +56,7 @@ pipeline {
                     sh """
                         $SSH_COMMAND docker run -d --restart=always --name ng-${BASE_TAG} \\
                         --label traefik.port=80 \\
-                        --label traefik.frontend.rule=PathPrefixStrip:/ng-${BASE_TAG} \\
+                        --label traefik.frontend.rule=Host:${BASE_TAG}.vm10.netexlearning.cloud \\
                         --network ux-components-nebula_default \\
                         ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}
                     """
