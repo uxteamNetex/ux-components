@@ -33,17 +33,46 @@ COMMITS:
 
       -New icons:
         icon-apple
+        icon-attached-file
+        icon-bookmark
+        icon-bookmark-solid
         icon-chat-bubble-smile
+        icon-check-circle
+        icon-check-double
+        icon-check-shield
         icon-columns
         icon-columns-solid
+        icon-competency
         icon-cross-circle
+        icon-duplicate-search
+        icon-editor-iframe
+        icon-editor-interactive-activity
+        icon-editor-flip-image
+        icon-eye-off
         icon-flag-greece
+        icon-forbidden-shield
         icon-index
         icon-index-off
+        icon-launch-external
+        icon-less-circle-solid
+        icon-link
+        icon-loading
+        icon-lock-solid
+        icon-magazine
+        icon-modal
         icon-move
+        icon-multiple-classroom
+        icon-navigation-header
+        icon-notebook
         icon-pathway
+        icon-pin-checked-solid
+        icon-pin-solid
+        icon-question-circle
         icon-save-solid
         icon-scanning
+        icon-send-off
+        icon-speaker
+        icon-trophy-solid
         icon-unlock-solid
 
     Trees:

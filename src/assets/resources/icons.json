@@ -27,6 +27,9 @@
             "className": "icon-arrow-top-solid"
         },
         {
+            "className": "icon-attached-file"
+        },
+        {
             "className": "icon-badge"
         },
         {
@@ -40,6 +43,12 @@
         },
         {
             "className": "icon-block"
+        },
+        {
+            "className": "icon-bookmark"
+        },
+        {
+            "className": "icon-bookmark-solid"
         },
         {
             "className": "icon-border-all"
@@ -93,7 +102,16 @@
             "className": "icon-check"
         },
         {
+            "className": "icon-check-circle"
+        },
+        {
             "className": "icon-check-circle-solid"
+        },
+        {
+            "className": "icon-check-double"
+        },
+        {
+            "className": "icon-check-shield"
         },
         {
             "className": "icon-chest"
@@ -141,9 +159,6 @@
             "className": "icon-clock"
         },
         {
-            "className": "icon-clock-loading"
-        },
-        {
             "className": "icon-clock-loading-inverse"
         },
         {
@@ -163,6 +178,9 @@
         },
         {
             "className": "icon-compass"
+        },
+        {
+            "className": "icon-competency"
         },
         {
             "className": "icon-compose"
@@ -202,6 +220,9 @@
         },
         {
             "className": "icon-duplicate"
+        },
+        {
+            "className": "icon-duplicate-search"
         },
         {
             "className": "icon-editor-accordion"
@@ -276,6 +297,9 @@
             "className": "icon-editor-fill-gap-activity"
         },
         {
+            "className": "icon-editor-flip-image"
+        },
+        {
             "className": "icon-editor-footer-reference"
         },
         {
@@ -306,6 +330,9 @@
             "className": "icon-editor-hotspot"
         },
         {
+            "className": "icon-editor-iframe"
+        },
+        {
             "className": "icon-editor-image"
         },
         {
@@ -313,6 +340,9 @@
         },
         {
             "className": "icon-editor-instruction"
+        },
+        {
+            "className": "icon-editor-interactive-activity"
         },
         {
             "className": "icon-editor-interactive-timeline-item"
@@ -468,6 +498,9 @@
             "className": "icon-eye"
         },
         {
+            "className": "icon-eye-off"
+        },
+        {
             "className": "icon-face-sad"
         },
         {
@@ -508,6 +541,9 @@
         },
         {
             "className": "icon-forbidden"
+        },
+        {
+            "className": "icon-forbidden-shield"
         },
         {
             "className": "icon-form-input"
@@ -570,13 +606,22 @@
             "className": "icon-laptop"
         },
         {
+            "className": "icon-launch-external"
+        },
+        {
             "className": "icon-less-circle"
+        },
+        {
+            "className": "icon-less-circle-solid"
         },
         {
             "className": "icon-light-bulb"
         },
         {
             "className": "icon-like"
+        },
+        {
+            "className": "icon-link"
         },
         {
             "className": "icon-list"
@@ -586,6 +631,9 @@
         },
         {
             "className": "icon-lock"
+        },
+        {
+            "className": "icon-lock-solid"
         },
         {
             "className": "icon-logo-cloud"
@@ -606,6 +654,9 @@
             "className": "icon-logout"
         },
         {
+            "className": "icon-magazine"
+        },
+        {
             "className": "icon-menu"
         },
         {
@@ -624,10 +675,22 @@
             "className": "icon-mobile"
         },
         {
+            "className": "icon-modal"
+        },
+        {
             "className": "icon-more-options"
         },
         {
             "className": "icon-move"
+        },
+        {
+            "className": "icon-multiple-classroom"
+        },
+        {
+            "className": "icon-navigation-header"
+        },
+        {
+            "className": "icon-notebook"
         },
         {
             "className": "icon-open-book"
@@ -654,6 +717,12 @@
             "className": "icon-pencil-circle-dotted"
         },
         {
+            "className": "icon-pin-checked-solid"
+        },
+        {
+            "className": "icon-pin-solid"
+        },
+        {
             "className": "icon-plus"
         },
         {
@@ -664,6 +733,9 @@
         },
         {
             "className": "icon-publish"
+        },
+        {
+            "className": "icon-question-circle"
         },
         {
             "className": "icon-rank"
@@ -705,6 +777,9 @@
             "className": "icon-send"
         },
         {
+            "className": "icon-send-off"
+        },
+        {
             "className": "icon-share"
         },
         {
@@ -714,7 +789,7 @@
             "className": "icon-smile"
         },
         {
-            "className": "icon-speacker"
+            "className": "icon-speaker"
         },
         {
             "className": "icon-sprint"
@@ -769,6 +844,9 @@
         },
         {
             "className": "icon-trophy"
+        },
+        {
+            "className": "icon-trophy-solid"
         },
         {
             "className": "icon-undo"

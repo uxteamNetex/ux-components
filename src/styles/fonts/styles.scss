@@ -45,6 +45,277 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-navigation-header {
+  &:before {
+    content: $icon-navigation-header;
+  }
+}
+.icon-modal {
+  &:before {
+    content: $icon-modal;
+  }
+}
+.icon-pin-solid {
+  &:before {
+    content: $icon-pin-solid;
+  }
+}
+.icon-pin-checked-solid {
+  &:before {
+    content: $icon-pin-checked-solid;
+  }
+}
+.icon-lock-solid {
+  &:before {
+    content: $icon-lock-solid;
+  }
+}
+.icon-link {
+  &:before {
+    content: $icon-link;
+  }
+}
+.icon-eye-off {
+  &:before {
+    content: $icon-eye-off;
+  }
+}
+.icon-competency {
+  &:before {
+    content: $icon-competency;
+  }
+}
+.icon-speaker {
+  &:before {
+    content: $icon-speaker;
+  }
+}
+.icon-notebook {
+  &:before {
+    content: $icon-notebook;
+  }
+}
+.icon-magazine {
+  &:before {
+    content: $icon-magazine;
+  }
+}
+.icon-send-off {
+  &:before {
+    content: $icon-send-off;
+  }
+}
+.icon-check-double {
+  &:before {
+    content: $icon-check-double;
+  }
+}
+.icon-multiple-classroom {
+  &:before {
+    content: $icon-multiple-classroom;
+  }
+}
+.icon-editor-flip-image {
+  &:before {
+    content: $icon-editor-flip-image;
+  }
+}
+.icon-bookmark {
+  &:before {
+    content: $icon-bookmark;
+  }
+}
+.icon-bookmark-solid {
+  &:before {
+    content: $icon-bookmark-solid;
+  }
+}
+.icon-check-shield {
+  &:before {
+    content: $icon-check-shield;
+  }
+}
+.icon-attached-file {
+  &:before {
+    content: $icon-attached-file;
+  }
+}
+.icon-check-circle {
+  &:before {
+    content: $icon-check-circle;
+  }
+}
+.icon-duplicate-search {
+  &:before {
+    content: $icon-duplicate-search;
+  }
+}
+.icon-trophy-solid {
+  &:before {
+    content: $icon-trophy-solid;
+  }
+}
+.icon-launch-external {
+  &:before {
+    content: $icon-launch-external;
+  }
+}
+.icon-question-circle {
+  &:before {
+    content: $icon-question-circle;
+  }
+}
+.icon-less-circle-solid {
+  &:before {
+    content: $icon-less-circle-solid;
+  }
+}
+.icon-loading .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path1;
+    color: rgb(17, 17, 17);
+  }
+}
+.icon-loading .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path2;
+    color: rgb(17, 17, 17);
+    opacity: 0.4;
+  }
+}
+.icon-loading .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path3;
+    color: rgb(17, 17, 17);
+    opacity: 0.5;
+  }
+}
+.icon-loading .path4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path4;
+    color: rgb(17, 17, 17);
+    opacity: 0.0500;
+  }
+}
+.icon-loading .path5 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path5;
+    color: rgb(17, 17, 17);
+    opacity: 0.6;
+  }
+}
+.icon-loading .path6 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path6;
+    color: rgb(17, 17, 17);
+    opacity: 0.1;
+  }
+}
+.icon-loading .path7 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path7;
+    color: rgb(17, 17, 17);
+    opacity: 0.7;
+  }
+}
+.icon-loading .path8 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path8;
+    color: rgb(17, 17, 17);
+    opacity: 0.2;
+  }
+}
+.icon-loading .path9 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path9;
+    color: rgb(17, 17, 17);
+    opacity: 0.8;
+  }
+}
+.icon-loading .path10 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path10;
+    color: rgb(17, 17, 17);
+    opacity: 0.3;
+  }
+}
+.icon-loading .path11 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-loading-path11;
+    color: rgb(17, 17, 17);
+    opacity: 0.9;
+  }
+}
+.icon-editor-interactive-activity {
+  &:before {
+    content: $icon-editor-interactive-activity;
+  }
+}
+.icon-editor-iframe {
+  &:before {
+    content: $icon-editor-iframe;
+  }
+}
+.icon-forbidden-shield {
+  &:before {
+    content: $icon-forbidden-shield;
+  }
+}
 .icon-pathway {
   &:before {
     content: $icon-pathway;
@@ -986,11 +1257,6 @@ mat-icon{
 .icon-user-group {
   &:before {
     content: $icon-user-group;
-  }
-}
-.icon-speacker {
-  &:before {
-    content: $icon-speacker;
   }
 }
 .icon-folder-closed-solid {
