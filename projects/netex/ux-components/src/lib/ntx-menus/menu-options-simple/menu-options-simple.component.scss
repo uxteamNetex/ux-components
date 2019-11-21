@@ -8,7 +8,7 @@
     margin: 0 2px;
     width: 48px;
     &:hover{
-      background-color: $icon-button-hover;
+      background-color: $icon-button-toolbar-hover;
     }
     &[disabled]{
       cursor: not-allowed;

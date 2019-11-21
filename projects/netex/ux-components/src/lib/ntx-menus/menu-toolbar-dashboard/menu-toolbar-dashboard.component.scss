@@ -1,5 +1,21 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
+//Botón
+.mat-icon-button{
+  &.menu-options-button{
+    &.dashboard-menu{
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      margin: 0 2px;
+      width: 48px;
+      &:hover{
+        background-color: $icon-button-toolbar-hover;
+      }
+    }
+  }
+}
+
 $block: "dashboard";
 
 .#{$block} {
