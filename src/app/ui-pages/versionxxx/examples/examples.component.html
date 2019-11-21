@@ -270,6 +270,13 @@
           <ntx-menu-options-simple></ntx-menu-options-simple>
         </div>
 
+        <div class="whatsnew__content-block">
+            <h4>Dashboard menu</h4>
+            <p class="whatsnew__content-block--text utils--text-18">In this version we launched a new type of menu, <span class="documentation-code">ntx-menu-toolbar-dashboard</span> which shows a grid of elements.</p>
+            <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menus')">link</a></p>
+            <ntx-menu-toolbar-dashboard [apps]="apps"></ntx-menu-toolbar-dashboard>    
+          </div>
+
         <h2 class="whatsnew__separation">
           <span class="whatsnew__separation--text">Bug fixing</span>
         </h2>
@@ -376,6 +383,7 @@
           <ntx-warning-dialog></ntx-warning-dialog>
           <ntx-proccess-dialog></ntx-proccess-dialog>
         </div>
+
       </div>
 
     </ntx-card-simple>

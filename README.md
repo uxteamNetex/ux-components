@@ -10,20 +10,19 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 
 COMMITS:
+
   v.X.X.X:
+
     Dialogs:
-      -Archivos modificados:
-        ux-components/src/lib/ntx-dialogs/simple-dialog/simple-dialog.component.ts
-        ux-components/src/lib/ntx-dialogs/simple-dialog/simple-dialog.component.scss
-        ux-components/src/lib/ntx-dialogs/proccess-dialog/proccess-dialog.component.ts
-        ux-components/src/lib/ntx-dialogs/proccess-dialog/proccess-dialog.component.scss
-        ux-components/src/lib/ntx-dialogs/warning-dialog/warning-dialog.component.ts
-        ux-components/src/lib/ntx-dialogs/warning-dialog/warning-dialog.component.scss
+
+      -Cambios en el ts y en el css del componente simple-dialog (ntx-simple-dialog).
+      -Cambios en el ts y en el css del componente proccess-dialog (ntx-proccess-dialog).
+      -Cambios en el ts y en el css del componente warning-dialog (ntx-warning-dialog).
+
     Card7:
-      -Archivos modificados:
-        ux-components/src/lib/ntx-cards/card7/card7.component.html
-        ux-components/src/lib/ntx-cards/card7/card7.component.scss
-        ux-components/src/lib/ntx-cards/card7/card7.component.ts
+
+      -Cambios en el html, el css y el ts del componente card7 (ntx-card7).
+
     Icons:
       -Archivos tocados:
         ux-components/src/styles/app/utils.scss
@@ -113,9 +112,11 @@ COMMITS:
 
     Menus:
       -Nuevo componente menu de opciones simple (ntx-menu-options-simple)
+      -Nuevo componente menú de dashboard (ntx-menu-toolbar-dashboard)
 
 
   v.4.0.1:
+
     Documentación añadida para los siguientes componentes:
       ntx-form-checkbox
       ntx-form-checkbox-circle
@@ -134,6 +135,7 @@ COMMITS:
 
 
   v.4.0.0:
+
     Icons:
       -Archivos tocados:
         ux-components/src/styles/app/utils.scss

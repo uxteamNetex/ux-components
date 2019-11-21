@@ -4,6 +4,7 @@ import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 import { PanelService } from '../../../shared/services/panel.service';
 import { ComponentPortal } from '@angular/cdk/portal';
 import { EntityDetailPanelComponent } from '../../detail-panel/entity-detail-panel/entity-detail-panel.component';
+import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
 export interface PeriodicElement {
   screensize: string;
@@ -24,6 +25,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ExamplesComponent implements OnInit {
 
+  apps: any[];
+  
   displayedColumns: string[] = ['screensize', 'containersize'];
   dataSource = ELEMENT_DATA;
 
@@ -37,10 +40,12 @@ export class ExamplesComponent implements OnInit {
     private tabsHeaderService: TabsHeaderService,
     private panelService: PanelService,
     private componentFactoryResolver: ComponentFactoryResolver,
-    private injector: Injector
+    private injector: Injector,
+    private dashboardService: DashboardService
   ) { }
 
   ngOnInit() {
+    this.apps = this.dashboardService.getDashboardApps();
   }
 
   counter(i: number) {

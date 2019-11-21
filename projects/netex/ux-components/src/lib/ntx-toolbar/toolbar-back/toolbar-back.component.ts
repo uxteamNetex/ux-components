@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'ntx-toolbar-back',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar-back.component.scss']
 })
 export class ToolbarBackComponent implements OnInit {
+
+  @Input() apps: any[];
 
   constructor() { }
 

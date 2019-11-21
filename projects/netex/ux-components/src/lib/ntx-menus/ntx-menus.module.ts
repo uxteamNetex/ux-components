@@ -6,9 +6,9 @@ import { NtxMenusRoutingModule } from './ntx-menus-routing.module';
 import { MenuOptionsComponent } from './menu-options/menu-options.component';
 import { MenuToolbarProfileComponent } from './menu-toolbar-profile/menu-toolbar-profile.component';
 import { MenuOptionsSimpleComponent } from './menu-options-simple/menu-options-simple.component';
+import { MenuToolbarDashboardComponent } from './menu-toolbar-dashboard/menu-toolbar-dashboard.component';
 
 import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
-
 
 @NgModule({
   imports: [
@@ -20,12 +20,14 @@ import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
   declarations: [
     MenuOptionsComponent,
     MenuToolbarProfileComponent,
-    MenuOptionsSimpleComponent
+    MenuOptionsSimpleComponent,
+    MenuToolbarDashboardComponent
   ],
   exports: [
     MenuOptionsComponent,
     MenuToolbarProfileComponent,
-    MenuOptionsSimpleComponent
+    MenuOptionsSimpleComponent,
+    MenuToolbarDashboardComponent
   ]
 })
 export class NtxMenusModule { }

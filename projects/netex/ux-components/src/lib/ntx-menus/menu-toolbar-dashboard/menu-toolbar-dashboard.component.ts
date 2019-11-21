@@ -2,12 +2,13 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'ntx-toolbar-tabs',
-  templateUrl: './toolbar-tabs.component.html',
-  styleUrls: ['./toolbar-tabs.component.scss'],
+  selector: 'ntx-menu-toolbar-dashboard',
+  templateUrl: './menu-toolbar-dashboard.component.html',
+  styleUrls: ['./menu-toolbar-dashboard.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class ToolbarTabsComponent implements OnInit {
+
+export class MenuToolbarDashboardComponent implements OnInit {
 
   @Input() apps: any[];
 
