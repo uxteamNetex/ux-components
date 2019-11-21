@@ -10,6 +10,7 @@ import {
 import { MenusDocComponent } from './documentation/menus-doc.component';
 import { MenusExamplesComponent } from './examples/menus-examples.component';
 import { MenusRoutingModule } from './menus-routing.module';
+import { MatExpansionModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { MenusRoutingModule } from './menus-routing.module';
     NtxCardsModule,
     NtxMenusModule,
     NtxListsModule,
-    MenusRoutingModule
+    MenusRoutingModule,
+    MatExpansionModule
   ],
   declarations: [
     MenusExamplesComponent,

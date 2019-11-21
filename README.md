@@ -10,7 +10,13 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ------------
 
-### v.X.X.X:
+### v.x.x.x:
+
+**Images**<br/>
+- Nuevas imágenes para el componente menu-toolbar-profile
+- src/assets/images/academic-progress-banner.png
+- src/assets/images/administrator-banner.png
+- src/assets/images/employee-banner.png
 
 **Dialogs**<br/>
 - Cambios en el ts y en el css del componente simple-dialog (*ntx-simple-dialog*).
@@ -110,6 +116,7 @@ Nuevo componente entity detail panel (*app-entity-detail-panel*)
 **Menus**<br/>
 Nuevo componente menu de opciones simple (*ntx-menu-options-simple*).
 Nuevo componente menú de dashboard (*ntx-menu-toolbar-dashboard*).
+Cambios de html, css y ts en el componente menu tollbar profile (*ntx-menu-toolbar-profile*).
 
 ------------
 ### v.4.0.1
