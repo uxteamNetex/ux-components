@@ -72,6 +72,7 @@ $block: "sidenav-inside";
       }
     }
     .#{$block}__content{
+      width: calc(100% - 32px);
       position: absolute;
       top: 201px;
       bottom: 0;

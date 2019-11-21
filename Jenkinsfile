@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run build-ux-components'
-                sh "npm run-script ng build -- --base-href /ng-${BASE_TAG}/"
+                sh "npm run-script ng build -- "
                 stash name: "dist", includes: "dist/ux-components/**"
             }
         }
@@ -52,14 +52,7 @@ pipeline {
                 sshagent(['ssh@lcloudtheme']) {
                     sh "$SSH_COMMAND docker login ${DOCKER_SNAPSHOTS_REGISTRY} -u maquinas_desarrollo -p m4qU1N4s-D3s4rr0ll0"
                     sh "$SSH_COMMAND docker pull ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}"
-                    sh "$SSH_COMMAND \"docker rm -f ng-${BASE_TAG} || true\""
-                    sh """
-                        $SSH_COMMAND docker run -d --restart=always --name ng-${BASE_TAG} \\
-                        --label traefik.port=80 \\
-                        --label traefik.frontend.rule=PathPrefixStrip:/ng-${BASE_TAG} \\
-                        --network ux-components-nebula_default \\
-                        ${DOCKER_SNAPSHOTS_REGISTRY}/${IMAGE}:${BASE_TAG}
-                    """
+                    sh "$SSH_COMMAND docker-compose -f ux-components-development/docker-compose.yml up -d"
                 }
             }
         }

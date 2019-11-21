@@ -5,6 +5,16 @@ $block: "list-two-lines";
 .#{$block}{
   padding: 0;
   .#{$block}__item{
+    .#{$block}__item--image{
+      border-radius: 50%;
+      height: 40px;
+      overflow: hidden;
+      position: relative;
+      width: 40px;
+      img{
+        height: 100%;
+      }
+    }
     .#{$block}__item--title{
       color: $color-grey-800;
       font-family: LatoBold;

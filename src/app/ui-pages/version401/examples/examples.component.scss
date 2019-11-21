@@ -16,7 +16,7 @@ $block: "whatsnew";
         position: relative;
         top: -8px;
         .#{$block}__header--texts{
-          max-width: 720px;
+          max-width: 60%;
           text-align: center;
           .#{$block}__header--title{
             color: $color-white;
@@ -37,6 +37,7 @@ $block: "whatsnew";
         }
         .#{$block}__header--image{
           bottom: 0;
+          max-width: 350px;
           position: absolute;
           right: 0;
         }
@@ -210,3 +211,23 @@ $block: "whatsnew";
   }
 }
 
+@media (max-width: 1280px) {
+  .#{$block}{
+    .card-simple{
+      .mat-card-content{
+        .#{$block}__header{
+          height: 256px;
+          .#{$block}__header--texts{
+            .#{$block}__header--title{
+              font-size: $font-size-32;
+              line-height: 40px;
+            }
+          }
+          .#{$block}__header--image{
+            max-width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

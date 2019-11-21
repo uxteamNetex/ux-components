@@ -1,0 +1,75 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "panel-entity-detail";
+
+.#{$block}{
+  position: relative;
+  .#{$block}__toolbar{
+    background-color: transparent;
+    color: $color-white;
+    font-family: Lato;
+    font-size: $font-size-16;
+    line-height: 1.19;
+    height: $toolbarHeight;
+    padding: 0 12px 0 4px;
+    position: inherit;
+    z-index: 999;
+    .hack-autofocus-disable {
+      position: absolute;
+      height: 0;
+    }
+    .#{$block}__close {
+      height: 48px;
+      margin-right: $separation-16;
+      width: 48px;
+      &:hover {
+          background-color: $icon-button-hover;
+      }
+    }
+    .#{$block}__title{
+      color: $color-white;
+      font-family: lato;
+      font-size: $font-size-16;
+      text-transform: uppercase;
+    }
+    .#{$block}__spacer{
+      flex: 1 1 auto;
+    }
+  }
+  .#{$block}__info{
+    left: 72px;
+    position: absolute;
+    top: $toolbarHeight + 54px;
+    z-index: 999;
+    .#{$block}__info--text{
+      color: $color-white;
+      font-family: latoSemibold;
+      font-size: $font-size-26;
+      margin: 0 0 8px 0;
+    }
+    .#{$block}__info--subtext{
+      color: $color-white;
+      font-family: lato;
+      font-size: $font-size-12;
+      text-transform: uppercase;
+    }
+  }
+  .#{$block}__mask{
+    background-image: linear-gradient(to top,rgba(0,0,0,.7),rgba(0,0,0,.3));
+    height: 220px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+  }
+  .#{$block}__background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

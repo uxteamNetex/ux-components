@@ -1,0 +1,7 @@
+<mat-list class="list-horizontal-icon">
+  <mat-list-item *ngFor="let text of texts" class="list-horizontal-icon__item">
+    <mat-icon class="icon-netex {{text.icon}} list-horizontal-icon__item--icon"></mat-icon>
+    <p class="list-horizontal-icon__item--title">{{text.title}}</p>
+    <p class="list-horizontal-icon__item--subtitle"> {{text.subtitle}} </p>
+  </mat-list-item>
+</mat-list>

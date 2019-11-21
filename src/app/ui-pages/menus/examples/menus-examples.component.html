@@ -1,5 +1,12 @@
 <div class="page-layout">
   <div class="page-container">
+
+    <ntx-card-simple
+      title="{{'Simple options menu' | uppercase }}"
+      subtitle="{{ '<ntx-menu-options-simple>' }}">
+        <ntx-menu-options-simple></ntx-menu-options-simple>
+    </ntx-card-simple>
+
     <ntx-card-simple
       title="{{'Options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options>' }}">
@@ -9,9 +16,13 @@
     <ntx-card-simple
       title="{{'User toolbar options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-toolbar-profile>' }}">
-        <ntx-menu-toolbar-profile>
-          <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
-        </ntx-menu-toolbar-profile>
+        <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'Dashboard menu' | uppercase }}"
+      subtitle="{{ '<ntx-menu-toolbar-dashboard>' }}">
+      <ntx-menu-toolbar-dashboard [apps]="apps"></ntx-menu-toolbar-dashboard>
     </ntx-card-simple>
   </div>
 </div>

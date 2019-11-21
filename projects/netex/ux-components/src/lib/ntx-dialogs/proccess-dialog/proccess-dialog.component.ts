@@ -15,7 +15,9 @@ export class ProccessDialogComponent implements OnInit {
   constructor(private dialog: MatDialog) { }
 
   openDialog() {
-    const dialogRef = this.dialog.open(ProccessDialogContentComponent);
+    const dialogRef = this.dialog.open(ProccessDialogContentComponent, {
+      panelClass: 'proccessDialog'
+    });
   }
 
   ngOnInit() {

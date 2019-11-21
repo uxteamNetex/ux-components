@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
 export interface ToolbarType {
   label: string;
@@ -26,9 +27,12 @@ export class ToolbarsExamplesComponent implements OnInit {
       selector: "<ntx-toolbar-tabs>"
     }];
 
-  constructor() { }
+  constructor(private dashboardService: DashboardService) { }
+
+  apps: any[];
 
   ngOnInit() {
+    this.apps = this.dashboardService.getDashboardApps();
   }
 
 }

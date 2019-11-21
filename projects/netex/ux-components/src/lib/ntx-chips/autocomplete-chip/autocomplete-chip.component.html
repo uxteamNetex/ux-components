@@ -1,0 +1,41 @@
+<form class="form-container">
+
+  <mat-form-field class="form-container__form-full-width">
+
+    <mat-chip-list #chipList>
+      <mat-chip *ngFor="let tag of tags"
+                class="form-container__form-chip"
+                [color]="color"
+                [selectable]="selectable"
+                [removable]="removable"
+                (removed)="remove(tag)">
+        <span class="form-container__form-chip--text">{{tag}}</span>
+        <button mat-icon-button
+                matChipRemove
+                class="form-container__form-chip--button"
+                *ngIf="removable">
+          <mat-icon class="icon-netex icon-cross"></mat-icon>
+        </button>
+      </mat-chip>
+      <input placeholder="Enter a tag..."
+              #tagInput
+              class="form-container__form-input"
+              [formControl]="tagCtrl"
+              [matAutocomplete]="auto"
+              [matChipInputFor]="chipList"
+              [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+              [matChipInputAddOnBlur]="addOnBlur"
+              (matChipInputTokenEnd)="add($event)">
+    </mat-chip-list>
+    <mat-autocomplete #auto="matAutocomplete"
+                      class="form-container__form-autocomplete"
+                      (optionSelected)="selected($event)">
+      <mat-option *ngFor="let tag of filteredTags | async" [value]="tag">
+        <span class="form-container__item--matched">{{ getMatchedString(tag) }}</span>
+        <span class="form-container__item--unmatched">{{ getUnmatchedString(tag) }}</span>
+      </mat-option>
+    </mat-autocomplete>
+
+  </mat-form-field>
+
+</form>

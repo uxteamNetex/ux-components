@@ -1,0 +1,30 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list-horizontal-icon";
+
+.#{$block}{
+  padding: 0;
+  .#{$block}__item{
+    height: 40px;
+    .mat-list-item-content{
+      padding: 0;
+      .#{$block}__item--icon{
+        color: $color-grey-600;
+        margin-right: 8px;
+      }
+      .#{$block}__item--title{
+        color: $color-grey-600;
+        font-family: Lato;
+        font-size: 14px;
+        margin-right: 8px;
+        width: calc(40% - 32px);
+      }
+      .#{$block}__item--subtitle{
+        color: $color-grey-700;
+        font-family: Lato;
+        font-size: 14px;
+        width: 60%;
+      }
+    }
+  }
+}

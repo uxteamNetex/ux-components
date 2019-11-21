@@ -3,11 +3,11 @@
 $block: "table-selectable";
 
 .#{$block} {
-  
+
   &__wrapper {
     border-radius: 4px;
     box-shadow: $shadow;
-    // max-height:calc(100vh - 184px); 
+    // max-height:calc(100vh - 184px);
   }
   &__container {
     overflow: auto;
@@ -26,6 +26,7 @@ $block: "table-selectable";
     .mat-cell {
       margin: 0 6px;
       color: $color-grey-700;
+      height: 48px;
     }
 
     .mat-header-cell:first-of-type,
@@ -35,7 +36,7 @@ $block: "table-selectable";
       padding-left: 16px;
       justify-content: center;
     }
-    
+
     .mat-header-cell:last-of-type,
     .mat-cell:last-of-type {
       flex: 0 0 48px;
@@ -55,13 +56,14 @@ $block: "table-selectable";
     }
 
     .mat-cell:nth-child(2) .avatar-img {
-      text-align: center;
-      height: 24px;
-      width: 24px;
+      border-radius: 50%;
       display: flex;
+      height: 24px;
       justify-content: center;
       overflow: hidden;
-      border-radius: 50%;
+      position: relative;
+      text-align: center;
+      width: 24px;
       img.mat-card-image {
         height: 100%;
         width: auto;

@@ -1,0 +1,25 @@
+<div class="panel-entity-detail">
+  <mat-toolbar class="panel-entity-detail__toolbar">
+    <button class="hack-autofocus-disable"
+            type="button"
+            mat-icon-button>
+    </button>
+    <button type="button"
+            class="panel-entity-detail__close"
+            i18n-aria-label
+            mat-icon-button
+            (click)="onCloseSidenav()">
+        <mat-icon class="icon icon-netex icon-cross"></mat-icon>
+    </button>
+    <h4 class="panel-entity-detail__title">Action panel title</h4>
+    <span class="panel-entity-detail__spacer"></span>
+    <ntx-text-icon-button [color]="'white'"></ntx-text-icon-button>
+  </mat-toolbar>
+
+  <div class="panel-entity-detail__info">
+    <p class="panel-entity-detail__info--text">Entity title</p>
+    <p class="panel-entity-detail__info--subtext">Entity subtitle</p>
+  </div>
+  <div class="panel-entity-detail__mask"></div>
+  <div class="panel-entity-detail__background" style="background-image: url(assets/images/writting.jpg)"></div>
+</div>

@@ -1,0 +1,16 @@
+<button mat-icon-button class="menu-options-button" color="accent" [matMenuTriggerFor]="menuOptions">
+  <mat-icon class="icon-netex icon-more-options"></mat-icon>
+</button>
+
+<mat-menu #menuOptions="matMenu" class="mat-menu-options-simple" [overlapTrigger]="false">
+  <button mat-menu-item>
+    <span>Option 1</span>
+  </button>
+  <button mat-menu-item disabled>
+    <span>Option 2 Disabled</span>
+  </button>
+  <button mat-menu-item>
+    <span>Option 3</span>
+  </button>
+
+</mat-menu>

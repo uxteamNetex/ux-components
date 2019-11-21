@@ -1,0 +1,10 @@
+<mat-list class="list-two-vertical-lines">
+  <mat-list-item *ngFor="let text of texts" class="list-two-vertical-lines__item">
+    <div matListAvatar class="list-two-vertical-lines__item--image">
+      <img class="utils--vertical-align" src="assets/images/badge.png" alt="badge image">
+    </div>
+    <div class="list-two-vertical-lines__item--title">
+      <span class="list-two-vertical-lines__item--title-text" matTooltip="List with a very long name and three dots to see how it works">{{text.title}}</span>
+    </div>
+  </mat-list-item>
+</mat-list>

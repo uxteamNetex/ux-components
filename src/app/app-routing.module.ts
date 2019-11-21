@@ -74,6 +74,10 @@ const routes: Routes = [
 	{
 		path: 'colours',
 		loadChildren: './ui-pages/colours/colours.module#ColoursModule'
+  },
+  {
+		path: 'detail-panel',
+		loadChildren: './ui-pages/detail-panel/detail-panel.module#DetailPanelModule'
 	},
 	{
 		path: 'dialogs',
@@ -198,6 +202,10 @@ const routes: Routes = [
   {
 		path: 'version401',
 		loadChildren: './ui-pages/version401/version401.module#Version401Module'
+  },
+  {
+		path: 'version410',
+		loadChildren: './ui-pages/version410/version410.module#Version410Module'
 	},
 	{ path: '',
 		redirectTo: '/home',

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -8,6 +8,8 @@ import { ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class ToolbarTabsComponent implements OnInit {
+
+  @Input() apps: any[];
 
   constructor() { }
 

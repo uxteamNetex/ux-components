@@ -15,7 +15,9 @@ export class SimpleDialogComponent implements OnInit {
   constructor(private dialog: MatDialog) { }
 
   openDialog() {
-    const dialogRef = this.dialog.open(SimpleDialogContentComponent);
+    const dialogRef = this.dialog.open(SimpleDialogContentComponent, {
+      panelClass: 'simpleDialog'
+    });
   }
 
   ngOnInit() {

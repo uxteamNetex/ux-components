@@ -36,6 +36,8 @@ $block: "tree-selected";
         }
       }
       .#{$block}__mat-tree-node--check{
+        overflow: hidden;
+        width: 70%;
         &.mat-radio-checked{
           .mat-radio-label{
             .mat-radio-label-content{
@@ -58,15 +60,16 @@ $block: "tree-selected";
             align-items: center;
             display: flex;
             height: 48px;
-            padding-right: 48px;
             .#{$block}__mat-tree-node--icon{
               color: $color-grey-600;
               margin-right: 4px;
             }
             .#{$block}__mat-tree-node--title{
               color: $color-grey-700;
+              display: table-cell;
               line-height: 16px;
               max-height: 32px;
+              word-wrap: break-word;
               overflow: hidden;
               display: -webkit-box;
               -webkit-line-clamp: 2;
@@ -88,6 +91,9 @@ $block: "tree-selected";
             height: 40px;
             line-height: 40px;
             width: 40px;
+            position: absolute;
+            right: 0;
+            top: -20px;
           }
         }
       }

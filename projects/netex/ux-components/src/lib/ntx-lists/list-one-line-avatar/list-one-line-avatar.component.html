@@ -1,6 +1,8 @@
 <mat-list class="list-one-line-avatar">
   <mat-list-item *ngFor="let text of texts" class="list-one-line-avatar__item">
-    <img matListAvatar class="list-one-line-avatar__item--image" src="assets/images/perfil.jpg" alt="user image">
+    <div matListAvatar class="list-one-line-avatar__item--image">
+      <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="user image">
+    </div>
     <p mat-line class="list-one-line-avatar__item--title">{{text.title}}</p>
   </mat-list-item>
 </mat-list>

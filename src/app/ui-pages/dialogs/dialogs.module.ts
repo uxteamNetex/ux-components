@@ -10,6 +10,7 @@ import {
 import { DialogsRoutingModule } from './dialogs-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
+import { MatExpansionModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { ExamplesComponent } from './examples/examples.component';
     NtxDialogsModule,
     NtxCardsModule,
     NtxButtonsModule,
-    DialogsRoutingModule
+    DialogsRoutingModule,
+    MatExpansionModule
   ],
   declarations: [
     DocumentationComponent,
