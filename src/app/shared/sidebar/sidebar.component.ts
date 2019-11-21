@@ -78,8 +78,14 @@ const TREE = [
 ];
 
 const WHATSNEWS = [
-	'version401',
-	'versionxxx'
+	{
+		linkName: 'version401',
+		label: 'version 4.0.1'
+	},
+	{
+		linkName: 'version410',
+		label: 'version 4.1.0'
+	}
 ];
 
 const CATEGORIES = {
@@ -108,7 +114,7 @@ export class SidebarComponent implements OnInit {
 	categories = CATEGORIES;
 	links: string[] = LINKS;
 	linkshelpers: string[] = LINKSHELPERS;
-	whatsnews: string[] = WHATSNEWS;
+	whatsnews: any[] = WHATSNEWS;
 
 	constructor(
 		private sidenavService: SidenavService,

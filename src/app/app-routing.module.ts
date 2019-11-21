@@ -204,8 +204,8 @@ const routes: Routes = [
 		loadChildren: './ui-pages/version401/version401.module#Version401Module'
   },
   {
-		path: 'versionxxx',
-		loadChildren: './ui-pages/versionxxx/versionxxx.module#VersionxxxModule'
+		path: 'version410',
+		loadChildren: './ui-pages/version410/version410.module#Version410Module'
 	},
 	{ path: '',
 		redirectTo: '/home',

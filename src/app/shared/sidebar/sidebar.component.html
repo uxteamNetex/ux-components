@@ -187,8 +187,8 @@
   <mat-divider class="utils--margin-bottom-8 utils--margin-top-8"></mat-divider>
   <!-- WHAT´S NEW -->
   <label class="sidebar-container__section-title">What's new</label>
-  <a class="sidebar-container__links" *ngFor="let whatsnew of whatsnews"
+  <a class="sidebar-container__links" *ngFor="let item of whatsnews"
     mat-list-item
-    [routerLink]=whatsnew
-    (click)="setPath(whatsnew)">{{ whatsnew | titlecase }}</a>
+    [routerLink]=item.linkName
+    (click)="setPath(item.linkName)">{{ item.label | titlecase }}</a>
 </mat-nav-list>

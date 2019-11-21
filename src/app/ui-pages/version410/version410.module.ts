@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../../shared/shared.module';
 
-import { VersionxxxRoutingModule } from './versionxxx-routing.module';
+import { Version410RoutingModule } from './version410-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
-import { EntityDetailPanelComponent } from './../detail-panel/entity-detail-panel/entity-detail-panel.component';
+import { EntityDetailPanelComponent } from '../detail-panel/entity-detail-panel/entity-detail-panel.component';
 
 import {
   MatTableModule,
@@ -36,7 +36,7 @@ import {
   declarations: [DocumentationComponent, ExamplesComponent, EntityDetailPanelComponent],
   imports: [
     CommonModule,
-    VersionxxxRoutingModule,
+    Version410RoutingModule,
     MatTableModule,
     MatIconModule,
     MatGridListModule,
@@ -59,4 +59,4 @@ import {
     EntityDetailPanelComponent
   ]
 })
-export class VersionxxxModule { }
+export class Version410Module { }
