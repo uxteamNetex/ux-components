@@ -23,3 +23,8 @@
     background-color: $color-orange;
   }
 }
+.label-red{
+  .label{
+    background-color: $color-error;
+  }
+}

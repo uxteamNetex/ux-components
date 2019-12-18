@@ -10,7 +10,13 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ------------
 
-### v.x.x.x:
+### v.4.1.1:
+
+**Labels**<br/>
+- Cambios en el css del componente ntx-label (*ntx-label*).
+
+------------
+### v.4.1.0:
 
 **Images**<br/>
 - Nuevas imágenes para el componente menu-toolbar-profile
