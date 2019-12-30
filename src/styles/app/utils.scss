@@ -115,6 +115,13 @@ $block: "utils";
     top: 50%;
   }
 
+  &--bold-text {
+    font-weight: bold;
+  }
+  &--align-center-text {
+    text-align: center;
+  }
+
   //Tamaños fuente
   &--text-10 {
 		font-size: $font-size-10 !important;
@@ -195,6 +202,9 @@ $block: "utils";
   }
   &--text-orange {
 		color: $color-orange !important;
+  }
+  &--text-error {
+		color: $color-error !important;
   }
 
   //Colores de fondo - Escala de grises
@@ -505,6 +515,9 @@ $block: "utils";
   //Paddings
   &--padding-0 {
 		padding: $separation-0 !important;
+  }
+  &--padding-16 {
+		padding: $separation-16 !important;
   }
 	&--padding-top-0 {
 		padding-top: $separation-0 !important;

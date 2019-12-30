@@ -198,18 +198,22 @@ const routes: Routes = [
 	{
 		path: 'user-profile-panel',
 		loadChildren: './ui-pages/user-profile-panel/user-profile-panel.module#UserProfilePanelModule'
-  },
-  {
+	},
+	{
 		path: 'version401',
 		loadChildren: './ui-pages/version401/version401.module#Version401Module'
-  },
-  {
+	},
+	{
 		path: 'version410',
 		loadChildren: './ui-pages/version410/version410.module#Version410Module'
-  },
-  {
+	},
+	{
 		path: 'version411',
 		loadChildren: './ui-pages/version411/version411.module#Version411Module'
+	},
+	{
+		path: 'version412',
+		loadChildren: './ui-pages/version412/version412.module#Version412Module'
 	},
 	{ path: '',
 		redirectTo: '/home',
