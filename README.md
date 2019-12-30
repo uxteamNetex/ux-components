@@ -10,6 +10,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.1.2:
 
+**Error pages**<br/>
+- Nuevo componente error page 401 (*ntx-error401*)
+
 **Menus**<br/>
 - Failback añadido al componente ntx-menu-toolbar-dashboard (*ntx-menu-toolbar-dashboard*).
 

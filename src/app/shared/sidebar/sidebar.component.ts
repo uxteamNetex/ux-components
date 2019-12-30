@@ -38,10 +38,11 @@ const CARDS = [
 ];
 
 const ERROR_PAGES = [
+	'error-page-401',
 	'error-page-403',
 	'error-page-404',
 	'error-page-500',
-	'error-page-503',
+	'error-page-503'
 ];
 
 const LINKSHELPERS = [
