@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menus-doc',
-  templateUrl: './menus-doc.component.html',
-  styleUrls: ['./menus-doc.component.scss']
+	selector: 'app-menus-doc',
+	templateUrl: './menus-doc.component.html',
+	styleUrls: ['./menus-doc.component.scss']
 })
 export class MenusDocComponent implements OnInit {
 
-  code1 = `
+	code1 = `
     <mat-menu #menuOptions="matMenu" [overlapTrigger]="false" class="mat-menu-options mat-menu-toolbar-profile">
 
       <mat-list class="mat-menu-options__user-info">
@@ -55,9 +55,34 @@ export class MenusDocComponent implements OnInit {
       </button>
     </mat-menu>
   `;
-  constructor(
-  ) { }
+code2 = `
+    <button mat-icon-button class="dashboard-menu menu-options-button" [matMenuTriggerFor]="menuOptions">
+      <mat-icon class="icon-netex icon-dashboard"></mat-icon>
+    </button>
+    <mat-menu #menuOptions="matMenu" [overlapTrigger]="false" class="dashboard">
+      <div class="dashboard__grid" *ngIf="apps.length; else failback">
+        <mat-grid-list cols="3" rowHeight="116px">
+          <mat-grid-tile *ngFor="let app of apps">
+            <a href="{{app.link}}">
+              <img src="{{app.icon}}">
+              <span class="utils--margin-top-12 utils--text-12 utils--truncate" matTooltip="{{app.name}}">
+                {{app.name}}
+              </span>
+            </a>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <ng-template #failback>
+        <div class="utils--basic-text utils--align-center-text utils--padding-16">
+          <p>
+            <mat-icon class="icon-netex icon-warning icon-big utils--text-error"></mat-icon>
+          </p>
+          <p class="utils--text-grey-900 utils--bold-text">Oups!</p>
+          <p class="utils--text-14 utils--text-grey-700">{{failbackMsg}}</p>
+        </div>
+      </ng-template>
+    </mat-menu>`;
+constructor() { }
 
-  ngOnInit() {
-  }
+ngOnInit() {}
 }

@@ -1,0 +1,33 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.1.2: New error pages, failback for apps panel and more...</h1>
+          <p class="whatsnew__header--subtitle">30 december 2019</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket-3.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our monthly update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Menu dashboard with failback</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, we have added a failback for the <span class="documentation-code">ntx-menu-toolbar-dashboard</span> component and html changes have been affected. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('labels')">link</a></p>
+          <ntx-menu-toolbar-dashboard [apps]="{}"></ntx-menu-toolbar-dashboard>
+        </div>
+
+      </div>
+
+    </ntx-card-simple>
+  </div>
+</div>
