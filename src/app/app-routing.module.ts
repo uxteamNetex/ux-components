@@ -74,8 +74,8 @@ const routes: Routes = [
 	{
 		path: 'colours',
 		loadChildren: './ui-pages/colours/colours.module#ColoursModule'
-  },
-  {
+	},
+	{
 		path: 'detail-panel',
 		loadChildren: './ui-pages/detail-panel/detail-panel.module#DetailPanelModule'
 	},
@@ -86,10 +86,14 @@ const routes: Routes = [
 	{
 		path: 'drag-and-drop',
 		loadChildren: './ui-pages/drag-and-drop/drag-and-drop.module#DragAndDropModule'
-  },
-  {
+	},
+	{
 		path: 'empty-pages',
 		loadChildren: './ui-pages/empty-pages/empty-pages.module#EmptyPagesModule'
+	},
+	{
+		path: 'error-page-401',
+		loadChildren: './ui-pages/error-page-401/error-page-401.module#ErrorPage401Module'
 	},
 	{
 		path: 'error-page-403',

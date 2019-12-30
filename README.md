@@ -8,7 +8,10 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
-### v.4.1.X:
+### v.4.1.2:
+
+**Error pages**<br/>
+- Nuevo componente error page 401 (*ntx-error401*)
 
 **Menus**<br/>
 - Failback añadido al componente ntx-menu-toolbar-dashboard (*ntx-menu-toolbar-dashboard*).

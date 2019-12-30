@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ntx-error404',
-  templateUrl: './error404.component.html',
-  styleUrls: ['./error404.component.scss']
+	selector: 'ntx-error404',
+	templateUrl: './error404.component.html',
+	styleUrls: ['./error404.component.scss']
 })
 export class Error404Component implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }
