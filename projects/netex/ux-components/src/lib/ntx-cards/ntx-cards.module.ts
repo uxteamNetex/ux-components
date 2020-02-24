@@ -24,6 +24,7 @@ import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 import { NtxListsModule } from '../ntx-lists/ntx-lists.module';
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.module';
+import { Card15Component } from './card15/card15.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.modul
 		Card11Component,
 		Card12Component,
 		Card13Component,
-		Card14Component
+		Card14Component,
+		Card15Component,
 	],
 	exports: [
 		CardSimpleComponent,
@@ -69,7 +71,8 @@ import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.modul
 		Card11Component,
 		Card12Component,
 		Card13Component,
-		Card14Component
+		Card14Component,
+		Card15Component,
 	]
 })
 export class NtxCardsModule { }
