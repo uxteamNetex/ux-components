@@ -1,0 +1,42 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 620px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 44px 0 20px;
+    box-sizing: border-box;
+    &.next {
+        opacity: 0.6;
+        span.icon-check-circle-solid, .link{
+            display: none;
+        }
+    }
+    &.current {
+        box-shadow: 0 3px 6px rgba(0,0,0,.16);
+        span.icon-check-circle-solid {
+            display: none;
+        }
+    }
+    &.completed {
+        span.icon-editor-circle, .link{
+            display: none;
+        }
+    }
+    .icon-check-circle-solid {
+        color: $color-primary;
+    }
+    .icon-editor-circle {
+        color: $color-grey-600;
+    }
+    .text{
+        padding: 0 20px;
+        font-family: LatoMedium;
+    }
+    .link {
+        margin-left: auto;
+        font-family: Lato;
+    }
+}
