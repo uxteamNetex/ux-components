@@ -4,10 +4,19 @@
     <p class="documentation-text">
       <span class="documentation-code">ntx-basic-table</span> is a component based on Angular data-table that can be used to display rows of data.
     </p>
-
     <h1 class="utils--text-32 utils--margin-top-60 utils--margin-bottom-0">Configuration</h1>
     <p class="documentation-text">
         The content of the table is being shown in its own .ts file.
     </p>
+    <p class="documentation-text">
+        Also you can customize <span class="documentation-code">ntx-basic-table</span> with a flat design through <span class="documentation-code">@Input</span> property like this: 
+        <span class="documentation-code">&lt;ntx-basic-table [style]='flat'&gt;</span>
+      </p>
+      <p>
+        This 'flat design' hides paginator, removes border shadow and background color.
+      </p>
+    <div>
+    <ntx-basic-table [style]="'flat'"></ntx-basic-table>
+    </div>
   </div>
 </div>

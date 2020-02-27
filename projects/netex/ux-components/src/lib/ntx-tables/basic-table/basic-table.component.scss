@@ -6,6 +6,12 @@ $block: "mat-basic-table";
   border-radius: 4px;
   box-shadow: $shadow;
   position: relative;
+  &.flat {
+    box-shadow: none;
+    table.mat-basic-table {
+      background-color: transparent;
+    }
+  }
   .table-container__table{
     min-width: 500px;
     overflow-x: auto;
