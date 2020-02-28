@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="header">
+    <div class="text utils--text-20 utils--text-grey-800 utils--truncate">{{data.title}}</div>
+    <a routerLink=".">
+      <span class="icon-netex utils--text-24" [ngClass]="data.icon"></span>
+    </a>
+  </div>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+</div>

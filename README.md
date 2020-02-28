@@ -13,6 +13,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Cards**<br/>
 - Nuevo componente parametrizado card15 (*ntx-card15*)
 - Nuevo componente parametrizado card16 (*ntx-card16*)
+- Nuevo componente parametrizado card17 (*ntx-card17*)
 
 ### v.4.1.2:
 

@@ -12,7 +12,7 @@ $lato-font-path: "/assets/fonts/Lato" !default;
   text-rendering:optimizeLegibility
 }
 @font-face{
-  font-family:LatoBlack;
+  font-family:LatoBlackItalic;
   src:url('#{$lato-font-path}/Lato-BlackItalic.eot');
   src:url('#{$lato-font-path}/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
   url('#{$lato-font-path}/Lato-BlackItalic.woff2') format('woff2'),

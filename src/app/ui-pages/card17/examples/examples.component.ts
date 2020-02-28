@@ -3,20 +3,14 @@ import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 import { MatGridList } from '@angular/material';
 import { Observable } from 'rxjs';
 
-const DATA = [
-	{
-		description: 'Add a competency framework and at least one competency',
-		state: 'completed'
-	},
-	{
-		description: 'Create a job role and assign it to several people',
-		state: 'current'
-	},
-	{
-		description: 'Another step to realize',
-		state: 'next'
-	}
-];
+const DATA1 = {
+	title: 'Título del panel 1',
+	icon: 'icon-plus-circle'
+};
+const DATA2 = {
+	title: 'Título del panel 2',
+	icon: 'icon-pencil'
+};
 
 @Component({
 	selector: 'app-examples',
@@ -25,11 +19,13 @@ const DATA = [
 })
 export class ExamplesComponent implements OnInit {
 
-	data: any[];
+	data1: Object;
+	data2: Object;
 
 	constructor() {
-		this.data = DATA;
-	 }
+		this.data1 = DATA1;
+		this.data2 = DATA2;
+	}
 
 	ngOnInit() {
 	}
