@@ -40,6 +40,9 @@ $block: "list-one-line-options";
             font-weight: normal;
             width: calc(100% - 248px);
           }
+          .#{$block}__item--level {
+            margin: 0 16px;
+          }
           .progress-bar{
             margin-right: 4px;
           }
