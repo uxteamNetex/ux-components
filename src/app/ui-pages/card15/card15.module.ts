@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { MatGridListModule } from '@angular/material';
+import { MatGridListModule, MatExpansionModule } from '@angular/material';
 import { NtxCardsModule } from '@netex/ux-components';
 import { DocumentationComponent } from '../card15/documentation/documentation.component';
 import { ExamplesComponent } from '../card15/examples/examples.component';
@@ -13,7 +13,8 @@ import { Card15RoutingModule } from './card15-routing.module';
 		CommonModule,
 		Card15RoutingModule,
 		NtxCardsModule,
-		MatGridListModule
+		MatGridListModule,
+		MatExpansionModule
 	],
 	exports: [
 		MatGridListModule

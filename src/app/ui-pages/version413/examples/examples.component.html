@@ -1,0 +1,50 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.1.3: New card components, new flat style for basic table and more...</h1>
+          <p class="whatsnew__header--subtitle">XX march 2020</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket-3.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our periodic update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>New user profile card</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, we have added a new card to show information about a user.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card15/documentation" (click)="setPath('cards')">link</a></p>
+          <ntx-card15 [user] ="user"></ntx-card15>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New widget card</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, we have added a new card like a widget including text and a action link.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card16/documentation" (click)="setPath('cards')">link</a></p>
+          <div class="utils--bc-grey-200 utils--padding-16">
+            <ntx-card16 [data]="data" *ngFor="let data of data"></ntx-card16>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New generic card</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, we have added a new card with title and action icon to contain any other component/s.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card17/documentation" (click)="setPath('cards')">link</a></p>
+          <ntx-card17 [data]="data1">
+            /* Add any component or components here */
+          </ntx-card17>
+        </div>
+      </div>
+
+    </ntx-card-simple>
+  </div>
+</div>
