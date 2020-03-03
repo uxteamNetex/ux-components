@@ -64,6 +64,18 @@ const routes: Routes = [
 		loadChildren: './ui-pages/card14/card14.module#Card14Module'
 	},
 	{
+		path: 'card15',
+		loadChildren: './ui-pages/card15/card15.module#Card15Module'
+	},
+	{
+		path: 'card16',
+		loadChildren: './ui-pages/card16/card16.module#Card16Module'
+	},
+	{
+		path: 'card17',
+		loadChildren: './ui-pages/card17/card17.module#Card17Module'
+	},
+	{
 		path: 'cards',
 		loadChildren: './ui-pages/cards/cards.module#CardsModule'
 	},
@@ -218,6 +230,10 @@ const routes: Routes = [
 	{
 		path: 'version412',
 		loadChildren: './ui-pages/version412/version412.module#Version412Module'
+	},
+	{
+		path: 'version413',
+		loadChildren: './ui-pages/version413/version413.module#Version413Module'
 	},
 	{ path: '',
 		redirectTo: '/home',

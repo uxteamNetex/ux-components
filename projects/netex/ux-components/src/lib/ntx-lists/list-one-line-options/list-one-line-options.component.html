@@ -6,7 +6,12 @@
     <div class="list-one-line-options__item--content">
       <h4 mat-line class="list-one-line-options__item--title">{{text.title}}</h4>
       <ntx-progress-bar [color]="'primary'" [value]="'52'"></ntx-progress-bar>
-      <ntx-menu-options></ntx-menu-options>
+      <div *ngIf="level; else optionsBlock" class="list-one-line-options__item--level">
+        <span>{{level}}</span>
+      </div>
+      <ng-template #optionsBlock>
+        <ntx-menu-options></ntx-menu-options>
+      </ng-template>
     </div>
   </mat-list-item>
 </mat-list>

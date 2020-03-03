@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 import { ViewEncapsulation } from '@angular/core';
 
@@ -16,18 +16,20 @@ export class BasicTableComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
+  @Input() style: string;
+
   constructor() { }
 
   ngOnInit() {
     this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
+    this.dataSource.paginator = this.style == 'flat'? null : this.paginator;
   }
 
 }
 
 export interface PeriodicElement {
   name: string;
-  project: string;
+  project: string;     
   location: string;
   modification: string;
   state: string;

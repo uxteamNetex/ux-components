@@ -34,6 +34,9 @@ const CARDS = [
 	'card12',
 	'card13',
 	'card14',
+	'card15',
+	'card16',
+	'card17',
 	'cards'
 ];
 
@@ -94,6 +97,10 @@ const WHATSNEWS = [
 	{
 		linkName: 'version412',
 		label: 'version 4.1.2'
+	},
+	{
+		linkName: 'version413',
+		label: 'version 4.1.3'
 	}
 ];
 

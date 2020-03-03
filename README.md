@@ -8,6 +8,14 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
+### v.4.1.3:
+
+**Cards**<br/>
+- Nuevo componente parametrizado card15 (*ntx-card15*)
+- Nuevo componente parametrizado card16 (*ntx-card16*)
+- Nuevo componente parametrizado card17 (*ntx-card17*)
+- Modificación del  componente ntx-list-one-line-option (*ntx-list-one-line-options*) para mostrar opciones o nivel de competencia.
+
 ### v.4.1.2:
 
 **Error pages**<br/>

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-lists-doc',
-  templateUrl: './lists-doc.component.html',
-  styleUrls: ['./lists-doc.component.scss']
+	selector: 'app-lists-doc',
+	templateUrl: './lists-doc.component.html',
+	styleUrls: ['./lists-doc.component.scss']
 })
 export class ListsDocComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  code1 = `
+	code1 = `
     <mat-list-item *ngFor="let text of texts" class="list-one-line-avatar__item">
       <div matListAvatar class="list-one-line-avatar__item--image">
         <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="user image">
@@ -17,7 +17,7 @@ export class ListsDocComponent implements OnInit {
       <p mat-line class="list-one-line-avatar__item--title">{{text.title}}</p>
     </mat-list-item>
   ` ;
-  code2 = `
+	code2 = `
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
     $block: "list-one-line-avatar";
@@ -49,7 +49,7 @@ export class ListsDocComponent implements OnInit {
       }
     }
   ` ;
-  code3 = `
+	code3 = `
     <mat-list-item *ngFor="let text of texts" class="list-two-lines__item">
       <div matListAvatar class="list-two-lines__item--image">
         <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="user image">
@@ -58,7 +58,7 @@ export class ListsDocComponent implements OnInit {
       <p mat-line class="list-two-lines__item--subtitle"> {{text.subtitle}} </p>
     </mat-list-item>
   ` ;
-  code4 = `
+	code4 = `
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
     $block: "list-two-lines";
@@ -89,6 +89,54 @@ export class ListsDocComponent implements OnInit {
     }
   ` ;
 
-  ngOnInit() {
+code5 = `
+  <mat-list class="list-one-line-options">
+  <mat-list-item *ngFor="let text of texts" class="list-one-line-options__item">
+    <div matListAvatar class="list-one-line-options__item--image">
+      <span class="list-one-line-options__item--initial">L</span>
+    </div>
+    <div class="list-one-line-options__item--content">
+      <h4 mat-line class="list-one-line-options__item--title">{{text.title}}</h4>
+      <ntx-progress-bar [color]="'primary'" [value]="'52'"></ntx-progress-bar>
+      <div *ngIf="level; else optionsBlock" class="list-one-line-options__item--level">
+        <span>{{level}}</span>
+      </div>
+      <ng-template #optionsBlock>
+        <ntx-menu-options></ntx-menu-options>
+      </ng-template>
+    </div>
+  </mat-list-item>
+</mat-list>`;
+
+code6 = `
+  import { Component, OnInit, Input } from '@angular/core';
+  import { ViewEncapsulation } from '@angular/core';
+
+  export interface Section {
+    title: string;
   }
+
+  @Component({
+    selector: 'ntx-list-one-line-options',
+    templateUrl: './list-one-line-options.component.html',
+    styleUrls: ['./list-one-line-options.component.scss'],
+    encapsulation: ViewEncapsulation.None
+  })
+
+  export class ListOneLineOptionsComponent implements OnInit {
+
+    @Input() level: string;
+    constructor() { }
+
+    texts: Section[] = [
+      {
+        title: 'List name with a very large name and three dots'
+      }
+    ];
+
+    ngOnInit() { }
+  }`;
+
+	ngOnInit() {
+	}
 }
