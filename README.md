@@ -16,6 +16,11 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Nuevo componente parametrizado card17 (*ntx-card17*)
 - Modificación del  componente ntx-list-one-line-option (*ntx-list-one-line-options*) para mostrar opciones o nivel de competencia.
 
+**Toolbars**<br/>
+- Modificación del orden de los iconos(avatar, settings y menú de aplicaciones)
+
+------------
+
 ### v.4.1.2:
 
 **Error pages**<br/>
