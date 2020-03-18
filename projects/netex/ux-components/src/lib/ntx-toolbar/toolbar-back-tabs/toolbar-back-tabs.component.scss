@@ -1,0 +1,38 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "toolbar-back-tabs";
+
+.#{$block} {
+    box-shadow: $shadow-navbar;
+    &__header {
+      height: 56px;
+      button {
+        height: 48px;
+        margin: 0 2px;
+        width: 48px;
+        &:hover {
+          background-color: $icon-button-toolbar-hover;
+        }
+      }
+      &--spacer {
+        flex: 1 1 auto;
+      }
+    }
+    &__tabs {
+      height: 48px;
+      .tabs-navegation.mat-tab-nav-bar {
+        .tabs-navegation__tab {
+          color: $color-white;
+          &:hover {
+            background-color: $icon-button-toolbar-hover;
+          }
+        }
+        .tabs-navegation__tab.mat-tab-label-active:hover {
+          color:$color-white;
+        }
+        .mat-ink-bar {
+          background-color: $color-white;
+        }
+      }
+    }
+}
