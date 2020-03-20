@@ -27,8 +27,16 @@ export class ToolbarsExamplesComponent implements OnInit {
 			selector: "<ntx-toolbar-tabs>"
 		},
 		{
-			label: "toolbar back tabs",
+			label: "toolbar back tabs without action button",
 			selector: "<ntx-toolbar-back-tabs>"
+		},
+		{
+			label: "toolbar back tabs with action button",
+			selector: "<ntx-toolbar-back-tabs action='launch'>"
+		},
+		{
+			label: "toolbar back tabs with another action button",
+			selector: "<ntx-toolbar-back-tabs action='finish'>"
 		}];
 
 	constructor(private dashboardService: DashboardService) { }

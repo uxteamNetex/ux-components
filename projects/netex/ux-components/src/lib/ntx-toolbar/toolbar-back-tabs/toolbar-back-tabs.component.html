@@ -6,7 +6,22 @@
     </button>
     <span class="utils--margin-left-18">Page title</span>
     <span class="toolbar-back-tabs__header--spacer"></span>
-    <button mat-icon-button class="toolbar-back-tabs__btntoolbar-back-tabs">
+    <button 
+      mat-stroked-button   
+      *ngIf="action === 'finish'"
+      (click)="onClickButton()" 
+      class="utils--uppercase">
+      finish evaluation
+    </button>
+    <button
+      mat-stroked-button 
+      *ngIf="action === 'launch'"
+      (click)="onClickButton()" 
+      class="utils--uppercase">
+      launch evaluation
+      <mat-icon class="icon-netex icon-arrow-right"></mat-icon>  
+    </button>
+    <button mat-icon-button>
       <mat-icon class="icon-netex icon-gear-solid"></mat-icon>
     </button>
     <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>

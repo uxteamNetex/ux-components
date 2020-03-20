@@ -7,11 +7,17 @@ $block: "toolbar-back-tabs";
     &__header {
       height: 56px;
       button {
-        height: 48px;
-        margin: 0 2px;
-        width: 48px;
         &:hover {
           background-color: $icon-button-toolbar-hover;
+        }
+        &[mat-icon-button] {
+          height: 48px;
+          margin: 0 2px;
+          width: 48px;
+        }
+        &[mat-stroked-button] {
+          margin-right: 8px;
+          border-color: $color-white;
         }
       }
       &--spacer {
