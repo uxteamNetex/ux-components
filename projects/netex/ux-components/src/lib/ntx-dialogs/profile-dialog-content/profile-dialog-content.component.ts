@@ -16,6 +16,5 @@ export class ProfileDialogContentComponent implements OnInit {
 	) {}
 
 	ngOnInit() {
-		console.log('aaaaaa', this.user);
 	}
 }
