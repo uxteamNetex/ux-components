@@ -1,4 +1,4 @@
-<mat-dialog-content class="proccess-dialog-content">
+<mat-dialog-content class="profile-dialog-content">
     <div class="wrapper">
         <div class="header" [ngStyle]="{'background-image':'url(' + user.background + ')'}">
           <div class="avatar" [ngStyle]="{'background-image':'url(' + user.avatar + ')'}"></div>
@@ -9,18 +9,11 @@
           <span matTooltip="{{user.phone}}">{{user.phone}}</span>
           <span matTooltip="{{user.location}}">{{user.location}}</span>
         </div>
-        <div class="actions" *ngIf="user.actions.length">
-          <ul>
-            <li *ngFor="let action of user.actions">
-              <a routerLink="{{action.link}}">{{action.label}}</a>
-            </li>
-          </ul>
-        </div>
       </div>
 </mat-dialog-content>
   
-<mat-dialog-actions class="proccess-dialog-actions">
-    <button mat-button color="accent" mat-dialog-close class="proccess-dialog-actions__button">Cancel</button>
-    <button mat-button color="primary" [mat-dialog-close]="true"  class="proccess-dialog-actions__button">Action</button>
+<mat-dialog-actions align="end" class="profile-dialog-actions">
+    <button mat-button color="accent" mat-dialog-close class="proccess-dialog-actions__button  utils--uppercase">Cancel</button>
+    <button mat-button color="primary" [mat-dialog-close]="true"  class="proccess-dialog-actions__button  utils--uppercase">go to profile</button>
 </mat-dialog-actions>
   

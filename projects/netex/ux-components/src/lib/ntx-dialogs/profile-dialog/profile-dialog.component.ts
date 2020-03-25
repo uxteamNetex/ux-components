@@ -9,28 +9,13 @@ const USER = {
 	name : 'Bernice Greaves',
 	mail : 'berni.graves@netexlearning.com',
 	phone : '+34 765432190',
-	location : 'A Coruña',
-	actions: [
-		{
-			label: 'Profile',
-			link: '#'
-		},
-		{
-			label: 'Evaluation',
-			link: '#'
-		},
-		{
-			label: 'Another action',
-			link: '#'
-		}
-	]
+	location : 'A Coruña'
 };
 
 @Component({
 	selector: 'ntx-profile-dialog',
 	templateUrl: './profile-dialog.component.html',
-	styleUrls: ['./profile-dialog.component.scss'],
-	encapsulation: ViewEncapsulation.None
+	styleUrls: ['./profile-dialog.component.scss']
 })
 export class ProfileDialogComponent implements OnInit {
 
@@ -43,6 +28,7 @@ export class ProfileDialogComponent implements OnInit {
 
 	openDialog() {
 		const dialogRef = this.dialog.open(ProfileDialogContentComponent, {
+			autoFocus: false,
 			panelClass: 'profileDialog',
 			data: this.user
 		});
