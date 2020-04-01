@@ -89,6 +89,14 @@ $block: "utils";
     margin: 0;
     text-transform: uppercase;
   }
+  &--panel-section-title {
+    color: $color-grey-800;
+    font-family: LatoSemibold;
+    font-size: $font-size-16;
+    line-height: 22px;
+    margin: 0;
+    text-transform: uppercase;
+  }
   &--basic-text {
     color: $color-grey-600;
     font-family: lato;
@@ -100,7 +108,7 @@ $block: "utils";
 	&--uppercase {
 		text-transform: uppercase;
   }
-  
+
   &--truncate {
 		white-space: nowrap;
 		overflow: hidden;
