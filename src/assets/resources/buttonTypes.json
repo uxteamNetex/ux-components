@@ -26,5 +26,9 @@
     {
       "label": "speed dial",
       "selector": "<ntx-fab-speed-dial-button>"
-  }
+    },
+    {
+      "label": "link",
+      "selector": "<ntx-link-button>"
+    }
 ]

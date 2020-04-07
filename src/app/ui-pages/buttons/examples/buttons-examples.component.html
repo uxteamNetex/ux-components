@@ -85,7 +85,10 @@
       <div *ngIf="type.label==='speed dial'">
         <ntx-fab-speed-dial-button [color]="'primary'"></ntx-fab-speed-dial-button>
       </div>
-
+      <div *ngIf="type.label==='link'">
+        <ntx-link-button>acción</ntx-link-button>
+        <!-- <ntx-link-button [rLink]="'path/to/route'" showIcon="true">acción</ntx-link-button> -->
+      </div>
     </ntx-card-simple>
 
   </div>
