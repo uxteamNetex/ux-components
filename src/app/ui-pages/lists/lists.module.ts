@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 import {
-  NtxCardsModule,
-  NtxMenusModule,
-  NtxListsModule
+	NtxCardsModule,
+	NtxMenusModule,
+	NtxListsModule
 } from '@netex/ux-components';
 
 import { ListsRoutingModule } from './lists-routing.module';
@@ -15,17 +15,17 @@ import { ListsExamplesComponent } from './examples/lists-examples.component';
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ListsRoutingModule,
-    NtxCardsModule,
-    NtxMenusModule,
-    NtxListsModule,
-    MatExpansionModule
-  ],
-  declarations: [
-    ListsExamplesComponent,
-    ListsDocComponent
-  ]
+	imports: [
+		CommonModule,
+		ListsRoutingModule,
+		NtxCardsModule,
+		NtxMenusModule,
+		NtxListsModule,
+		MatExpansionModule
+	],
+	declarations: [
+		ListsExamplesComponent,
+		ListsDocComponent
+	]
 })
 export class ListsModule { }

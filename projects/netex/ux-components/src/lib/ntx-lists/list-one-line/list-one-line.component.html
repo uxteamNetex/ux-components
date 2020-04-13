@@ -1,0 +1,17 @@
+<div class="list-one-line">
+  <div class="list-one-line__item" *ngFor="let item of list">
+    <img 
+      *ngIf="item.avatar; else elseBlock"
+      src="{{item.avatar}}"
+      alt="{{item.label + '&#32;image'}}">
+    <ng-template #elseBlock>
+      <span 
+        [style.background-color]="item.color"
+        class="list-one-line__item--alias">{{item.label | slice:0:1}}</span>
+    </ng-template>
+    <div class="list-one-line__item--text utils--text-grey-800 utils--truncate">
+      <span matTooltip="{{item.label}}">{{item.label}}</span>
+    </div>
+  </div>
+</div>
+
