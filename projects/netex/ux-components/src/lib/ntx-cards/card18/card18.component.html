@@ -1,0 +1,22 @@
+<div class="card18 utils--padding-16">
+  <div class="card18__avatar">
+    <img 
+      *ngIf="data.avatar; else elseBlock"
+      src="{{data.avatar}}"
+      alt="{{data.title + '&#32;image'}}">
+    <ng-template #elseBlock>
+      <span 
+        [style.background-color]="data.color"
+        class="card18__avatar--alias">{{data.title | slice:0:1}}</span>
+    </ng-template>
+  </div>
+  <div class="card18__title utils--truncate">
+    <span matTooltip="{{data.title}}" class="utils--text-18 utils--text-grey-800">{{data.title}}</span>
+  </div>
+  <div class="card18__progress-bar utils--padding-right-16">
+    <ntx-progress-bar value="{{data.buffer}}"></ntx-progress-bar>
+  </div>
+  <div class="card18__subtitle utils--truncate">
+    <span matTooltip="{{data.subtitle}}" class="utils--text-14 utils--text-grey-600">{{data.subtitle}}</span>
+  </div>
+</div>

@@ -37,6 +37,7 @@ const CARDS = [
 	'card15',
 	'card16',
 	'card17',
+	'card18',
 	'cards'
 ];
 
