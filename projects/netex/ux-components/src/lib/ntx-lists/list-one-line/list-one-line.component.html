@@ -1,5 +1,5 @@
 <div class="list-one-line">
-  <div class="list-one-line__item" *ngFor="let item of list">
+  <div class="list-one-line__item" *ngFor="let item of data">
     <img 
       *ngIf="item.avatar; else elseBlock"
       src="{{item.avatar}}"
