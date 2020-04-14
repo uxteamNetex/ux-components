@@ -1,0 +1,11 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+a.link-button {
+    text-decoration: none;
+    &:link,&:visited,&:active {
+        color: $color-primary;
+    }
+    &:hover {
+        color: $color-primary-hover;
+    }
+}

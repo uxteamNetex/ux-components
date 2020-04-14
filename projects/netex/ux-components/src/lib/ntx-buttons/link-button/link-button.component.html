@@ -1,4 +1,4 @@
-<a [routerLink]="rLink ? rLink : [] " (click)="onClickLink()">
+<a class="link-button" [routerLink]="rLink ? rLink : [] " (click)="onClickLink()">
     <span *ngIf="showIcon" class="utils--margin-right-4">+</span>
     <ng-content></ng-content>
 </a>
