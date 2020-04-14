@@ -9,27 +9,30 @@ import { MenuOptionsSimpleComponent } from './menu-options-simple/menu-options-s
 import { MenuToolbarDashboardComponent } from './menu-toolbar-dashboard/menu-toolbar-dashboard.component';
 
 import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
+import { MenuLinkComponent } from './menu-link/menu-link.component';
 
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NtxSharedModule,
-    NtxMenusRoutingModule,
-    NtxButtonsModule
-  ],
-  declarations: [
-    MenuOptionsComponent,
-    MenuToolbarProfileComponent,
-    MenuOptionsSimpleComponent,
-    MenuToolbarDashboardComponent
-  ],
-  exports: [
-    MenuOptionsComponent,
-    MenuToolbarProfileComponent,
-    MenuOptionsSimpleComponent,
-    MenuToolbarDashboardComponent
-  ]
+	imports: [
+		CommonModule,
+		NtxSharedModule,
+		NtxMenusRoutingModule,
+		NtxButtonsModule
+	],
+	declarations: [
+		MenuOptionsComponent,
+		MenuToolbarProfileComponent,
+		MenuOptionsSimpleComponent,
+		MenuToolbarDashboardComponent,
+		MenuLinkComponent
+	],
+	exports: [
+		MenuOptionsComponent,
+		MenuToolbarProfileComponent,
+		MenuOptionsSimpleComponent,
+    MenuToolbarDashboardComponent,
+    MenuLinkComponent
+	]
 })
 export class NtxMenusModule { }
