@@ -63,6 +63,7 @@ const PANELS =  [
 
 const PROGRESS = [
 	'progress-bar',
+	'progress-bar-level',
 	'progress-spinner'
 ];
 

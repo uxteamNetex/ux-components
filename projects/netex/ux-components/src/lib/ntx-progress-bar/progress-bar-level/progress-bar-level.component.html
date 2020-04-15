@@ -1,0 +1,13 @@
+<div class="progress-bar-level">
+  <div
+    *ngIf="requiredValue"
+    class="progress-bar-level__required-value-mark utils--margin-bottom-4"
+    [style.left]="requiredValue + '%'"
+  ></div>
+  <mat-progress-bar
+    class="progress-bar-level__bar"
+    [ngClass]="requiredValue ? value >= requiredValue ? 'success' : 'error' : color"
+    [value]="value"
+    [mode]="mode"
+  ></mat-progress-bar>
+</div>

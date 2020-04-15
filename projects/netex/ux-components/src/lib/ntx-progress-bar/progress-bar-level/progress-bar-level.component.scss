@@ -1,0 +1,40 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "progress-bar-level";
+
+.#{$block} {
+
+  .#{$block}__required-value-mark {
+    width: 0;
+    position: relative;
+    transform: translateX(-5px);
+    border-width: 5px 5px 0 5px;
+    border-color: $color-grey-400 transparent transparent;
+    border-style: solid;
+    transition: left 0.25s ease-in-out;
+  }
+
+  .#{$block}__bar {
+    &.mat-progress-bar {
+      border-radius: 2px;
+      height: 4px;
+
+      &.success {
+        .mat-progress-bar-fill:after {
+          background-color: $color-success;
+        }
+      }
+
+      &.error {
+        .mat-progress-bar-fill:after {
+          background-color: $color-error;
+        }
+      }
+
+      .mat-progress-bar-buffer {
+        background-color: $color-grey-200;
+      }
+    }
+  }
+
+}
