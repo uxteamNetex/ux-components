@@ -177,7 +177,7 @@ const routes: Routes = [
 	},
 	{
 		path: 'progress-bar-level',
-		loadChildren: './ui-pages/progress-bar/progress-bar.module#ProgressBarModule'
+		loadChildren: './ui-pages/progress-bar-level/progress-bar-level.module#ProgressBarLevelModule'
 	},
 	{
 		path: 'progress-spinner',
