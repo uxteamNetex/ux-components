@@ -17,7 +17,7 @@ $block: "progress-bar-level";
   .#{$block}__bar {
     &.mat-progress-bar {
       border-radius: 2px;
-      height: 4px;
+      // height: 4px;
 
       &.success {
         .mat-progress-bar-fill:after {

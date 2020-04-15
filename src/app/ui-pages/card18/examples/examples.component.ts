@@ -12,28 +12,40 @@ export class ExamplesComponent implements OnInit {
 
 	data1: any = {
 			avatar: undefined,
-			buffer: 40,
+			progress: {
+				value: 80,
+				requiredValue: 50
+			},
 			color: '#E7575B',
 			title: 'Customer oriented' ,
 			subtitle: 'Europe division > 2019 competencies'
 	};
 	data2: any = {
 		avatar: 'assets/images/app-catalogue.png',
-		buffer: 90,
+		progress: {
+			value: 42,
+			requiredValue: 65
+		},
 		color: '#5cce88',
 		title: 'Leadership' ,
 		subtitle: 'Europe division > 2019 competencies'
 	};
 	data3: any = {
 		avatar: 'assets/images/background-profile-header.jpg',
-		buffer: 60,
+		progress: {
+			value: 85,
+			requiredValue: 65
+		},
 		color: '#1D5D93',
 		title: 'Critical thinking & problem solving' ,
 		subtitle: 'Europe division > 2019 competencies'
 	};
 	data4: any = {
 		avatar: undefined,
-		buffer: 20,
+		progress: {
+			value: 77,
+			requiredValue: 90
+		},
 		color: '#5cce88',
 		title: 'Verbal communication' ,
 		subtitle: 'Europe division > 2019 competencies'

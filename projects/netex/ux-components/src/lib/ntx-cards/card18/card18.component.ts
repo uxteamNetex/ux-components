@@ -2,7 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export interface Data {
 	avatar: string;
-	buffer: number;
+	progress: {
+		value: number,
+		requiredValue: number
+	};
 	color: string;
 	title: string;
 	subtitle: string;

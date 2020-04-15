@@ -13,8 +13,12 @@
   <div class="card18__title utils--truncate">
     <span matTooltip="{{data.title}}" class="utils--text-18 utils--text-grey-800">{{data.title}}</span>
   </div>
-  <div class="card18__progress-bar utils--padding-right-16">
-    <ntx-progress-bar value="{{data.buffer}}"></ntx-progress-bar>
+  <div class="card18__progress-bar">
+    <!-- <ntx-progress-bar value="{{data.buffer}}"></ntx-progress-bar> -->
+    <ntx-progress-bar-level value="{{data.progress.value}}" requiredValue="{{data.progress.requiredValue}}"></ntx-progress-bar-level>
+  </div>
+  <div class="card18__level">
+    <span>3/5</span>
   </div>
   <div class="card18__subtitle utils--truncate">
     <span matTooltip="{{data.subtitle}}" class="utils--text-14 utils--text-grey-600">{{data.subtitle}}</span>

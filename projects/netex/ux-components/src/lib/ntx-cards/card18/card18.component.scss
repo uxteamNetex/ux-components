@@ -8,12 +8,12 @@ $block: "card18";
     box-sizing: border-box;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
     font-family: Lato;
-    width: 586px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 40px 1fr 0.6fr;
+    grid-template-columns: 40px 1.5fr 1fr 40px;
     grid-template-rows: 40px 22px;
-    grid-template-areas: "avatar title progress-bar"
-                         "...... subtitle subtitle";
+    grid-template-areas: "avatar title progress-bar level"
+                         "...... subtitle subtitle subtitle";
     gap: 0 16px;
     .#{$block}__avatar {
         grid-area: avatar;
@@ -38,6 +38,11 @@ $block: "card18";
     }
     .#{$block}__progress-bar {
         grid-area: progress-bar;
+        align-self: center;
+    }
+    .#{$block}__level {
+        grid-area: level;
+        justify-self: center;
         align-self: center;
     }
     .#{$block}__subtitle {
