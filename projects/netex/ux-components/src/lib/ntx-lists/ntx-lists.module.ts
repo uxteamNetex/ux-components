@@ -16,6 +16,7 @@ import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.module';
 import { ListOneLineComponent } from './list-one-line/list-one-line.component';
+import { List1Component } from './list1/list1.component';
 
 @NgModule({
 	imports: [
@@ -35,7 +36,8 @@ import { ListOneLineComponent } from './list-one-line/list-one-line.component';
 		ListHorizontalComponent,
 		ListOneLineAvatarComponent,
 		ListTwoLinesAvatarVerticalComponent,
-		ListHorizontalIconComponent
+		ListHorizontalIconComponent,
+		List1Component
 	],
 	exports: [
 		ListTwoLinesAvatarComponent,
@@ -46,7 +48,8 @@ import { ListOneLineComponent } from './list-one-line/list-one-line.component';
 		ListHorizontalComponent,
 		ListOneLineAvatarComponent,
 		ListTwoLinesAvatarVerticalComponent,
-		ListHorizontalIconComponent
+		ListHorizontalIconComponent,
+		List1Component
 	]
 })
 export class NtxListsModule { }

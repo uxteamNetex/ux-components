@@ -2,6 +2,12 @@
   <div class="page-container">
 
     <ntx-card-simple
+      title="{{'List' | uppercase }}"
+      subtitle="{{ '<ntx-list1>' }}">
+        <ntx-list1 [data]=list1></ntx-list1>
+    </ntx-card-simple>
+
+    <ntx-card-simple
       title="{{'One line list with avatar' | uppercase }}"
       subtitle="{{ '<ntx-list-one-line-avatar>' }}">
         <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
