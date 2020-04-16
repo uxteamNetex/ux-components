@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+export class IActionsMenuLinkComponent {
+	icon?: string;
+	title: string;
+	click: Function;
+}
 
 @Component({
 	selector: 'ntx-menu-link',
@@ -6,6 +12,10 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./menu-link.component.scss']
 })
 export class MenuLinkComponent implements OnInit {
+
+	@Input() title: string;
+	@Input() icon: string;
+	@Input() actions: IActionsMenuLinkComponent[];
 
 	constructor() { }
 
