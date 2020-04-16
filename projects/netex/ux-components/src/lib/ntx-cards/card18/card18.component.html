@@ -16,8 +16,8 @@
   <div class="card18__progress-bar">
     <ntx-progress-bar-level value="{{data.progress.value}}" requiredValue="{{data.progress.requiredValue}}"></ntx-progress-bar-level>
   </div>
-  <div class="card18__level">
-    <span>3/5</span>
+  <div *ngIf="data.progress.level" class="card18__level">
+    <span>{{data.progress.level}}</span>
   </div>
   <div class="card18__subtitle utils--truncate">
     <span matTooltip="{{data.subtitle}}" class="utils--text-14 utils--text-grey-600">{{data.subtitle}}</span>

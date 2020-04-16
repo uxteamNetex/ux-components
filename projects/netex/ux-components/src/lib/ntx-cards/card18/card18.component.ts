@@ -4,7 +4,8 @@ export interface Data {
 	avatar: string;
 	progress: {
 		value: number,
-		requiredValue: number
+		requiredValue: number,
+		level: string
 	};
 	color: string;
 	title: string;
