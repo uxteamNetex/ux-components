@@ -6,15 +6,16 @@ import { DocumentationComponent } from './documentation/documentation.component'
 import { ExamplesComponent } from './examples/examples.component';
 
 import {
-  NtxCardsModule
+	NtxCardsModule, NtxListsModule
 } from '@netex/ux-components';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NtxCardsModule,
-    Card9RoutingModule
-  ],
-  declarations: [DocumentationComponent, ExamplesComponent]
+	imports: [
+		CommonModule,
+		NtxCardsModule,
+		NtxListsModule,
+		Card9RoutingModule
+	],
+	declarations: [DocumentationComponent, ExamplesComponent]
 })
 export class Card9Module { }
