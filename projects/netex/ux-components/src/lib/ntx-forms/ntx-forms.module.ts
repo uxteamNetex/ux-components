@@ -23,57 +23,60 @@ import { FormSearchboxComponent } from './form-searchbox/form-searchbox.componen
 import { FormSearchboxBackgroundComponent } from './form-searchbox-background/form-searchbox-background.component';
 import { FormSelectThinComponent } from './form-select-thin/form-select-thin.component';
 import { FormInputAutocompleteComponent } from './form-input-autocomplete/form-input-autocomplete.component';
+import { InputNoLabelComponent } from './input-no-label/input-no-label.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NtxSharedModule,
-    NtxFormsRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatNativeDateModule
-  ],
-  declarations: [
-    FormInputComponent,
-    FormTextareaComponent,
-    FormDatepickerComponent,
-    FormCheckboxComponent,
-    FormRadiobuttonComponent,
-    FormSlidetoggleComponent,
-    FormCheckboxCircleComponent,
-    FormSliderComponent,
-    FormSelectComponent,
-    FormSelectButtonComponent,
-    FormSelectNoBorderComponent,
-    FormSelectBorderButtonComponent,
-    FormInputNoLabelComponent,
-    FormSearchboxComponent,
-    FormSearchboxBackgroundComponent,
-    FormSelectThinComponent,
-    FormInputAutocompleteComponent
-  ],
-  entryComponents: [
-    FormInputComponent,
-    FormDatepickerComponent
-  ],
-  exports: [
-    FormInputComponent,
-    FormTextareaComponent,
-    FormDatepickerComponent,
-    FormCheckboxComponent,
-    FormRadiobuttonComponent,
-    FormSlidetoggleComponent,
-    FormCheckboxCircleComponent,
-    FormSliderComponent,
-    FormSelectComponent,
-    FormSelectButtonComponent,
-    FormSelectNoBorderComponent,
-    FormSelectBorderButtonComponent,
-    FormInputNoLabelComponent,
-    FormSearchboxComponent,
-    FormSearchboxBackgroundComponent,
-    FormSelectThinComponent,
-    FormInputAutocompleteComponent
-  ]
+	imports: [
+		CommonModule,
+		NtxSharedModule,
+		NtxFormsRoutingModule,
+		FormsModule,
+		ReactiveFormsModule,
+		MatNativeDateModule
+	],
+	declarations: [
+		FormInputComponent,
+		FormTextareaComponent,
+		FormDatepickerComponent,
+		FormCheckboxComponent,
+		FormRadiobuttonComponent,
+		FormSlidetoggleComponent,
+		FormCheckboxCircleComponent,
+		FormSliderComponent,
+		FormSelectComponent,
+		FormSelectButtonComponent,
+		FormSelectNoBorderComponent,
+		FormSelectBorderButtonComponent,
+		FormInputNoLabelComponent,
+		InputNoLabelComponent,
+		FormSearchboxComponent,
+		FormSearchboxBackgroundComponent,
+		FormSelectThinComponent,
+		FormInputAutocompleteComponent
+	],
+	entryComponents: [
+		FormInputComponent,
+		FormDatepickerComponent
+	],
+	exports: [
+		FormInputComponent,
+		FormTextareaComponent,
+		FormDatepickerComponent,
+		FormCheckboxComponent,
+		FormRadiobuttonComponent,
+		FormSlidetoggleComponent,
+		FormCheckboxCircleComponent,
+		FormSliderComponent,
+		FormSelectComponent,
+		FormSelectButtonComponent,
+		FormSelectNoBorderComponent,
+		FormSelectBorderButtonComponent,
+		FormInputNoLabelComponent,
+		InputNoLabelComponent,
+		FormSearchboxComponent,
+		FormSearchboxBackgroundComponent,
+		FormSelectThinComponent,
+		FormInputAutocompleteComponent
+	]
 })
 export class NtxFormsModule { }
