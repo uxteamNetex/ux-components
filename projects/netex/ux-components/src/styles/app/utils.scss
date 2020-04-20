@@ -39,6 +39,15 @@ h5{
   text-transform: uppercase;
 }
 
+.card {
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  &--outlined {
+    border: 2px solid #DDD;
+  }
+}
 
 $block: "utils";
 
@@ -142,6 +151,10 @@ $block: "utils";
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
+  }
+
+  &--centered {
+    @include centerer;
   }
 
   //Tamaños fuente

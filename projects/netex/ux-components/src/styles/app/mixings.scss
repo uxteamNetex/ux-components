@@ -33,3 +33,20 @@
   position: relative;
   //height: (1.5em *  $_lines ); /* exactly x lines */
 }
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin badge($color, $size) {
+  // mixin to render circular badge
+  width: #{$size};
+  height: #{$size};
+  background-color: #{$color};
+  border-radius: #{$size*0.5};
+  line-height: #{$size};
+  text-align: center;
+}
