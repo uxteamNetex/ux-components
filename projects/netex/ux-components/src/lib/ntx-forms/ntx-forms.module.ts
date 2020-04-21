@@ -24,6 +24,7 @@ import { FormSearchboxBackgroundComponent } from './form-searchbox-background/fo
 import { FormSelectThinComponent } from './form-select-thin/form-select-thin.component';
 import { FormInputAutocompleteComponent } from './form-input-autocomplete/form-input-autocomplete.component';
 import { InputNoLabelComponent } from './input-no-label/input-no-label.component';
+import { TextareaNoLabelComponent } from './textarea-no-label/textarea-no-label.component';
 
 @NgModule({
 	imports: [
@@ -37,6 +38,7 @@ import { InputNoLabelComponent } from './input-no-label/input-no-label.component
 	declarations: [
 		FormInputComponent,
 		FormTextareaComponent,
+		TextareaNoLabelComponent,
 		FormDatepickerComponent,
 		FormCheckboxComponent,
 		FormRadiobuttonComponent,
@@ -61,6 +63,7 @@ import { InputNoLabelComponent } from './input-no-label/input-no-label.component
 	exports: [
 		FormInputComponent,
 		FormTextareaComponent,
+		TextareaNoLabelComponent,
 		FormDatepickerComponent,
 		FormCheckboxComponent,
 		FormRadiobuttonComponent,
