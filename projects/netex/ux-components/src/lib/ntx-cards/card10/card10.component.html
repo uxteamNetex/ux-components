@@ -2,7 +2,7 @@
   <div class="card10__badge">
     <span class="utils--centered utils--text-14 utils--text-grey-700">10</span>
   </div>
-  <div class="card10__content utils--padding-right-32">
+  <div class="card10__content">
     <div class="title utils--margin-top-8 utils--text-grey-700">
       <ntx-input-no-label [placeholder]="'Add a text'"></ntx-input-no-label>
     </div>
@@ -12,5 +12,10 @@
     <div class="progress utils--margin-bottom-24">
       <ntx-progress-bar-level value="78"></ntx-progress-bar-level>
     </div>
+  </div>
+  <div class="card10__close-button">
+    <button mat-icon-button class="utils--margin-top-12" (click)="onClose()">
+      <span class="icon-netex icon-cross"></span>
+    </button>
   </div>
 </div>

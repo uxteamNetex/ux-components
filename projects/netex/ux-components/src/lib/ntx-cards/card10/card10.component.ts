@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
 	selector: 'ntx-card10',
@@ -8,9 +9,14 @@ import { ViewEncapsulation } from '@angular/core';
 })
 export class Card10Component implements OnInit {
 
+	@Output() close = new EventEmitter();
+	
 	constructor() { }
 
-	ngOnInit() {
+	ngOnInit() {}
+
+	public onClose() {
+		this.close.emit();
 	}
 
 }

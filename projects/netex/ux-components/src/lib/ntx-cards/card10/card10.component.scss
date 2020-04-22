@@ -14,10 +14,21 @@ $block: "card10";
   }
   .#{$block}__content{
     box-sizing: border-box;
-    width: calc(100% - 92px);
+    width: calc(100% - 92px - 32px);
     font-family: Lato;
     .title  {
       font-style: italic;
+    }
+  }
+  .#{$block}__close-button {
+    width: 32px;
+    button {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      &:hover {
+        background-color: $icon-button-hover;
+      }
     }
   }
 }
