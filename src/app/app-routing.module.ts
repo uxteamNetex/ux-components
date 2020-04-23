@@ -172,6 +172,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/panel-tabs/panel-tabs.module#PanelTabsModule'
 	},
 	{
+		path: 'paginator',
+		loadChildren: './ui-pages/paginator/paginator.module#PaginatorModule'
+	},
+	{
 		path: 'progress-bar',
 		loadChildren: './ui-pages/progress-bar/progress-bar.module#ProgressBarModule'
 	},

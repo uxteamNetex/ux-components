@@ -1,0 +1,22 @@
+<div class="page-layout">
+  <div class="page-container">
+
+    <ntx-card-simple
+      title="{{'Paginator with default position' | uppercase }}"
+      subtitle="{{ '<ntx-paginator>' }}">
+        <ntx-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></ntx-paginator>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'Paginator with centered position' | uppercase }}"
+      subtitle="{{ '<ntx-paginator>' }}">
+        <ntx-paginator  position="center" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></ntx-paginator>
+    </ntx-card-simple>
+    <ntx-card-simple
+
+      title="{{'Paginator with right position' | uppercase }}"
+      subtitle="{{ '<ntx-paginator>' }}">
+        <ntx-paginator position="right" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></ntx-paginator>
+    </ntx-card-simple>
+  </div>
+</div>

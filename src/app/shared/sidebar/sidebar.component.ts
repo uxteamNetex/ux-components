@@ -15,6 +15,7 @@ const LINKS = [
 	'lists',
 	'menus',
 	'organisation-chart',
+	'paginator',
 	'tabs',
 	'toolbars',
 	'user-profile-panel'
@@ -59,6 +60,10 @@ const LINKSHELPERS = [
 const PANELS =  [
 	'panels',
 	'panel-tabs'
+];
+
+const PAGINATOR =  [
+	'paginator'
 ];
 
 const PROGRESS = [
@@ -113,7 +118,8 @@ const CATEGORIES = {
 	progress: { title: 'progress', links: PROGRESS },
 	sidenavs: { title: 'sidenavs', links: SIDENAVS },
 	table: { title: 'table', links: TABLES },
-	tree: { title: 'tree', links: TREE }
+	tree: { title: 'tree', links: TREE },
+	paginator: { title: 'paginator', links: PAGINATOR }
 };
 
 export interface Category {
