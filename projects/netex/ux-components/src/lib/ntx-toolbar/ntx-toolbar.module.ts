@@ -10,6 +10,8 @@ import { ToolbarBackTabsComponent } from './toolbar-back-tabs/toolbar-back-tabs.
 
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxTabsModule } from '../ntx-tabs/ntx-tabs.module';
+import { ToolbarSearchboxComponent } from './toolbar-searchbox/toolbar-searchbox.component';
+import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 
 
 @NgModule({
@@ -17,21 +19,24 @@ import { NtxTabsModule } from '../ntx-tabs/ntx-tabs.module';
 		CommonModule,
 		NtxSharedModule,
 		NtxMenusModule,
-		NtxTabsModule
+		NtxTabsModule,
+		NtxFormsModule
 	],
 	declarations: [
 		ToolbarComponent,
 		ToolbarLogoComponent,
 		ToolbarTabsComponent,
 		ToolbarBackComponent,
-		ToolbarBackTabsComponent
+		ToolbarBackTabsComponent,
+		ToolbarSearchboxComponent
 	],
 	exports: [
 		ToolbarComponent,
 		ToolbarLogoComponent,
 		ToolbarTabsComponent,
 		ToolbarBackComponent,
-		ToolbarBackTabsComponent
+		ToolbarBackTabsComponent,
+		ToolbarSearchboxComponent
 	]
 })
 export class NtxToolbarModule { }

@@ -25,6 +25,8 @@ import { FormSelectThinComponent } from './form-select-thin/form-select-thin.com
 import { FormInputAutocompleteComponent } from './form-input-autocomplete/form-input-autocomplete.component';
 import { InputNoLabelComponent } from './input-no-label/input-no-label.component';
 import { TextareaNoLabelComponent } from './textarea-no-label/textarea-no-label.component';
+import { SearchboxFilterPanelComponent } from './searchbox-filter-panel/searchbox-filter-panel.component';
+import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 
 @NgModule({
 	imports: [
@@ -33,7 +35,8 @@ import { TextareaNoLabelComponent } from './textarea-no-label/textarea-no-label.
 		NtxFormsRoutingModule,
 		FormsModule,
 		ReactiveFormsModule,
-		MatNativeDateModule
+		MatNativeDateModule,
+		NtxButtonsModule
 	],
 	declarations: [
 		FormInputComponent,
@@ -54,7 +57,8 @@ import { TextareaNoLabelComponent } from './textarea-no-label/textarea-no-label.
 		FormSearchboxComponent,
 		FormSearchboxBackgroundComponent,
 		FormSelectThinComponent,
-		FormInputAutocompleteComponent
+		FormInputAutocompleteComponent,
+		SearchboxFilterPanelComponent
 	],
 	entryComponents: [
 		FormInputComponent,
@@ -79,7 +83,8 @@ import { TextareaNoLabelComponent } from './textarea-no-label/textarea-no-label.
 		FormSearchboxComponent,
 		FormSearchboxBackgroundComponent,
 		FormSelectThinComponent,
-		FormInputAutocompleteComponent
+		FormInputAutocompleteComponent,
+		SearchboxFilterPanelComponent
 	]
 })
 export class NtxFormsModule { }
