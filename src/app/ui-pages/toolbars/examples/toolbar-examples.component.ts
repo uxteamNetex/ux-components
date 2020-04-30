@@ -15,10 +15,6 @@ export class ToolbarsExamplesComponent implements OnInit {
 
 	toolbarTypes: ToolbarType[] = [
 		{
-			label: "basic toolbar",
-			selector: "<ntx-toolbar>"
-		},
-		{
 			label: "back toolbar",
 			selector: "<ntx-toolbar-back>"
 		},
