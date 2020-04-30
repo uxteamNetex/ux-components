@@ -495,6 +495,9 @@
             "className": "icon-evaluation"
         },
         {
+            "className": "icon-export-solid"
+        },
+        {
             "className": "icon-eye"
         },
         {
@@ -589,6 +592,9 @@
         },
         {
             "className": "icon-image"
+        },
+        {
+            "className": "icon-inbox-solid"
         },
         {
             "className": "icon-index"

@@ -1,0 +1,57 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.actions{
+  ul.list-sidemenu{
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    padding: 0;
+    li{
+      padding: 0px 20px;
+      line-height: 42px;
+      border-top-right-radius: 21px;
+      border-bottom-right-radius: 21px;
+      color: $color-grey-700;
+      &:hover {
+        background-color: $color-grey-100;
+      }
+      &.active {
+        background-color: $color-grey-300;
+        color: $color-grey-800;
+        font-family: LatoBold;
+      }
+      a{
+        align-items: center;
+        color: $color-grey-700;
+        display: flex;
+        &:link,&:visited,&:hover,&:active {
+          color: $color-grey-700;
+          text-decoration: none;
+        }
+        &:active {
+          color:$color-primary;
+        }
+        .list-sidemenu__text{
+          padding-right: 24px;
+          width: 100%;
+        }
+        .mat-badge{
+          margin-left: auto;
+          &.mat-badge-medium{
+            .mat-badge-content{
+              border-radius: 100px;
+              font-weight: normal;
+              height: 20px;
+              line-height: 20px;
+              min-width: 12px;
+              padding: 0 4px;
+              width: auto;
+            }
+          }
+          .mat-badge-content{
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -16,6 +16,23 @@ export interface Item1 {
 	};
 }
 
+const USER = {
+	actions: [
+		{
+			label: 'Recibidas',
+			state: 'active',
+			icon: 'icon-inbox-solid',
+			link: '#'
+		},
+		{
+			label: 'Papelera',
+			state: '',
+			icon: 'icon-archive-solid',
+			link: '#'
+		}
+	]
+};
+
 @Component({
 	selector: 'app-lists-examples',
 	templateUrl: './lists-examples.component.html',
@@ -23,6 +40,8 @@ export interface Item1 {
 	encapsulation: ViewEncapsulation.None
 })
 export class ListsExamplesComponent implements OnInit {
+
+	user = USER;
 
 	list: Item[] = [
 		{

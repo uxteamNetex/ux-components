@@ -2,7 +2,13 @@
   <div class="page-container">
 
     <ntx-card-simple
-      title="{{'List' | uppercase }}"
+      title="{{'List sidemenu' | uppercase }}"
+      subtitle="{{ '<ntx-list-sidemenu>' }}">
+      <ntx-list-sidemenu [user] ="user"></ntx-list-sidemenu>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'List 1' | uppercase }}"
       subtitle="{{ '<ntx-list1>' }}">
         <ntx-list1 [data]=list1></ntx-list1>
     </ntx-card-simple>

@@ -2,38 +2,38 @@ import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 
 export interface Section {
-  title: string;
+	title: string;
 }
 
 @Component({
-  selector: 'ntx-list-multilines-icon',
-  templateUrl: './list-multilines-icon.component.html',
-  styleUrls: ['./list-multilines-icon.component.scss'],
-  encapsulation: ViewEncapsulation.None
+	selector: 'ntx-list-multilines-icon',
+	templateUrl: './list-multilines-icon.component.html',
+	styleUrls: ['./list-multilines-icon.component.scss'],
+	encapsulation: ViewEncapsulation.None
 })
 export class ListMultilinesIconComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  texts: Section[] = [
-    {
-      title: 'Section one'
-    },
-    {
-      title: 'Section two'
-    }
-  ];
+	texts: Section[] = [
+		{
+			title: 'Section one'
+		},
+		{
+			title: 'Section two'
+		}
+	];
 
-  links: Section[] = [
-    {
-      title: 'Subsection one'
-    },
-    {
-      title: 'Subsection two'
-    }
-  ];
+	links: Section[] = [
+		{
+			title: 'Subsection one'
+		},
+		{
+			title: 'Subsection two'
+		}
+	];
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }
