@@ -15,11 +15,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { DragScrollModule } from 'ngx-drag-scroll';
 
 import { CustomBreakPointsProvider  } from './shared/custom-breakpoints/custom-breakpoints';
+import { EntityDetailPanelComponent } from './ui-pages/detail-panel/entity-detail-panel/entity-detail-panel.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		HomePageComponent
+		HomePageComponent,
+		EntityDetailPanelComponent
 	],
 	imports: [
 		BrowserAnimationsModule,
@@ -33,6 +35,9 @@ import { CustomBreakPointsProvider  } from './shared/custom-breakpoints/custom-b
 	providers: [
 		CustomBreakPointsProvider
 	],
-	bootstrap: [AppComponent]
+	bootstrap: [AppComponent],
+	entryComponents: [
+		EntityDetailPanelComponent
+	]
 })
 export class AppModule { }
