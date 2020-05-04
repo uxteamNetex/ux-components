@@ -31,6 +31,8 @@ const USER = {
 export class ExamplesComponent implements OnInit {
 
 	user = USER;
+	menulinkData: { title: string; icon: string; actions: { icon: string; title: string; click: () => void; }[]; };
+	apps: any[];
 
 	constructor(
 		private dashboardService: DashboardService,
@@ -39,12 +41,26 @@ export class ExamplesComponent implements OnInit {
 
 	ngOnInit() {
 		this.apps = this.dashboardService.getDashboardApps();
+		this.menulinkData = {
+			title: 'Click me!',
+			icon: 'icon-plus-circle',
+			actions: [
+				{
+					icon: 'icon-plus-circle',
+					title: 'Create from scratch',
+					click: function() { alert('You\'ve clicked in \'Create from scratch\' option'); }
+				},
+				{
+					icon: 'icon-upload',
+					title: 'Upload CSV',
+					click: function() { alert('You\'ve clicked in \'Upload CSV\' option'); }
+				}
+			]
+		};
 	}
 
 	setPath(value: string) {
 		this.tabsHeaderService.setPath(value);
 	}
-
-	apps: any[];
 
 }
