@@ -4,12 +4,12 @@
     <span class="toolbar-searchbox__title--label utils--text-grey-800 utils--text-18 utils--margin-left-24">{{label}}</span>
   </div>
   <div class="toolbar-searchbox__searchbox">
-    <ntx-searchbox-filter-panel></ntx-searchbox-filter-panel>
+    <ntx-searchbox-filter-panel>
+      <ng-content></ng-content>
+    </ntx-searchbox-filter-panel>
   </div>
   <div class="toolbar-searchbox__options utils--margin-right-16">
-    <ntx-menu-toolbar-profile>
-      <ng-content></ng-content>
-    </ntx-menu-toolbar-profile>
+    <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
     <ntx-menu-toolbar-dashboard [apps]="apps"></ntx-menu-toolbar-dashboard>
   </div>
 </div>

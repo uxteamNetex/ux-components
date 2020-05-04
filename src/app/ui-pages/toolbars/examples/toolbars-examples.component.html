@@ -10,7 +10,9 @@
     <ntx-card-simple  
       title="{{'basic toolbar with search box' | uppercase}}"
       subtitle="{{ '<ntx-toolbar-searchbox>' }}">
-      <ntx-toolbar-searchbox label="Notificaciones" src="../../../assets/images/notifications.svg" [apps]="apps"></ntx-toolbar-searchbox>
+      <ntx-toolbar-searchbox label="Notificaciones" src="../../../assets/images/notifications.svg" [apps]="apps">
+        <app-dummy-form></app-dummy-form>
+      </ntx-toolbar-searchbox>
     </ntx-card-simple>
     <ntx-card-simple *ngFor="let type of toolbarTypes"
       title="{{ type.label | uppercase }}"
@@ -28,6 +30,5 @@
         <ntx-toolbar-back-tabs [apps]="apps" [action]="'finish'" *ngIf="type.label==='toolbar back tabs with another action button'">
         </ntx-toolbar-back-tabs>
     </ntx-card-simple>
-
   </div>
 </div>
