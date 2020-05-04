@@ -13,7 +13,7 @@ import {
 import { Version420RoutingModule } from './version420-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
-import { NtxToolbarModule } from 'projects/netex/ux-components/src/public_api';
+import { NtxToolbarModule, NtxMenusModule } from 'projects/netex/ux-components/src/public_api';
 
 @NgModule({
 	declarations: [DocumentationComponent, ExamplesComponent],
@@ -28,7 +28,8 @@ import { NtxToolbarModule } from 'projects/netex/ux-components/src/public_api';
 		NtxButtonsModule,
 		NtxListsModule,
 		NtxTablesModule,
-		NtxToolbarModule
+		NtxToolbarModule,
+		NtxMenusModule
 	]
 })
 export class Version420Module { }
