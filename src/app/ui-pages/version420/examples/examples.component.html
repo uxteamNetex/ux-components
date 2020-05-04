@@ -1,0 +1,55 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.2.0: lorem ipsum valor more and lorem ipsum valor more...</h1>
+          <p class="whatsnew__header--subtitle">05 may 2020</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket-4.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our monthly update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Icon stroked buttons</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new type of button, <span class="documentation-code">ntx-stroked-icon-button</span> that allows us to navigate between previous or subsequent elements.</p>
+          <ntx-stroked-toggle-button></ntx-stroked-toggle-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List sidemenu</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new type of list, <span class="documentation-code">ntx-list-sidemenu</span> that allows us to navigate between different views of a side menu.</p>
+          <ntx-list-sidemenu [user] ="user"></ntx-list-sidemenu>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">Bug fixing</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Two lines list with avatar</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added an optional link in the <span class="documentation-code">ntx-list-two-lines-avatar</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/lists/documentation" (click)="setPath('lists')">link</a></p>
+          <ntx-list-two-lines-avatar showLink="true"></ntx-list-two-lines-avatar>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Table selectable</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added a new 'flat' style to the <span class="documentation-code">ntx-selectable-table</span> component and the option to add an icon in the title. After these new features there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/table-selectable/documentation" (click)="setPath('table-selectable')">link</a></p>
+          <ntx-selectable-table [style]="'flat'" showIcon="true"></ntx-selectable-table>
+        </div>
+
+      </div>
+
+    </ntx-card-simple>
+  </div>
+</div>

@@ -140,6 +140,7 @@ export class DocumentationComponent implements OnInit {
 
     </div>
   `;
+
   code4 = `
     @Component({
       ...
@@ -183,6 +184,26 @@ export class DocumentationComponent implements OnInit {
       </mat-cell>
     </ng-container>
   `;
+
+  code6 = `
+  <div class="table-container" [ngClass]="{'flat': this.style === 'flat'}">
+    <div class="table-selectable__wrapper">
+      ...
+      <!-- Column 1 -->
+      <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <span class="utils--truncate">
+              {{element.name}}
+            </span>
+            <mat-icon *ngIf="showIcon" class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
+          </mat-cell>
+      </ng-container>
+      ...
+    </div>
+  </div>
+  `;
+
   constructor() { }
 
   ngOnInit() {

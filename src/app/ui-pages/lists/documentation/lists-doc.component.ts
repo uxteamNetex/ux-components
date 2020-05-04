@@ -137,6 +137,21 @@ code6 = `
     ngOnInit() { }
   }`;
 
+	code7 = `
+  <p mat-line class="list-two-lines__item--subtitle">
+    {{text.subtitle}}
+    <a matLine *ngIf="showLink" href="..." class="list-two-lines__item--subtitle-link utils--margin-left-12">{{text.link}}</a>
+  </p>
+  ` ;
+
+	code8 = `
+  .#{$block}__item--subtitle{
+    color: $color-grey-600;
+    display: flex;
+    font-family: Lato;
+  }
+  ` ;
+
 	ngOnInit() {
 	}
 }

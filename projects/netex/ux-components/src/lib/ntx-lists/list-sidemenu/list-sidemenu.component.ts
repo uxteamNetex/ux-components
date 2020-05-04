@@ -10,6 +10,7 @@ import { ViewEncapsulation } from '@angular/core';
 export class ListSidemenuComponent implements OnInit {
 
 	@Input() user: any;
+	@Input() showBadge: boolean;
 
 	constructor() { }
 

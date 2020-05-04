@@ -22,13 +22,15 @@ const USER = {
 			label: 'Recibidas',
 			state: 'active',
 			icon: 'icon-inbox-solid',
-			link: '#'
+			link: '#',
+			showBadge: true
 		},
 		{
 			label: 'Papelera',
 			state: '',
 			icon: 'icon-archive-solid',
-			link: '#'
+			link: '#',
+			showBadge: false
 		}
 	]
 };
