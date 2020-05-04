@@ -46,6 +46,7 @@ import { HeaderComponent } from './header/header.component';
 import { TabsComponent } from './header/tabs/tabs.component';
 import { ToolbarComponent } from './header/toolbar/toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { DummyFormComponent } from './dummy-components/dummy-form/dummy-form.component';
 
 @NgModule({
   imports: [

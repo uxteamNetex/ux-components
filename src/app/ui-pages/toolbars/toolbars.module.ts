@@ -9,8 +9,12 @@ import {
   NtxToolbarModule,
   NtxMenusModule,
   NtxCardsModule,
-  NtxListsModule
+  NtxListsModule,
+  NtxFormsModule,
+  NtxButtonsModule
 } from '@netex/ux-components';
+import { DummyFormComponent } from 'src/app/shared/dummy-components/dummy-form/dummy-form.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -18,11 +22,14 @@ import {
     NtxMenusModule,
     NtxListsModule,
     NtxToolbarModule,
-    ToolbarsRoutingModule
+    ToolbarsRoutingModule,
+    NtxFormsModule,
+    NtxButtonsModule
   ],
   declarations: [
       ToolbarsExamplesComponent,
-      ToolbarsDocComponent
+      ToolbarsDocComponent,
+      DummyFormComponent
     ]
 })
 export class ToolbarsModule { }
