@@ -13,7 +13,7 @@ import {
 import { Version420RoutingModule } from './version420-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
-import { NtxToolbarModule, NtxMenusModule, NtxFormsModule } from 'projects/netex/ux-components/src/public_api';
+import { NtxToolbarModule, NtxMenusModule, NtxFormsModule, NtxProgressBarModule } from 'projects/netex/ux-components/src/public_api';
 import { NtxPaginatorModule } from 'projects/netex/ux-components/src/lib/ntx-paginator/ntx-paginator.module';
 
 @NgModule({
@@ -32,7 +32,8 @@ import { NtxPaginatorModule } from 'projects/netex/ux-components/src/lib/ntx-pag
 		NtxToolbarModule,
 		NtxMenusModule,
 		NtxFormsModule,
-		NtxPaginatorModule
+		NtxPaginatorModule,
+		NtxProgressBarModule
 	]
 })
 export class Version420Module { }
