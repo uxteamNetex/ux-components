@@ -8,13 +8,15 @@ import { ExamplesComponent } from './examples/examples.component';
 import {
   NtxCardsModule
 } from '@netex/ux-components';
+import { MatExpansionModule } from '@angular/material';
 
 @NgModule({
   declarations: [DocumentationComponent, ExamplesComponent],
   imports: [
     CommonModule,
     Card10RoutingModule,
-    NtxCardsModule
+    NtxCardsModule,
+    MatExpansionModule
   ]
 })
 export class Card10Module { }
