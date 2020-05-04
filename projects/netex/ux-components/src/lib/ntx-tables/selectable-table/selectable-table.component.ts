@@ -41,6 +41,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class SelectableTableComponent implements OnInit {
 
 	@Input() style: string;
+	@Input() showIcon: boolean;
 
 	constructor() { }
 

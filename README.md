@@ -24,6 +24,7 @@ Archivos modificados:
 
 **Lists**<br/>
 - Nuevo componente list-sidemenu (*ntx-list-sidemenu*)
+- Cambios en el html, css y ts en el componente list-two-lines-avatar (*ntx-list-two-lines-avatar*)
 
 **Buttons**<br/>
 - Nuevo componente stroked-toggle-button (*ntx-stroked-toggle-button*)

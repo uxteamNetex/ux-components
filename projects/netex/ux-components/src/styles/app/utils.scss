@@ -157,6 +157,14 @@ $block: "utils";
     @include centerer;
   }
 
+  //Display
+  &--flex-center {
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+
   //Tamaños fuente
   &--text-10 {
 		font-size: $font-size-10 !important;

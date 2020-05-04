@@ -43,7 +43,7 @@
               <span class="utils--truncate">
                 {{element.name}}
               </span>
-              <mat-icon class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
+              <mat-icon *ngIf="showIcon" class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
             </mat-cell>
         </ng-container>
 

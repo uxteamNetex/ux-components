@@ -4,6 +4,9 @@
       <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="user image">
     </div>
     <h4 mat-line class="list-two-lines__item--title">{{text.title}}</h4>
-    <p mat-line class="list-two-lines__item--subtitle"> {{text.subtitle}} </p>
+    <p mat-line class="list-two-lines__item--subtitle">
+      {{text.subtitle}}
+      <a matLine *ngIf="showLink" href="..." class="list-two-lines__item--subtitle-link utils--margin-left-12">{{text.link}}</a>
+    </p>
   </mat-list-item>
 </mat-list>
