@@ -14,7 +14,7 @@ export class SearchboxFilterPanelComponent implements OnInit {
 
   // @ViewChild('container') container : ElementRef;
   // @ViewChild('panel') panel: TemplateRef<HTMLElement>;
-  @ViewChild('contentPanelRef') contentPanelRef: TemplateRef<HTMLElement>;
+  // @ViewChild('contentPanelRef') contentPanelRef: TemplateRef<HTMLElement>;
 
   ngOnInit() {
     // console.log('on init', this.container);

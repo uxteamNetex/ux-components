@@ -30,6 +30,17 @@
           <ntx-list-sidemenu [user] ="user"></ntx-list-sidemenu>
         </div>
 
+        <div class="whatsnew__content-block">
+          <h4>Toolbar (added new types)</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released new type of toolbars, <span class="documentation-code">ntx-toolbar-back-tabs</span> that includes a back button, a second level of navigation 
+          and conditionally an action button and <span class="documentation-code">ntx-toolbar-searchbox</span>that includes a searchbox with filter panel.</p>
+          <ntx-toolbar-back-tabs [apps]="apps" [action]="'launch'"></ntx-toolbar-back-tabs>
+          <br/>
+          <br/>
+          <ntx-toolbar-searchbox label="Notificaciones" src="../../../assets/images/notifications.svg" [apps]="apps">
+          </ntx-toolbar-searchbox>
+        </div>
+
         <h2 class="whatsnew__separation">
           <span class="whatsnew__separation--text">Bug fixing</span>
         </h2>
