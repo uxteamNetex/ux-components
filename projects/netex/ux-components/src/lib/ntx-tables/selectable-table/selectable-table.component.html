@@ -1,13 +1,15 @@
-<div class="table-selectable__wrapper">
+<div class="table-container" [ngClass]="{'flat': this.style === 'flat'}">
 
-  <!-- Header -->
-  <ntx-multi-select-options [numSelectedItems]='selection.selected.length'></ntx-multi-select-options>
+  <div class="table-selectable__wrapper">
 
-  <div class="table-selectable__container">
-    <!-- Table -->
-    <mat-table [dataSource]="dataSource" matSort class="table-selectable__table mat-elevation-z8">
-      <!-- Checkbox Column -->
-      <ng-container matColumnDef="select">
+    <!-- Header -->
+    <ntx-multi-select-options [numSelectedItems]='selection.selected.length'></ntx-multi-select-options>
+
+    <div class="table-selectable__container">
+      <!-- Table -->
+      <mat-table [dataSource]="dataSource" matSort class="table-selectable__table mat-elevation-z8">
+        <!-- Checkbox Column -->
+        <ng-container matColumnDef="select">
           <mat-header-cell *matHeaderCellDef>
             <mat-checkbox (change)="onHeaderCheckboxChange($event)"
                           [checked]="selection.hasValue() && isAllSelected()"
@@ -24,67 +26,70 @@
           </mat-cell>
         </ng-container>
 
-      <!-- Column 1 -->
-      <ng-container matColumnDef="avatar">
-        <mat-header-cell *matHeaderCellDef></mat-header-cell>
-        <mat-cell *matCellDef="let element">
-          <div class="avatar-img">
-            <img mat-card-image class="utils--vertical-align" [src]="element.avatar" alt="User image">
-          </div>
-        </mat-cell>
-      </ng-container>
+        <!-- Column 1 -->
+        <ng-container matColumnDef="avatar">
+          <mat-header-cell *matHeaderCellDef></mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <div class="avatar-img">
+              <img mat-card-image class="utils--vertical-align" [src]="element.avatar" alt="User image">
+            </div>
+          </mat-cell>
+        </ng-container>
 
-      <!-- Column 1 -->
-      <ng-container matColumnDef="name">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <!-- Column 1 -->
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+              <span class="utils--truncate">
+                {{element.name}}
+              </span>
+              <mat-icon class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
+            </mat-cell>
+        </ng-container>
+
+        <!-- Column 2 -->
+        <ng-container matColumnDef="project">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Project </mat-header-cell>
           <mat-cell *matCellDef="let element">
             <span class="utils--truncate">
-              {{element.name}}
+              {{element.project}}
             </span>
           </mat-cell>
         </ng-container>
 
-      <!-- Column 2 -->
-      <ng-container matColumnDef="project">
-        <mat-header-cell *matHeaderCellDef mat-sort-header> Project </mat-header-cell>
-        <mat-cell *matCellDef="let element">
-          <span class="utils--truncate">
-            {{element.project}}
-          </span>
-        </mat-cell>
-      </ng-container>
+        <!-- Column 3 -->
+        <ng-container matColumnDef="type">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Type </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <ntx-label [text]="element.type"></ntx-label>
+          </mat-cell>
+        </ng-container>
 
-      <!-- Column 3 -->
-      <ng-container matColumnDef="type">
-        <mat-header-cell *matHeaderCellDef mat-sort-header> Type </mat-header-cell>
-        <mat-cell *matCellDef="let element">
-          <ntx-label [text]="element.type"></ntx-label>
-        </mat-cell>
-      </ng-container>
+        <!-- Column 4 -->
+        <ng-container matColumnDef="modification">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Last modification </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            {{element.modification}}
+          </mat-cell>
+        </ng-container>
 
-      <!-- Column 4 -->
-      <ng-container matColumnDef="modification">
-        <mat-header-cell *matHeaderCellDef mat-sort-header> Last modification </mat-header-cell>
-        <mat-cell *matCellDef="let element">
-          {{element.modification}}
-        </mat-cell>
-      </ng-container>
+        <!-- Column 5 -->
+        <ng-container matColumnDef="options" stickyEnd>
+          <mat-header-cell *matHeaderCellDef mat-sort-header> </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <ntx-menu-options></ntx-menu-options>
+          </mat-cell>
+        </ng-container>
 
-      <!-- Column 5 -->
-      <ng-container matColumnDef="options" stickyEnd>
-        <mat-header-cell *matHeaderCellDef mat-sort-header> </mat-header-cell>
-        <mat-cell *matCellDef="let element">
-          <ntx-menu-options></ntx-menu-options>
-        </mat-cell>
-      </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns" class="table-selectable__header"></mat-header-row >
+        <mat-row *matRowDef="let row; columns: displayedColumns;" class="table-selectable__row" ></mat-row>
 
-      <mat-header-row *matHeaderRowDef="displayedColumns" class="table-selectable__header"></mat-header-row >
-      <mat-row *matRowDef="let row; columns: displayedColumns;" class="table-selectable__row" ></mat-row>
+      </mat-table>
+    </div>
 
-    </mat-table>
+    <!-- Paginator -->
+    <mat-paginator class="table-container__paginator" [pageSizeOptions]="[10, 25, 50]" showFirstLastButtons></mat-paginator>
+
   </div>
-
-  <!-- Paginator -->
-  <mat-paginator class="table-container__paginator" [pageSizeOptions]="[10, 25, 50]" showFirstLastButtons></mat-paginator>
 
 </div>

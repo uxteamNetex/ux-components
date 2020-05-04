@@ -7,25 +7,27 @@ import { MatPaginator, MatSort, MatTableDataSource, PageEvent } from '@angular/m
 export interface PeriodicElement {
 	avatar: string;
 	name: string;
+	icon: string;
+	iconColor: string;
 	project: string;
 	type: string;
 	modification: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'long type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'very long type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'very long type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name', project: 'Project name', type: 'type name', modification: '29/11/2018'},
-	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', icon: 'icon-warning-solid', iconColor: 'utils--text-error', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', icon: 'icon-warning-solid', iconColor: 'utils--text-error', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name', type: 'long type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name', type: 'very long type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name', type: 'very long type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name', type: 'type name', modification: '29/11/2018'},
+	{avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
 ];
 
 
@@ -37,6 +39,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 	encapsulation: ViewEncapsulation.None
 })
 export class SelectableTableComponent implements OnInit {
+
+	@Input() style: string;
 
 	constructor() { }
 

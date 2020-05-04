@@ -28,6 +28,9 @@ Archivos modificados:
 **Buttons**<br/>
 - Nuevo componente stroked-toggle-button (*ntx-stroked-toggle-button*)
 
+**Tables**<br/>
+- Cambios en el html, css y ts en el componente selectable-table (*ntx-selectable-table*)
+
 ------------------
 
 ### v.4.1.3:

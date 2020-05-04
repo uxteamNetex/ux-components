@@ -241,6 +241,12 @@ $block: "utils";
   &--text-orange {
 		color: $color-orange !important;
   }
+  &--text-warning {
+		color: $color-warning !important;
+  }
+  &--text-error {
+		color: $color-error !important;
+  }
 
   //Colores de fondo - Escala de grises
   &--bc-black {
