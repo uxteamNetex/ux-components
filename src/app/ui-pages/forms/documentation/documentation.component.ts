@@ -293,6 +293,58 @@ $block: "searchbox-filter-panel";
 }
 `;
 
+code14 =`
+  <mat-form-field floatLabel="never" class="input-no-label">
+    <mat-label>{{placeholder}}</mat-label>
+    <input matInput class="utils--text-16">
+  </mat-form-field>
+`;
+code15 =`
+  import { Component, OnInit, Input } from '@angular/core';
+  import { ViewEncapsulation } from '@angular/core';
+
+  @Component({
+    selector: 'ntx-input-no-label',
+    templateUrl: './input-no-label.component.html',
+    styleUrls: ['./input-no-label.component.scss'],
+    encapsulation: ViewEncapsulation.None
+  })
+  export class InputNoLabelComponent implements OnInit {
+
+    @Input() placeholder: string;
+
+    constructor() { }
+
+    ngOnInit() {
+    }
+  }
+`;
+code16 =`
+  @import "././projects/netex/ux-components/src/styles/app/utils";
+
+  $block: "input-no-label";
+
+  mat-form-field.#{$block} {
+      display: block;
+      .mat-form-field-wrapper {
+        padding-bottom: 0;
+      }
+      .mat-form-field-infix {
+        padding: 0;
+        border-top: 0;
+      }
+      .mat-form-field-underline {
+        position: absolute;
+        bottom: 0;
+        background-color: transparent;
+        height: 0;
+      }
+      .mat-input-element {
+        height: 28px;
+      }
+  }
+`;
+
   ngOnInit() {
   }
 
