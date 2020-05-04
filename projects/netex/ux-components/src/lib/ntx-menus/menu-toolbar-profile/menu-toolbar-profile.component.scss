@@ -25,6 +25,11 @@
           height: 100%;
         }
       }
+      .menu-option-button__badge {
+        position: relative;
+        top: -6px;
+        left: 30px;
+      }
     }
   }
 }
