@@ -14,6 +14,7 @@ import { Version420RoutingModule } from './version420-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
 import { NtxToolbarModule, NtxMenusModule, NtxFormsModule } from 'projects/netex/ux-components/src/public_api';
+import { NtxPaginatorModule } from 'projects/netex/ux-components/src/lib/ntx-paginator/ntx-paginator.module';
 
 @NgModule({
 	declarations: [DocumentationComponent, ExamplesComponent],
@@ -30,7 +31,8 @@ import { NtxToolbarModule, NtxMenusModule, NtxFormsModule } from 'projects/netex
 		NtxTablesModule,
 		NtxToolbarModule,
 		NtxMenusModule,
-		NtxFormsModule
+		NtxFormsModule,
+		NtxPaginatorModule
 	]
 })
 export class Version420Module { }
