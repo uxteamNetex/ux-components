@@ -9,7 +9,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
 
-### v.X.X.X:
+### v.4.2.0:
 
 **Icons**<br/>
 Archivos modificados:

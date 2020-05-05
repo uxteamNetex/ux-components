@@ -27,7 +27,6 @@ $block: "table-selectable";
   &__wrapper {
     border-radius: 4px;
     box-shadow: $shadow;
-    // max-height:calc(100vh - 184px);
   }
   &__container {
     overflow: auto;
@@ -38,6 +37,14 @@ $block: "table-selectable";
       border-bottom-width: 0;
       .mat-sort-header-button {
         text-transform: uppercase;
+      }
+    }
+
+    .mat-row {
+      font-family: LatoBold;
+      &.highlight{
+        background-color: $color-grey-100;
+        font-family: Lato;
       }
     }
 
@@ -103,4 +110,3 @@ $block: "table-selectable";
   }
 
 }
-
