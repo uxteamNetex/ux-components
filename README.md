@@ -9,7 +9,14 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
 
-### v.X.X.X:
+### v.4.2.0:
+
+**Cards**<br/>
+- Nuevo componente ntx-card18 
+- Modificaciones en el componente card10 (*ntx-card10*)
+
+**Progress bar level**<br/>
+- Nuevo componente *ntx-progress-bar-level*
 
 **Icons**<br/>
 Archivos modificados:
@@ -25,12 +32,34 @@ Archivos modificados:
 **Lists**<br/>
 - Nuevo componente list-sidemenu (*ntx-list-sidemenu*)
 - Cambios en el html, css y ts en el componente list-two-lines-avatar (*ntx-list-two-lines-avatar*)
+- Nuevo componente *ntx-one-line-list*
+- Nuevo componente *ntx-list1*
 
 **Buttons**<br/>
 - Nuevo componente stroked-toggle-button (*ntx-stroked-toggle-button*)
+- Nuevo componente link-button (*ntx-link-button*)
 
 **Tables**<br/>
 - Cambios en el html, css y ts en el componente selectable-table (*ntx-selectable-table*)
+
+**Inputs**<br/>
+- Nuevo componente input sin label (*ntx-input-no-label*)
+
+**Paginator**<br/>
+- Nuevo componente paginador (*ntx-paginator*)
+
+**Search box with filter panel<br/>**
+- Nuevo componente search box con panel de filtros (*ntx-searchbox-filter-panel*)
+
+**Toolbar (new types)<br/>**
+- Nuevo componente toolbar (*ntx-toolbar-back-tabs*)
+- Nuevo componente toolbar (*ntx-toolbar-searchbox*)
+
+**Menus<br/>**
+- Modificaciones en el componente (*ntx-menu-options*)
+- Modificaciones en el componente (*menu-options-simple*)
+- Modificaciones en el componente (*ntx-menu-link*)
+
 
 ------------------
 

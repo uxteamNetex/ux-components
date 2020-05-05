@@ -82,7 +82,7 @@
         </ng-container>
 
         <mat-header-row *matHeaderRowDef="displayedColumns" class="table-selectable__header"></mat-header-row >
-        <mat-row *matRowDef="let row; columns: displayedColumns;" class="table-selectable__row" ></mat-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;" class="table-selectable__row" [ngClass]="{'highlight': row.isSeen}"></mat-row>
 
       </mat-table>
     </div>
