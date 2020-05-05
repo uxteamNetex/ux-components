@@ -1,0 +1,25 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "textarea-no-label";
+
+mat-form-field.#{$block} {
+  display: block;
+  .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+  .mat-form-field-infix {
+    padding: 0;
+    border-top: 0;
+  }
+  .mat-form-field-underline {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    height: 0;
+  }
+  .mat-input-element {
+    height: 24px;
+    margin: 2px 0 4px 0;
+    padding: 0; 
+  }
+}

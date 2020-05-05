@@ -11,34 +11,41 @@ import { ProccessDialogComponent } from './proccess-dialog/proccess-dialog.compo
 import { ProccessDialogContentComponent } from './proccess-dialog-content/proccess-dialog-content.component';
 
 import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
+import { ProfileDialogComponent } from './profile-dialog/profile-dialog.component';
+import { ProfileDialogContentComponent } from './profile-dialog-content/profile-dialog-content.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NtxSharedModule,
-    NtxDialogsRoutingModule,
-    NtxFormsModule
-  ],
-  declarations: [
-    SimpleDialogComponent,
-    SimpleDialogContentComponent,
-    WarningDialogComponent,
-    WarningDialogContentComponent,
-    ProccessDialogComponent,
-    ProccessDialogContentComponent
-  ],
-  entryComponents: [
-    SimpleDialogContentComponent,
-    WarningDialogContentComponent,
-    ProccessDialogContentComponent
-  ],
-  exports: [
-    SimpleDialogComponent,
-    SimpleDialogContentComponent,
-    WarningDialogComponent,
-    WarningDialogContentComponent,
-    ProccessDialogComponent,
-    ProccessDialogContentComponent
-  ]
+	imports: [
+		CommonModule,
+		NtxSharedModule,
+		NtxDialogsRoutingModule,
+		NtxFormsModule
+	],
+	declarations: [
+		SimpleDialogComponent,
+		SimpleDialogContentComponent,
+		WarningDialogComponent,
+		WarningDialogContentComponent,
+		ProccessDialogComponent,
+		ProccessDialogContentComponent,
+		ProfileDialogComponent,
+		ProfileDialogContentComponent
+	],
+	entryComponents: [
+		SimpleDialogContentComponent,
+		WarningDialogContentComponent,
+		ProccessDialogContentComponent,
+		ProfileDialogContentComponent
+	],
+	exports: [
+		SimpleDialogComponent,
+		SimpleDialogContentComponent,
+		WarningDialogComponent,
+		WarningDialogContentComponent,
+		ProccessDialogComponent,
+		ProccessDialogContentComponent,
+		ProfileDialogComponent,
+		ProfileDialogContentComponent
+	]
 })
 export class NtxDialogsModule { }

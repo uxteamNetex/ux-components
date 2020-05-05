@@ -8,6 +8,32 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
+
+### v.X.X.X:
+
+**Icons**<br/>
+Archivos modificados:
+- ux-components/src/styles/app/utils.scss
+- ux-components/src/styles/app/variables.scss
+- ux-components/src/styles/fonts/styles.scss
+- ux-components/src/styles/fonts/variables.scss
+
+**New icons**<br/>
+- icon-export-solid
+- icon-inbox-solid
+
+**Lists**<br/>
+- Nuevo componente list-sidemenu (*ntx-list-sidemenu*)
+- Cambios en el html, css y ts en el componente list-two-lines-avatar (*ntx-list-two-lines-avatar*)
+
+**Buttons**<br/>
+- Nuevo componente stroked-toggle-button (*ntx-stroked-toggle-button*)
+
+**Tables**<br/>
+- Cambios en el html, css y ts en el componente selectable-table (*ntx-selectable-table*)
+
+------------------
+
 ### v.4.1.3:
 
 **Cards**<br/>
@@ -15,6 +41,11 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Nuevo componente parametrizado card16 (*ntx-card16*)
 - Nuevo componente parametrizado card17 (*ntx-card17*)
 - Modificación del  componente ntx-list-one-line-option (*ntx-list-one-line-options*) para mostrar opciones o nivel de competencia.
+
+**Toolbars**<br/>
+- Modificación del orden de los iconos(avatar, settings y menú de aplicaciones)
+
+------------
 
 ### v.4.1.2:
 

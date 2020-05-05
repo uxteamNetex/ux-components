@@ -1,0 +1,17 @@
+.dummy-form__row {
+    display: flex;
+    ntx-form-select,
+    ntx-form-datepicker,
+    ntx-form-input {
+        flex-grow: 1;
+        padding: 0 20px;
+    }
+    .label {
+        width: 50px;
+        color: #999;
+    }
+}
+.dummy-form__actions {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,146 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.2.0: New cards, lists, paginator, toolbars and more...</h1>
+          <p class="whatsnew__header--subtitle">05 may 2020</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket-4.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our monthly update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>New card component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new card componentized component, <span class="documentation-code">ntx-card18</span>.</p>
+          <ntx-card18 [data]=data1></ntx-card18>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New list component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new list componentized component, <span class="documentation-code">ntx-one-line-list</span>.</p>
+          <ntx-list-one-line [data]=list></ntx-list-one-line>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New progress bar component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new progress bar componentized component, <span class="documentation-code">ntx-progress-bar-level</span>.</p>
+          <ntx-progress-bar-level [value]="'34'" [requiredValue]="'40'"></ntx-progress-bar-level>
+          <br/>
+          <ntx-progress-bar-level [value]="'95'" [requiredValue]="'50'"></ntx-progress-bar-level>
+          <br/>
+          <ntx-progress-bar-level [value]="'75'" ></ntx-progress-bar-level>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New list component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new list componentized component, <span class="documentation-code">ntx-list1</span>.</p>
+          <ntx-list1 [data]=list1></ntx-list1>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New input component without label</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new input component, <span class="documentation-code">ntx-input-no-label</span> without label.</p>
+          <ntx-input-no-label placeholder="Input placeholder"></ntx-input-no-label>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Paginator</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a paginator component, <span class="documentation-code">ntx-paginator</span> used with tables and/or grid of items like cards.</p>
+          <ntx-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></ntx-paginator>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Search box with filter panel</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new of search box which includes a filter panel, <span class="documentation-code">ntx-searchbox-filter-panel</span></p>
+          <ntx-searchbox-filter-panel></ntx-searchbox-filter-panel>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Link button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new type of button, <span class="documentation-code">ntx-link-button</span> that allows us to navigate to some route or perform some action
+          and can show an icon conditionally.</p>
+          <ntx-link-button showIcon="true">action!</ntx-link-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Icon stroked buttons</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new type of button, <span class="documentation-code">ntx-stroked-icon-button</span> that allows us to navigate between previous or subsequent elements.</p>
+          <ntx-stroked-toggle-button></ntx-stroked-toggle-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List sidemenu</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new type of list, <span class="documentation-code">ntx-list-sidemenu</span> that allows us to navigate between different views of a side menu.</p>
+          <ntx-list-sidemenu [user] ="user"></ntx-list-sidemenu>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Toolbar (added new types)</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released new type of toolbars, <span class="documentation-code">ntx-toolbar-back-tabs</span> that includes a back button, a second level of navigation 
+          and conditionally an action button and <span class="documentation-code">ntx-toolbar-searchbox</span>that includes a searchbox with filter panel.</p>
+          <ntx-toolbar-back-tabs [apps]="apps" [action]="'launch'"></ntx-toolbar-back-tabs>
+          <br/>
+          <br/>
+          <ntx-toolbar-searchbox label="Notificaciones" src="../../../assets/images/notifications.svg" [apps]="apps">
+          </ntx-toolbar-searchbox>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">Bug fixing</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Menu link componentization</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-menu-link</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menus')">link</a></p>
+          <ntx-menu-link [icon]="menulinkData.icon" [title]="menulinkData.title" [actions]="menulinkData.actions"></ntx-menu-link>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Fix menu-options and menu-options-simple component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-menu-options</span> and <span class="documentation-code">menu-options-simple</span> component stopping click event propagation to prevent overriding events over other components.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menus')">link</a></p>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card10</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card10</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card10/documentation" (click)="setPath('cards')">link</a></p>
+          <ntx-card10></ntx-card10>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Two lines list with avatar</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added an optional link in the <span class="documentation-code">ntx-list-two-lines-avatar</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/lists/documentation" (click)="setPath('lists')">link</a></p>
+          <ntx-list-two-lines-avatar showLink="true"></ntx-list-two-lines-avatar>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Table selectable</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added a new 'flat' style to the <span class="documentation-code">ntx-selectable-table</span> component and the option to add an icon in the title. After these new features there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly. The changed files are:</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/table-selectable/documentation" (click)="setPath('table-selectable')">link</a></p>
+          <ntx-selectable-table [style]="'flat'" showIcon="true"></ntx-selectable-table>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>User toolbar options menu</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified component<span class="documentation-code">ntx-menu-toolbar-profile</span> to let you show a badge if necessary. After these new features there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menus')">link</a></p>
+          <ntx-menu-toolbar-profile showBadge="true"></ntx-menu-toolbar-profile>
+        </div>
+
+      </div>
+
+    </ntx-card-simple>
+  </div>
+</div>

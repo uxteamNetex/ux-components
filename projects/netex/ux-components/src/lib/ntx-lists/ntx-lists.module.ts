@@ -15,35 +15,44 @@ import { ListHorizontalIconComponent } from './list-horizontal-icon/list-horizon
 import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.module';
+import { ListOneLineComponent } from './list-one-line/list-one-line.component';
+import { List1Component } from './list1/list1.component';
+import { ListSidemenuComponent } from './list-sidemenu/list-sidemenu.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NtxSharedModule,
-    NtxProgressBarModule,
-    NtxMenusModule,
-    NtxListsRoutingModule,
-    NtxButtonsModule
-  ],
-  declarations: [
-    ListTwoLinesAvatarComponent,
-    ListMultilinesIconComponent,
-    ListOneLineOptionsComponent,
-    ListOneLineNavigableComponent,
-    ListHorizontalComponent,
-    ListOneLineAvatarComponent,
-    ListTwoLinesAvatarVerticalComponent,
-    ListHorizontalIconComponent
-  ],
-  exports: [
-    ListTwoLinesAvatarComponent,
-    ListMultilinesIconComponent,
-    ListOneLineOptionsComponent,
-    ListOneLineNavigableComponent,
-    ListHorizontalComponent,
-    ListOneLineAvatarComponent,
-    ListTwoLinesAvatarVerticalComponent,
-    ListHorizontalIconComponent
-  ]
+	imports: [
+		CommonModule,
+		NtxSharedModule,
+		NtxProgressBarModule,
+		NtxMenusModule,
+		NtxListsRoutingModule,
+		NtxButtonsModule
+	],
+	declarations: [
+		ListTwoLinesAvatarComponent,
+		ListMultilinesIconComponent,
+		ListOneLineComponent,
+		ListOneLineOptionsComponent,
+		ListOneLineNavigableComponent,
+		ListHorizontalComponent,
+		ListOneLineAvatarComponent,
+		ListTwoLinesAvatarVerticalComponent,
+		ListHorizontalIconComponent,
+		List1Component,
+		ListSidemenuComponent
+	],
+	exports: [
+		ListTwoLinesAvatarComponent,
+		ListMultilinesIconComponent,
+		ListOneLineComponent,
+		ListOneLineOptionsComponent,
+		ListOneLineNavigableComponent,
+		ListHorizontalComponent,
+		ListOneLineAvatarComponent,
+		ListTwoLinesAvatarVerticalComponent,
+		ListHorizontalIconComponent,
+		List1Component,
+		ListSidemenuComponent
+	]
 })
 export class NtxListsModule { }

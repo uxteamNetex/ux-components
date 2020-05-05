@@ -39,6 +39,15 @@ h5{
   text-transform: uppercase;
 }
 
+.card {
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  &--outlined {
+    border: 2px solid #DDD;
+  }
+}
 
 $block: "utils";
 
@@ -89,6 +98,14 @@ $block: "utils";
     margin: 0;
     text-transform: uppercase;
   }
+  &--panel-section-title {
+    color: $color-grey-800;
+    font-family: LatoSemibold;
+    font-size: $font-size-16;
+    line-height: 22px;
+    margin: 0;
+    text-transform: uppercase;
+  }
   &--basic-text {
     color: $color-grey-600;
     font-family: lato;
@@ -100,7 +117,7 @@ $block: "utils";
 	&--uppercase {
 		text-transform: uppercase;
   }
-  
+
   &--truncate {
 		white-space: nowrap;
 		overflow: hidden;
@@ -135,6 +152,18 @@ $block: "utils";
     transform: translate(-50%, -50%);
     top: 50%;
   }
+
+  &--centered {
+    @include centerer;
+  }
+
+  //Display
+  &--flex-center {
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
 
   //Tamaños fuente
   &--text-10 {
@@ -219,6 +248,12 @@ $block: "utils";
   }
   &--text-orange {
 		color: $color-orange !important;
+  }
+  &--text-warning {
+		color: $color-warning !important;
+  }
+  &--text-error {
+		color: $color-error !important;
   }
 
   //Colores de fondo - Escala de grises

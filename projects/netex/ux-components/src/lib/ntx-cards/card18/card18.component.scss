@@ -1,0 +1,53 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card18";
+
+.#{$block} {
+    background-color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
+    font-family: Lato;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px 60% 1fr fit-content(40px);
+    grid-template-rows: 40px 22px;
+    grid-template-areas: "avatar title progress-bar level"
+                         "...... subtitle subtitle subtitle";
+    gap: 0 16px;
+    .#{$block}__avatar {
+        grid-area: avatar;
+        img,span{
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            object-fit: cover;
+        }
+        &--alias {
+            display: block;
+            line-height: 40px;
+            text-align: center;
+            font-size: 23px;
+            color: rgba(255,255,255,0.4);
+        }
+    }
+    .#{$block}__title {
+        grid-area: title;
+        align-self: center;
+    }
+    .#{$block}__progress-bar {
+        grid-area: progress-bar;
+        align-self: center;
+    }
+    .#{$block}__level {
+        grid-area: level;
+        justify-self: center;
+        align-self: center;
+    }
+    .#{$block}__subtitle {
+        grid-area: subtitle;
+        font-family: LatoSemibold;
+        font-style: italic;
+    }
+}

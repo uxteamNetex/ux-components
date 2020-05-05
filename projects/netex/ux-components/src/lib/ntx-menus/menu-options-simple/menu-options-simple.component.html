@@ -1,5 +1,10 @@
-<button mat-icon-button class="menu-options-button" color="accent" [matMenuTriggerFor]="menuOptions">
-  <mat-icon class="icon-netex icon-more-options"></mat-icon>
+<button 
+  mat-icon-button 
+  class="menu-options-button" 
+  color="accent" 
+  [matMenuTriggerFor]="menuOptions"
+  (click)="$event.stopPropagation()">
+    <mat-icon class="icon-netex icon-more-options"></mat-icon>
 </button>
 
 <mat-menu #menuOptions="matMenu" class="mat-menu-options-simple" [overlapTrigger]="false">

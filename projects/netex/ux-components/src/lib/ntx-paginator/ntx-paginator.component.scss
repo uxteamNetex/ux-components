@@ -1,0 +1,15 @@
+ntx-paginator {
+    mat-paginator.mat-paginator {
+        display: flex;
+        background-color: transparent;
+        &.left {
+            justify-content: flex-start;
+        }
+        &.center {
+            justify-content: center;
+        }
+        &.right {
+            justify-content: flex-end;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<div class="searchbox-filter-panel" #container>
+  <div class="searchbox-filter-panel__searchbox">
+    <mat-icon class="icon-netex icon-search utils--margin-right-24"></mat-icon>
+    <!-- <ntx-input-no-label [placeholder]="'Buscar notificación'"></ntx-input-no-label> -->
+    <input type="text" placeholder="Buscar notificaci&oacute;n" class="searchbox-filter-panel__input utils--text-16 utils--text-grey-600">
+    <button 
+      mat-button 
+      mat-icon-button
+      (click)="togglePanel()">
+      <mat-icon class="icon-netex icon-funnel-solid utils--text-grey-600"></mat-icon>
+    </button>
+  </div>
+  <div *ngIf="show" class="searchbox-filter-panel__panel utils--margin-top-4">
+    <button 
+      mat-button 
+      mat-icon-button
+      (click)="togglePanel()"
+      class="searchbox-filter-panel__panel--closeButton">
+        <mat-icon class="icon-netex icon-cross utils--text-grey-600"></mat-icon>
+    </button>
+    <div class="searchbox-filter-panel__panel--content utils--margin-top-4">
+      <div #contentPanelRef>
+        <ng-content></ng-content>
+      </div>
+      <div *ngIf="!contentPanelRef.innerHTML.trim()" class="placeholder utils--align-center-text utils--basic-text">
+        /** area for specific search form of the consuming app **/
+      </div>
+    </div>
+  </div>
+</div>

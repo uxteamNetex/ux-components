@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 
 export interface Section {
@@ -16,6 +16,8 @@ export interface Section {
 
 export class MenuToolbarProfileComponent implements OnInit {
 
+  @Input() showBadge: boolean;
+  
   constructor() { }
 
   texts: Section[] = [

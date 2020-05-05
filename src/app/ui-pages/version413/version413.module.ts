@@ -27,11 +27,12 @@ import {
 	NtxButtonsModule,
 	NtxTabsModule,
 	NtxMenusModule,
-	NtxDialogsModule
+	NtxDialogsModule,
+	NtxToolbarModule
 } from '@netex/ux-components';
 
 @NgModule({
-declarations: [DocumentationComponent, ExamplesComponent, EntityDetailPanelComponent],
+declarations: [DocumentationComponent, ExamplesComponent],
 	imports: [
 		CommonModule,
 		Version413RoutingModule,
@@ -51,10 +52,8 @@ declarations: [DocumentationComponent, ExamplesComponent, EntityDetailPanelCompo
 		NtxButtonsModule,
 		NtxTabsModule,
 		NtxMenusModule,
-		NtxDialogsModule
-	],
-	entryComponents: [
-		EntityDetailPanelComponent
+		NtxDialogsModule,
+		NtxToolbarModule
 	]
 })
 export class Version413Module { }

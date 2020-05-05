@@ -3,27 +3,27 @@ import { ButtonTypesService } from '../buttonTypes.service';
 import { ButtonType } from '../buttonType.interface';
 
 @Component({
-  selector: 'app-buttons-examples',
-  templateUrl: './buttons-examples.component.html',
-  styleUrls: ['./buttons-examples.component.scss']
+	selector: 'app-buttons-examples',
+	templateUrl: './buttons-examples.component.html',
+	styleUrls: ['./buttons-examples.component.scss']
 })
 export class ButtonsExamplesComponent implements OnInit {
 
-  buttonTypes: ButtonType[];
+	buttonTypes: ButtonType[];
 
-  constructor(
-    private buttonTypesService: ButtonTypesService
-  ) { }
+	constructor(
+		private buttonTypesService: ButtonTypesService
+	) { }
 
-  ngOnInit() {
-    this.getButtonTypes();
-  }
+	ngOnInit() {
+		this.getButtonTypes();
+	}
 
-  getButtonTypes():void {
-    this.buttonTypesService.getButtonTypes().subscribe(
-      result => {
-        this.buttonTypes = result;
-      }
-    )
-  }
+	getButtonTypes(): void {
+		this.buttonTypesService.getButtonTypes().subscribe(
+			result => {
+				this.buttonTypes = result;
+			}
+		);
+	}
 }

@@ -1,0 +1,12 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+a.menu-link {
+    color: $color-primary;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+    &:hover {
+        color: $color-primary-hover;
+    }
+}

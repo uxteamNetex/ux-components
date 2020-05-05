@@ -45,6 +45,26 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-inbox-solid {
+  &:before {
+    content: $icon-inbox-solid;
+  }
+}
+.icon-export-solid {
+  &:before {
+    content: $icon-export-solid;
+  }
+}
+.icon-envelope-solid {
+  &:before {
+    content: $icon-envelope-solid;
+  }
+}
+.icon-mailbox {
+  &:before {
+    content: $icon-mailbox;
+  }
+}
 .icon-navigation-header {
   &:before {
     content: $icon-navigation-header;

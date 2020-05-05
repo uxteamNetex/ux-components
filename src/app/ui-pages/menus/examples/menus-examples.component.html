@@ -2,6 +2,12 @@
   <div class="page-container">
 
     <ntx-card-simple
+      title="{{'Menu from button with link style' | uppercase }}"
+      subtitle="{{ '<ntx-menu-link>' }}">
+        <ntx-menu-link [icon]="menulinkData.icon" [title]="menulinkData.title" [actions]="menulinkData.actions"></ntx-menu-link>
+    </ntx-card-simple>
+
+    <ntx-card-simple
       title="{{'Simple options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options-simple>' }}">
         <ntx-menu-options-simple></ntx-menu-options-simple>

@@ -82,6 +82,136 @@ code2 = `
         </div>
       </ng-template>
     </mat-menu>`;
+
+  code3 = `
+  <button mat-icon-button class="menu-options-button profile-menu" [matMenuTriggerFor]="menuOptions">
+    <div class="profile-menu-image">
+        <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
+    </div>
+    <span *ngIf="showBadge" class="menu-option-button__badge"
+      matBadgeOverlap="false"
+      matBadge="2"
+      matBadgeHidden="false"
+      matBadgeSize="small"
+      matBadgePosition="below">
+  </span>
+  </button>
+  ...
+    `;
+
+  code4 = `
+    import { Component, OnInit, Input } from '@angular/core';
+    import { ViewEncapsulation } from '@angular/core';
+
+    export interface Section {
+      title: string;
+      subtitle: string;
+      link: string;
+    }
+
+    @Component({
+      selector: 'ntx-menu-toolbar-profile',
+      templateUrl: './menu-toolbar-profile.component.html',
+      styleUrls: ['./menu-toolbar-profile.component.scss'],
+      encapsulation: ViewEncapsulation.None
+    })
+
+    export class MenuToolbarProfileComponent implements OnInit {
+
+      @Input() showBadge: boolean;
+
+      constructor() { }
+
+      texts: Section[] = [
+        {
+        title: 'Carolina López',
+        subtitle: 'carolina.lopez',
+        link: 'Accede a tu cuenta',
+        }
+      ];
+
+      ngOnInit() { }
+
+      }`;
+
+  code5=`
+    <a class="menu-link" [matMenuTriggerFor]="menuOptions">
+    <mat-icon class="icon-netex {{icon}} utils--margin-right-12"></mat-icon>
+    <span>{{title}}</span>
+    </a>
+    <mat-menu #menuOptions="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item (click)="item.click()" mat-menu-item *ngFor="let item of actions">
+      <mat-icon class="mat-icon icon-netex {{item.icon}}"></mat-icon>
+      <span class="utils--text-grey-700">{{item.title}}</span>
+    </button>
+    </mat-menu>
+`;    
+  code6=`
+    import { Component, OnInit, Input } from '@angular/core';
+
+    export class IActionsMenuLinkComponent {
+    icon?: string;
+    title: string;
+    click: Function;
+    }
+
+    @Component({
+    selector: 'ntx-menu-link',
+    templateUrl: './menu-link.component.html',
+    styleUrls: ['./menu-link.component.scss']
+    })
+    export class MenuLinkComponent implements OnInit {
+
+    @Input() title: string;
+    @Input() icon: string;
+    @Input() actions: IActionsMenuLinkComponent[];
+
+    constructor() { }
+
+    ngOnInit() {
+    }
+    }
+  `;    
+  code7=`
+    @import "././projects/netex/ux-components/src/styles/app/utils";
+
+    a.menu-link {
+      color: $color-primary;
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 0;
+      cursor: pointer;
+      &:hover {
+          color: $color-primary-hover;
+      }
+    }
+  `;    
+
+
+  code8=`
+    <button 
+      mat-icon-button 
+      class="menu-options-button" 
+      color="accent" 
+      [matMenuTriggerFor]="menuOptions"
+      (click)="$event.stopPropagation()">
+        <mat-icon class="icon-netex icon-more-options"></mat-icon>
+    </button>
+    ...
+`;
+
+  code9=`
+  <button 
+    mat-icon-button 
+    class="menu-options-button" 
+    color="accent" 
+    [matMenuTriggerFor]="menuOptions"
+    (click)="$event.stopPropagation()">
+     <mat-icon class="icon-netex icon-more-options"></mat-icon>
+  </button>
+  ...
+  `;
+
 constructor() { }
 
 ngOnInit() {}

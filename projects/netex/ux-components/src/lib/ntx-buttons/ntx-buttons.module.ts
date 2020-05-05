@@ -14,6 +14,8 @@ import { TextIconButtonComponent } from './text-icon-button/text-icon-button.com
 import { StrokedIconButtonComponent } from './stroked-icon-button/stroked-icon-button.component';
 import { SquareButtonComponent } from './square-button/square-button.component';
 import { FabSpeedDialButtonComponent } from './fab-speed-dial-button/fab-speed-dial-button.component';
+import { LinkButtonComponent } from './link-button/link-button.component';
+import { StrokedToggleButtonComponent } from './stroked-toggle-button/stroked-toggle-button.component';
 
 @NgModule({
   imports: [
@@ -32,7 +34,9 @@ import { FabSpeedDialButtonComponent } from './fab-speed-dial-button/fab-speed-d
     TextIconButtonComponent,
     StrokedIconButtonComponent,
     SquareButtonComponent,
-    FabSpeedDialButtonComponent
+    FabSpeedDialButtonComponent,
+    LinkButtonComponent,
+    StrokedToggleButtonComponent
   ],
   exports: [
     RaisedButtonComponent,
@@ -45,7 +49,9 @@ import { FabSpeedDialButtonComponent } from './fab-speed-dial-button/fab-speed-d
     TextIconButtonComponent,
     StrokedIconButtonComponent,
     SquareButtonComponent,
-    FabSpeedDialButtonComponent
+    FabSpeedDialButtonComponent,
+    LinkButtonComponent,
+    StrokedToggleButtonComponent
   ]
 })
 export class NtxButtonsModule { }

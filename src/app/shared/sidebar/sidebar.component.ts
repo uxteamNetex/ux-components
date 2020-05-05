@@ -15,6 +15,7 @@ const LINKS = [
 	'lists',
 	'menus',
 	'organisation-chart',
+	'paginator',
 	'tabs',
 	'toolbars',
 	'user-profile-panel'
@@ -37,6 +38,7 @@ const CARDS = [
 	'card15',
 	'card16',
 	'card17',
+	'card18',
 	'cards'
 ];
 
@@ -60,8 +62,13 @@ const PANELS =  [
 	'panel-tabs'
 ];
 
+const PAGINATOR =  [
+	'paginator'
+];
+
 const PROGRESS = [
 	'progress-bar',
+	'progress-bar-level',
 	'progress-spinner'
 ];
 
@@ -101,6 +108,10 @@ const WHATSNEWS = [
 	{
 		linkName: 'version413',
 		label: 'version 4.1.3'
+	},
+	{
+		linkName: 'version420',
+		label: 'version 4.2.0'
 	}
 ];
 
@@ -111,7 +122,8 @@ const CATEGORIES = {
 	progress: { title: 'progress', links: PROGRESS },
 	sidenavs: { title: 'sidenavs', links: SIDENAVS },
 	table: { title: 'table', links: TABLES },
-	tree: { title: 'tree', links: TREE }
+	tree: { title: 'tree', links: TREE },
+	paginator: { title: 'paginator', links: PAGINATOR }
 };
 
 export interface Category {

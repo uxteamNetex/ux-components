@@ -1,0 +1,36 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list-one-line";
+
+.#{$block} {
+  font-family: Lato;
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    img, span {
+      width: 36px;
+      height: 36px;
+      margin-right: 24px;
+    }
+    img {
+      object-fit: cover;
+    }
+    &--alias {
+      line-height: 36px;
+      text-align: center;
+      font-size: 23px;
+      color: rgba(255,255,255,0.4);
+    }
+    &--text {
+      flex-basis: calc(100% - 60px);
+      max-width: calc(100% - 60px);
+      font-size: 16px;
+      height: 100%;
+      line-height: 68px;
+    }
+    &:not(:last-child) .#{$block}__item--text{
+      border-bottom: 1px solid $color-grey-200;
+    }
+  }
+}

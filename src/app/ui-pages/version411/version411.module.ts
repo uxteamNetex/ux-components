@@ -31,7 +31,7 @@ import {
 } from '@netex/ux-components';
 
 @NgModule({
-  declarations: [DocumentationComponent, ExamplesComponent, EntityDetailPanelComponent],
+  declarations: [DocumentationComponent, ExamplesComponent],
   imports: [
     CommonModule,
     Version411RoutingModule,
@@ -52,9 +52,6 @@ import {
     NtxTabsModule,
     NtxMenusModule,
     NtxDialogsModule
-  ],
-  entryComponents: [
-    EntityDetailPanelComponent
   ]
 })
 export class Version411Module { }

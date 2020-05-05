@@ -2,8 +2,28 @@
 
 $block: "table-selectable";
 
+.table-container{
+  &.flat {
+    .table-selectable__wrapper{
+      box-shadow: none;
+      .multi-select-header{
+        background: transparent;
+        &.selected{
+          background-color: $color-primary;
+        }
+      }
+      .table-selectable__container {
+        .table-selectable__table{
+          background-color: transparent;
+        }
+      }
+      .table-container__paginator{
+        background-color: transparent;
+      }
+    }
+  }
+}
 .#{$block} {
-
   &__wrapper {
     border-radius: 4px;
     box-shadow: $shadow;
@@ -13,7 +33,6 @@ $block: "table-selectable";
     overflow: auto;
   }
   &__table {
-
     .mat-header-row {
       background-color: $color-table-header-background;
       border-bottom-width: 0;

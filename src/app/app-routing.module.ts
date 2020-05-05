@@ -76,6 +76,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/card17/card17.module#Card17Module'
 	},
 	{
+		path: 'card18',
+		loadChildren: './ui-pages/card18/card18.module#Card18Module'
+	},
+	{
 		path: 'cards',
 		loadChildren: './ui-pages/cards/cards.module#CardsModule'
 	},
@@ -168,8 +172,16 @@ const routes: Routes = [
 		loadChildren: './ui-pages/panel-tabs/panel-tabs.module#PanelTabsModule'
 	},
 	{
+		path: 'paginator',
+		loadChildren: './ui-pages/paginator/paginator.module#PaginatorModule'
+	},
+	{
 		path: 'progress-bar',
 		loadChildren: './ui-pages/progress-bar/progress-bar.module#ProgressBarModule'
+	},
+	{
+		path: 'progress-bar-level',
+		loadChildren: './ui-pages/progress-bar-level/progress-bar-level.module#ProgressBarLevelModule'
 	},
 	{
 		path: 'progress-spinner',
@@ -234,6 +246,10 @@ const routes: Routes = [
 	{
 		path: 'version413',
 		loadChildren: './ui-pages/version413/version413.module#Version413Module'
+	},
+	{
+		path: 'version420',
+		loadChildren: './ui-pages/version420/version420.module#Version420Module'
 	},
 	{ path: '',
 		redirectTo: '/home',

@@ -180,6 +180,171 @@ export class DocumentationComponent implements OnInit {
     }
   }`;
 
+  code11=`
+  <div class="searchbox-filter-panel" #container>
+  <div class="searchbox-filter-panel__searchbox">
+    <mat-icon class="icon-netex icon-search utils--margin-right-24"></mat-icon>
+    <!-- <ntx-input-no-label [placeholder]="'Buscar notificación'"></ntx-input-no-label> -->
+    <input type="text" placeholder="Buscar notificaci&oacute;n" class="searchbox-filter-panel__input utils--text-16 utils--text-grey-600">
+    <button 
+      mat-button 
+      mat-icon-button
+      (click)="togglePanel()">
+      <mat-icon class="icon-netex icon-funnel-solid utils--text-grey-600"></mat-icon>
+    </button>
+  </div>
+  <div *ngIf="show" class="searchbox-filter-panel__panel utils--margin-top-4">
+    <button 
+      mat-button 
+      mat-icon-button
+      (click)="togglePanel()"
+      class="searchbox-filter-panel__panel--closeButton">
+        <mat-icon class="icon-netex icon-cross utils--text-grey-600"></mat-icon>
+    </button>
+    <div class="searchbox-filter-panel__panel--content utils--margin-top-4">
+      <div #contentPanelRef>
+        <ng-content></ng-content>
+      </div>
+      <div *ngIf="!contentPanelRef.innerHTML.trim()" class="placeholder utils--align-center-text utils--basic-text">
+        /** area for specific search form of the consuming app **/
+      </div>
+    </div>
+  </div>
+</div>`;
+  code12=`
+  import { Component, OnInit, ViewChild, TemplateRef, ElementRef } from '@angular/core';
+import { MatDialogRef, MatDialog } from '@angular/material';
+
+@Component({
+  selector: 'ntx-searchbox-filter-panel',
+  templateUrl: './searchbox-filter-panel.component.html',
+  styleUrls: ['./searchbox-filter-panel.component.scss']
+})
+export class SearchboxFilterPanelComponent implements OnInit {
+
+  constructor() { }
+
+  show: boolean = false;
+
+  ngOnInit() {
+  }
+
+  togglePanel(): void {
+    this.show = !this.show;
+  }
+
+}
+`;
+  code13=`
+  @import "././projects/netex/ux-components/src/styles/app/utils";
+
+:host {
+    display: block;
+}
+
+$block: "searchbox-filter-panel";
+
+.#{$block} {
+    position: relative;
+    .#{$block}__searchbox {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        border-radius: 26px;
+        border: 1px solid $color-grey-300;
+        color: $color-grey-600;
+        padding: 4px 18px;
+        align-items: center;
+        ntx-input-no-label, input{
+            flex-grow: 1;
+        }
+        .#{$block}__input {
+            font-family: Lato;
+            border-style: none;
+            background-color: transparent;
+            &:hover,&:focus {
+                outline: none;
+            }
+        }
+    }
+    .#{$block}__panel {
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        &--closeButton {
+            align-self: flex-end;
+        }
+        &--content {
+            flex-grow: 1;
+            .placeholder {
+                border: 1px dashed $color-grey-300;
+                font-style: italic;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+`;
+
+code14 =`
+  <mat-form-field floatLabel="never" class="input-no-label">
+    <mat-label>{{placeholder}}</mat-label>
+    <input matInput class="utils--text-16">
+  </mat-form-field>
+`;
+code15 =`
+  import { Component, OnInit, Input } from '@angular/core';
+  import { ViewEncapsulation } from '@angular/core';
+
+  @Component({
+    selector: 'ntx-input-no-label',
+    templateUrl: './input-no-label.component.html',
+    styleUrls: ['./input-no-label.component.scss'],
+    encapsulation: ViewEncapsulation.None
+  })
+  export class InputNoLabelComponent implements OnInit {
+
+    @Input() placeholder: string;
+
+    constructor() { }
+
+    ngOnInit() {
+    }
+  }
+`;
+code16 =`
+  @import "././projects/netex/ux-components/src/styles/app/utils";
+
+  $block: "input-no-label";
+
+  mat-form-field.#{$block} {
+      display: block;
+      .mat-form-field-wrapper {
+        padding-bottom: 0;
+      }
+      .mat-form-field-infix {
+        padding: 0;
+        border-top: 0;
+      }
+      .mat-form-field-underline {
+        position: absolute;
+        bottom: 0;
+        background-color: transparent;
+        height: 0;
+      }
+      .mat-input-element {
+        height: 28px;
+      }
+  }
+`;
+
   ngOnInit() {
   }
 

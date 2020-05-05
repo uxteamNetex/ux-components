@@ -1,17 +1,34 @@
 <div class="page-layout">
   <div class="page-container">
+    <ntx-card-simple
+      title="{{ 'basic toolbar' | uppercase }}"
+      subtitle="{{ '<ntx-toolbar>' }}">
+        <ntx-toolbar [apps]="apps">
+          <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
+        </ntx-toolbar>
+    </ntx-card-simple>
+    <ntx-card-simple  
+      title="{{'basic toolbar with search box' | uppercase}}"
+      subtitle="{{ '<ntx-toolbar-searchbox>' }}">
+      <ntx-toolbar-searchbox label="Notificaciones" src="../../../assets/images/notifications.svg" [apps]="apps">
+        <app-dummy-form></app-dummy-form>
+      </ntx-toolbar-searchbox>
+    </ntx-card-simple>
     <ntx-card-simple *ngFor="let type of toolbarTypes"
       title="{{ type.label | uppercase }}"
       subtitle="{{ type.selector }}">
-        <ntx-toolbar [apps]="apps" *ngIf="type.label==='basic toolbar'">
-          <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
-        </ntx-toolbar>
         <ntx-toolbar-back [apps]="apps" *ngIf="type.label==='back toolbar'">
           <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
         </ntx-toolbar-back>
         <ntx-toolbar-tabs [apps]="apps" *ngIf="type.label==='toolbar with tabs'">
           <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
         </ntx-toolbar-tabs>
+        <ntx-toolbar-back-tabs [apps]="apps" *ngIf="type.label==='toolbar back tabs without action button'">
+        </ntx-toolbar-back-tabs>
+        <ntx-toolbar-back-tabs [apps]="apps" [action]="'launch'" *ngIf="type.label==='toolbar back tabs with action button'">
+        </ntx-toolbar-back-tabs>
+        <ntx-toolbar-back-tabs [apps]="apps" [action]="'finish'" *ngIf="type.label==='toolbar back tabs with another action button'">
+        </ntx-toolbar-back-tabs>
     </ntx-card-simple>
   </div>
 </div>

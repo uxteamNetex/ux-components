@@ -23,6 +23,11 @@
       <ntx-stroked-icon-button [color]="'white'" [disabled]="'true'"></ntx-stroked-icon-button>
     </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Icon toggle buttons' | uppercase }}"
+                      subtitle="{{ '<ntx-stroked-toggle-button>' }}">
+      <ntx-stroked-toggle-button></ntx-stroked-toggle-button>
+    </ntx-card-simple>
+
     <ntx-card-simple title="{{'Text buttons' | uppercase }}"
                       subtitle="{{ '<ntx-text-button>' }}"
                       class="white-content">
@@ -85,7 +90,10 @@
       <div *ngIf="type.label==='speed dial'">
         <ntx-fab-speed-dial-button [color]="'primary'"></ntx-fab-speed-dial-button>
       </div>
-
+      <div *ngIf="type.label==='link'">
+        <ntx-link-button>acción</ntx-link-button>
+        <ntx-link-button [rLink]="'path/to/route'" showIcon="true">acción</ntx-link-button>
+      </div>
     </ntx-card-simple>
 
   </div>

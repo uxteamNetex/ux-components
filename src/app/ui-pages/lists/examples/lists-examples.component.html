@@ -2,6 +2,18 @@
   <div class="page-container">
 
     <ntx-card-simple
+      title="{{'List sidemenu' | uppercase }}"
+      subtitle="{{ '<ntx-list-sidemenu>' }}">
+      <ntx-list-sidemenu [user] ="user"></ntx-list-sidemenu>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'List 1' | uppercase }}"
+      subtitle="{{ '<ntx-list1>' }}">
+        <ntx-list1 [data]=list1></ntx-list1>
+    </ntx-card-simple>
+
+    <ntx-card-simple
       title="{{'One line list with avatar' | uppercase }}"
       subtitle="{{ '<ntx-list-one-line-avatar>' }}">
         <ntx-list-one-line-avatar></ntx-list-one-line-avatar>
@@ -12,7 +24,7 @@
     <ntx-card-simple
       title="{{'Two lines list with avatar' | uppercase }}"
       subtitle="{{ '<ntx-list-two-lines-avatar>' }}">
-        <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
+        <ntx-list-two-lines-avatar showLink="true"></ntx-list-two-lines-avatar>
         <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
         <ntx-list-two-lines-avatar></ntx-list-two-lines-avatar>
     </ntx-card-simple>
@@ -21,6 +33,12 @@
       title="{{'Multi list with icon' | uppercase }}"
       subtitle="{{ '<ntx-list-two-multilines-icon>' }}">
         <ntx-list-multilines-icon></ntx-list-multilines-icon>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'One line list' | uppercase }}"
+      subtitle="{{ '<ntx-list-one-line>' }}">
+      <ntx-list-one-line [data]=list></ntx-list-one-line>
     </ntx-card-simple>
 
     <ntx-card-simple

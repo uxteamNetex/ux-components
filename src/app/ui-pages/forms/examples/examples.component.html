@@ -15,6 +15,13 @@
                       subtitle="{{ '<ntx-form-input-no-label>' }}">
       <ntx-form-input-no-label></ntx-form-input-no-label>
     </ntx-card-simple>
+    
+    <ntx-card-simple title="{{'Isolated input without label' | uppercase }}"
+                      subtitle="{{ '<ntx-input-no-label>' }}">
+      <div class="input-no-label__container">
+        <ntx-input-no-label [placeholder]="'Add a text'"></ntx-input-no-label>
+      </div>
+    </ntx-card-simple>
 
     <ntx-card-simple title="{{'Input form' | uppercase }}"
                       subtitle="{{ '<ntx-form-input>' }}">
@@ -24,6 +31,13 @@
     <ntx-card-simple title="{{'Textarea' | uppercase }}"
                       subtitle="{{ '<ntx-form-textarea>' }}">
       <ntx-form-textarea></ntx-form-textarea>
+    </ntx-card-simple>
+
+    <ntx-card-simple title="{{'Isolated textarea without label' | uppercase }}"
+                      subtitle="{{ '<ntx-textarea-no-label>' }}">
+      <div class="textarea-no-label__container">
+        <ntx-textarea-no-label [placeholder]="'Add a description...'"></ntx-textarea-no-label>
+      </div>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Select' | uppercase }}"
@@ -89,6 +103,11 @@
       <ntx-form-slider [disabled]="'true'"></ntx-form-slider>
     </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Searchbox with filter panel' | uppercase }}"
+                      subtitle="{{ '<ntx-searchbox-filter-panel>' }}">
+      <ntx-searchbox-filter-panel></ntx-searchbox-filter-panel>
+    </ntx-card-simple>
+    
     <ntx-card-simple title="{{'Searchbox' | uppercase }}"
                       subtitle="{{ '<ntx-form-searchbox>' }}">
       <div class="ntxformsearchbox-container">
