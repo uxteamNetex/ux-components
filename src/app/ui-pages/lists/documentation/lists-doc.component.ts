@@ -262,6 +262,90 @@ code6 = `
     }
     }
   `;
-	ngOnInit() {
+  
+  code12=`
+    <div class="list-one-line">
+    <div class="list-one-line__item" *ngFor="let item of data">
+      <img 
+        *ngIf="item.avatar; else elseBlock"
+        src="{{item.avatar}}"
+        alt="{{item.label + '&#32;image'}}">
+      <ng-template #elseBlock>
+        <span 
+          [style.background-color]="item.color"
+          class="list-one-line__item--alias">{{item.label | slice:0:1}}</span>
+      </ng-template>
+      <div class="list-one-line__item--text utils--text-grey-800 utils--truncate">
+        <span matTooltip="{{item.label}}">{{item.label}}</span>
+      </div>
+    </div>
+    </div>
+  `;
+  code13=`
+    import { Component, OnInit, Input } from '@angular/core';
+
+    export interface Item {
+    label: string;
+    avatar: string;
+    color: string;
+    }
+
+    @Component({
+    selector: 'ntx-list-one-line',
+    templateUrl: './list-one-line.component.html',
+    styleUrls: ['./list-one-line.component.scss'],
+    })
+
+    export class ListOneLineComponent implements OnInit {
+
+    @Input() data: Item[];
+
+    constructor() { }
+
+    ngOnInit() { }
+
+    }
+  `;
+
+  code14=`
+    @import "././projects/netex/ux-components/src/styles/app/utils";
+
+    $block: "list-one-line";
+
+    .#{$block} {
+    font-family: Lato;
+    &__item {
+      display: flex;
+      align-items: center;
+      height: 68px;
+      img, span {
+        width: 36px;
+        height: 36px;
+        margin-right: 24px;
+      }
+      img {
+        object-fit: cover;
+      }
+      &--alias {
+        line-height: 36px;
+        text-align: center;
+        font-size: 23px;
+        color: rgba(255,255,255,0.4);
+      }
+      &--text {
+        flex-basis: calc(100% - 60px);
+        max-width: calc(100% - 60px);
+        font-size: 16px;
+        height: 100%;
+        line-height: 68px;
+      }
+      &:not(:last-child) .#{$block}__item--text{
+        border-bottom: 1px solid $color-grey-200;
+      }
+    }
+    }
+  `;
+
+  ngOnInit() {
 	}
 }
