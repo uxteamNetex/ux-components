@@ -22,6 +22,22 @@ const USER = {
 	]
 };
 
+export interface Item1 {
+	label: string;
+	avatar: string;
+	color: string;
+	progress: {
+		value: number;
+		level: string;
+	};
+}
+
+export interface Item {
+	label: string;
+	avatar: string;
+	color: string;
+}
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -119,5 +135,50 @@ export class ExamplesComponent implements OnInit {
 			}
 		}
 	];
+
+	list: Item[] = [
+		{
+			label: 'Customer oriented',
+			avatar: undefined,
+			color: '#E7575B'
+		},
+		{
+			label: 'Leadership',
+			avatar: 'assets/images/app-catalogue.png',
+			color: '#5cce88'
+		},
+		{
+			label: 'Organisation',
+			avatar: 'assets/images/app-community.png',
+			color: '#EE9A37'
+		},
+		{
+			label: 'Verbal communication',
+			avatar: undefined,
+			color: '#5cce88'
+		},
+		{
+			label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			avatar: undefined,
+			color: '#41545D'
+		},
+		{
+			label: 'Critical thinking & problem solving',
+			avatar: 'assets/images/background-profile-header.jpg',
+			color: '#1D5D93'
+		}
+	];
+
+	data1: any = {
+		avatar: undefined,
+		progress: {
+			value: 80,
+			requiredValue: 50,
+			level: '4/5'
+		},
+		color: '#E7575B',
+		title: 'Customer oriented' ,
+		subtitle: 'Europe division > 2019 competencies'
+};
 
 }
