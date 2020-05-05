@@ -187,6 +187,31 @@ code2 = `
     }
   `;    
 
+
+  code8=`
+    <button 
+      mat-icon-button 
+      class="menu-options-button" 
+      color="accent" 
+      [matMenuTriggerFor]="menuOptions"
+      (click)="$event.stopPropagation()">
+        <mat-icon class="icon-netex icon-more-options"></mat-icon>
+    </button>
+    ...
+`;
+
+  code9=`
+  <button 
+    mat-icon-button 
+    class="menu-options-button" 
+    color="accent" 
+    [matMenuTriggerFor]="menuOptions"
+    (click)="$event.stopPropagation()">
+     <mat-icon class="icon-netex icon-more-options"></mat-icon>
+  </button>
+  ...
+  `;
+
 constructor() { }
 
 ngOnInit() {}
