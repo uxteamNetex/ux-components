@@ -19,7 +19,7 @@ export class ExamplesComponent implements OnInit {
 			},
 			color: '#E7575B',
 			title: 'Customer oriented' ,
-			subtitle: 'Europe division > 2019 competencies'
+			subtitle: ''
 	};
 	data2: any = {
 		avatar: 'assets/images/app-catalogue.png',
@@ -41,7 +41,7 @@ export class ExamplesComponent implements OnInit {
 		},
 		color: '#1D5D93',
 		title: 'Critical thinking & problem solving' ,
-		subtitle: 'Europe division > 2019 competencies'
+		subtitle: ''
 	};
 	data4: any = {
 		avatar: undefined,
