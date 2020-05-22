@@ -11,7 +11,7 @@ $block: "card18";
     width: 100%;
     display: grid;
     grid-template-columns: 40px 60% 1fr fit-content(40px);
-    grid-template-rows: 40px 22px;
+    grid-template-rows: 40px fit-content(22px);
     grid-template-areas: "avatar title progress-bar level"
                          "...... subtitle subtitle subtitle";
     gap: 0 16px;
