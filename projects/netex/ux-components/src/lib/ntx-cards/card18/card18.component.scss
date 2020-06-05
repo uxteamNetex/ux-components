@@ -10,10 +10,11 @@ $block: "card18";
     font-family: Lato;
     width: 100%;
     display: grid;
-    grid-template-columns: 40px 60% 1fr fit-content(40px);
+    // grid-template-columns: 40px 60% 1fr fit-content(40px);
+    grid-template-columns: 40px 60% 1fr;
     grid-template-rows: 40px fit-content(22px);
-    grid-template-areas: "avatar title progress-bar level"
-                         "...... subtitle subtitle subtitle";
+    grid-template-areas: "avatar title score"
+                         "...... subtitle subtitle";
     gap: 0 16px;
     .#{$block}__avatar {
         grid-area: avatar;
@@ -36,18 +37,29 @@ $block: "card18";
         grid-area: title;
         align-self: center;
     }
-    .#{$block}__progress-bar {
-        grid-area: progress-bar;
-        align-self: center;
-    }
-    .#{$block}__level {
-        grid-area: level;
-        justify-self: center;
-        align-self: center;
-    }
     .#{$block}__subtitle {
         grid-area: subtitle;
         font-family: LatoSemibold;
         font-style: italic;
+    }
+    .#{$block}__score {
+        grid-area: score;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &--progress-bar {
+            flex-basis: 100%;
+        }
+        &--level {
+            flex-basis: auto;
+        }
+        &--check {
+            .icon-check-circle-solid {
+                color:#5cce88;
+            }
+            .icon-cross-circle-solid {
+                color:#f05060;
+            }
+        }
     }
 }

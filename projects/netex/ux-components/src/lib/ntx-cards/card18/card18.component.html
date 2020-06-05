@@ -1,10 +1,10 @@
 <div class="card18 utils--padding-16">
   <div class="card18__avatar">
     <img 
-      *ngIf="data.avatar; else elseBlock"
+      *ngIf="data.avatar; else elseBlockAvatar"
       src="{{data.avatar}}"
       alt="{{data.title + '&#32;image'}}">
-    <ng-template #elseBlock>
+    <ng-template #elseBlockAvatar>
       <span 
         [style.background-color]="data.color"
         class="card18__avatar--alias">{{data.title | slice:0:1}}</span>
@@ -13,13 +13,21 @@
   <div class="card18__title utils--truncate">
     <span matTooltip="{{data.title}}" class="utils--text-18 utils--text-grey-800">{{data.title}}</span>
   </div>
-  <div class="card18__progress-bar">
-    <ntx-progress-bar-level value="{{data.progress.value}}" requiredValue="{{data.progress.requiredValue}}"></ntx-progress-bar-level>
-  </div>
-  <div *ngIf="data.progress.level" class="card18__level">
-    <span>{{data.progress.level}}</span>
-  </div>
   <div class="card18__subtitle utils--truncate">
     <span matTooltip="{{data.subtitle}}" class="utils--text-14 utils--text-grey-600">{{data.subtitle}}</span>
+  </div>
+  <div class="card18__score">
+    <div *ngIf="data.progress; else elseBlockScore" class="card18__score--progress-bar">
+      <ntx-progress-bar-level value="{{data.progress?.value}}" requiredValue="{{data.progress?.requiredValue}}"></ntx-progress-bar-level>
+    </div>
+    <ng-template #elseBlockScore>
+      <div class="card18__score--check">
+        <span *ngIf="data.checked" class="icon-netex icon-check-circle-solid utils--text-28"></span>
+        <span *ngIf="!data.checked" class="icon-netex icon-cross-circle-solid utils--text-28"></span>
+      </div> 
+    </ng-template>
+    <div *ngIf="data.progress?.level" class="card18__score--level utils--margin-left-16">
+      <span>{{data.progress?.level}}</span>
+    </div>
   </div>
 </div>
