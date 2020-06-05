@@ -1,15 +1,16 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-export interface Data {
+export interface ntxCard18Data {
 	avatar: string;
-	progress: {
-		value: number,
-		requiredValue: number,
-		level: string
-	};
 	color: string;
 	title: string;
 	subtitle: string;
+	progress?: {
+		value: number,
+		requiredValue: number,
+		level?: string
+	};
+	checked?: boolean
 }
 
 @Component({
@@ -19,7 +20,7 @@ export interface Data {
 })
 export class Card18Component implements OnInit {
 
-	@Input() data: Data;
+	@Input() data: ntxCard18Data;
 
 	constructor() { }
 
