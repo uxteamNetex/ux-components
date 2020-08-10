@@ -9,6 +9,26 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
 
+### v.x.x.x:
+
+**New icons**<br/>
+- icon-badge-locked
+- icon-camera
+- icon-clock-loading
+- icon-create
+- icon-crop
+- icon-envelope-solid
+- icon-export
+- icon-flag-refresh
+- icon-link-broken
+- icon-mailbox
+- icon-play
+- icon-resize
+- icon-rotate-left
+- icon-rotate-right
+
+------------------
+
 ### v.4.2.0:
 
 **Cards**<br/>

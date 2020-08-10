@@ -45,6 +45,36 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-rotate-left {
+  &:before {
+    content: $icon-rotate-left;
+  }
+}
+.icon-rotate-right {
+  &:before {
+    content: $icon-rotate-right;
+  }
+}
+.icon-resize {
+  &:before {
+    content: $icon-resize;
+  }
+}
+.icon-link-broken {
+  &:before {
+    content: $icon-link-broken;
+  }
+}
+.icon-flag-refresh {
+  &:before {
+    content: $icon-flag-refresh;
+  }
+}
+.icon-crop {
+  &:before {
+    content: $icon-crop;
+  }
+}
 .icon-inbox-solid {
   &:before {
     content: $icon-inbox-solid;
@@ -1735,15 +1765,24 @@ mat-icon{
   }
 }
 .icon-badge-locked .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
   &:before {
     content: $icon-badge-locked-path1;
     color: rgb(204, 204, 204);
   }
 }
 .icon-badge-locked .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
   &:before {
     content: $icon-badge-locked-path2;
-    margin-left: -1em;
     color: rgb(51, 51, 51);
   }
 }
@@ -1755,6 +1794,11 @@ mat-icon{
 .icon-calendar {
   &:before {
     content: $icon-calendar;
+  }
+}
+.icon-camera {
+  &:before {
+    content: $icon-camera;
   }
 }
 .icon-channel {

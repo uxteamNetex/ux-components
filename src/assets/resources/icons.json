@@ -72,6 +72,9 @@
             "className": "icon-calendar"
         },
         {
+            "className": "icon-camera"
+        },
+        {
             "className": "icon-caret-down"
         },
         {
@@ -159,6 +162,9 @@
             "className": "icon-clock"
         },
         {
+            "className": "icon-clock-loading"
+        },
+        {
             "className": "icon-clock-loading-inverse"
         },
         {
@@ -187,6 +193,12 @@
         },
         {
             "className": "icon-construction-barrier"
+        },
+        {
+            "className": "icon-create"
+        },
+        {
+            "className": "icon-crop"
         },
         {
             "className": "icon-cross"
@@ -489,10 +501,16 @@
             "className": "icon-envelope"
         },
         {
+            "className": "icon-envelope-solid"
+        },
+        {
             "className": "icon-euro"
         },
         {
             "className": "icon-evaluation"
+        },
+        {
+            "className": "icon-export"
         },
         {
             "className": "icon-export-solid"
@@ -529,6 +547,9 @@
         },
         {
             "className": "icon-flag"
+        },
+        {
+            "className": "icon-flag-refresh"
         },
         {
             "className": "icon-folder"
@@ -630,6 +651,9 @@
             "className": "icon-link"
         },
         {
+            "className": "icon-link-broken"
+        },
+        {
             "className": "icon-list"
         },
         {
@@ -661,6 +685,9 @@
         },
         {
             "className": "icon-magazine"
+        },
+        {
+            "className": "icon-mailbox"
         },
         {
             "className": "icon-menu"
@@ -729,6 +756,9 @@
             "className": "icon-pin-solid"
         },
         {
+            "className": "icon-play"
+        },
+        {
             "className": "icon-plus"
         },
         {
@@ -765,7 +795,16 @@
             "className": "icon-reports"
         },
         {
+            "className": "icon-resize"
+        },
+        {
             "className": "icon-restore"
+        },
+        {
+            "className": "icon-rotate-left"
+        },
+        {
+            "className": "icon-rotate-right"
         },
         {
             "className": "icon-save"
