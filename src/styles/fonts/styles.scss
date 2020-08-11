@@ -16,16 +16,16 @@ mat-icon{
     height: auto;
     width: auto;
     &.icon-small{
-      font-size: $font-size-icon-small;
+      font-size: $font-size-icon-small !important;
     }
     &.icon-netex{
       font-size: $font-size-icon;
     }
     &.icon-medium{
-      font-size: $font-size-icon-medium;
+      font-size: $font-size-icon-medium !important;
     }
     &.icon-big{
-      font-size: $font-size-icon-big;
+      font-size: $font-size-icon-big !important;
     }
   }
 }

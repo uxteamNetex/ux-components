@@ -11,6 +11,13 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.3.0:
 
+**Icons**<br/>
+Archivos modificados:
+- ux-components/src/styles/app/utils.scss
+- ux-components/src/styles/app/variables.scss
+- ux-components/src/styles/fonts/styles.scss
+- ux-components/src/styles/fonts/variables.scss
+
 **New icons**<br/>
 - icon-badge-locked
 - icon-camera
@@ -26,6 +33,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - icon-resize
 - icon-rotate-left
 - icon-rotate-right
+
+**New chips**<br/>
+- Nuevo componente *ntx-icon-chip*
 
 ------------------
 

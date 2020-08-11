@@ -11,30 +11,33 @@ import { ImageChipComponent } from './image-chip/image-chip.component';
 import { FilterChipComponent } from './filter-chip/filter-chip.component';
 import { ImageSubtitleChipComponent } from './image-subtitle-chip/image-subtitle-chip.component';
 import { AutocompleteChipComponent } from './autocomplete-chip/autocomplete-chip.component';
+import { IconChipComponent } from './icon-chip/icon-chip.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NtxSharedModule,
-    NtxChipsRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-  ],
-  declarations: [
-    BasicChipComponent,
-    CategoryChipComponent,
-    ImageChipComponent,
-    FilterChipComponent,
-    ImageSubtitleChipComponent,
-    AutocompleteChipComponent
-  ],
-  exports: [
-    BasicChipComponent,
-    CategoryChipComponent,
-    ImageChipComponent,
-    FilterChipComponent,
-    ImageSubtitleChipComponent,
-    AutocompleteChipComponent
-  ]
+	imports: [
+		CommonModule,
+		NtxSharedModule,
+		NtxChipsRoutingModule,
+		FormsModule,
+		ReactiveFormsModule,
+	],
+	declarations: [
+		BasicChipComponent,
+		CategoryChipComponent,
+		ImageChipComponent,
+		FilterChipComponent,
+		ImageSubtitleChipComponent,
+		AutocompleteChipComponent,
+		IconChipComponent
+	],
+	exports: [
+		BasicChipComponent,
+		CategoryChipComponent,
+		ImageChipComponent,
+		FilterChipComponent,
+		ImageSubtitleChipComponent,
+		AutocompleteChipComponent,
+		IconChipComponent
+	]
 })
 export class NtxChipsModule { }

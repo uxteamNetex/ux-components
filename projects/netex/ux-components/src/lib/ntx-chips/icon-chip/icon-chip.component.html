@@ -1,0 +1,9 @@
+<mat-chip-list class="chip-container" *ngIf="item.actions.length">
+
+  <mat-chip class="chip-container__chip mat-chip mat-standard-chip {{action.state}}"
+            *ngFor="let action of item.actions">
+    <span class="chip-container__chip-text" matTooltip="{{action.label}}">{{action.label}}</span>
+    <mat-icon class="icon-netex icon-small {{action.icon}}" *ngIf="action.showIcon"></mat-icon>
+  </mat-chip>
+
+</mat-chip-list>
