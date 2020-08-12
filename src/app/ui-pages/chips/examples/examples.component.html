@@ -20,6 +20,11 @@
       <ntx-basic-chip [color]="'accent'"  [disabled]="'true'"></ntx-basic-chip>
     </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Basic chip with image' | uppercase }}"
+        subtitle="{{ '<ntx-basic-image-chip>' }}">
+          <ntx-basic-image-chip [chip] ="chip"></ntx-basic-image-chip>
+    </ntx-card-simple>
+
     <ntx-card-simple title="{{'Chip with categories' | uppercase }}"
                       subtitle="{{ '<ntx-category-chip>' }}">
       <ntx-category-chip [color]="'primary'"></ntx-category-chip>

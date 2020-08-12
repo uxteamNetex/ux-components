@@ -36,6 +36,7 @@ Archivos modificados:
 
 **New chips**<br/>
 - Nuevo componente *ntx-icon-chip*
+- Nuevo componente *ntx-basic-image-chip*
 
 ------------------
 

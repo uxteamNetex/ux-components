@@ -1,0 +1,11 @@
+<mat-chip-list class="chip-container">
+
+  <mat-chip class="chip-container__chip mat-chip mat-standard-chip {{action.state}}"
+            *ngFor="let action of chip.actions">
+    <div class="chip-container__chip-image">
+        <img class="utils--vertical-align" src="{{action.image}}" alt="{{action.label}}">
+    </div>
+    <span class="chip-container__chip-text" matTooltip="{{action.label}}">{{action.label}}</span>
+  </mat-chip>
+
+</mat-chip-list>
