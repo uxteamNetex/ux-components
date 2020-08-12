@@ -12,6 +12,7 @@ import { FilterChipComponent } from './filter-chip/filter-chip.component';
 import { ImageSubtitleChipComponent } from './image-subtitle-chip/image-subtitle-chip.component';
 import { AutocompleteChipComponent } from './autocomplete-chip/autocomplete-chip.component';
 import { IconChipComponent } from './icon-chip/icon-chip.component';
+import { BasicImageChipComponent } from './basic-image-chip/basic-image-chip.component';
 
 @NgModule({
 	imports: [
@@ -28,7 +29,8 @@ import { IconChipComponent } from './icon-chip/icon-chip.component';
 		FilterChipComponent,
 		ImageSubtitleChipComponent,
 		AutocompleteChipComponent,
-		IconChipComponent
+		IconChipComponent,
+		BasicImageChipComponent
 	],
 	exports: [
 		BasicChipComponent,
@@ -37,7 +39,8 @@ import { IconChipComponent } from './icon-chip/icon-chip.component';
 		FilterChipComponent,
 		ImageSubtitleChipComponent,
 		AutocompleteChipComponent,
-		IconChipComponent
+		IconChipComponent,
+		BasicImageChipComponent
 	]
 })
 export class NtxChipsModule { }

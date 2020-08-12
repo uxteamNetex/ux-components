@@ -41,6 +41,21 @@ const ITEM = {
 	]
 };
 
+const CHIP = {
+	actions: [
+		{
+			state: 'primary',
+			image: 'assets/images/perfil.jpg',
+			label: 'Laura Lopez'
+		},
+		{
+			state: 'accent',
+			image: 'assets/images/perfil.jpg',
+			label: 'Carlota Ruiz Corredera'
+		}
+	]
+};
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -50,6 +65,7 @@ const ITEM = {
 export class ExamplesComponent implements OnInit {
 
 	item = ITEM;
+	chip = CHIP;
 
 	constructor() { }
 
