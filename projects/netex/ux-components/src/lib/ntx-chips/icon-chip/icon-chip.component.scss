@@ -8,6 +8,9 @@ $block: "chip-container";
       outline: none;
     }
     .#{$block}__chip{
+      &.mat-standard-chip:hover::after, &.mat-standard-chip:focus::after{
+        opacity: 0;
+      }
       &.primary{
         background-color: $color-primary;
         color: $color-white;
@@ -42,7 +45,7 @@ $block: "chip-container";
         word-break: break-all;
       }
       mat-icon{
-        margin-left: 8px;
+        margin-right: 8px;
       }
     }
   }
