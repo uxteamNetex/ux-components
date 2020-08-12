@@ -31,7 +31,7 @@ export class TabsComponent implements OnInit {
   public tabs: Tab[] = TABS;
 
   constructor(
-    private router: Router,
+    public router: Router,
     private tabsHeaderService: TabsHeaderService
   ) {}
 

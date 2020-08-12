@@ -36,7 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ux-components",
+            "outputPath": "dist/ux-components-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,7 +51,8 @@
             "scripts": [],
             "stylePreprocessorOptions": {
 							"includePaths": [
-								"src/styles/app"
+								"src/styles/app",
+								"src/styles/fonts"
 							]
 						}
           },
