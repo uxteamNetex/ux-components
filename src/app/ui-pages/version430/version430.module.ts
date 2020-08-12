@@ -7,33 +7,26 @@ import {
 	NtxCardsModule,
 	NtxButtonsModule,
 	NtxListsModule,
-	NtxTablesModule
+	NtxChipsModule
 } from '@netex/ux-components';
 
 import { Version430RoutingModule } from './version430-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
-import { NtxToolbarModule, NtxMenusModule, NtxFormsModule, NtxProgressBarModule } from 'projects/netex/ux-components/src/public_api';
-import { NtxPaginatorModule } from 'projects/netex/ux-components/src/lib/ntx-paginator/ntx-paginator.module';
 
 @NgModule({
-  declarations: [DocumentationComponent, ExamplesComponent],
-  imports: [
-    CommonModule,
-    Version430RoutingModule,
-    MatTableModule,
+	declarations: [DocumentationComponent, ExamplesComponent],
+	imports: [
+		CommonModule,
+		Version430RoutingModule,
+		MatTableModule,
 		MatIconModule,
 		MatGridListModule,
 		MatExpansionModule,
 		NtxCardsModule,
 		NtxButtonsModule,
 		NtxListsModule,
-		NtxTablesModule,
-		NtxToolbarModule,
-		NtxMenusModule,
-		NtxFormsModule,
-		NtxPaginatorModule,
-		NtxProgressBarModule
-  ]
+		NtxChipsModule
+	]
 })
 export class Version430Module { }
