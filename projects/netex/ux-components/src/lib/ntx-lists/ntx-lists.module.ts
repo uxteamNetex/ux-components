@@ -17,7 +17,9 @@ import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxProgressBarModule } from '../ntx-progress-bar/ntx-progress-bar.module';
 import { ListOneLineComponent } from './list-one-line/list-one-line.component';
 import { List1Component } from './list1/list1.component';
+import { List2Component } from './list2/list2.component';
 import { ListSidemenuComponent } from './list-sidemenu/list-sidemenu.component';
+import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 
 @NgModule({
 	imports: [
@@ -26,7 +28,8 @@ import { ListSidemenuComponent } from './list-sidemenu/list-sidemenu.component';
 		NtxProgressBarModule,
 		NtxMenusModule,
 		NtxListsRoutingModule,
-		NtxButtonsModule
+		NtxButtonsModule,
+		NtxFormsModule
 	],
 	declarations: [
 		ListTwoLinesAvatarComponent,
@@ -39,6 +42,7 @@ import { ListSidemenuComponent } from './list-sidemenu/list-sidemenu.component';
 		ListTwoLinesAvatarVerticalComponent,
 		ListHorizontalIconComponent,
 		List1Component,
+		List2Component,
 		ListSidemenuComponent
 	],
 	exports: [
@@ -52,6 +56,7 @@ import { ListSidemenuComponent } from './list-sidemenu/list-sidemenu.component';
 		ListTwoLinesAvatarVerticalComponent,
 		ListHorizontalIconComponent,
 		List1Component,
+		List2Component,
 		ListSidemenuComponent
 	]
 })
