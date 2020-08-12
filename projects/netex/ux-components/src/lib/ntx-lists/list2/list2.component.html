@@ -1,0 +1,31 @@
+<div class="list2">
+  <div class="list2__item" *ngFor="let item of data">
+    <div class="list2__item--checkbox utils--margin-right-12">
+      <ntx-form-checkbox [color]="'primary'" [checked]="item.checked" [hidden]="'true'"></ntx-form-checkbox>
+    </div>
+    <div class="list2__item--badge">
+      <img 
+        *ngIf="item.avatar; else elseBlock"
+        src="{{item.avatar}}"
+        alt="{{item.label + '&#32;image'}}">
+      <ng-template #elseBlock>
+        <span 
+          [style.background-color]="item.color"
+          class="list2__item--alias utils--align-center-text">{{item.label | slice:0:1}}</span>
+      </ng-template>
+    </div>
+    <div class="list2__item--wrapper">
+      <div class="text utils--margin-right-24 utils--truncate">
+        <span class="utils--text-16 utils--text-grey-800" matTooltip="{{item.label}}">{{item.label}}</span>
+      </div>
+      <div class="progress-bar__container utils--margin-right-24">
+        <ntx-progress-bar-level 
+          value="{{item.progress.value}}"
+          requiredValue="{{item.progress.requiredValue}}"></ntx-progress-bar-level>
+        <p *ngIf="item.progress.edited" 
+            class="progress-bar__label utils--margin-top-4 utils--margin-bottom-0 utils--text-12">[edited by you]</p>
+      </div>
+    </div>
+  </div>
+</div>
+
