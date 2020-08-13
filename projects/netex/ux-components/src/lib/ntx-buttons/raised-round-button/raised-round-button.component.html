@@ -1,0 +1,5 @@
+<button mat-raised-button class="mat-raised-button raised-round-button {{action.state}} {{action.disabled}}"
+        *ngFor="let action of item2.actions">
+  <mat-icon class="icon-netex {{action.icon}}" *ngIf="action.showIcon"></mat-icon>
+  <span matTooltip="{{action.label}}">{{action.label}}</span>
+</button>

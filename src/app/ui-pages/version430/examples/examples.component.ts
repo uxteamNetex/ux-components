@@ -57,6 +57,53 @@ const CHIP = {
 	]
 };
 
+const ITEM2 = {
+	actions: [
+		{
+			label: 'Acción',
+			state: 'primary',
+			icon: 'icon-pencil',
+			showIcon: true,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'primary',
+			icon: 'icon-pencil',
+			showIcon: true,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			state: 'violet',
+			icon: 'icon-plus',
+			showIcon: true,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'violet',
+			icon: 'icon-plus',
+			showIcon: true,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			state: 'accent',
+			icon: 'icon-pencil',
+			showIcon: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'accent',
+			icon: 'icon-pencil',
+			showIcon: false,
+			disabled: 'disabled'
+		}
+	]
+};
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -67,6 +114,7 @@ export class ExamplesComponent implements OnInit {
 
 	item = ITEM;
 	chip = CHIP;
+	item2 = ITEM2;
 
 	constructor() { }
 

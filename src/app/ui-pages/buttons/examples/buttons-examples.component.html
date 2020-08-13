@@ -66,6 +66,9 @@
         <ntx-raised-icon-button [color]="'accent'"></ntx-raised-icon-button>
         <ntx-raised-icon-button [color]="'accent'" [disabled]="'true'"></ntx-raised-icon-button>
       </div>
+      <div *ngIf="type.label==='raised round'">
+        <ntx-raised-round-button [item2] ="item2"></ntx-raised-round-button>
+      </div>
       <div *ngIf="type.label==='icon'">
           <ntx-icon-button [color]="'primary'"></ntx-icon-button>
           <ntx-icon-button [color]="'primary'" [disabled]="'true'"></ntx-icon-button>

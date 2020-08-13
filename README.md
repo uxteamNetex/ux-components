@@ -15,6 +15,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 Archivos modificados:
 - ux-components/src/styles/app/utils.scss
 - ux-components/src/styles/app/variables.scss
+- ux-components/src/styles/app/colors.scss
 - ux-components/src/styles/fonts/styles.scss
 - ux-components/src/styles/fonts/variables.scss
 
@@ -37,6 +38,9 @@ Archivos modificados:
 **New chips**<br/>
 - Nuevo componente *ntx-icon-chip*
 - Nuevo componente *ntx-basic-image-chip*
+
+**New buttons**<br/>
+- Nuevo componente *ntx-raised-round-button*
 
 ------------------
 

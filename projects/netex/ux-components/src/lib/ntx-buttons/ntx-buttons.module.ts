@@ -16,42 +16,45 @@ import { SquareButtonComponent } from './square-button/square-button.component';
 import { FabSpeedDialButtonComponent } from './fab-speed-dial-button/fab-speed-dial-button.component';
 import { LinkButtonComponent } from './link-button/link-button.component';
 import { StrokedToggleButtonComponent } from './stroked-toggle-button/stroked-toggle-button.component';
+import { RaisedRoundButtonComponent } from './raised-round-button/raised-round-button.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NtxSharedModule,
-    NtxButtonsRoutingModule
-  ],
-  declarations: [
-    RaisedButtonComponent,
-    TextButtonComponent,
-    IconButtonComponent,
-    FabButtonComponent,
-    MiniFabButtonComponent,
-    StrokedButtonComponent,
-    RaisedIconButtonComponent,
-    TextIconButtonComponent,
-    StrokedIconButtonComponent,
-    SquareButtonComponent,
-    FabSpeedDialButtonComponent,
-    LinkButtonComponent,
-    StrokedToggleButtonComponent
-  ],
-  exports: [
-    RaisedButtonComponent,
-    TextButtonComponent,
-    IconButtonComponent,
-    FabButtonComponent,
-    MiniFabButtonComponent,
-    StrokedButtonComponent,
-    RaisedIconButtonComponent,
-    TextIconButtonComponent,
-    StrokedIconButtonComponent,
-    SquareButtonComponent,
-    FabSpeedDialButtonComponent,
-    LinkButtonComponent,
-    StrokedToggleButtonComponent
-  ]
+	imports: [
+		CommonModule,
+		NtxSharedModule,
+		NtxButtonsRoutingModule
+	],
+	declarations: [
+		RaisedButtonComponent,
+		TextButtonComponent,
+		IconButtonComponent,
+		FabButtonComponent,
+		MiniFabButtonComponent,
+		StrokedButtonComponent,
+		RaisedIconButtonComponent,
+		TextIconButtonComponent,
+		StrokedIconButtonComponent,
+		SquareButtonComponent,
+		FabSpeedDialButtonComponent,
+		LinkButtonComponent,
+		StrokedToggleButtonComponent,
+		RaisedRoundButtonComponent
+	],
+	exports: [
+		RaisedButtonComponent,
+		TextButtonComponent,
+		IconButtonComponent,
+		FabButtonComponent,
+		MiniFabButtonComponent,
+		StrokedButtonComponent,
+		RaisedIconButtonComponent,
+		TextIconButtonComponent,
+		StrokedIconButtonComponent,
+		SquareButtonComponent,
+		FabSpeedDialButtonComponent,
+		LinkButtonComponent,
+		StrokedToggleButtonComponent,
+		RaisedRoundButtonComponent
+	]
 })
 export class NtxButtonsModule { }
