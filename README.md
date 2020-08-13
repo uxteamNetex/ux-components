@@ -44,6 +44,7 @@ Archivos modificados:
 
 **New buttons**<br/>
 - Nuevo componente *ntx-raised-round-button*
+- Cambios en el html, css y ts en el componente *ntx-stroked-button*
 
 ------------------
 
