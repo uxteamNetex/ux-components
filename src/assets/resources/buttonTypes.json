@@ -8,6 +8,10 @@
         "selector": "<ntx-raised-icon-button>"
     },
     {
+      "label": "raised round",
+      "selector": "<ntx-raised-round-button>"
+    },
+    {
         "label": "icon",
         "selector": "<ntx-icon-button>"
     },
