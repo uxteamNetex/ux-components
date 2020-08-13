@@ -11,6 +11,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.3.0:
 
+**Lists**<br/>
+- Nuevo componente *ntx-list2*
+
 **Icons**<br/>
 Archivos modificados:
 - ux-components/src/styles/app/utils.scss
