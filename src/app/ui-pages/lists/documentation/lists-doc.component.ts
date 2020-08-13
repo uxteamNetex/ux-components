@@ -58,7 +58,7 @@ export class ListsDocComponent implements OnInit {
       <p mat-line class="list-two-lines__item--subtitle"> {{text.subtitle}} </p>
     </mat-list-item>
   ` ;
-	code4 = `
+  code4 = `
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
     $block: "list-two-lines";
@@ -88,27 +88,25 @@ export class ListsDocComponent implements OnInit {
       }
     }
   ` ;
-
-code5 = `
-  <mat-list class="list-one-line-options">
-  <mat-list-item *ngFor="let text of texts" class="list-one-line-options__item">
-    <div matListAvatar class="list-one-line-options__item--image">
-      <span class="list-one-line-options__item--initial">L</span>
-    </div>
-    <div class="list-one-line-options__item--content">
-      <h4 mat-line class="list-one-line-options__item--title">{{text.title}}</h4>
-      <ntx-progress-bar [color]="'primary'" [value]="'52'"></ntx-progress-bar>
-      <div *ngIf="level; else optionsBlock" class="list-one-line-options__item--level">
-        <span>{{level}}</span>
+  code5 = `
+    <mat-list class="list-one-line-options">
+    <mat-list-item *ngFor="let text of texts" class="list-one-line-options__item">
+      <div matListAvatar class="list-one-line-options__item--image">
+        <span class="list-one-line-options__item--initial">L</span>
       </div>
-      <ng-template #optionsBlock>
-        <ntx-menu-options></ntx-menu-options>
-      </ng-template>
-    </div>
-  </mat-list-item>
-</mat-list>`;
-
-code6 = `
+      <div class="list-one-line-options__item--content">
+        <h4 mat-line class="list-one-line-options__item--title">{{text.title}}</h4>
+        <ntx-progress-bar [color]="'primary'" [value]="'52'"></ntx-progress-bar>
+        <div *ngIf="level; else optionsBlock" class="list-one-line-options__item--level">
+          <span>{{level}}</span>
+        </div>
+        <ng-template #optionsBlock>
+          <ntx-menu-options></ntx-menu-options>
+        </ng-template>
+      </div>
+    </mat-list-item>
+  </mat-list>`;
+  code6 = `
   import { Component, OnInit, Input } from '@angular/core';
   import { ViewEncapsulation } from '@angular/core';
 
@@ -136,14 +134,12 @@ code6 = `
 
     ngOnInit() { }
   }`;
-
 	code7 = `
   <p mat-line class="list-two-lines__item--subtitle">
     {{text.subtitle}}
     <a matLine *ngIf="showLink" href="..." class="list-two-lines__item--subtitle-link utils--margin-left-12">{{text.link}}</a>
   </p>
   ` ;
-
 	code8 = `
   .#{$block}__item--subtitle{
     color: $color-grey-600;
@@ -151,8 +147,6 @@ code6 = `
     font-family: Lato;
   }
   ` ;
-
-
   code9=`
     <div class="list1">
     <div class="list1__item" *ngFor="let item of data">
@@ -262,7 +256,6 @@ code6 = `
     }
     }
   `;
-  
   code12=`
     <div class="list-one-line">
     <div class="list-one-line__item" *ngFor="let item of data">
@@ -306,7 +299,6 @@ code6 = `
 
     }
   `;
-
   code14=`
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
@@ -343,6 +335,127 @@ code6 = `
         border-bottom: 1px solid $color-grey-200;
       }
     }
+    }
+  `;
+  code15=`
+    <div class="list2">
+      <div class="list2__item" *ngFor="let item of data">
+        <div class="list2__item--checkbox utils--margin-right-12">
+          <ntx-form-checkbox [color]="'primary'" [checked]="item.checked" [hidden]="'true'"></ntx-form-checkbox>
+        </div>
+        <div class="list2__item--badge">
+          <img 
+            *ngIf="item.avatar; else elseBlock"
+            src="{{item.avatar}}"
+            alt="{{item.label + '&#32;image'}}">
+          <ng-template #elseBlock>
+            <span 
+              [style.background-color]="item.color"
+              class="list2__item--alias utils--align-center-text">{{item.label | slice:0:1}}</span>
+          </ng-template>
+        </div>
+        <div class="list2__item--wrapper">
+          <div class="text utils--margin-right-24 utils--truncate">
+            <span class="utils--text-16 utils--text-grey-800" matTooltip="{{item.label}}">{{item.label}}</span>
+          </div>
+          <div class="progress-bar__container utils--margin-right-24">
+            <ntx-progress-bar-level 
+              value="{{item.progress.value}}"
+              requiredValue="{{item.progress.requiredValue}}"></ntx-progress-bar-level>
+            <p *ngIf="item.progress.edited" 
+                class="progress-bar__label utils--margin-top-4 utils--margin-bottom-0 utils--text-12">[edited by you]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  code16=`
+    import { Component, OnInit, Input } from '@angular/core';
+
+    export interface Item {
+      label: string;
+      avatar: string;
+      color: string;
+      progress: {
+        value: number,
+        requiredValue: number,
+        edited: boolean
+      };
+      checked: boolean
+    }
+
+    @Component({
+      selector: 'ntx-list2',
+      templateUrl: './list2.component.html',
+      styleUrls: ['./list2.component.scss'],
+    })
+
+    export class List2Component implements OnInit {
+
+      @Input() data: Item[];
+
+      constructor() { }
+
+      ngOnInit() { }
+
+    }
+  `;
+  code17=`
+    @import "././projects/netex/ux-components/src/styles/app/utils";
+
+    $block: "list2";
+    
+    .#{$block} {
+      > * {
+        box-sizing: border-box;
+      }
+    
+      font-family: Lato;
+    
+      .#{$block}__item {
+        display: flex;
+        height: 68px;
+        &--checkbox {
+          display: flex;
+          align-items: center;
+        }
+        &--badge {
+          align-self: center;
+          img,span {
+            width: 36px;
+            height: 36px;
+            margin-right: 24px;
+          }
+          img {
+            object-fit: cover;
+          }
+          span {
+            display: block;
+            line-height: 36px;
+            font-size: 23px;
+            color: rgba(255,255,255,0.4);
+          }
+        }
+        &--wrapper {
+          flex-basis: calc(100% - 60px);
+          max-width: calc(100% - 60px);
+          display: flex;
+          align-items: center;
+          .text {
+            flex-basis: 60%;
+          }
+          .progress-bar__container {
+            flex-basis: 40%;
+          }
+          .progress-bar__label {
+            float: right;
+            font-family: LatoSemibold;
+          }
+        }
+        &:not(:last-child) .#{$block}__item--wrapper{
+          border-bottom: 1px solid $color-grey-200;
+        }
+      }
     }
   `;
 
