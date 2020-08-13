@@ -48,6 +48,52 @@ const ITEM2 = {
 		}
 	]
 };
+const ITEM3 = {
+	actions: [
+		{
+			label: 'Acción',
+			state: 'primary',
+			active: '',
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'primary',
+			active: '',
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			state: 'accent',
+			active: '',
+			disabled: ''
+		},
+		{
+			label: 'Acción active',
+			state: 'accent',
+			active: 'active',
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'accent',
+			active: '',
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			state: 'white',
+			active: '',
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'white',
+			active: '',
+			disabled: 'disabled'
+		}
+	]
+};
 
 @Component({
 	selector: 'app-buttons-examples',
@@ -58,6 +104,7 @@ const ITEM2 = {
 export class ButtonsExamplesComponent implements OnInit {
 
 	item2 = ITEM2;
+	item3 = ITEM3;
 
 	buttonTypes: ButtonType[];
 

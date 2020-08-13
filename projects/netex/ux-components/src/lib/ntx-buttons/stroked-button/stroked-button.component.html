@@ -1,1 +1,4 @@
-<button mat-stroked-button [color]="color" [disabled]="disabled">Acción</button>
+<button mat-stroked-button class="mat-stroked-button {{action.state}} {{action.active}} {{action.disabled}}"
+        *ngFor="let action of item3.actions">
+  <span matTooltip="{{action.label}}">{{action.label}}</span>
+</button>

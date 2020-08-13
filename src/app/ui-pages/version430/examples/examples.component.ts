@@ -103,6 +103,54 @@ const ITEM2 = {
 		}
 	]
 };
+
+const ITEM3 = {
+	actions: [
+		{
+			label: 'Acción',
+			state: 'primary',
+			active: '',
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'primary',
+			active: '',
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			state: 'accent',
+			active: '',
+			disabled: ''
+		},
+		{
+			label: 'Acción active',
+			state: 'accent',
+			active: 'active',
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'accent',
+			active: '',
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			state: 'white',
+			active: '',
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			state: 'white',
+			active: '',
+			disabled: 'disabled'
+		}
+	]
+};
+
 const LIST2ITEM = [
 	{
 		label: 'Customer oriented',
@@ -195,6 +243,7 @@ export class ExamplesComponent implements OnInit {
 	chip = CHIP;
 	item2 = ITEM2;
 
+	item3 = ITEM3;
 	list2Item = LIST2ITEM;
 
 	constructor() { }
