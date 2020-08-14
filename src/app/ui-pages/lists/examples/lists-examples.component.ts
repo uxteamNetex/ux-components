@@ -25,7 +25,12 @@ export interface Item2 {
 		requiredValue: number;
 		edited: boolean
 	};
-	checked: boolean
+	checked: boolean;
+}
+
+export interface Item3 {
+	label: string;
+	icon: string;
 }
 
 const USER = {
@@ -223,6 +228,20 @@ export class ListsExamplesComponent implements OnInit {
 				edited: true
 			},
 			checked: true
+		}
+	];
+	list3: Item3[] = [
+		{
+			label: '11 de feb de 2020',
+			icon: 'icon-calendar'
+		},
+		{
+			label: 'A Coruña, edificio principal',
+			icon: 'icon-location'
+		},
+		{
+			label: '32 destinatarios',
+			icon: 'icon-users'
 		}
 	];
 
