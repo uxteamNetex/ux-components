@@ -231,6 +231,21 @@ const LIST2ITEM = [
 	}
 ];
 
+const LIST3ITEM = [
+	{
+		label: '11 de feb de 2020',
+		icon: 'icon-calendar'
+	},
+	{
+		label: 'A Coruña, edificio principal',
+		icon: 'icon-location'
+	},
+	{
+		label: '32 destinatarios',
+		icon: 'icon-users'
+	}
+];
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -244,6 +259,7 @@ export class ExamplesComponent implements OnInit {
 	item2 = ITEM2;
 	item3 = ITEM3;
 	list2Item = LIST2ITEM;
+	list3Item = LIST3ITEM;
 
 	constructor() { }
 
