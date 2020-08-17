@@ -80,6 +80,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/card18/card18.module#Card18Module'
 	},
 	{
+		path: 'card19',
+		loadChildren: './ui-pages/card19/card19.module#Card19Module'
+	},
+	{
 		path: 'cards',
 		loadChildren: './ui-pages/cards/cards.module#CardsModule'
 	},

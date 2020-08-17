@@ -713,5 +713,10 @@ $block: "utils";
   }
   &--padding-left-100 {
 		padding-left: $separation-100;
-	}
+  }
+  
+  //Layouts
+  &--flex {
+    display: flex !important;
+  }
 }

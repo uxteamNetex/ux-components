@@ -19,19 +19,22 @@
   max-lines: $max-lines;
 }
 
-@mixin ellipsis-multiline($_lines, $_height) {
-  //http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
-  max-height: $_height;
-  overflow: hidden;
-  display: block;
+@mixin ellipsis-multiline($lines) {
   display: -webkit-box;
-  margin: 0 auto;
-  //-webkit-line-clamp: $_lines;
-  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
   overflow: hidden;
   text-overflow: ellipsis;
-  position: relative;
-  //height: (1.5em *  $_lines ); /* exactly x lines */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: off */
+}
+
+@mixin card-white($height) {
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
+  width: 100%;
+  height: $height;
 }
 
 @mixin centerer {
@@ -49,4 +52,10 @@
   border-radius: #{$size*0.5};
   line-height: #{$size};
   text-align: center;
+}
+
+@mixin img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
