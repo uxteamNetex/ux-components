@@ -11,6 +11,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.3.0:
 
+**Cards**<br/>
+- Nuevo componente *ntx-card19* 
+
 **Lists**<br/>
 - Nuevo componente *ntx-list2*
 - Nuevo componente *ntx-list3*

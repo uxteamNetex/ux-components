@@ -19,6 +19,20 @@
         </h2>
 
         <div class="whatsnew__content-block">
+          <h4>New card component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">We released a new card componentized component, <span class="documentation-code">ntx-card19</span>.</p>
+          <ntx-card19></ntx-card19>
+          <div class="utils--margin-top-24">
+            <ntx-card19 
+              [title]="card19.title" 
+              [subtitle]="card19.subtitle" 
+              [description]="card19.description" 
+              [urlImage]="card19.urlImage" 
+              [altImage]="card19.altImage">
+            </ntx-card19>
+          </div>
+        </div>
+        <div class="whatsnew__content-block">
           <h4>New icons</h4>
           <p class="whatsnew__content-block--text utils--text-18">With this update we have a new batch of icons. For this, several css files have been touched, which you must update to see the icons correctly:</p>
           <ul class="whatsnew__content-block--points">
