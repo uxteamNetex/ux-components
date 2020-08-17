@@ -246,6 +246,17 @@ const LIST3ITEM = [
 	}
 ];
 
+const CARD19 = {
+	title: 'UDEMY',
+	subtitle: 'Angular: de cero a experto',
+	description: `Todo lo que necesitas saber para desarrollar 
+		aplicaciones web front-end con la nueva versión del framework
+		Angular	utilizando TypeScript y buenas prácticas ofrecidas por el
+		equipo de Angular. Domina Angular como un experto.`,
+	urlImage: 'assets/images/card19-badge.png',
+	altImage: 'Angular framework logo',
+}
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -261,6 +272,7 @@ export class ExamplesComponent implements OnInit {
 	item3 = ITEM3;
 	list2Item = LIST2ITEM;
 	list3Item = LIST3ITEM;
+	card19 = CARD19;
 
 	constructor() { }
 
