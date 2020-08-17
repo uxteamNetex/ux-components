@@ -1,0 +1,34 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card19";
+
+.#{$block} {
+  @include card-white(132);
+  font-family: Lato;
+  display: flex;
+  padding: 16px 4px 16px 16px;
+  &__badge {
+    background-color: $color-grey-200;
+    border-radius: 4px;
+    width: 92px;
+    height: 92px;
+    flex: none;
+    svg {
+      display: block;
+      margin: auto;
+      height: 100%;
+    }
+  }
+  &__info {
+    width: calc(100% - 92px - 52px);
+    &--description {
+        line-height: 20px;
+    }
+  }
+  &__menu {
+    width: 52px;
+    flex: none;
+    position: relative;
+    top: -10px;
+  }
+}

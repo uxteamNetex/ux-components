@@ -19,17 +19,11 @@
   max-lines: $max-lines;
 }
 
-@mixin ellipsis-multiline($_lines, $_height) {
-  //http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
-  max-height: $_height;
-  overflow: hidden;
-  display: block;
+@mixin ellipsis-multiline($lines) {
   display: -webkit-box;
-  margin: 0 auto;
-  //-webkit-line-clamp: $_lines;
-  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
   overflow: hidden;
   text-overflow: ellipsis;
-  position: relative;
-  //height: (1.5em *  $_lines ); /* exactly x lines */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: off */
 }
