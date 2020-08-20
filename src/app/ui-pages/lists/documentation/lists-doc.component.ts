@@ -147,7 +147,7 @@ export class ListsDocComponent implements OnInit {
     font-family: Lato;
   }
   ` ;
-  code9=`
+  code9 = `
     <div class="list1">
     <div class="list1__item" *ngFor="let item of data">
       <div class="list1__item--badge">
@@ -174,7 +174,7 @@ export class ListsDocComponent implements OnInit {
     </div>
 </div>
   `;
-  code10=`
+  code10 = `
     import { Component, OnInit, Input } from '@angular/core';
 
     export interface Item {
@@ -203,7 +203,7 @@ export class ListsDocComponent implements OnInit {
 
     }
   `;
-  code11=`
+  code11 = `
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
     $block: "list1";
@@ -256,7 +256,7 @@ export class ListsDocComponent implements OnInit {
     }
     }
   `;
-  code12=`
+  code12 = `
     <div class="list-one-line">
     <div class="list-one-line__item" *ngFor="let item of data">
       <img 
@@ -274,7 +274,7 @@ export class ListsDocComponent implements OnInit {
     </div>
     </div>
   `;
-  code13=`
+  code13 = `
     import { Component, OnInit, Input } from '@angular/core';
 
     export interface Item {
@@ -299,7 +299,7 @@ export class ListsDocComponent implements OnInit {
 
     }
   `;
-  code14=`
+  code14 = `
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
     $block: "list-one-line";
@@ -337,7 +337,7 @@ export class ListsDocComponent implements OnInit {
     }
     }
   `;
-  code15=`
+  code15 = `
     <div class="list2">
       <div class="list2__item" *ngFor="let item of data">
         <div class="list2__item--checkbox utils--margin-right-12">
@@ -369,7 +369,7 @@ export class ListsDocComponent implements OnInit {
       </div>
     </div>
   `;
-  code16=`
+  code16 = `
     import { Component, OnInit, Input } from '@angular/core';
 
     export interface Item {
@@ -400,7 +400,7 @@ export class ListsDocComponent implements OnInit {
 
     }
   `;
-  code17=`
+  code17 = `
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
     $block: "list2";
@@ -458,7 +458,90 @@ export class ListsDocComponent implements OnInit {
       }
     }
   `;
+  code18 = `
+    <mat-list class="list-multiline-lines">
+      <mat-list-item *ngFor="let section of data" class="list-multiline-lines__item">
+        <mat-icon matListIcon class="icon-netex {{section.icon}} list-multiline-lines__item--icon"></mat-icon>
+        <h4 mat-line class="list-multiline-lines__item--title">{{section.title}}</h4>
+        <a *ngFor="let link of section.links" matLine (click)="onClickEvent(link.link)" class="list-multiline-lines__item--subtitle-link">{{link.title}}</a>
+      </mat-list-item>
+    </mat-list>
+  `;
+  code19 = `
+    import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+    import { ViewEncapsulation } from '@angular/core';
 
+    export interface Section {
+      title: string;
+      icon: string;
+      links?: SectionLink[];
+    }
+      
+    export interface SectionLink {
+      title: string;
+      link: any;
+    }
+      
+    @Component({
+      selector: 'ntx-list-multilines-icon',
+      templateUrl: './list-multilines-icon.component.html',
+      styleUrls: ['./list-multilines-icon.component.scss'],
+      encapsulation: ViewEncapsulation.None
+    })
+    export class ListMultilinesIconComponent implements OnInit {
+
+      @Input() data: Section[];
+      @Output() clickEvent = new EventEmitter();
+
+      constructor() { }
+
+      ngOnInit() {}
+
+      public onClickEvent(link: any) {
+        console.log('Click: list-multilines-icon component: ' + link);
+        this.clickEvent.emit(link);
+      }
+
+    }
+  `;
+  code20 = `
+    @import "././projects/netex/ux-components/src/styles/app/utils";
+
+    $block: "list-multiline-lines";
+
+    .#{$block}{
+      padding: 0;
+      .#{$block}__item{
+        margin-bottom: 60px;
+        .mat-list-item-content {
+          display: flex;
+          align-items: start;
+          .#{$block}__item--icon{
+            color: $color-grey-600;
+            font-size: 36px;
+            height: 36px;
+            padding: 0;
+            width: 36px;
+          }
+          .#{$block}__item--title{
+            color: $color-grey-800;
+            font-family: LatoBold;
+            font-size: 18px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+          }
+          .#{$block}__item--subtitle-link{
+            color: $color-primary;
+            font-size: 16px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }  
+  `;
+  
   ngOnInit() {
 	}
 }

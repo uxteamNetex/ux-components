@@ -33,6 +33,17 @@ export interface Item3 {
 	icon: string;
 }
 
+export interface Section {
+	title: string;
+	icon: string;
+	links?: SectionLink[];
+}
+  
+export interface SectionLink {
+	title: string;
+	link: any;
+}
+
 const USER = {
 	actions: [
 		{
@@ -61,7 +72,6 @@ const USER = {
 export class ListsExamplesComponent implements OnInit {
 
 	user = USER;
-
 	list: Item[] = [
 		{
 			label: 'Customer oriented',
@@ -94,7 +104,6 @@ export class ListsExamplesComponent implements OnInit {
 			color: '#1D5D93'
 		}
 	];
-
 	list1: Item1[] = [
 		{
 			label: 'Customer oriented',
@@ -244,6 +253,37 @@ export class ListsExamplesComponent implements OnInit {
 			icon: 'icon-users'
 		}
 	];
+	listMultilineIconData: Section[] = [
+		{
+			title: 'Section one',
+			icon : 'icon-editor-launcher',
+			links : [
+				{
+					title: 'title of link one',
+					link: '/path'
+				},
+				{
+					title: 'title of link two ',
+					link: undefined
+				},
+			]
+		},
+		{
+			title: 'Section two',
+			icon : 'icon-globe',
+			links : [
+				{
+					title: 'title of link one',
+					link: '/another path'
+				},
+				{
+					title: 'title of link two ',
+					link: undefined
+				},
+			]
+		}
+
+	]
 
 	constructor() { }
 

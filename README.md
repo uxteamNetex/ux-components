@@ -17,6 +17,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Lists**<br/>
 - Nuevo componente *ntx-list2*
 - Nuevo componente *ntx-list3*
+- Componentización *ntx-list-multilines-icon*
 
 **Icons**<br/>
 Archivos modificados:
