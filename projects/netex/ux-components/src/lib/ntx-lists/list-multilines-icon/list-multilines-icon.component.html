@@ -1,7 +1,7 @@
 <mat-list class="list-multiline-lines">
-  <mat-list-item *ngFor="let text of texts" class="list-multiline-lines__item">
-    <mat-icon matListIcon class="icon-netex icon-bell list-multiline-lines__item--icon"></mat-icon>
-    <h4 mat-line class="list-multiline-lines__item--title">{{text.title}}</h4>
-    <a *ngFor="let link of links" matLine href="..." class="list-multiline-lines__item--subtitle-link">{{link.title}}</a>
+  <mat-list-item *ngFor="let section of data" class="list-multiline-lines__item">
+    <mat-icon matListIcon class="icon-netex {{section.icon}} list-multiline-lines__item--icon"></mat-icon>
+    <h4 mat-line class="list-multiline-lines__item--title">{{section.title}}</h4>
+    <a *ngFor="let link of section.links" matLine (click)="onClickEvent(link.link)" class="list-multiline-lines__item--subtitle-link">{{link.title}}</a>
   </mat-list-item>
 </mat-list>

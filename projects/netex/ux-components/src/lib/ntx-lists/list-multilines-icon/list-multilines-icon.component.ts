@@ -1,10 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 
 export interface Section {
 	title: string;
+	icon: string;
+	links?: SectionLink[];
 }
-
+  
+export interface SectionLink {
+	title: string;
+	link: any;
+}
+  
 @Component({
 	selector: 'ntx-list-multilines-icon',
 	templateUrl: './list-multilines-icon.component.html',
@@ -13,27 +20,16 @@ export interface Section {
 })
 export class ListMultilinesIconComponent implements OnInit {
 
+	@Input() data: Section[];
+	@Output() clickEvent = new EventEmitter();
+
 	constructor() { }
 
-	texts: Section[] = [
-		{
-			title: 'Section one'
-		},
-		{
-			title: 'Section two'
-		}
-	];
+	ngOnInit() {}
 
-	links: Section[] = [
-		{
-			title: 'Subsection one'
-		},
-		{
-			title: 'Subsection two'
-		}
-	];
-
-	ngOnInit() {
+	public onClickEvent(link: any) {
+		console.log('Click: list-multilines-icon component: ' + link);
+		this.clickEvent.emit(link);
 	}
 
 }

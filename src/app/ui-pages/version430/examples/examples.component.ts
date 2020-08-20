@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
+import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 
 const ITEM = {
 	actions: [
@@ -257,6 +258,37 @@ const CARD19 = {
 	altImage: 'Angular framework logo',
 }
 
+const LISTMULTILINESICON = [
+	{
+		title: 'Section one',
+		icon : 'icon-editor-launcher',
+		links : [
+			{
+				title: 'title of link one',
+				link: '/path'
+			},
+			{
+				title: 'title of link two ',
+				link: undefined
+			},
+		]
+	},
+	{
+		title: 'Section two',
+		icon : 'icon-globe',
+		links : [
+			{
+				title: 'title of link one',
+				link: '/another path'
+			},
+			{
+				title: 'title of link two ',
+				link: undefined
+			},
+		]
+	}
+]
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -268,15 +300,21 @@ export class ExamplesComponent implements OnInit {
 	item = ITEM;
 	chip = CHIP;
 	item2 = ITEM2;
-
 	item3 = ITEM3;
 	list2Item = LIST2ITEM;
 	list3Item = LIST3ITEM;
 	card19 = CARD19;
+	listMultilinesIcon = LISTMULTILINESICON;
 
-	constructor() { }
+	constructor(
+		private tabsHeaderService: TabsHeaderService
+	) { }
 
 	ngOnInit() {
+	}
+
+	setPath(value: string) {
+		this.tabsHeaderService.setPath(value);
 	}
 
 }
