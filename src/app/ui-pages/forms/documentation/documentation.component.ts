@@ -180,7 +180,7 @@ export class DocumentationComponent implements OnInit {
     }
   }`;
 
-  code11=`
+  code11= `
   <div class="searchbox-filter-panel" #container>
   <div class="searchbox-filter-panel__searchbox">
     <mat-icon class="icon-netex icon-search utils--margin-right-24"></mat-icon>
@@ -211,7 +211,7 @@ export class DocumentationComponent implements OnInit {
     </div>
   </div>
 </div>`;
-  code12=`
+  code12= `
   import { Component, OnInit, ViewChild, TemplateRef, ElementRef } from '@angular/core';
 import { MatDialogRef, MatDialog } from '@angular/material';
 
@@ -235,7 +235,7 @@ export class SearchboxFilterPanelComponent implements OnInit {
 
 }
 `;
-  code13=`
+  code13= `
   @import "././projects/netex/ux-components/src/styles/app/utils";
 
 :host {
@@ -293,33 +293,33 @@ $block: "searchbox-filter-panel";
 }
 `;
 
-code14 =`
-  <mat-form-field floatLabel="never" class="input-no-label">
-    <mat-label>{{placeholder}}</mat-label>
-    <input matInput class="utils--text-16">
-  </mat-form-field>
-`;
-code15 =`
-  import { Component, OnInit, Input } from '@angular/core';
-  import { ViewEncapsulation } from '@angular/core';
+  code14 = `
+    <mat-form-field floatLabel="never" class="input-no-label">
+      <mat-label>{{placeholder}}</mat-label>
+      <input matInput class="utils--text-16">
+    </mat-form-field>
+  `;
+  code15 = `
+    import { Component, OnInit, Input } from '@angular/core';
+    import { ViewEncapsulation } from '@angular/core';
 
-  @Component({
-    selector: 'ntx-input-no-label',
-    templateUrl: './input-no-label.component.html',
-    styleUrls: ['./input-no-label.component.scss'],
-    encapsulation: ViewEncapsulation.None
-  })
-  export class InputNoLabelComponent implements OnInit {
+    @Component({
+      selector: 'ntx-input-no-label',
+      templateUrl: './input-no-label.component.html',
+      styleUrls: ['./input-no-label.component.scss'],
+      encapsulation: ViewEncapsulation.None
+    })
+    export class InputNoLabelComponent implements OnInit {
 
-    @Input() placeholder: string;
+      @Input() placeholder: string;
 
-    constructor() { }
+      constructor() { }
 
-    ngOnInit() {
+      ngOnInit() {
+      }
     }
-  }
-`;
-code16 =`
+  `;
+  code16 = `
   @import "././projects/netex/ux-components/src/styles/app/utils";
 
   $block: "input-no-label";
@@ -345,8 +345,147 @@ code16 =`
   }
 `;
 
+  code17 = `
+    <div class="form-datepicker-range">
+    <mat-form-field class="form-datepicker-range__date utils--margin-right-24">
+      <input 
+        matInput 
+        [matDatepicker]="pickerFrom" 
+        placeholder="Fecha"
+        readonly>
+      <mat-datepicker-toggle matSuffix [for]="pickerFrom">
+        <mat-icon class="icon-netex icon-calendar" matDatepickerToggleIcon></mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #pickerFrom></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="form-datepicker-range__hour utils--margin-right-24">
+      <mat-select placeholder="Hora">
+        <mat-option *ngFor="let hour of hours" [value]="hour.value">
+          {{hour.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="form-datepicker-range__separator utils--margin-right-24">
+      <span>a</span>
+    </div>
+    <mat-form-field class="form-datepicker-range__hour utils--margin-right-24">
+      <mat-select placeholder="Hora">
+        <mat-option *ngFor="let hour of hours" [value]="hour.value">
+          {{hour.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="form-datepicker-range__date">
+      <input 
+        matInput 
+        [matDatepicker]="pickerTo" 
+        placeholder="Fecha"
+        readonly>
+      <mat-datepicker-toggle matSuffix [for]="pickerTo">
+        <mat-icon class="icon-netex icon-calendar" matDatepickerToggleIcon></mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #pickerTo></mat-datepicker>
+    </mat-form-field>
+  </div>
+  `;
+  code18 = `
+    import { Component, OnInit } from '@angular/core';
+    import { ViewEncapsulation } from '@angular/core';
+    import { MatDatepickerInputEvent, NativeDateAdapter, DateAdapter, MAT_DATE_FORMATS, MatDateFormats } from '@angular/material';
+    
+    const monthNamesAlias = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", 
+    "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
+    
+    export class AppDateAdapter extends NativeDateAdapter {
+      format(date: Date, displayFormat: Object): string {
+        let day: string = date.getDate().toString();
+        let month: string = monthNamesAlias[date.getMonth()];
+        let year = date.getFullYear();
+        return 'day' + ' de ' + 'month' + ' de ' + ¡year';
+      }
+    }
+    
+    export interface Option {
+      value: string;
+      viewValue: string;
+    }
+    
+    @Component({
+      selector: 'ntx-form-datepicker-range',
+      templateUrl: './form-datepicker-range.component.html',
+      styleUrls: ['./form-datepicker-range.component.scss'],
+      providers: [
+        {provide: DateAdapter, useClass: AppDateAdapter}
+      ],
+      encapsulation: ViewEncapsulation.None
+    })
+    export class FormDatepickerRangeComponent implements OnInit {
+    
+      hours: Option[];
+    
+      constructor() { }
+    
+      ngOnInit() {
+        let minFragment: string, hourFragment: string, value: string, viewValue : string;
+        for (var i = 0; i < 24; i++) {
+          value = ((i<10) ? '0' + i.toString() : i.toString()) + ':00'; 
+          if (i < 12 ) {
+            viewValue = value + ' am';
+          } else {
+            viewValue = value + ' pm';
+          }
+          this.hours.push(
+            {
+              value: value,
+              viewValue: viewValue
+            }
+          )
+        }
+      }
+    }
+  `;
+  code19 = `
+    @import "././projects/netex/ux-components/src/styles/app/utils";
+
+    $block: "form-datepicker-range";
+
+    .#{$block} {
+
+    mat-icon.icon-calendar, .mat-select-arrow:after {
+        font-size: 16px !important;
+        font-weight: bold;
+        position: relative;
+    }
+
+    &__date {
+        width: 152px !important;
+        mat-icon.icon-calendar {
+            top: -2px;
+        }
+    }
+
+    &__hour {
+        width: 88px !important;
+        .mat-select-arrow {
+            border: none;
+            height: 12px;
+            &::after {
+                font-family: 'netex';
+                content: '\e92f';
+                left: -14px;
+                top: -4px;
+            }
+        }
+    }
+
+    &__separator {
+        display: inline-block;
+    }
+
+    }
+  `;
+
   ngOnInit() {
   }
-
 
 }

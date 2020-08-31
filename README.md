@@ -11,6 +11,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.3.0:
 
+**Form controls**<br/>
+- Nuevo componente datepicker múltiple con selección de horas (*ntx-form-datepicker-range*)
+
 **Cards**<br/>
 - Nuevo componente *ntx-card19* 
 

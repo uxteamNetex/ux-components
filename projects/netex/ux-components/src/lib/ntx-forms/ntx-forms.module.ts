@@ -9,6 +9,7 @@ import { NtxFormsRoutingModule } from './ntx-forms-routing.module';
 import { FormInputComponent } from './form-input/form-input.component';
 import { FormTextareaComponent } from './form-textarea/form-textarea.component';
 import { FormDatepickerComponent } from './form-datepicker/form-datepicker.component';
+import { FormDatepickerRangeComponent } from './form-datepicker-range/form-datepicker-range.component';
 import { FormCheckboxComponent } from './form-checkbox/form-checkbox.component';
 import { FormRadiobuttonComponent } from './form-radiobutton/form-radiobutton.component';
 import { FormSlidetoggleComponent } from './form-slidetoggle/form-slidetoggle.component';
@@ -43,6 +44,7 @@ import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 		FormTextareaComponent,
 		TextareaNoLabelComponent,
 		FormDatepickerComponent,
+		FormDatepickerRangeComponent,
 		FormCheckboxComponent,
 		FormRadiobuttonComponent,
 		FormSlidetoggleComponent,
@@ -69,6 +71,7 @@ import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 		FormTextareaComponent,
 		TextareaNoLabelComponent,
 		FormDatepickerComponent,
+		FormDatepickerRangeComponent,
 		FormCheckboxComponent,
 		FormRadiobuttonComponent,
 		FormSlidetoggleComponent,

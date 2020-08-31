@@ -1,0 +1,38 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "form-datepicker-range";
+
+.#{$block} {
+
+    mat-icon.icon-calendar, .mat-select-arrow:after {
+        font-size: 16px !important;
+        font-weight: bold;
+        position: relative;
+    }
+
+    &__date {
+        width: 152px !important;
+        mat-icon.icon-calendar {
+            top: -2px;
+        }
+    }
+
+    &__hour {
+        width: 88px !important;
+        .mat-select-arrow {
+            border: none;
+            height: 12px;
+            &::after {
+                font-family: 'netex';
+                content: '\e92f';
+                left: -14px;
+                top: -4px;
+            }
+        }
+    }
+
+    &__separator {
+        display: inline-block;
+    }
+    
+}

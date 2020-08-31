@@ -7,7 +7,8 @@ import {
 	NtxCardsModule,
 	NtxButtonsModule,
 	NtxListsModule,
-	NtxChipsModule
+	NtxChipsModule,
+	NtxFormsModule
 } from '@netex/ux-components';
 
 import { Version430RoutingModule } from './version430-routing.module';
@@ -26,7 +27,8 @@ import { ExamplesComponent } from './examples/examples.component';
 		NtxCardsModule,
 		NtxButtonsModule,
 		NtxListsModule,
-		NtxChipsModule
+		NtxChipsModule,
+		NtxFormsModule
 	]
 })
 export class Version430Module { }

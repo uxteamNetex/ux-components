@@ -1,0 +1,41 @@
+<div class="form-datepicker-range">
+  <mat-form-field class="form-datepicker-range__date utils--margin-right-24">
+    <input 
+      matInput 
+      [matDatepicker]="pickerFrom" 
+      placeholder="Fecha"
+      readonly>
+    <mat-datepicker-toggle matSuffix [for]="pickerFrom">
+      <mat-icon class="icon-netex icon-calendar" matDatepickerToggleIcon></mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #pickerFrom></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field class="form-datepicker-range__hour utils--margin-right-24">
+    <mat-select placeholder="Hora">
+      <mat-option *ngFor="let hour of hours" [value]="hour.value">
+        {{hour.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="form-datepicker-range__separator utils--margin-right-24">
+    <span>a</span>
+  </div>
+  <mat-form-field class="form-datepicker-range__hour utils--margin-right-24">
+    <mat-select placeholder="Hora">
+      <mat-option *ngFor="let hour of hours" [value]="hour.value">
+        {{hour.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="form-datepicker-range__date">
+    <input 
+      matInput 
+      [matDatepicker]="pickerTo" 
+      placeholder="Fecha"
+      readonly>
+    <mat-datepicker-toggle matSuffix [for]="pickerTo">
+      <mat-icon class="icon-netex icon-calendar" matDatepickerToggleIcon></mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #pickerTo></mat-datepicker>
+  </mat-form-field>
+</div>
