@@ -117,6 +117,10 @@ const WHATSNEWS = [
 	{
 		linkName: 'version430',
 		label: 'version 4.3.0'
+	},
+	{
+		linkName: 'version431',
+		label: 'version 4.3.1'
 	}
 ];
 

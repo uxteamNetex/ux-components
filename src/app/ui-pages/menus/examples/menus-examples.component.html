@@ -8,6 +8,15 @@
     </ntx-card-simple>
 
     <ntx-card-simple
+      title="{{'Menu from button with flat style' | uppercase }}"
+      subtitle="{{ '<ntx-menu-button-flat>' }}">
+        <ntx-menu-button-flat 
+          [icon]="menuButtonFlatData.icon" 
+          [title]="menuButtonFlatData.title" 
+          [actions]="menuButtonFlatData.actions"></ntx-menu-button-flat>
+    </ntx-card-simple>
+
+    <ntx-card-simple
       title="{{'Simple options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options-simple>' }}">
         <ntx-menu-options-simple></ntx-menu-options-simple>

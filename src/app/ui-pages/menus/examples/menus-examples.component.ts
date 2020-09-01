@@ -9,6 +9,16 @@ import { DashboardService } from 'src/app/shared/services/dashboard.service';
 export class MenusExamplesComponent implements OnInit {
 
 	menulinkData: { title: string; icon: string; actions: { icon: string; title: string; click: () => void; }[]; };
+	
+	menuButtonFlatData: { 
+		actions: { 
+			icon: string; 
+			title: string; 
+			click: () => void; 
+		}[]; 
+		icon: string; 
+		title: string; 
+	};
 
 	constructor(private dashboardService: DashboardService) { }
 
@@ -31,6 +41,22 @@ export class MenusExamplesComponent implements OnInit {
 					click: function() { alert('You\'ve clicked in \'Upload CSV\' option'); }
 				}
 			]
+		};
+		this.menuButtonFlatData = {
+			actions: [
+				{
+					icon: 'icon-plus-circle',
+					title: 'Create from scratch',
+					click: function() { alert('You\'ve clicked in \'Create from scratch\' option'); }
+				},
+				{
+					icon: 'icon-upload',
+					title: 'Upload CSV',
+					click: function() { alert('You\'ve clicked in \'Upload CSV\' option'); }
+				}
+			],
+			icon: 'icon-plus',
+			title: 'Click me!',
 		};
 	}
 }

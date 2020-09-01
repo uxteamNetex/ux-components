@@ -55,7 +55,7 @@ export class MenusDocComponent implements OnInit {
       </button>
     </mat-menu>
   `;
-code2 = `
+  code2 = `
     <button mat-icon-button class="dashboard-menu menu-options-button" [matMenuTriggerFor]="menuOptions">
       <mat-icon class="icon-netex icon-dashboard"></mat-icon>
     </button>
@@ -212,6 +212,54 @@ code2 = `
   ...
   `;
 
+  code10 = `
+    <button 
+      mat-flat-button 
+      [matMenuTriggerFor]="menuOptions" 
+      color="primary"
+      class="flat-icon-button">
+        <mat-icon class="icon-netex {{icon}} flat-icon-button__icon utils--margin-right-8"></mat-icon>
+        {{title}}
+    </button>
+    <mat-menu 
+      #menuOptions="matMenu" 
+      [overlapTrigger]="false">
+        <button 
+          mat-menu-item 
+          (click)="item.click()"
+          *ngFor="let item of actions">
+            <mat-icon class="mat-icon icon-netex {{item.icon}}"></mat-icon>
+            <span class="utils--text-grey-700">{{item.title}}</span>
+        </button>
+    </mat-menu>
+  `;  
+
+  code11 = `
+    import { Component, OnInit, Input } from '@angular/core';
+
+    export class IActionsMenuButtonFlatComponent {
+      icon?: string;
+      title: string;
+      click: Function;
+    }
+
+    @Component({
+      selector: 'ntx-menu-button-flat',
+      templateUrl: './menu-button-flat.component.html',
+      styleUrls: ['./menu-button-flat.component.scss']
+    })
+    export class MenuButtonFlatComponent implements OnInit {
+
+      @Input() actions: IActionsMenuButtonFlatComponent[];
+      @Input() icon: string;
+      @Input() title: string;
+
+      constructor() { }
+
+      ngOnInit() { }
+
+    }
+  `;  
 constructor() { }
 
 ngOnInit() {}

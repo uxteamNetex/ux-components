@@ -9,6 +9,13 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
 
+### v.4.3.1:
+
+**Menus**<br/>
+- Nuevo componente menú lanzado desde botón con estilo 'flat' (*ntx-menu-button-flat*)
+
+------------------
+
 ### v.4.3.0:
 
 **Form controls**<br/>

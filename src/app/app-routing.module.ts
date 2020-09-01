@@ -259,6 +259,10 @@ const routes: Routes = [
 		path: 'version430',
 		loadChildren: './ui-pages/version430/version430.module#Version430Module'
 	},
+	{
+		path: 'version431',
+		loadChildren: './ui-pages/version431/version431.module#Version431Module'
+	},
 	{ path: '',
 		redirectTo: '/home',
 		pathMatch: 'full'

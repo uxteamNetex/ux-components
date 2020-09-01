@@ -1,0 +1,19 @@
+<button 
+  mat-flat-button 
+  [matMenuTriggerFor]="menuOptions" 
+  color="primary"
+  class="flat-icon-button">
+    <mat-icon class="icon-netex {{icon}} flat-icon-button__icon utils--margin-right-8"></mat-icon>
+    {{title}}
+</button>
+<mat-menu 
+  #menuOptions="matMenu" 
+  [overlapTrigger]="false">
+    <button 
+      mat-menu-item 
+      (click)="item.click()"
+      *ngFor="let item of actions">
+        <mat-icon class="mat-icon icon-netex {{item.icon}}"></mat-icon>
+        <span class="utils--text-grey-700">{{item.title}}</span>
+    </button>
+</mat-menu>
