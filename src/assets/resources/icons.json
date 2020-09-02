@@ -36,6 +36,9 @@
             "className": "icon-bell"
         },
         {
+            "className": "icon-bell-solid"
+        },
+        {
             "className": "icon-binoculars"
         },
         {
@@ -159,6 +162,9 @@
             "className": "icon-clear"
         },
         {
+            "className": "icon-clipboard-list"
+        },
+        {
             "className": "icon-clock"
         },
         {
@@ -217,6 +223,9 @@
         },
         {
             "className": "icon-desktop"
+        },
+        {
+            "className": "icon-dislike"
         },
         {
             "className": "icon-download"
@@ -667,6 +676,9 @@
         },
         {
             "className": "icon-logo-cloud"
+        },
+        {
+            "className": "icon-logo-cloud-solid"
         },
         {
             "className": "icon-logo-facebook"

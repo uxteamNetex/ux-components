@@ -14,6 +14,17 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Menus**<br/>
 - Nuevo componente menú lanzado desde botón con estilo 'flat' (*ntx-menu-button-flat*)
 
+**Icons**<br/>
+Archivos modificados:
+- ux-components/src/styles/fonts/styles.scss
+- ux-components/src/styles/fonts/variables.scss
+
+**New icons**<br/>
+- icon-bell-solid
+- icon-dislike
+- icon-clipboard-list
+- icon-cloud-solid
+
 ------------------
 
 ### v.4.3.0:

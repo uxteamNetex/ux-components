@@ -45,6 +45,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-clipboard-list {
+  &:before {
+    content: $icon-clipboard-list;
+  }
+}
+.icon-bell-solid {
+  &:before {
+    content: $icon-bell-solid;
+  }
+}
+.icon-dislike {
+  &:before {
+    content: $icon-dislike;
+  }
+}
+.icon-logo-cloud-solid {
+  &:before {
+    content: $icon-logo-cloud-solid;
+  }
+}
 .icon-rotate-left {
   &:before {
     content: $icon-rotate-left;

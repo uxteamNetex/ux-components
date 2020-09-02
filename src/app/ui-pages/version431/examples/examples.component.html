@@ -21,10 +21,41 @@
         <div class="whatsnew__content-block">
           <h4>New menu component</h4>
           <p class="whatsnew__content-block--text utils--text-18">We released a new card componentized component, <span class="documentation-code">ntx-menu-button-flat</span>.</p>
-          <ntx-menu-button-flat 
-            [icon]="menuButtonFlatData['icon']" 
-            [title]="menuButtonFlatData.title" 
+          <ntx-menu-button-flat
+            [icon]="menuButtonFlatData['icon']"
+            [title]="menuButtonFlatData.title"
             [actions]="menuButtonFlatData.actions"></ntx-menu-button-flat>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New icons</h4>
+          <p class="whatsnew__content-block--text utils--text-18">With this update we have a new batch of icons. For this, several css files have been touched, which you must update to see the icons correctly:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/styles/fonts/styles.scss</li>
+            <li>ux-components/src/styles/fonts/variables.scss</li>
+            <li>ux-components/src/assets/fonts/icons/netex.eot</li>
+            <li>ux-components/src/assets/fonts/icons/netex.svg</li>
+            <li>ux-components/src/assets/fonts/icons/netex.ttf</li>
+            <li>ux-components/src/assets/fonts/icons/netex.woff</li>
+          </ul>
+          <div class="icons-container">
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-bell-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-bell-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-dislike icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-dislike</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-clipboard-list icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-clipboard-list</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-logo-cloud-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-logo-cloud-solid</label>
+            </div>
+          </div>
         </div>
 
         <!-- <div class="whatsnew__content-block">
@@ -103,7 +134,7 @@
             </div>
           </div>
         </div> -->
-        
+
         <h2 class="whatsnew__separation">
           <span class="whatsnew__separation--text">Bug fixing</span>
         </h2>
