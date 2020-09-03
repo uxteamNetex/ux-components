@@ -262,6 +262,9 @@ $block: "utils";
   &--text-error {
 		color: $color-error !important;
   }
+  &--text-primary {
+		color: $color-primary !important;
+  }
 
   //Colores de fondo - Escala de grises
   &--bc-black {
@@ -423,6 +426,9 @@ $block: "utils";
   &--margin-top-100 {
 		margin-top: $separation-100;
 	}
+	&--margin-right-auto {
+		margin-right: auto !important;
+	}
 	&--margin-right-0 {
 		margin-right: $separation-0 !important;
 	}
@@ -521,6 +527,9 @@ $block: "utils";
   }
 	&--margin-left-0 {
 		margin-left: $separation-0 !important;
+	}
+	&--margin-left-auto {
+		margin-left: auto !important;
 	}
 	&--margin-left-4 {
 		margin-left: $separation-4;

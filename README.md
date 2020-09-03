@@ -25,6 +25,9 @@ Archivos modificados:
 - icon-clipboard-list
 - icon-cloud-solid
 
+**Lists**<br/>
+- Nuevo componente *ntx-list4*
+
 ------------------
 
 ### v.4.3.0:

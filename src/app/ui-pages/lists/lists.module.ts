@@ -12,12 +12,14 @@ import {
 import { ListsRoutingModule } from './lists-routing.module';
 import { ListsDocComponent } from './documentation/lists-doc.component';
 import { ListsExamplesComponent } from './examples/lists-examples.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
 	imports: [
 		CommonModule,
 		ListsRoutingModule,
+		FormsModule,
 		NtxCardsModule,
 		NtxMenusModule,
 		NtxListsModule,

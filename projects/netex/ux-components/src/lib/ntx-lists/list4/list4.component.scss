@@ -1,0 +1,87 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list4";
+
+.#{$block} {
+  > * {
+    box-sizing: border-box;
+  }
+
+  font-family: Lato;
+
+  .#{$block}__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .#{$block}__action {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .#{$block}__item {
+    display: flex;
+    height: 48px;
+    &--badge {
+      align-self: center;
+      span {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: block;
+        line-height: 32px;
+      }
+    }
+    &--wrapper {
+      flex-basis: calc(100% - 48px);
+      max-width: calc(100% - 48px);
+      .text {
+        cursor: pointer;
+        &.highlight {
+          font-weight: bold;
+        }
+      }
+      .options {
+        &.mat-icon-button{
+          height: 48px;
+          line-height: 48px;
+          width: 48px;
+          &:hover{
+            background-color: $icon-button-hover;
+          }
+          &[disabled]{
+            cursor: not-allowed;
+            opacity: 0.4;
+            &:hover{
+                background-color: transparent;
+            }
+          }
+        }
+      }
+      .checkbox {
+
+        .mat-checkbox-inner-container {
+          width: 24px;
+          height: 24px;
+        }
+
+        .mat-checkbox-background, .mat-checkbox-frame {
+          border-radius: 70% !important;
+        }
+
+        &.mat-checkbox.mat-accent .mat-checkbox-background {
+          background-color: $color-grey-200 !important;
+        }
+
+        .mat-checkbox-frame {
+          border: none !important;
+        }
+      
+        &.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+          background-color: $color-success !important;
+        }
+      }
+    }
+  }
+}

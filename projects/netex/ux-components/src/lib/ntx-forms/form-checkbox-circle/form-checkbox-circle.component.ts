@@ -26,5 +26,5 @@ export class FormCheckboxCircleComponent implements OnInit {
 
   onChangeCheckbox(event: MatCheckboxChange) {
     this.checkboxChange.emit(event);
-}
+  }
 }

@@ -541,7 +541,269 @@ export class ListsDocComponent implements OnInit {
       }
     }  
   `;
-  
+  code21 = `
+    <mat-list class="list3">
+      <mat-list-item *ngFor="let item of data" class="list3__item">
+        <mat-icon class="icon-netex {{item.icon}} list3__item--icon"></mat-icon>
+        <p class="list3__item--title">{{item.label}}</p>
+      </mat-list-item>
+    </mat-list>
+  `;
+  code22 = `
+    import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+
+    export interface Item {
+      label: string;
+      icon: string;
+    }
+
+    @Component({
+      selector: 'ntx-list3',
+      templateUrl: './list3.component.html',
+      styleUrls: ['./list3.component.scss'],
+      encapsulation: ViewEncapsulation.None
+    })
+
+    export class List3Component implements OnInit {
+
+    @Input() data: Item[];
+
+    constructor() { }
+
+    ngOnInit() { }
+    }
+
+  `;
+  code23 = `
+    @import "././projects/netex/ux-components/src/styles/app/utils";
+
+    $block: "list3";
+
+    .#{$block}{
+      padding: 0;
+      .#{$block}__item{
+        height: 42px;
+        .mat-list-item-content{
+          padding: 0;
+          .#{$block}__item--icon{
+            color: $color-grey-600;
+            margin-right: 12px;
+          }
+          .#{$block}__item--title{
+            color: $color-grey-800;
+            font-family: Lato;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+  `;
+  code24 = `
+      <div class="list4">
+      <div 
+        class="list4__title utils--panel-section-title utils--margin-bottom-16 utils--text-grey-600">
+        <span matTooltip="{{listTitle}}">{{listTitle}}</span>
+        <span matTooltip="{{checkedListItemsCounter}}">{{checkedListItemsCounter}}</span>
+      </div>
+      <a 
+        [routerLink]="actionRouterLink ? actionRouterLink : [] " 
+        (click)="onActionClick()"
+        class="list4__action utils--margin-bottom-16 utils--text-primary"> 
+          <mat-icon class="icon-netex {{actionIcon}} utils--margin-right-12"></mat-icon>
+          <span 
+            matTooltip="{{actionLabel}}"
+            class="utils--text-14">{{actionLabel}}</span>
+      </a>
+      <div class="list4__item" *ngFor="let item of items">
+        <div class="list4__item--badge">
+            <span class="list4__item--alias utils--align-center-text utils--text-white utils--text-16 utils--text-white utils--margin-right-16 utils--bc-grey-400">{{item.label | slice:0:1}}</span>
+        </div>
+        <div class="list4__item--wrapper utils--flex-center">
+          <div 
+            [ngClass] = "{ highlight: !item.checked }"
+            class="text utils--truncate utils--margin-right-auto">
+            <span class="utils--text-14 utils--text-grey-800" matTooltip="{{item.label}}">{{item.label}}</span>
+          </div>
+          <button 
+            mat-icon-button 
+            [matMenuTriggerFor]="menuOptions"
+            class="options utils--margin-right-8 utils--text-grey-700">
+              <mat-icon class="icon-netex icon-more-options"></mat-icon>
+          </button>
+          <mat-menu 
+            #menuOptions="matMenu" 
+            [overlapTrigger]="false">
+            <button 
+              mat-menu-item 
+              (click)="item.click()" 
+              *ngFor="let item of item.actions">
+                <mat-icon class="mat-icon icon-netex {{item.icon}}"></mat-icon>
+                <span class="utils--text-grey-700">{{item.title}}</span>
+            </button>
+          </mat-menu>
+          <mat-checkbox 
+            [checked] = "item.checked"
+            (change)="onChangeCheckbox($event, item)"
+            class="checkbox">
+          </mat-checkbox>
+        </div>
+      </div>
+    </div>
+  `;
+  code25 = `
+      import { Component, OnInit, Input, ViewEncapsulation, Output, EventEmitter } from '@angular/core';
+    import { MatCheckboxChange } from '@angular/material';
+
+    export class IActionsMenuLinkComponent {
+      icon?: string;
+      title: string;
+      click: Function;
+    }
+
+    export interface Item {
+      label: string;
+      checked: boolean;
+      actions: IActionsMenuLinkComponent[];
+    }
+
+    @Component({
+      selector: 'ntx-list4',
+      templateUrl: './list4.component.html',
+      styleUrls: ['./list4.component.scss'],
+      encapsulation: ViewEncapsulation.None
+    })
+    export class List4Component implements OnInit {
+
+      checkedListItemsCounter: string;
+
+      @Input() listTitle: string;
+      @Input() actionLabel: string;
+      @Input() actionIcon: string;
+      @Input() actionRouterLink: string;
+      @Input() items: Item[];
+
+      @Output() checkboxChange = new EventEmitter<MatCheckboxChange>();
+      @Output() labelClick = new EventEmitter();
+      @Output() actionClick = new EventEmitter();
+
+      constructor() { }
+
+      ngOnInit() { 
+        this.checkedListItemsCounter = this.updateCheckedListItemsCounter(this.items);
+      }
+
+      onClickLabel() {
+        this.labelClick.emit();
+      }
+
+      onActionClick() {
+        this.actionClick.emit();
+      }
+
+      onChangeCheckbox(event: MatCheckboxChange, item: Item) {
+        item.checked = event.checked;
+        this.checkedListItemsCounter = this.updateCheckedListItemsCounter(this.items);
+        this.checkboxChange.emit(event);
+      }
+
+      updateCheckedListItemsCounter(items: Item[]): string {
+        return (items.filter((element) => element.checked)).length + '/' + this.items.length;
+      }
+
+    }
+
+  `;
+  code26 = `
+    @import "././projects/netex/ux-components/src/styles/app/utils";
+
+    $block: "list4";
+
+    .#{$block} {
+      > * {
+        box-sizing: border-box;
+      }
+
+      font-family: Lato;
+
+      .#{$block}__title {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .#{$block}__action {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .#{$block}__item {
+        display: flex;
+        height: 48px;
+        &--badge {
+          align-self: center;
+          span {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: block;
+            line-height: 32px;
+          }
+        }
+        &--wrapper {
+          flex-basis: calc(100% - 48px);
+          max-width: calc(100% - 48px);
+          .text {
+            cursor: pointer;
+            &.highlight {
+              font-weight: bold;
+            }
+          }
+          .options {
+            &.mat-icon-button{
+              height: 48px;
+              line-height: 48px;
+              width: 48px;
+              &:hover{
+                background-color: $icon-button-hover;
+              }
+              &[disabled]{
+                cursor: not-allowed;
+                opacity: 0.4;
+                &:hover{
+                    background-color: transparent;
+                }
+              }
+            }
+          }
+          .checkbox {
+
+            .mat-checkbox-inner-container {
+              width: 24px;
+              height: 24px;
+            }
+
+            .mat-checkbox-background, .mat-checkbox-frame {
+              border-radius: 70% !important;
+            }
+
+            &.mat-checkbox.mat-accent .mat-checkbox-background {
+              background-color: $color-grey-200 !important;
+            }
+
+            .mat-checkbox-frame {
+              border: none !important;
+            }
+          
+            &.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+              background-color: $color-success !important;
+            }
+          }
+        }
+      }
+    }
+  `;
+
   ngOnInit() {
 	}
 }

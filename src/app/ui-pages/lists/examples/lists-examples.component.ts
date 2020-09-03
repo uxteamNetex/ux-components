@@ -33,6 +33,12 @@ export interface Item3 {
 	icon: string;
 }
 
+export interface Item4 {
+	label: string;
+	checked: boolean;
+	actions: IActionsMenuLinkComponent[];
+}
+
 export interface Section {
 	title: string;
 	icon: string;
@@ -42,6 +48,12 @@ export interface Section {
 export interface SectionLink {
 	title: string;
 	link: any;
+}
+
+export class IActionsMenuLinkComponent {
+	icon?: string;
+	title: string;
+	click: Function;
 }
 
 const USER = {
@@ -251,6 +263,71 @@ export class ListsExamplesComponent implements OnInit {
 		{
 			label: '32 destinatarios',
 			icon: 'icon-users'
+		}
+	];
+	list4Items: Item4[] = [
+		{
+			label: 'Formación personalizada',
+			checked: true,
+			actions: [
+				{
+					icon: 'icon-pencil',
+					title: 'Edit',
+					click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+				},
+				{
+					icon: 'icon-check-circle',
+					title: 'Check as completed',
+					click: function() { alert('You\'ve clicked in \'Check as completed\' option'); }
+				},
+				{
+					icon: 'icon-trash',
+					title: 'Delete',
+					click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+				}
+			],
+		},
+		{
+			label: 'Curso de Angular2',
+			checked: false,
+			actions: [
+				{
+					icon: 'icon-pencil',
+					title: 'Edit',
+					click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+				},
+				{
+					icon: 'icon-check-circle',
+					title: 'Check as completed',
+					click: function() { alert('You\'ve clicked in \'Check as completed\' option'); }
+				},
+				{
+					icon: 'icon-trash',
+					title: 'Delete',
+					click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+				}
+			],
+		},
+		{
+			label: 'Retener a tu equipo, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			checked: true,
+			actions: [
+				{
+					icon: 'icon-pencil',
+					title: 'Edit',
+					click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+				},
+				{
+					icon: 'icon-check-circle',
+					title: 'Check as completed',
+					click: function() { alert('You\'ve clicked in \'Check as completed\' option'); }
+				},
+				{
+					icon: 'icon-trash',
+					title: 'Delete',
+					click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+				}
+			],
 		}
 	];
 	listMultilineIconData: Section[] = [
