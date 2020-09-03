@@ -306,6 +306,72 @@ const MENUBUTTONFLATDATA = {
 	title: 'Click me!',
 };
 
+const LIST4ITEMS =  [
+	{
+		label: 'Formación personalizada',
+		checked: true,
+		actions: [
+			{
+				icon: 'icon-pencil',
+				title: 'Edit',
+				click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+			},
+			{
+				icon: 'icon-check-circle',
+				title: 'Check as completed',
+				click: function() { alert('You\'ve clicked in \'Check as completed\' option'); }
+			},
+			{
+				icon: 'icon-trash',
+				title: 'Delete',
+				click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+			}
+		],
+	},
+	{
+		label: 'Curso de Angular2',
+		checked: false,
+		actions: [
+			{
+				icon: 'icon-pencil',
+				title: 'Edit',
+				click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+			},
+			{
+				icon: 'icon-check-circle',
+				title: 'Check as completed',
+				click: function() { alert('You\'ve clicked in \'Check as completed\' option'); }
+			},
+			{
+				icon: 'icon-trash',
+				title: 'Delete',
+				click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+			}
+		],
+	},
+	{
+		label: 'Retener a tu equipo, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+		checked: true,
+		actions: [
+			{
+				icon: 'icon-pencil',
+				title: 'Edit',
+				click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+			},
+			{
+				icon: 'icon-check-circle',
+				title: 'Check as completed',
+				click: function() { alert('You\'ve clicked in \'Check as completed\' option'); }
+			},
+			{
+				icon: 'icon-trash',
+				title: 'Delete',
+				click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+			}
+		],
+	}
+];
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -323,7 +389,8 @@ export class ExamplesComponent implements OnInit {
 	card19 = CARD19;
 	listMultilinesIcon = LISTMULTILINESICON;
 	menuButtonFlatData = MENUBUTTONFLATDATA;
-
+	list4Items = LIST4ITEMS;
+	
 	constructor(
 		private tabsHeaderService: TabsHeaderService
 	) { }
