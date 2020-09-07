@@ -18,6 +18,10 @@ $block: "list4";
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    &:link, &:visited, &:active {
+      color: $color-primary;
+      text-decoration: none;
+    }
   }
 
   .#{$block}__item {
