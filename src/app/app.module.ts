@@ -15,11 +15,13 @@ import { DragScrollModule } from 'ngx-drag-scroll';
 import { CustomBreakPointsProvider  } from './shared/custom-breakpoints/custom-breakpoints';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { TestPageComponent } from './test-page/test-page.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		HomePageComponent
+		HomePageComponent,
+		TestPageComponent
 	],
 	imports: [
 		BrowserAnimationsModule,

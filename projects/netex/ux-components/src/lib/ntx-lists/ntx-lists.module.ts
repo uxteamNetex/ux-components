@@ -22,6 +22,7 @@ import { ListSidemenuComponent } from './list-sidemenu/list-sidemenu.component';
 import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 import { List3Component } from './list3/list3.component';
 import { List4Component } from './list4/list4.component';
+import { List5Component } from './list5/list5.component';
 
 @NgModule({
 	imports: [
@@ -47,7 +48,8 @@ import { List4Component } from './list4/list4.component';
 		List2Component,
 		ListSidemenuComponent,
 		List3Component,
-		List4Component
+		List4Component,
+		List5Component
 	],
 	exports: [
 		ListTwoLinesAvatarComponent,
@@ -63,6 +65,7 @@ import { List4Component } from './list4/list4.component';
 		List2Component,
 		List3Component,
 		List4Component,
+		List5Component,
 		ListSidemenuComponent
 	]
 })

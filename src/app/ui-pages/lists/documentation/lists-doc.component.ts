@@ -803,7 +803,111 @@ export class ListsDocComponent implements OnInit {
       }
     }
   `;
+  code27 = `
+    <div class="list5">
+      <div class="list5__item" *ngFor="let item of items">
+        <div class="list5__item--badge">
+            <span 
+              [ngClass] = "item.badgeValue >= 50 ? 'sucess' : 'warning'"
+              class="utils--align-center-text utils--text-white utils--text-16 utils--margin-right-16">{{item.badgeValue}}%</span>
+        </div>
+        <div class="list5__item--wrapper utils--flex-center">
+          <div class="text utils--margin-right-auto">
+            <a 
+              [routerLink]="item.labelRouterLink ? item.labelRouterLink : [] " 
+              (click)="onLabelClick()"
+              class="label utils--text-primary utils--truncate"> 
+                <span matTooltip="{{item.textLabel}}" class="utils--text-14">{{item.textLabel}}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  code28 = `
+    import { Component, OnInit, Input, ViewEncapsulation, Output, EventEmitter } from '@angular/core';
 
+    export interface Item {
+      textLabel: string;
+      badgeValue: number;
+      labelRouterLink: string;
+    }
+
+    @Component({
+      selector: 'ntx-list5',
+      templateUrl: './list5.component.html',
+      styleUrls: ['./list5.component.scss'],
+    })
+    export class List5Component implements OnInit {
+
+      @Input() items: Item[];
+
+      @Output() labelClick = new EventEmitter();
+
+      constructor() { }
+
+      ngOnInit() { }
+
+      onLabelClick() {
+        this.labelClick.emit();
+      }
+
+    }
+  `;
+  code29 = `
+    @import "././projects/netex/ux-components/src/styles/app/utils";
+
+    $block: "list5";
+    
+    .#{$block} {
+      > * {
+        box-sizing: border-box;
+      }
+    
+      font-family: Lato;
+    
+      .#{$block}__item {
+        display: flex;
+        height: 64px;
+        &--badge {
+          align-self: center;
+          span {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: block;
+            line-height: 48px;
+            &.sucess {
+              background-color: #2EBC7A;
+            }
+            &.warning {
+              background-color: #FBBE2F;
+            }
+          }
+        }
+        &--wrapper {
+          flex-basis: calc(100% - 48px);
+          max-width: calc(100% - 48px);
+          .text {
+            cursor: pointer;
+            width: 100%;
+            .label {
+              display: block;
+              align-items: center;
+              font-weight: bold;
+              cursor: pointer;
+              &:link, &:visited, &:active {
+                color: $color-primary;
+                text-decoration: none;
+              }
+          }
+          }
+    
+        }
+      }
+    }
+  `;
+  
   ngOnInit() {
 	}
 }

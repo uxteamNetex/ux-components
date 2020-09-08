@@ -372,6 +372,24 @@ const LIST4ITEMS =  [
 	}
 ];
 
+const LIST5ITEMS = [
+	{
+		textLabel: 'Web designer',
+		badgeValue: 75,
+		labelRouterLink: undefined
+	},
+	{
+		textLabel: 'Graphic designer / illustrator',
+		badgeValue: 67,
+		labelRouterLink: undefined
+	},
+	{
+		textLabel: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+		badgeValue: 45,
+		labelRouterLink: undefined
+	}
+];
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -390,6 +408,7 @@ export class ExamplesComponent implements OnInit {
 	listMultilinesIcon = LISTMULTILINESICON;
 	menuButtonFlatData = MENUBUTTONFLATDATA;
 	list4Items = LIST4ITEMS;
+	list5Items = LIST5ITEMS;
 	
 	constructor(
 		private tabsHeaderService: TabsHeaderService

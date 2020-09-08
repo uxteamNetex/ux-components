@@ -1,0 +1,19 @@
+<div class="list5">
+  <div class="list5__item" *ngFor="let item of items">
+    <div class="list5__item--badge">
+        <span 
+          [ngClass] = "item.badgeValue >= 50 ? 'sucess' : 'warning'"
+          class="utils--align-center-text utils--text-white utils--text-16 utils--margin-right-16">{{item.badgeValue}}%</span>
+    </div>
+    <div class="list5__item--wrapper utils--flex-center">
+      <div class="text utils--margin-right-auto">
+        <a 
+          [routerLink]="item.labelRouterLink ? item.labelRouterLink : [] " 
+          (click)="onLabelClick()"
+          class="label utils--text-primary utils--truncate"> 
+            <span matTooltip="{{item.textLabel}}" class="utils--text-14">{{item.textLabel}}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

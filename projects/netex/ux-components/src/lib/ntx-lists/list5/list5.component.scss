@@ -1,0 +1,51 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list5";
+
+.#{$block} {
+  > * {
+    box-sizing: border-box;
+  }
+
+  font-family: Lato;
+
+  .#{$block}__item {
+    display: flex;
+    height: 64px;
+    &--badge {
+      align-self: center;
+      span {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: block;
+        line-height: 48px;
+        &.sucess {
+          background-color: #2EBC7A;
+        }
+        &.warning {
+          background-color: #FBBE2F;
+        }
+      }
+    }
+    &--wrapper {
+      flex-basis: calc(100% - 48px);
+      max-width: calc(100% - 48px);
+      .text {
+        cursor: pointer;
+        width: 100%;
+        .label {
+          display: block;
+          align-items: center;
+          font-weight: bold;
+          cursor: pointer;
+          &:link, &:visited, &:active {
+            color: $color-primary;
+            text-decoration: none;
+          }
+      }
+      }
+
+    }
+  }
+}
