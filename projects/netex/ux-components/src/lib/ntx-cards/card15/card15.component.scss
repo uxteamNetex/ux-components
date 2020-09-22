@@ -14,15 +14,28 @@
         border-top-right-radius: 4px;
         height: 130px;
         background-color: #F2F2F2;
-    }
-    .avatar {
-        background-color: #cccccc;
-        border-radius: 75px;
-        height: 150px;
-        margin: 0 auto;
-        position: relative;
-        top: 55px;
-        width: 150px;
+        .avatar {
+            background-color: #cccccc;
+            border-radius: 75px;
+            height: 150px;
+            margin: 0 auto;
+            position: relative;
+            top: 55px;
+            width: 150px;
+        }
+        .badge {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            background-color: #999; 
+            position: relative;
+            top: -120px;
+            left: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     .content{
         font-size: 14px;
@@ -56,18 +69,18 @@
                 border-top-right-radius: 21px;
                 border-bottom-right-radius: 21px;
                 color: #666666;
-                &:hover {
+                &.active {
                     background-color: #F2F2F2 ;
+                    a{ 
+                        color:#1AA9E2 ; 
+                        font-family: latoSemibold;
+                    }
                 }
                 a{
                     color: #666666;
                     &:link,&:visited,&:hover,&:active {
                         text-decoration: none;
-                    }
-                    &:active {
-                        color:#1AA9E2 ;
-                    }
-                    
+                    }                    
                 }
             }
         }

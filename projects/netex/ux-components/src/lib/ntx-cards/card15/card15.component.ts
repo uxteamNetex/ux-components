@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
 	selector: 'ntx-card15',
@@ -8,10 +8,22 @@ import { Component, OnInit, Input } from '@angular/core';
 export class Card15Component implements OnInit {
 
 	@Input() user: any;
+	@Input() badge: any;
+	@Input() actions: any[];
+
+	@Output() clickEvent = new EventEmitter();
+
+	selectedIndex: number;
 
 	constructor() { }
 
 	ngOnInit() {
+		this.selectedIndex = this.actions ? this.actions.findIndex(action => action.active ) : undefined;
+	}
+
+	public onClickEvent(i) {
+		this.clickEvent.emit();
+		this.selectedIndex = i;
 	}
 
 }

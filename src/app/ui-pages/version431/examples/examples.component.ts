@@ -390,6 +390,37 @@ const LIST5ITEMS = [
 	}
 ];
 
+const CARD15USER = {
+	background: 'assets/images/4.png',
+	avatar: 'assets/images/user_female_01.jpg',
+	name : 'Suzanne Axtens',
+	mail : 'saxtens6@canalblog.com',
+	phone : '+55 350 126 9913',
+	location : 'Salanegara'
+};
+const CARD15BADGE = {
+	bgColor: '#1FAE96',
+	label: 'TBPi',
+	value: '68',
+};
+const CARD15ACTIONS = [
+	{
+		label: 'Profile',
+		link: '#',
+		active: true
+	},
+	{
+		label: 'Evaluation',
+		link: '#',
+		active: false
+	},
+	{
+		label: 'Another action',
+		link: '#',
+		active: false
+	}
+];
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -409,6 +440,9 @@ export class ExamplesComponent implements OnInit {
 	menuButtonFlatData = MENUBUTTONFLATDATA;
 	list4Items = LIST4ITEMS;
 	list5Items = LIST5ITEMS;
+	card15_user = CARD15USER;
+	card15_badge = CARD15BADGE;
+	card15_actions = CARD15ACTIONS;
 	
 	constructor(
 		private tabsHeaderService: TabsHeaderService

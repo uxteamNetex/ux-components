@@ -1,17 +1,23 @@
 <div class="wrapper">
   <div class="header" [ngStyle]="{'background-image':'url(' + user.background + ')'}">
     <div class="avatar" [ngStyle]="{'background-image':'url(' + user.avatar + ')'}"></div>
+    <div *ngIf="badge" class="badge utils--text-white" [ngStyle]="{'background-color': badge?.bgColor }">
+      <div class="utils--text-12">{{badge?.label}}</div>
+      <div class="utils--text-32">{{badge?.value}}</div>
+    </div>
   </div>
   <div class="content">
     <span matTooltip="{{user.name}}">{{user.name}}</span> 
     <span matTooltip="{{user.mail}}">{{user.mail}}</span>
-    <span matTooltip="{{user.phone}}">{{user.phone}}</span>
-    <span matTooltip="{{user.location}}">{{user.location}}</span>
+    <span *ngIf="user.phone" matTooltip="{{user.phone}}">{{user.phone}}</span>
+    <span *ngIf="user.location" matTooltip="{{user.location}}">{{user.location}}</span>
   </div>
-  <div class="actions" *ngIf="user.actions.length">
+  <div class="actions" *ngIf="actions && actions.length > 0">
     <ul>
-      <li *ngFor="let action of user.actions">
-        <a routerLink="{{action.link}}">{{action.label}}</a>
+      <li 
+      *ngFor="let action of actions; let i = index"
+      [ngClass]="{'active': selectedIndex === i}" >
+        <a href="javascript:void(0);" (click)="onClickEvent(i)">{{action.label}}</a>
       </li>
     </ul>
   </div>

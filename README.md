@@ -11,6 +11,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.3.1:
 
+**Cards**<br/>
+- Modificación componente *ntx-card15* para que admita un badge. 
+
 **Menus**<br/>
 - Nuevo componente menú lanzado desde botón con estilo 'flat' (*ntx-menu-button-flat*)
 
