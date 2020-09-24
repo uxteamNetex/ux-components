@@ -172,7 +172,7 @@ export class ListsExamplesComponent implements OnInit {
 			}
 		}
 	];
-	list2: Item2[] = [
+	list2_1: Item2[] = [
 		{
 			label: 'Customer oriented',
 			avatar: undefined,
@@ -247,6 +247,85 @@ export class ListsExamplesComponent implements OnInit {
 				value: 65,
 				requiredValue: 78,
 				edited: true
+			},
+			checked: true
+		}
+	];
+	list2_2: Item2[] = [
+		{
+			label: 'Customer oriented',
+			avatar: undefined,
+			color: '#E7575B',
+			progress: {
+				value: 40,
+				requiredValue: 80,
+				edited: false
+			},
+			checked: true
+		},
+		{
+			label: 'Leadership',
+			avatar: 'assets/images/app-catalogue.png',
+			color: '#5cce88',
+			progress: {
+				value: 80,
+				requiredValue: 30,
+				edited: false
+			},
+			checked: false
+		},
+		{
+			label: 'Organisation',
+			avatar: 'assets/images/app-community.png',
+			color: '#EE9A37',
+			progress: {
+				value: 75,
+				requiredValue: 55,
+				edited: false
+			},
+			checked: true
+		},
+		{
+			label: 'Tidyness',
+			avatar: undefined,
+			color: '#5cce88',
+			progress: {
+				value: 32,
+				requiredValue: 39,
+				edited: false
+			},
+			checked: true
+		},
+		{
+			label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			avatar: undefined,
+			color: '#41545D',
+			progress: {
+				value: 33,
+				requiredValue: 52,
+				edited: false
+			},
+			checked: false
+		},
+		{
+			label: 'Adobe XD',
+			avatar: 'assets/images/background-profile-header.jpg',
+			color: '#1D5D93',
+			progress: {
+				value: 88,
+				requiredValue: 78,
+				edited: false
+			},
+			checked: false
+		},
+		{
+			label: 'Adobe Photoshop',
+			avatar: undefined,
+			color: '#7D5D55',
+			progress: {
+				value: 65,
+				requiredValue: 78,
+				edited: false
 			},
 			checked: true
 		}

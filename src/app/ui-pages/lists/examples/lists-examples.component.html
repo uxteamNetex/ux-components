@@ -14,9 +14,15 @@
     </ntx-card-simple>
 
     <ntx-card-simple
-      title="{{'List 2' | uppercase }}"
-      subtitle="{{ '<ntx-list2>' }}">
-        <ntx-list2 [data]=list2></ntx-list2>
+      title="{{'LIST 2 (variante 1)'  }}"
+      subtitle="{{ '<ntx-list2 showGenericBullet bulletIconName=\'icon-badge\' bulletIconColor=\'#9A9DEB\' [data]=data></ntx-list2>' }}">
+        <ntx-list2 showGenericBullet bulletIconName="icon-badge" bulletIconColor="#9A9DEB" [data]=list2_2></ntx-list2>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'LIST 2 (variante 2)'  }}"
+      subtitle="{{ '<ntx-list2 [data]=data></ntx-list2>' }}">
+        <ntx-list2  [data]=list2_1></ntx-list2>
     </ntx-card-simple>
 
     <ntx-card-simple
