@@ -19,9 +19,6 @@
         (change)="onChangeCheckbox($event, item)"
         class="list4__item--checkbox utils--margin-right-24">
       </mat-checkbox>
-    <div class="list4__item--badge">
-        <span class="list4__item--alias utils--align-center-text utils--text-white utils--text-16 utils--text-white utils--margin-right-16 utils--bc-grey-400">{{item.label | slice:0:1}}</span>
-    </div>
     <div class="list4__item--wrapper utils--flex-center">
       <div 
         [ngClass] = "{ highlight: !item.checked }"
