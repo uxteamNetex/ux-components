@@ -27,6 +27,29 @@ $block: "list4";
   .#{$block}__item {
     display: flex;
     height: 48px;
+    &--checkbox {
+      display: flex;
+      .mat-checkbox-inner-container {
+        width: 24px;
+        height: 24px;
+      }
+
+      .mat-checkbox-background, .mat-checkbox-frame {
+        border-radius: 70% !important;
+      }
+
+      &.mat-checkbox.mat-accent .mat-checkbox-background {
+        background-color: $color-grey-200 !important;
+      }
+
+      .mat-checkbox-frame {
+        border: none !important;
+      }
+    
+      &.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+        background-color: $color-success !important;
+      }
+    }
     &--badge {
       align-self: center;
       span {
@@ -40,11 +63,13 @@ $block: "list4";
     &--wrapper {
       flex-basis: calc(100% - 48px);
       max-width: calc(100% - 48px);
+      min-width: 0;
       .text {
         cursor: pointer;
         &.highlight {
           font-weight: bold;
         }
+        
       }
       .options {
         &.mat-icon-button{
@@ -63,29 +88,7 @@ $block: "list4";
           }
         }
       }
-      .checkbox {
-
-        .mat-checkbox-inner-container {
-          width: 24px;
-          height: 24px;
-        }
-
-        .mat-checkbox-background, .mat-checkbox-frame {
-          border-radius: 70% !important;
-        }
-
-        &.mat-checkbox.mat-accent .mat-checkbox-background {
-          background-color: $color-grey-200 !important;
-        }
-
-        .mat-checkbox-frame {
-          border: none !important;
-        }
       
-        &.mat-checkbox-checked.mat-accent .mat-checkbox-background {
-          background-color: $color-success !important;
-        }
-      }
     }
   }
 }
