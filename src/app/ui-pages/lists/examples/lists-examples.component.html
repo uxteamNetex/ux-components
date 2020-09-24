@@ -32,9 +32,21 @@
     </ntx-card-simple>
 
     <ntx-card-simple
-      title="{{'List 5' | uppercase }}"
-      subtitle="{{ '<ntx-list5>' }}">
-        <ntx-list5 [items]=list5Items></ntx-list5>
+      title="{{'LIST5 (variante 01)' }}"
+      subtitle="{{ '<ntx-list5 showBullet bulletType=\'badge\' badgeBgColor=\'#1FAE96\' showDivider [items]=list></ntx-list5>' }}">      
+      <ntx-list5 showBullet bulletType="badge" badgeColor="#1FAE96" showDivider [items]=list5_1></ntx-list5>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'LIST5 (variante 02)' }}"
+      subtitle="{{ '<ntx-list5 showBullet bulletType=\'icon\' iconName=\'icon-badge\' iconColor=\'#9A9DEB\' showDivider [items]=list></ntx-list5>' }}">      
+      <ntx-list5 showBullet bulletType="icon" iconName="icon-badge" iconColor="#9A9DEB" showDivider [items]=list5_3></ntx-list5>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'LIST5 (variante 03)' }}"
+      subtitle="{{ '<ntx-list5 showDivider [items]=\'list\'></ntx-list5>' }}">      
+        <ntx-list5 showDivider [items]=list5_2></ntx-list5>
     </ntx-card-simple>
 
     <ntx-card-simple

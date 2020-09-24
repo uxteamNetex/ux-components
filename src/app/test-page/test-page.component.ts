@@ -7,23 +7,59 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestPageComponent implements OnInit {
 
-  list5Items = [
-	{
-		textLabel: 'Web designer',
-		badgeValue: 75,
-		labelRouterLink: undefined
-	},
-	{
-		textLabel: 'Graphic designer / illustrator',
-		badgeValue: 67,
-		labelRouterLink: undefined
-	},
-	{
-		textLabel: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-		badgeValue: 45,
-		labelRouterLink: undefined
-	}
-];
+	list1 = [
+		{
+			labelPrincipal: 'Web designer',
+			labelSecondary: '25%',
+			labelRouterLink: '/home'
+		},
+		{
+			labelPrincipal: 'Graphic designer / illustrator',
+			labelSecondary: '65%',
+			labelRouterLink: '/home'
+		},
+		{
+			labelPrincipal: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			labelSecondary: '24%',
+			labelRouterLink: '/home'
+		}
+	];
+
+	list2 = [
+		{
+			labelPrincipal: 'Customer oriented',
+			labelSecondary: '80',
+			labelRouterLink: undefined
+		},
+		{
+			labelPrincipal: 'Graphic designer / illustrator',
+			labelSecondary: '78',
+			labelRouterLink: undefined
+		},
+		{
+			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			labelSecondary: '67',
+			labelRouterLink: undefined
+		}
+	];
+
+	list3 = [
+		{
+			labelPrincipal: 'Customer oriented',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		},
+		{
+			labelPrincipal: 'Graphic designer / illustrator',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		},
+		{
+			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		}
+	];
 
   constructor() { }
 

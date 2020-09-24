@@ -362,20 +362,56 @@ export class ListsExamplesComponent implements OnInit {
 
 	]
 
-	list5Items = [
+	list5_1 = [
 		{
-			textLabel: 'Web designer',
-			badgeValue: 75,
+			labelPrincipal: 'Web designer',
+			labelSecondary: '25%',
+			labelRouterLink: '/home'
+		},
+		{
+			labelPrincipal: 'Graphic designer / illustrator',
+			labelSecondary: '65%',
+			labelRouterLink: '/home'
+		},
+		{
+			labelPrincipal: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			labelSecondary: '24%',
+			labelRouterLink: '/home'
+		}
+	];
+
+	list5_2 = [
+		{
+			labelPrincipal: 'Customer oriented',
+			labelSecondary: '80',
 			labelRouterLink: undefined
 		},
 		{
-			textLabel: 'Graphic designer / illustrator',
-			badgeValue: 67,
+			labelPrincipal: 'Graphic designer / illustrator',
+			labelSecondary: '78',
 			labelRouterLink: undefined
 		},
 		{
-			textLabel: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-			badgeValue: 45,
+			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			labelSecondary: '67',
+			labelRouterLink: undefined
+		}
+	];
+
+	list5_3 = [
+		{
+			labelPrincipal: 'Customer oriented',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		},
+		{
+			labelPrincipal: 'Graphic designer / illustrator',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		},
+		{
+			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			labelSecondary: undefined,
 			labelRouterLink: undefined
 		}
 	];

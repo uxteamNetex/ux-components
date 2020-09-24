@@ -1,19 +1,35 @@
 <div class="list5">
   <div class="list5__item" *ngFor="let item of items">
-    <div class="list5__item--badge">
+    <div
+      *ngIf="showBullet" 
+      class="list5__item--bullet utils--flex-center utils--margin-right-16">
         <span 
-          [ngClass] = "item.badgeValue >= 50 ? 'sucess' : 'warning'"
-          class="utils--align-center-text utils--text-white utils--text-16 utils--margin-right-16">{{item.badgeValue}}%</span>
+          *ngIf ="bulletType === 'badge'"
+          [ngStyle] = "{'background-color': badgeColor }"
+          class="utils--align-center-text utils--text-white utils--text-16">{{item.labelPrincipal | slice:0:1}}</span>
+        <mat-icon 
+          *ngIf = "bulletType === 'icon'"  
+          [ngStyle] = "{'color': iconColor }"
+          class="icon-netex {{ iconName }} utils--text-28"></mat-icon>
     </div>
-    <div class="list5__item--wrapper utils--flex-center">
-      <div class="text utils--margin-right-auto">
+    <div 
+      [ngClass] = "{'divider': showDivider }"
+      class="list5__item--wrapper utils--text-16 utils--text-grey-800">
+      <div class="label-principal">
         <a 
-          [routerLink]="item.labelRouterLink ? item.labelRouterLink : [] " 
-          (click)="onLabelClick()"
-          class="label utils--text-primary utils--truncate"> 
-            <span matTooltip="{{item.textLabel}}" class="utils--text-14">{{item.textLabel}}</span>
+          *ngIf="item.labelRouterLink; else elseBlock"
+          [routerLink] = "item.labelRouterLink" 
+          (click) = "onLabelClick()"
+          class="link utils--text-primary"> 
+            <span matTooltip = "{{item.labelPrincipal}}" class="">{{item.labelPrincipal}}</span>
         </a>
+        <ng-template #elseBlock>
+          <span class="label">{{item.labelPrincipal}}</span>
+        </ng-template>
       </div>
+      <div 
+        *ngIf="item.labelSecondary"
+        class="label-secondary utils--margin-left-16">{{item.labelSecondary}}</div>
     </div>
   </div>
 </div>

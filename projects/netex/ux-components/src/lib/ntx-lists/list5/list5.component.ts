@@ -1,8 +1,9 @@
-import { Component, OnInit, Input, ViewEncapsulation, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { coerceBooleanProperty } from '@angular/cdk/coercion';
 
 export interface Item {
-	textLabel: string;
-	badgeValue: number;
+	labelPrincipal: string;
+	labelSecondary: string;
 	labelRouterLink: string;
 }
 
@@ -14,6 +15,28 @@ export interface Item {
 export class List5Component implements OnInit {
 
 	@Input() items: Item[];
+	@Input() bulletType: 'badge' | 'icon';
+	@Input() badgeColor: string; 
+	@Input() iconColor: string; 
+	@Input() iconName: string;
+
+	private _showBullet: boolean;
+	get showBullet(): boolean {
+		return this._showBullet;
+	} 
+	@Input()
+	set showBullet(value: boolean) {
+		this._showBullet = coerceBooleanProperty(value);
+	}
+
+	private _showDivider: boolean;
+	get showDivider(): boolean {
+		return this._showDivider;
+	} 
+	@Input()
+	set showDivider(value: boolean) {
+		this._showDivider = coerceBooleanProperty(value);
+	}
 
 	@Output() labelClick = new EventEmitter();
 
