@@ -31,6 +31,7 @@ Archivos modificados:
 **Lists**<br/>
 - Nuevo componente *ntx-list4*
 - Nuevo componente *ntx-list5*
+- Cambios en el componente *ntx-list2*
 
 ------------------
 
