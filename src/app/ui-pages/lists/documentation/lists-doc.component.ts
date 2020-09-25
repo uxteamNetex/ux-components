@@ -804,108 +804,167 @@ export class ListsDocComponent implements OnInit {
     }
   `;
   code27 = `
-    <div class="list5">
-      <div class="list5__item" *ngFor="let item of items">
-        <div class="list5__item--badge">
-            <span 
-              [ngClass] = "item.badgeValue >= 50 ? 'sucess' : 'warning'"
-              class="utils--align-center-text utils--text-white utils--text-16 utils--margin-right-16">{{item.badgeValue}}%</span>
-        </div>
-        <div class="list5__item--wrapper utils--flex-center">
-          <div class="text utils--margin-right-auto">
-            <a 
-              [routerLink]="item.labelRouterLink ? item.labelRouterLink : [] " 
-              (click)="onLabelClick()"
-              class="label utils--text-primary utils--truncate"> 
-                <span matTooltip="{{item.textLabel}}" class="utils--text-14">{{item.textLabel}}</span>
-            </a>
-          </div>
-        </div>
-      </div>
+  <div class="list5">
+  <div class="list5__item" *ngFor="let item of items">
+    <div
+      *ngIf="showBullet" 
+      class="list5__item--bullet utils--flex-center utils--margin-right-16">
+        <span 
+          *ngIf ="bulletType === 'badge'"
+          [ngStyle] = "{'background-color': badgeColor }"
+          class="utils--align-center-text utils--text-white utils--text-16">{{item.labelPrincipal | slice:0:1}}</span>
+        <mat-icon 
+          *ngIf = "bulletType === 'icon'"  
+          [ngStyle] = "{'color': iconColor }"
+          class="icon-netex {{ iconName }} utils--text-28"></mat-icon>
     </div>
+    <div 
+      [ngClass] = "{'divider': showDivider }"
+      class="list5__item--wrapper utils--text-16 utils--text-grey-800">
+      <div class="label-principal">
+        <a 
+          *ngIf="item.labelRouterLink; else elseBlock"
+          [routerLink] = "item.labelRouterLink" 
+          (click) = "onLabelClick()"
+          class="link utils--text-primary"> 
+            <span matTooltip = "{{item.labelPrincipal}}" class="">{{item.labelPrincipal}}</span>
+        </a>
+        <ng-template #elseBlock>
+          <span class="label">{{item.labelPrincipal}}</span>
+        </ng-template>
+      </div>
+      <div 
+        *ngIf="item.labelSecondary"
+        class="label-secondary utils--margin-left-16">{{item.labelSecondary}}</div>
+    </div>
+  </div>
+</div>
   `;
   code28 = `
-    import { Component, OnInit, Input, ViewEncapsulation, Output, EventEmitter } from '@angular/core';
-
-    export interface Item {
-      textLabel: string;
-      badgeValue: number;
-      labelRouterLink: string;
+  import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+  import { coerceBooleanProperty } from '@angular/cdk/coercion';
+  
+  export interface Item {
+    labelPrincipal: string;
+    labelSecondary: string;
+    labelRouterLink: string;
+  }
+  
+  @Component({
+    selector: 'ntx-list5',
+    templateUrl: './list5.component.html',
+    styleUrls: ['./list5.component.scss'],
+  })
+  export class List5Component implements OnInit {
+  
+    @Input() items: Item[];
+    @Input() bulletType: 'badge' | 'icon';
+    @Input() badgeColor: string; 
+    @Input() iconColor: string; 
+    @Input() iconName: string;
+  
+    private _showBullet: boolean;
+    get showBullet(): boolean {
+      return this._showBullet;
+    } 
+    @Input()
+    set showBullet(value: boolean) {
+      this._showBullet = coerceBooleanProperty(value);
     }
-
-    @Component({
-      selector: 'ntx-list5',
-      templateUrl: './list5.component.html',
-      styleUrls: ['./list5.component.scss'],
-    })
-    export class List5Component implements OnInit {
-
-      @Input() items: Item[];
-
-      @Output() labelClick = new EventEmitter();
-
-      constructor() { }
-
-      ngOnInit() { }
-
-      onLabelClick() {
-        this.labelClick.emit();
-      }
-
+  
+    private _showDivider: boolean;
+    get showDivider(): boolean {
+      return this._showDivider;
+    } 
+    @Input()
+    set showDivider(value: boolean) {
+      this._showDivider = coerceBooleanProperty(value);
     }
+  
+    @Output() labelClick = new EventEmitter();
+  
+    constructor() { }
+  
+    ngOnInit() { }
+  
+    onLabelClick() {
+      this.labelClick.emit();
+    }
+  
+  }
   `;
   code29 = `
-    @import "././projects/netex/ux-components/src/styles/app/utils";
+  @import "././projects/netex/ux-components/src/styles/app/utils";
 
-    $block: "list5";
-    
-    .#{$block} {
-      > * {
-        box-sizing: border-box;
+  $block: "list5";
+  
+  .#{$block} {
+    cursor: default;
+    > * {
+      box-sizing: border-box;
+    }
+  
+    font-family: Lato;
+  
+    .#{$block}__item {
+      display: flex;
+      height: 48px;
+      margin: 8px;
+      &--bullet {
+        flex: 0 0 40px;
+        height: 40px;
+        span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          line-height: 40px;
+        }
       }
-    
-      font-family: Lato;
-    
-      .#{$block}__item {
+      &--wrapper {
         display: flex;
-        height: 64px;
-        &--badge {
-          align-self: center;
-          span {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            display: block;
-            line-height: 48px;
-            &.sucess {
-              background-color: #2EBC7A;
+        flex: 1;
+        min-width: 0;
+        &:not(:last-child) {
+          &.divider {
+            border-bottom: 1px solid $color-grey-200;
+          }
+        }
+        .label-principal {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          min-width: 0;
+          height: 40px;
+          .label {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            span {
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
             }
-            &.warning {
-              background-color: #FBBE2F;
+          }
+          .link {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:link, &:visited, &:active {
+              color: $color-primary;
+              text-decoration: none;
             }
           }
         }
-        &--wrapper {
-          flex-basis: calc(100% - 48px);
-          max-width: calc(100% - 48px);
-          .text {
-            cursor: pointer;
-            width: 100%;
-            .label {
-              display: block;
-              align-items: center;
-              font-weight: bold;
-              cursor: pointer;
-              &:link, &:visited, &:active {
-                color: $color-primary;
-                text-decoration: none;
-              }
-          }
-          }
-    
+        .label-secondary {
+          line-height: 40px;
         }
+      }
+      &:not(:last-child) .#{$block}__item--wrapper.divider{
+        border-bottom: 1px solid $color-grey-200;
       }
     }
+  }
   `;
   
   ngOnInit() {

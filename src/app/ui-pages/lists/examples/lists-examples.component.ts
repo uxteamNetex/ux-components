@@ -191,7 +191,7 @@ export class ListsExamplesComponent implements OnInit {
 			progress: {
 				value: 80,
 				requiredValue: 30,
-				edited: false
+				edited: true
 			},
 			checked: false
 		},
@@ -202,50 +202,6 @@ export class ListsExamplesComponent implements OnInit {
 			progress: {
 				value: 75,
 				requiredValue: 55,
-				edited: false
-			},
-			checked: true
-		},
-		{
-			label: 'Tidyness',
-			avatar: undefined,
-			color: '#5cce88',
-			progress: {
-				value: 32,
-				requiredValue: 39,
-				edited: true
-			},
-			checked: true
-		},
-		{
-			label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-			avatar: undefined,
-			color: '#41545D',
-			progress: {
-				value: 33,
-				requiredValue: 52,
-				edited: false
-			},
-			checked: false
-		},
-		{
-			label: 'Adobe XD',
-			avatar: 'assets/images/background-profile-header.jpg',
-			color: '#1D5D93',
-			progress: {
-				value: 88,
-				requiredValue: 78,
-				edited: false
-			},
-			checked: false
-		},
-		{
-			label: 'Adobe Photoshop',
-			avatar: undefined,
-			color: '#7D5D55',
-			progress: {
-				value: 65,
-				requiredValue: 78,
 				edited: true
 			},
 			checked: true
@@ -281,50 +237,6 @@ export class ListsExamplesComponent implements OnInit {
 			progress: {
 				value: 75,
 				requiredValue: 55,
-				edited: false
-			},
-			checked: true
-		},
-		{
-			label: 'Tidyness',
-			avatar: undefined,
-			color: '#5cce88',
-			progress: {
-				value: 32,
-				requiredValue: 39,
-				edited: false
-			},
-			checked: true
-		},
-		{
-			label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-			avatar: undefined,
-			color: '#41545D',
-			progress: {
-				value: 33,
-				requiredValue: 52,
-				edited: false
-			},
-			checked: false
-		},
-		{
-			label: 'Adobe XD',
-			avatar: 'assets/images/background-profile-header.jpg',
-			color: '#1D5D93',
-			progress: {
-				value: 88,
-				requiredValue: 78,
-				edited: false
-			},
-			checked: false
-		},
-		{
-			label: 'Adobe Photoshop',
-			avatar: undefined,
-			color: '#7D5D55',
-			progress: {
-				value: 65,
-				requiredValue: 78,
 				edited: false
 			},
 			checked: true

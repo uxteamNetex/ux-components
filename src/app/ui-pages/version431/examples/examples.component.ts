@@ -374,19 +374,19 @@ const LIST4ITEMS =  [
 
 const LIST5ITEMS = [
 	{
-		textLabel: 'Web designer',
-		badgeValue: 75,
-		labelRouterLink: undefined
+		labelPrincipal: 'Web designer',
+		labelSecondary: '25%',
+		labelRouterLink: '/home'
 	},
 	{
-		textLabel: 'Graphic designer / illustrator',
-		badgeValue: 67,
-		labelRouterLink: undefined
+		labelPrincipal: 'Graphic designer / illustrator',
+		labelSecondary: '65%',
+		labelRouterLink: '/home'
 	},
 	{
-		textLabel: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-		badgeValue: 45,
-		labelRouterLink: undefined
+		labelPrincipal: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+		labelSecondary: '24%',
+		labelRouterLink: '/home'
 	}
 ];
 
