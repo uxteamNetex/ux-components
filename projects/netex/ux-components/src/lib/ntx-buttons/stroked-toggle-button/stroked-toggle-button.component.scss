@@ -16,9 +16,15 @@
       border-right: 1px solid $color-grey-400;
       border-radius: 0 4px 4px 0;
     }
+    .mat-button-toggle-button {
+      height: 34px;
+    }
     .mat-button-toggle-label-content{
-      line-height: 36px;
+      line-height: 0;
       padding: 0 6px;
     }
+  }
+  .mat-button-toggle-checked {
+    background: none;
   }
 }
