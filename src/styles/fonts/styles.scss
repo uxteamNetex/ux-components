@@ -45,6 +45,11 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heart-off {
+  &:before {
+    content: $icon-heart-off;
+  }
+}
 .icon-clipboard-list {
   &:before {
     content: $icon-clipboard-list;
