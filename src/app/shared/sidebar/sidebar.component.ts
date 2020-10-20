@@ -151,7 +151,7 @@ export class SidebarComponent implements OnInit {
 	categories = CATEGORIES;
 	links: string[] = LINKS;
 	linkshelpers: string[] = LINKSHELPERS;
-	whatsnews: any[] = WHATSNEWS;
+	whatsnews: any[] = WHATSNEWS.reverse();
 
 	constructor(
 		private sidenavService: SidenavService,
