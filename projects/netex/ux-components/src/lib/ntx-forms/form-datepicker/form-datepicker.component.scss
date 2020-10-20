@@ -5,7 +5,7 @@ $block: "form-container";
 .#{$block}{
   min-width: 150px;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 100%;
   width: 100%;
   .#{$block}__form-full-width{
     &.mat-form-field{
