@@ -23,6 +23,7 @@ Archivos modificados:
 - ux-components/src/styles/fonts/variables.scss
 
 **New icons**<br/>
+- icon-heart-off
 - icon-bell-solid
 - icon-dislike
 - icon-clipboard-list
@@ -32,6 +33,16 @@ Archivos modificados:
 - Nuevo componente *ntx-list4*
 - Nuevo componente *ntx-list5*
 - Cambios en el componente *ntx-list2*
+
+**Buttons**<br/>
+- Modificación componente *ntx-stroked-toggle-button* para que su altura coincida con la del resto de botones. 
+
+**Form controls**<br/>
+Modificación del estilo de los siguientes componentes para que el ancho máximo del componente lo determine el ancho del contenedor padre:
+- *ntx-form-datepicker*
+- *ntx-form-select-no-border*
+- *ntx-form-select-thin*
+- *ntx-form-select*
 
 ------------------
 
