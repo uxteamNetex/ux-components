@@ -9,6 +9,18 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
 
+### v.x.x.x:
+
+**Icons**<br/>
+Archivos modificados:
+- ux-components/src/styles/fonts/styles.scss
+- ux-components/src/styles/fonts/variables.scss
+
+**New icons**<br/>
+- icon-users-arrow-bottom
+
+------------------
+
 ### v.4.3.1:
 
 **Cards**<br/>

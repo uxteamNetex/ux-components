@@ -963,6 +963,9 @@
             "className": "icon-users"
         },
         {
+            "className": "icon-users-arrow-bottom"
+        },
+        {
             "className": "icon-users-plus"
         },
         {

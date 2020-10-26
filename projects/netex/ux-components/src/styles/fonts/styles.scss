@@ -45,6 +45,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heart-off {
+  &:before {
+    content: $icon-heart-off;
+  }
+}
+.icon-users-arrow-bottom {
+  &:before {
+    content: $icon-users-arrow-bottom;
+  }
+}
 .icon-clipboard-list {
   &:before {
     content: $icon-clipboard-list;

@@ -50,6 +50,11 @@ mat-icon{
     content: $icon-heart-off;
   }
 }
+.icon-users-arrow-bottom {
+  &:before {
+    content: $icon-users-arrow-bottom;
+  }
+}
 .icon-clipboard-list {
   &:before {
     content: $icon-clipboard-list;
