@@ -765,6 +765,9 @@
             "className": "icon-pencil-circle-dotted"
         },
         {
+            "className": "icon-pencil-solid"
+        },
+        {
             "className": "icon-pin-checked-solid"
         },
         {

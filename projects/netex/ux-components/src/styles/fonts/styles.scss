@@ -45,6 +45,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pencil-solid {
+  &:before {
+    content: $icon-pencil-solid;
+  }
+}
 .icon-heart-off {
   &:before {
     content: $icon-heart-off;

@@ -18,6 +18,7 @@ Archivos modificados:
 
 **New icons**<br/>
 - icon-users-arrow-bottom
+- icon-pencil-solid
 
 ------------------
 
