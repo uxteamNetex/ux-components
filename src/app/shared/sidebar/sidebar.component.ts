@@ -123,8 +123,8 @@ const WHATSNEWS = [
 		label: 'version 4.3.1'
 	},
 	{
-		linkName: 'versionxxx',
-		label: 'version xxx'
+		linkName: 'version4XX',
+		label: 'version 4.X.X'
 	}
 ];
 

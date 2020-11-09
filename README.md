@@ -9,18 +9,12 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
 
-### v.x.x.x:
+### v.4.3.2:
 
-**Icons**<br/>
-Archivos modificados:
-- ux-components/src/styles/fonts/styles.scss
-- ux-components/src/styles/fonts/variables.scss
-
-**New icons**<br/>
-- icon-users-arrow-bottom
-- icon-pencil-solid
-
-------------------
+**Labels**<br/>
+Cambios en el componente ntx-label (*ntx-label*):
+- Se encapsula el componente para evitar afectar a otros componentes (por ejemplo, el componente *ntx-list5*)
+- Parametrización del tooltip para que muestre el texto de la etiqueta.
 
 ### v.4.3.1:
 
