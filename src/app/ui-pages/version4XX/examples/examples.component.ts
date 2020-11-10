@@ -10,6 +10,21 @@ import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 })
 export class ExamplesComponent implements OnInit {
 
+	list3 = [
+		{
+			label: '11 de feb de 2020',
+			icon: 'icon-calendar'
+		},
+		{
+			label: 'A Coruña, edificio principal',
+			icon: 'icon-location'
+		},
+		{
+			label: '32 destinatarios',
+			icon: 'icon-users'
+		}
+	];
+
 	constructor(
 		private tabsHeaderService: TabsHeaderService
 	) { }

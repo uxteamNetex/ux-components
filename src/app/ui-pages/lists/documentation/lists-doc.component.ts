@@ -1110,6 +1110,31 @@ export class ListsDocComponent implements OnInit {
     }
     }
   `;
+  code33=`
+  @import "././projects/netex/ux-components/src/styles/app/utils";
+
+  $block: "list3";
+
+  .#{$block}{
+    padding: 0;
+    .#{$block}__item{
+      height: 42px;
+      .mat-list-item-content{
+        padding: 0;
+        .#{$block}__item--icon{
+          color: $color-grey-600;
+          margin-right: 12px;
+        }
+        .#{$block}__item--title{
+          color: $color-grey-800;
+          font-family: Lato;
+          font-size: 16px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  `;
   ngOnInit() {
 	}
 }

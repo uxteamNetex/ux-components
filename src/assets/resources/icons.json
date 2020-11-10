@@ -78,6 +78,12 @@
             "className": "icon-camera"
         },
         {
+            "className": "icon-car"
+        },
+        {
+            "className": "icon-car-solid"
+        },
+        {
             "className": "icon-caret-down"
         },
         {
@@ -166,6 +172,9 @@
         },
         {
             "className": "icon-clock"
+        },
+        {
+            "className": "icon-clock-solid"
         },
         {
             "className": "icon-clock-loading"
@@ -672,6 +681,9 @@
             "className": "icon-location"
         },
         {
+            "className": "icon-location-solid"
+        },
+        {
             "className": "icon-lock"
         },
         {
@@ -868,6 +880,9 @@
         },
         {
             "className": "icon-tags"
+        },
+        {
+            "className": "icon-tags-menu"
         },
         {
             "className": "icon-teacher"

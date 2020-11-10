@@ -45,6 +45,32 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-car {
+  &:before {
+    content: $icon-car;
+  }
+}
+.icon-car-solid {
+  &:before {
+    content: $icon-car-solid;
+  }
+}
+.icon-clock-solid {
+  &:before {
+    content: $icon-clock-solid;
+  }
+}
+.icon-location-solid {
+  &:before {
+    content: $icon-location-solid;
+  }
+}
+.icon-tags-menu {
+  &:before {
+    content: $icon-tags-menu;
+  }
+}
+
 .icon-pencil-solid {
   &:before {
     content: $icon-pencil-solid;
