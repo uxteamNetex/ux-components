@@ -6,7 +6,7 @@ import { MatExpansionModule, MatTableModule, MatIconModule, MatGridListModule } 
 import { Version4XXRoutingModule } from './version4XX-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
-import { NtxCardsModule, NtxChipsModule, NtxButtonsModule, NtxListsModule, NtxFormsModule, NtxMenusModule, NtxLabelsModule } from '@netex/ux-components';
+import { NtxCardsModule, NtxTablesModule, NtxChipsModule, NtxButtonsModule, NtxListsModule, NtxFormsModule, NtxMenusModule, NtxLabelsModule } from '@netex/ux-components';
 
 @NgModule({
 	declarations: [DocumentationComponent, ExamplesComponent],
@@ -18,7 +18,8 @@ import { NtxCardsModule, NtxChipsModule, NtxButtonsModule, NtxListsModule, NtxFo
 		MatExpansionModule,
 		NtxCardsModule,
 		NtxListsModule,
-		NtxLabelsModule
+		NtxLabelsModule,
+		NtxTablesModule
 	]
 })
 export class Version4XXModule { }

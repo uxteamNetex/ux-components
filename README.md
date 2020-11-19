@@ -37,6 +37,11 @@ Cambios en el componente ntx-label (*ntx-label*):
 **Lists**<br/>
 - Cambios en el componente *ntx-list3*
 
+**Tables**<br/>
+- Cambios en el html del componente *ntx-selectable-table*
+
+------------------
+
 ### v.4.3.1:
 
 **Cards**<br/>

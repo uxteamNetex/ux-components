@@ -40,7 +40,7 @@
         <ng-container matColumnDef="name">
             <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
             <mat-cell *matCellDef="let element">
-              <span class="utils--truncate">
+              <span class="utils--truncate" [matTooltip]="element.name">
                 {{element.name}}
               </span>
               <mat-icon *ngIf="showIcon" class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
@@ -51,7 +51,7 @@
         <ng-container matColumnDef="project">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Project </mat-header-cell>
           <mat-cell *matCellDef="let element">
-            <span class="utils--truncate">
+            <span class="utils--truncate" [matTooltip]="element.project">
               {{element.project}}
             </span>
           </mat-cell>
