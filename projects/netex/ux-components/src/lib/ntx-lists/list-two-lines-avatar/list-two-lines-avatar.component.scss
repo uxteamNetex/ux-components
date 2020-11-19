@@ -15,6 +15,10 @@ $block: "list-two-lines";
         height: 100%;
       }
     }
+    .#{$block}__flex{
+      align-items: center;
+      display: flex;
+    }
     .#{$block}__item--title{
       color: $color-grey-800;
       font-family: LatoBold;
@@ -27,3 +31,4 @@ $block: "list-two-lines";
     }
   }
 }
+

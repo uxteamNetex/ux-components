@@ -5,6 +5,8 @@ export interface Section {
 	title: string;
 	subtitle: string;
 	link: string;
+	icon: string;
+	iconColor: string;
 }
 
 @Component({
@@ -16,6 +18,7 @@ export interface Section {
 export class ListTwoLinesAvatarComponent implements OnInit {
 
 	@Input() showLink: boolean;
+	@Input() showIcon: boolean;
 
 	constructor() { }
 
@@ -23,7 +26,9 @@ export class ListTwoLinesAvatarComponent implements OnInit {
 		{
 			title: 'Carolina López',
 			subtitle: 'carolina.lopez',
-			link: 'Go to learningCloud'
+			link: 'Go to learningCloud',
+			icon: 'icon-warning-solid',
+			iconColor: 'utils--text-warning'
 		}
 	];
 

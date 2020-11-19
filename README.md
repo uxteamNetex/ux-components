@@ -36,6 +36,7 @@ Cambios en el componente ntx-label (*ntx-label*):
 
 **Lists**<br/>
 - Cambios en el componente *ntx-list3*
+- Cambios en el html, css y ts del componente *ntx-list-two-lines-avatar*
 
 **Tables**<br/>
 - Cambios en el html del componente *ntx-selectable-table*
