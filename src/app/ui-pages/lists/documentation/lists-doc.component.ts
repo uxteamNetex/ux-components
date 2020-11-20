@@ -151,12 +151,12 @@ export class ListsDocComponent implements OnInit {
     <div class="list1">
     <div class="list1__item" *ngFor="let item of data">
       <div class="list1__item--badge">
-        <img 
+        <img
           *ngIf="item.avatar; else elseBlock"
           src="{{item.avatar}}"
           alt="{{item.label + '&#32;image'}}">
         <ng-template #elseBlock>
-          <span 
+          <span
             [style.background-color]="item.color"
             class="list1__item--alias utils--align-center-text">{{item.label | slice:0:1}}</span>
         </ng-template>
@@ -165,7 +165,7 @@ export class ListsDocComponent implements OnInit {
         <div class="text utils--margin-right-24 utils--truncate">
           <span class="utils--text-16 utils--text-grey-800" matTooltip="{{item.label}}">{{item.label}}</span>
         </div>
-        <ntx-progress-bar-level 
+        <ntx-progress-bar-level
           value="{{item.progress.value}}"
           class="progress-bar"></ntx-progress-bar-level>
         <span class="level utils--text-16 utils--align-center-text utils--text-grey-800">{{item.progress.level}}</span>
@@ -259,12 +259,12 @@ export class ListsDocComponent implements OnInit {
   code12 = `
     <div class="list-one-line">
     <div class="list-one-line__item" *ngFor="let item of data">
-      <img 
+      <img
         *ngIf="item.avatar; else elseBlock"
         src="{{item.avatar}}"
         alt="{{item.label + '&#32;image'}}">
       <ng-template #elseBlock>
-        <span 
+        <span
           [style.background-color]="item.color"
           class="list-one-line__item--alias">{{item.label | slice:0:1}}</span>
       </ng-template>
@@ -344,12 +344,12 @@ export class ListsDocComponent implements OnInit {
           <ntx-form-checkbox [color]="'primary'" [checked]="item.checked" [hidden]="'true'"></ntx-form-checkbox>
         </div>
         <div class="list2__item--badge">
-          <img 
+          <img
             *ngIf="item.avatar; else elseBlock"
             src="{{item.avatar}}"
             alt="{{item.label + '&#32;image'}}">
           <ng-template #elseBlock>
-            <span 
+            <span
               [style.background-color]="item.color"
               class="list2__item--alias utils--align-center-text">{{item.label | slice:0:1}}</span>
           </ng-template>
@@ -359,10 +359,10 @@ export class ListsDocComponent implements OnInit {
             <span class="utils--text-16 utils--text-grey-800" matTooltip="{{item.label}}">{{item.label}}</span>
           </div>
           <div class="progress-bar__container utils--margin-right-24">
-            <ntx-progress-bar-level 
+            <ntx-progress-bar-level
               value="{{item.progress.value}}"
               requiredValue="{{item.progress.requiredValue}}"></ntx-progress-bar-level>
-            <p *ngIf="item.progress.edited" 
+            <p *ngIf="item.progress.edited"
                 class="progress-bar__label utils--margin-top-4 utils--margin-bottom-0 utils--text-12">[edited by you]</p>
           </div>
         </div>
@@ -404,14 +404,14 @@ export class ListsDocComponent implements OnInit {
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
     $block: "list2";
-    
+
     .#{$block} {
       > * {
         box-sizing: border-box;
       }
-    
+
       font-family: Lato;
-    
+
       .#{$block}__item {
         display: flex;
         height: 68px;
@@ -476,12 +476,12 @@ export class ListsDocComponent implements OnInit {
       icon: string;
       links?: SectionLink[];
     }
-      
+
     export interface SectionLink {
       title: string;
       link: any;
     }
-      
+
     @Component({
       selector: 'ntx-list-multilines-icon',
       templateUrl: './list-multilines-icon.component.html',
@@ -539,7 +539,7 @@ export class ListsDocComponent implements OnInit {
           }
         }
       }
-    }  
+    }
   `;
   code21 = `
     <mat-list class="list3">
@@ -601,44 +601,44 @@ export class ListsDocComponent implements OnInit {
   `;
   code24 = `
     <div class="list4">
-    <div 
+    <div
       class="list4__title utils--panel-section-title utils--margin-bottom-16 utils--text-grey-600">
       <span matTooltip="{{listTitle}}">{{listTitle}}</span>
       <span matTooltip="{{checkedListItemsCounter}}">{{checkedListItemsCounter}}</span>
     </div>
-    <a 
-      [routerLink]="actionRouterLink ? actionRouterLink : [] " 
+    <a
+      [routerLink]="actionRouterLink ? actionRouterLink : [] "
       (click)="onActionClick()"
-      class="list4__action utils--margin-bottom-16 utils--text-primary"> 
+      class="list4__action utils--margin-bottom-16 utils--text-primary">
         <mat-icon class="icon-netex {{actionIcon}} utils--margin-right-12"></mat-icon>
-        <span 
+        <span
           matTooltip="{{actionLabel}}"
           class="utils--text-14">{{actionLabel}}</span>
     </a>
     <div class="list4__item" *ngFor="let item of items">
-      <mat-checkbox 
+      <mat-checkbox
           [checked] = "item.checked"
           (change)="onChangeCheckbox($event, item)"
           class="list4__item--checkbox utils--margin-right-24">
         </mat-checkbox>
       <div class="list4__item--wrapper utils--flex-center">
-        <div 
+        <div
           [ngClass] = "{ highlight: !item.checked }"
           class="text utils--truncate utils--margin-right-auto">
           <span class="utils--text-14 utils--text-grey-800" matTooltip="{{item.label}}">{{item.label}}</span>
         </div>
-        <button 
-          mat-icon-button 
+        <button
+          mat-icon-button
           [matMenuTriggerFor]="menuOptions"
           class="options utils--margin-right-8 utils--text-grey-700">
             <mat-icon class="icon-netex icon-more-options"></mat-icon>
         </button>
-        <mat-menu 
-          #menuOptions="matMenu" 
+        <mat-menu
+          #menuOptions="matMenu"
           [overlapTrigger]="false">
-          <button 
-            mat-menu-item 
-            (click)="item.click()" 
+          <button
+            mat-menu-item
+            (click)="item.click()"
             *ngFor="let item of item.actions">
               <mat-icon class="mat-icon icon-netex {{item.icon}}"></mat-icon>
               <span class="utils--text-grey-700">{{item.title}}</span>
@@ -686,7 +686,7 @@ export class ListsDocComponent implements OnInit {
 
     constructor() { }
 
-    ngOnInit() { 
+    ngOnInit() {
       this.checkedListItemsCounter = this.updateCheckedListItemsCounter(this.items);
     }
 
@@ -714,19 +714,19 @@ export class ListsDocComponent implements OnInit {
     @import "././projects/netex/ux-components/src/styles/app/utils";
 
     $block: "list4";
-    
+
     .#{$block} {
       > * {
         box-sizing: border-box;
       }
-    
+
       font-family: Lato;
-    
+
       .#{$block}__title {
         display: flex;
         justify-content: space-between;
       }
-    
+
       .#{$block}__action {
         display: inline-flex;
         align-items: center;
@@ -736,7 +736,7 @@ export class ListsDocComponent implements OnInit {
           text-decoration: none;
         }
       }
-    
+
       .#{$block}__item {
         display: flex;
         height: 48px;
@@ -746,19 +746,19 @@ export class ListsDocComponent implements OnInit {
             width: 24px;
             height: 24px;
           }
-    
+
           .mat-checkbox-background, .mat-checkbox-frame {
             border-radius: 70% !important;
           }
-    
+
           &.mat-checkbox.mat-accent .mat-checkbox-background {
             background-color: $color-grey-200 !important;
           }
-    
+
           .mat-checkbox-frame {
             border: none !important;
           }
-        
+
           &.mat-checkbox-checked.mat-accent .mat-checkbox-background {
             background-color: $color-success !important;
           }
@@ -782,7 +782,7 @@ export class ListsDocComponent implements OnInit {
             &.highlight {
               font-weight: bold;
             }
-            
+
           }
           .options {
             &.mat-icon-button{
@@ -801,7 +801,7 @@ export class ListsDocComponent implements OnInit {
               }
             }
           }
-          
+
         }
       }
     }
@@ -810,33 +810,33 @@ export class ListsDocComponent implements OnInit {
   <div class="list5">
   <div class="list5__item" *ngFor="let item of items">
     <div
-      *ngIf="showBullet" 
+      *ngIf="showBullet"
       class="list5__item--bullet utils--flex-center utils--margin-right-16">
-        <span 
+        <span
           *ngIf ="bulletType === 'badge'"
           [ngStyle] = "{'background-color': badgeColor }"
           class="utils--align-center-text utils--text-white utils--text-16">{{item.labelPrincipal | slice:0:1}}</span>
-        <mat-icon 
-          *ngIf = "bulletType === 'icon'"  
+        <mat-icon
+          *ngIf = "bulletType === 'icon'"
           [ngStyle] = "{'color': iconColor }"
           class="icon-netex {{ iconName }} utils--text-28"></mat-icon>
     </div>
-    <div 
+    <div
       [ngClass] = "{'divider': showDivider }"
       class="list5__item--wrapper utils--text-16 utils--text-grey-800">
       <div class="label-principal">
-        <a 
+        <a
           *ngIf="item.labelRouterLink; else elseBlock"
-          [routerLink] = "item.labelRouterLink" 
+          [routerLink] = "item.labelRouterLink"
           (click) = "onLabelClick()"
-          class="link utils--text-primary"> 
+          class="link utils--text-primary">
             <span matTooltip = "{{item.labelPrincipal}}" class="">{{item.labelPrincipal}}</span>
         </a>
         <ng-template #elseBlock>
           <span class="label">{{item.labelPrincipal}}</span>
         </ng-template>
       </div>
-      <div 
+      <div
         *ngIf="item.labelSecondary"
         class="label-secondary utils--margin-left-16">{{item.labelSecondary}}</div>
     </div>
@@ -846,69 +846,69 @@ export class ListsDocComponent implements OnInit {
   code28 = `
   import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   import { coerceBooleanProperty } from '@angular/cdk/coercion';
-  
+
   export interface Item {
     labelPrincipal: string;
     labelSecondary: string;
     labelRouterLink: string;
   }
-  
+
   @Component({
     selector: 'ntx-list5',
     templateUrl: './list5.component.html',
     styleUrls: ['./list5.component.scss'],
   })
   export class List5Component implements OnInit {
-  
+
     @Input() items: Item[];
     @Input() bulletType: 'badge' | 'icon';
-    @Input() badgeColor: string; 
-    @Input() iconColor: string; 
+    @Input() badgeColor: string;
+    @Input() iconColor: string;
     @Input() iconName: string;
-  
+
     private _showBullet: boolean;
     get showBullet(): boolean {
       return this._showBullet;
-    } 
+    }
     @Input()
     set showBullet(value: boolean) {
       this._showBullet = coerceBooleanProperty(value);
     }
-  
+
     private _showDivider: boolean;
     get showDivider(): boolean {
       return this._showDivider;
-    } 
+    }
     @Input()
     set showDivider(value: boolean) {
       this._showDivider = coerceBooleanProperty(value);
     }
-  
+
     @Output() labelClick = new EventEmitter();
-  
+
     constructor() { }
-  
+
     ngOnInit() { }
-  
+
     onLabelClick() {
       this.labelClick.emit();
     }
-  
+
   }
   `;
   code29 = `
   @import "././projects/netex/ux-components/src/styles/app/utils";
 
   $block: "list5";
-  
+
   .#{$block} {
     cursor: default;
     > * {
       box-sizing: border-box;
     }
-  
+
     font-family: Lato;
-  
+
     .#{$block}__item {
       display: flex;
       height: 48px;
@@ -975,21 +975,21 @@ export class ListsDocComponent implements OnInit {
       <div class="list2__item--checkbox utils--margin-right-12">
         <ntx-form-checkbox [color]="'primary'" [checked]="item.checked" [hidden]="'true'"></ntx-form-checkbox>
       </div>
-      <div 
+      <div
         *ngIf="showGenericBullet; else badgeBlock"
         [ngStyle] = "{'color': bulletIconColor }"
         class="utils--margin-right-24 utils--flex-center">
-        <mat-icon 
+        <mat-icon
             class="icon-netex {{ bulletIconName }} utils--text-28"></mat-icon>
       </div>
       <ng-template #badgeBlock>
         <div class="list2__item--badge">
-          <img 
+          <img
             *ngIf="item.avatar; else placeholderBlock"
             src="{{item.avatar}}"
             alt="{{item.label + '&#32;image'}}">
           <ng-template #placeholderBlock>
-            <span 
+            <span
               [style.background-color]="item.color"
               class="list2__item--alias utils--align-center-text">{{item.label | slice:0:1}}</span>
           </ng-template>
@@ -1000,10 +1000,10 @@ export class ListsDocComponent implements OnInit {
           <span class="utils--text-16 utils--text-grey-800" matTooltip="{{item.label}}">{{item.label}}</span>
         </div>
         <div class="progress-bar__container utils--margin-right-24">
-          <ntx-progress-bar-level 
+          <ntx-progress-bar-level
             value="{{item.progress.value}}"
             requiredValue="{{item.progress.requiredValue}}"></ntx-progress-bar-level>
-          <p *ngIf="item.progress.edited" 
+          <p *ngIf="item.progress.edited"
               class="progress-bar__label utils--margin-top-4 utils--margin-bottom-0 utils--text-12">[edited by you]</p>
         </div>
       </div>
@@ -1040,7 +1040,7 @@ export class ListsDocComponent implements OnInit {
       private _showGenericBullet: boolean;
       get showGenericBullet(): boolean {
         return this._showGenericBullet;
-      } 
+      }
       @Input()
       set showGenericBullet(value: boolean) {
         this._showGenericBullet = coerceBooleanProperty(value);
@@ -1135,6 +1135,83 @@ export class ListsDocComponent implements OnInit {
     }
   }
   `;
+  code34=`
+  <mat-list class="list-two-lines">
+  <mat-list-item *ngFor="let text of data.texts" class="list-two-lines__item">
+    <div matListAvatar class="list-two-lines__item--image">
+      <img class="utils--vertical-align" src="{{text.image}}" alt="user image">
+    </div>
+    <div mat-line class="list-two-lines__flex">
+      <h4 class="list-two-lines__item--title">{{text.title}}</h4>
+      <mat-icon *ngIf="text.showIcon" class="icon-netex {{text.icon}} {{text.iconColor}} utils--margin-left-12"></mat-icon>
+    </div>
+    <p mat-line class="list-two-lines__item--subtitle">
+      {{text.subtitle}}
+      <a matLine *ngIf="text.showLink" href="..." class="list-two-lines__item--subtitle-link utils--margin-left-12">{{text.link}}</a>
+    </p>
+  </mat-list-item>
+</mat-list>
+  `;
+  code35=`
+  import { Component, OnInit } from '@angular/core';
+  import { Input } from '@angular/core';
+
+  @Component({
+    selector: 'ntx-list-two-lines-avatar',
+    templateUrl: './list-two-lines-avatar.component.html',
+    styleUrls: ['./list-two-lines-avatar.component.scss']
+  })
+
+  export class ListTwoLinesAvatarComponent implements OnInit {
+
+    @Input() data: any;
+    @Input() showLink: boolean;
+    @Input() showIcon: boolean;
+
+    constructor() { }
+
+    ngOnInit() {
+    }
+
+  }
+  `;
+  code36=`
+  @import "././projects/netex/ux-components/src/styles/app/utils";
+
+  $block: "list-two-lines";
+
+  .#{$block}{
+    padding: 0;
+    .#{$block}__item{
+      .#{$block}__item--image{
+        border-radius: 50%;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        width: 40px;
+        img{
+          height: 100%;
+        }
+      }
+      .#{$block}__flex{
+        align-items: center;
+        display: flex;
+      }
+      .#{$block}__item--title{
+        color: $color-grey-800;
+        font-family: LatoBold;
+        font-size: 16px;
+      }
+      .#{$block}__item--subtitle{
+        color: $color-grey-600;
+        display: flex;
+        font-family: Lato;
+      }
+    }
+  }
+  `;
+
+
   ngOnInit() {
 	}
 }

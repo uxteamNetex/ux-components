@@ -44,7 +44,7 @@ export interface Section {
 	icon: string;
 	links?: SectionLink[];
 }
-  
+
 export interface SectionLink {
 	title: string;
 	link: any;
@@ -75,6 +75,41 @@ const USER = {
 	]
 };
 
+const TWO_LINES_LIST_WITH_AVATAR = {
+	texts: [
+		{
+			title: 'Carolina López',
+			subtitle: 'carolina.lopez',
+			image: 'assets/images/perfil.jpg',
+			link: 'Go to learningCloud',
+			icon: 'icon-warning-solid',
+			iconColor: 'utils--text-warning',
+			showIcon: true,
+			showLink: true,
+		},
+		{
+			title: 'María Fraga Colorado',
+			subtitle: 'maria.fraga',
+			image: 'assets/images/user_female_01.jpg',
+			link: 'Go to learningCloud',
+			icon: 'icon-bell-solid',
+			iconColor: 'utils--text-error',
+			showIcon: true,
+			showLink: false,
+		},
+		{
+			title: 'Antonio Prado',
+			subtitle: 'antonio.prado',
+			image: 'assets/images/user_male_02.png',
+			link: 'Go to learningCloud',
+			icon: 'icon-warning-solid',
+			iconColor: 'utils--text-warning',
+			showIcon: false,
+			showLink: false,
+		}
+	]
+};
+
 @Component({
 	selector: 'app-lists-examples',
 	templateUrl: './lists-examples.component.html',
@@ -84,6 +119,9 @@ const USER = {
 export class ListsExamplesComponent implements OnInit {
 
 	user = USER;
+
+	data = TWO_LINES_LIST_WITH_AVATAR;
+
 	list: Item[] = [
 		{
 			label: 'Customer oriented',
@@ -351,7 +389,7 @@ export class ListsExamplesComponent implements OnInit {
 			]
 		}
 
-	]
+	];
 
 	list5_1 = [
 		{
