@@ -78,6 +78,12 @@
             "className": "icon-camera"
         },
         {
+            "className": "icon-car"
+        },
+        {
+            "className": "icon-car-solid"
+        },
+        {
             "className": "icon-caret-down"
         },
         {
@@ -166,6 +172,9 @@
         },
         {
             "className": "icon-clock"
+        },
+        {
+            "className": "icon-clock-solid"
         },
         {
             "className": "icon-clock-loading"
@@ -672,6 +681,9 @@
             "className": "icon-location"
         },
         {
+            "className": "icon-location-solid"
+        },
+        {
             "className": "icon-lock"
         },
         {
@@ -763,6 +775,9 @@
         },
         {
             "className": "icon-pencil-circle-dotted"
+        },
+        {
+            "className": "icon-pencil-solid"
         },
         {
             "className": "icon-pin-checked-solid"
@@ -867,6 +882,9 @@
             "className": "icon-tags"
         },
         {
+            "className": "icon-tags-menu"
+        },
+        {
             "className": "icon-teacher"
         },
         {
@@ -961,6 +979,9 @@
         },
         {
             "className": "icon-users"
+        },
+        {
+            "className": "icon-users-arrow-bottom"
         },
         {
             "className": "icon-users-plus"

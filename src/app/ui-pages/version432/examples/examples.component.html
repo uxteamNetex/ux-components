@@ -1,0 +1,115 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.3.2: New icons, lists, tables and more ...</h1>
+          <p class="whatsnew__header--subtitle">24 Nov 2020</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket-5.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our monthly update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>New icons</h4>
+          <p class="whatsnew__content-block--text utils--text-18">With this update we have a new batch of icons. For this, several css files have been touched, which you must update to see the icons correctly:</p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/styles/fonts/styles.scss</li>
+            <li>ux-components/src/styles/fonts/variables.scss</li>
+            <li>ux-components/src/assets/fonts/icons/netex.eot</li>
+            <li>ux-components/src/assets/fonts/icons/netex.svg</li>
+            <li>ux-components/src/assets/fonts/icons/netex.ttf</li>
+            <li>ux-components/src/assets/fonts/icons/netex.woff</li>
+          </ul>
+          <div class="icons-container">
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-car icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-car</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-car-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-car-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-clock-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-clock-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-location-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-location-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-tags-menu icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-tags-menu</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-users-arrow-bottom icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-users-arrow-bottom</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-pencil-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-pencil-solid</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Two lines list with avatar</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this component, <span class="documentation-code">ntx-list-two-lines-avatar</span> we add the option to put an icon next to the title.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/lists/documentation" (click)="setPath('lists')">link</a></p>
+          <ntx-list-two-lines-avatar [data]="data"></ntx-list-two-lines-avatar>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">Bug fixing</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Label component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-label</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/labels/documentation" (click)="setPath('labels')">link</a></p>
+          <ntx-label text="learningCloud" color="black"></ntx-label>
+          <ntx-label text="learningMaker"></ntx-label>
+          <ntx-label text="contentCloud" color="orange"></ntx-label>
+          <ntx-label text="talentCloud" color="red"></ntx-label>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List3 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-list3</span> component and there have been changes in css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/lists/documentation" (click)="setPath('lists')">link</a></p>
+          <ntx-list3 [data]=list3></ntx-list3>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Table component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-basic-table</span> component to improve sorting and there have been changes in html and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/basic-table/documentation" (click)="setPath('table')">link</a></p>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Table-evaluation component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-evaluation-table</span> component to improve sorting  and there have been changes in html and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/table-evaluation/documentation" (click)="setPath('table-evaluation')">link</a></p>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Table-selectable component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-selectable-table</span> component to improve sorting  and there have been changes in html and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/table-selectable/documentation" (click)="setPath('table-selectable')">link</a></p>
+        </div>
+
+      </div>
+
+    </ntx-card-simple>
+  </div>
+</div>

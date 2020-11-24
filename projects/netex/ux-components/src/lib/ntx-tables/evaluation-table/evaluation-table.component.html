@@ -9,7 +9,13 @@
       </div>
   
       <!-- Table -->
-      <table mat-table [dataSource]="dataSource" matSort class="table-evaluation">
+      <table 
+        mat-table 
+        matSort 
+        matSortActive="receivers"
+        matSortDisableClear 
+        [dataSource]="dataSource" 
+        class="table-evaluation">
   
         <!-- Checkbox Column -->
         <ng-container matColumnDef="select" sticky>

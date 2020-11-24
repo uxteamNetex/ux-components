@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-documentation',
-  templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.scss']
+	selector: 'app-documentation',
+	templateUrl: './documentation.component.html',
+	styleUrls: ['./documentation.component.scss']
 })
 export class DocumentationComponent implements OnInit {
 
-  code1 = `
+	code1 = `
     <mat-toolbar [ngClass]="{'selected': itemsSelected }" class="multi-select-header">
 
       <div class="multi-select-header__total-items">
@@ -26,7 +26,7 @@ export class DocumentationComponent implements OnInit {
     </mat-toolbar>
   `;
 
-  code2 = `
+	code2 = `
     @Component({
       ...
     })
@@ -48,7 +48,7 @@ export class DocumentationComponent implements OnInit {
     }
   `;
 
-  code3 = `
+	code3 = `
     <div class="table-selectable__wrapper">
 
       <!-- Header -->
@@ -141,7 +141,7 @@ export class DocumentationComponent implements OnInit {
     </div>
   `;
 
-  code4 = `
+	code4 = `
     @Component({
       ...
     })
@@ -173,7 +173,7 @@ export class DocumentationComponent implements OnInit {
 
     }
   `;
-  code5 = `
+	code5 = `
     <!-- Column 1 -->
     <ng-container matColumnDef="avatar">
       <mat-header-cell *matHeaderCellDef></mat-header-cell>
@@ -185,7 +185,7 @@ export class DocumentationComponent implements OnInit {
     </ng-container>
   `;
 
-  code6 = `
+	code6 = `
   <div class="table-container" [ngClass]="{'flat': this.style === 'flat'}">
     <div class="table-selectable__wrapper">
       ...
@@ -204,9 +204,46 @@ export class DocumentationComponent implements OnInit {
   </div>
   `;
 
-  constructor() { }
+  code7 = `
+  ...
 
-  ngOnInit() {
-  }
+  <mat-table 
+    matSort 
+    matSortActive="name"
+    matSortDisableClear 
+    [dataSource]="dataSource" 
+    class="table-selectable__table mat-elevation-z8"> 
+  
+    ...
+
+    <!-- Column 1 -->
+    <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <span class="utils--truncate" [matTooltip]="element.name">
+            {{element.name}}
+          </span>
+          <mat-icon *ngIf="showIcon" class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
+        </mat-cell>
+    </ng-container>
+
+    <!-- Column 2 -->
+    <ng-container matColumnDef="project">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Project </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <span class="utils--truncate" [matTooltip]="element.project">
+          {{element.project}}
+        </span>
+      </mat-cell>
+    </ng-container>
+     
+    ...
+
+  `;
+
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

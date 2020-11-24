@@ -8,13 +8,15 @@ import {
 import { TableRoutingModule } from './table-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
+import { MatExpansionModule } from '@angular/material';
 
 @NgModule({
   declarations: [DocumentationComponent, ExamplesComponent],
   imports: [
     CommonModule,
     TableRoutingModule,
-    NtxTablesModule
+    NtxTablesModule,
+    MatExpansionModule
   ]
 })
 export class TableModule { }

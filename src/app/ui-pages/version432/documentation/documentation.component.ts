@@ -12,18 +12,4 @@ export class DocumentationComponent implements OnInit {
   ngOnInit() {
   }
 
-  code1 = `
-  ...
-
-  <mat-table 
-    matSort 
-    matSortActive="name"
-    matSortDisableClear 
-    [dataSource]="dataSource" 
-    class="table-selectable__table mat-elevation-z8"> 
-  
-    ...
-
-  `;
-
 }

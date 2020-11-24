@@ -1,6 +1,6 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-.label{
+div{
   background-color: $color-grey-400;
   border-radius: 4px;
   box-shadow: none;
@@ -12,19 +12,13 @@
   padding: 3px 8px;
   text-transform: uppercase;
   width: fit-content;
-}
-.label-black{
-  .label{
-    background-color: $color-black;
+  &.black{
+      background-color: $color-black;
   }
-}
-.label-orange{
-  .label{
-    background-color: $color-orange;
+  &.orange{
+      background-color: $color-orange;
   }
-}
-.label-red{
-  .label{
-    background-color: $color-error;
+  &.red{
+      background-color: $color-error;
   }
 }

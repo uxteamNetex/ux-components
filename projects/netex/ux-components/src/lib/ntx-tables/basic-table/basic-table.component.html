@@ -2,50 +2,56 @@
 
   <div class="table-container__table">
     <!-- Table -->
-    <table mat-table [dataSource]="dataSource" matSort class="mat-basic-table">
+    <table 
+      mat-table 
+      matSort
+      matSortActive="name" 
+      matSortDisableClear 
+      [dataSource]="dataSource" 
+      class="mat-basic-table">
 
-      <ng-container matColumnDef="name" sticky>
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name </th>
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>First name</th>
         <td mat-cell *matCellDef="let element">
           <div class="mat-basic-table__row-name">
               <div class="mat-basic-table__row-image">
-                <img mat-card-image class="utils--vertical-align" src="assets/images/writting.jpg" alt="Element image">
+                <img mat-card-image class="utils--vertical-align" src="{{element.avatar}}" alt="Element image">
               </div>
-              <span class="mat-basic-table__row-text" matTooltip="Project name that could be longer">{{element.name}}</span>
+              <span class="mat-basic-table__row-text" matTooltip="{{element.name}}">{{element.name}}</span>
           </div>
         </td>
       </ng-container>
 
-      <ng-container matColumnDef="project">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Project </th>
+      <ng-container matColumnDef="surname">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Last name</th>
         <td mat-cell *matCellDef="let element">
-          <span class="mat-basic-table__row-text">{{element.project}}</span>
+          <span class="mat-basic-table__row-text">{{element.surname}}</span>
         </td>
       </ng-container>
 
-      <ng-container matColumnDef="location">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Location </th>
+      <ng-container matColumnDef="username">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>User name</th>
         <td mat-cell *matCellDef="let element">
-          <span class="mat-basic-table__row-text">{{element.location}}</span>
+          <span class="mat-basic-table__row-text">{{element.username}}</span>
         </td>
       </ng-container>
 
-      <ng-container matColumnDef="modification">
+      <ng-container matColumnDef="date">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Last modification </th>
         <td mat-cell *matCellDef="let element">
-          <span class="mat-basic-table__row-text">{{element.modification}}</span></td>
+          <span class="mat-basic-table__row-text">{{element.date}}</span></td>
       </ng-container>
 
       <ng-container matColumnDef="state">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> State </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>State</th>
         <td mat-cell *matCellDef="let element">
-          <ntx-label text="label"></ntx-label>
+          <ntx-label text="{{element.state_label}}" color="{{element.state_color}}"></ntx-label>
         </td>
       </ng-container>
 
-      <ng-container matColumnDef="options" stickyEnd>
-        <th mat-header-cell *matHeaderCellDef> </th>
-        <td mat-cell *matCellDef="let element">
+      <ng-container matColumnDef="options">
+        <th class="utils--w-48" mat-header-cell *matHeaderCellDef></th>
+        <td class="utils--w-48" mat-cell *matCellDef="let element">
           <ntx-menu-options></ntx-menu-options>
         </td>
       </ng-container>

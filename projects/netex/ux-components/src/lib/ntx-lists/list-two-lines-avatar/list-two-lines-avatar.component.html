@@ -1,12 +1,16 @@
 <mat-list class="list-two-lines">
-  <mat-list-item *ngFor="let text of texts" class="list-two-lines__item">
+  <mat-list-item *ngFor="let text of data.texts" class="list-two-lines__item">
     <div matListAvatar class="list-two-lines__item--image">
-      <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="user image">
+      <img class="utils--vertical-align" src="{{text.image}}" alt="user image">
     </div>
-    <h4 mat-line class="list-two-lines__item--title">{{text.title}}</h4>
+    <div mat-line class="list-two-lines__flex">
+      <h4 class="list-two-lines__item--title">{{text.title}}</h4>
+      <mat-icon *ngIf="text.showIcon" class="icon-netex {{text.icon}} {{text.iconColor}} utils--margin-left-12"></mat-icon>
+    </div>
     <p mat-line class="list-two-lines__item--subtitle">
       {{text.subtitle}}
-      <a matLine *ngIf="showLink" href="..." class="list-two-lines__item--subtitle-link utils--margin-left-12">{{text.link}}</a>
+      <a matLine *ngIf="text.showLink" href="..." class="list-two-lines__item--subtitle-link utils--margin-left-12">{{text.link}}</a>
     </p>
   </mat-list-item>
 </mat-list>
+

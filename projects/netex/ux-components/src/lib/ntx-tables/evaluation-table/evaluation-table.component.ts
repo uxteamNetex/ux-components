@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SelectionModel } from '@angular/cdk/collections';
-import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
+import { MatPaginator, MatSort, MatSortable, MatTableDataSource } from '@angular/material';
 import { ViewEncapsulation } from '@angular/core';
 import { Input } from '@angular/core';
 
@@ -103,6 +103,7 @@ export class EvaluationTableComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.sort.sort(({ id: 'receivers', start: 'asc'}) as MatSortable);
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
   }

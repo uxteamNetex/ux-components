@@ -8,6 +8,41 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
+### v.4.3.2:
+
+**Icons**<br/>
+Archivos modificados:
+- ux-components/src/assets/fonts/icons/netex.eot
+- ux-components/src/assets/fonts/icons/netex.svg
+- ux-components/src/assets/fonts/icons/netex.ttf
+- ux-components/src/assets/fonts/icons/netex.woff
+- ux-components/src/styles/fonts/styles.scss
+- ux-components/src/styles/fonts/variables.scss
+
+**New icons**<br/>
+- icon-car
+- icon-car-solid
+- icon-clock-solid
+- icon-location-solid
+- icon-tags-menu
+- icon-users-arrow-bottom
+- icon-pencil-solid
+
+**Labels**<br/>
+Cambios en el componente ntx-label (*ntx-label*):
+- Se encapsula el componente para evitar afectar a otros componentes (por ejemplo, el componente *ntx-list5*)
+- Parametrización del tooltip para que muestre el texto de la etiqueta.
+
+**Lists**<br/>
+- Cambios en el componente *ntx-list3*
+- Cambios en el html, css y ts del componente *ntx-list-two-lines-avatar*
+
+**Tables**<br/>
+- Cambios en el html y ts del componente *ntx-basic-table*
+- Cambios en el html y ts del componente *ntx-evaluation-table*
+- Cambios en el html y ts del componente *ntx-selectable-table*
+
+------------------
 
 ### v.4.3.1:
 
