@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
-import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
+import { MatPaginator, MatSort, MatSortable, MatTableDataSource } from '@angular/material';
 import { ViewEncapsulation } from '@angular/core';
+
 
 @Component({
   selector: 'ntx-basic-table',
@@ -10,46 +11,22 @@ import { ViewEncapsulation } from '@angular/core';
 })
 export class BasicTableComponent implements OnInit {
 
-  displayedColumns: string[] = ['name', 'project', 'location', 'modification', 'state', 'options'];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
-
+  displayedColumns: string[] = ['name', 'surname', 'username', 'date', 'state', 'options'];
+  dataSource: MatTableDataSource<any>;
+  
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-
+  
   @Input() style: string;
-
+  @Input() tableData: any[];
+  
   constructor() { }
-
+  
   ngOnInit() {
+    this.dataSource = new MatTableDataSource(this.tableData)
+    this.sort.sort(({ id: 'name', start: 'asc'}) as MatSortable);
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.style == 'flat'? null : this.paginator;
   }
 
 }
-
-export interface PeriodicElement {
-  name: string;
-  project: string;     
-  location: string;
-  modification: string;
-  state: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  // tslint:disable-next-line:max-line-length
-  {name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'A element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'A Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'A Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '07/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'a state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-  {name: 'Element name', project: 'Project name', location: 'Element location', modification: '08/01/2019', state: 'state'},
-];

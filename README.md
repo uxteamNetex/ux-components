@@ -8,8 +8,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
-
-### v.4.X.X:
+### v.4.3.2:
 
 **Icons**<br/>
 Archivos modificados:
@@ -39,7 +38,9 @@ Cambios en el componente ntx-label (*ntx-label*):
 - Cambios en el html, css y ts del componente *ntx-list-two-lines-avatar*
 
 **Tables**<br/>
-- Cambios en el html del componente *ntx-selectable-table*
+- Cambios en el html y ts del componente *ntx-basic-table*
+- Cambios en el html y ts del componente *ntx-evaluation-table*
+- Cambios en el html y ts del componente *ntx-selectable-table*
 
 ------------------
 

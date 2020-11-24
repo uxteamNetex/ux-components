@@ -2,7 +2,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 import { Input } from '@angular/core';
-import { MatPaginator, MatSort, MatTableDataSource, PageEvent } from '@angular/material';
+import { MatPaginator, MatSort, MatSortable, MatTableDataSource, PageEvent } from '@angular/material';
 
 export interface PeriodicElement {
 	isSeen: boolean;
@@ -54,6 +54,7 @@ export class SelectableTableComponent implements OnInit {
 	@ViewChild(MatSort) sort: MatSort;
 
 	ngOnInit() {
+		this.sort.sort(({ id: 'name', start: 'asc'}) as MatSortable);
 		this.dataSource.sort = this.sort;
 		this.dataSource.paginator = this.paginator;
 	}

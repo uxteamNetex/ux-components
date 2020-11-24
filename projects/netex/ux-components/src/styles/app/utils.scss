@@ -772,5 +772,10 @@ $block: "utils";
   }
   &--padding-left-100 {
 		padding-left: $separation-100;
-	}
+  }
+  
+  //Anchos de columnas en tablas
+  &--w-48 {
+    width: $tableOptionsColumnWidth;
+  }
 }

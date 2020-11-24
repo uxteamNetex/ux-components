@@ -204,27 +204,41 @@ export class DocumentationComponent implements OnInit {
   </div>
   `;
 
-	code7 = `
-  <!-- Column 1 -->
-  <ng-container matColumnDef="name">
-      <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
-      <mat-cell *matCellDef="let element">
-        <span class="utils--truncate" [matTooltip]="element.name">
-          {{element.name}}
-        </span>
-        <mat-icon *ngIf="showIcon" class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
-      </mat-cell>
-  </ng-container>
+  code7 = `
+  ...
 
-  <!-- Column 2 -->
-  <ng-container matColumnDef="project">
-    <mat-header-cell *matHeaderCellDef mat-sort-header> Project </mat-header-cell>
-    <mat-cell *matCellDef="let element">
-      <span class="utils--truncate" [matTooltip]="element.project">
-        {{element.project}}
-      </span>
-    </mat-cell>
-  </ng-container>
+  <mat-table 
+    matSort 
+    matSortActive="name"
+    matSortDisableClear 
+    [dataSource]="dataSource" 
+    class="table-selectable__table mat-elevation-z8"> 
+  
+    ...
+
+    <!-- Column 1 -->
+    <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <span class="utils--truncate" [matTooltip]="element.name">
+            {{element.name}}
+          </span>
+          <mat-icon *ngIf="showIcon" class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
+        </mat-cell>
+    </ng-container>
+
+    <!-- Column 2 -->
+    <ng-container matColumnDef="project">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Project </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <span class="utils--truncate" [matTooltip]="element.project">
+          {{element.project}}
+        </span>
+      </mat-cell>
+    </ng-container>
+     
+    ...
+
   `;
 
 	constructor() { }

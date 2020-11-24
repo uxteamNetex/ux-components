@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MatExpansionModule, MatTableModule, MatIconModule, MatGridListModule } from '@angular/material';
 
-import { Version4XXRoutingModule } from './version4XX-routing.module';
+import { Version432RoutingModule } from './version432-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
 import { NtxCardsModule, NtxTablesModule, NtxChipsModule, NtxButtonsModule, NtxListsModule, NtxFormsModule, NtxMenusModule, NtxLabelsModule } from '@netex/ux-components';
@@ -12,7 +12,7 @@ import { NtxCardsModule, NtxTablesModule, NtxChipsModule, NtxButtonsModule, NtxL
 	declarations: [DocumentationComponent, ExamplesComponent],
 	imports: [
 		CommonModule,
-		Version4XXRoutingModule,
+		Version432RoutingModule,
 		MatIconModule,
 		MatGridListModule,
 		MatExpansionModule,
@@ -22,4 +22,4 @@ import { NtxCardsModule, NtxTablesModule, NtxChipsModule, NtxButtonsModule, NtxL
 		NtxTablesModule
 	]
 })
-export class Version4XXModule { }
+export class Version432Module { }
