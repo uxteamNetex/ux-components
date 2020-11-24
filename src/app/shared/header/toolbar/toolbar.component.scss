@@ -18,5 +18,8 @@ $block: "toolbar-app";
     .#{$block}__title{
         color: $color-white;
         font-family: LatoLight;
+        &:focus {
+            outline: none;
+        }
     }
 }
