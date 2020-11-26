@@ -83,29 +83,31 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 			image: 'assets/images/perfil.jpg',
 			link: 'Go to learningCloud',
 			icon: 'icon-warning-solid',
-			iconColor: 'utils--text-warning',
-			showIcon: true,
-			showLink: true,
+			iconColor: 'utils--text-warning'
 		},
 		{
 			title: 'María Fraga Colorado',
 			subtitle: 'maria.fraga',
 			image: 'assets/images/user_female_01.jpg',
-			link: 'Go to learningCloud',
+			link: undefined,
 			icon: 'icon-bell-solid',
-			iconColor: 'utils--text-error',
-			showIcon: true,
-			showLink: false,
+			iconColor: 'utils--text-error'
 		},
 		{
 			title: 'Antonio Prado',
 			subtitle: 'antonio.prado',
 			image: 'assets/images/user_male_02.png',
-			link: 'Go to learningCloud',
-			icon: 'icon-warning-solid',
-			iconColor: 'utils--text-warning',
-			showIcon: false,
-			showLink: false,
+			link: undefined,
+			icon: undefined,
+			iconColor: undefined
+		},
+		{
+			title: 'José Antonio García',
+			subtitle: 'josean.garcia',
+			image: undefined,
+			link: undefined,
+			icon: undefined,
+			iconColor: undefined
 		}
 	]
 };

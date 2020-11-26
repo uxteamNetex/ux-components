@@ -153,6 +153,10 @@ $block: "utils";
     top: 50%;
   }
 
+  &--align-center-text {
+    text-align: center;
+  }
+
   &--centered {
     @include centerer;
   }

@@ -1,21 +1,23 @@
-<button 
-  mat-icon-button 
-  class="menu-options-button" 
-  color="accent" 
-  [matMenuTriggerFor]="menuOptions"
-  (click)="$event.stopPropagation()">
-    <mat-icon class="icon-netex icon-more-options"></mat-icon>
-</button>
-
-<mat-menu #menuOptions="matMenu" class="mat-menu-options-simple" [overlapTrigger]="false">
-  <button mat-menu-item>
-    <span>Option 1</span>
+<div class="ntx-menu-options-simple">
+  <button 
+    mat-icon-button 
+    class="menu-options-button" 
+    color="accent" 
+    [matMenuTriggerFor]="menuOptions"
+    (click)="$event.stopPropagation()">
+      <mat-icon class="icon-netex icon-more-options"></mat-icon>
   </button>
-  <button mat-menu-item disabled>
-    <span>Option 2 Disabled</span>
-  </button>
-  <button mat-menu-item>
-    <span>Option 3</span>
-  </button>
-
-</mat-menu>
+  
+  <mat-menu #menuOptions="matMenu" class="ntx-menu-options-simple-panel" [overlapTrigger]="false">
+    <button mat-menu-item>
+      <span>Option 1</span>
+    </button>
+    <button mat-menu-item disabled>
+      <span>Option 2 Disabled</span>
+    </button>
+    <button mat-menu-item>
+      <span>Option 3</span>
+    </button>
+  
+  </mat-menu>
+</div>

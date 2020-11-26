@@ -15,6 +15,13 @@ $block: "list-two-lines";
         height: 100%;
       }
     }
+    .#{$block}__item--icon{
+      color: $color-grey-600;
+      font-size: 36px;
+      height: 36px;
+      padding: 0;
+      width: 36px;
+    }
     .#{$block}__flex{
       align-items: center;
       display: flex;
