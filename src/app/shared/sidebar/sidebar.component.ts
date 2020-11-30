@@ -78,6 +78,10 @@ const SIDENAVS = [
 	'sidenav-filters'
 ];
 
+const SNACKBARS = [
+	'snackbars'
+];
+
 const TABLES = [
 	'table',
 	'table-evaluation',
@@ -134,6 +138,7 @@ const CATEGORIES = {
 	panels: { title: 'panels', links: PANELS},
 	progress: { title: 'progress', links: PROGRESS },
 	sidenavs: { title: 'sidenavs', links: SIDENAVS },
+	snackbars: { title: 'snackbars', links: SNACKBARS },
 	table: { title: 'table', links: TABLES },
 	tree: { title: 'tree', links: TREE },
 	paginator: { title: 'paginator', links: PAGINATOR }

@@ -15,7 +15,8 @@ import {
   MatTableModule,
   MatGridListModule,
   MatExpansionModule,
-  MatFormFieldModule
+  MatFormFieldModule,
+  MatSnackBarModule
 } from '@angular/material';
 
 import {
@@ -37,7 +38,8 @@ import {
   NtxLabelsModule,
   NtxErrorPagesModule,
   NtxProgressSpinnerModule,
-  NtxEmptyPagesModule
+  NtxEmptyPagesModule,
+  NtxSnackbarsModule
 } from '@netex/ux-components';
 
 import { AppRoutingModule } from '../app-routing.module';
@@ -61,7 +63,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     AppRoutingModule,
     MatGridListModule,
     MatExpansionModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSnackBarModule
   ],
   exports: [
     MatButtonModule,
@@ -91,11 +94,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NtxProgressBarModule,
     NtxTreesModule,
     MatGridListModule,
+    MatSnackBarModule,
     LayoutModule,
     NtxLabelsModule,
     NtxErrorPagesModule,
     NtxProgressSpinnerModule,
-    NtxEmptyPagesModule
+    NtxEmptyPagesModule,
+    NtxSnackbarsModule
   ],
   declarations: [
     HeaderComponent,

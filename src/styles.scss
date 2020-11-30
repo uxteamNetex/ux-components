@@ -126,3 +126,29 @@
     }
   }
 }
+
+.ntx-snackbar {
+  &-critical-error, &-error, &-success, &-info {
+    color: $color-white;
+    min-width: 0 !important;
+    margin: 0 !important;
+    position: absolute;
+    right: 25px;
+    top: 74px;
+  } 
+  &-critical-error {
+    background-color: $color-error;
+    button {
+      color: $color-white;
+    }
+  }
+  &-error { 
+    background-color: $color-warning;
+  }
+  &-success {
+    background-color: $color-success;
+  }
+  &-info {
+    background-color: $color-grey-700;
+  }
+}
