@@ -10,6 +10,7 @@ export class IconButtonComponent implements OnInit {
 
   @Input() color: string;
   @Input() disabled: string;
+  @Input() iconName: string;
 
   constructor() { }
 

@@ -19,7 +19,8 @@ import { Version4XXRoutingModule } from './version4XX-routing.module';
 		NtxCardsModule,
 		NtxListsModule,
 		NtxLabelsModule,
-		NtxTablesModule
+		NtxTablesModule,
+		NtxButtonsModule
 	]
 })
 export class Version4XXModule { }

@@ -10,6 +10,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.X.X:
 
+**Buttons**<br/>
+- Modificación componente *ntx-icon-button* parametrizando el icono.
+
 **Labels**<br/>
 Cambios en el componente ntx-label (*ntx-label*):
 - Se añaden nuevos colores a la label.

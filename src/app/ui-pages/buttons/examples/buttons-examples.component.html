@@ -65,10 +65,10 @@
         <ntx-raised-round-button [item2] ="item2"></ntx-raised-round-button>
       </div>
       <div *ngIf="type.label==='icon'">
-          <ntx-icon-button [color]="'primary'"></ntx-icon-button>
-          <ntx-icon-button [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
-          <ntx-icon-button [color]="'accent'"></ntx-icon-button>
-          <ntx-icon-button [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button iconName = "icon-chat-bubble" [color]="'primary'"></ntx-icon-button>
+          <ntx-icon-button iconName = "icon-editor-linker-option" [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button iconName = "icon-download" [color]="'accent'"></ntx-icon-button>
+          <ntx-icon-button iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
       </div>
       <div *ngIf="type.label==='fab'">
           <ntx-fab-button [color]="'primary'"></ntx-fab-button>
