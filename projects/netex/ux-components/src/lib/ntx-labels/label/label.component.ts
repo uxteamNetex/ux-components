@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ViewEncapsulation } from '@angular/core';
 
 @Component({
 	selector: 'ntx-label',
@@ -9,11 +8,10 @@ import { ViewEncapsulation } from '@angular/core';
 export class LabelComponent implements OnInit {
 
 	@Input() text: string;
-	@Input() color: 'black' | 'orange' | 'red';
+	@Input() color: 'black' | 'blue' | 'lightblue' | 'orange' | 'red' ;
 
 	constructor() { }
 
-	ngOnInit() {
-	}
+	ngOnInit() { }
 
 }

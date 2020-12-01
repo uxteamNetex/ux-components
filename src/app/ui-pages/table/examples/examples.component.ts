@@ -614,11 +614,11 @@ export class ExamplesComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    var arrColorLabel = ['black','blue','orange','lightblue','red', undefined];
     this.tableData = this.arrayOfData.map(function(item) {
-      var state_label = item.name.length < 5 ? 'active' : item.name.length > 7 ? 'blocked' : 'inactive';
-      var state_color = item.name.length < 5 ? 'black' : item.name.length > 7 ? 'red' : 'orange';
-      item['state_label'] = state_label;
+      var state_color = arrColorLabel[Math.floor(Math.random() * arrColorLabel.length)];
       item['state_color'] = state_color;
+      item['state_label'] = 'state';
       return item;
     });
   }

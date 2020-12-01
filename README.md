@@ -8,6 +8,14 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
+### v.4.X.X:
+
+**Labels**<br/>
+Cambios en el componente ntx-label (*ntx-label*):
+- Se añaden nuevos colores a la label.
+
+------------------
+
 ### v.4.3.2:
 
 **Icons**<br/>
