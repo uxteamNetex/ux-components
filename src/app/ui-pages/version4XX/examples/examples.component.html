@@ -25,7 +25,28 @@
         </h2>
 
         <div class="whatsnew__content-block">
-          <h4>Button component</h4>
+          <h4>Raised round button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-raised-round-button</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <div class="utils--flex">
+            <ntx-raised-round-button icon="icon-pencil" text="action" color="primary"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button text="action" color="primary"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button icon="icon-pencil" color="primary"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button text="action" color="primary" disabled="true"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button icon="icon-plus" text="action" color="violet"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button icon="icon-send" text="action" color="green"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button icon="icon-home" text="action" color="accent"></ntx-raised-round-button>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Icon button component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-icon-button</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
           <ntx-icon-button iconName = "icon-chat-bubble" [color]="'primary'"></ntx-icon-button>
