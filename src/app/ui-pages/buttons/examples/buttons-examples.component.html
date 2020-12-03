@@ -61,8 +61,28 @@
         <ntx-raised-icon-button [color]="'accent'"></ntx-raised-icon-button>
         <ntx-raised-icon-button [color]="'accent'" [disabled]="'true'"></ntx-raised-icon-button>
       </div>
-      <div *ngIf="type.label==='raised round'">
-        <ntx-raised-round-button [item2] ="item2"></ntx-raised-round-button>
+      <div *ngIf="type.label==='raised round'" class="utils--flex">
+        <ntx-raised-round-button icon="icon-pencil" text="action" color="primary"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button text="action" color="primary"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-pencil" color="primary"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button text="action" color="primary" disabled="true"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-plus" text="action" color="violet"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-plus" color="violet"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-send" text="action" color="green"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-send" color="green"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-home" text="action" color="accent"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-home" color="accent"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-home" color="accent" disabled="true"></ntx-raised-round-button>
       </div>
       <div *ngIf="type.label==='icon'">
           <ntx-icon-button iconName = "icon-chat-bubble" [color]="'primary'"></ntx-icon-button>
