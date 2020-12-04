@@ -13,6 +13,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Buttons**<br/>
 - Modificación componente *ntx-icon-button* parametrizando el icono.
 - Modificación componente *ntx-raised-round-button* parametrizando el icono y texto y añadiendo un nuevo color.
+- Creación del componente *ntx-rectangular-button* parametrizando el icono y texto.
 
 **Labels**<br/>
 Cambios en el componente ntx-label (*ntx-label*):
