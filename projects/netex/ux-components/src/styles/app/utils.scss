@@ -423,7 +423,10 @@ $block: "utils";
   }
   &--margin-top-48 {
 		margin-top: $separation-48;
-	}
+  }
+  &--margin-top-52 {
+		margin-top: $separation-52;
+  }
 	&--margin-top-60 {
 		margin-top: $separation-60;
   }
@@ -522,6 +525,9 @@ $block: "utils";
   }
   &--margin-bottom-48 {
 		margin-bottom: $separation-48;
+  }
+  &--margin-bottom-52 {
+		margin-bottom: $separation-52;
   }
   &--margin-bottom-60 {
 		margin-bottom: $separation-60;

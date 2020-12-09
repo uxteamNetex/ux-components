@@ -33,6 +33,50 @@
         </h2>
 
         <div class="whatsnew__content-block">
+          <h4>Radio button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-form-radiobutton</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/form-controls/documentation" (click)="setPath('form-controls')">link</a></p>
+          <div class="">
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 01</div>
+            <ntx-form-radiobutton color="grey" radioGroupName="group_1" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 02</div>
+            <ntx-form-radiobutton color="orange" radioGroupName="group_2" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 03</div>
+            <ntx-form-radiobutton color="red" radioGroupName="group_3" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 04</div>
+            <ntx-form-radiobutton color="blue" radioGroupName="group_4" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 05</div>
+            <ntx-form-radiobutton color="lightblue" radioGroupName="group_5" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 06</div>
+            <ntx-form-radiobutton style="margin-left: 18px;" color="grey" labelPosition="before" radioGroupName="group_6" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 07</div>
+            <table class="radiobutton-example-table">
+              <tr>
+                <th>name</th>
+                <th>present</th>
+                <th>delay</th>
+                <th>absence</th>
+                <th>excused absence</th>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td><ntx-form-radiobutton color="blue" radioGroupName="group_7" [data]="rbgData_2"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="lightblue" radioGroupName="group_7" [data]="rbgData_3"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="red" radioGroupName="group_7" [data]="rbgData_4"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="grey" radioGroupName="group_7" [data]="rbgData_5"></ntx-form-radiobutton></td>
+              </tr>
+              <tr>
+                <td>Amanda Mattersoon</td>
+                <td><ntx-form-radiobutton color="blue" radioGroupName="group_8" [data]="rbgData_7"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="lightblue" radioGroupName="group_8" [data]="rbgData_3"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="red" radioGroupName="group_8" [data]="rbgData_6"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="grey" radioGroupName="group_8" [data]="rbgData_5"></ntx-form-radiobutton></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>Raised round button component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-raised-round-button</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>

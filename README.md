@@ -19,6 +19,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 Cambios en el componente ntx-label (*ntx-label*):
 - Se añaden nuevos colores a la label.
 
+**Form controls**<br/>
+- Modificación componente *ntx-form-radiobutton* parametrizando el color, posición y texto.
+
 ------------------
 
 ### v.4.3.2:
