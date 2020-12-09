@@ -1,13 +1,23 @@
-<mat-radio-group class="radiobutton-group">
-
-  <mat-radio-button
-    class="radiobutton-group__radiobutton"
-    *ngFor="let radiobutton of radiobuttons"
-    [value]="radiobutton"
-    [color]="'primary'"
-    [checked]="checked"
-    [disabled]="disabled">
-      {{radiobutton}}
+<mat-radio-group
+  [disabled]="radioGroupdisabled"
+  [labelPosition]="labelPosition"
+  [name]="radioGroupName"
+  [ngClass]="getClasses()">
+  <mat-radio-button 
+    *ngFor="let element of data"
+    [checked]="element.checked"
+    [disabled]="element.disabled"
+    [value]="element.value">
+    {{element.label}}
   </mat-radio-button>
-
 </mat-radio-group>
+
+<!-- <mat-radio-button
+class="radiobutton-group__radiobutton"
+*ngFor="let radiobutton of radiobuttons"
+[value]="radiobutton"
+[color]="'primary'"
+[checked]="checked"
+[disabled]="disabled">
+  {{radiobutton}}
+</mat-radio-button> -->

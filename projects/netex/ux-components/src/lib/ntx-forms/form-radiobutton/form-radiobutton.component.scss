@@ -1,23 +1,92 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-$block: "radiobutton-group";
+$block: "ntx-radiobutton-group";
 
-.mat-radio-group{
-  &.#{$block}{
-    .#{$block}__radiobutton{
-      margin-left: 8px;
-      .mat-radio-container{
-        .mat-radio-outer-circle{
-          border-color: $color-grey-600;
-          border-width: 1px;
-        }
-        .mat-radio-inner-circle{
-          height: 24px;
-          left: -2px;
-          top: -2px;
-          width: 24px;
-        }
+  &.#{$block} {
+  mat-radio-button {
+    margin: 0 24 0 0;
+    label.mat-radio-label .mat-radio-label-content {
+      padding: 0 16px;
+    }
+    &.mat-radio-disabled {
+      opacity: 0.5;
+    }
+    .mat-radio-outer-circle {
+      border-width: 1px;
+    }
+    .mat-radio-inner-circle {
+      height: 24px;
+      left: -2px;
+      top: -2px;
+      width: 24px;
+    }
+  }
+  &-grey {
+    .mat-radio-button.mat-accent {
+      &.mat-radio-checked .mat-radio-outer-circle {
+        border-color: $color-grey-700;
+        ;
+      }
+      .mat-radio-inner-circle {
+        background-color: $color-grey-700;
+        ;
+      }
+      .mat-radio-ripple .mat-ripple-element {
+        background-color:rgba(0, 0, 0,.26);
       }
     }
   }
+  &-blue {
+    .mat-radio-button.mat-accent {
+      &.mat-radio-checked .mat-radio-outer-circle {
+        border-color: $color-label-blue;
+      }
+      .mat-radio-inner-circle {
+        background-color: $color-label-blue;
+      }
+      .mat-radio-ripple .mat-ripple-element {
+        background-color:rgba(26, 169, 226, .26);
+      }
+    }
+  }
+  &-lightblue {
+    .mat-radio-button.mat-accent {
+      &.mat-radio-checked .mat-radio-outer-circle {
+        border-color: $color-label-lightblue;
+      }
+      .mat-radio-inner-circle {
+        background-color: $color-label-lightblue;
+      }
+      .mat-radio-ripple .mat-ripple-element {
+        background-color:rgba(123, 217, 255, 0.26);
+      }
+    }
+  }
+  &-orange {
+    .mat-radio-button.mat-accent {
+      &.mat-radio-checked .mat-radio-outer-circle {
+        border-color: $color-label-orange;
+      }
+      .mat-radio-inner-circle {
+        background-color: $color-label-orange;
+      }
+      .mat-radio-ripple .mat-ripple-element {
+        background-color:rgba(220, 133, 34, 0.26);
+      }
+    }
+  }
+  &-red {
+    .mat-radio-button.mat-accent {
+      &.mat-radio-checked .mat-radio-outer-circle {
+        border-color: $color-label-red;
+      }
+      .mat-radio-inner-circle {
+        background-color: $color-label-red;
+      }
+      .mat-radio-ripple .mat-ripple-element {
+        background-color:rgba(240, 80, 96, 0.26);
+      }
+    }
+  }
+
 }

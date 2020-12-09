@@ -16,7 +16,8 @@ import {
   MatGridListModule,
   MatExpansionModule,
   MatFormFieldModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatRadioModule
 } from '@angular/material';
 
 import {
@@ -48,6 +49,7 @@ import { HeaderComponent } from './header/header.component';
 import { TabsComponent } from './header/tabs/tabs.component';
 import { ToolbarComponent } from './header/toolbar/toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -64,7 +66,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatGridListModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatRadioModule,
+    FormsModule
   ],
   exports: [
     MatButtonModule,
@@ -95,12 +99,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NtxTreesModule,
     MatGridListModule,
     MatSnackBarModule,
+    MatRadioModule,
     LayoutModule,
     NtxLabelsModule,
     NtxErrorPagesModule,
     NtxProgressSpinnerModule,
     NtxEmptyPagesModule,
-    NtxSnackbarsModule
+    NtxSnackbarsModule,
+    FormsModule
   ],
   declarations: [
     HeaderComponent,
