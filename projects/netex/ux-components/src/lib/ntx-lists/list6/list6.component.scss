@@ -1,0 +1,74 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list6";
+
+.#{$block} {
+  cursor: default;
+  > * {
+    box-sizing: border-box;
+  }
+
+  font-family: LatoBold;
+
+  .#{$block}__item {
+    display: flex;
+    height: 48px;
+    margin: 8px;
+    &--bullet {
+      flex: 0 0 40px;
+      height: 40px;
+      span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        line-height: 40px;
+      }
+      div[matListAvatar] {
+        border-radius: 50%;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        width: 40px;
+        img{
+          width: 100%;
+          height: 100%; 
+          object-fit: cover;
+        }
+      }
+    }
+    &--wrapper {
+      display: flex;
+      flex: 1;
+      min-width: 0;
+      &:not(:last-child) {
+        &.divider {
+          border-bottom: 1px solid $color-grey-200;
+        }
+      }
+      .label-principal {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        min-width: 0;
+        height: 40px;
+        .label {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .label-secondary {
+        line-height: 40px;
+        font-style: italic;
+        font-family: LatoSemiBold;
+        span.error {
+          padding: 6px 12px;
+          background-color: #f05060;
+          color: #fff;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}

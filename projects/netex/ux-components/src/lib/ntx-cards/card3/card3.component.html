@@ -1,15 +1,32 @@
 <mat-card class="card3">
   <mat-card-content>
-    <div class="card3__options">
+    <div 
+    *ngIf="showOptions" 
+    class="card3__options">
       <ntx-menu-options></ntx-menu-options>
     </div>
-    <div mat-card-avatar class="card3__image" style="background-color:#f97e66" alt="Card image">
-      <span class="card3__image--initials utils--vertical-align">ET</span>
+    <div class="card3__image">
+      <img 
+        *ngIf="image; else elseBlock"
+        [src]="image"
+        [alt]="title + '&#32;image'">
+      <ng-template #elseBlock>
+        <span 
+          [style.background-color]="badgeColor"
+          class="utils--flex-center utils--text-22 utils--text-white utils--uppercase">{{ title | slice:0:1 }}</span>
+      </ng-template>
     </div>
     <mat-card-title class="card3__title">
-      <span class="card3__title--text" matTooltip="Evaluation name that could be longer than just one line and will be shown with three dots">Evaluation name that could be longer than just one line and will be shown with three dots</span>
+      <span class="card3__title--text" [matTooltip]="title">{{ title }}</span>
     </mat-card-title>
-    <mat-card-subtitle class="card3__subtitle">20/12/2018 - 360º</mat-card-subtitle>
-    <mat-card-subtitle class="card3__subtitle">9/12 Users · <span class="card3__subtitle-state-open">Open</span></mat-card-subtitle>
+    <mat-card-subtitle class="card3__subtitle">
+      <span [matTooltip]="subtitle">{{ subtitle }}</span>
+    </mat-card-subtitle>
+    <mat-card-subtitle class="card3__subtitle">
+      <span *ngIf="subtitle2" [matTooltip]="subtitle2">{{ subtitle2 }}</span>
+    </mat-card-subtitle>
+    <mat-card-subtitle class="card3__subtitle" >
+      <span *ngIf="subtitle3" [matTooltip]="subtitle3" [style.color]="subtitle3Color">{{ subtitle3 | uppercase }}</span>
+    </mat-card-subtitle>
   </mat-card-content>
 </mat-card>

@@ -1,0 +1,21 @@
+<div class="list7">
+  <div class="list7__item" *ngFor="let item of items">
+    <div
+      [ngStyle] = "{'background-color': item.badgeBgColor }"
+      class="list7__item--badge utils--flex-center">
+        <mat-icon 
+          class="icon-netex icon-clipboard-list utils--text-28"></mat-icon>
+    </div>
+    <div class="list7__item--wrapper utils--text-16 utils--margin-left-16">
+      <div class="label-principal utils--text-grey-800 utils--uppercase utils--truncate">
+        <span matTooltip="{{item.labelPrincipal}}">{{item.labelPrincipal}}</span>
+      </div>
+      <div class="label-secondary utils--text-grey-600 utils--truncate">
+        <span matTooltip="{{item.labelSecondary}}">{{item.labelSecondary}}</span>
+      </div>
+      <div class="label-tertiary utils--text-grey-600 utils--truncate">
+        <span matTooltip="{{item.labelTertiary}}">{{item.labelTertiary}}</span>
+      </div>
+    </div>
+  </div>
+</div>

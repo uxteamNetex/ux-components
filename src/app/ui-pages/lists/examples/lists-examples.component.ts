@@ -447,6 +447,86 @@ export class ListsExamplesComponent implements OnInit {
 		}
 	];
 
+	list5_4 = [
+		{
+			avatar: 'assets/images/user_female_04.jpg',
+			labelPrincipal: 'Bernice Greaves',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		},
+		{
+			avatar: 'assets/images/user_male_01.png',
+			labelPrincipal: 'Jerry Basile',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		},
+		{
+			avatar: 'assets/images/user_female_01.jpg',
+			labelPrincipal: 'Suzanne Axtens',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		}
+	];
+
+	list6 = [
+		{
+			avatar: 'assets/images/user_female_04.jpg',
+			lblPrincipal: 'Bernice Greaves',
+			lblSecondary: {
+				text: '1 day left',
+				value: 1,
+				requiredValue: 5
+			}
+		},
+		{
+			avatar: 'assets/images/user_female_01.jpg',
+			lblPrincipal: 'Suzanne Axtens',
+			lblSecondary: {
+				text: '10 days left',
+				value: 10,
+				requiredValue: 5
+			}
+		},
+		{
+			avatar: 'assets/images/user_male_01.png',
+			lblPrincipal: 'Jerry Basile',
+			lblSecondary: {
+				text: '3 days left',
+				value: 3,
+				requiredValue: 5
+			}
+		},
+		{
+			avatar: 'assets/images/user_male_02.png',
+			lblPrincipal: 'Anthony Olenin',
+			lblSecondary: {
+				text: '7 days left',
+				value: 7,
+				requiredValue: 5
+			}
+		}
+	];
+	list7 = [
+		{
+			labelPrincipal:'ux q3',
+			labelSecondary:'UX designer',
+			labelTertiary:'27/10/2020',
+			badgeBgColor:'#199AA8',
+		},
+		{
+			labelPrincipal:'ux q3 lorem ipsum dolor sit amet, consectetur adipiscing',
+			labelSecondary:'Front-End developer lorem ipsum dolor',
+			labelTertiary:'26/07/2020',
+			badgeBgColor:'#199AA8',
+		},
+		{
+			labelPrincipal:'ux q2',
+			labelSecondary:'UI developer',
+			labelTertiary:'28/03/2020',
+			badgeBgColor:'#B182A6',
+		}
+	]
+
 	constructor() { }
 
 	ngOnInit() {

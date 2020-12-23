@@ -1,0 +1,20 @@
+<div class="list6">
+  <div class="list6__item" *ngFor="let item of items">
+    <div class="list6__item--bullet utils--flex-center utils--margin-right-16">
+        <div matListAvatar>
+          <img src="{{item.avatar}}" alt="{{item.lblPrincipal + '&#32;image'}}">
+        </div>
+    </div>
+    <div class="list6__item--wrapper utils--text-16 utils--text-grey-800">
+      <div class="label-principal">
+        <span class="label utils--text-grey-800" matTooltip="{{item.lblPrincipal}}">{{item.lblPrincipal}}</span>
+      </div>
+      <div
+        class="label-secondary utils--margin-left-16 utils--text-12 utils--text-grey-400">
+        <span [ngClass]="item.lblSecondary.requiredValue ? item.lblSecondary.value >= item.lblSecondary.requiredValue ? '' : 'error' : '' ">
+          {{item.lblSecondary.text}}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

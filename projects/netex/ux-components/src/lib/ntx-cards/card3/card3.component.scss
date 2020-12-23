@@ -7,7 +7,7 @@ $block: "card3";
     border-radius: 4px;
     box-shadow: $shadow;
     display: block;
-    height: 264px;
+    height: 280px;
     margin: 8px;
     padding: 0;
     text-align: center;
@@ -37,11 +37,12 @@ $block: "card3";
           height: 100%;
           z-index: 1;
         }
-        .#{$block}__image--initials{
-          color: $color-white;
-          font-family: latoLight;
-          font-size: $font-size-22;
-          position: absolute;
+        span {
+          height: 100%;
+          /* width: 100%; */
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
       .#{$block}__title{
@@ -49,6 +50,7 @@ $block: "card3";
         font-family: latoBold;
         font-size: $font-size-20;
         margin: 0 24px 8px;
+        height: 48px;
         max-height: 48px;
         word-wrap: break-word;
         overflow: hidden;
@@ -63,16 +65,8 @@ $block: "card3";
         color: $color-grey-600;
         font-size: $font-size-14;
         margin: 0 24px;
-        &:first-of-type{
+        &:not(:last-of-type){
           margin-bottom: 8px;
-        }
-        .#{$block}__subtitle-state-open{
-          color: $color-success;
-          text-transform: uppercase;
-        }
-        .#{$block}__subtitle-state-closed{
-          color: $color-error;
-          text-transform: uppercase;
         }
       }
     }

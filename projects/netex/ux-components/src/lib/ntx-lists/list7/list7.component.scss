@@ -1,0 +1,44 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list7";
+
+.#{$block} {
+  cursor: default;
+  * {
+    box-sizing: border-box;
+  }
+
+  font-family: Lato;
+
+  .#{$block}__item {
+    display: flex;
+    height: 48px;
+    margin: 8px;
+    &--badge {
+      flex: 0 0 40px;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      color: rgba(255,255,255,0.5);
+    }
+    &--wrapper {
+      width: calc(100% - 48px - 16px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        span {
+          padding: 0 8px;
+        }
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+    &:not(:last-child) .#{$block}__item--wrapper{
+      border-bottom: 1px solid $color-grey-200;
+    }
+  }
+}
