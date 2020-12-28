@@ -34,6 +34,12 @@
         <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
     </ntx-card-simple>
 
+    <ntx-card-simple 
+      title="{{'Menu avatar' | uppercase }}"
+      subtitle="{{ '<ntx-menu-avatar>' }}">
+        <ntx-menu-avatar [options]="menuAvatarOptions"></ntx-menu-avatar>
+    </ntx-card-simple>
+
     <ntx-card-simple
       title="{{'Dashboard menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-toolbar-dashboard>' }}">
@@ -45,5 +51,6 @@
       subtitle="{{ '<ntx-menu-toolbar-dashboard>' }}">
       <ntx-menu-toolbar-dashboard [apps]="{}"></ntx-menu-toolbar-dashboard>
     </ntx-card-simple>
+
   </div>
 </div>

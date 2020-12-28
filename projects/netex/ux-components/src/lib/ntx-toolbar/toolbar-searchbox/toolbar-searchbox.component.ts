@@ -11,6 +11,7 @@ export class ToolbarSearchboxComponent implements OnInit {
   @Input() apps: any[];
   @Input() label: string;
   @Input() src: string;
+  @Input() menuAvatarOptions: any[];
 
   constructor() { }
 

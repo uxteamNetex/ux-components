@@ -1,0 +1,34 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+// button
+.mat-icon-button{
+    &.menu-options-button{
+      &.ntx-menu-avatar{
+        display: block;
+        height: 48px;
+        line-height: 48px;
+        margin: 0 2px;
+        width: 48px;
+        &:hover{
+          background-color: $icon-button-toolbar-hover;
+        }
+        .image-wrapper {
+          border-radius: 50%;
+          height: 32px;
+          width: 32px;
+          margin: 0 auto;
+          overflow: hidden;
+          position: relative;
+          img{
+            height: 100%;
+          }
+        }
+      }
+    }
+}
+// panel
+.ntx-menu-avatar__panel {
+    button.mat-menu-item.active {
+        background-color: $color-grey-200;
+    }
+}

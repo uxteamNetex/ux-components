@@ -7,6 +7,7 @@ import { DocumentationComponent } from './documentation/documentation.component'
 import { ExamplesComponent } from './examples/examples.component';
 import { NtxCardsModule, NtxTablesModule, NtxChipsModule, NtxButtonsModule, NtxListsModule, NtxFormsModule, NtxMenusModule, NtxLabelsModule } from '@netex/ux-components';
 import { Version4XXRoutingModule } from './version4XX-routing.module';
+import { NtxToolbarModule } from 'projects/netex/ux-components/src/public_api';
 
 @NgModule({
 	declarations: [DocumentationComponent, ExamplesComponent],
@@ -21,7 +22,9 @@ import { Version4XXRoutingModule } from './version4XX-routing.module';
 		NtxLabelsModule,
 		NtxTablesModule,
 		NtxButtonsModule,
-		NtxFormsModule
+		NtxFormsModule,
+		NtxMenusModule, 
+		NtxToolbarModule
 	]
 })
 export class Version4XXModule { }

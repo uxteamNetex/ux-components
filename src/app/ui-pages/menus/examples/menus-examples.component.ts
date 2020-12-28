@@ -59,4 +59,20 @@ export class MenusExamplesComponent implements OnInit {
 			title: 'Click me!',
 		};
 	}
+
+	menuAvatarOptions=[
+		{
+		  id: 1,
+		  label: 'Suzanne Axtens',
+		  src:'assets/images/user_female_01.jpg',
+		  active: false
+		},
+		{
+		  id: 2,
+		  label: 'Sara Dyhouse',
+		  src:'assets/images/user_female_02.jpg',
+		  active: true
+		},
+	
+	  ];
 }

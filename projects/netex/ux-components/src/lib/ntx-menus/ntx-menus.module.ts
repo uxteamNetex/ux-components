@@ -11,6 +11,7 @@ import { MenuToolbarDashboardComponent } from './menu-toolbar-dashboard/menu-too
 import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { MenuLinkComponent } from './menu-link/menu-link.component';
 import { MenuButtonFlatComponent } from './menu-button-flat/menu-button-flat.component';
+import { MenuAvatarComponent } from './menu-avatar/menu-avatar.component';
 
 
 
@@ -27,7 +28,8 @@ import { MenuButtonFlatComponent } from './menu-button-flat/menu-button-flat.com
 		MenuOptionsSimpleComponent,
 		MenuToolbarDashboardComponent,
 		MenuLinkComponent,
-		MenuButtonFlatComponent
+		MenuButtonFlatComponent,
+		MenuAvatarComponent
 	],
 	exports: [
 		MenuOptionsComponent,
@@ -35,7 +37,8 @@ import { MenuButtonFlatComponent } from './menu-button-flat/menu-button-flat.com
 		MenuOptionsSimpleComponent,
    		MenuToolbarDashboardComponent,
 		MenuLinkComponent,
-		MenuButtonFlatComponent
+		MenuButtonFlatComponent,
+		MenuAvatarComponent
 	]
 })
 export class NtxMenusModule { }

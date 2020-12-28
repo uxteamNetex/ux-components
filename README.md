@@ -27,7 +27,11 @@ Cambios en el componente ntx-label (*ntx-label*):
 **Form controls**<br/>
 - Modificación componente *ntx-form-radiobutton* parametrizando el color, posición y texto.
 
+**Menus**<br/>
+- Nuevo componente menú de avatares (*ntx-menu-avatar*)
 
+**Search box with filter panel<br/>**
+- Modificación del componente search box con panel de filtros para poder mostrar condicionalmente el componente *ntx-menu-avatar*
 
 ------------------
 
