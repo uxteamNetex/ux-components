@@ -3,7 +3,8 @@ import { Input } from '@angular/core';
 import { MatChipInputEvent } from '@angular/material';
 
 export interface Chip {
-  name: string;
+  label: string;
+  avatar: string;
 }
 
 @Component({
@@ -18,9 +19,17 @@ export class BasicChipComponent implements OnInit {
   @Input() disabled: string;
 
   chips: Chip[] = [
-    {name: 'Mary Joe Wright'},
-    {name: 'John Doe'},
-    {name: 'Example chip with a very long name'},
+    {	label: 'Mary Joe Wright',
+			avatar: ''
+		},
+		{
+			label: 'John Doe',
+			avatar: 'assets/images/perfil.jpg'
+		},
+		{
+			label: 'Example chip with a very long name',
+			avatar: 'assets/images/user_female_01.jpg'
+		}
   ];
 
   remove(chip: Chip): void {

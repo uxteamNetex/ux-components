@@ -29,6 +29,18 @@ $block: "chip-container";
         overflow: hidden;
         word-break: break-all;
       }
+      .#{$block}__chip-image{
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        margin: 0 8px 0 -12px;
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+        img{
+          height: 100%;
+        }
+      }
       .#{$block}__chip-button{
         color: $color-white;
         height: 24px;

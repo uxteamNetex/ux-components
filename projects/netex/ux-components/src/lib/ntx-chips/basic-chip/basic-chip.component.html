@@ -7,7 +7,11 @@
             [removable]="removable"
             (removed)="remove(chip)">
 
-    <span class="chip-container__chip-text" matTooltip="{{chip.name}}">{{chip.name}}</span>
+    <div *ngIf="chip.avatar" class="chip-container__chip-image">
+      <img class="utils--vertical-align" src="{{chip.avatar}}" alt="">
+    </div>
+
+    <span class="chip-container__chip-text" matTooltip="{{chip.label}}">{{chip.label}}</span>
 
     <button mat-icon-button
             matChipRemove

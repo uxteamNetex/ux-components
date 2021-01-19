@@ -24,7 +24,8 @@ import { NtxToolbarModule } from 'projects/netex/ux-components/src/public_api';
 		NtxButtonsModule,
 		NtxFormsModule,
 		NtxMenusModule, 
-		NtxToolbarModule
+		NtxToolbarModule,
+		NtxChipsModule
 	]
 })
 export class Version4XXModule { }

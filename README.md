@@ -15,6 +15,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Modificación componente *ntx-raised-round-button* parametrizando el icono y texto y añadiendo un nuevo color.
 - Creación del componente *ntx-rectangular-button* parametrizando el icono y texto.
 
+**Chips**<br/>
+Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen.
+
 **Labels**<br/>
 Cambios en el componente ntx-label (*ntx-label*):
 - Se añaden nuevos colores a la label.

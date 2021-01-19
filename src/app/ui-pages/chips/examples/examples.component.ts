@@ -67,6 +67,20 @@ export class ExamplesComponent implements OnInit {
 	item = ITEM;
 	chip = CHIP;
 
+	 chips: any[] = [
+		{	label: 'Mary Joe Wright',
+			avatar: ''
+		},
+		{
+			label: 'John Doe',
+			avatar: 'assets/images/perfil.jpg'
+		},
+		{
+			label: 'Example chip with a very long name',
+			avatar: 'assets/images/user_female_01.jpg'
+		}
+	];
+
 	constructor() { }
 
 	ngOnInit() {
