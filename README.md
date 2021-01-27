@@ -18,6 +18,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Chips**<br/>
 Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen.
 
+**Drag and Drop**<br/>
+Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para permitir adjuntar varios archivos y mostrar scroll si es necesario.
+
 **Labels**<br/>
 Cambios en el componente ntx-label (*ntx-label*):
 - Se añaden nuevos colores a la label.
