@@ -14,7 +14,7 @@ export class ExamplesComponent implements OnInit {
   
   filesAdded=[
     {
-      name: 'pdf_file_with_a_very_long_text.pdf',
+      name: 'pdf_file_with_a_very_long_text_lorem_ipsum dolor.pdf',
       icon: 'icon-file-pdf'
     },
     {
