@@ -2,23 +2,27 @@
 
 $block: "ntx-radiobutton-group";
 
-  &.#{$block} {
+&.#{$block} {
   mat-radio-button {
-    margin: 0 24 0 0;
-    label.mat-radio-label .mat-radio-label-content {
-      padding: 0 16px;
-    }
+    margin: 0 0 0 8px;
     &.mat-radio-disabled {
       opacity: 0.5;
     }
-    .mat-radio-outer-circle {
-      border-width: 1px;
-    }
-    .mat-radio-inner-circle {
-      height: 24px;
-      left: -2px;
-      top: -2px;
-      width: 24px;
+    label.mat-radio-label{
+      .mat-radio-container{
+        .mat-radio-outer-circle {
+          border-width: 1px;
+        }
+        .mat-radio-inner-circle {
+          height: 24px;
+          left: -2px;
+          top: -2px;
+          width: 24px;
+        }
+      }
+      .mat-radio-label-content{
+        padding: 0 8px;
+      }
     }
   }
   &-grey {

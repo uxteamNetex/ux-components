@@ -10,13 +10,24 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.X.X:
 
+**Archivos modificados**<br/>
+- ux-components/src/styles/app/variables.scss
+- ux-components/src/styles/app/utils.scss
+- src/styles/app/variables.scss
+- src/styles/app/utils.scss
+
+**Toolbar**<br/>
+- Cambios en el css del componente *ntx-toolbar-searchbox*.
+
 **Buttons**<br/>
 - Modificación componente *ntx-icon-button* parametrizando el icono.
 - Modificación componente *ntx-raised-round-button* parametrizando el icono y texto y añadiendo un nuevo color.
 - Creación del componente *ntx-rectangular-button* parametrizando el icono y texto.
+- Cambios en el css del componente *ntx-stroked-toggle-button*.
 
 **Chips**<br/>
-Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen.
+- Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen.
+- Cambios en el css y ts del componente *ntx-basic-image-chip*.
 
 **Labels**<br/>
 Cambios en el componente ntx-label (*ntx-label*):
@@ -29,6 +40,9 @@ Cambios en el componente ntx-label (*ntx-label*):
 
 **Form controls**<br/>
 - Modificación componente *ntx-form-radiobutton* parametrizando el color, posición y texto.
+- Cambios en el css del componente *ntx-form-checkbox*.
+- Cambios en el css del componente *ntx-form-radiobutton*.
+- Cambios en el css del compoennte *ntx-form-datepicker*.
 
 **Menus**<br/>
 - Nuevo componente menú de avatares (*ntx-menu-avatar*)

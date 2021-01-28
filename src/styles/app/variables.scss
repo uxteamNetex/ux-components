@@ -50,7 +50,7 @@ $shadow-hover: 0 0 14px 0 rgba(0, 0, 0, 0.26);
 $shadow-navbar: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
 //Hover
-$icon-button-hover: rgba(0, 0, 0, 0.16);
+$icon-button-hover: rgba(0, 0, 0, 0.06);
 $icon-button-toolbar-hover: rgba(255, 255, 255, 0.16);
 
 //Toolbar
@@ -63,3 +63,6 @@ $tableEvaluationRowHeight: 80px;
 $tableHeaderOptionsHeight: 62px;
 $tableHeaderHeight: 48px;
 $tableRowHeight: 52px;
+
+//Table columns width
+$tableOptionsColumnWidth: 48px;

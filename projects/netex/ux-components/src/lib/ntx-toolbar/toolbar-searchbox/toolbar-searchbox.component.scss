@@ -3,7 +3,7 @@
 $block: "toolbar-searchbox";
 
 .#{$block} {
-    background-color: white;
+    background-color: $color-white;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
     height: 66px;
     display: flex;
@@ -12,7 +12,7 @@ $block: "toolbar-searchbox";
     .#{$block}__title {
         flex-basis: 312px;
         display: inline-flex;
-        align-items: center;    
+        align-items: center;
         &--logo {
             width: 32px;
             height: 32px;
@@ -24,11 +24,18 @@ $block: "toolbar-searchbox";
         flex-basis: 720px;
     }
     .#{$block}__options {
-        flex-grow: 1;
-        display: flex;
-        justify-content: flex-end;
-        button.mat-icon-button:hover {
-            background-color: #F5F5F5;
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+      button.mat-icon-button{
+        &:hover{
+          background-color: $icon-button-hover;
         }
+        &.menu-options-button.dashboard-menu{
+          &:hover{
+            background-color: $icon-button-hover;
+          }
+        }
+      }
     }
 }
