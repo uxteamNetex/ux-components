@@ -16,6 +16,21 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - src/styles/app/variables.scss
 - src/styles/app/utils.scss
 
+**Icons**<br/>
+Archivos modificados:
+- ux-components/src/assets/fonts/icons/netex.eot
+- ux-components/src/assets/fonts/icons/netex.svg
+- ux-components/src/assets/fonts/icons/netex.ttf
+- ux-components/src/assets/fonts/icons/netex.woff
+- ux-components/src/assets/resources/icons.json
+- ux-components/src/styles/fonts/styles.scss
+- ux-components/src/styles/fonts/variables.scss
+- ux-components/projects/netex/ux-components/src/styles/fonts/styles.scss
+- ux-components/projects/netex/ux-components/src/styles/fonts/variables.scss
+
+**New icons**<br/>
+- icon-backpack
+
 **Toolbar**<br/>
 - Cambios en el css del componente *ntx-toolbar-searchbox*.
 
