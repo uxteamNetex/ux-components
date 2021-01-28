@@ -10,6 +10,7 @@ import {
 import { DragAndDropRoutingModule } from './drag-and-drop-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
+import { MatExpansionModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { ExamplesComponent } from './examples/examples.component';
     NtxButtonsModule,
     NtxCardsModule,
     NtxDragAndDropModule,
-    DragAndDropRoutingModule
+    DragAndDropRoutingModule,
+    MatExpansionModule
   ],
   declarations: [
     DocumentationComponent,

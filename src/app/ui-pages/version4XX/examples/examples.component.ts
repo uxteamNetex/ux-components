@@ -204,7 +204,23 @@ export class ExamplesComponent implements OnInit {
 		  active: true
 		}
 	
-	  ];
+	];
+
+	filesAdded=[
+		{
+			name: 'pdf_file_with_a_very_long_text.pdf',
+			icon: 'icon-file-pdf'
+		},
+		{
+			name: 'zip_file_01',
+			icon: 'icon-file-zip'
+		},
+		{
+			name: 'pdf_file_01',
+			icon: 'icon-file-pdf'
+		}
+	];
+  
 
 	constructor(
 		private tabsHeaderService: TabsHeaderService
