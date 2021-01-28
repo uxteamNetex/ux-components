@@ -48,11 +48,11 @@ $block : 'file-added';
       word-break: break-all;
     }
   }
+  > div {
+    margin-left: 16px;
+  }
   div:first-child {
     margin-left: auto;
-  }
-  div:not(:first-child :last-child) {
-    margin-left: 16px;
   }
   div:last-child {
     margin-right: auto;
