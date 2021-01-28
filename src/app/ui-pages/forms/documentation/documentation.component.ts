@@ -69,18 +69,18 @@ export class DocumentationComponent implements OnInit {
                 [ngClass]="{'selected': selected.value}">
     <mat-select [formControl]="selected"
                 (selectionChange)="onSelectChange($event)">
-      <mat-option class="form-select-thin__option" 
+      <mat-option class="form-select-thin__option"
                   [value]="firstOption.value">
-        <mat-radio-button class="form-select-thin__option--radio-button" 
+        <mat-radio-button class="form-select-thin__option--radio-button"
                           color="primary">
           {{ firstOption.label }}
         </mat-radio-button>
       </mat-option>
-      <mat-divider></mat-divider> 
-      <mat-option class="form-select-thin__option" 
-                  *ngFor="let option of options | slice:1" 
+      <mat-divider></mat-divider>
+      <mat-option class="form-select-thin__option"
+                  *ngFor="let option of options | slice:1"
                   [value]="option.value">
-        <mat-radio-button class="form-select-thin__option--radio-button" 
+        <mat-radio-button class="form-select-thin__option--radio-button"
                           color="primary">
           {{ option.label }}
         </mat-radio-button>
@@ -186,16 +186,16 @@ export class DocumentationComponent implements OnInit {
     <mat-icon class="icon-netex icon-search utils--margin-right-24"></mat-icon>
     <!-- <ntx-input-no-label [placeholder]="'Buscar notificación'"></ntx-input-no-label> -->
     <input type="text" placeholder="Buscar notificaci&oacute;n" class="searchbox-filter-panel__input utils--text-16 utils--text-grey-600">
-    <button 
-      mat-button 
+    <button
+      mat-button
       mat-icon-button
       (click)="togglePanel()">
       <mat-icon class="icon-netex icon-funnel-solid utils--text-grey-600"></mat-icon>
     </button>
   </div>
   <div *ngIf="show" class="searchbox-filter-panel__panel utils--margin-top-4">
-    <button 
-      mat-button 
+    <button
+      mat-button
       mat-icon-button
       (click)="togglePanel()"
       class="searchbox-filter-panel__panel--closeButton">
@@ -348,9 +348,9 @@ $block: "searchbox-filter-panel";
   code17 = `
     <div class="form-datepicker-range">
     <mat-form-field class="form-datepicker-range__date utils--margin-right-24">
-      <input 
-        matInput 
-        [matDatepicker]="pickerFrom" 
+      <input
+        matInput
+        [matDatepicker]="pickerFrom"
         placeholder="Fecha"
         readonly>
       <mat-datepicker-toggle matSuffix [for]="pickerFrom">
@@ -376,9 +376,9 @@ $block: "searchbox-filter-panel";
       </mat-select>
     </mat-form-field>
     <mat-form-field class="form-datepicker-range__date">
-      <input 
-        matInput 
-        [matDatepicker]="pickerTo" 
+      <input
+        matInput
+        [matDatepicker]="pickerTo"
         placeholder="Fecha"
         readonly>
       <mat-datepicker-toggle matSuffix [for]="pickerTo">
@@ -392,10 +392,10 @@ $block: "searchbox-filter-panel";
     import { Component, OnInit } from '@angular/core';
     import { ViewEncapsulation } from '@angular/core';
     import { MatDatepickerInputEvent, NativeDateAdapter, DateAdapter, MAT_DATE_FORMATS, MatDateFormats } from '@angular/material';
-    
-    const monthNamesAlias = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", 
+
+    const monthNamesAlias = ["Ene", "Feb", "Mar", "Abr", "May", "Jun",
     "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
-    
+
     export class AppDateAdapter extends NativeDateAdapter {
       format(date: Date, displayFormat: Object): string {
         let day: string = date.getDate().toString();
@@ -404,12 +404,12 @@ $block: "searchbox-filter-panel";
         return 'day' + ' de ' + 'month' + ' de ' + ¡year';
       }
     }
-    
+
     export interface Option {
       value: string;
       viewValue: string;
     }
-    
+
     @Component({
       selector: 'ntx-form-datepicker-range',
       templateUrl: './form-datepicker-range.component.html',
@@ -420,15 +420,15 @@ $block: "searchbox-filter-panel";
       encapsulation: ViewEncapsulation.None
     })
     export class FormDatepickerRangeComponent implements OnInit {
-    
+
       hours: Option[];
-    
+
       constructor() { }
-    
+
       ngOnInit() {
         let minFragment: string, hourFragment: string, value: string, viewValue : string;
         for (var i = 0; i < 24; i++) {
-          value = ((i<10) ? '0' + i.toString() : i.toString()) + ':00'; 
+          value = ((i<10) ? '0' + i.toString() : i.toString()) + ':00';
           if (i < 12 ) {
             viewValue = value + ' am';
           } else {
@@ -483,6 +483,14 @@ $block: "searchbox-filter-panel";
     }
 
     }
+  `;
+	code20 = `
+  .mat-icon{
+    font-size: $font-size-24;
+    height: 24px;
+    width: 24px;
+  }
+
   `;
 
   ngOnInit() {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
+import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
 const TWO_LINES_LIST_WITH_AVATAR = {
 	texts: [
@@ -37,6 +38,21 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 	]
 };
 
+const CHIP = {
+	actions: [
+		{
+			state: 'primary',
+			image: 'assets/images/perfil.jpg',
+			label: 'Laura Lopez'
+		},
+		{
+			state: 'accent',
+			image: 'assets/images/perfil.jpg',
+			label: 'Carlota Ruiz Corredera'
+		}
+	]
+};
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -46,6 +62,7 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 export class ExamplesComponent implements OnInit {
 
 	data = TWO_LINES_LIST_WITH_AVATAR;
+	chip = CHIP;
 
 	list3 = [
 		{
@@ -203,7 +220,7 @@ export class ExamplesComponent implements OnInit {
 		  src:'assets/images/user_female_02.jpg',
 		  active: true
 		}
-	
+
 	];
 
 	filesAdded=[
@@ -220,17 +237,20 @@ export class ExamplesComponent implements OnInit {
 			icon: 'icon-file-pdf'
 		}
 	];
-  
 
-	constructor(
-		private tabsHeaderService: TabsHeaderService
-	) { }
+
+	//constructor(private tabsHeaderService: TabsHeaderService) { }
+
+	constructor(private dashboardService: DashboardService) { }
+
+	apps: any[];
 
 	ngOnInit() {
+		this.apps = this.dashboardService.getDashboardApps();
 	}
 
 	setPath(value: string) {
-		this.tabsHeaderService.setPath(value);
+		//this.tabsHeaderService.setPath(value);
 	}
 
 }
