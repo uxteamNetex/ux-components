@@ -31,6 +31,10 @@ Archivos modificados:
 **New icons**<br/>
 - icon-backpack
 
+**Tables**<br/>
+- Cambios en el html y css del componente *ntx-basic-table*.
+- Cambios en el html, css y ts del componente *ntx-selectable-table*.
+
 **Toolbar**<br/>
 - Cambios en el css del componente *ntx-toolbar-searchbox*.
 

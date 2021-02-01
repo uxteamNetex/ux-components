@@ -46,7 +46,7 @@ export class SelectableTableComponent implements OnInit {
 
 	constructor() { }
 
-	displayedColumns: string[] = ['select', 'avatar', 'name', 'project', 'type', 'modification', 'options'];
+	displayedColumns: string[] = ['select', 'name', 'project', 'type', 'modification', 'options'];
 	dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 	selection = new SelectionModel<PeriodicElement>(true, []);
 

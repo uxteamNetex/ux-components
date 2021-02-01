@@ -482,9 +482,9 @@ export class ExamplesComponent implements OnInit {
     "avatar": "https://robohash.org/remiustolabore.jpg?size=50x50&set=set1",
     "date": "01/04/2020"
   }, {
-    "name": "Bartholomeo",
-    "surname": "McClean",
-    "username": "bmcclean27",
+    "name": "Bartholomeo Casimiro and a very long text",
+    "surname": "McClean McDonals Smith and a very long text",
+    "username": "bmcclean27 and a very long text",
     "avatar": "https://robohash.org/assumendalaborumvoluptatem.jpg?size=50x50&set=set1",
     "date": "02/08/2020"
   }, {

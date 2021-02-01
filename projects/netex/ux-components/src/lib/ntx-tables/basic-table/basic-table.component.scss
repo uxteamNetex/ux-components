@@ -65,10 +65,11 @@ $block: "mat-basic-table";
             padding: 0 12px;
             max-width: 148px;
             &:first-of-type{
+              border-right: none;
               padding-left: 24px;
             }
             &:last-of-type{
-              padding-right: 24px;
+              border-left: none;
             }
             .#{$block}__row-name{
               align-items: center;
@@ -103,5 +104,26 @@ $block: "mat-basic-table";
   }
   .#{$block}__paginator{
     border-radius: 0 0 4px 4px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .table-container{
+    .table-container__table{
+      .#{$block}{
+        .#{$block}__row{
+          td{
+            &.mat-cell{
+              &:first-of-type{
+                border-right: 1px solid $color-grey-200;
+              }
+              &:last-of-type{
+                border-left: 1px solid $color-grey-200;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

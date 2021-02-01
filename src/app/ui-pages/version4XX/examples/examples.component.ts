@@ -238,6 +238,39 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+  arrayOfData =  [{
+    "name": "Ynez con texo muy largo de ejemplo",
+    "surname": "Stout con texo muy largo de ejemplo",
+    "username": "ystout0",
+    "avatar": "https://robohash.org/estipsamfacere.jpg?size=50x50&set=set1",
+    "date": "08/04/2020"
+  }, {
+    "name": "Camila",
+    "surname": "Skirving",
+    "username": "cskirving5",
+    "avatar": "https://robohash.org/eligendieteaque.jpg?size=50x50&set=set1",
+    "date": "14/06/2020"
+  }, {
+    "name": "Hastings",
+    "surname": "Dunbavin",
+    "username": "hdunbavin6",
+    "avatar": "https://robohash.org/fugaaliquidreprehenderit.jpg?size=50x50&set=set1",
+    "date": "16/04/2020"
+  }, {
+    "name": "Valentine",
+    "surname": "Vader",
+    "username": "vvader2q",
+    "avatar": "https://robohash.org/consequaturcupiditatererum.jpg?size=50x50&set=set1",
+    "date": "11/07/2020"
+  }, {
+    "name": "Tracey",
+    "surname": "Berrygun",
+    "username": "tberrygun2r",
+    "avatar": "https://robohash.org/nequequasaut.jpg?size=50x50&set=set1",
+    "date": "19/02/2020"
+  }];
+
+  tableData = [];
 
 	//constructor(private tabsHeaderService: TabsHeaderService) { }
 
@@ -246,7 +279,15 @@ export class ExamplesComponent implements OnInit {
 	apps: any[];
 
 	ngOnInit() {
-		this.apps = this.dashboardService.getDashboardApps();
+    this.apps = this.dashboardService.getDashboardApps();
+
+    var arrColorLabel = ['black','blue','orange','lightblue','red', undefined];
+    this.tableData = this.arrayOfData.map(function(item) {
+      var state_color = arrColorLabel[Math.floor(Math.random() * arrColorLabel.length)];
+      item['state_color'] = state_color;
+      item['state_label'] = 'state';
+      return item;
+    });
 	}
 
 	setPath(value: string) {
