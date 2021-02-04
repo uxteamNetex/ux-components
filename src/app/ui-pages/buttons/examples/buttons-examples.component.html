@@ -112,8 +112,11 @@
         <ntx-fab-speed-dial-button [color]="'primary'"></ntx-fab-speed-dial-button>
       </div>
       <div *ngIf="type.label==='link'">
-        <ntx-link-button>acción</ntx-link-button>
-        <ntx-link-button [rLink]="'path/to/route'" showIcon="true">acción</ntx-link-button>
+        <ntx-link-button iconLeft="icon-paperclip">action</ntx-link-button>
+        <span class="utils--margin-left-24"></span>
+        <ntx-link-button iconRight="icon-paperclip">action</ntx-link-button>
+        <span class="utils--margin-left-24"></span>
+        <ntx-link-button [rLink]="'path/to/route'">another action</ntx-link-button>
       </div>
     </ntx-card-simple>
 

@@ -11,6 +11,10 @@
       <img class="utils--vertical-align" src="{{chip.avatar}}" alt="">
     </div>
 
+    <mat-icon
+        *ngIf="chip.icon" 
+        class="chip-container__chip-icon icon-netex {{chip.icon}} utils--text-24"></mat-icon>
+
     <span class="chip-container__chip-text" matTooltip="{{chip.label}}">{{chip.label}}</span>
 
     <button mat-icon-button

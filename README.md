@@ -43,9 +43,10 @@ Archivos modificados:
 - Modificación componente *ntx-raised-round-button* parametrizando el icono y texto y añadiendo un nuevo color.
 - Creación del componente *ntx-rectangular-button* parametrizando el icono y texto.
 - Cambios en el css del componente *ntx-stroked-toggle-button*.
+- Modificación componente *ntx-link-button* parametrizando el icono y su posición.
 
 **Chips**<br/>
-- Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen.
+- Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen o un icono.
 - Cambios en el css y ts del componente *ntx-basic-image-chip*.
 
 **Drag and Drop**<br/>
@@ -68,6 +69,8 @@ Cambios en el componente ntx-label (*ntx-label*):
 
 **Menus**<br/>
 - Nuevo componente menú de avatares (*ntx-menu-avatar*)
+- Modificación componente *ntx-menu-options-simple* parametrizando el icono.
+- Modificación componente *ntx-menu-options* parametrizando el icono.
 
 **Search box with filter panel<br/>**
 - Modificación del componente search box con panel de filtros para poder mostrar condicionalmente el componente *ntx-menu-avatar*

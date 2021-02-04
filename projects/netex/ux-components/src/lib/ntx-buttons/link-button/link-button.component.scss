@@ -2,6 +2,10 @@
 
 a.link-button {
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    vertical-align: middle;
     &:link,&:visited,&:active {
         color: $color-primary;
     }

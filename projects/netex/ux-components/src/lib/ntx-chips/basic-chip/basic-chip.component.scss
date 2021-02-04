@@ -41,6 +41,9 @@ $block: "chip-container";
           height: 100%;
         }
       }
+      .#{$block}__chip-icon{
+        margin-left: -10px;
+      }
       .#{$block}__chip-button{
         color: $color-white;
         height: 24px;

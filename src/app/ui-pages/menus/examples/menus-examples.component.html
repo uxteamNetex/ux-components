@@ -19,13 +19,20 @@
     <ntx-card-simple
       title="{{'Simple options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options-simple>' }}">
-        <ntx-menu-options-simple></ntx-menu-options-simple>
+        <div style="display:flex">
+          <ntx-menu-options-simple></ntx-menu-options-simple>
+          <ntx-menu-options-simple icon="icon-paperclip"></ntx-menu-options-simple>
+          <ntx-menu-options-simple icon="icon-editor-quiz"></ntx-menu-options-simple>
+        </div>
     </ntx-card-simple>
 
     <ntx-card-simple
       title="{{'Options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options>' }}">
-        <ntx-menu-options></ntx-menu-options>
+        <div style="display:flex">
+          <ntx-menu-options></ntx-menu-options>
+          <ntx-menu-options icon="icon-paperclip"></ntx-menu-options>
+        </div>
     </ntx-card-simple>
 
     <ntx-card-simple

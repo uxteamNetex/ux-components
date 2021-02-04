@@ -9,7 +9,8 @@ import { Input } from '@angular/core';
 export class LinkButtonComponent implements OnInit {
 
 	@Input() rLink: string;
-	@Input() showIcon: boolean;
+	@Input() iconLeft: string;
+	@Input() iconRight: string;
 	@Output() clickLink = new EventEmitter();
 
 	constructor() { }

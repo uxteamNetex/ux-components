@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'ntx-menu-options',
@@ -8,9 +8,14 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class MenuOptionsComponent implements OnInit {
 
+  private _defaultIcon = 'icon-more-options';
+
+	@Input() icon: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.icon = this.icon ? this.icon : this._defaultIcon;
   }
 
 }

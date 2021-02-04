@@ -5,7 +5,7 @@
     color="accent" 
     [matMenuTriggerFor]="menuOptions"
     (click)="$event.stopPropagation()">
-      <mat-icon class="icon-netex icon-more-options"></mat-icon>
+      <mat-icon class="icon-netex {{icon}}"></mat-icon>
   </button>
   
   <mat-menu #menuOptions="matMenu" class="ntx-menu-options-panel" [overlapTrigger]="false">

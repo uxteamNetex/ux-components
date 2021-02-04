@@ -5,6 +5,7 @@ import { MatChipInputEvent } from '@angular/material';
 export interface Chip {
   label: string;
   avatar: string;
+  icon: string;
 }
 
 @Component({
@@ -20,15 +21,22 @@ export class BasicChipComponent implements OnInit {
 
   chips: Chip[] = [
     {	label: 'Mary Joe Wright',
-			avatar: ''
+      avatar: '',
+      icon: ''
+		},
+    {	label: 'Mary Joe Wright',
+      avatar: '',
+      icon: 'icon-paperclip'
 		},
 		{
 			label: 'John Doe',
-			avatar: 'assets/images/perfil.jpg'
+			avatar: 'assets/images/perfil.jpg',
+      icon: ''
 		},
 		{
 			label: 'Example chip with a very long name',
-			avatar: 'assets/images/user_female_01.jpg'
+			avatar: 'assets/images/user_female_01.jpg',
+      icon: ''
 		}
   ];
 
