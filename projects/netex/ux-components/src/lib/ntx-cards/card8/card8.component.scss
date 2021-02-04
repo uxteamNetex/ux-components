@@ -6,6 +6,7 @@ $block: "card8";
   box-sizing: border-box;
   box-shadow: $shadow;
   padding: 20px 16px 16px;
+  min-height: 104px;
   &:hover{
     box-shadow: $shadow-hover;
   }
