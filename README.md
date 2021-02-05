@@ -23,6 +23,7 @@ Archivos modificados:
 - ux-components/src/assets/fonts/icons/netex.ttf
 - ux-components/src/assets/fonts/icons/netex.woff
 - ux-components/src/assets/resources/icons.json
+- ux-components/src/styles.scss
 - ux-components/src/styles/fonts/styles.scss
 - ux-components/src/styles/fonts/variables.scss
 - ux-components/projects/netex/ux-components/src/styles/fonts/styles.scss
@@ -62,6 +63,7 @@ Cambios en el componente ntx-label (*ntx-label*):
 - Nuevo componente *ntx-list7*
 
 **Form controls**<br/>
+- Modificación en el componente *ntx-searchbox-filter-panel* para añadirle botón de limpiar input y cambiar color de texto.
 - Modificación componente *ntx-form-radiobutton* parametrizando el color, posición y texto.
 - Cambios en el css del componente *ntx-form-checkbox*.
 - Cambios en el css del componente *ntx-form-radiobutton*.

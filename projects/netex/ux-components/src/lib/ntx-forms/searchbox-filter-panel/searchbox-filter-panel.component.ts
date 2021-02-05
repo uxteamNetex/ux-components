@@ -8,6 +8,8 @@ import { MatDialogRef, MatDialog } from '@angular/material';
 })
 export class SearchboxFilterPanelComponent implements OnInit {
 
+  value = '';
+
   constructor() { }
 
   show: boolean = false;

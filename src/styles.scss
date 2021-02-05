@@ -90,6 +90,7 @@
       .documentation-pre {
         background-color: $color-grey-200;
         font-size: $font-size-12;
+        white-space: break-spaces;
       }
     }
     /* unvisited link */
@@ -135,14 +136,14 @@
     position: absolute;
     right: 25px;
     top: 74px;
-  } 
+  }
   &-critical-error {
     background-color: $color-error;
     button {
       color: $color-white;
     }
   }
-  &-error { 
+  &-error {
     background-color: $color-warning;
   }
   &-success {

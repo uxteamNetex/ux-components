@@ -490,7 +490,30 @@ $block: "searchbox-filter-panel";
     height: 24px;
     width: 24px;
   }
+  `;
+  code21 = `
+  ...
 
+  <input type="search" matInput placeholder="Buscar notificaci&oacute;n" class="searchbox-filter-panel__input utils--text-16 utils--text-grey-800" [(ngModel)]="value">
+
+  <button class="close utils--margin-right-12" mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <mat-icon class="icon-netex icon-cross utils--text-grey-600"></mat-icon>
+  </button>
+
+  ...
+  }
+  `;
+  code22 = `
+  ...
+
+  export class SearchboxFilterPanelComponent implements OnInit {
+
+  value = '';
+
+  constructor() { }
+
+  ...
+  }
   `;
 
   ngOnInit() {
