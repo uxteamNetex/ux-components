@@ -21,6 +21,9 @@
             "className": "icon-arrow-right"
         },
         {
+            "className": "icon-arrow-right-solid"
+        },
+        {
             "className": "icon-arrow-top"
         },
         {
@@ -103,6 +106,9 @@
         },
         {
             "className": "icon-chat-bubble"
+        },
+        {
+            "className": "icon-chat-bubble-question"
         },
         {
             "className": "icon-chat-bubble-smile"
@@ -825,6 +831,12 @@
             "className": "icon-reply"
         },
         {
+            "className": "icon-reply-solid"
+        },
+        {
+            "className": "icon-reply-all-solid"
+        },
+        {
             "className": "icon-reports"
         },
         {
@@ -852,7 +864,13 @@
             "className": "icon-search"
         },
         {
+            "className": "icon-see-more-dots"
+        },
+        {
             "className": "icon-send"
+        },
+        {
+            "className": "icon-send-solid"
         },
         {
             "className": "icon-send-off"

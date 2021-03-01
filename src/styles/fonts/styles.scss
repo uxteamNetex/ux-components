@@ -45,6 +45,36 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right-solid {
+  &:before {
+    content: $icon-arrow-right-solid;
+  }
+}
+.icon-chat-bubble-question {
+  &:before {
+    content: $icon-chat-bubble-question;
+  }
+}
+.icon-reply-all-solid {
+  &:before {
+    content: $icon-reply-all-solid;
+  }
+}
+.icon-reply-solid {
+  &:before {
+    content: $icon-reply-solid;
+  }
+}
+.icon-see-more-dots {
+  &:before {
+    content: $icon-see-more-dots;
+  }
+}
+.icon-send-solid {
+  &:before {
+    content: $icon-send-solid;
+  }
+}
 .icon-backpack {
   &:before {
     content: $icon-backpack;

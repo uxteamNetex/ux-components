@@ -30,7 +30,13 @@ Archivos modificados:
 - ux-components/projects/netex/ux-components/src/styles/fonts/variables.scss
 
 **New icons**<br/>
+- icon-arrow-right-solid
 - icon-backpack
+- icon-chat-bubble-question
+- icon-reply-all-solid
+- icon-reply-solid
+- icon-see-more-dots
+- icon-send-solid
 
 **Tables**<br/>
 - Cambios en el html y css del componente *ntx-basic-table*.
