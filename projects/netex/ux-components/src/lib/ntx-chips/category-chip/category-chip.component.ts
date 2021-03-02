@@ -3,38 +3,35 @@ import { Input } from '@angular/core';
 import { MatChipInputEvent } from '@angular/material';
 
 export interface Chip {
-  label: string;
-  name: string;
+	label: string;
+	name: string;
+	removable?: boolean;
+	color: string;
+	disabled: boolean;
 }
 
 @Component({
-  selector: 'ntx-category-chip',
-  templateUrl: './category-chip.component.html',
-  styleUrls: ['./category-chip.component.scss']
+	selector: 'ntx-category-chip',
+	templateUrl: './category-chip.component.html',
+	styleUrls: ['./category-chip.component.scss']
 })
 export class CategoryChipComponent implements OnInit {
 
-  removable = true;
-  @Input() color: string;
-  @Input() disabled: string;
+	@Input() color: string;
+	@Input() disabled: boolean;
+	@Input() chips: Chip[];
 
-  chips: Chip[] = [
-    {label: 'Department', name: 'UX'},
-    {label: 'Job', name: 'Designer'},
-    {label: 'Department', name: 'Example chip with a very long name'},
-  ];
+	remove(chip: Chip): void {
+		const index = this.chips.indexOf(chip);
 
-  remove(chip: Chip): void {
-    const index = this.chips.indexOf(chip);
+		if (index >= 0) {
+			this.chips.splice(index, 1);
+		}
+	}
 
-    if (index >= 0) {
-      this.chips.splice(index, 1);
-    }
-  }
+	constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }

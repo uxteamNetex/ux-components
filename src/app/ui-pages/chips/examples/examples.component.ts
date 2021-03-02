@@ -56,6 +56,12 @@ const CHIP = {
 	]
 };
 
+export interface Chip {
+	label: string;
+	name: string;
+	removable?: boolean;
+}
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -64,11 +70,59 @@ const CHIP = {
 })
 export class ExamplesComponent implements OnInit {
 
+	constructor() { }
+
 	item = ITEM;
 	chip = CHIP;
 
-	 chips: any[] = [
-		{	label: 'Mary Joe Wright',
+	chips2: any[] = [
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: false
+		},
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: true
+		},
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: 'true',
+			color: 'primary',
+			disabled: true
+		},
+		{
+			label: 'Job',
+			name: 'Designer',
+			removable: '',
+			color: 'accent',
+			disabled: false
+		},
+		{
+			label: 'Job',
+			name: 'Designer',
+			removable: '',
+			color: 'accent',
+			disabled: true
+		},
+		{
+			label: 'Department',
+			name: 'Example chip with a very long name',
+			removable: 'true',
+			color: 'accent',
+			disabled: false
+		},
+	];
+
+	chips: any[] = [
+		{
+			label: 'Mary Joe Wright',
 			avatar: ''
 		},
 		{
@@ -81,7 +135,6 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
-	constructor() { }
 
 	ngOnInit() {
 	}

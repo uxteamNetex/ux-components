@@ -53,6 +53,12 @@ const CHIP = {
 	]
 };
 
+export interface Chip {
+	label: string;
+	name: string;
+	removable?: boolean;
+}
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -63,6 +69,51 @@ export class ExamplesComponent implements OnInit {
 
 	data = TWO_LINES_LIST_WITH_AVATAR;
 	chip = CHIP;
+
+	chips2: any[] = [
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: false
+		},
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: true
+		},
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: 'true',
+			color: 'primary',
+			disabled: true
+		},
+		{
+			label: 'Job',
+			name: 'Designer',
+			removable: '',
+			color: 'accent',
+			disabled: false
+		},
+		{
+			label: 'Job',
+			name: 'Designer',
+			removable: '',
+			color: 'accent',
+			disabled: true
+		},
+		{
+			label: 'Department',
+			name: 'Example chip with a very long name',
+			removable: 'true',
+			color: 'accent',
+			disabled: false
+		},
+	];
 
 	list3 = [
 		{

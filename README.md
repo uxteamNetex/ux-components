@@ -55,6 +55,7 @@ Archivos modificados:
 **Chips**<br/>
 - Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen o un icono.
 - Cambios en el css y ts del componente *ntx-basic-image-chip*.
+- Cambios en el html, css y ts del componente *ntx-category-chip*.
 
 **Drag and Drop**<br/>
 Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para permitir adjuntar varios archivos y mostrar scroll si es necesario.
