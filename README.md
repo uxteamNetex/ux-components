@@ -61,8 +61,8 @@ Archivos modificados:
 Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para permitir adjuntar varios archivos y mostrar scroll si es necesario.
 
 **Labels**<br/>
-Cambios en el componente ntx-label (*ntx-label*):
-- Se añaden nuevos colores a la label.
+- Nuevo componente *ntx-label-round*
+- Cambios en el componente ntx-label *ntx-label*: Se añaden nuevos colores a la label.
 
 **Lists**<br/>
 - Modificación del componente *ntx-list5* parametrizando que pueda llevar una imagen.

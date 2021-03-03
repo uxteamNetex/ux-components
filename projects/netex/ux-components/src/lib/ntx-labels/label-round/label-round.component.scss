@@ -1,0 +1,27 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "label-round";
+
+.#{$block}{
+  background-color: $color-label-grey; // default color
+  border-radius: 50px;
+  box-shadow: none;
+  color: $color-white;
+  display: inline-block;
+  font-family: LatoMedium;
+  font-size: $font-size-10;
+  margin: 0 4px;
+  max-width: 180px;
+  padding: 4px 7px;
+  text-transform: uppercase;
+  width: fit-content;
+  .#{$block}__text{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    max-height: 16px;
+    overflow: hidden;
+    word-break: break-all;
+  }
+}

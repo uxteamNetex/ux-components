@@ -3,21 +3,22 @@
 
     <ntx-card-simple title="{{'Label' | uppercase }}"
                       subtitle="{{ '<ntx-label>' }}">
-
       <ntx-label text="justificada"></ntx-label>
       <ntx-label text="bloqueado" color="black"></ntx-label>
       <ntx-label text="inactivo" color="orange"></ntx-label>
       <ntx-label text="ausente" color="red"></ntx-label>
       <ntx-label text="presente" color="blue"></ntx-label>
       <ntx-label text="retraso" color="lightblue"></ntx-label>
-      
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Label error' | uppercase }}"
                       subtitle="{{ '<ntx-label-error>' }}">
-
       <ntx-label-error text="2 alerts"></ntx-label-error>
+    </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Label round' | uppercase }}"
+                      subtitle="{{ '<ntx-label-round>' }}">
+      <ntx-label-round [labels]=labelRound></ntx-label-round>
     </ntx-card-simple>
 
   </div>
