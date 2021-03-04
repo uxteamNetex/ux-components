@@ -53,6 +53,111 @@ const CHIP = {
 	]
 };
 
+const STROKEDICONBUTTON = {
+	actions: [
+		{
+			label: 'Link',
+			color: 'primary',
+			icon: 'icon-paperclip',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Siguiente',
+			color: 'primary',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Anterior',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			color: 'white',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			color: 'white',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		}
+	]
+};
+const TEXTICONBUTTON = {
+	actions: [
+		{
+			label: 'Link',
+			color: 'primary',
+			icon: 'icon-paperclip',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Siguiente',
+			color: 'primary',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Anterior',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			color: 'white',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			color: 'white',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		}
+	]
+};
+
 export interface Chip {
 	label: string;
 	name: string;
@@ -75,6 +180,8 @@ export class ExamplesComponent implements OnInit {
 
 	data = TWO_LINES_LIST_WITH_AVATAR;
 	chip = CHIP;
+	strokedIconButton = STROKEDICONBUTTON;
+	textIconButton = TEXTICONBUTTON;
 
 	labelRound: LabelRound[] = [
 		{

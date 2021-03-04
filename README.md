@@ -51,7 +51,9 @@ Archivos modificados:
 - Creación del componente *ntx-rectangular-button* parametrizando el icono y texto.
 - Cambios en el css del componente *ntx-stroked-toggle-button*.
 - Modificación componente *ntx-link-button* parametrizando el icono y su posición.
-
+- Modificación componente *ntx-stroked-icon-button* parametrizando el icono y su posición.
+- Modificación componente *ntx-text-icon-button* parametrizando el icono y su posición.
+- Modificación componente *ntx-text-button* parametrizando el contenido.
 **Chips**<br/>
 - Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen o un icono.
 - Cambios en el css y ts del componente *ntx-basic-image-chip*.

@@ -4,18 +4,13 @@
     <ntx-card-simple title="{{'Stroked buttons' | uppercase }}"
                       subtitle="{{ '<ntx-stroked-button>' }}"
                       class="white-content">
-      <ntx-stroked-button [item3] ="item3"></ntx-stroked-button>
+      <ntx-stroked-button [item3] ="strokedButton"></ntx-stroked-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon stroked buttons' | uppercase }}"
                       subtitle="{{ '<ntx-stroked-icon-button>' }}"
                       class="white-content">
-      <ntx-stroked-icon-button [color]="'primary'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'primary'" [disabled]="'true'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'accent'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'accent'" [disabled]="'true'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'white'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'white'" [disabled]="'true'"></ntx-stroked-icon-button>
+      <ntx-stroked-icon-button [item] ="strokedIconButton"></ntx-stroked-icon-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon toggle buttons' | uppercase }}"
@@ -26,23 +21,18 @@
     <ntx-card-simple title="{{'Text buttons' | uppercase }}"
                       subtitle="{{ '<ntx-text-button>' }}"
                       class="white-content">
-        <ntx-text-button [color]="'primary'"></ntx-text-button>
-        <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
-        <ntx-text-button [color]="'accent'"></ntx-text-button>
-        <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
-        <ntx-text-button [color]="'white'"></ntx-text-button>
-        <ntx-text-button [color]="'white'" [disabled]="'true'"></ntx-text-button>
+      <ntx-text-button [color]="'primary'">Botón</ntx-text-button>
+      <ntx-text-button [color]="'primary'" [disabled]="'true'">Link</ntx-text-button>
+      <ntx-text-button [color]="'accent'">Acción</ntx-text-button>
+      <ntx-text-button [color]="'accent'" [disabled]="'true'">Acción</ntx-text-button>
+      <ntx-text-button [color]="'white'">Acción</ntx-text-button>
+      <ntx-text-button [color]="'white'" [disabled]="'true'">Acción</ntx-text-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon text buttons' | uppercase }}"
                       subtitle="{{ '<ntx-text-icon-button>' }}"
                       class="white-content">
-        <ntx-text-icon-button [color]="'primary'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'primary'" [disabled]="'true'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'accent'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'accent'" [disabled]="'true'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'white'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'white'" [disabled]="'true'"></ntx-text-icon-button>
+        <ntx-text-icon-button [item] ="textIconButton"></ntx-text-icon-button>
     </ntx-card-simple>
 
 

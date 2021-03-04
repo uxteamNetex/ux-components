@@ -48,7 +48,7 @@ const ITEM2 = {
 		}
 	]
 };
-const ITEM3 = {
+const STROKEDBUTTON = {
 	actions: [
 		{
 			label: 'Acción',
@@ -94,6 +94,110 @@ const ITEM3 = {
 		}
 	]
 };
+const STROKEDICONBUTTON = {
+	actions: [
+		{
+			label: 'Link',
+			color: 'primary',
+			icon: 'icon-paperclip',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Siguiente',
+			color: 'primary',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Anterior',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			color: 'white',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			color: 'white',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		}
+	]
+};
+const TEXTICONBUTTON = {
+	actions: [
+		{
+			label: 'Link',
+			color: 'primary',
+			icon: 'icon-paperclip',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Siguiente',
+			color: 'primary',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Anterior',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Acción',
+			color: 'white',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Acción',
+			color: 'white',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		}
+	]
+};
 
 @Component({
 	selector: 'app-buttons-examples',
@@ -104,7 +208,9 @@ const ITEM3 = {
 export class ButtonsExamplesComponent implements OnInit {
 
 	item2 = ITEM2;
-	item3 = ITEM3;
+	strokedButton = STROKEDBUTTON;
+	strokedIconButton = STROKEDICONBUTTON;
+	textIconButton = TEXTICONBUTTON;
 
 	buttonTypes: ButtonType[];
 
