@@ -105,6 +105,51 @@
         </h2>
 
         <div class="whatsnew__content-block">
+          <h4>Square button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-square-button</span> component and there have been changes in the html and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-square-button text = "Add" iconName = "icon-plus-circle"></ntx-square-button>
+          <ntx-square-button text = "Like" iconName = "icon-heart"></ntx-square-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Mini fab button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-mini-fab-button</span> component and there have been changes in the html and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Fab button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-fab-button</span> component and there have been changes in the html and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-fab-button>
+          <ntx-fab-button text = "Like" iconName = "icon-heart" [color]="'primary'" [disabled]="'true'"></ntx-fab-button>
+          <ntx-fab-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-fab-button>
+          <ntx-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Raised icon button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-raised-icon-button</span> component and there have been changes in the html, css and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-raised-icon-button [item] ="raisedIconButton"></ntx-raised-icon-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Raised button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-raised-button</span> component and there have been changes in the html and css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-raised-button [color]="'primary'">Botón</ntx-raised-button>
+          <ntx-raised-button [color]="'primary'" [disabled]="'true'">Link</ntx-raised-button>
+          <ntx-raised-button [color]="'accent'">Acción</ntx-raised-button>
+          <ntx-raised-button [color]="'accent'" [disabled]="'true'">Acción</ntx-raised-button>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>Text button component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-text-button</span> component and there have been changes in the html and css file. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
@@ -300,10 +345,10 @@
           <h4>Icon button component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-icon-button</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
-          <ntx-icon-button iconName = "icon-chat-bubble" [color]="'primary'"></ntx-icon-button>
-          <ntx-icon-button iconName = "icon-editor-linker-option" [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
-          <ntx-icon-button iconName = "icon-download"></ntx-icon-button>
-          <ntx-icon-button iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button text = "Let's talk" iconName = "icon-chat-bubble" [color]="'primary'"></ntx-icon-button>
+          <ntx-icon-button text = "Link" iconName = "icon-editor-linker-option" [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-icon-button>
+          <ntx-icon-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
         </div>
 
         <div class="whatsnew__content-block">

@@ -1,4 +1,8 @@
-<button mat-raised-button class="raised-icon-button" [color]="color" [disabled]="disabled">
-  <mat-icon class="icon-netex icon-chevron-left raised-icon-button__icon"></mat-icon>
-  Acción
+<button mat-raised-button class="mat-raised-button raised-icon-button {{action.color}} {{action.disabled}}"
+        *ngFor="let action of item.actions">
+  <mat-icon *ngIf="action.showIconLeft"
+            class="icon-netex {{action.icon}}"></mat-icon>
+  <span class="raised-icon-button__text" matTooltip="{{action.label}}">{{action.label}}</span>
+  <mat-icon *ngIf="action.showIconRight"
+            class="icon-netex {{action.icon}}"></mat-icon>
 </button>

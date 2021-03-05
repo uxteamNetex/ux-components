@@ -48,46 +48,83 @@ const ITEM2 = {
 		}
 	]
 };
+
+const RAISEDICONBUTTON = {
+	actions: [
+		{
+			label: 'Link',
+			color: 'primary',
+			icon: 'icon-paperclip',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Next',
+			color: 'primary',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Previous',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Action',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: 'disabled'
+		}
+	]
+};
 const STROKEDBUTTON = {
 	actions: [
 		{
-			label: 'Acción',
+			label: 'Link',
 			state: 'primary',
 			active: '',
 			disabled: ''
 		},
 		{
-			label: 'Acción',
+			label: 'Button',
 			state: 'primary',
 			active: '',
 			disabled: 'disabled'
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			state: 'accent',
 			active: '',
 			disabled: ''
 		},
 		{
-			label: 'Acción active',
+			label: 'Active action',
 			state: 'accent',
 			active: 'active',
 			disabled: ''
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			state: 'accent',
 			active: '',
 			disabled: 'disabled'
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			state: 'white',
 			active: '',
 			disabled: ''
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			state: 'white',
 			active: '',
 			disabled: 'disabled'
@@ -105,7 +142,7 @@ const STROKEDICONBUTTON = {
 			disabled: ''
 		},
 		{
-			label: 'Siguiente',
+			label: 'Next',
 			color: 'primary',
 			icon: 'icon-chevron-right',
 			showIconLeft: false,
@@ -113,7 +150,7 @@ const STROKEDICONBUTTON = {
 			disabled: 'disabled'
 		},
 		{
-			label: 'Anterior',
+			label: 'Previous',
 			color: 'accent',
 			icon: 'icon-chevron-left',
 			showIconLeft: true,
@@ -121,7 +158,7 @@ const STROKEDICONBUTTON = {
 			disabled: ''
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			color: 'accent',
 			icon: 'icon-chevron-left',
 			showIconLeft: true,
@@ -129,7 +166,7 @@ const STROKEDICONBUTTON = {
 			disabled: 'disabled'
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			color: 'white',
 			icon: 'icon-chevron-left',
 			showIconLeft: true,
@@ -137,7 +174,7 @@ const STROKEDICONBUTTON = {
 			disabled: ''
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			color: 'white',
 			icon: 'icon-chevron-right',
 			showIconLeft: false,
@@ -157,7 +194,7 @@ const TEXTICONBUTTON = {
 			disabled: ''
 		},
 		{
-			label: 'Siguiente',
+			label: 'Next',
 			color: 'primary',
 			icon: 'icon-chevron-right',
 			showIconLeft: false,
@@ -165,7 +202,7 @@ const TEXTICONBUTTON = {
 			disabled: 'disabled'
 		},
 		{
-			label: 'Anterior',
+			label: 'Previous',
 			color: 'accent',
 			icon: 'icon-chevron-left',
 			showIconLeft: true,
@@ -173,7 +210,7 @@ const TEXTICONBUTTON = {
 			disabled: ''
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			color: 'accent',
 			icon: 'icon-chevron-left',
 			showIconLeft: true,
@@ -181,7 +218,7 @@ const TEXTICONBUTTON = {
 			disabled: 'disabled'
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			color: 'white',
 			icon: 'icon-chevron-left',
 			showIconLeft: true,
@@ -189,7 +226,7 @@ const TEXTICONBUTTON = {
 			disabled: ''
 		},
 		{
-			label: 'Acción',
+			label: 'Action',
 			color: 'white',
 			icon: 'icon-chevron-right',
 			showIconLeft: false,
@@ -208,6 +245,7 @@ const TEXTICONBUTTON = {
 export class ButtonsExamplesComponent implements OnInit {
 
 	item2 = ITEM2;
+	raisedIconButton = RAISEDICONBUTTON;
 	strokedButton = STROKEDBUTTON;
 	strokedIconButton = STROKEDICONBUTTON;
 	textIconButton = TEXTICONBUTTON;

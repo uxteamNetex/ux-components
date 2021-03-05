@@ -4,34 +4,34 @@
   &.raised-icon-button{
     border-radius: 4px;
     box-shadow: none;
+    color: $color-white;
     font-family: Lato;
     margin: 0 4px;
-    padding: 0 16px 0 12px;
+    padding: 0 12px;
     text-transform: uppercase;
-    &.mat-primary{
+    &.primary{
+      background-color: $color-primary;
+      color: $color-white;
       &:hover{
         background-color: $color-primary-hover;
       }
-      &[disabled]{
-        background-color: $color-primary;
-        color: $color-white;
-      }
     }
-    &.mat-accent{
+    &.accent{
+      background-color: $color-accent;
+      color: $color-white;
       &:hover{
         background-color: $color-accent-hover;
       }
-      &[disabled]{
-        background-color: $color-accent;
-        color: $color-white;
-      }
     }
-    &[disabled]{
+    &.disabled{
       cursor: not-allowed;
       opacity: 0.4;
+      &:hover{
+        background-color: transparent;
+      }
     }
-    .raised-icon-button__icon{
-      margin-right: 4px;
+    .raised-icon-button__text{
+      margin: 0 4px;
     }
   }
 }

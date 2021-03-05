@@ -53,6 +53,42 @@ const CHIP = {
 	]
 };
 
+const RAISEDICONBUTTON = {
+	actions: [
+		{
+			label: 'Link',
+			color: 'primary',
+			icon: 'icon-paperclip',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Next',
+			color: 'primary',
+			icon: 'icon-chevron-right',
+			showIconLeft: false,
+			showIconRight: true,
+			disabled: 'disabled'
+		},
+		{
+			label: 'Previous',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: ''
+		},
+		{
+			label: 'Action',
+			color: 'accent',
+			icon: 'icon-chevron-left',
+			showIconLeft: true,
+			showIconRight: false,
+			disabled: 'disabled'
+		}
+	]
+};
 const STROKEDICONBUTTON = {
 	actions: [
 		{
@@ -180,6 +216,7 @@ export class ExamplesComponent implements OnInit {
 
 	data = TWO_LINES_LIST_WITH_AVATAR;
 	chip = CHIP;
+	raisedIconButton = RAISEDICONBUTTON;
 	strokedIconButton = STROKEDICONBUTTON;
 	textIconButton = TEXTICONBUTTON;
 

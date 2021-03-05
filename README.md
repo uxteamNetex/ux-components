@@ -54,6 +54,12 @@ Archivos modificados:
 - Modificación componente *ntx-stroked-icon-button* parametrizando el icono y su posición.
 - Modificación componente *ntx-text-icon-button* parametrizando el icono y su posición.
 - Modificación componente *ntx-text-button* parametrizando el contenido.
+- Modificación componente *ntx-raised-button* parametrizando el contenido.
+- Modificación componente *ntx-raised-icon-button* parametrizando el icono y su posición.
+- Modificación componente *ntx-fab-button* parametrizando el icono.
+- Modificación componente *ntx-mini-fab-button* parametrizando el icono.
+- Modificación componente *ntx-square-button* parametrizando el icono y el texto.
+
 **Chips**<br/>
 - Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen o un icono.
 - Cambios en el css y ts del componente *ntx-basic-image-chip*.

@@ -1,13 +1,13 @@
 <div class="ntx-menu-options">
-  <button 
-    mat-icon-button 
-    class="menu-options-button" 
-    color="accent" 
+  <button
+    mat-icon-button
+    class="menu-options-button"
+    color="accent"
     [matMenuTriggerFor]="menuOptions"
     (click)="$event.stopPropagation()">
       <mat-icon class="icon-netex {{icon}}"></mat-icon>
   </button>
-  
+
   <mat-menu #menuOptions="matMenu" class="ntx-menu-options-panel" [overlapTrigger]="false">
     <button mat-menu-item>
       <mat-icon class="icon-netex icon-heart"></mat-icon>
@@ -21,9 +21,9 @@
       <mat-icon class="icon-netex icon-heart"></mat-icon>
       <span>Option 3 con nombre muy largo para ver como se comporta</span>
     </button>
-  
+
     <mat-divider></mat-divider>
-  
+
     <button mat-menu-item>
       <mat-icon class="icon-netex icon-heart"></mat-icon>
       <span>Option 4</span>
@@ -36,11 +36,11 @@
       <mat-icon class="icon-netex icon-heart"></mat-icon>
       <span>Option 6</span>
     </button>
-  
+
     <mat-divider></mat-divider>
 
-    <ntx-raised-button [color]="'accent'"></ntx-raised-button>
-    <ntx-raised-button [color]="'accent'"></ntx-raised-button>
-  
+    <ntx-raised-button [color]="'accent'">Acción</ntx-raised-button>
+    <ntx-raised-button [color]="'accent'">Acción</ntx-raised-button>
+
   </mat-menu>
 </div>
