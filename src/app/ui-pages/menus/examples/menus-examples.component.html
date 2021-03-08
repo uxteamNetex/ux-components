@@ -10,9 +10,9 @@
     <ntx-card-simple
       title="{{'Menu from button with flat style' | uppercase }}"
       subtitle="{{ '<ntx-menu-button-flat>' }}">
-        <ntx-menu-button-flat 
-          [icon]="menuButtonFlatData.icon" 
-          [title]="menuButtonFlatData.title" 
+        <ntx-menu-button-flat
+          [icon]="menuButtonFlatData.icon"
+          [title]="menuButtonFlatData.title"
           [actions]="menuButtonFlatData.actions"></ntx-menu-button-flat>
     </ntx-card-simple>
 
@@ -20,9 +20,8 @@
       title="{{'Simple options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options-simple>' }}">
         <div style="display:flex">
-          <ntx-menu-options-simple></ntx-menu-options-simple>
-          <ntx-menu-options-simple icon="icon-paperclip"></ntx-menu-options-simple>
-          <ntx-menu-options-simple icon="icon-editor-quiz"></ntx-menu-options-simple>
+          <ntx-menu-options-simple [icon]="menuOptionsSimple.icon" [actions]="menuOptionsSimple.actions"></ntx-menu-options-simple>
+          <ntx-menu-options-simple [icon]="menuOptionsSimpleIcon.icon" [actions]="menuOptionsSimpleIcon.actions"></ntx-menu-options-simple>
         </div>
     </ntx-card-simple>
 
@@ -30,8 +29,8 @@
       title="{{'Options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options>' }}">
         <div style="display:flex">
-          <ntx-menu-options></ntx-menu-options>
-          <ntx-menu-options icon="icon-paperclip"></ntx-menu-options>
+          <ntx-menu-options [icon]="menuOptions.icon" [actions]="menuOptions.actions"></ntx-menu-options>
+          <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
         </div>
     </ntx-card-simple>
 
@@ -41,7 +40,7 @@
         <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
     </ntx-card-simple>
 
-    <ntx-card-simple 
+    <ntx-card-simple
       title="{{'Menu avatar' | uppercase }}"
       subtitle="{{ '<ntx-menu-avatar>' }}">
         <ntx-menu-avatar [options]="menuAvatarOptions"></ntx-menu-avatar>

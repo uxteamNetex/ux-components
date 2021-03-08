@@ -37,7 +37,6 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 		}
 	]
 };
-
 const CHIP = {
 	actions: [
 		{
@@ -52,7 +51,6 @@ const CHIP = {
 		}
 	]
 };
-
 const RAISEDICONBUTTON = {
 	actions: [
 		{
@@ -219,6 +217,55 @@ export class ExamplesComponent implements OnInit {
 	raisedIconButton = RAISEDICONBUTTON;
 	strokedIconButton = STROKEDICONBUTTON;
 	textIconButton = TEXTICONBUTTON;
+
+	menuOptionsSimple: {
+		icon: string;
+		actions: {
+			showIconOptions: boolean;
+			iconOptions: string;
+			title: string;
+			disabled: boolean;
+			click: () => void;
+		}[];
+	};
+	menuOptionsSimpleIcon: {
+		icon: string;
+		actions: {
+			showIconOptions: boolean;
+			iconOptions: string;
+			title: string;
+			disabled: boolean;
+			click: () => void;
+		}[];
+	};
+	menuOptions: {
+		icon: string;
+		actions: {
+			showmenuOptions: boolean;
+			showIconOptions: boolean;
+			showDivider: boolean;
+			showButtons: boolean;
+			iconOptions: string;
+			title: string;
+			buttonText: string;
+			disabled: boolean;
+			click: () => void;
+		}[];
+	};
+	menuOptionsAdvanced: {
+		icon: string;
+		actions: {
+			showmenuOptions: boolean;
+			showIconOptions: boolean;
+			showDivider: boolean;
+			showButtons: boolean;
+			iconOptions: string;
+			title: string;
+			buttonText: string;
+			disabled: boolean;
+			click: () => void;
+		}[];
+	};
 
 	labelRound: LabelRound[] = [
 		{
@@ -503,15 +550,210 @@ export class ExamplesComponent implements OnInit {
 	apps: any[];
 
 	ngOnInit() {
-    this.apps = this.dashboardService.getDashboardApps();
+		this.apps = this.dashboardService.getDashboardApps();
 
-    var arrColorLabel = ['black','blue','orange','lightblue','red', undefined];
-    this.tableData = this.arrayOfData.map(function(item) {
-      var state_color = arrColorLabel[Math.floor(Math.random() * arrColorLabel.length)];
-      item['state_color'] = state_color;
-      item['state_label'] = 'state';
-      return item;
-    });
+		this.menuOptionsSimple = {
+			icon: 'icon-more-options',
+			actions: [
+				{
+					disabled: false,
+					showIconOptions: false,
+					iconOptions: '',
+					title: 'Delete',
+					click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+				},
+				{
+					disabled: true,
+					showIconOptions: false,
+					iconOptions: '',
+					title: 'Edit',
+					click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+				}
+			]
+		};
+		this.menuOptionsSimpleIcon = {
+			icon: 'icon-heart',
+			actions: [
+				{
+					disabled: false,
+					showIconOptions: true,
+					iconOptions: 'icon-archive',
+					title: 'Archive',
+					click: function() { alert('You\'ve clicked in \'Archive\' option'); }
+				},
+				{
+					disabled: false,
+					showIconOptions: true,
+					iconOptions: 'icon-bell',
+					title: 'Notifications',
+					click: function() { alert('You\'ve clicked in \'Notifications\' option'); }
+				},
+				{
+					disabled: false,
+					showIconOptions: true,
+					iconOptions: 'icon-camera',
+					title: 'Take a picture',
+					click: function() { alert('You\'ve clicked in \'Take a picture\' option'); }
+				},
+				{
+					disabled: true,
+					showIconOptions: true,
+					iconOptions: 'icon-clock',
+					title: 'Select hour',
+					click: function() { alert('You\'ve clicked in \'Select hour\' option'); }
+				}
+			]
+		};
+		this.menuOptions = {
+			icon: 'icon-more-options',
+			actions: [
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: '',
+					title: 'Archive',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Archive\' option'); }
+				},
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: true,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: 'icon-bell',
+					title: 'Notifications',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Notifications\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: true,
+					showIconOptions: true,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: 'icon-pencil',
+					title: 'Edit',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+				}
+			]
+		};
+		this.menuOptionsAdvanced = {
+			icon: 'icon-plus-circle',
+			actions: [
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: '',
+					title: 'Archive',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Archive\' option'); }
+				},
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: '',
+					title: 'Notifications',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Notifications\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: true,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: '',
+					title: 'Edit',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: false,
+					showIconOptions: false,
+					showDivider: true,
+					showButtons: false,
+					iconOptions: '',
+					title: '',
+					buttonText: '',
+					click: function() {}
+				},
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: true,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: 'icon-trash',
+					title: 'Delete',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: true,
+					showIconOptions: true,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: 'icon-download',
+					title: 'Download',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Download\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: false,
+					showIconOptions: false,
+					showDivider: true,
+					showButtons: false,
+					iconOptions: '',
+					title: '',
+					buttonText: '',
+					click: function() {}
+				},
+				{
+					disabled: false,
+					showmenuOptions: false,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: true,
+					iconOptions: '',
+					title: '',
+					buttonText: 'Button',
+					click: function() {}
+				},
+				{
+					disabled: false,
+					showmenuOptions: false,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: true,
+					iconOptions: '',
+					title: '',
+					buttonText: 'Button two',
+					click: function() {}
+				},
+			]
+		};
+
+		let arrColorLabel = ['black','blue','orange','lightblue','red', undefined];
+		this.tableData = this.arrayOfData.map(function(item) {
+			let state_color = arrColorLabel[Math.floor(Math.random() * arrColorLabel.length)];
+			item['state_color'] = state_color;
+			item['state_label'] = 'state';
+			return item;
+		});
 	}
 
 	setPath(value: string) {

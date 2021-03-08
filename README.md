@@ -86,8 +86,8 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 
 **Menus**<br/>
 - Nuevo componente menú de avatares (*ntx-menu-avatar*)
-- Modificación componente *ntx-menu-options-simple* parametrizando el icono.
-- Modificación componente *ntx-menu-options* parametrizando el icono.
+- Modificación componente *ntx-menu-options-simple* parametrizando el icono y las opciones de menú.
+- Modificación componente *ntx-menu-options* parametrizando el icono y las opciones de menú.
 
 **Search box with filter panel<br/>**
 - Modificación del componente search box con panel de filtros para poder mostrar condicionalmente el componente *ntx-menu-avatar*

@@ -1,23 +1,19 @@
 <div class="ntx-menu-options-simple">
-  <button 
-    mat-icon-button 
-    class="menu-options-button" 
-    color="accent" 
+  <button
+    mat-icon-button
+    class="menu-options-button"
+    color="accent"
     [matMenuTriggerFor]="menuOptions"
     (click)="$event.stopPropagation()">
       <mat-icon class="icon-netex {{icon}}"></mat-icon>
   </button>
-  
+
   <mat-menu #menuOptions="matMenu" class="ntx-menu-options-simple-panel" [overlapTrigger]="false">
-    <button mat-menu-item>
-      <span>Option 1</span>
+
+    <button mat-menu-item (click)="item.click()" mat-menu-item [disabled]="item.disabled" *ngFor="let item of actions">
+      <mat-icon *ngIf="item.showIconOptions" class="mat-icon icon-netex {{item.iconOptions}}"></mat-icon>
+      <span matTooltip="{{item.title}}" class="utils--text-grey-700">{{item.title}}</span>
     </button>
-    <button mat-menu-item disabled>
-      <span>Option 2 Disabled</span>
-    </button>
-    <button mat-menu-item>
-      <span>Option 3</span>
-    </button>
-  
+
   </mat-menu>
 </div>

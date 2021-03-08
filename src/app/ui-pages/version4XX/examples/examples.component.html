@@ -203,11 +203,10 @@
         <div class="whatsnew__content-block">
           <h4>Menu options simple component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-menu-options-simple</span> component and there have been changes in the css file. You will have to update the new changes so that this component looks correctly.</p>
-          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('menu')">link</a></p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menu')">link</a></p>
           <div style="display:flex">
-            <ntx-menu-options-simple></ntx-menu-options-simple>
-            <ntx-menu-options-simple icon="icon-paperclip"></ntx-menu-options-simple>
-            <ntx-menu-options-simple icon="icon-editor-quiz"></ntx-menu-options-simple>
+            <ntx-menu-options-simple [icon]="menuOptionsSimple.icon" [actions]="menuOptionsSimple.actions"></ntx-menu-options-simple>
+            <ntx-menu-options-simple [icon]="menuOptionsSimpleIcon.icon" [actions]="menuOptionsSimpleIcon.actions"></ntx-menu-options-simple>
           </div>
         </div>
 
@@ -216,8 +215,8 @@
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-menu-options</span> component and there have been changes in the css file. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('menu')">link</a></p>
           <div style="display:flex">
-            <ntx-menu-options></ntx-menu-options>
-            <ntx-menu-options icon="icon-paperclip"></ntx-menu-options>
+            <ntx-menu-options [icon]="menuOptions.icon" [actions]="menuOptions.actions"></ntx-menu-options>
+            <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
           </div>
         </div>
 
