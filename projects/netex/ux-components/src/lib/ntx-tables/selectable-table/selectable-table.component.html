@@ -76,7 +76,7 @@
         <ng-container matColumnDef="options" stickyEnd>
           <mat-header-cell *matHeaderCellDef mat-sort-header> </mat-header-cell>
           <mat-cell *matCellDef="let element">
-            <ntx-menu-options></ntx-menu-options>
+            <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
           </mat-cell>
         </ng-container>
 

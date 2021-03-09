@@ -1,7 +1,5 @@
 import { SelectionModel } from '@angular/cdk/collections';
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ViewEncapsulation } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ViewEncapsulation } from '@angular/core';
 import { MatPaginator, MatSort, MatSortable, MatTableDataSource, PageEvent } from '@angular/material';
 
 export interface PeriodicElement {
@@ -31,8 +29,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 	{isSeen:true, avatar: 'assets/images/perfil.jpg', name: 'Element name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium', icon: 'icon-warning-solid', iconColor: 'utils--text-warning', project: 'Project name lorem ipsum dolor sit amet consectetur adipiscing elit quam risus pretium',  type: 'type name', modification: '29/11/2018'},
 ];
 
-
-
 @Component({
 	selector: 'ntx-selectable-table',
 	templateUrl: './selectable-table.component.html',
@@ -43,6 +39,21 @@ export class SelectableTableComponent implements OnInit {
 
 	@Input() style: string;
 	@Input() showIcon: boolean;
+
+	menuOptionsAdvanced: {
+		icon: string;
+		actions: {
+			showmenuOptions: boolean;
+			showIconOptions: boolean;
+			showDivider: boolean;
+			showButtons: boolean;
+			iconOptions: string;
+			title: string;
+			buttonText: string;
+			disabled: boolean;
+			click: () => void;
+		}[];
+	};
 
 	constructor() { }
 
@@ -57,6 +68,112 @@ export class SelectableTableComponent implements OnInit {
 		this.sort.sort(({ id: 'name', start: 'asc'}) as MatSortable);
 		this.dataSource.sort = this.sort;
 		this.dataSource.paginator = this.paginator;
+
+		this.menuOptionsAdvanced = {
+			icon: 'icon-more-options',
+			actions: [
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: '',
+					title: 'Archive',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Archive\' option'); }
+				},
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: '',
+					title: 'Notifications',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Notifications\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: true,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: '',
+					title: 'Edit',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: false,
+					showIconOptions: false,
+					showDivider: true,
+					showButtons: false,
+					iconOptions: '',
+					title: '',
+					buttonText: '',
+					click: function() {}
+				},
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: true,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: 'icon-trash',
+					title: 'Delete',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Delete\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: true,
+					showIconOptions: true,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: 'icon-download',
+					title: 'Download and option with a very long text',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Download\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: false,
+					showIconOptions: false,
+					showDivider: true,
+					showButtons: false,
+					iconOptions: '',
+					title: '',
+					buttonText: '',
+					click: function() {}
+				},
+				{
+					disabled: false,
+					showmenuOptions: false,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: true,
+					iconOptions: '',
+					title: '',
+					buttonText: 'Button',
+					click: function() {}
+				},
+				{
+					disabled: false,
+					showmenuOptions: false,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: true,
+					iconOptions: '',
+					title: '',
+					buttonText: 'Button two',
+					click: function() {}
+				},
+			]
+		};
+
 	}
 
 	/** Whether the number of selected elements matches the total number of rows. */

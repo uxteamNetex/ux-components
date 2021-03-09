@@ -1,6 +1,6 @@
 <div class="card19" (click)="onClickEvent()">
   <div class="card19__badge">
-    <img 
+    <img
         *ngIf="urlImage; else elseBlockBadge"
         class="utils--img-cover"
         src="{{ urlImage }}"
@@ -24,7 +24,7 @@
     </p>
   </div>
   <div class="card19__menu">
-    <ntx-menu-options></ntx-menu-options>
+    <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
   </div>
 </div>
 

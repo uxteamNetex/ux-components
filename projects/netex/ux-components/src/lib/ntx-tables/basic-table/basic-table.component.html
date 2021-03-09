@@ -52,7 +52,7 @@
       <ng-container matColumnDef="options" stickyEnd>
         <th class="utils--w-48" mat-header-cell *matHeaderCellDef></th>
         <td class="utils--w-48" mat-cell *matCellDef="let element">
-          <ntx-menu-options></ntx-menu-options>
+          <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
         </td>
       </ng-container>
 

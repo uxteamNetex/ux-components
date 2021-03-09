@@ -37,8 +37,11 @@
     <ntx-card-simple
       title="{{'User toolbar options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-toolbar-profile>' }}">
-        <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
-    </ntx-card-simple>
+        <div style="display:flex">
+          <ntx-menu-toolbar-profile [userImage]="menuToolbarProfile.userImage" [userName]="menuToolbarProfile.userName" [actions]="menuToolbarProfile.actions"></ntx-menu-toolbar-profile>
+          <ntx-menu-toolbar-profile [showBadge]="true" [userImage]="menuToolbarProfile2.userImage" [userName]="menuToolbarProfile2.userName" [actions]="menuToolbarProfile2.actions"></ntx-menu-toolbar-profile>
+        </div>
+      </ntx-card-simple>
 
     <ntx-card-simple
       title="{{'Menu avatar' | uppercase }}"

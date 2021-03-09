@@ -38,7 +38,20 @@ Archivos modificados:
 - icon-see-more-dots
 - icon-send-solid
 
+**Cards**<br/>
+- Cambios en el html y ts del componente *ntx-card1* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card2* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card3* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card4* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card5* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card7* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card12* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card19* para actualizar el componente *ntx-menu-options*.
+
 **Tables**<br/>
+- Cambios en el html y ts del componente *ntx-basic-table* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-multi-select-options* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-selectable-table* para actualizar el componente *ntx-menu-options*.
 - Cambios en el html y css del componente *ntx-basic-table*.
 - Cambios en el html, css y ts del componente *ntx-selectable-table*.
 
@@ -73,6 +86,8 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 - Cambios en el componente ntx-label *ntx-label*: Se añaden nuevos colores a la label.
 
 **Lists**<br/>
+- Cambios en el html y ts del componente *ntx-list-one-line-options* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-list1* para actualizar el componente *ntx-menu-options*.
 - Modificación del componente *ntx-list5* parametrizando que pueda llevar una imagen.
 - Nuevo componente *ntx-list6*
 - Nuevo componente *ntx-list7*
@@ -88,9 +103,13 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 - Nuevo componente menú de avatares (*ntx-menu-avatar*)
 - Modificación componente *ntx-menu-options-simple* parametrizando el icono y las opciones de menú.
 - Modificación componente *ntx-menu-options* parametrizando el icono y las opciones de menú.
+- Modificación componente *ntx-menu-toolbar-profile* parametrizando las opciones de menú y su contenido.
 
 **Search box with filter panel<br/>**
 - Modificación del componente search box con panel de filtros para poder mostrar condicionalmente el componente *ntx-menu-avatar*
+
+**Trees**<br/>
+- Cambios en el html y ts del componente *ntx-tree* para actualizar el componente *ntx-menu-options*.
 
 ------------------
 

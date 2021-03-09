@@ -21,6 +21,6 @@
                     <mat-icon class="icon-netex icon-folder-closed-solid tree-selected__mat-tree-node--icon"></mat-icon>
                     <span class="tree-selected__mat-tree-node--title">{{node.item}}</span>
     </mat-radio-button>
-    <ntx-menu-options></ntx-menu-options>
+    <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
   </mat-tree-node>
 </mat-tree>

@@ -1,17 +1,17 @@
 <mat-card class="card3">
   <mat-card-content>
-    <div 
-    *ngIf="showOptions" 
+    <div
+    *ngIf="showOptions"
     class="card3__options">
-      <ntx-menu-options></ntx-menu-options>
+    <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
     </div>
     <div class="card3__image">
-      <img 
+      <img
         *ngIf="image; else elseBlock"
         [src]="image"
         [alt]="title + '&#32;image'">
       <ng-template #elseBlock>
-        <span 
+        <span
           [style.background-color]="badgeColor"
           class="utils--flex-center utils--text-22 utils--text-white utils--uppercase">{{ title | slice:0:1 }}</span>
       </ng-template>
