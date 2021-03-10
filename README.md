@@ -61,6 +61,11 @@ Archivos modificados:
 
 **Toolbar**<br/>
 - Cambios en el css del componente *ntx-toolbar-searchbox*.
+- Cambios en el html y ts del componente *ntx-toolbar* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Cambios en el html y ts del componente *ntx-toolbar-back* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Cambios en el html y ts del componente *ntx-toolbar-back-tabs* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Cambios en el html y ts del componente *ntx-toolbar-searchbox* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Cambios en el html y ts del componente *ntx-toolbar-tabs* para actualizar el componente *ntx-menu-toolbar-profile*.
 
 **Buttons**<br/>
 - Modificación componente *ntx-icon-button* parametrizando el icono.

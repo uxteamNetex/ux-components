@@ -7,7 +7,7 @@
     <button mat-icon-button class="mat-toolbar-header__btn">
       <mat-icon class="icon-netex icon-gear-solid"></mat-icon>
     </button>
-    <ntx-menu-toolbar-profile>
+    <ntx-menu-toolbar-profile [userImage]="menuToolbarProfile.userImage" [userName]="menuToolbarProfile.userName" [actions]="menuToolbarProfile.actions">
       <ng-content></ng-content>
     </ntx-menu-toolbar-profile>
     <ntx-menu-toolbar-dashboard [apps]="apps"></ntx-menu-toolbar-dashboard>
