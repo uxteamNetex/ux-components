@@ -10,6 +10,10 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.X.X:
 
+**Dialogs**<br/>
+- Cambios en el css del componente simple-dialog (*ntx-simple-dialog*).
+- Cambios en el css del componente proccess-dialog (*ntx-proccess-dialog*).
+
 **Archivos modificados**<br/>
 - ux-components/src/styles/app/variables.scss
 - ux-components/src/styles/app/utils.scss
