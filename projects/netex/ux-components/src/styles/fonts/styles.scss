@@ -45,6 +45,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-user-export {
+  &:before {
+    content: $icon-user-export;
+  }
+}
+.icon-user-hat {
+  &:before {
+    content: $icon-user-hat;
+  }
+}
 .icon-arrow-right-solid {
   &:before {
     content: $icon-arrow-right-solid;

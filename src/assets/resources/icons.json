@@ -984,7 +984,13 @@
             "className": "icon-user-edit"
         },
         {
+            "className": "icon-user-export"
+        },
+        {
             "className": "icon-user-group"
+        },
+        {
+            "className": "icon-user-hat"
         },
         {
             "className": "icon-user-less"

@@ -41,6 +41,8 @@ Archivos modificados:
 - icon-reply-solid
 - icon-see-more-dots
 - icon-send-solid
+- icon-user-export
+- icon-user-hat
 
 **Cards**<br/>
 - Cambios en el html y ts del componente *ntx-card1* para actualizar el componente *ntx-menu-options*.
