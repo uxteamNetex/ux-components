@@ -10,13 +10,27 @@
         background-color: $color-grey-200;
       }
     }
+    .mat-checkbox-layout {
+      max-width: 100%;
+    }
+    .mat-checkbox-label {
+      width: calc(100% - 24px);
+      p {
+        margin: 0;
+        white-space: normal;
+      }
+    }
     .mat-checkbox-inner-container{
       height: 20px;
       width: 20px;
+      margin-right: 12px;
       .mat-checkbox-frame{
         border-color: $color-grey-600;
         border-width: 1px;
       }
+    }
+    .mat-checkbox-inner-container-no-side-margin {
+      margin-right: 8px;
     }
   }
 }

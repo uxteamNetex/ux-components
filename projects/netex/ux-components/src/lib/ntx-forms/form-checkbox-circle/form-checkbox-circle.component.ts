@@ -14,7 +14,7 @@ export class FormCheckboxCircleComponent implements OnInit {
   @Input() color: string;
   @Input() checked: boolean;
   @Input() disabled: boolean;
-  @Input() hidden: boolean;
+  @Input() label: string;
 
   @Output() checkboxChange = new EventEmitter<MatCheckboxChange>();
 

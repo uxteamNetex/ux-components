@@ -106,8 +106,8 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 **Form controls**<br/>
 - Modificación en el componente *ntx-searchbox-filter-panel* para añadirle botón de limpiar input y cambiar color de texto.
 - Modificación componente *ntx-form-radiobutton* parametrizando el color, posición y texto.
-- Cambios en el css del componente *ntx-form-checkbox*.
-- Cambios en el css del componente *ntx-form-radiobutton*.
+- Cambios y componentización del label en el css del componente *ntx-form-checkbox*.
+- Cambios y componentización del label en el css del componente *ntx-form-radiobutton*.
 - Cambios en el css del compoennte *ntx-form-datepicker*.
 
 **Menus**<br/>
