@@ -122,6 +122,9 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 **Trees**<br/>
 - Cambios en el html y ts del componente *ntx-tree* para actualizar el componente *ntx-menu-options*.
 
+**Empty pages**<br/>
+- Modificación componente *ntx-empty-page* parametrizando su contenido.
+
 ------------------
 
 ### v.4.3.2:

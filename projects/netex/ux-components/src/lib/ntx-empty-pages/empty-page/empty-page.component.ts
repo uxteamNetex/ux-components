@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'ntx-empty-page',
-  templateUrl: './empty-page.component.html',
-  styleUrls: ['./empty-page.component.scss']
+	selector: 'ntx-empty-page',
+	templateUrl: './empty-page.component.html',
+	styleUrls: ['./empty-page.component.scss']
 })
 export class EmptyPageComponent implements OnInit {
 
-  constructor() { }
+	@Input() item: any;
 
-  ngOnInit() {
-  }
+
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

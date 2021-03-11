@@ -3,6 +3,15 @@ import { ViewEncapsulation } from '@angular/core';
 import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
+const EMPTYPAGES = {
+	actions: [
+		{
+			icon: 'icon-users',
+			title: 'Here is the title of the issue',
+			description: 'Here is the description of the issue that cant have more than 2 lines of text.',
+		}
+	]
+};
 const TWO_LINES_LIST_WITH_AVATAR = {
 	texts: [
 		{
@@ -212,6 +221,7 @@ export interface LabelRound {
 })
 export class ExamplesComponent implements OnInit {
 
+	emptyPages = EMPTYPAGES;
 	data = TWO_LINES_LIST_WITH_AVATAR;
 	chip = CHIP;
 	raisedIconButton = RAISEDICONBUTTON;
