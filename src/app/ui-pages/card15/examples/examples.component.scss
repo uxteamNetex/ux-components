@@ -1,13 +1,15 @@
 .page-layout {
+  &.page-layout-card15{
     .page-container {
-        display: flex;
-        justify-content: space-around;
+      display: flex;
+      justify-content: space-around;
     }
     .page-container ntx-card-simple mat-card{
         margin-top: 0;
-    }  
+    }
     .page-container ntx-card-simple:last-child ntx-card15{
         display: flex;
         justify-content: center;
-    }  
+    }
+  }
 }

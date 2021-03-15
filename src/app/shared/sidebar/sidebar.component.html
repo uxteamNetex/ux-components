@@ -7,20 +7,11 @@
     mat-list-item
     routerLink="buttons"
     (click)="setPath('buttons')">Buttons</a>
-  <!-- Cards  -->
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title class="sidebar-container__links">{{ categories['cards'].title | titlecase }}</mat-panel-title>
-    </mat-expansion-panel-header>
-    <mat-list>
-      <mat-list-item *ngFor="let link of categories['cards'].links">
-        <a class="sidebar-container__links"     
-          mat-list-item
-          [routerLink]=link
-          (click)="setPath(link)">{{ link | titlecase }}</a>
-      </mat-list-item>  
-    </mat-list>
-  </mat-expansion-panel>
+  <!-- Cards -->
+  <a class="sidebar-container__links"
+    mat-list-item
+    routerLink="cards-catalog"
+    (click)="setPath('cards-catalog')">Cards</a>
   <!-- Chips -->
   <a class="sidebar-container__links"
     mat-list-item
@@ -53,11 +44,11 @@
     </mat-expansion-panel-header>
     <mat-list>
       <mat-list-item *ngFor="let link of categories['error_pages'].links">
-        <a class="sidebar-container__links"     
+        <a class="sidebar-container__links"
           mat-list-item
           [routerLink]=link
           (click)="setPath(link)">{{ link | titlecase }}</a>
-      </mat-list-item>  
+      </mat-list-item>
     </mat-list>
   </mat-expansion-panel>
   <!-- Form controls -->
@@ -97,11 +88,11 @@
     </mat-expansion-panel-header>
     <mat-list>
       <mat-list-item *ngFor="let link of categories['panels'].links">
-        <a class="sidebar-container__links"     
+        <a class="sidebar-container__links"
           mat-list-item
           [routerLink]=link
           (click)="setPath(link)">{{ link | titlecase }}</a>
-      </mat-list-item>  
+      </mat-list-item>
     </mat-list>
   </mat-expansion-panel>
   <!-- Paginador -->
@@ -116,11 +107,11 @@
     </mat-expansion-panel-header>
     <mat-list>
       <mat-list-item *ngFor="let link of categories['progress'].links">
-        <a class="sidebar-container__links"     
+        <a class="sidebar-container__links"
           mat-list-item
           [routerLink]=link
           (click)="setPath(link)">{{ link | titlecase }}</a>
-      </mat-list-item>  
+      </mat-list-item>
     </mat-list>
   </mat-expansion-panel>
   <!-- Sidenavs -->
@@ -130,11 +121,11 @@
     </mat-expansion-panel-header>
     <mat-list>
       <mat-list-item *ngFor="let link of categories['sidenavs'].links">
-        <a class="sidebar-container__links"     
+        <a class="sidebar-container__links"
           mat-list-item
           [routerLink]=link
           (click)="setPath(link)">{{ link | titlecase }}</a>
-      </mat-list-item>  
+      </mat-list-item>
     </mat-list>
   </mat-expansion-panel>
   <!-- Snackbars -->
@@ -149,11 +140,11 @@
     </mat-expansion-panel-header>
     <mat-list>
       <mat-list-item *ngFor="let link of categories['table'].links">
-        <a class="sidebar-container__links"     
+        <a class="sidebar-container__links"
           mat-list-item
           [routerLink]=link
           (click)="setPath(link)">{{ link | titlecase }}</a>
-      </mat-list-item>  
+      </mat-list-item>
     </mat-list>
   </mat-expansion-panel>
   <!-- Tabs -->
@@ -173,11 +164,11 @@
     </mat-expansion-panel-header>
     <mat-list>
       <mat-list-item *ngFor="let link of categories['tree'].links">
-        <a class="sidebar-container__links"     
+        <a class="sidebar-container__links"
           mat-list-item
           [routerLink]=link
           (click)="setPath(link)">{{ link | titlecase }}</a>
-      </mat-list-item>  
+      </mat-list-item>
     </mat-list>
   </mat-expansion-panel>
   <!-- User profile panel -->

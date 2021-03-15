@@ -13,6 +13,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/buttons/buttons.module#ButtonsModule'
 	},
 	{
+		path: 'cards-catalog',
+		loadChildren: './ui-pages/cards-catalog/cards-catalog.module#CardsCatalogModule'
+	},
+	{
 		path: 'card1',
 		loadChildren: './ui-pages/card1/card1.module#Card1Module'
 	},

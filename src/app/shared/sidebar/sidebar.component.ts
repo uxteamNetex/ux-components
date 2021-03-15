@@ -4,6 +4,7 @@ import { TabsHeaderService } from '../services/tabs-header.service';
 
 const LINKS = [
 	'buttons',
+	'cards-catalog',
 	'chips',
 	'detail-panel',
 	'dialogs',
