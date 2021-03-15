@@ -537,6 +537,9 @@
             "className": "icon-evaluation"
         },
         {
+            "className": "icon-evaluation-solid"
+        },
+        {
             "className": "icon-export"
         },
         {

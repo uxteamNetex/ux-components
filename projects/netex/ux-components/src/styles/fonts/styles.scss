@@ -45,6 +45,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-evaluation-solid {
+  &:before {
+    content: $icon-evaluation-solid;
+  }
+}
 .icon-user-export {
   &:before {
     content: $icon-user-export;

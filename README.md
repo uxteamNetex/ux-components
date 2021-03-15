@@ -37,6 +37,7 @@ Archivos modificados:
 - icon-arrow-right-solid
 - icon-backpack
 - icon-chat-bubble-question
+- icon-evaluation-solid
 - icon-reply-all-solid
 - icon-reply-solid
 - icon-see-more-dots
