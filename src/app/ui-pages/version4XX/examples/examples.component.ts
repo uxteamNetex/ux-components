@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 import { DashboardService } from 'src/app/shared/services/dashboard.service';
@@ -228,6 +228,22 @@ export class ExamplesComponent implements OnInit {
 	strokedIconButton = STROKEDICONBUTTON;
 	textIconButton = TEXTICONBUTTON;
 
+	card1: any[] = [
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		}
+	];
 	menuOptionsSimple: {
 		icon: string;
 		actions: {
@@ -563,7 +579,7 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
-  arrayOfData =  [{
+	arrayOfData =  [{
     "name": "Ynez con texo muy largo de ejemplo",
     "surname": "Stout con texo muy largo de ejemplo",
     "username": "ystout0",
@@ -593,18 +609,36 @@ export class ExamplesComponent implements OnInit {
     "username": "tberrygun2r",
     "avatar": "https://robohash.org/nequequasaut.jpg?size=50x50&set=set1",
     "date": "19/02/2020"
-  }];
+	}];
 
-  tableData = [];
+	tableData = [];
 
 	//constructor(private tabsHeaderService: TabsHeaderService) { }
 
 	constructor(private dashboardService: DashboardService) { }
-
 	apps: any[];
 
 	ngOnInit() {
 		this.apps = this.dashboardService.getDashboardApps();
+
+		setTimeout(() => {
+			this.card1 = [
+				{
+					image: 'assets/images/writting.jpg',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: '',
+					initials: 'PN',
+					title: 'Project name',
+					subtitle: 'Subtitle',
+					options: 'true',
+				}
+			];
+		}, 5000);
 
 		this.menuOptionsSimple = {
 			icon: 'icon-more-options',
@@ -1076,6 +1110,6 @@ export class ExamplesComponent implements OnInit {
 
 	setPath(value: string) {
 		//this.tabsHeaderService.setPath(value);
-	}
+  }
 
 }

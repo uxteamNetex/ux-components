@@ -1,117 +1,31 @@
-import { Component, OnInit } from '@angular/core';
-
-const ITEM3 = {
-	actions: [
-		{
-			label: 'Acción',
-			state: 'primary',
-			active: '',
-			disabled: ''
-		},
-		{
-			label: 'Acción',
-			state: 'primary',
-			active: '',
-			disabled: 'disabled'
-		},
-		{
-			label: 'Acción',
-			state: 'accent',
-			active: '',
-			disabled: ''
-		},
-		{
-			label: 'Acción active',
-			state: 'accent',
-			active: 'active',
-			disabled: ''
-		},
-		{
-			label: 'Acción',
-			state: 'accent',
-			active: '',
-			disabled: 'disabled'
-		},
-		{
-			label: 'Acción',
-			state: 'white',
-			active: '',
-			disabled: ''
-		},
-		{
-			label: 'Acción',
-			state: 'white',
-			active: '',
-			disabled: 'disabled'
-		}
-	]
-};
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MediaChange, ObservableMedia } from '@angular/flex-layout';
+import { MatGridList } from '@angular/material';
 
 @Component({
-  selector: 'app-test-page',
-  templateUrl: './test-page.component.html',
-  styleUrls: ['./test-page.component.scss']
+	selector: 'app-test-page',
+	templateUrl: './test-page.component.html',
+	styleUrls: ['./test-page.component.scss']
 })
 export class TestPageComponent implements OnInit {
+	@ViewChild('grid') grid: MatGridList;
 
-	list1 = [
-		{
-			labelPrincipal: 'Web designer',
-			labelSecondary: '25%',
-			labelRouterLink: '/home'
-		},
-		{
-			labelPrincipal: 'Graphic designer / illustrator',
-			labelSecondary: '65%',
-			labelRouterLink: '/home'
-		},
-		{
-			labelPrincipal: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-			labelSecondary: '24%',
-			labelRouterLink: '/home'
-		}
-	];
+	gridByBreakpoint = {
+		'ntx.xl': 3,
+		'ntx.lg': 2,
+		'ntx.md': 2,
+		'ntx.sm': 2,
+		'ntx.xs': 1
+	};
 
-	list2 = [
-		{
-			labelPrincipal: 'Customer oriented',
-			labelSecondary: '80',
-			labelRouterLink: undefined
-		},
-		{
-			labelPrincipal: 'Graphic designer / illustrator',
-			labelSecondary: '78',
-			labelRouterLink: undefined
-		},
-		{
-			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-			labelSecondary: '67',
-			labelRouterLink: undefined
-		}
-	];
+	constructor(private observableMedia: ObservableMedia) { }
 
-	list3 = [
-		{
-			labelPrincipal: 'Customer oriented',
-			labelSecondary: undefined,
-			labelRouterLink: undefined
-		},
-		{
-			labelPrincipal: 'Graphic designer / illustrator',
-			labelSecondary: undefined,
-			labelRouterLink: undefined
-		},
-		{
-			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-			labelSecondary: undefined,
-			labelRouterLink: undefined
-		}
-	];
+	ngOnInit() {}
 
-	item3 = ITEM3;
-
-  constructor() { }
-
-  ngOnInit() { }
+	ngAfterContentInit() {
+		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
+			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
+		});
+	}
 
 }

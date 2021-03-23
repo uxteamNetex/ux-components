@@ -7,7 +7,7 @@ import { MatGridList } from '@angular/material';
 	templateUrl: './examples.component.html',
 	styleUrls: ['./examples.component.scss']
 })
-export class ExamplesComponent implements AfterContentInit {
+export class ExamplesComponent implements OnInit {
 	@ViewChild('grid') grid: MatGridList;
 
 	gridByBreakpoint = {
@@ -18,10 +18,176 @@ export class ExamplesComponent implements AfterContentInit {
 		'ntx.xs': 1
 	};
 
+	card1: any[] = [
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		}
+	];
+
+
 	constructor(private observableMedia: ObservableMedia) { }
 
-	// tslint:disable-next-line:use-life-cycle-interface
-	ngOnInit() {}
+	ngOnInit() {
+
+		setTimeout(() => {
+
+			this.card1 = [
+				{
+					image: 'assets/images/writting.jpg',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: '',
+					initials: 'PN',
+					title: 'Project name',
+					subtitle: 'Subtitle',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-03.png',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/writting.jpg',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/writting.jpg',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-03.png',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/writting.jpg',
+					initials: '',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in one line and three dots',
+					options: 'true',
+				}
+			];
+
+		}, 5000);
+
+	}
 
 	ngAfterContentInit() {
 		this.observableMedia.asObservable().subscribe((change: MediaChange) => {

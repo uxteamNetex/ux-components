@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ObservableMedia } from '@angular/flex-layout';
 
 @Component({
 	selector: 'ntx-card1',
@@ -21,6 +22,12 @@ export class Card1Component implements OnInit {
 			click: () => void;
 		}[];
 	};
+
+	@Input() image: string;
+	@Input() initials: string;
+	@Input() title: string;
+	@Input() subtitle: string;
+	@Input() options: boolean;
 
 	constructor() { }
 

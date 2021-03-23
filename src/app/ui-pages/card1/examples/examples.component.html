@@ -3,48 +3,14 @@
 
     <mat-grid-list #grid rowHeight="252px" gutterSize="0">
 
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
+      <mat-grid-tile *ngFor="let item of card1">
+        <ntx-card1
+          [image]="item.image"
+          [initials]="item.initials"
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [options]="item.options"
+        ></ntx-card1>
       </mat-grid-tile>
 
     </mat-grid-list>
