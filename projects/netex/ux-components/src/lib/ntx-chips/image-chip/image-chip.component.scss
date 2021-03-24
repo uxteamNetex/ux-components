@@ -27,6 +27,7 @@ $block: "image-chip-container";
         overflow: hidden;
         position: relative;
         width: 36px;
+        flex-shrink: 0;
         img{
           height: 100%;
         }
