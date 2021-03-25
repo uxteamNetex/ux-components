@@ -1,6 +1,8 @@
 <div class="table-container" [ngClass]="{'flat': this.style === 'flat'}">
 
-  <div class="table-container__table">
+  <div 
+    #tableWrapper
+    class="table-container__table">
     <!-- Table -->
     <table
       mat-table

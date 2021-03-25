@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Input, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, Input, ViewEncapsulation, ElementRef, AfterViewInit, Renderer2 } from '@angular/core';
 import { MatPaginator, MatSort, MatSortable, MatTableDataSource } from '@angular/material';
 
 @Component({
@@ -7,13 +7,14 @@ import { MatPaginator, MatSort, MatSortable, MatTableDataSource } from '@angular
 	styleUrls: ['./basic-table.component.scss'],
 	encapsulation: ViewEncapsulation.None
 })
-export class BasicTableComponent implements OnInit {
+export class BasicTableComponent implements OnInit, AfterViewInit {
 
 	displayedColumns: string[] = ['name', 'surname', 'username', 'date', 'state', 'options'];
 	dataSource: MatTableDataSource<any>;
 
 	@ViewChild(MatPaginator) paginator: MatPaginator;
 	@ViewChild(MatSort) sort: MatSort;
+	@ViewChild('tableWrapper') tableWrapper: ElementRef;
 
 	@Input() style: string;
 	@Input() tableData: any[];
@@ -33,7 +34,9 @@ export class BasicTableComponent implements OnInit {
 		}[];
 	};
 
-	constructor() { }
+	constructor(
+		private renderer: Renderer2
+	) { }
 
 	ngOnInit() {
 		this.dataSource = new MatTableDataSource(this.tableData)
@@ -145,6 +148,29 @@ export class BasicTableComponent implements OnInit {
 				},
 			]
 		};
+	}
+
+	ngAfterViewInit() {
+		this.checkTableWrapperWidth();
+	}
+
+	ngDoCheck() { 
+		this.checkTableWrapperWidth();
+	}
+	/**
+	 * A basic function to show sticky columns border when table content overflow table wrapper.
+	 * Something like a 'container-querie'.
+	 */
+	checkTableWrapperWidth() {
+		if (this.tableWrapper) {
+			var tableWrapperWidth = this.tableWrapper.nativeElement.offsetWidth;
+			var tableWidth = this.tableWrapper.nativeElement.children[0].offsetWidth;
+			if (tableWidth > tableWrapperWidth) {
+				this.renderer.addClass(this.tableWrapper.nativeElement, "table-container__table--sticky");
+			} else {
+				this.renderer.removeClass(this.tableWrapper.nativeElement, "table-container__table--sticky");
+			}
+		}
 	}
 
 }

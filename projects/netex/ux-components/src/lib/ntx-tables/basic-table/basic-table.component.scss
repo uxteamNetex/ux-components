@@ -101,15 +101,7 @@ $block: "mat-basic-table";
         }
       }
     }
-  }
-  .#{$block}__paginator{
-    border-radius: 0 0 4px 4px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .table-container{
-    .table-container__table{
+    &--sticky{
       .#{$block}{
         .#{$block}__row{
           td{
@@ -125,5 +117,8 @@ $block: "mat-basic-table";
         }
       }
     }
+  }
+  .#{$block}__paginator{
+    border-radius: 0 0 4px 4px;
   }
 }
