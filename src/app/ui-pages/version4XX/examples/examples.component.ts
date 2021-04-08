@@ -244,6 +244,23 @@ export class ExamplesComponent implements OnInit {
 			options: '',
 		}
 	];
+	card2: any[] = [
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		}
+	];
 	menuOptionsSimple: {
 		icon: string;
 		actions: {
@@ -635,6 +652,23 @@ export class ExamplesComponent implements OnInit {
 					initials: 'PN',
 					title: 'Project name',
 					subtitle: 'Subtitle',
+					options: 'true',
+				}
+			];
+			this.card2 = [
+				{
+					image: 'assets/images/writting.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					title: 'Project name',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
 					options: 'true',
 				}
 			];

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
 	selector: 'ntx-card2',
@@ -21,6 +21,10 @@ export class Card2Component implements OnInit {
 			click: () => void;
 		}[];
 	};
+
+	@Input() image: string;
+	@Input() title: string;
+	@Input() options: boolean;
 
 	constructor() { }
 
