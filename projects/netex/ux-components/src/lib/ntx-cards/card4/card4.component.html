@@ -1,18 +1,22 @@
 <mat-card class="card4">
   <mat-card-content>
-    <div mat-card-avatar class="card4__image">
-        <img class="utils--vertical-align" src="assets/images/perfil.jpg" alt="User image">
-        <span class="card4__image--initials utils--vertical-align">CM</span>
+    <div mat-card-avatar class="card4__image" alt="Image">
+      <img *ngIf="image" class="utils--vertical-align" src="{{image}}">
+      <span *ngIf="initials"
+        [style.background-color]="badgeColor"
+        class="card4__image--initials utils--vertical-align utils--flex-center utils--text-22 utils--text-white utils--uppercase">
+        {{ title | slice:0:1 }}
+      </span>
     </div>
     <div class="card4__texts">
       <mat-card-title class="card4__title">
-        <span class="card4__title--text" matTooltip="Cristina Martínez Casanueva">María Cristina Martínez Casanueva</span>
+        <span *ngIf="title" class="card4__title--text" matTooltip="{{title}}">{{title}}</span>
       </mat-card-title>
       <mat-card-subtitle class="card4__subtitle">
-        <span class="card4__subtitle--text" matTooltip="UX Designer And frontend developer">UX Designer and Frontend Developer</span>
+        <span *ngIf="subtitle" class="card4__subtitle--text" matTooltip="{{subtitle}}">{{subtitle}}</span>
       </mat-card-subtitle>
     </div>
-    <div class="card4__options">
+    <div *ngIf="options" class="card4__options">
       <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
     </div>
   </mat-card-content>

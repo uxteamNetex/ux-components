@@ -49,7 +49,7 @@ Archivos modificados:
 - Cambios en el html y ts del componente *ntx-card1* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
 - Cambios en el html y ts del componente *ntx-card2* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
 - Cambios en el html y ts del componente *ntx-card3* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
-- Cambios en el html y ts del componente *ntx-card4* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card4* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
 - Cambios en el html y ts del componente *ntx-card5* para actualizar el componente *ntx-menu-options*.
 - Cambios en el html y ts del componente *ntx-card7* para actualizar el componente *ntx-menu-options*.
 - Cambios en el html y ts del componente *ntx-card12* para actualizar el componente *ntx-menu-options*.
