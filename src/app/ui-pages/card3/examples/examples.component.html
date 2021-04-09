@@ -2,61 +2,18 @@
   <div class="page-container">
     <mat-grid-list #grid rowHeight="320px" gutterSize="0">
 
-      <mat-grid-tile>
+      <mat-grid-tile *ngFor="let item of card3">
         <ntx-card3
-          [title]="'Evaluation A'"  
-          subtitle="20/12/2020"  
-          subtitle2="9/12 Users"  
-          subtitle3="closed"  
-          badgeColor="orange"
-          subtitle3Color="#f05060"></ntx-card3>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <ntx-card3
-          [title]="'Evaluation name that could be longer than just one line and will be shown with three dots'"  
-          subtitle="28/12/2020"  
-          subtitle2="10/22 Users"  
-          subtitle3="open"  
-          subtitle3Color="#5cce88"  
-          badgeColor="orange"
-          showOptions
-          image="assets/images/bg-01.png"></ntx-card3>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <ntx-card3
-          [title]="'Another evaluation'"  
-          subtitle="28/12/2020"  
-          subtitle2="10/22 Users"  
-          badgeColor="#333333"
-          showOptions></ntx-card3>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <ntx-card3
-          [title]="'UX Evaluation'"  
-          subtitle="10/10/2019"  
-          subtitle2="06/9 Users"  
-          badgeColor="#B182A6"></ntx-card3>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <ntx-card3
-          [title]="'Agile Team Evaluation'"  
-          subtitle="28/12/2020"  
-          subtitle2="10/22 Users"  
-          subtitle3="closed"  
-          subtitle3Color="#f05060"  
-          badgeColor="#EE9A37"
-          image="assets/images/bg-02.png"></ntx-card3>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <ntx-card3
-          [title]="'Evaluation name that could be longer than just one line and will be shown with three dots'"  
-          subtitle="28/12/2020"  
-          subtitle2="10/22 Users"  
-          subtitle3="open"  
-          subtitle3Color="#5cce88"  
-          badgeColor="orange"
-          showOptions
-          image="assets/images/bg-03.png"></ntx-card3>
+          [image]="item.image"
+          [initials]="item.initials"
+          [badgeColor]="item.badgeColor"
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [subtitle2]="item.subtitle2"
+          [subtitle3]="item.subtitle3"
+          [subtitle3Color]="item.subtitle3Color"
+          [options]="item.options"
+          ></ntx-card3>
       </mat-grid-tile>
 
     </mat-grid-list>

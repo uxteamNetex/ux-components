@@ -14,16 +14,9 @@ export class Card3Component implements OnInit {
 	@Input() subtitle3: string;
 	@Input() subtitle3Color: string;
 	@Input() image?: string;
+	@Input() initials: string;
 	@Input() badgeColor?: string;
-
-	private _showOptions: boolean;
-	get showOptions(): boolean {
-		return this._showOptions;
-	}
-	@Input()
-	set showOptions(value: boolean) {
-		this._showOptions = coerceBooleanProperty(value);
-	}
+	@Input() options: boolean;
 
 	menuOptionsAdvanced: {
 		icon: string;

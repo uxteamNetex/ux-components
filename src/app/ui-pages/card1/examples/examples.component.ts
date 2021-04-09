@@ -118,7 +118,7 @@ export class ExamplesComponent implements OnInit {
 					initials: 'PN',
 					title: 'Project name',
 					subtitle: 'Subtitle',
-					options: 'true',
+					options: '',
 				},
 				{
 					image: 'assets/images/bg-01.png',
@@ -132,7 +132,7 @@ export class ExamplesComponent implements OnInit {
 					initials: '',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
+					options: '',
 				},
 				{
 					image: 'assets/images/bg-03.png',
@@ -153,7 +153,7 @@ export class ExamplesComponent implements OnInit {
 					initials: '',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
+					options: '',
 				},
 				{
 					image: 'assets/images/bg-01.png',

@@ -1,32 +1,32 @@
 <mat-card class="card3">
   <mat-card-content>
-    <div
-    *ngIf="showOptions"
-    class="card3__options">
-    <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
+    <div *ngIf="options" class="card3__options">
+      <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
     </div>
-    <div class="card3__image">
-      <img
-        *ngIf="image; else elseBlock"
-        [src]="image"
-        [alt]="title + '&#32;image'">
-      <ng-template #elseBlock>
-        <span
-          [style.background-color]="badgeColor"
-          class="utils--flex-center utils--text-22 utils--text-white utils--uppercase">{{ title | slice:0:1 }}</span>
-      </ng-template>
+    <div mat-card-avatar class="card3__image" alt="Image">
+      <img *ngIf="image" src="{{image}}">
+      <span *ngIf="initials"
+              [style.background-color]="badgeColor"
+              class="card3__image--initials utils--vertical-align utils--flex-center utils--text-22 utils--text-white utils--uppercase">
+              {{ title | slice:0:1 }}
+      </span>
     </div>
+
     <mat-card-title class="card3__title">
-      <span class="card3__title--text" [matTooltip]="title">{{ title }}</span>
+      <span *ngIf="title" class="card3__title--text" [matTooltip]="title">{{ title }}</span>
     </mat-card-title>
+
     <mat-card-subtitle class="card3__subtitle">
-      <span [matTooltip]="subtitle">{{ subtitle }}</span>
+      <span *ngIf="subtitle" [matTooltip]="subtitle">{{ subtitle }}</span>
     </mat-card-subtitle>
+
     <mat-card-subtitle class="card3__subtitle">
       <span *ngIf="subtitle2" [matTooltip]="subtitle2">{{ subtitle2 }}</span>
     </mat-card-subtitle>
+
     <mat-card-subtitle class="card3__subtitle" >
       <span *ngIf="subtitle3" [matTooltip]="subtitle3" [style.color]="subtitle3Color">{{ subtitle3 | uppercase }}</span>
     </mat-card-subtitle>
+
   </mat-card-content>
 </mat-card>

@@ -149,6 +149,27 @@
         </div>
 
         <div class="whatsnew__content-block">
+          <h4>Card3 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card3</span> component and we have added a skeleton loader. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card3/documentation" (click)="setPath('card3')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:45%" *ngFor="let item of card3">
+              <ntx-card3
+                [image]="item.image"
+                [initials]="item.initials"
+                [badgeColor]="item.badgeColor"
+                [title]="item.title"
+                [subtitle]="item.subtitle"
+                [subtitle2]="item.subtitle2"
+                [subtitle3]="item.subtitle3"
+                [subtitle3Color]="item.subtitle3Color"
+                [options]="item.options"
+                ></ntx-card3>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>Empty pages component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-empty-page</span> component and there have been changes in the html and ts file. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('empty-pages')">link</a></p>
