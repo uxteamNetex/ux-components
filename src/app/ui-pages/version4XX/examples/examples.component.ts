@@ -3,6 +3,13 @@ import { ViewEncapsulation } from '@angular/core';
 import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
+const DATA4 = {
+	title: 'Título del panel',
+	iconTitle: 'icon-reports',
+	iconTitleColor: 'utils--text-grey-700',
+	showSubtitle: true,
+	subtitle: 'Subtítulo',
+};
 const EMPTYPAGES = {
 	actions: [
 		{
@@ -221,6 +228,7 @@ export interface LabelRound {
 })
 export class ExamplesComponent implements OnInit {
 
+  data4: Object;
 	emptyPages = EMPTYPAGES;
 	data = TWO_LINES_LIST_WITH_AVATAR;
 	chip = CHIP;
@@ -679,6 +687,8 @@ export class ExamplesComponent implements OnInit {
 
 	ngOnInit() {
 		this.apps = this.dashboardService.getDashboardApps();
+
+    this.data4 = DATA4;
 
 		setTimeout(() => {
 			this.card1 = [
