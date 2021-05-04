@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
@@ -28,28 +27,16 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 			link: 'Go to learningCloud',
 			icon: 'icon-warning-solid',
 			iconColor: 'utils--text-warning',
-			showIcon: true,
-			showLink: true,
+			text: undefined
 		},
 		{
-			title: 'María Fraga Colorado',
-			subtitle: 'maria.fraga',
-			image: 'assets/images/user_female_01.jpg',
-			link: 'Go to learningCloud',
-			icon: 'icon-bell-solid',
-			iconColor: 'utils--text-error',
-			showIcon: true,
-			showLink: false,
-		},
-		{
-			title: 'Antonio Prado',
-			subtitle: 'antonio.prado',
-			image: 'assets/images/user_male_02.png',
-			link: 'Go to learningCloud',
-			icon: 'icon-warning-solid',
-			iconColor: 'utils--text-warning',
-			showIcon: false,
-			showLink: false,
+			title: 'José Antonio García',
+			subtitle: 'josean.garcia',
+			image: undefined,
+			link: undefined,
+			icon: undefined,
+			iconColor: undefined,
+			text: 'Est ei erat mucius quaeque ei his quas phaedrum.',
 		}
 	]
 };
@@ -228,7 +215,7 @@ export interface LabelRound {
 })
 export class ExamplesComponent implements OnInit {
 
-  data4: Object;
+	data4: Object;
 	emptyPages = EMPTYPAGES;
 	data = TWO_LINES_LIST_WITH_AVATAR;
 	chip = CHIP;
@@ -688,7 +675,7 @@ export class ExamplesComponent implements OnInit {
 	ngOnInit() {
 		this.apps = this.dashboardService.getDashboardApps();
 
-    this.data4 = DATA4;
+		this.data4 = DATA4;
 
 		setTimeout(() => {
 			this.card1 = [

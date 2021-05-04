@@ -83,7 +83,8 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 			image: 'assets/images/perfil.jpg',
 			link: 'Go to learningCloud',
 			icon: 'icon-warning-solid',
-			iconColor: 'utils--text-warning'
+			iconColor: 'utils--text-warning',
+			text: undefined
 		},
 		{
 			title: 'María Fraga Colorado',
@@ -91,7 +92,8 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 			image: 'assets/images/user_female_01.jpg',
 			link: undefined,
 			icon: 'icon-bell-solid',
-			iconColor: 'utils--text-error'
+			iconColor: 'utils--text-error',
+			text: undefined
 		},
 		{
 			title: 'Antonio Prado',
@@ -99,7 +101,8 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 			image: 'assets/images/user_male_02.png',
 			link: undefined,
 			icon: undefined,
-			iconColor: undefined
+			iconColor: undefined,
+			text: undefined
 		},
 		{
 			title: 'José Antonio García',
@@ -107,7 +110,8 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 			image: undefined,
 			link: undefined,
 			icon: undefined,
-			iconColor: undefined
+			iconColor: undefined,
+			text: 'Est ei erat mucius quaeque ei his quas phaedrum.',
 		}
 	]
 };

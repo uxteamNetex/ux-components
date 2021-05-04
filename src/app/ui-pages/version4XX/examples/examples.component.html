@@ -117,6 +117,13 @@
         </h2>
 
         <div class="whatsnew__content-block">
+          <h4>Two lines list with avatar component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-list-two-lines-avatar</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/lists/documentation" (click)="setPath('lists')">link</a></p>
+          <ntx-list-two-lines-avatar [data] ="data"></ntx-list-two-lines-avatar>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>Card1 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card1</span> component and we have added a skeleton loader. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card1/documentation" (click)="setPath('card1')">link</a></p>
@@ -150,8 +157,8 @@
 
         <div class="whatsnew__content-block">
           <h4>Card3 component</h4>
-          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card3</span> component and we have added a skeleton loader. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
-          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card3/documentation" (click)="setPath('card3')">link</a></p>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card3</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card3/documentation" (click)="setPath('cards')">link</a></p>
           <div style="display: flex;justify-content: space-between;">
             <div style="width:45%" *ngFor="let item of card3">
               <ntx-card3
@@ -481,33 +488,6 @@
           <ntx-label text="ausente" color="red"></ntx-label>
           <ntx-label text="presente" color="blue"></ntx-label>
           <ntx-label text="retraso" color="lightblue"></ntx-label>
-        </div>
-
-        <div class="whatsnew__content-block">
-          <h4>Card3</h4>
-          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card3</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
-          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card3/documentation" (click)="setPath('cards')">link</a></p>
-          <div style="display: flex;justify-content: space-between;">
-            <div style="width:45%">
-              <ntx-card3
-                [title]="'Evaluation A'"
-                subtitle="20/12/2020"
-                subtitle2="9/12 Users"
-                badgeColor="orange"
-                subtitle3Color="#f05060"></ntx-card3>
-            </div>
-            <div style="width:45%">
-              <ntx-card3
-                [title]="'Evaluation name that could be longer than just one line and will be shown with three dots'"
-                subtitle="28/12/2020"
-                subtitle2="10/22 Users"
-                subtitle3="open"
-                subtitle3Color="#5cce88"
-                badgeColor="orange"
-                showOptions
-                image="assets/images/bg-01.png"></ntx-card3>
-            </div>
-          </div>
         </div>
 
         <div class="whatsnew__content-block">
