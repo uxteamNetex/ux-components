@@ -55,6 +55,7 @@ Archivos modificados:
 - Cambios en el html y ts del componente *ntx-card12* para actualizar el componente *ntx-menu-options*.
 - Cambios en el html y ts del componente *ntx-card19* para actualizar el componente *ntx-menu-options*.
 - Cambios en el html, css y ts del componente *ntx-card17* para parametrizar el icono y el botón.
+- Nuevo componente *ntx-card20*.
 
 **Tables**<br/>
 - Cambios en el html, scss y ts del componente *ntx-basic-table* para actualizar el componente *ntx-menu-options* y hacer que se muestren los bordes de las columnas fijas dinámicamente.

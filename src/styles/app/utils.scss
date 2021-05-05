@@ -106,6 +106,36 @@ $block: "utils";
 		text-overflow: ellipsis;
   }
 
+  &--truncate1 {
+    display: -webkit-box;
+    max-width: max-content;
+    overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 1;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+  }
+
+  &--truncate2 {
+    display: -webkit-box;
+    max-width: max-content;
+		overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+  }
+
+  &--truncate3 {
+    display: -webkit-box;
+    max-width: max-content;
+		overflow: hidden;
+    word-break: break-word;
+    -webkit-line-clamp: 3;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+  }
+
   &--vertical-align {
     left: 50%;
     margin-right: -50% !important;

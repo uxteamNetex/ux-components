@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { MediaChange, ObservableMedia } from '@angular/flex-layout';
+import { MatGridList } from '@angular/material';
 
 @Component({
 	selector: 'app-examples',
@@ -7,6 +9,15 @@ import { Router } from '@angular/router';
 	styleUrls: ['./examples.component.scss']
 })
 export class ExamplesComponent implements OnInit {
+	@ViewChild('grid') grid: MatGridList;
+
+	gridByBreakpoint = {
+		'ntx.xl': 3,
+		'ntx.lg': 2,
+		'ntx.md': 2,
+		'ntx.sm': 2,
+		'ntx.xs': 1
+	};
 
 	menuOptionsAdvanced: {
 		icon: string;
@@ -23,7 +34,7 @@ export class ExamplesComponent implements OnInit {
 		}[];
 	};
 
-	constructor(private router: Router) { }
+	constructor(private router: Router, private observableMedia: ObservableMedia) { }
 
 	card1() {
 		this.router.navigate(['card1']);
@@ -79,9 +90,11 @@ export class ExamplesComponent implements OnInit {
 	card19() {
 		this.router.navigate(['card19']);
 	}
+	card20() {
+		this.router.navigate(['card20']);
+	}
 
 	ngOnInit() {
-
 		this.menuOptionsAdvanced = {
 			icon: 'icon-more-options',
 			actions: [
@@ -186,7 +199,12 @@ export class ExamplesComponent implements OnInit {
 				},
 			]
 		};
+	}
 
+	ngAfterContentInit() {
+		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
+			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
+		});
 	}
 
 }

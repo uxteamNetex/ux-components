@@ -298,6 +298,20 @@ export class ExamplesComponent implements OnInit {
 			options: '',
 		}
 	];
+	card20: any[] = [
+		{
+			link: '',
+			image: '',
+			title: '',
+			subtitle: '',
+		},
+		{
+			link: '',
+			image: '',
+			title: '',
+			subtitle: '',
+		}
+	];
 	menuOptionsSimple: {
 		icon: string;
 		actions: {
@@ -751,6 +765,20 @@ export class ExamplesComponent implements OnInit {
 					title: 'Ana Pérez Lago',
 					subtitle: 'Front developer',
 					options: 'true',
+				}
+			];
+			this.card20 = [
+				{
+					link: false,
+					image: 'assets/images/writting.jpg',
+					title: 'Card title',
+					subtitle: 'Card subtitle',
+				},
+				{
+					link: true,
+					image: 'assets/images/bg-03.png',
+					title: 'Title that could not be longer than one line and will be shown with three dots',
+					subtitle: 'Os alunos e alunas realizaram uma excursão no sábado passado com a equipe docente do primário para realizar uma reportaxe.',
 				}
 			];
 		}, 5000);

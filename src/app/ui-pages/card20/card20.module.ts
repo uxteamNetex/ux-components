@@ -1,36 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
-import { CardsCatalogRoutingModule } from './cards-catalog-routing.module';
+import { Card20RoutingModule } from './card20-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
 
 import {
-	NtxCardsModule,
-	NtxMenusModule
+	NtxCardsModule
 } from '@netex/ux-components';
 
 import {
-	MatGridListModule, MatExpansionModule, MatCardModule
+	MatGridListModule, MatExpansionModule
 } from '@angular/material';
 
 @NgModule({
+	declarations: [DocumentationComponent, ExamplesComponent],
 	imports: [
 		CommonModule,
-		CardsCatalogRoutingModule,
-		MatGridListModule,
-		MatExpansionModule,
-		MatCardModule,
+		Card20RoutingModule,
 		NtxCardsModule,
-		NtxMenusModule
-	],
-	declarations: [
-		DocumentationComponent,
-		ExamplesComponent
+		MatGridListModule,
+		MatExpansionModule
 	],
 	exports: [
 		MatGridListModule
 	]
 })
-export class CardsCatalogModule { }
+export class Card20Module { }
