@@ -223,6 +223,68 @@ export class ExamplesComponent implements OnInit {
 	strokedIconButton = STROKEDICONBUTTON;
 	textIconButton = TEXTICONBUTTON;
 
+	list8 = [
+		{
+			positionClass: '',
+			firstLabel: '26',
+			firstLabelBgColor: '#1AA9E2',
+			firstLabelColor: '#fff',
+			secondLabel: 'L OCT',
+			thirdLabel: '09:00 - 09:30',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Tarea - Los fósiles',
+		},
+		{
+			positionClass: '',
+			firstLabel: '27',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: 'M OCT',
+			thirdLabel: '09:00 - 10:00',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Tarea - Los invertebrados',
+		},
+		{
+			positionClass: 'no-border',
+			firstLabel: '',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: '',
+			thirdLabel: '10:00 - 12:00',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Evento para toda la clase',
+		},
+		{
+			positionClass: 'no-border',
+			firstLabel: '',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: '',
+			thirdLabel: '12:00 - 13:30',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Evento para toda la clase',
+		},
+		{
+			positionClass: '',
+			firstLabel: '28',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: 'M OCT',
+			thirdLabel: '09:30 - 10:00',
+			badgeBgColor: '#1AA9E2',
+			fourthLabel: 'Tarea - Meis vocent signiferumque pri et. Facilis corpora recusabo ne quo, eum ne eruditi blandit suscipiantur.',
+		},
+		{
+			positionClass: '',
+			firstLabel: '30',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: 'V OCT',
+			thirdLabel: '09:00 - 10:00',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Tarea - Los invertebrados',
+		},
+	];
 	card1: any[] = [
 		{
 			image: '',

@@ -107,6 +107,7 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 - Nuevo componente *ntx-list6*
 - Nuevo componente *ntx-list7*
 - Cambios en el html, css y ts del componente *ntx-list-two-lines-avatar* para añadir un tercer texto.
+- Nuevo componente *ntx-list8*
 
 **Form controls**<br/>
 - Modificación en el componente *ntx-searchbox-filter-panel* para añadirle botón de limpiar input y cambiar color de texto.

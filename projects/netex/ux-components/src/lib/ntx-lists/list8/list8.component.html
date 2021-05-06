@@ -1,0 +1,20 @@
+<div class="list8">
+  <div class="list8__item" [ngClass]="item.positionClass" *ngFor="let item of items">
+    <div class="list8__item--firstLabel utils--flex-center"
+        [ngStyle] = "{'background-color': item.firstLabelBgColor}">
+      <span [ngStyle] = "{'color': item.firstLabelColor}"
+            matTooltip="{{item.firstLabel}}">{{item.firstLabel}}</span>
+    </div>
+    <div class="list8__item--secondLabel utils--text-16 utils--uppercase utils--truncate">
+      <span matTooltip="{{item.secondLabel}}">{{item.secondLabel}}</span>
+    </div>
+    <div class="list8__item--thirdLabel utils--text-14 utils--truncate">
+      <span class="list8__item--badge"
+            [ngStyle] = "{'background-color': item.badgeBgColor}"></span>
+      <span matTooltip="{{item.thirdLabel}}">{{item.thirdLabel}}</span>
+    </div>
+    <div class="list8__item--fourthLabel utils--text-14 utils--truncate">
+      <span matTooltip="{{item.fourthLabel}}">{{item.fourthLabel}}</span>
+    </div>
+  </div>
+</div>
