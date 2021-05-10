@@ -1,0 +1,28 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list9";
+
+.#{$block}{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  .#{$block}__item{
+    height: 70px;
+    margin: 0 64px 12px 0;
+    .#{$block}__item--title{
+      color: $color-grey-600;
+      font-family: lato;
+      font-size: $font-size-42;
+      margin: 0;
+      max-height: 50px;
+    }
+    .#{$block}__item--subtitle{
+      color: $color-grey-800;
+      font-family: latoBold;
+      font-size: $font-size-16;
+      margin: 0;
+      max-height: 20px;
+      white-space: nowrap;
+    }
+  }
+}

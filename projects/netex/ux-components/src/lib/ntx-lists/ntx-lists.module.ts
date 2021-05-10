@@ -26,6 +26,7 @@ import { List5Component } from './list5/list5.component';
 import { List6Component } from './list6/list6.component';
 import { List7Component } from './list7/list7.component';
 import { List8Component } from './list8/list8.component';
+import { List9Component } from './list9/list9.component';
 
 @NgModule({
 	imports: [
@@ -55,7 +56,8 @@ import { List8Component } from './list8/list8.component';
 		List5Component,
 		List6Component,
 		List7Component,
-		List8Component
+		List8Component,
+		List9Component
 	],
 	exports: [
 		ListTwoLinesAvatarComponent,
@@ -74,7 +76,8 @@ import { List8Component } from './list8/list8.component';
 		List5Component,
 		List6Component,
 		List7Component,
-		List8Component,
+    List8Component,
+    List9Component,
 		ListSidemenuComponent
 	]
 })

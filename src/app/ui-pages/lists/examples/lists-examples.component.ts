@@ -592,6 +592,37 @@ export class ListsExamplesComponent implements OnInit {
 			fourthLabel: 'Tarea - Los invertebrados',
 		},
 	];
+	list9 = [
+		{
+			title: '90',
+			titleColor: '#1AA9E2',
+			subtitle: 'Asistencia',
+		},
+		{
+			title: '10',
+			subtitle: 'Justificadas',
+		},
+		{
+			title: '50',
+			titleColor: '#5CCE88',
+			subtitle: 'Nota media',
+		},
+		{
+			title: '70',
+			titleColor: '#EE9A37',
+			subtitle: 'Media del curso',
+		},
+		{
+			title: '0',
+			titleColor: '#F05060',
+			subtitle: 'Notas debajo de 5',
+		},
+		{
+			title: '11.4 Gb',
+			titleColor: '#000',
+			subtitle: 'Espacio usado',
+		}
+	];
 
 	constructor() { }
 
