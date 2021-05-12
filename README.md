@@ -70,6 +70,7 @@ Archivos modificados:
 - Cambios en el html y ts del componente *ntx-toolbar-back-tabs* para actualizar el componente *ntx-menu-toolbar-profile*.
 - Cambios en el html y ts del componente *ntx-toolbar-searchbox* para actualizar el componente *ntx-menu-toolbar-profile*.
 - Cambios en el html y ts del componente *ntx-toolbar-tabs* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Nuevo componente *ntx-toolbar-alert*.
 
 **Buttons**<br/>
 - Modificación componente *ntx-icon-button* parametrizando el icono.

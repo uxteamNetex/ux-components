@@ -8,16 +8,19 @@ import { ToolbarTabsComponent } from './toolbar-tabs/toolbar-tabs.component';
 import { ToolbarBackComponent } from './toolbar-back/toolbar-back.component';
 import { ToolbarBackTabsComponent } from './toolbar-back-tabs/toolbar-back-tabs.component';
 
+import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { NtxMenusModule } from '../ntx-menus/ntx-menus.module';
 import { NtxTabsModule } from '../ntx-tabs/ntx-tabs.module';
 import { ToolbarSearchboxComponent } from './toolbar-searchbox/toolbar-searchbox.component';
 import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
+import { ToolbarAlertComponent } from './toolbar-alert/toolbar-alert.component';
 
 
 @NgModule({
 	imports: [
 		CommonModule,
 		NtxSharedModule,
+		NtxButtonsModule,
 		NtxMenusModule,
 		NtxTabsModule,
 		NtxFormsModule
@@ -28,7 +31,8 @@ import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 		ToolbarTabsComponent,
 		ToolbarBackComponent,
 		ToolbarBackTabsComponent,
-		ToolbarSearchboxComponent
+		ToolbarSearchboxComponent,
+		ToolbarAlertComponent
 	],
 	exports: [
 		ToolbarComponent,
@@ -36,7 +40,8 @@ import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 		ToolbarTabsComponent,
 		ToolbarBackComponent,
 		ToolbarBackTabsComponent,
-		ToolbarSearchboxComponent
+		ToolbarSearchboxComponent,
+		ToolbarAlertComponent
 	]
 })
 export class NtxToolbarModule { }

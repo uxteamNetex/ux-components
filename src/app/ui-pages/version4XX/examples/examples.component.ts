@@ -223,6 +223,15 @@ export class ExamplesComponent implements OnInit {
 	strokedIconButton = STROKEDICONBUTTON;
 	textIconButton = TEXTICONBUTTON;
 
+	toolbarAlert: any[] = [
+		{
+			bgColor: '#FFEDB1',
+			title: 'A plataforma de pagamentos já está aberta e você pode seguir com a compra dos materiais para o ano letivo.',
+			link: 'Pagar ahora',
+			showLink: true
+		}
+	];
+
 	list8 = [
 		{
 			positionClass: '',

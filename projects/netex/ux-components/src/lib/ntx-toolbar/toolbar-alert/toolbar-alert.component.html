@@ -1,0 +1,15 @@
+<div *ngFor="let item of items">
+  <mat-toolbar *ngIf="showAlert"
+                class="toolbar-alert"
+                [ngStyle] = "{'background-color': item.bgColor}">
+    <div class="toolbar-alert__message">
+      <span class="toolbar-alert__message--title utils--truncate1" matTooltip="{{item.title}}">{{item.title}}</span>
+      <ntx-link-button *ngIf="item.showLink">{{item.link}}</ntx-link-button>
+    </div>
+    <button mat-icon-button
+            class="toolbar-alert__btn"
+            (click)="toggleAlert()">
+        <mat-icon class="icon-netex icon-cross utils--text-grey-600"></mat-icon>
+    </button>
+  </mat-toolbar>
+</div>

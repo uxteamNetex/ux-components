@@ -8,6 +8,8 @@ import { MatGridList } from '@angular/material';
 	styleUrls: ['./test-page.component.scss']
 })
 export class TestPageComponent implements OnInit {
+	showAlert: boolean = true;
+
 	@ViewChild('grid') grid: MatGridList;
 
 	gridByBreakpoint = {
@@ -18,9 +20,13 @@ export class TestPageComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
-	constructor(private observableMedia: ObservableMedia) { }
+	constructor(private observableMedia: ObservableMedia) {}
 
 	ngOnInit() {}
+
+	toggleAlert(): void {
+		this.showAlert = !this.showAlert;
+	}
 
 	ngAfterContentInit() {
 		this.observableMedia.asObservable().subscribe((change: MediaChange) => {

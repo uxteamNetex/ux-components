@@ -35,6 +35,15 @@ export class ToolbarsExamplesComponent implements OnInit {
 			selector: "<ntx-toolbar-back-tabs action='finish'>"
 		}];
 
+	toolbarAlert: any[] = [
+		{
+			bgColor: '#FFEDB1',
+			title: 'A plataforma de pagamentos já está aberta e você pode seguir com a compra dos materiais para o ano letivo.',
+			link: 'Pagar ahora',
+			showLink: true
+		}
+	];
+
 	constructor(private dashboardService: DashboardService) { }
 
 	apps: any[];
@@ -42,21 +51,19 @@ export class ToolbarsExamplesComponent implements OnInit {
 
 	ngOnInit() {
 		this.apps = this.dashboardService.getDashboardApps();
-		this.menuAvatarOptions=[
+		this.menuAvatarOptions = [
 			{
-			  id: 1,
-			  label: 'Suzanne Axtens',
-			  src:'assets/images/user_female_01.jpg',
-			  active: false
+				id: 1,
+				label: 'Suzanne Axtens',
+				src: 'assets/images/user_female_01.jpg',
+				active: false
 			},
 			{
-			  id: 2,
-			  label: 'Sara Dyhouse',
-			  src:'assets/images/user_female_02.jpg',
-			  active: true
+				id: 2,
+				label: 'Sara Dyhouse',
+				src: 'assets/images/user_female_02.jpg',
+				active: true
 			},
-		  ];
+		];
 	}
-	
-
 }
