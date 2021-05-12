@@ -21,24 +21,28 @@ export class ExamplesComponent implements OnInit {
 
 	card20: any[] = [
 		{
+			showLink: '',
 			link: '',
 			image: '',
 			title: '',
 			subtitle: '',
 		},
 		{
+			showLink: '',
 			link: '',
 			image: '',
 			title: '',
 			subtitle: '',
 		},
 		{
+			showLink: '',
 			link: '',
 			image: '',
 			title: '',
 			subtitle: '',
 		},
 		{
+			showLink: '',
 			link: '',
 			image: '',
 			title: '',
@@ -54,25 +58,29 @@ export class ExamplesComponent implements OnInit {
 
 			this.card20 = [
 				{
-					link: false,
+					showLink: false,
+					link: '',
 					image: 'assets/images/writting.jpg',
 					title: 'Card title',
 					subtitle: 'Card subtitle',
 				},
 				{
-					link: false,
+					showLink: false,
+					link: '',
 					image: 'assets/images/bg-01.png',
 					title: 'Title that could not be longer than one line and will be shown with three dots',
 					subtitle: 'Os alunos e alunas realizaram uma excursão no sábado passado.',
 				},
 				{
-					link: true,
+					showLink: true,
+					link: 'blog.tucole.com',
 					image: 'assets/images/bg-02.png',
 					title: 'Card title',
 					subtitle: 'Card subtitle',
 				},
 				{
-					link: true,
+					showLink: true,
+					link: 'tublog.com',
 					image: 'assets/images/bg-03.png',
 					title: 'Title that could not be longer than one line and will be shown with three dots',
 					subtitle: 'Os alunos e alunas realizaram uma excursão no sábado passado com a equipe docente do primário para realizar uma reportaxe.',

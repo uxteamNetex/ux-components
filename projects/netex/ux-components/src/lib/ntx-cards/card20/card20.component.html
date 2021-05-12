@@ -3,7 +3,7 @@
     <img *ngIf="image" src="{{image}}" alt="Card image">
   </div>
   <mat-card-content>
-    <ntx-link-button *ngIf="link">blog.tucole.com</ntx-link-button>
+    <ntx-link-button *ngIf="showLink">{{link}}</ntx-link-button>
     <mat-card-title *ngIf="title" class="card20__title">
       <span class="card20__title--text" matTooltip="{{title}}">{{title}}</span>
     </mat-card-title>

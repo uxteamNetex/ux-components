@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class Card20Component implements OnInit {
 
-	@Input() link: boolean;
+	@Input() showLink: boolean;
+	@Input() link: string;
 	@Input() image: string;
 	@Input() title: string;
 	@Input() subtitle: string;
