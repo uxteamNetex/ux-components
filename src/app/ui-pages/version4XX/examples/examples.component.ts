@@ -324,6 +324,48 @@ export class ExamplesComponent implements OnInit {
 			titleColor: '#000',
 			subtitle: 'Espacio usado',
 		}
+  ];
+  list10 = [
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star',
+		},
+		{
+			icon: 'icon-star',
+		}
+	];
+	list10b = [
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		}
 	];
 	card1: any[] = [
 		{

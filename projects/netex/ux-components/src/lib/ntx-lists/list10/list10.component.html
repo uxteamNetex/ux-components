@@ -1,0 +1,9 @@
+<div class="list10">
+  <p class="list10__title" matTooltip="{{title}}">{{title}}</p>
+  <div class="list10__icons">
+    <mat-icon *ngFor="let item of items"
+              class="icon-netex {{item.icon}}"
+              [ngStyle] = "{'color': item.iconColor}"
+              ></mat-icon>
+  </div>
+</div>

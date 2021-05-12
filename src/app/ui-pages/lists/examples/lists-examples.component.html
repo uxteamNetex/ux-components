@@ -86,6 +86,15 @@
     </ntx-card-simple>
 
     <ntx-card-simple
+      title="{{'LIST10'}}"
+      subtitle="{{ '<ntx-list10 [items]=list10></ntx-list10>' }}">
+      <div class="utils--flex">
+        <ntx-list10 title="Originalidad" [items]=list10></ntx-list10>
+        <ntx-list10 [items]=list10b></ntx-list10>
+      </div>
+    </ntx-card-simple>
+
+    <ntx-card-simple
       title="{{'One line list with avatar' | uppercase }}"
       subtitle="{{ '<ntx-list-one-line-avatar>' }}">
         <ntx-list-one-line-avatar></ntx-list-one-line-avatar>

@@ -623,6 +623,48 @@ export class ListsExamplesComponent implements OnInit {
 			subtitle: 'Espacio usado',
 		}
 	];
+	list10 = [
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star',
+		},
+		{
+			icon: 'icon-star',
+		}
+	];
+	list10b = [
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		}
+	];
 
 	constructor() { }
 
