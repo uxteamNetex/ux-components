@@ -153,6 +153,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/icons/icons.module#IconsModule'
 	},
 	{
+		path: 'images-slider',
+		loadChildren: './ui-pages/images-slider/images-slider.module#ImagesSliderModule'
+	},
+	{
 		path: 'labels',
 		loadChildren: './ui-pages/labels/labels.module#LabelsModule'
 	},

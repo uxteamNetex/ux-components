@@ -12,6 +12,7 @@ const LINKS = [
 	'empty-pages',
 	'form-controls',
 	'icons',
+	'images-slider',
 	'labels',
 	'lists',
 	'menus',

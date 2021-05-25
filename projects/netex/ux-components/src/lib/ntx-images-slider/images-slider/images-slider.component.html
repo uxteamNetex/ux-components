@@ -1,0 +1,23 @@
+<div class="slideshow-container">
+
+  <button mat-icon-button class="prev" (click)="highlightItem($event)">
+    <mat-icon class="icon-netex icon-chevron-left utils--text-grey-600"></mat-icon>
+  </button>
+
+  <div class="mySlides fade visible">
+    <img src="assets/images/bg-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="assets/images/bg-02.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="assets/images/bg-03.png" style="width:100%">
+  </div>
+
+  <button mat-icon-button class="next" (click)="onClick($event)">
+    <mat-icon class="icon-netex icon-chevron-right utils--text-grey-600"></mat-icon>
+  </button>
+
+</div>
