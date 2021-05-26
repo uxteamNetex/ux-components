@@ -2,6 +2,20 @@ import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
+const PROFILEDIALOG2 = {
+	background: 'assets/images/background-profile-header.jpg',
+	avatar: 'assets/images/user_female_01.jpg',
+	name: 'Emma Fleming',
+	mail: '13 de fevereiro 2021 - 12:00',
+	phone: 'Ciencias da natureza',
+	location: 'Luisa Gómez Seoane',
+	description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+	action: 'justificante.png',
+	actionIcon: 'icon-paperclip',
+	labelText: 'Ausente',
+	labelColor: 'red',
+	secondaryButton: 'Cancel',
+};
 const DATA4 = {
 	title: 'Título del panel',
 	iconTitle: 'icon-reports',
@@ -215,6 +229,7 @@ export interface LabelRound {
 })
 export class ExamplesComponent implements OnInit {
 
+	user2 = PROFILEDIALOG2;
 	data4: Object;
 	emptyPages = EMPTYPAGES;
 	data = TWO_LINES_LIST_WITH_AVATAR;

@@ -13,6 +13,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Dialogs**<br/>
 - Cambios en el css del componente simple-dialog (*ntx-simple-dialog*).
 - Cambios en el css del componente proccess-dialog (*ntx-proccess-dialog*).
+- Cambios en el html, css y ts del componente (*ntx-profile-dialog*) y (*ntx-profile-dialog-content*) para añadir elementos.
 
 **Archivos modificados**<br/>
 - ux-components/src/styles/app/variables.scss

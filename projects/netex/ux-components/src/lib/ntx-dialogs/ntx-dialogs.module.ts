@@ -11,6 +11,8 @@ import { ProccessDialogComponent } from './proccess-dialog/proccess-dialog.compo
 import { ProccessDialogContentComponent } from './proccess-dialog-content/proccess-dialog-content.component';
 
 import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
+import { NtxLabelsModule } from '../ntx-labels/ntx-labels.module';
+import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { ProfileDialogComponent } from './profile-dialog/profile-dialog.component';
 import { ProfileDialogContentComponent } from './profile-dialog-content/profile-dialog-content.component';
 
@@ -19,7 +21,9 @@ import { ProfileDialogContentComponent } from './profile-dialog-content/profile-
 		CommonModule,
 		NtxSharedModule,
 		NtxDialogsRoutingModule,
-		NtxFormsModule
+		NtxFormsModule,
+		NtxLabelsModule,
+		NtxButtonsModule
 	],
 	declarations: [
 		SimpleDialogComponent,
