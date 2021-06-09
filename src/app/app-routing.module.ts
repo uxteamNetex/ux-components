@@ -141,6 +141,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/error-page-503/error-page-503.module#ErrorPage503Module'
 	},
 	{
+		path: 'expansion-panels',
+		loadChildren: './ui-pages/expansion-panels/expansion-panels.module#ExpansionPanelsModule'
+	},
+	{
 		path: 'form-controls',
 		loadChildren: './ui-pages/forms/forms.module#FormsModule'
 	},

@@ -24,3 +24,4 @@ export * from './lib/ntx-progress-spinner/ntx-progress-spinner.module';
 export * from './lib/ntx-empty-pages/ntx-empty-pages.module';
 export * from './lib/ntx-snackbars/ntx-snackbars.module';
 export * from './lib/ntx-images-slider/ntx-images-slider.module';
+export * from './lib/ntx-expansion-panels/ntx-expansion-panels.module';

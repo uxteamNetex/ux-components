@@ -10,6 +10,7 @@ const LINKS = [
 	'dialogs',
 	'drag-and-drop',
 	'empty-pages',
+	'expansion-panels',
 	'form-controls',
 	'icons',
 	'images-slider',

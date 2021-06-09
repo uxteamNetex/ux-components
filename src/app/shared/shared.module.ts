@@ -41,7 +41,8 @@ import {
 	NtxProgressSpinnerModule,
 	NtxEmptyPagesModule,
 	NtxSnackbarsModule,
-	NtxImagesSliderModule
+	NtxImagesSliderModule,
+	NtxExpansionPanelsModule
 } from '@netex/ux-components';
 
 import { AppRoutingModule } from '../app-routing.module';
@@ -108,7 +109,8 @@ import { FormsModule } from '@angular/forms';
 		NtxEmptyPagesModule,
 		NtxSnackbarsModule,
 		FormsModule,
-		NtxImagesSliderModule
+		NtxImagesSliderModule,
+		NtxExpansionPanelsModule
 	],
 	declarations: [
 		HeaderComponent,
