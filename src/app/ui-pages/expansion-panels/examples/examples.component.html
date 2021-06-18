@@ -3,9 +3,44 @@
 
     <ntx-card-simple title="{{'Expansion panels' | uppercase }}"
                       subtitle="{{ '<ntx-expansion-panels>' }}">
-      <div style="width: 600px; margin: 0 auto;">
-        <ntx-expansion-panels></ntx-expansion-panels>
-      </div>
+      <ntx-expansion-panels></ntx-expansion-panels>
+
+      <ntx-expansion-panels iconArrow="arrow-hidden" class="utils--margin-top-24">
+        <div header class="utils--flex">
+          <div class="accordion-header--image utils--flex-center utils--margin-right-16">
+            <img src="assets/images/app-catalogue.png">
+          </div>
+          <div class="accordion-header--content">
+            <div class="accordion-header--title utils--margin-right-60 utils--truncate">
+              <span class="accordion-header--title_text utils--text-18 utils--text-grey-800" matTooltip="Historia y ciencias sociales">Historia y ciencias sociales</span>
+            </div>
+            <div class="accordion-header--note utils--margin-right-60">
+              <span class="utils--text-16 utils--text-grey-800 utils--margin-bottom-4">7,5</span>
+              <ntx-progress-bar class="utils--margin-top-24 utils--margin-bottom-24" [color]="'success'" [value]="'75'"></ntx-progress-bar>
+            </div>
+            <div class="accordion-header--note-average">
+              <span class="utils--text-16 utils--text-grey-800 utils--margin-bottom-4">3,6</span>
+              <ntx-progress-bar class="utils--margin-top-24 utils--margin-bottom-24" [color]="'error'" [value]="'36'"></ntx-progress-bar>
+            </div>
+          </div>
+        </div>
+        <div body class="utils--flex">
+          <div class="accordion-body--image utils--flex-center utils--margin-right-16">
+            <img src="assets/images/app-community.png">
+          </div>
+          <div class="accordion-body--content">
+            <div class="accordion-body--title utils--margin-right-60 utils--truncate">
+              <span class="utils--text-18 utils--text-grey-800" matTooltip="Caligrafía">Caligrafía</span>
+            </div>
+            <div class="accordion-body--note utils--margin-right-60">
+              <span class="utils--text-16 utils--text-grey-800 utils--margin-bottom-4">5,5</span>
+            </div>
+            <div class="accordion-body--note">
+              <span class="utils--text-16 utils--text-grey-800 utils--margin-bottom-4">6</span>
+            </div>
+          </div>
+        </div>
+      </ntx-expansion-panels>
     </ntx-card-simple>
 
   </div>

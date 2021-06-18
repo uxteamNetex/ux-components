@@ -763,6 +763,10 @@ $block: "utils";
     display: flex !important;
     justify-content: center !important;
   }
+  &--flex-vertical-center {
+    align-items: center !important;
+    display: flex !important;
+  }
 
   //Anchos de columnas en tablas
   &--w-48 {

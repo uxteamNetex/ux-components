@@ -17,7 +17,8 @@ import {
 	NtxLabelsModule,
 	NtxDragAndDropModule,
 	NtxEmptyPagesModule,
-	NtxDialogsModule
+	NtxDialogsModule,
+	NtxProgressBarModule
 } from '@netex/ux-components';
 
 
@@ -40,7 +41,8 @@ import {
 		NtxChipsModule,
 		NtxDragAndDropModule,
 		NtxEmptyPagesModule,
-		NtxDialogsModule
+		NtxDialogsModule,
+		NtxProgressBarModule
 	]
 })
 export class Version4XXModule { }

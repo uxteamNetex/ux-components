@@ -136,6 +136,9 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 **Empty pages**<br/>
 - Modificación componente *ntx-empty-page* parametrizando su contenido.
 
+**Progress bar**<br/>
+- Cambios en el css del componente *ntx-progress-bar* para quitarle la limitación de ancho.
+
 ------------------
 
 ### v.4.3.2:

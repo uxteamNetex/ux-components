@@ -5,7 +5,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 
 import {
 	NtxCardsModule,
-	NtxExpansionPanelsModule
+	NtxExpansionPanelsModule,
+	NtxProgressBarModule
 } from '@netex/ux-components';
 
 import { ExpansionPanelsRoutingModule } from './expansion-panels-routing.module';
@@ -18,6 +19,7 @@ import { ExamplesComponent } from './examples/examples.component';
 		CommonModule,
 		NtxCardsModule,
 		NtxExpansionPanelsModule,
+		NtxProgressBarModule,
 		MatExpansionModule,
 		ExpansionPanelsRoutingModule
 	]

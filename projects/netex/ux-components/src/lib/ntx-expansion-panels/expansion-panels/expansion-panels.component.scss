@@ -1,0 +1,27 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "accordion";
+
+.#{$block}{
+  .#{$block}-panel{
+    .#{$block}-panel-header{
+      display: flex;
+      height: auto !important;
+      padding: 24px;
+      &.arrow-hidden{
+        .mat-expansion-indicator{
+          display: none;
+        }
+      }
+      .mat-content{
+        display: block;
+      }
+    }
+    .mat-expansion-panel-content{
+      border-top: 1px solid $color-grey-400;
+      .#{$block}-panel-body{
+        padding: 24px 0 8px 0;
+      }
+    }
+  }
+}
