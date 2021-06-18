@@ -2,6 +2,25 @@ import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { TabsHeaderService } from 'src/app/shared/services/tabs-header.service';
 import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
+const USER = {
+	actions: [
+		{
+			label: 'Recibidas',
+			state: 'active',
+			icon: 'icon-inbox-solid',
+			link: '#',
+			showBadge: true
+		},
+		{
+			label: 'Papelera',
+			state: '',
+			icon: 'icon-archive-solid',
+			link: '#',
+			showBadge: false
+		}
+	]
+};
+
 const PROFILEDIALOG2 = {
 	background: 'assets/images/background-profile-header.jpg',
 	avatar: 'assets/images/user_female_01.jpg',
@@ -229,6 +248,7 @@ export interface LabelRound {
 })
 export class ExamplesComponent implements OnInit {
 
+  user = USER;
 	user2 = PROFILEDIALOG2;
 	data4: Object;
 	emptyPages = EMPTYPAGES;

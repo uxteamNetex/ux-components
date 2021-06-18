@@ -23,6 +23,8 @@
         width: 32px;
         img{
           height: 100%;
+          object-fit: cover;
+          width: 100%;
         }
       }
       .menu-option-button__badge {
@@ -50,8 +52,6 @@ $block: "mat-menu-options";
           width: calc(100% - 48px);
         }
       }
-
-
       .#{$block}__user-info{
         padding: 0;
         .#{$block}__user-info--item{
@@ -98,6 +98,8 @@ $block: "mat-menu-options";
               width: 63px;
               img{
                 height: 100%;
+                object-fit: cover;
+                width: 100%;
               }
             }
           }

@@ -112,6 +112,7 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 - Nuevo componente *ntx-list8*
 - Nuevo componente *ntx-list9*
 - Nuevo componente *ntx-list10*
+- Cambios en el css del componente *ntx-list-sidemenu*.
 
 **Form controls**<br/>
 - Modificación en el componente *ntx-searchbox-filter-panel* para añadirle botón de limpiar input y cambiar color de texto.

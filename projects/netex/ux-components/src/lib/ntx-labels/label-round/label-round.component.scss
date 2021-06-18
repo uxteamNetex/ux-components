@@ -6,13 +6,18 @@ $block: "label-round";
   background-color: $color-label-grey; // default color
   border-radius: 50px;
   box-shadow: none;
+  box-sizing: border-box;
   color: $color-white;
   display: inline-block;
   font-family: LatoMedium;
   font-size: $font-size-10;
+  height: 20px;
+  line-height: 15px;
   margin: 0 4px;
   max-width: 180px;
+  min-width: 10px;
   padding: 4px 7px;
+  text-align: center;
   text-transform: uppercase;
   width: fit-content;
   .#{$block}__text{
