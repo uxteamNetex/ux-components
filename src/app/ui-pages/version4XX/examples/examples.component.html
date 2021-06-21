@@ -22,6 +22,7 @@
         <div class="whatsnew__content-block">
           <h4>New icons</h4>
           <p class="whatsnew__content-block--text utils--text-18">With this update we have a new batch of icons. For this, several css files have been touched, which you must update to see the icons correctly:</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see all the icon in this <a class="" mat-list-item routerLink="/icons/examples" (click)="setPath('icons')">link</a></p>
           <ul class="whatsnew__content-block--points">
             <li>ux-components/src/styles/fonts/styles.scss</li>
             <li>ux-components/src/styles/fonts/variables.scss</li>
@@ -75,8 +76,23 @@
         </div>
 
         <div class="whatsnew__content-block">
+          <h4>Expansion panels component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">Expansion panels</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/expansion-panels/examples" (click)="setPath('expansion-panels')">link</a></p>
+          <ntx-expansion-panels [data]="panelEmpty" iconArrow="arrow-hidden">
+            <ng-template let-rowDetail #header>
+              <span>{{rowDetail.header}}</span>
+            </ng-template>
+            <ng-template let-rowDetail #body>
+              <span>{{rowDetail.body}}</span>
+            </ng-template>
+          </ntx-expansion-panels>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>List10 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">list10</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
           <div class="utils--flex">
             <ntx-list10 title="Originalidad" [items]=list10></ntx-list10>
             <ntx-list10 [items]=list10b></ntx-list10>
@@ -86,24 +102,28 @@
         <div class="whatsnew__content-block">
           <h4>Toolbar alert component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">toolbar-alert</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/toolbars/examples" (click)="setPath('toolbars')">link</a></p>
           <ntx-toolbar-alert [items] ="toolbarAlert"></ntx-toolbar-alert>
         </div>
 
         <div class="whatsnew__content-block">
           <h4>List8 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">list8</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
           <ntx-list8 [items]=list8></ntx-list8>
         </div>
 
         <div class="whatsnew__content-block">
           <h4>List9 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">list9</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
           <ntx-list9 [items]=list9></ntx-list9>
         </div>
 
         <div class="whatsnew__content-block">
           <h4>Card20 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">card20</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/card20/examples" (click)="setPath('card20')">link</a></p>
           <div style="display: flex;justify-content: space-between;">
             <div style="width:45%" *ngFor="let item of card20">
               <ntx-card20
@@ -120,6 +140,7 @@
         <div class="whatsnew__content-block">
           <h4>Label round component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-label-round</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/labels/examples" (click)="setPath('labels')">link</a></p>
           <div class="utils--flex">
             <ntx-label-round [labels]=labelRound></ntx-label-round>
           </div>
@@ -128,7 +149,7 @@
         <div class="whatsnew__content-block">
           <h4>New avatar's menu component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-menu-avatar</span> component.</p>
-          <p class="whatsnew__content-block--text utils--text-18">You can files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menus')">link</a></p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/menus/examples" (click)="setPath('menus')">link</a></p>
           <div class="utils--flex">
             <ntx-menu-avatar [options]="menuAvatarOptions"></ntx-menu-avatar>
           </div>
@@ -137,7 +158,7 @@
         <div class="whatsnew__content-block">
           <h4>Rectangular button component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-rectangular-button</span> component.</p>
-          <p class="whatsnew__content-block--text utils--text-18">You can files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/buttons/examples" (click)="setPath('buttons')">link</a></p>
           <div class="utils--flex">
             <ntx-rectangular-button icon="icon-file" text="action"></ntx-rectangular-button>
           </div>
@@ -146,12 +167,14 @@
         <div class="whatsnew__content-block">
           <h4>New list6 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added a new list component, <span class="documentation-code">ntx-list6</span>.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
           <ntx-list6 [items]=list6></ntx-list6>
         </div>
 
         <div class="whatsnew__content-block">
           <h4>New list7 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added a new list component, <span class="documentation-code">ntx-list7</span>.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
           <ntx-list7 [items]=list7></ntx-list7>
         </div>
 

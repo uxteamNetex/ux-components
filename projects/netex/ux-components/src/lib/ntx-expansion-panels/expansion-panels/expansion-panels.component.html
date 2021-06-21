@@ -1,20 +1,20 @@
 <mat-accordion class="accordion">
-  <mat-expansion-panel class="accordion-panel">
+
+  <mat-expansion-panel *ngFor="let rowDetail of data" class="accordion-panel">
     <mat-expansion-panel-header class="accordion-panel-header {{iconArrow}}">
-      <div #contentExpansionPanelHeader>
-        <ng-content select="[header]"></ng-content>
-      </div>
-      <div *ngIf="!contentExpansionPanelHeader.innerHTML.trim()" class="utils--text-16 utils--text-grey-800">
-        Here is the header accordion
-      </div>
+      <ng-container
+          *ngIf="headerTemplateRef"
+          [ngTemplateOutlet]="headerTemplateRef"
+          [ngTemplateOutletContext]="{$implicit:rowDetail}">
+      </ng-container>
     </mat-expansion-panel-header>
     <div class="accordion-panel-body">
-      <div #contentExpansionPanelBody>
-        <ng-content select="[body]"></ng-content>
-      </div>
-      <div *ngIf="!contentExpansionPanelBody.innerHTML.trim()" class="utils--align-center-text utils--basic-text">
-        /** Here is the body accordion**/
-      </div>
+      <ng-container
+        *ngIf="bodyTemplateRef"
+        [ngTemplateOutlet]="bodyTemplateRef"
+        [ngTemplateOutletContext]="{$implicit:rowDetail}">
+      </ng-container>
     </div>
   </mat-expansion-panel>
+
 </mat-accordion>

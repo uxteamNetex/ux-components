@@ -248,7 +248,7 @@ export interface LabelRound {
 })
 export class ExamplesComponent implements OnInit {
 
-  user = USER;
+	user = USER;
 	user2 = PROFILEDIALOG2;
 	data4: Object;
 	emptyPages = EMPTYPAGES;
@@ -264,6 +264,21 @@ export class ExamplesComponent implements OnInit {
 			title: 'A plataforma de pagamentos já está aberta e você pode seguir com a compra dos materiais para o ano letivo.',
 			link: 'Pagar ahora',
 			showLink: true
+		}
+	];
+
+	panelEmpty = [
+		{
+			'header': 'This is the panel header',
+			'body': 'This is the panel body',
+		},
+		{
+			'header': 'This is the panel header 2',
+			'body': 'This is the panel body 2',
+		},
+		{
+			'header': 'This is the panel header 3',
+			'body': 'This is the panel body 3',
 		}
 	];
 

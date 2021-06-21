@@ -139,6 +139,9 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 **Progress bar**<br/>
 - Cambios en el css del componente *ntx-progress-bar* para quitarle la limitación de ancho.
 
+**Expansion panels**<br/>
+- Nuevo componente expansion panels (*ntx-expansion-panels*)
+
 ------------------
 
 ### v.4.3.2:
