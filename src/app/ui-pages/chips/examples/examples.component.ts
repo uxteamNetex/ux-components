@@ -75,6 +75,45 @@ export class ExamplesComponent implements OnInit {
 	item = ITEM;
 	chip = CHIP;
 
+	chips3: any[] = [
+		{
+			avatar: '',
+			icon: '',
+			label: 'Mary Joe Wright',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: false
+		},
+		{
+			avatar: '',
+			icon: 'icon-paperclip',
+			label: 'Laura Casariego',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: true
+		},
+		{
+			avatar: 'assets/images/perfil.jpg',
+			icon: '',
+			label: 'John Doe',
+			name: 'UX',
+			removable: 'true',
+			color: 'accent',
+			disabled: false
+		},
+		{
+			avatar: 'assets/images/user_female_01.jpg',
+			icon: '',
+			label: 'Job',
+			name: 'Example chip with a very long text',
+			removable: 'true',
+			color: 'accent',
+			disabled: true
+		}
+	];
+
 	chips2: any[] = [
 		{
 			label: 'Department',

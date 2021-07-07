@@ -198,6 +198,9 @@
             "className": "icon-coin"
         },
         {
+            "className": "icon-coin-star"
+        },
+        {
             "className": "icon-collections"
         },
         {
@@ -939,6 +942,9 @@
             "className": "icon-thumb-video"
         },
         {
+            "className": "icon-timeline"
+        },
+        {
             "className": "icon-trash"
         },
         {
@@ -976,6 +982,9 @@
         },
         {
             "className": "icon-user-change"
+        },
+        {
+            "className": "icon-user-check"
         },
         {
             "className": "icon-user-circle"

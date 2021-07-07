@@ -61,6 +61,7 @@ const USER = {
 		{
 			label: 'Recibidas',
 			state: 'active',
+			showIcon: true,
 			icon: 'icon-inbox-solid',
 			link: '#',
 			showBadge: true
@@ -68,7 +69,16 @@ const USER = {
 		{
 			label: 'Papelera',
 			state: '',
+			showIcon: true,
 			icon: 'icon-archive-solid',
+			link: '#',
+			showBadge: false
+		},
+		{
+			label: 'Otros',
+			state: '',
+			showIcon: false,
+			icon: '',
 			link: '#',
 			showBadge: false
 		}

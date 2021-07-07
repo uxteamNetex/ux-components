@@ -45,6 +45,9 @@ Archivos modificados:
 - icon-send-solid
 - icon-user-export
 - icon-user-hat
+- icon-user-check
+- icon-timeline
+- icon-coin-star
 
 **Cards**<br/>
 - Cambios en el html y ts del componente *ntx-card1* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
@@ -89,7 +92,7 @@ Archivos modificados:
 - Modificación componente *ntx-square-button* parametrizando el icono y el texto.
 
 **Chips**<br/>
-- Cambios en el componente *ntx-basic-chip* permitiendo mostrar una imagen o un icono.
+- Cambios en el html, css y ts del componente *ntx-basic-chip* permitiendo mostrar una imagen o un icono y parametrizando contenido.
 - Cambios en el css y ts del componente *ntx-basic-image-chip*.
 - Cambios en el css del componente *ntx-image-chip*.
 - Cambios en el html del componente *ntx-autocomplete-chip*.
@@ -112,7 +115,7 @@ Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para pe
 - Nuevo componente *ntx-list8*
 - Nuevo componente *ntx-list9*
 - Nuevo componente *ntx-list10*
-- Cambios en el css del componente *ntx-list-sidemenu*.
+- Cambios en el html, css y ts del componente *ntx-list-sidemenu*.
 
 **Form controls**<br/>
 - Modificación en el componente *ntx-searchbox-filter-panel* para añadirle botón de limpiar input y cambiar color de texto.

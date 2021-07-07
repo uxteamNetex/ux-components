@@ -2,9 +2,9 @@
 
   <mat-chip class="basic-chip-container__chip"
             *ngFor="let chip of chips"
-            [color]="color"
-            [disabled]="disabled"
-            [removable]="removable"
+            [color]="chip.color"
+            [disabled]="chip.disabled"
+            [removable]="chip.removable"
             (removed)="remove(chip)">
 
     <div *ngIf="chip.avatar" class="basic-chip-container__chip-image">
@@ -12,7 +12,7 @@
     </div>
 
     <mat-icon
-        *ngIf="chip.icon" 
+        *ngIf="chip.icon"
         class="basic-chip-container__chip-icon icon-netex {{chip.icon}} utils--text-24"></mat-icon>
 
     <span class="basic-chip-container__chip-text" matTooltip="{{chip.label}}">{{chip.label}}</span>
@@ -20,7 +20,7 @@
     <button mat-icon-button
             matChipRemove
             class="basic-chip-container__chip-button"
-            *ngIf="removable">
+            *ngIf="chip.removable">
       <mat-icon class="icon-netex icon-cross"></mat-icon>
     </button>
 

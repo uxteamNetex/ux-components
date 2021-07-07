@@ -45,6 +45,21 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-coin-star {
+  &:before {
+    content: $icon-coin-star;
+  }
+}
+.icon-timeline {
+  &:before {
+    content: $icon-timeline;
+  }
+}
+.icon-user-check {
+  &:before {
+    content: $icon-user-check;
+  }
+}
 .icon-evaluation-solid {
   &:before {
     content: $icon-evaluation-solid;

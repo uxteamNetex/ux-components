@@ -3,55 +3,37 @@ import { Input } from '@angular/core';
 import { MatChipInputEvent } from '@angular/material';
 
 export interface Chip {
-  label: string;
-  avatar: string;
-  icon: string;
+	label: string;
+	avatar: string;
+	icon: string;
+	removable?: boolean;
+	color: string;
+	disabled: boolean;
 }
 
 @Component({
-  selector: 'ntx-basic-chip',
-  templateUrl: './basic-chip.component.html',
-  styleUrls: ['./basic-chip.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+	selector: 'ntx-basic-chip',
+	templateUrl: './basic-chip.component.html',
+	styleUrls: ['./basic-chip.component.scss'],
+	encapsulation: ViewEncapsulation.None,
 })
 export class BasicChipComponent implements OnInit {
 
-  removable = true;
-  @Input() color: string;
-  @Input() disabled: string;
+	@Input() color: string;
+	@Input() disabled: boolean;
+	@Input() chips: Chip[];
 
-  chips: Chip[] = [
-    {	label: 'Mary Joe Wright',
-      avatar: '',
-      icon: ''
-		},
-    {	label: 'Mary Joe Wright',
-      avatar: '',
-      icon: 'icon-paperclip'
-		},
-		{
-			label: 'John Doe',
-			avatar: 'assets/images/perfil.jpg',
-      icon: ''
-		},
-		{
-			label: 'Example chip with a very long name',
-			avatar: 'assets/images/user_female_01.jpg',
-      icon: ''
+	remove(chip: Chip): void {
+		const index = this.chips.indexOf(chip);
+
+		if (index >= 0) {
+			this.chips.splice(index, 1);
 		}
-  ];
+	}
 
-  remove(chip: Chip): void {
-    const index = this.chips.indexOf(chip);
+	constructor() { }
 
-    if (index >= 0) {
-      this.chips.splice(index, 1);
-    }
-  }
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }
