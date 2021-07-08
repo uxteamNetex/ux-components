@@ -1,12 +1,12 @@
 <div class="list1">
   <div class="list1__item" *ngFor="let item of data">
     <div class="list1__item--badge">
-      <img 
+      <img
         *ngIf="item.avatar; else elseBlock"
         src="{{item.avatar}}"
         alt="{{item.label + '&#32;image'}}">
       <ng-template #elseBlock>
-        <span 
+        <span
           [style.background-color]="item.color"
           class="list1__item--alias utils--align-center-text">{{item.label | slice:0:1}}</span>
       </ng-template>
@@ -15,11 +15,11 @@
       <div class="text utils--margin-right-24 utils--truncate">
         <span class="utils--text-16 utils--text-grey-800" matTooltip="{{item.label}}">{{item.label}}</span>
       </div>
-      <ntx-progress-bar-level 
+      <ntx-progress-bar-level
         value="{{item.progress.value}}"
         class="progress-bar"></ntx-progress-bar-level>
       <span class="level utils--text-16 utils--align-center-text utils--text-grey-800">{{item.progress.level}}</span>
-      <ntx-menu-options class="options"></ntx-menu-options>
+      <ntx-menu-options class="options" [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
     </div>
   </div>
 </div>

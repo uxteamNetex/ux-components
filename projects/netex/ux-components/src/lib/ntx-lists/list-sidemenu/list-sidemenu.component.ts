@@ -11,6 +11,7 @@ export class ListSidemenuComponent implements OnInit {
 
 	@Input() user: any;
 	@Input() showBadge: boolean;
+	@Input() showIcon: boolean;
 
 	constructor() { }
 

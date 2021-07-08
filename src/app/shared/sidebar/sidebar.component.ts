@@ -4,13 +4,16 @@ import { TabsHeaderService } from '../services/tabs-header.service';
 
 const LINKS = [
 	'buttons',
+	'cards-catalog',
 	'chips',
 	'detail-panel',
 	'dialogs',
 	'drag-and-drop',
 	'empty-pages',
+	'expansion-panels',
 	'form-controls',
 	'icons',
+	'images-slider',
 	'labels',
 	'lists',
 	'menus',
@@ -78,6 +81,10 @@ const SIDENAVS = [
 	'sidenav-filters'
 ];
 
+const SNACKBARS = [
+	'snackbars'
+];
+
 const TABLES = [
 	'table',
 	'table-evaluation',
@@ -125,6 +132,10 @@ const WHATSNEWS = [
 	{
 		linkName: 'version432',
 		label: 'version 4.3.2'
+	},
+	{
+		linkName: 'version433',
+		label: 'version 4.3.3'
 	}
 ];
 
@@ -134,6 +145,7 @@ const CATEGORIES = {
 	panels: { title: 'panels', links: PANELS},
 	progress: { title: 'progress', links: PROGRESS },
 	sidenavs: { title: 'sidenavs', links: SIDENAVS },
+	snackbars: { title: 'snackbars', links: SNACKBARS },
 	table: { title: 'table', links: TABLES },
 	tree: { title: 'tree', links: TREE },
 	paginator: { title: 'paginator', links: PAGINATOR }

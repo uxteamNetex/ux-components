@@ -28,6 +28,10 @@
         "selector": "<ntx-square-button>"
     },
     {
+        "label": "rectangular",
+        "selector": "<ntx-rectangular-button>"
+    },
+    {
       "label": "speed dial",
       "selector": "<ntx-fab-speed-dial-button>"
     },

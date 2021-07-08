@@ -1,16 +1,20 @@
 <mat-list class="list-two-lines">
   <mat-list-item *ngFor="let text of data.texts" class="list-two-lines__item">
     <div matListAvatar class="list-two-lines__item--image">
-      <img class="utils--vertical-align" src="{{text.image}}" alt="user image">
+      <img *ngIf="text.image; else placeholder" class="utils--vertical-align" src="{{text.image}}" alt="user image">
+      <ng-template #placeholder>
+        <mat-icon matListIcon class="icon-netex icon-bell-solid list-two-lines__item--icon"></mat-icon>
+      </ng-template>
     </div>
     <div mat-line class="list-two-lines__flex">
       <h4 class="list-two-lines__item--title">{{text.title}}</h4>
-      <mat-icon *ngIf="text.showIcon" class="icon-netex {{text.icon}} {{text.iconColor}} utils--margin-left-12"></mat-icon>
+      <mat-icon *ngIf="text.icon" class="icon-netex {{text.icon}} {{text.iconColor}} utils--margin-left-12"></mat-icon>
     </div>
     <p mat-line class="list-two-lines__item--subtitle">
-      {{text.subtitle}}
-      <a matLine *ngIf="text.showLink" href="..." class="list-two-lines__item--subtitle-link utils--margin-left-12">{{text.link}}</a>
+      <span class="utils--margin-right-12">{{text.subtitle}}</span>
+      <ntx-link-button *ngIf="text.link">{{text.link}}</ntx-link-button>
     </p>
+    <p *ngIf="text.text" mat-line class="list-two-lines__item--text">{{text.text}}</p>
   </mat-list-item>
 </mat-list>
 

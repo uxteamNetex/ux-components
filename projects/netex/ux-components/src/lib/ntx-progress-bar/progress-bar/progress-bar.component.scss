@@ -17,7 +17,6 @@ $block: "progress-bar-container";
     &.mat-progress-bar{
       border-radius: 50px;
       height: 4px;
-      width: 180px;
       &[aria-valuenow="0"]{
         ~ .#{$block}__bolita{
           opacity: 1;

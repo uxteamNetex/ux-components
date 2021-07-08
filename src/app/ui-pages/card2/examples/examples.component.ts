@@ -18,9 +18,191 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
+	card2: any[] = [
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+    },
+    {
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		},
+		{
+			image: '',
+			title: '',
+			options: '',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
-	ngOnInit() {}
+	ngOnInit() {
+
+		setTimeout(() => {
+
+			this.card2 = [
+				{
+					image: 'assets/images/writting.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					title: 'Project name',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-03.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/background-profile-header.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					title: 'Project name',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/background-profile-header.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/writting.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-03.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/writting.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-03.png',
+					title: 'Project name',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/background-profile-header.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/writting.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					title: 'Project name',
+					options: 'true',
+				},
+				{
+					image: 'assets/images/background-profile-header.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+				}
+			];
+
+		}, 5000);
+
+	}
 
 	// tslint:disable-next-line:use-life-cycle-interface
 	ngAfterContentInit() {
@@ -29,8 +211,8 @@ export class ExamplesComponent implements OnInit {
 		});
 	}
 
-	counter(i: number) {
+/* 	counter(i: number) {
 		return new Array(i);
-	}
+	} */
 
 }

@@ -1,0 +1,33 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "toolbar-alert";
+
+.#{$block} {
+  background-color: $color-grey-200;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+  &.mat-toolbar-single-row{
+    height: $toolbarHeight;
+  }
+  .#{$block}__message{
+    display: flex;
+    padding: 0 52px 0 0px;
+    .#{$block}__message--title {
+      color: $color-grey-700;
+      font-size: $font-size-16;
+      text-overflow: ellipsis;
+      white-space: normal;
+    }
+  }
+  .#{$block}__btn {
+    height: 48px;
+    margin: 0 2px;
+    position: absolute;
+    right: 0;
+    width: 48px;
+    &:hover{
+      background: $icon-button-hover;
+    }
+  }
+}

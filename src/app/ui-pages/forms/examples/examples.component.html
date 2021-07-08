@@ -17,11 +17,11 @@
 
     <ntx-card-simple title="{{'Input form without label' | uppercase }}"
                       subtitle="{{ '<ntx-form-input-no-label>' }}">
-      <div style="width: 600px; margin: 0 auto;">              
+      <div style="width: 600px; margin: 0 auto;">
         <ntx-form-input-no-label></ntx-form-input-no-label>
       </div>
     </ntx-card-simple>
-    
+
     <ntx-card-simple title="{{'Isolated input without label' | uppercase }}"
                       subtitle="{{ '<ntx-input-no-label>' }}">
       <div class="input-no-label__container">
@@ -97,23 +97,60 @@
 
     <ntx-card-simple title="{{'Checkbox' | uppercase }}"
                       subtitle="{{ '<ntx-form-checkbox>' }}">
+      <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [label]="'I´m a checkbox'"></ntx-form-checkbox>
+      <ntx-form-checkbox [color]="'primary'" [disabled]="'true'" [label]="'I´m a checkbox'"></ntx-form-checkbox>
       <ntx-form-checkbox [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
       <ntx-form-checkbox [color]="'primary'" [disabled]="'true'"></ntx-form-checkbox>
-      <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [hidden]="'true'"></ntx-form-checkbox>
-      <ntx-form-checkbox [color]="'primary'" [disabled]="'true'" [hidden]="'true'"></ntx-form-checkbox>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Checkbox redondo' | uppercase }}"
                       subtitle="{{ '<ntx-form-checkbox-circle>' }}">
+      <ntx-form-checkbox-circle [color]="'primary'" [checked]="'true'" [label]="'I´m a checkbox'"></ntx-form-checkbox-circle>
+      <ntx-form-checkbox-circle [color]="'primary'" [disabled]="'true'" [label]="'I´m a checkbox'"></ntx-form-checkbox-circle>
       <ntx-form-checkbox-circle [color]="'primary'" [checked]="'true'"></ntx-form-checkbox-circle>
       <ntx-form-checkbox-circle [color]="'primary'" [disabled]="'true'"></ntx-form-checkbox-circle>
-      <ntx-form-checkbox-circle [color]="'primary'" [checked]="'true'" [hidden]="'true'"></ntx-form-checkbox-circle>
-      <ntx-form-checkbox-circle [color]="'primary'" [disabled]="'true'" [hidden]="'true'"></ntx-form-checkbox-circle>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Radio button' | uppercase }}"
                       subtitle="{{ '<ntx-form-radiobutton>' }}">
-      <ntx-form-radiobutton [color]="'primary'"></ntx-form-radiobutton>
+      <div class="utils--padding-left-8">
+        <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 01</div>
+        <ntx-form-radiobutton color="grey" radioGroupName="group_1" [data]="rbgData_1"></ntx-form-radiobutton>
+        <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 02</div>
+        <ntx-form-radiobutton color="orange" radioGroupName="group_2" [data]="rbgData_1"></ntx-form-radiobutton>
+        <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 03</div>
+        <ntx-form-radiobutton color="red" radioGroupName="group_3" [data]="rbgData_1"></ntx-form-radiobutton>
+        <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 04</div>
+        <ntx-form-radiobutton color="blue" radioGroupName="group_4" [data]="rbgData_1"></ntx-form-radiobutton>
+        <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 05</div>
+        <ntx-form-radiobutton color="lightblue" radioGroupName="group_5" [data]="rbgData_1"></ntx-form-radiobutton>
+        <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 06</div>
+        <ntx-form-radiobutton style="margin-left: 18px;" color="grey" labelPosition="before" radioGroupName="group_6" [data]="rbgData_1"></ntx-form-radiobutton>
+        <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 07</div>
+        <table class="radiobutton-example-table">
+          <tr>
+            <th>name</th>
+            <th>present</th>
+            <th>delay</th>
+            <th>absence</th>
+            <th>excused absence</th>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td><ntx-form-radiobutton color="blue" radioGroupName="group_7" [data]="rbgData_2"></ntx-form-radiobutton></td>
+            <td><ntx-form-radiobutton color="lightblue" radioGroupName="group_7" [data]="rbgData_3"></ntx-form-radiobutton></td>
+            <td><ntx-form-radiobutton color="red" radioGroupName="group_7" [data]="rbgData_4"></ntx-form-radiobutton></td>
+            <td><ntx-form-radiobutton color="grey" radioGroupName="group_7" [data]="rbgData_5"></ntx-form-radiobutton></td>
+          </tr>
+          <tr>
+            <td>Amanda Mattersoon</td>
+            <td><ntx-form-radiobutton color="blue" radioGroupName="group_8" [data]="rbgData_7"></ntx-form-radiobutton></td>
+            <td><ntx-form-radiobutton color="lightblue" radioGroupName="group_8" [data]="rbgData_3"></ntx-form-radiobutton></td>
+            <td><ntx-form-radiobutton color="red" radioGroupName="group_8" [data]="rbgData_6"></ntx-form-radiobutton></td>
+            <td><ntx-form-radiobutton color="grey" radioGroupName="group_8" [data]="rbgData_5"></ntx-form-radiobutton></td>
+          </tr>
+        </table>
+      </div>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Slide toggle' | uppercase }}"
@@ -131,7 +168,7 @@
                       subtitle="{{ '<ntx-searchbox-filter-panel>' }}">
       <ntx-searchbox-filter-panel></ntx-searchbox-filter-panel>
     </ntx-card-simple>
-    
+
     <ntx-card-simple title="{{'Searchbox' | uppercase }}"
                       subtitle="{{ '<ntx-form-searchbox>' }}">
       <div class="ntxformsearchbox-container">

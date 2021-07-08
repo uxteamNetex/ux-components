@@ -1,16 +1,20 @@
 <mat-card class="card1">
   <mat-card-content>
-    <div class="card1__options">
-      <ntx-menu-options></ntx-menu-options>
+    <div *ngIf="options" class="card1__options">
+      <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
     </div>
-    <div mat-card-avatar class="card1__image" style="background-image: url(assets/images/writting.jpg)" alt="User image">
-      <span class="card1__image--initials utils--vertical-align" style="display:none">PN</span>
+    <div mat-card-avatar class="card1__image" alt="User image">
+      <img *ngIf="image" src="{{image}}">
+      <span *ngIf="initials" class="card1__image--initials utils--vertical-align">{{initials}}</span>
     </div>
+
     <mat-card-title class="card1__title">
-      <span class="card1__title--text" matTooltip="Project name that could be longer than just one line and will be shown with three dots">Project name that could be longer than just one line and will be shown with three dots</span>
+      <span *ngIf="title" class="card1__title--text" matTooltip="{{title}}">{{title}}</span>
     </mat-card-title>
-    <mat-card-subtitle class="card1__subtitle">Opened today</mat-card-subtitle>
+
+    <mat-card-subtitle class="card1__subtitle">
+      <span *ngIf="subtitle" class="card1__subtitle--text">{{subtitle}}</span>
+    </mat-card-subtitle>
+
   </mat-card-content>
 </mat-card>
-
-

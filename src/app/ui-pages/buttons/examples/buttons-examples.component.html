@@ -4,18 +4,13 @@
     <ntx-card-simple title="{{'Stroked buttons' | uppercase }}"
                       subtitle="{{ '<ntx-stroked-button>' }}"
                       class="white-content">
-      <ntx-stroked-button [item3] ="item3"></ntx-stroked-button>
+      <ntx-stroked-button [item3] ="strokedButton"></ntx-stroked-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon stroked buttons' | uppercase }}"
                       subtitle="{{ '<ntx-stroked-icon-button>' }}"
                       class="white-content">
-      <ntx-stroked-icon-button [color]="'primary'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'primary'" [disabled]="'true'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'accent'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'accent'" [disabled]="'true'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'white'"></ntx-stroked-icon-button>
-      <ntx-stroked-icon-button [color]="'white'" [disabled]="'true'"></ntx-stroked-icon-button>
+      <ntx-stroked-icon-button [item] ="strokedIconButton"></ntx-stroked-icon-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon toggle buttons' | uppercase }}"
@@ -26,23 +21,18 @@
     <ntx-card-simple title="{{'Text buttons' | uppercase }}"
                       subtitle="{{ '<ntx-text-button>' }}"
                       class="white-content">
-        <ntx-text-button [color]="'primary'"></ntx-text-button>
-        <ntx-text-button [color]="'primary'" [disabled]="'true'"></ntx-text-button>
-        <ntx-text-button [color]="'accent'"></ntx-text-button>
-        <ntx-text-button [color]="'accent'" [disabled]="'true'"></ntx-text-button>
-        <ntx-text-button [color]="'white'"></ntx-text-button>
-        <ntx-text-button [color]="'white'" [disabled]="'true'"></ntx-text-button>
+      <ntx-text-button [color]="'primary'">Button</ntx-text-button>
+      <ntx-text-button [color]="'primary'" [disabled]="'true'">Link</ntx-text-button>
+      <ntx-text-button [color]="'accent'">Action</ntx-text-button>
+      <ntx-text-button [color]="'accent'" [disabled]="'true'">Action</ntx-text-button>
+      <ntx-text-button [color]="'white'">Action</ntx-text-button>
+      <ntx-text-button [color]="'white'" [disabled]="'true'">Action</ntx-text-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon text buttons' | uppercase }}"
                       subtitle="{{ '<ntx-text-icon-button>' }}"
                       class="white-content">
-        <ntx-text-icon-button [color]="'primary'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'primary'" [disabled]="'true'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'accent'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'accent'" [disabled]="'true'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'white'"></ntx-text-icon-button>
-        <ntx-text-icon-button [color]="'white'" [disabled]="'true'"></ntx-text-icon-button>
+        <ntx-text-icon-button [item] ="textIconButton"></ntx-text-icon-button>
     </ntx-card-simple>
 
 
@@ -50,47 +40,71 @@
                       title="{{type.label + ' buttons' | uppercase }}"
                       subtitle="{{ type.selector }}">
       <div *ngIf="type.label==='raised'">
-          <ntx-raised-button [color]="'primary'"></ntx-raised-button>
-          <ntx-raised-button [color]="'primary'" [disabled]="'true'"></ntx-raised-button>
-          <ntx-raised-button [color]="'accent'"></ntx-raised-button>
-          <ntx-raised-button [color]="'accent'" [disabled]="'true'"></ntx-raised-button>
+          <ntx-raised-button [color]="'primary'">Button</ntx-raised-button>
+          <ntx-raised-button [color]="'primary'" [disabled]="'true'">Link</ntx-raised-button>
+          <ntx-raised-button [color]="'accent'">Action</ntx-raised-button>
+          <ntx-raised-button [color]="'accent'" [disabled]="'true'">Action</ntx-raised-button>
       </div>
       <div *ngIf="type.label==='icon raised'">
-        <ntx-raised-icon-button [color]="'primary'"></ntx-raised-icon-button>
-        <ntx-raised-icon-button [color]="'primary'" [disabled]="'true'"></ntx-raised-icon-button>
-        <ntx-raised-icon-button [color]="'accent'"></ntx-raised-icon-button>
-        <ntx-raised-icon-button [color]="'accent'" [disabled]="'true'"></ntx-raised-icon-button>
+        <ntx-raised-icon-button [item] ="raisedIconButton"></ntx-raised-icon-button>
       </div>
-      <div *ngIf="type.label==='raised round'">
-        <ntx-raised-round-button [item2] ="item2"></ntx-raised-round-button>
+      <div *ngIf="type.label==='raised round'" class="utils--flex">
+        <ntx-raised-round-button icon="icon-pencil" text="edit" color="primary"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button text="button" color="primary"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-pencil" color="primary"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button text="link" color="primary" disabled="true"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-plus" text="action" color="violet"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-plus" color="violet"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-send" text="action" color="green"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-send" color="green"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-home" text="action" color="accent"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-home" color="accent"></ntx-raised-round-button>
+        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button icon="icon-home" color="accent" disabled="true"></ntx-raised-round-button>
       </div>
       <div *ngIf="type.label==='icon'">
-          <ntx-icon-button [color]="'primary'"></ntx-icon-button>
-          <ntx-icon-button [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
-          <ntx-icon-button [color]="'accent'"></ntx-icon-button>
-          <ntx-icon-button [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button text = "Let's talk" iconName = "icon-chat-bubble" [color]="'primary'"></ntx-icon-button>
+          <ntx-icon-button text = "Link" iconName = "icon-editor-linker-option" [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-icon-button>
+          <ntx-icon-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
       </div>
       <div *ngIf="type.label==='fab'">
-          <ntx-fab-button [color]="'primary'"></ntx-fab-button>
-          <ntx-fab-button [color]="'primary'" [disabled]="'true'"></ntx-fab-button>
-          <ntx-fab-button [color]="'accent'"></ntx-fab-button>
-          <ntx-fab-button [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
+          <ntx-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-fab-button>
+          <ntx-fab-button text = "Like" iconName = "icon-heart" [color]="'primary'" [disabled]="'true'"></ntx-fab-button>
+          <ntx-fab-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-fab-button>
+          <ntx-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
       </div>
       <div *ngIf="type.label==='mini fab'">
-          <ntx-mini-fab-button [color]="'primary'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button [color]="'accent'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
+      </div>
+      <div *ngIf="type.label==='rectangular'">
+        <ntx-rectangular-button icon="icon-file" text="action"></ntx-rectangular-button>
       </div>
       <div *ngIf="type.label==='square'">
-          <ntx-square-button></ntx-square-button>
+          <ntx-square-button text = "Add" iconName = "icon-plus-circle"></ntx-square-button>
+          <ntx-square-button text = "Like" iconName = "icon-heart"></ntx-square-button>
       </div>
       <div *ngIf="type.label==='speed dial'">
         <ntx-fab-speed-dial-button [color]="'primary'"></ntx-fab-speed-dial-button>
       </div>
       <div *ngIf="type.label==='link'">
-        <ntx-link-button>acción</ntx-link-button>
-        <ntx-link-button [rLink]="'path/to/route'" showIcon="true">acción</ntx-link-button>
+        <ntx-link-button iconLeft="icon-paperclip">action</ntx-link-button>
+        <span class="utils--margin-left-24"></span>
+        <ntx-link-button iconRight="icon-plus">action</ntx-link-button>
+        <span class="utils--margin-left-24"></span>
+        <ntx-link-button [rLink]="'path/to/route'">another action</ntx-link-button>
       </div>
     </ntx-card-simple>
 

@@ -2,7 +2,7 @@
   <ul class="list-sidemenu">
     <li *ngFor="let action of user.actions" class="{{action.state}}">
       <a routerLink="{{action.link}}">
-          <mat-icon class="icon-netex {{action.icon}} utils--margin-right-20"></mat-icon>
+          <mat-icon *ngIf="action.showIcon" class="icon-netex {{action.icon}} utils--margin-right-20"></mat-icon>
           <span class="list-sidemenu__text utils--truncate">{{action.label}}</span>
           <span matBadgeOverlap="false"
                 [matBadge]="3"

@@ -21,6 +21,9 @@
             "className": "icon-arrow-right"
         },
         {
+            "className": "icon-arrow-right-solid"
+        },
+        {
             "className": "icon-arrow-top"
         },
         {
@@ -28,6 +31,9 @@
         },
         {
             "className": "icon-attached-file"
+        },
+        {
+            "className": "icon-backpack"
         },
         {
             "className": "icon-badge"
@@ -100,6 +106,9 @@
         },
         {
             "className": "icon-chat-bubble"
+        },
+        {
+            "className": "icon-chat-bubble-question"
         },
         {
             "className": "icon-chat-bubble-smile"
@@ -187,6 +196,9 @@
         },
         {
             "className": "icon-coin"
+        },
+        {
+            "className": "icon-coin-star"
         },
         {
             "className": "icon-collections"
@@ -528,6 +540,9 @@
             "className": "icon-evaluation"
         },
         {
+            "className": "icon-evaluation-solid"
+        },
+        {
             "className": "icon-export"
         },
         {
@@ -822,6 +837,12 @@
             "className": "icon-reply"
         },
         {
+            "className": "icon-reply-solid"
+        },
+        {
+            "className": "icon-reply-all-solid"
+        },
+        {
             "className": "icon-reports"
         },
         {
@@ -849,7 +870,13 @@
             "className": "icon-search"
         },
         {
+            "className": "icon-see-more-dots"
+        },
+        {
             "className": "icon-send"
+        },
+        {
+            "className": "icon-send-solid"
         },
         {
             "className": "icon-send-off"
@@ -915,6 +942,9 @@
             "className": "icon-thumb-video"
         },
         {
+            "className": "icon-timeline"
+        },
+        {
             "className": "icon-trash"
         },
         {
@@ -954,6 +984,9 @@
             "className": "icon-user-change"
         },
         {
+            "className": "icon-user-check"
+        },
+        {
             "className": "icon-user-circle"
         },
         {
@@ -963,7 +996,13 @@
             "className": "icon-user-edit"
         },
         {
+            "className": "icon-user-export"
+        },
+        {
             "className": "icon-user-group"
+        },
+        {
+            "className": "icon-user-hat"
         },
         {
             "className": "icon-user-less"

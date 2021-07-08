@@ -8,6 +8,6 @@
   <button mat-icon-button class="mat-toolbar-header__btn">
     <mat-icon class="icon-netex icon-gear-solid"></mat-icon>
   </button>
-  <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
+  <ntx-menu-toolbar-profile [userImage]="menuToolbarProfile.userImage" [userName]="menuToolbarProfile.userName" [actions]="menuToolbarProfile.actions"></ntx-menu-toolbar-profile>
   <ntx-menu-toolbar-dashboard [apps]="apps"></ntx-menu-toolbar-dashboard>
 </mat-toolbar>

@@ -10,6 +10,7 @@ import {
 } from '@netex/ux-components';
 
 import {
+  MatExpansionModule,
   MatGridListModule
 } from '@angular/material';
 
@@ -19,7 +20,8 @@ import {
     CommonModule,
     Card3RoutingModule,
     NtxCardsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatExpansionModule
   ],
   exports: [
     MatGridListModule

@@ -13,6 +13,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/buttons/buttons.module#ButtonsModule'
 	},
 	{
+		path: 'cards-catalog',
+		loadChildren: './ui-pages/cards-catalog/cards-catalog.module#CardsCatalogModule'
+	},
+	{
 		path: 'card1',
 		loadChildren: './ui-pages/card1/card1.module#Card1Module'
 	},
@@ -85,6 +89,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/card19/card19.module#Card19Module'
 	},
 	{
+		path: 'card20',
+		loadChildren: './ui-pages/card20/card20.module#Card20Module'
+	},
+	{
 		path: 'cards',
 		loadChildren: './ui-pages/cards/cards.module#CardsModule'
 	},
@@ -133,6 +141,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/error-page-503/error-page-503.module#ErrorPage503Module'
 	},
 	{
+		path: 'expansion-panels',
+		loadChildren: './ui-pages/expansion-panels/expansion-panels.module#ExpansionPanelsModule'
+	},
+	{
 		path: 'form-controls',
 		loadChildren: './ui-pages/forms/forms.module#FormsModule'
 	},
@@ -143,6 +155,10 @@ const routes: Routes = [
 	{
 		path: 'icons',
 		loadChildren: './ui-pages/icons/icons.module#IconsModule'
+	},
+	{
+		path: 'images-slider',
+		loadChildren: './ui-pages/images-slider/images-slider.module#ImagesSliderModule'
 	},
 	{
 		path: 'labels',
@@ -195,6 +211,10 @@ const routes: Routes = [
 	{
 		path: 'sidenavs',
 		loadChildren: './ui-pages/sidenav/sidenav.module#SidenavModule'
+	},
+	{
+		path: 'snackbars',
+		loadChildren: './ui-pages/snackbars/snackbars.module#SnackbarsModule'
 	},
 	{
 		path: 'sidenav-filters',
@@ -271,6 +291,10 @@ const routes: Routes = [
 	{
 		path: 'version432',
 		loadChildren: './ui-pages/version432/version432.module#Version432Module'
+	},
+	{
+		path: 'version433',
+		loadChildren: './ui-pages/version433/version433.module#Version433Module'
 	},
 	{ path: '',
 		redirectTo: '/home',

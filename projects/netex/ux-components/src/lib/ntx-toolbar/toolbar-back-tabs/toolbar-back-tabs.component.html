@@ -6,25 +6,25 @@
     </button>
     <span class="utils--margin-left-18">Page title</span>
     <span class="toolbar-back-tabs__header--spacer"></span>
-    <button 
-      mat-stroked-button   
+    <button
+      mat-stroked-button
       *ngIf="action === 'finish'"
-      (click)="onClickButton()" 
+      (click)="onClickButton()"
       class="utils--uppercase">
       finish evaluation
     </button>
     <button
-      mat-stroked-button 
+      mat-stroked-button
       *ngIf="action === 'launch'"
-      (click)="onClickButton()" 
+      (click)="onClickButton()"
       class="utils--uppercase">
       launch evaluation
-      <mat-icon class="icon-netex icon-arrow-right"></mat-icon>  
+      <mat-icon class="icon-netex icon-arrow-right"></mat-icon>
     </button>
     <button mat-icon-button>
       <mat-icon class="icon-netex icon-gear-solid"></mat-icon>
     </button>
-    <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
+    <ntx-menu-toolbar-profile [userImage]="menuToolbarProfile.userImage" [userName]="menuToolbarProfile.userName" [actions]="menuToolbarProfile.actions"></ntx-menu-toolbar-profile>
     <ntx-menu-toolbar-dashboard [apps]="apps"></ntx-menu-toolbar-dashboard>
   </mat-toolbar-row>
 

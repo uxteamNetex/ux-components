@@ -1,16 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 import { MatDialogRef, MatDialog } from '@angular/material';
 import { ProfileDialogContentComponent } from '../profile-dialog-content/profile-dialog-content.component';
-
-const USER = {
-	background: 'assets/images/background-profile-header.jpg',
-	avatar: 'assets/images/perfil.jpg',
-	name : 'Bernice Greaves',
-	mail : 'berni.graves@netexlearning.com',
-	phone : '+34 765432190',
-	location : 'A Coruña'
-};
 
 @Component({
 	selector: 'ntx-profile-dialog',
@@ -19,7 +10,7 @@ const USER = {
 })
 export class ProfileDialogComponent implements OnInit {
 
-	user = USER;
+	@Input() user: any;
 
 	constructor(private dialog: MatDialog) { }
 

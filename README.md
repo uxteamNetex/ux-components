@@ -8,6 +8,145 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
+### v.4.3.3:
+
+**Dialogs**<br/>
+- Cambios en el css del componente simple-dialog (*ntx-simple-dialog*).
+- Cambios en el css del componente proccess-dialog (*ntx-proccess-dialog*).
+- Cambios en el html, css y ts del componente (*ntx-profile-dialog*) y (*ntx-profile-dialog-content*) para añadir elementos.
+
+**Archivos modificados**<br/>
+- ux-components/src/styles/app/variables.scss
+- ux-components/src/styles/app/utils.scss
+- src/styles/app/variables.scss
+- src/styles/app/utils.scss
+
+**Icons**<br/>
+Archivos modificados:
+- ux-components/src/assets/fonts/icons/netex.eot
+- ux-components/src/assets/fonts/icons/netex.svg
+- ux-components/src/assets/fonts/icons/netex.ttf
+- ux-components/src/assets/fonts/icons/netex.woff
+- ux-components/src/assets/resources/icons.json
+- ux-components/src/styles.scss
+- ux-components/src/styles/fonts/styles.scss
+- ux-components/src/styles/fonts/variables.scss
+- ux-components/projects/netex/ux-components/src/styles/fonts/styles.scss
+- ux-components/projects/netex/ux-components/src/styles/fonts/variables.scss
+
+**New icons**<br/>
+- icon-arrow-right-solid
+- icon-backpack
+- icon-chat-bubble-question
+- icon-evaluation-solid
+- icon-reply-all-solid
+- icon-reply-solid
+- icon-see-more-dots
+- icon-send-solid
+- icon-user-export
+- icon-user-hat
+- icon-user-check
+- icon-timeline
+- icon-coin-star
+
+**Cards**<br/>
+- Cambios en el html y ts del componente *ntx-card1* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
+- Cambios en el html y ts del componente *ntx-card2* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
+- Cambios en el html y ts del componente *ntx-card3* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
+- Cambios en el html y ts del componente *ntx-card4* para actualizar el componente *ntx-menu-options*, parametrizar su contenido y añadir skeleton de carga.
+- Cambios en el html y ts del componente *ntx-card5* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card7* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card12* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-card19* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html, css y ts del componente *ntx-card17* para parametrizar el icono y el botón.
+- Nuevo componente *ntx-card20*.
+
+**Tables**<br/>
+- Cambios en el html, scss y ts del componente *ntx-basic-table* para actualizar el componente *ntx-menu-options* y hacer que se muestren los bordes de las columnas fijas dinámicamente.
+- Cambios en el html y ts del componente *ntx-multi-select-options* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-selectable-table* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html, css y ts del componente *ntx-selectable-table*.
+
+**Toolbar**<br/>
+- Cambios en el css del componente *ntx-toolbar-searchbox*.
+- Cambios en el html y ts del componente *ntx-toolbar* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Cambios en el html y ts del componente *ntx-toolbar-back* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Cambios en el html y ts del componente *ntx-toolbar-back-tabs* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Cambios en el html y ts del componente *ntx-toolbar-searchbox* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Cambios en el html y ts del componente *ntx-toolbar-tabs* para actualizar el componente *ntx-menu-toolbar-profile*.
+- Nuevo componente *ntx-toolbar-alert*.
+
+**Buttons**<br/>
+- Modificación componente *ntx-icon-button* parametrizando el icono.
+- Modificación componente *ntx-raised-round-button* parametrizando el icono y texto y añadiendo un nuevo color.
+- Creación del componente *ntx-rectangular-button* parametrizando el icono y texto.
+- Cambios en el css del componente *ntx-stroked-toggle-button*.
+- Modificación componente *ntx-link-button* parametrizando el icono y su posición.
+- Modificación componente *ntx-stroked-icon-button* parametrizando el icono y su posición.
+- Modificación componente *ntx-text-icon-button* parametrizando el icono y su posición.
+- Modificación componente *ntx-text-button* parametrizando el contenido.
+- Modificación componente *ntx-raised-button* parametrizando el contenido.
+- Modificación componente *ntx-raised-icon-button* parametrizando el icono y su posición.
+- Modificación componente *ntx-fab-button* parametrizando el icono.
+- Modificación componente *ntx-mini-fab-button* parametrizando el icono.
+- Modificación componente *ntx-square-button* parametrizando el icono y el texto.
+
+**Chips**<br/>
+- Cambios en el html, css y ts del componente *ntx-basic-chip* permitiendo mostrar una imagen o un icono y parametrizando contenido.
+- Cambios en el css y ts del componente *ntx-basic-image-chip*.
+- Cambios en el css del componente *ntx-image-chip*.
+- Cambios en el html del componente *ntx-autocomplete-chip*.
+- Cambios en el html, css y ts del componente *ntx-category-chip*.
+
+**Drag and Drop**<br/>
+Modificación componente drag and Drop Added (*ntx-drag-and-drop-added*) para permitir adjuntar varios archivos y mostrar scroll si es necesario.
+
+**Labels**<br/>
+- Nuevo componente *ntx-label-round*
+- Cambios en el componente ntx-label *ntx-label*: Se añaden nuevos colores a la label.
+
+**Lists**<br/>
+- Cambios en el html y ts del componente *ntx-list-one-line-options* para actualizar el componente *ntx-menu-options*.
+- Cambios en el html y ts del componente *ntx-list1* para actualizar el componente *ntx-menu-options*.
+- Modificación del componente *ntx-list5* parametrizando que pueda llevar una imagen.
+- Nuevo componente *ntx-list6*
+- Nuevo componente *ntx-list7*
+- Cambios en el html, css y ts del componente *ntx-list-two-lines-avatar* para añadir un tercer texto.
+- Nuevo componente *ntx-list8*
+- Nuevo componente *ntx-list9*
+- Nuevo componente *ntx-list10*
+- Cambios en el html, css y ts del componente *ntx-list-sidemenu*.
+
+**Form controls**<br/>
+- Modificación en el componente *ntx-searchbox-filter-panel* para añadirle botón de limpiar input y cambiar color de texto.
+- Modificación componente *ntx-form-radiobutton* parametrizando el color, posición y texto.
+- Cambios y componentización del label en el css del componente *ntx-form-checkbox*.
+- Cambios y componentización del label en el css del componente *ntx-form-radiobutton*.
+- Cambios en el css del compoennte *ntx-form-datepicker*.
+
+**Menus**<br/>
+- Nuevo componente menú de avatares (*ntx-menu-avatar*)
+- Modificación componente *ntx-menu-options-simple* parametrizando el icono y las opciones de menú.
+- Modificación componente *ntx-menu-options* parametrizando el icono y las opciones de menú.
+- Modificación componente *ntx-menu-toolbar-profile* parametrizando las opciones de menú y su contenido.
+
+**Search box with filter panel<br/>**
+- Modificación del componente search box con panel de filtros para poder mostrar condicionalmente el componente *ntx-menu-avatar*
+
+**Trees**<br/>
+- Cambios en el html y ts del componente *ntx-tree* para actualizar el componente *ntx-menu-options*.
+
+**Empty pages**<br/>
+- Modificación componente *ntx-empty-page* parametrizando su contenido.
+
+**Progress bar**<br/>
+- Cambios en el css del componente *ntx-progress-bar* para quitarle la limitación de ancho.
+
+**Expansion panels**<br/>
+- Nuevo componente expansion panels (*ntx-expansion-panels*)
+
+------------------
+
 ### v.4.3.2:
 
 **Icons**<br/>

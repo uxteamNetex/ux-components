@@ -45,6 +45,71 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-coin-star {
+  &:before {
+    content: $icon-coin-star;
+  }
+}
+.icon-timeline {
+  &:before {
+    content: $icon-timeline;
+  }
+}
+.icon-user-check {
+  &:before {
+    content: $icon-user-check;
+  }
+}
+.icon-evaluation-solid {
+  &:before {
+    content: $icon-evaluation-solid;
+  }
+}
+.icon-user-export {
+  &:before {
+    content: $icon-user-export;
+  }
+}
+.icon-user-hat {
+  &:before {
+    content: $icon-user-hat;
+  }
+}
+.icon-arrow-right-solid {
+  &:before {
+    content: $icon-arrow-right-solid;
+  }
+}
+.icon-chat-bubble-question {
+  &:before {
+    content: $icon-chat-bubble-question;
+  }
+}
+.icon-reply-all-solid {
+  &:before {
+    content: $icon-reply-all-solid;
+  }
+}
+.icon-reply-solid {
+  &:before {
+    content: $icon-reply-solid;
+  }
+}
+.icon-see-more-dots {
+  &:before {
+    content: $icon-see-more-dots;
+  }
+}
+.icon-send-solid {
+  &:before {
+    content: $icon-send-solid;
+  }
+}
+.icon-backpack {
+  &:before {
+    content: $icon-backpack;
+  }
+}
 .icon-car {
   &:before {
     content: $icon-car;
@@ -70,7 +135,6 @@ mat-icon{
     content: $icon-tags-menu;
   }
 }
-
 .icon-pencil-solid {
   &:before {
     content: $icon-pencil-solid;

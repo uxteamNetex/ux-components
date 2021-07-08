@@ -3,17 +3,19 @@
 .mat-button-toggle-group{
   border: none;
   .mat-button-toggle{
-    border-bottom: 1px solid $color-grey-400;
-    border-top: 1px solid $color-grey-400;
+    background-color: transparent;
+    border-bottom: 1px solid $color-accent;
+    border-top: 1px solid $color-accent;
     border-radius: 0;
     box-shadow: none;
-    color: $color-grey-700;
+    color: $color-accent;
     &:first-of-type{
-      border-left: 1px solid $color-grey-400;
+      border-left: 1px solid $color-accent;
       border-radius: 4px 0 0 4px;
     }
     &:last-of-type{
-      border-right: 1px solid $color-grey-400;
+      border-left: 1px solid $color-accent;
+      border-right: 1px solid $color-accent;
       border-radius: 0 4px 4px 0;
     }
     .mat-button-toggle-button {

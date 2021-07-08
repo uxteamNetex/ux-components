@@ -14,10 +14,7 @@
 
     <ntx-card-simple title="{{'Basic chip' | uppercase }}"
                       subtitle="{{ '<ntx-basic-chip>' }}">
-      <ntx-basic-chip [color]="'primary'"></ntx-basic-chip>
-      <ntx-basic-chip [color]="'primary'" [disabled]="'true'"></ntx-basic-chip>
-      <ntx-basic-chip [color]="'accent'"></ntx-basic-chip>
-      <ntx-basic-chip [color]="'accent'"  [disabled]="'true'"></ntx-basic-chip>
+      <ntx-basic-chip [chips] ="chips3" [color]="'color'" [disabled]="'disabled'"></ntx-basic-chip>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Basic chip with image' | uppercase }}"
@@ -27,10 +24,7 @@
 
     <ntx-card-simple title="{{'Chip with categories' | uppercase }}"
                       subtitle="{{ '<ntx-category-chip>' }}">
-      <ntx-category-chip [color]="'primary'"></ntx-category-chip>
-      <ntx-category-chip [color]="'primary'" [disabled]="'true'"></ntx-category-chip>
-      <ntx-category-chip [color]="'accent'"></ntx-category-chip>
-      <ntx-category-chip [color]="'accent'"  [disabled]="'true'"></ntx-category-chip>
+      <ntx-category-chip [chips] ="chips2" [color]="'color'" [disabled]="'disabled'"></ntx-category-chip>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Chip with filters' | uppercase }}"

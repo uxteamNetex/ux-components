@@ -10,28 +10,43 @@
     <ntx-card-simple
       title="{{'Menu from button with flat style' | uppercase }}"
       subtitle="{{ '<ntx-menu-button-flat>' }}">
-        <ntx-menu-button-flat 
-          [icon]="menuButtonFlatData.icon" 
-          [title]="menuButtonFlatData.title" 
+        <ntx-menu-button-flat
+          [icon]="menuButtonFlatData.icon"
+          [title]="menuButtonFlatData.title"
           [actions]="menuButtonFlatData.actions"></ntx-menu-button-flat>
     </ntx-card-simple>
 
     <ntx-card-simple
       title="{{'Simple options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options-simple>' }}">
-        <ntx-menu-options-simple></ntx-menu-options-simple>
+        <div style="display:flex">
+          <ntx-menu-options-simple [icon]="menuOptionsSimple.icon" [actions]="menuOptionsSimple.actions"></ntx-menu-options-simple>
+          <ntx-menu-options-simple [icon]="menuOptionsSimpleIcon.icon" [actions]="menuOptionsSimpleIcon.actions"></ntx-menu-options-simple>
+        </div>
     </ntx-card-simple>
 
     <ntx-card-simple
       title="{{'Options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-options>' }}">
-        <ntx-menu-options></ntx-menu-options>
+        <div style="display:flex">
+          <ntx-menu-options [icon]="menuOptions.icon" [actions]="menuOptions.actions"></ntx-menu-options>
+          <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
+        </div>
     </ntx-card-simple>
 
     <ntx-card-simple
       title="{{'User toolbar options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-toolbar-profile>' }}">
-        <ntx-menu-toolbar-profile></ntx-menu-toolbar-profile>
+        <div style="display:flex">
+          <ntx-menu-toolbar-profile [userImage]="menuToolbarProfile.userImage" [userName]="menuToolbarProfile.userName" [actions]="menuToolbarProfile.actions"></ntx-menu-toolbar-profile>
+          <ntx-menu-toolbar-profile [showBadge]="true" [userImage]="menuToolbarProfile2.userImage" [userName]="menuToolbarProfile2.userName" [actions]="menuToolbarProfile2.actions"></ntx-menu-toolbar-profile>
+        </div>
+      </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'Menu avatar' | uppercase }}"
+      subtitle="{{ '<ntx-menu-avatar>' }}">
+        <ntx-menu-avatar [options]="menuAvatarOptions"></ntx-menu-avatar>
     </ntx-card-simple>
 
     <ntx-card-simple
@@ -45,5 +60,6 @@
       subtitle="{{ '<ntx-menu-toolbar-dashboard>' }}">
       <ntx-menu-toolbar-dashboard [apps]="{}"></ntx-menu-toolbar-dashboard>
     </ntx-card-simple>
+
   </div>
 </div>

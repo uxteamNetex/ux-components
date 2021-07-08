@@ -1,0 +1,21 @@
+<button 
+  mat-icon-button 
+  [matMenuTriggerFor]="menuOptions"
+  matTooltip="{{selectedOption.label}}"
+  class="menu-options-button ntx-menu-avatar">
+  <div class="image-wrapper">
+      <img class="utils--vertical-align" [src]="selectedOption.src" alt="User image">
+  </div>
+</button>
+<mat-menu 
+  #menuOptions="matMenu" 
+  [class]="'ntx-menu-avatar__panel'"
+  [overlapTrigger]="false">
+  <button 
+    mat-menu-item
+    [ngClass]="{'active': options.indexOf(selectedOption) === i}" 
+    (click)="selectOption(option)"
+    *ngFor="let option of options;let i = index">
+    <span class="utils--text-grey-700" data-id="{{option.id}}">{{option.label}}</span>
+  </button>
+</mat-menu>

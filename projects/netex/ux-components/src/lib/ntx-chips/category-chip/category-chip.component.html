@@ -1,10 +1,10 @@
 <mat-chip-list class="category-chip-container">
 
-  <mat-chip class="category-chip-container__chip"
+  <mat-chip class="category-chip-container__chip mat-chip mat-standard-chip"
             *ngFor="let chip of chips"
-            [color]="color"
-            [disabled]="disabled"
-            [removable]="removable"
+            [color]="chip.color"
+            [disabled]="chip.disabled"
+            [removable]="chip.removable"
             (removed)="remove(chip)">
 
     <span class="category-chip-container__chip-text" matTooltip="{{chip.label}}:{{chip.name}}">
@@ -15,7 +15,7 @@
     <button mat-icon-button
             matChipRemove
             class="category-chip-container__chip-button"
-            *ngIf="removable">
+            *ngIf="chip.removable">
       <mat-icon class="icon-netex icon-cross"></mat-icon>
     </button>
 

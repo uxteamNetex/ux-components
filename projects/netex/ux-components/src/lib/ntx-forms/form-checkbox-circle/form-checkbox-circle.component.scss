@@ -20,9 +20,10 @@
     }
     .mat-checkbox-layout{
       align-items: center;
+      max-width: 100%;
       .mat-checkbox-inner-container{
         height: 24px;
-        margin: 0 8px 0 0;
+        margin: 0 12px 0 0;
         width: 24px;
         .mat-checkbox-ripple{
           border-radius: 50%;
@@ -36,6 +37,16 @@
           border-radius: 50%;
           border-width: 1px;
         }
+      }
+      .mat-checkbox-label {
+        width: calc(100% - 24px);
+        p {
+          margin: 0;
+          white-space: normal;
+        }
+      }
+      .mat-checkbox-inner-container-no-side-margin {
+        margin-right: 8px;
       }
     }
   }

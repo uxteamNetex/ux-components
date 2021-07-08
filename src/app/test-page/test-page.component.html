@@ -1,8 +1,34 @@
-<div style="margin:124px auto 0 auto;width: 50%">
-  <!-- <ntx-list5 showBullet bulletType="badge" badgeColor="#1FAE96" showDivider [items]=list1></ntx-list5>
-  <ntx-list5 showBullet bulletType="icon" iconName="icon-badge" iconColor="#9A9DEB" showDivider [items]=list2></ntx-list5>
-  <ntx-list5 [items]=list3></ntx-list5>
-  <ntx-list5 showBullet bulletType="icon" iconName="icon-tags" iconColor="#EE9A37" showDivider [items]=list3></ntx-list5> -->
-  <ntx-stroked-toggle-button></ntx-stroked-toggle-button>
-  <ntx-stroked-button [item3] ="item3"></ntx-stroked-button>
+<div class="page-layout">
+  <mat-toolbar *ngIf="showAlert">
+    <h2>Material Baseline</h2>
+    <button
+      mat-button
+      mat-icon-button
+      (click)="toggleAlert()">
+        <mat-icon class="icon-netex icon-cross utils--text-grey-600"></mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div class="page-container">
+
+    <mat-grid-list #grid rowHeight="252px" gutterSize="0">
+
+      <mat-grid-tile>
+        <ntx-card1></ntx-card1>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <ntx-card1></ntx-card1>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <ntx-card1></ntx-card1>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+  </div>
 </div>
+
+
+

@@ -61,6 +61,7 @@ const USER = {
 		{
 			label: 'Recibidas',
 			state: 'active',
+			showIcon: true,
 			icon: 'icon-inbox-solid',
 			link: '#',
 			showBadge: true
@@ -68,7 +69,16 @@ const USER = {
 		{
 			label: 'Papelera',
 			state: '',
+			showIcon: true,
 			icon: 'icon-archive-solid',
+			link: '#',
+			showBadge: false
+		},
+		{
+			label: 'Otros',
+			state: '',
+			showIcon: false,
+			icon: '',
 			link: '#',
 			showBadge: false
 		}
@@ -84,28 +94,34 @@ const TWO_LINES_LIST_WITH_AVATAR = {
 			link: 'Go to learningCloud',
 			icon: 'icon-warning-solid',
 			iconColor: 'utils--text-warning',
-			showIcon: true,
-			showLink: true,
+			text: undefined
 		},
 		{
 			title: 'María Fraga Colorado',
 			subtitle: 'maria.fraga',
 			image: 'assets/images/user_female_01.jpg',
-			link: 'Go to learningCloud',
+			link: undefined,
 			icon: 'icon-bell-solid',
 			iconColor: 'utils--text-error',
-			showIcon: true,
-			showLink: false,
+			text: undefined
 		},
 		{
 			title: 'Antonio Prado',
 			subtitle: 'antonio.prado',
 			image: 'assets/images/user_male_02.png',
-			link: 'Go to learningCloud',
-			icon: 'icon-warning-solid',
-			iconColor: 'utils--text-warning',
-			showIcon: false,
-			showLink: false,
+			link: undefined,
+			icon: undefined,
+			iconColor: undefined,
+			text: undefined
+		},
+		{
+			title: 'José Antonio García',
+			subtitle: 'josean.garcia',
+			image: undefined,
+			link: undefined,
+			icon: undefined,
+			iconColor: undefined,
+			text: 'Est ei erat mucius quaeque ei his quas phaedrum.',
 		}
 	]
 };
@@ -442,6 +458,221 @@ export class ListsExamplesComponent implements OnInit {
 			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
 			labelSecondary: undefined,
 			labelRouterLink: undefined
+		}
+	];
+
+	list5_4 = [
+		{
+			avatar: 'assets/images/user_female_04.jpg',
+			labelPrincipal: 'Bernice Greaves',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		},
+		{
+			avatar: 'assets/images/user_male_01.png',
+			labelPrincipal: 'Jerry Basile',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		},
+		{
+			avatar: 'assets/images/user_female_01.jpg',
+			labelPrincipal: 'Suzanne Axtens',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		}
+	];
+
+	list6 = [
+		{
+			avatar: 'assets/images/user_female_04.jpg',
+			lblPrincipal: 'Bernice Greaves',
+			lblSecondary: {
+				text: '1 day left',
+				value: 1,
+				requiredValue: 5
+			}
+		},
+		{
+			avatar: 'assets/images/user_female_01.jpg',
+			lblPrincipal: 'Suzanne Axtens',
+			lblSecondary: {
+				text: '10 days left',
+				value: 10,
+				requiredValue: 5
+			}
+		},
+		{
+			avatar: 'assets/images/user_male_01.png',
+			lblPrincipal: 'Jerry Basile',
+			lblSecondary: {
+				text: '3 days left',
+				value: 3,
+				requiredValue: 5
+			}
+		},
+		{
+			avatar: 'assets/images/user_male_02.png',
+			lblPrincipal: 'Anthony Olenin',
+			lblSecondary: {
+				text: '7 days left',
+				value: 7,
+				requiredValue: 5
+			}
+		}
+	];
+	list7 = [
+		{
+			labelPrincipal:'ux q3',
+			labelSecondary:'UX designer',
+			labelTertiary:'27/10/2020',
+			badgeBgColor:'#199AA8',
+		},
+		{
+			labelPrincipal:'ux q3 lorem ipsum dolor sit amet, consectetur adipiscing',
+			labelSecondary:'Front-End developer lorem ipsum dolor',
+			labelTertiary:'26/07/2020',
+			badgeBgColor:'#199AA8',
+		},
+		{
+			labelPrincipal:'ux q2',
+			labelSecondary:'UI developer',
+			labelTertiary:'28/03/2020',
+			badgeBgColor:'#B182A6',
+		}
+	];
+	list8 = [
+		{
+			positionClass: '',
+			firstLabel: '26',
+			firstLabelBgColor: '#1AA9E2',
+			firstLabelColor: '#fff',
+			secondLabel: 'L OCT',
+			thirdLabel: '09:00 - 09:30',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Tarea - Los fósiles',
+		},
+		{
+			positionClass: '',
+			firstLabel: '27',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: 'M OCT',
+			thirdLabel: '09:00 - 10:00',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Tarea - Los invertebrados',
+		},
+		{
+			positionClass: 'no-border',
+			firstLabel: '',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: '',
+			thirdLabel: '10:00 - 12:00',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Evento para toda la clase',
+		},
+		{
+			positionClass: 'no-border',
+			firstLabel: '',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: '',
+			thirdLabel: '12:00 - 13:30',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Evento para toda la clase',
+		},
+		{
+			positionClass: '',
+			firstLabel: '28',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: 'M OCT',
+			thirdLabel: '09:30 - 10:00',
+			badgeBgColor: '#1AA9E2',
+			fourthLabel: 'Tarea - Meis vocent signiferumque pri et. Facilis corpora recusabo ne quo, eum ne eruditi blandit suscipiantur.',
+		},
+		{
+			positionClass: '',
+			firstLabel: '30',
+			firstLabelBgColor: '',
+			firstLabelColor: '',
+			secondLabel: 'V OCT',
+			thirdLabel: '09:00 - 10:00',
+			badgeBgColor: '#FFC400',
+			fourthLabel: 'Tarea - Los invertebrados',
+		},
+	];
+	list9 = [
+		{
+			title: '90',
+			titleColor: '#1AA9E2',
+			subtitle: 'Asistencia',
+		},
+		{
+			title: '10',
+			subtitle: 'Justificadas',
+		},
+		{
+			title: '50',
+			titleColor: '#5CCE88',
+			subtitle: 'Nota media',
+		},
+		{
+			title: '70',
+			titleColor: '#EE9A37',
+			subtitle: 'Media del curso',
+		},
+		{
+			title: '0',
+			titleColor: '#F05060',
+			subtitle: 'Notas debajo de 5',
+		},
+		{
+			title: '11.4 Gb',
+			titleColor: '#000',
+			subtitle: 'Espacio usado',
+		}
+	];
+	list10 = [
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star',
+		},
+		{
+			icon: 'icon-star',
+		}
+	];
+	list10b = [
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
+		},
+		{
+			icon: 'icon-star-solid',
+			iconColor: '#EE9A37',
 		}
 	];
 

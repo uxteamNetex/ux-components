@@ -1,7 +1,7 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
 div{
-  background-color: $color-grey-400;
+  background-color: $color-label-grey; // default color
   border-radius: 4px;
   box-shadow: none;
   color: $color-white;
@@ -13,12 +13,18 @@ div{
   text-transform: uppercase;
   width: fit-content;
   &.black{
-      background-color: $color-black;
+      background-color: $color-label-black;
+  }
+  &.blue{
+      background-color: $color-label-blue;
+  }
+  &.lightblue{
+      background-color: $color-label-lightblue;
   }
   &.orange{
-      background-color: $color-orange;
+      background-color: $color-label-orange;
   }
   &.red{
-      background-color: $color-error;
+      background-color: $color-label-red;
   }
 }

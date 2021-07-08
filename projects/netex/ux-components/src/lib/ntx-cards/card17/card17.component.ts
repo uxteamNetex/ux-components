@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class Card17Component implements OnInit {
 
 	@Input() data: any;
+	@Input() showLink: boolean;
+	@Input() showSubtitle: boolean;
 
 	constructor() { }
 

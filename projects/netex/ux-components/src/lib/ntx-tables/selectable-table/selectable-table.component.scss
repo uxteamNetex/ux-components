@@ -22,6 +22,10 @@ $block: "table-selectable";
       }
     }
   }
+  .multi-select-header__options{
+    align-items: center;
+    display: flex;
+  }
 }
 .#{$block} {
   &__wrapper {
@@ -32,53 +36,60 @@ $block: "table-selectable";
     overflow: auto;
   }
   &__table {
+    box-shadow: none;
     .mat-header-row {
-      background-color: $color-table-header-background;
       border-bottom-width: 0;
+      .mat-header-cell{
+        background-color: $color-table-header-background;
+      }
       .mat-sort-header-button {
         text-transform: uppercase;
       }
     }
 
     .mat-row {
-      font-family: LatoBold;
+      border-bottom: none;
+      font-family: Lato;
       &.highlight{
-        background-color: $color-grey-100;
-        font-family: Lato;
+        .mat-cell {
+          background-color: $color-grey-100;
+        }
       }
     }
 
     .mat-header-cell,
     .mat-cell {
-      margin: 0 6px;
+      border-bottom: 1px solid $color-grey-200;
       color: $color-grey-700;
       height: 48px;
+      min-width: 148px;
+      padding: 0 12px;
+    }
+    .mat-cell {
+      background-color: $color-white;
     }
 
     .mat-header-cell:first-of-type,
     .mat-cell:first-of-type {
-      flex: 0 0 40px;
-      margin:0;
-      padding-left: 16px;
+      margin: 0;
+      max-width: 20px;
+      min-width: 20px;
       justify-content: center;
+      padding: 0 12px 0 24px;
     }
 
     .mat-header-cell:last-of-type,
     .mat-cell:last-of-type {
-      flex: 0 0 48px;
-      margin:0;
-      padding-right: 16px;
+      border-left: none;
+      margin: 0;
+      max-width: 48px;
+      min-width: 48px;
     }
 
     .mat-header-cell:nth-child(2),
     .mat-cell:nth-child(2) {
-      flex: 0 0 24px;
-      justify-content: center;
-    }
-
-    .mat-header-cell:nth-child(6),
-    .mat-cell:nth-child(6) {
-      flex: 0 0 148px;
+      border-right: none;
+      font-family: Latobold;
     }
 
     .mat-cell:nth-child(2) .avatar-img {
@@ -86,6 +97,8 @@ $block: "table-selectable";
       display: flex;
       height: 24px;
       justify-content: center;
+      margin-right: 16px;
+      min-width: 24px;
       overflow: hidden;
       position: relative;
       text-align: center;
@@ -101,6 +114,8 @@ $block: "table-selectable";
 
     .mat-checkbox {
       .mat-checkbox-inner-container{
+        height: 20px;
+        width: 20px;
         .mat-checkbox-frame{
           border-color: $color-grey-600;
           border-width: 1px;
@@ -109,4 +124,25 @@ $block: "table-selectable";
     }
   }
 
+}
+
+
+@media (max-width: 1280px) {
+  .#{$block} {
+    &__table {
+      display: table;
+      .mat-header-cell,
+      .mat-cell {
+        max-width: 148px;
+      }
+      .mat-header-cell:nth-child(2),
+      .mat-cell:nth-child(2) {
+        border-right: 1px solid $color-grey-200;
+      }
+      .mat-header-cell:last-of-type,
+      .mat-cell:last-of-type {
+        border-left: 1px solid $color-grey-200;
+      }
+    }
+  }
 }

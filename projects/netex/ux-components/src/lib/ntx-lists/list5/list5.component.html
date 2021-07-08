@@ -11,6 +11,13 @@
           *ngIf = "bulletType === 'icon'"  
           [ngStyle] = "{'color': iconColor }"
           class="icon-netex {{ iconName }} utils--text-28"></mat-icon>
+        <div 
+          matListAvatar 
+          *ngIf="bulletType === 'avatar'"
+          class="">
+          <img src="{{item.avatar}}" alt="{{item.labelPrincipal + '&#32;image'}}">
+        </div>
+        
     </div>
     <div 
       [ngClass] = "{'divider': showDivider }"
@@ -27,7 +34,7 @@
           <span class="label">{{item.labelPrincipal}}</span>
         </ng-template>
       </div>
-      <div 
+      <div
         *ngIf="item.labelSecondary"
         class="label-secondary utils--margin-left-16">{{item.labelSecondary}}</div>
     </div>

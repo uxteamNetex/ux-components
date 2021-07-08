@@ -1,53 +1,71 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-$block: "chip-container";
+$block: "basic-chip-container";
 
 .mat-chip-list{
   &.#{$block}{
     &:focus{
       outline: none;
     }
-    .#{$block}__chip{
-      &.mat-primary{
-        background-color: $color-primary;
-        color: $color-white;
-      }
-      &.mat-accent{
-        background-color: $color-accent;
-        color: $color-white;
-      }
-      height: 32px;
-      padding: 4px 4px 4px 16px;
-      max-width: 180px;
-      .#{$block}__chip-text{
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        /* autoprefixer: off */
-        -webkit-box-orient: vertical;
-        margin-right: 8px;
-        max-height: 16px;
-        overflow: hidden;
-        word-break: break-all;
-      }
-      .#{$block}__chip-button{
-        color: $color-white;
-        height: 24px;
-        line-height: 24px;
-        margin: 0;
-        opacity: 1;
-        width: 24px;
-        .mat-icon{
-          font-size: $font-size-12;
+    .mat-chip-list-wrapper{ 
+      margin: 0;
+      .#{$block}__chip{
+        &.mat-primary{
+          background-color: $color-primary;
+          color: $color-white;
         }
-        &:hover{
-          background-color: $icon-button-hover;
+        &.mat-accent{
+          background-color: $color-accent;
+          color: $color-white;
         }
-      }
-      &[disabled]{
-        cursor: not-allowed;
-        opacity: 0.4;
+        height: 32px;
+        padding: 4px 4px 4px 16px;
+        max-width: 180px;
+        .#{$block}__chip-text{
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          /* autoprefixer: off */
+          -webkit-box-orient: vertical;
+          margin-right: 8px;
+          max-height: 16px;
+          overflow: hidden;
+          word-break: break-all;
+        }
+        .#{$block}__chip-image{
+          border-radius: 50%;
+          height: 24px;
+          width: 24px;
+          margin: 0 8px 0 -12px;
+          overflow: hidden;
+          position: relative;
+          flex-shrink: 0;
+          img{
+            height: 100%;
+          }
+        }
+        .#{$block}__chip-icon{
+          margin-left: -10px;
+        }
         .#{$block}__chip-button{
-          pointer-events: none;
+          color: $color-white;
+          height: 24px;
+          line-height: 24px;
+          margin: 0;
+          opacity: 1;
+          width: 24px;
+          .mat-icon{
+            font-size: $font-size-12;
+          }
+          &:hover{
+            background-color: $icon-button-hover;
+          }
+        }
+        &[disabled]{
+          cursor: not-allowed;
+          opacity: 0.4;
+          .#{$block}__chip-button{
+            pointer-events: none;
+          }
         }
       }
     }

@@ -1,0 +1,7 @@
+<div class="list9">
+  <div class="list9__item" *ngFor="let item of items">
+    <p class="list9__item--title" matTooltip="{{item.title}}"
+        [ngStyle] = "{'color': item.titleColor}">{{item.title}}</p>
+    <p class="list9__item--subtitle" matTooltip="{{item.subtitle}}">{{item.subtitle}}</p>
+  </div>
+</div>

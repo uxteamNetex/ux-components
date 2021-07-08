@@ -207,13 +207,13 @@ export class DocumentationComponent implements OnInit {
   code7 = `
   ...
 
-  <mat-table 
-    matSort 
+  <mat-table
+    matSort
     matSortActive="name"
-    matSortDisableClear 
-    [dataSource]="dataSource" 
-    class="table-selectable__table mat-elevation-z8"> 
-  
+    matSortDisableClear
+    [dataSource]="dataSource"
+    class="table-selectable__table mat-elevation-z8">
+
     ...
 
     <!-- Column 1 -->
@@ -236,9 +236,35 @@ export class DocumentationComponent implements OnInit {
         </span>
       </mat-cell>
     </ng-container>
-     
+
     ...
 
+  `;
+
+  code8 = `
+  ...
+
+  <ng-container matColumnDef="select" sticky>
+    <mat-header-cell *matHeaderCellDef>
+    ...
+  </ng-container>
+
+  ...
+
+  <ng-container matColumnDef="options" stickyEnd>
+    <mat-header-cell *matHeaderCellDef mat-sort-header> </mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <ntx-menu-options></ntx-menu-options>
+    </mat-cell>
+  </ng-container>
+  `;
+
+  code9 = `
+  ...
+
+  displayedColumns: string[] = ['select', 'name', 'project', 'type', 'modification', 'options'];
+
+  ...
   `;
 
 	constructor() { }

@@ -3,40 +3,36 @@
 .mat-button{
   &.text-icon-button{
     margin: 0 4px;
-    padding: 0 16px 0 12px;
+    padding: 0 12px;
     font-family: Lato;
     text-transform: uppercase;
-    &.mat-primary{
-      &[disabled]{
-        color: $color-primary;
+    &.primary{
+      color: $color-primary;
+      &:hover{
+        background-color: $icon-button-hover;
       }
     }
-    &.mat-accent{
-      &[disabled]{
-        color: $color-accent;
+    &.accent{
+      color: $color-accent;
+      &:hover{
+        background-color: $icon-button-hover;
       }
     }
-    &.mat-white{
+    &.white{
       color: $color-white;
       &:hover{
         background-color: $icon-button-hover;
       }
-      &[disabled]{
-        background-color: rgba(255, 255, 255, 0.3);
-        color: $color-white;
-        cursor: not-allowed;
-        opacity: 0.4;
-        &:hover{
-          background-color: rgba(255, 255, 255, 0.3);
-        }
-      }
     }
-    &[disabled]{
+    &.disabled{
       cursor: not-allowed;
       opacity: 0.4;
+      &:hover{
+        background-color: transparent;
+      }
     }
-    .text-icon-button__icon{
-      margin-right: 4px;
+    .text-icon-button__text{
+      margin: 0 4px;
     }
   }
 }

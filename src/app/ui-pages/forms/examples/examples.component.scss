@@ -14,3 +14,35 @@
     margin: 0 auto;
     max-width: 600px;
 }
+
+.radiobutton-example-table {
+  // width: calc(100% - 24px);
+  border-collapse: collapse;
+  tr:first-of-type{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #EEE;
+    text-transform: uppercase;
+  }
+  tr:not(:first-of-type) {
+    height: 60px;
+  }
+  th{
+    background-color: white;
+    text-align: left;
+    height: 48px;
+  }
+  td {
+    background-color: rgba(26, 169, 226, 0.05);
+    &:first-of-type {
+      border-right: 1px solid #EEE;
+    }
+    &:not(:first-of-type) {
+      min-width: 100px;
+    }
+  }
+  th,td {
+    padding: 0 16px;
+  }
+
+}

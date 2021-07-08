@@ -1,0 +1,19 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "list10";
+
+.#{$block}{
+  .#{$block}__title{
+    color: $color-grey-800;
+    font-family: latoBold;
+    font-size: $font-size-16;
+    margin: 0;
+    max-height: 20px;
+  }
+  .#{$block}__icons{
+    display: flex;
+    .icon-netex{
+      color: $color-grey-400;
+    }
+  }
+}

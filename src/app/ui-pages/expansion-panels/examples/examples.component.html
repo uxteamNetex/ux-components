@@ -1,0 +1,63 @@
+<div class="page-layout">
+  <div class="page-container">
+
+    <ntx-card-simple title="{{'Expansion panels' | uppercase }}"
+                      subtitle="{{ '<ntx-expansion-panels>' }}">
+
+      <ntx-expansion-panels [data]="panelEmpty" iconArrow="arrow-hidden">
+        <ng-template let-rowDetail #header>
+          <span>{{rowDetail.header}}</span>
+        </ng-template>
+        <ng-template let-rowDetail #body>
+          <span>{{rowDetail.body}}</span>
+        </ng-template>
+      </ntx-expansion-panels>
+
+      <div class="utils--margin-top-52"></div>
+
+      <ntx-expansion-panels [data]="panel" iconArrow="arrow-hidden">
+        <ng-template let-rowDetail #header>
+          <div class="utils--flex">
+            <div class="accordion-header--image utils--flex-center utils--margin-right-16">
+              <img src="{{rowDetail.image}}">
+            </div>
+            <div class="accordion-header--content">
+              <div class="accordion-header--title utils--margin-right-60 utils--truncate">
+                <span class="accordion-header--title_text utils--text-18 utils--text-grey-800" matTooltip="rowDetail.name">{{rowDetail.name}}</span>
+              </div>
+              <div class="accordion-header--note utils--margin-right-60">
+                <span class="utils--text-16 utils--text-grey-800 utils--margin-bottom-4">{{rowDetail.note}}</span>
+                <ntx-progress-bar class="utils--margin-top-24 utils--margin-bottom-24" [color]="rowDetail.color" [value]="rowDetail.noteNumber"></ntx-progress-bar>
+              </div>
+              <div class="accordion-header--note-average">
+                <span class="utils--text-16 utils--text-grey-800 utils--margin-bottom-4">{{rowDetail.noteAverage}}</span>
+                <ntx-progress-bar class="utils--margin-top-24 utils--margin-bottom-24" [color]="rowDetail.colorAverage" [value]="rowDetail.noteAverageNumber"></ntx-progress-bar>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template let-rowDetail #body>
+          <div class="utils--flex">
+            <div class="accordion-body--image utils--flex-center utils--margin-right-16">
+              <img src="{{rowDetail.imageBody}}">
+            </div>
+            <div class="accordion-body--content">
+              <div class="accordion-body--title utils--margin-right-60 utils--truncate">
+                <span class="utils--text-18 utils--text-grey-800" matTooltip="rowDetail.nameBody">{{rowDetail.nameBody}}</span>
+              </div>
+              <div class="accordion-body--note utils--margin-right-60">
+                <span class="utils--text-16 utils--text-grey-800 utils--margin-bottom-4">{{rowDetail.noteBody}}</span>
+              </div>
+              <div class="accordion-body--note">
+                <span class="utils--text-16 utils--text-grey-800 utils--margin-bottom-4">{{rowDetail.noteAverageBody}}</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ntx-expansion-panels>
+
+    </ntx-card-simple>
+
+  </div>
+</div>
+

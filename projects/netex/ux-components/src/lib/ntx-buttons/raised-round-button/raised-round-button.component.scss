@@ -1,39 +1,53 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-.mat-raised-button{
-  &.raised-round-button{
-    border-radius: 50px;
-    box-shadow: none;
-    color: $color-white;
-    font-family: Lato;
-    height: 42px;
-    margin: 0 4px;
-    padding: 0 16px;
-    text-transform: uppercase;
-    &.primary{
-      background-color: $color-primary;
-      &:hover{
-        background-color: $color-primary-hover;
-      }
+$block: 'ntx-raised-round-button';
+
+.#{$block} { 
+  height: 42px;
+  border-radius: 21px;
+  border: none;
+  padding: 0 16px;
+  display: inline-flex;
+  font-family: Lato;
+  font-weight: 500;
+  align-items: center;
+  color: $color-white;
+  cursor: pointer;
+  span + span {
+    margin-left: 4px;
+  }
+  &:focus {
+    outline: none;
+  }
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+  &.#{$block}-icon{
+    padding: 0 9px;
+  }
+  &.accent {
+    background-color: $color-accent;
+    &:hover{
+      background-color: $color-accent-hover;
     }
-    &.violet{
-      background-color: $color-violet;
-      &:hover{
-        background-color: $color-violet-hover;
-      }
+  }
+  &.green {
+    background-color: $color-green;
+    &:hover {
+      background-color: $color-green;
     }
-    &.accent{
-      background-color: $color-accent;
-      &:hover{
-        background-color: $color-accent-hover;
-      }
+  }
+  &.primary {
+    background-color: $color-primary;
+    &:hover{
+      background-color: $color-primary-hover;
     }
-    &.disabled{
-      cursor: not-allowed;
-      opacity: 0.4;
-    }
-    mat-icon{
-      margin-right: 4px;
+  }
+  &.violet {
+    background-color: $color-violet;
+    &:hover{
+      background-color: $color-violet-hover;
     }
   }
 }

@@ -27,10 +27,8 @@
           color: $color-grey-700;
           text-decoration: none;
         }
-        &:active {
-          color:$color-primary;
-        }
         .list-sidemenu__text{
+          font-size: 14px;
           padding-right: 24px;
           width: 100%;
         }

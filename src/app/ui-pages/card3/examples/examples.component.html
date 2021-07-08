@@ -1,49 +1,19 @@
 <div class="page-layout">
   <div class="page-container">
-    <mat-grid-list #grid rowHeight="280px" gutterSize="0">
+    <mat-grid-list #grid rowHeight="320px" gutterSize="0">
 
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card3></ntx-card3>
+      <mat-grid-tile *ngFor="let item of card3">
+        <ntx-card3
+          [image]="item.image"
+          [initials]="item.initials"
+          [badgeColor]="item.badgeColor"
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [subtitle2]="item.subtitle2"
+          [subtitle3]="item.subtitle3"
+          [subtitle3Color]="item.subtitle3Color"
+          [options]="item.options"
+          ></ntx-card3>
       </mat-grid-tile>
 
     </mat-grid-list>

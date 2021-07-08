@@ -1,4 +1,11 @@
 <a class="link-button" [routerLink]="rLink ? rLink : [] " (click)="onClickLink()">
-    <span *ngIf="showIcon" class="utils--margin-right-4">+</span>
-    <ng-content></ng-content>
+    <mat-icon
+        *ngIf="iconLeft"
+        class="icon-netex {{iconLeft}} utils--text-24"></mat-icon>
+    <span class="link-button__text">
+        <ng-content></ng-content>
+    </span>
+    <mat-icon
+        *ngIf="iconRight"
+        class="icon-netex {{iconRight}} utils--text-24"></mat-icon>
 </a>

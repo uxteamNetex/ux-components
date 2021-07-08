@@ -1,44 +1,25 @@
-<button 
-  mat-icon-button 
-  class="menu-options-button" 
-  color="accent" 
-  [matMenuTriggerFor]="menuOptions"
-  (click)="$event.stopPropagation()">
-    <mat-icon class="icon-netex icon-more-options"></mat-icon>
-</button>
-
-<mat-menu #menuOptions="matMenu" class="mat-menu-options" [overlapTrigger]="false">
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 1</span>
-  </button>
-  <button mat-menu-item disabled>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 2 Disabled</span>
-  </button>
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 3 con nombre muy largo para ver como se comporta</span>
+<div class="ntx-menu-options">
+  <button
+    mat-icon-button
+    class="menu-options-button"
+    color="accent"
+    [matMenuTriggerFor]="menuOptions"
+    (click)="$event.stopPropagation()">
+      <mat-icon class="icon-netex {{icon}}"></mat-icon>
   </button>
 
-  <mat-divider></mat-divider>
+  <mat-menu #menuOptions="matMenu" class="ntx-menu-options-panel" [overlapTrigger]="false">
 
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 4</span>
-  </button>
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 5</span>
-  </button>
-  <button mat-menu-item>
-    <mat-icon class="icon-netex icon-heart"></mat-icon>
-    <span>Option 6</span>
-  </button>
+    <div *ngFor="let item of actions">
+      <button *ngIf="item.showmenuOptions" mat-menu-item (click)="item.click()" mat-menu-item [disabled]="item.disabled">
+        <mat-icon *ngIf="item.showIconOptions" class="mat-icon icon-netex {{item.iconOptions}}"></mat-icon>
+        <span matTooltip="{{item.title}}" class="utils--text-grey-700">{{item.title}}</span>
+      </button>
 
-  <mat-divider></mat-divider>
+      <mat-divider *ngIf="item.showDivider"></mat-divider>
 
-  <ntx-raised-button [color]="'accent'"></ntx-raised-button>
-  <ntx-raised-button [color]="'accent'"></ntx-raised-button>
+      <ntx-raised-button matTooltip="{{item.buttonText}}" *ngIf="item.showButtons" [color]="'accent'">{{item.buttonText}}</ntx-raised-button>
+    </div>
 
-</mat-menu>
+  </mat-menu>
+</div>

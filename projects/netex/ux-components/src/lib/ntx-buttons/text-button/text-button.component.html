@@ -1,1 +1,5 @@
-<button mat-button [color]="color" [disabled]="disabled">Acción</button>
+<button mat-button class="mat-button text-button" [color]="color" [disabled]="disabled">
+  <span>
+    <ng-content></ng-content>
+  </span>
+</button>

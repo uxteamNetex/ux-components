@@ -9,7 +9,7 @@
                 [selectable]="selectable"
                 [removable]="removable"
                 (removed)="remove(tag)">
-        <span class="form-container__form-chip--text">{{tag}}</span>
+        <span matTooltip="{{tag}}" class="form-container__form-chip--text">{{tag}}</span>
         <button mat-icon-button
                 matChipRemove
                 class="form-container__form-chip--button"

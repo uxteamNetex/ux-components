@@ -1,39 +1,39 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Input } from '@angular/core';
 import { MatChipInputEvent } from '@angular/material';
 
 export interface Chip {
-  name: string;
+	label: string;
+	avatar: string;
+	icon: string;
+	removable?: boolean;
+	color: string;
+	disabled: boolean;
 }
 
 @Component({
-  selector: 'ntx-basic-chip',
-  templateUrl: './basic-chip.component.html',
-  styleUrls: ['./basic-chip.component.scss']
+	selector: 'ntx-basic-chip',
+	templateUrl: './basic-chip.component.html',
+	styleUrls: ['./basic-chip.component.scss'],
+	encapsulation: ViewEncapsulation.None,
 })
 export class BasicChipComponent implements OnInit {
 
-  removable = true;
-  @Input() color: string;
-  @Input() disabled: string;
+	@Input() color: string;
+	@Input() disabled: boolean;
+	@Input() chips: Chip[];
 
-  chips: Chip[] = [
-    {name: 'Mary Joe Wright'},
-    {name: 'John Doe'},
-    {name: 'Example chip with a very long name'},
-  ];
+	remove(chip: Chip): void {
+		const index = this.chips.indexOf(chip);
 
-  remove(chip: Chip): void {
-    const index = this.chips.indexOf(chip);
+		if (index >= 0) {
+			this.chips.splice(index, 1);
+		}
+	}
 
-    if (index >= 0) {
-      this.chips.splice(index, 1);
-    }
-  }
+	constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }

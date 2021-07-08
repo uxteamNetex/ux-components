@@ -1,7 +1,9 @@
-<div class="empty-page-container utils--vertical-align">
+<div *ngFor="let action of item.actions"
+      class="empty-page-container">
   <div class="empty-page-container__icon">
-    <mat-icon class="icon-netex icon-users"></mat-icon>
+    <mat-icon class="icon-netex {{action.icon}}"></mat-icon>
   </div>
-  <h2 class="empty-page-container__title">Here is the title of the issue</h2>
-  <p class="empty-page-container__subtitle">Here is the description of the issue that can't have more than 2 lines of text.</p>
+  <h2 class="empty-page-container__title">{{action.title}}</h2>
+  <p *ngIf="action.description" class="empty-page-container__subtitle">{{action.description}}</p>
+  <ntx-raised-icon-button *ngIf="action.button" [item] ="raisedIconButton"></ntx-raised-icon-button>
 </div>

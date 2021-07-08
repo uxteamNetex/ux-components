@@ -1,0 +1,617 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.3.3: New components and bug fixing</h1>
+          <p class="whatsnew__header--subtitle">8 Julio 2021</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket-5.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our monthly update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>New icons</h4>
+          <p class="whatsnew__content-block--text utils--text-18">With this update we have a new batch of icons. For this, several css files have been touched, which you must update to see the icons correctly:</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see all the icon in this <a class="" mat-list-item routerLink="/icons/examples" (click)="setPath('icons')">link</a></p>
+          <ul class="whatsnew__content-block--points">
+            <li>ux-components/src/styles/fonts/styles.scss</li>
+            <li>ux-components/src/styles/fonts/variables.scss</li>
+            <li>ux-components/src/assets/fonts/icons/netex.eot</li>
+            <li>ux-components/src/assets/fonts/icons/netex.svg</li>
+            <li>ux-components/src/assets/fonts/icons/netex.ttf</li>
+            <li>ux-components/src/assets/fonts/icons/netex.woff</li>
+          </ul>
+          <div class="icons-container">
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-arrow-right-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-arrow-right-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-backpack icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-backpack</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-chat-bubble-question icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-chat-bubble-question</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-evaluation-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-evaluation-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-reply-all-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-reply-all-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-reply-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-reply-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-see-more-dots icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-see-more-dots</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-send-solid icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-send-solid</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-user-export icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-user-export</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-user-hat icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-user-hat</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-user-check icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-user-check</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-timeline icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-timeline</label>
+            </div>
+            <div class="icon-container">
+              <mat-icon class="icon-netex icon-coin-star icon-big utils--text-grey-600"></mat-icon>
+              <label>icon-coin-star</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Expansion panels component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">Expansion panels</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/expansion-panels/examples" (click)="setPath('expansion-panels')">link</a></p>
+          <ntx-expansion-panels [data]="panelEmpty" iconArrow="arrow-hidden">
+            <ng-template let-rowDetail #header>
+              <span>{{rowDetail.header}}</span>
+            </ng-template>
+            <ng-template let-rowDetail #body>
+              <span>{{rowDetail.body}}</span>
+            </ng-template>
+          </ntx-expansion-panels>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List10 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">list10</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
+          <div class="utils--flex">
+            <ntx-list10 title="Originalidad" [items]=list10></ntx-list10>
+            <ntx-list10 [items]=list10b></ntx-list10>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Toolbar alert component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">toolbar-alert</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/toolbars/examples" (click)="setPath('toolbars')">link</a></p>
+          <ntx-toolbar-alert [items] ="toolbarAlert"></ntx-toolbar-alert>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List8 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">list8</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
+          <ntx-list8 [items]=list8></ntx-list8>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List9 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">list9</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
+          <ntx-list9 [items]=list9></ntx-list9>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card20 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">card20</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/card20/examples" (click)="setPath('card20')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:45%" *ngFor="let item of card20">
+              <ntx-card20
+                [showLink]="item.showLink"
+                [link]="item.link"
+                [image]="item.image"
+                [title]="item.title"
+                [subtitle]="item.subtitle"
+                ></ntx-card20>
+              </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Label round component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-label-round</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/labels/examples" (click)="setPath('labels')">link</a></p>
+          <div class="utils--flex">
+            <ntx-label-round [labels]=labelRound></ntx-label-round>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New avatar's menu component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-menu-avatar</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/menus/examples" (click)="setPath('menus')">link</a></p>
+          <div class="utils--flex">
+            <ntx-menu-avatar [options]="menuAvatarOptions"></ntx-menu-avatar>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Rectangular button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-rectangular-button</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/buttons/examples" (click)="setPath('buttons')">link</a></p>
+          <div class="utils--flex">
+            <ntx-rectangular-button icon="icon-file" text="action"></ntx-rectangular-button>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New list6 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added a new list component, <span class="documentation-code">ntx-list6</span>.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
+          <ntx-list6 [items]=list6></ntx-list6>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>New list7 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added a new list component, <span class="documentation-code">ntx-list7</span>.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
+          <ntx-list7 [items]=list7></ntx-list7>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">Bug fixing</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Progress bar component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-progress-bar</span> component and there have been changes in css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/progress-bar/documentation" (click)="setPath('progress-bar')">link</a></p>
+          <ntx-progress-bar class="utils--margin-top-24 utils--margin-bottom-24" [color]="'primary'" [value]="'52'"></ntx-progress-bar>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List sidemenu component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-list-sidemenu</span> component and there have been changes in css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/lists/documentation" (click)="setPath('lists')">link</a></p>
+          <ntx-list-sidemenu [user] ="user"></ntx-list-sidemenu>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Profile dialog component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-profile-dialog</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/dialogs/documentation" (click)="setPath('dialogs')">link</a></p>
+          <ntx-profile-dialog [user] ="user2"></ntx-profile-dialog>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Two lines list with avatar component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-list-two-lines-avatar</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/lists/documentation" (click)="setPath('lists')">link</a></p>
+          <ntx-list-two-lines-avatar [data] ="data"></ntx-list-two-lines-avatar>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card1 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card1</span> component and we have added a skeleton loader. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card1/documentation" (click)="setPath('card1')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:45%" *ngFor="let item of card1">
+              <ntx-card1
+                [image]="item.image"
+                [initials]="item.initials"
+                [title]="item.title"
+                [subtitle]="item.subtitle"
+                [options]="item.options"
+              ></ntx-card1>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card2 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card2</span> component and we have added a skeleton loader. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card2/documentation" (click)="setPath('card2')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:30%" *ngFor="let item of card2">
+              <ntx-card2
+                [image]="item.image"
+                [title]="item.title"
+                [options]="item.options"
+              ></ntx-card2>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card3 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card3</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card3/documentation" (click)="setPath('cards')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:45%" *ngFor="let item of card3">
+              <ntx-card3
+                [image]="item.image"
+                [initials]="item.initials"
+                [badgeColor]="item.badgeColor"
+                [title]="item.title"
+                [subtitle]="item.subtitle"
+                [subtitle2]="item.subtitle2"
+                [subtitle3]="item.subtitle3"
+                [subtitle3Color]="item.subtitle3Color"
+                [options]="item.options"
+                ></ntx-card3>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card4 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card4</span> component and we have added a skeleton loader. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card4/documentation" (click)="setPath('card4')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:45%" *ngFor="let item of card4">
+              <ntx-card4
+                [image]="item.image"
+                [initials]="item.initials"
+                [badgeColor]="item.badgeColor"
+                [title]="item.title"
+                [subtitle]="item.subtitle"
+                [options]="item.options"
+              ></ntx-card4>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card17 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card17</span> component and we have added an optional icon and subtitle. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card17/documentation" (click)="setPath('card17')">link</a></p>
+          <ntx-card17 [data] = "data4">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit lacus habitasse,<br/>
+            tincidunt euismod eleifend purus conubia at viverra nullam <br/>
+            cursus est nisi tortor sociis risus inceptos erat.
+            </p>
+          </ntx-card17>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Empty pages component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-empty-page</span> component and there have been changes in the html and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('empty-pages')">link</a></p>
+          <div class="utils--flex">
+            <ntx-empty-page [item] ="emptyPages"></ntx-empty-page>
+            <ntx-empty-page [item] ="emptyPages2"></ntx-empty-page>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>User toolbar options component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-menu-toolbar-profile</span> component and there have been changes in the html, css and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">These changes will affect all the components that use this component, such as toolbars. You will have to update it in these components too.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menus')">link</a></p>
+          <div style="display:flex">
+            <ntx-menu-toolbar-profile [userImage]="menuToolbarProfile.userImage" [userName]="menuToolbarProfile.userName" [actions]="menuToolbarProfile.actions"></ntx-menu-toolbar-profile>
+            <ntx-menu-toolbar-profile [showBadge]="true" [userImage]="menuToolbarProfile2.userImage" [userName]="menuToolbarProfile2.userName" [actions]="menuToolbarProfile2.actions"></ntx-menu-toolbar-profile>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Square button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-square-button</span> component and there have been changes in the html and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-square-button text = "Add" iconName = "icon-plus-circle"></ntx-square-button>
+          <ntx-square-button text = "Like" iconName = "icon-heart"></ntx-square-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Mini fab button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-mini-fab-button</span> component and there have been changes in the html and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Fab button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-fab-button</span> component and there have been changes in the html and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-fab-button>
+          <ntx-fab-button text = "Like" iconName = "icon-heart" [color]="'primary'" [disabled]="'true'"></ntx-fab-button>
+          <ntx-fab-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-fab-button>
+          <ntx-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Raised icon button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-raised-icon-button</span> component and there have been changes in the html, css and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-raised-icon-button [item] ="raisedIconButton"></ntx-raised-icon-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Raised button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-raised-button</span> component and there have been changes in the html and css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-raised-button [color]="'primary'">Botón</ntx-raised-button>
+          <ntx-raised-button [color]="'primary'" [disabled]="'true'">Link</ntx-raised-button>
+          <ntx-raised-button [color]="'accent'">Acción</ntx-raised-button>
+          <ntx-raised-button [color]="'accent'" [disabled]="'true'">Acción</ntx-raised-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Text button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-text-button</span> component and there have been changes in the html and css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-text-button [color]="'primary'">Botón</ntx-text-button>
+          <ntx-text-button [color]="'primary'" [disabled]="'true'">Link</ntx-text-button>
+          <ntx-text-button [color]="'accent'">Acción</ntx-text-button>
+          <ntx-text-button [color]="'accent'" [disabled]="'true'">Acción</ntx-text-button>
+          <ntx-text-button [color]="'white'">Acción</ntx-text-button>
+          <ntx-text-button [color]="'white'" [disabled]="'true'">Acción</ntx-text-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Text icon button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-text-icon-button</span> component and there have been changes in the html, css and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-text-icon-button [item] ="textIconButton"></ntx-text-icon-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Stroked icon button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-stroked-icon-button</span> component and there have been changes in the html, css and ts file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-stroked-icon-button [item] ="strokedIconButton"></ntx-stroked-icon-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Chip with categories component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-category-chip</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/chips/documentation" (click)="setPath('chips')">link</a></p>
+          <ntx-category-chip [chips] ="chips2" [color]="'color'" [disabled]="'disabled'"></ntx-category-chip>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Searchbox with filter panel component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-searchbox-filter-panel</span> component and there have been changes in html and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/form-controls/documentation" (click)="setPath('form-controls')">link</a></p>
+          <ntx-searchbox-filter-panel></ntx-searchbox-filter-panel>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Link button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-link-button</span> component and there have been changes in the css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-link-button iconLeft="icon-paperclip">action</ntx-link-button>
+          <span class="utils--margin-left-24"></span>
+          <ntx-link-button iconRight="icon-paperclip">action</ntx-link-button>
+          <span class="utils--margin-left-24"></span>
+          <ntx-link-button iconLeft="icon-funnel-solid">action</ntx-link-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Menu options simple component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-menu-options-simple</span> component and there have been changes in the css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menu')">link</a></p>
+          <div style="display:flex">
+            <ntx-menu-options-simple [icon]="menuOptionsSimple.icon" [actions]="menuOptionsSimple.actions"></ntx-menu-options-simple>
+            <ntx-menu-options-simple [icon]="menuOptionsSimpleIcon.icon" [actions]="menuOptionsSimpleIcon.actions"></ntx-menu-options-simple>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Menu options component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-menu-options</span> component and there have been changes html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">These changes will affect all the components that use this component, such as cards, tables... You will have to update it in these components too.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('menu')">link</a></p>
+          <div style="display:flex">
+            <ntx-menu-options [icon]="menuOptions.icon" [actions]="menuOptions.actions"></ntx-menu-options>
+            <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Basic toolbar with search box component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-toolbar-searchbox</span> component and there have been changes in the css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/toolbars/documentation" (click)="setPath('toolbars')">link</a></p>
+          <ntx-toolbar-searchbox label="Notificaciones" src="../../../assets/images/notifications.svg" [apps]="apps"></ntx-toolbar-searchbox>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Datepicker component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-form-datepicker</span> component and there have been changes in the css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/form-controls/documentation" (click)="setPath('form-controls')">link</a></p>
+          <ntx-form-datepicker></ntx-form-datepicker>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Icon toggle buttons component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-stroked-toggle-button</span> component and there have been changes in the css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-stroked-toggle-button></ntx-stroked-toggle-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Basic chip with image component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-basic-image-chip</span> component and there have been changes in css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/chips/documentation" (click)="setPath('chips')">link</a></p>
+          <ntx-basic-image-chip [chip] ="chip"></ntx-basic-image-chip>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Basic chip component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-basic-chip</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/chips/documentation" (click)="setPath('chips')">link</a></p>
+          <ntx-basic-chip [color]="'primary'"></ntx-basic-chip>
+          <ntx-basic-chip [color]="'primary'" [disabled]="'true'"></ntx-basic-chip>
+          <ntx-basic-chip [color]="'accent'"></ntx-basic-chip>
+          <ntx-basic-chip [color]="'accent'"  [disabled]="'true'"></ntx-basic-chip>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Drag and drop added component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-drag-and-drop-added</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/drag-and-drop/documentation" (click)="setPath('drag-and-drop')">link</a></p>
+          <ntx-drag-and-drop-added [filesAdded]="filesAdded"></ntx-drag-and-drop-added>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Checkboxes component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-form-checkbox</span> and <span class="documentation-code">ntx-form-checkbox-circle</span>components and there have been changes in the css file. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/form-controls/documentation" (click)="setPath('form-controls')">link</a></p>
+          <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [label]="'I´m a checkbox'"></ntx-form-checkbox>
+          <ntx-form-checkbox [color]="'primary'" [disabled]="'true'"[label]="'I´m a checkbox'"></ntx-form-checkbox>
+          <ntx-form-checkbox [color]="'primary'" [checked]="'true'"></ntx-form-checkbox>
+          <ntx-form-checkbox [color]="'primary'" [disabled]="'true'"></ntx-form-checkbox>
+          <ntx-form-checkbox-circle [color]="'primary'" [checked]="'true'" [label]="'I´m a checkbox'"></ntx-form-checkbox-circle>
+          <ntx-form-checkbox-circle [color]="'primary'" [disabled]="'true'" [label]="'I´m a checkbox'"></ntx-form-checkbox-circle>
+          <ntx-form-checkbox-circle [color]="'primary'" [checked]="'true'"></ntx-form-checkbox-circle>
+          <ntx-form-checkbox-circle [color]="'primary'" [disabled]="'true'"></ntx-form-checkbox-circle>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Radio button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-form-radiobutton</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/form-controls/documentation" (click)="setPath('form-controls')">link</a></p>
+          <div class="">
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 01</div>
+            <ntx-form-radiobutton color="grey" radioGroupName="group_1" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 02</div>
+            <ntx-form-radiobutton color="orange" radioGroupName="group_2" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 03</div>
+            <ntx-form-radiobutton color="red" radioGroupName="group_3" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 04</div>
+            <ntx-form-radiobutton color="blue" radioGroupName="group_4" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 05</div>
+            <ntx-form-radiobutton color="lightblue" radioGroupName="group_5" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 06</div>
+            <ntx-form-radiobutton style="margin-left: 18px;" color="grey" labelPosition="before" radioGroupName="group_6" [data]="rbgData_1"></ntx-form-radiobutton>
+            <div class="utils--basic-text utils--margin-bottom-16 utils--margin-top-16">example 07</div>
+            <table class="radiobutton-example-table">
+              <tr>
+                <th>name</th>
+                <th>present</th>
+                <th>delay</th>
+                <th>absence</th>
+                <th>excused absence</th>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td><ntx-form-radiobutton color="blue" radioGroupName="group_7" [data]="rbgData_2"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="lightblue" radioGroupName="group_7" [data]="rbgData_3"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="red" radioGroupName="group_7" [data]="rbgData_4"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="grey" radioGroupName="group_7" [data]="rbgData_5"></ntx-form-radiobutton></td>
+              </tr>
+              <tr>
+                <td>Amanda Mattersoon</td>
+                <td><ntx-form-radiobutton color="blue" radioGroupName="group_8" [data]="rbgData_7"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="lightblue" radioGroupName="group_8" [data]="rbgData_3"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="red" radioGroupName="group_8" [data]="rbgData_6"></ntx-form-radiobutton></td>
+                <td><ntx-form-radiobutton color="grey" radioGroupName="group_8" [data]="rbgData_5"></ntx-form-radiobutton></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Raised round button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-raised-round-button</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <div class="utils--flex">
+            <ntx-raised-round-button icon="icon-pencil" text="action" color="primary"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button text="action" color="primary"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button icon="icon-pencil" color="primary"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button text="action" color="primary" disabled="true"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button icon="icon-plus" text="action" color="violet"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button icon="icon-send" text="action" color="green"></ntx-raised-round-button>
+            <div class="utils--margin-left-12"></div>
+            <ntx-raised-round-button icon="icon-home" text="action" color="accent"></ntx-raised-round-button>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Icon button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-icon-button</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <ntx-icon-button text = "Let's talk" iconName = "icon-chat-bubble" [color]="'primary'"></ntx-icon-button>
+          <ntx-icon-button text = "Link" iconName = "icon-editor-linker-option" [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-icon-button>
+          <ntx-icon-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Label component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-label</span> component and there have been changes in html, ts and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/labels/documentation" (click)="setPath('labels')">link</a></p>
+          <ntx-label text="justificada"></ntx-label>
+          <ntx-label text="bloqueado" color="black"></ntx-label>
+          <ntx-label text="inactivo" color="orange"></ntx-label>
+          <ntx-label text="ausente" color="red"></ntx-label>
+          <ntx-label text="presente" color="blue"></ntx-label>
+          <ntx-label text="retraso" color="lightblue"></ntx-label>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Basic table component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-basic-table</span> component and there have been changes in html and css files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/table/documentation" (click)="setPath('table')">link</a></p>
+          <ntx-basic-table [tableData]="tableData"></ntx-basic-table>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Selectable table component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-selectable-table</span> component and there have been changes in html, css and ts files. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/table-selectable/documentation" (click)="setPath('table-selectable')">link</a></p>
+          <ntx-selectable-table></ntx-selectable-table>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Dialogs</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version, bugs have been fixed in the <span class="documentation-code">ntx-simple-dialog</span> and <span class="documentation-code">ntx-proccess-dialog</span> component and css changes have been affected. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/dialogs/documentation" (click)="setPath('dialogs')">link</a></p>
+        </div>
+
+      </div>
+
+    </ntx-card-simple>
+  </div>
+</div>

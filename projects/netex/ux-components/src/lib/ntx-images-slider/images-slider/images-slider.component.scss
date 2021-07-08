@@ -1,0 +1,52 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+
+.highlighted{
+  color: red !important;
+}
+
+.slideshow-container {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  max-width: 700px;
+  position: relative;
+  .mySlides {
+    border-radius: 8px;
+    display: none;
+    margin: 0 12px;
+    overflow: hidden;
+    &.visible{
+      display: block;
+    }
+    &.fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+  }
+  .mat-icon-button{
+    height: 48px;
+    line-height: 48px;
+    margin: 0 4px;
+    width: 48px;
+    color: $color-grey-700;
+    &:hover{
+        background-color: $icon-button-hover;
+    }
+    &.next {
+      right: 0;
+    }
+  }
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

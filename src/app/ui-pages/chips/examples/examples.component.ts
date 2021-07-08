@@ -56,6 +56,12 @@ const CHIP = {
 	]
 };
 
+export interface Chip {
+	label: string;
+	name: string;
+	removable?: boolean;
+}
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -64,10 +70,110 @@ const CHIP = {
 })
 export class ExamplesComponent implements OnInit {
 
+	constructor() { }
+
 	item = ITEM;
 	chip = CHIP;
 
-	constructor() { }
+	chips3: any[] = [
+		{
+			avatar: '',
+			icon: '',
+			label: 'Mary Joe Wright',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: false
+		},
+		{
+			avatar: '',
+			icon: 'icon-paperclip',
+			label: 'Laura Casariego',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: true
+		},
+		{
+			avatar: 'assets/images/perfil.jpg',
+			icon: '',
+			label: 'John Doe',
+			name: 'UX',
+			removable: 'true',
+			color: 'accent',
+			disabled: false
+		},
+		{
+			avatar: 'assets/images/user_female_01.jpg',
+			icon: '',
+			label: 'Job',
+			name: 'Example chip with a very long text',
+			removable: 'true',
+			color: 'accent',
+			disabled: true
+		}
+	];
+
+	chips2: any[] = [
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: false
+		},
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: '',
+			color: 'primary',
+			disabled: true
+		},
+		{
+			label: 'Department',
+			name: 'UX',
+			removable: 'true',
+			color: 'primary',
+			disabled: true
+		},
+		{
+			label: 'Job',
+			name: 'Designer',
+			removable: '',
+			color: 'accent',
+			disabled: false
+		},
+		{
+			label: 'Job',
+			name: 'Designer',
+			removable: '',
+			color: 'accent',
+			disabled: true
+		},
+		{
+			label: 'Department',
+			name: 'Example chip with a very long name',
+			removable: 'true',
+			color: 'accent',
+			disabled: false
+		},
+	];
+
+	chips: any[] = [
+		{
+			label: 'Mary Joe Wright',
+			avatar: ''
+		},
+		{
+			label: 'John Doe',
+			avatar: 'assets/images/perfil.jpg'
+		},
+		{
+			label: 'Example chip with a very long name',
+			avatar: 'assets/images/user_female_01.jpg'
+		}
+	];
+
 
 	ngOnInit() {
 	}

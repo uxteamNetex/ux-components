@@ -7,14 +7,15 @@
 
     <div class="table-selectable__container">
       <!-- Table -->
-      <mat-table 
-        matSort 
+      <mat-table
+        matSort
         matSortActive="name"
-        matSortDisableClear 
-        [dataSource]="dataSource" 
+        matSortDisableClear
+        [dataSource]="dataSource"
         class="table-selectable__table mat-elevation-z8">
+
         <!-- Checkbox Column -->
-        <ng-container matColumnDef="select">
+        <ng-container matColumnDef="select" sticky>
           <mat-header-cell *matHeaderCellDef>
             <mat-checkbox (change)="onHeaderCheckboxChange($event)"
                           [checked]="selection.hasValue() && isAllSelected()"
@@ -32,19 +33,12 @@
         </ng-container>
 
         <!-- Column 1 -->
-        <ng-container matColumnDef="avatar">
-          <mat-header-cell *matHeaderCellDef></mat-header-cell>
-          <mat-cell *matCellDef="let element">
-            <div class="avatar-img">
-              <img mat-card-image class="utils--vertical-align" [src]="element.avatar" alt="User image">
-            </div>
-          </mat-cell>
-        </ng-container>
-
-        <!-- Column 1 -->
-        <ng-container matColumnDef="name">
-            <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+        <ng-container matColumnDef="name" sticky>
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
             <mat-cell *matCellDef="let element">
+              <div class="avatar-img">
+                <img mat-card-image class="utils--vertical-align" [src]="element.avatar" alt="User image">
+              </div>
               <span class="utils--truncate" [matTooltip]="element.name">
                 {{element.name}}
               </span>
@@ -82,7 +76,7 @@
         <ng-container matColumnDef="options" stickyEnd>
           <mat-header-cell *matHeaderCellDef mat-sort-header> </mat-header-cell>
           <mat-cell *matCellDef="let element">
-            <ntx-menu-options></ntx-menu-options>
+            <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
           </mat-cell>
         </ng-container>
 

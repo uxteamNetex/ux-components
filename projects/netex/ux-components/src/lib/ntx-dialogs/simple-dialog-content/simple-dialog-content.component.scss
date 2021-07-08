@@ -3,7 +3,6 @@
 .simpleDialog {
   .mat-dialog-container{
     border-radius: 4px;
-    display: inline-table;
     max-width: 560px;
     padding: 16px 24px 8px;
     width: 560px;
@@ -21,6 +20,9 @@
         font-size: $font-size-16;
         line-height: 24px;
         margin: 0;
+        &:not(:first-of-type) {
+          margin-top: 24px;
+        }
       }
     }
     .simple-dialog-actions{

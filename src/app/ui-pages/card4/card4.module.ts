@@ -6,23 +6,25 @@ import { DocumentationComponent } from './documentation/documentation.component'
 import { ExamplesComponent } from './examples/examples.component';
 
 import {
-  NtxCardsModule
+	NtxCardsModule
 } from '@netex/ux-components';
 
 import {
-  MatGridListModule
+	MatExpansionModule,
+	MatGridListModule
 } from '@angular/material';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NtxCardsModule,
-    Card4RoutingModule,
-    MatGridListModule
-  ],
-  declarations: [
-    DocumentationComponent,
-    ExamplesComponent
-  ]
+	imports: [
+		CommonModule,
+		NtxCardsModule,
+		Card4RoutingModule,
+		MatGridListModule,
+		MatExpansionModule
+	],
+	declarations: [
+		DocumentationComponent,
+		ExamplesComponent
+	]
 })
 export class Card4Module { }
