@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MatExpansionModule, MatTableModule, MatIconModule, MatGridListModule } from '@angular/material';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
-import { Version4XXRoutingModule } from './version4XX-routing.module';
+import { Version433RoutingModule } from './version433-routing.module';
 import { NtxToolbarModule } from 'projects/netex/ux-components/src/public_api';
 import {
 	NtxCardsModule,
@@ -27,7 +27,7 @@ import {
 	declarations: [DocumentationComponent, ExamplesComponent],
 	imports: [
 		CommonModule,
-		Version4XXRoutingModule,
+		Version433RoutingModule,
 		MatIconModule,
 		MatGridListModule,
 		MatExpansionModule,
@@ -47,4 +47,4 @@ import {
 		NtxExpansionPanelsModule
 	]
 })
-export class Version4XXModule { }
+export class Version433Module { }
