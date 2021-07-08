@@ -48,6 +48,17 @@ const EMPTYPAGES = {
 			icon: 'icon-users',
 			title: 'Here is the title of the issue',
 			description: 'Here is the description of the issue that cant have more than 2 lines of text.',
+			button: '',
+		}
+	]
+};
+const EMPTYPAGES2 = {
+	actions: [
+		{
+			icon: 'icon-envelope',
+			title: 'Here is the title of the issue',
+			description: '',
+			button: true,
 		}
 	]
 };
@@ -252,6 +263,7 @@ export class ExamplesComponent implements OnInit {
 	user2 = PROFILEDIALOG2;
 	data4: Object;
 	emptyPages = EMPTYPAGES;
+	emptyPages2 = EMPTYPAGES2;
 	data = TWO_LINES_LIST_WITH_AVATAR;
 	chip = CHIP;
 	raisedIconButton = RAISEDICONBUTTON;

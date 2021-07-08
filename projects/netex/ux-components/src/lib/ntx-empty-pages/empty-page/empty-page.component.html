@@ -1,8 +1,9 @@
 <div *ngFor="let action of item.actions"
-      class="empty-page-container utils--vertical-align">
+      class="empty-page-container">
   <div class="empty-page-container__icon">
     <mat-icon class="icon-netex {{action.icon}}"></mat-icon>
   </div>
   <h2 class="empty-page-container__title">{{action.title}}</h2>
-  <p class="empty-page-container__subtitle">{{action.description}}</p>
+  <p *ngIf="action.description" class="empty-page-container__subtitle">{{action.description}}</p>
+  <ntx-raised-icon-button *ngIf="action.button" [item] ="raisedIconButton"></ntx-raised-icon-button>
 </div>
