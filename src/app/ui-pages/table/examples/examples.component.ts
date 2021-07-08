@@ -98,8 +98,8 @@ export class ExamplesComponent implements OnInit {
     "avatar": "https://robohash.org/impeditperferendisconsequatur.jpg?size=50x50&set=set1",
     "date": "12/03/2020"
   }, {
-    "name": "Adorne",
-    "surname": "Dunkirk",
+    "name": "Adorne Virtute equidem ceteros in mel. Id volutpat neglegentur eos. Eu eum facilisis voluptatum, no eam albucius verterem.",
+    "surname": "Dunkirk Virtute equidem ceteros in mel. Id volutpat neglegentur eos. Eu eum facilisis voluptatum, no eam albucius verterem.",
     "username": "adunkirkf",
     "avatar": "https://robohash.org/aboptioerror.jpg?size=50x50&set=set1",
     "date": "11/09/2020"
@@ -482,8 +482,8 @@ export class ExamplesComponent implements OnInit {
     "avatar": "https://robohash.org/remiustolabore.jpg?size=50x50&set=set1",
     "date": "01/04/2020"
   }, {
-    "name": "Bartholomeo Casimiro and a very long text",
-    "surname": "McClean McDonals Smith and a very long text",
+    "name": "Virtute equidem ceteros in mel. Id volutpat neglegentur eos. Eu eum facilisis voluptatum, no eam albucius verterem.",
+    "surname": "Virtute equidem ceteros in mel. Id volutpat neglegentur eos. Eu eum facilisis voluptatum, no eam albucius verterem.",
     "username": "bmcclean27 and a very long text",
     "avatar": "https://robohash.org/assumendalaborumvoluptatem.jpg?size=50x50&set=set1",
     "date": "02/08/2020"

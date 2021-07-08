@@ -1,6 +1,6 @@
 <div class="table-container" [ngClass]="{'flat': this.style === 'flat'}">
 
-  <div 
+  <div
     #tableWrapper
     class="table-container__table">
     <!-- Table -->
@@ -19,7 +19,7 @@
               <div class="mat-basic-table__row-image">
                 <img mat-card-image class="utils--vertical-align" src="{{element.avatar}}" alt="Element image">
               </div>
-              <span class="mat-basic-table__row-text" matTooltip="{{element.name}}">{{element.name}}</span>
+              <span class="utils--truncate2" matTooltip="{{element.name}}">{{element.name}}</span>
           </div>
         </td>
       </ng-container>
@@ -27,21 +27,21 @@
       <ng-container matColumnDef="surname">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Last name</th>
         <td mat-cell *matCellDef="let element">
-          <span class="mat-basic-table__row-text">{{element.surname}}</span>
+          <span class="utils--truncate2">{{element.surname}}</span>
         </td>
       </ng-container>
 
       <ng-container matColumnDef="username">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>User name</th>
         <td mat-cell *matCellDef="let element">
-          <span class="mat-basic-table__row-text">{{element.username}}</span>
+          <span class="utils--truncate2">{{element.username}}</span>
         </td>
       </ng-container>
 
       <ng-container matColumnDef="date">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Last modification </th>
         <td mat-cell *matCellDef="let element">
-          <span class="mat-basic-table__row-text">{{element.date}}</span></td>
+          <span class="utils--truncate2">{{element.date}}</span></td>
       </ng-container>
 
       <ng-container matColumnDef="state">

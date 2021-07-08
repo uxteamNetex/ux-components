@@ -49,9 +49,8 @@ $block: "table-selectable";
 
     .mat-row {
       border-bottom: none;
-      font-family: LatoBold;
+      font-family: Lato;
       &.highlight{
-        font-family: Lato;
         .mat-cell {
           background-color: $color-grey-100;
         }
@@ -90,6 +89,7 @@ $block: "table-selectable";
     .mat-header-cell:nth-child(2),
     .mat-cell:nth-child(2) {
       border-right: none;
+      font-family: Latobold;
     }
 
     .mat-cell:nth-child(2) .avatar-img {
