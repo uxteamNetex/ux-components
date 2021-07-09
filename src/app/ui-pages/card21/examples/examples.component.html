@@ -1,0 +1,17 @@
+<div class="page-layout">
+  <div class="page-container">
+
+    <mat-grid-list #grid rowHeight="261px" gutterSize="0">
+
+      <mat-grid-tile *ngFor="let item of card21">
+
+        <ntx-card21
+          [image]="item.image"
+          [title]="item.title"></ntx-card21>
+
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+  </div>
+</div>

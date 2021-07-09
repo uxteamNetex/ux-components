@@ -1,0 +1,13 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+.page-layout{
+  background-color: $color-white;
+  .mat-grid-tile{
+    .mat-figure{
+      align-items: flex-start;
+      ntx-card21 {
+        width: 100%;
+      }
+    }
+  }
+}
