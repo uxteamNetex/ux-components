@@ -26,6 +26,54 @@ export class ExamplesComponent implements OnInit {
 		{
 			image: '',
 			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
+		},
+		{
+			image: '',
+			title: '',
 		}
 	];
 
@@ -41,8 +89,56 @@ export class ExamplesComponent implements OnInit {
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					image: 'assets/images/background-profile-header.jpg',
+					title: 'Project name',
+				},
+				{
 					image: 'assets/images/bg-01.png',
 					title: 'Project name',
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					image: 'assets/images/bg-03.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					image: 'assets/images/coffee.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					image: 'assets/images/bengal.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					image: 'assets/images/writting.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					image: 'assets/images/background-profile-header.jpg',
+					title: 'Project name',
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					title: 'Project name',
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					image: 'assets/images/bg-03.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					image: 'assets/images/coffee.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					image: 'assets/images/bengal.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				}
 			];
 

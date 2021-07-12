@@ -1,0 +1,43 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.4.0: ...</h1>
+          <p class="whatsnew__header--subtitle">x xxxx 2021</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket-5.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our monthly update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Card21 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">card21</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/card21/examples" (click)="setPath('card21')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:45%" *ngFor="let item of card21">
+              <ntx-card21
+                [image]="item.image"
+                [title]="item.title"></ntx-card21>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">Bug fixing</span>
+        </h2>
+
+      </div>
+
+    </ntx-card-simple>
+  </div>
+</div>

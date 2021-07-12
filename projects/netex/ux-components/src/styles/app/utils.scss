@@ -163,6 +163,14 @@ $block: "utils";
     top: 50%;
   }
 
+  &--horizontal-align {
+    left: 50%;
+    margin-right: -50% !important;
+    padding: 0;
+    position: absolute;
+    transform: translate(-50%, 0%);
+  }
+
   &--align-center-text {
     text-align: center;
   }

@@ -300,6 +300,10 @@ const routes: Routes = [
 		path: 'version433',
 		loadChildren: './ui-pages/version433/version433.module#Version433Module'
 	},
+	{
+		path: 'version440',
+		loadChildren: './ui-pages/version440/version440.module#Version440Module'
+	},
 	{ path: '',
 		redirectTo: '/home',
 		pathMatch: 'full'

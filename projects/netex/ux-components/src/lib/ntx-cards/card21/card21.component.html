@@ -1,10 +1,8 @@
 <mat-card class="card21">
+  <div class="card21__title utils--horizontal-align">
+    <span *ngIf="title" class="card21__title--text" matTooltip="{{title}}">{{title}}</span>
+  </div>
   <div class="card21__image">
     <img *ngIf="image" src="{{image}}" alt="Card image">
   </div>
-  <mat-card-content>
-    <mat-card-title class="card21__title">
-      <span *ngIf="title" class="card21__title--text" matTooltip="{{title}}">{{title}}</span>
-    </mat-card-title>
-  </mat-card-content>
 </mat-card>
