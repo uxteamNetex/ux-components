@@ -97,6 +97,10 @@ const routes: Routes = [
 		loadChildren: './ui-pages/card21/card21.module#Card21Module'
 	},
 	{
+		path: 'card22',
+		loadChildren: './ui-pages/card22/card22.module#Card22Module'
+	},
+	{
 		path: 'cards',
 		loadChildren: './ui-pages/cards/cards.module#CardsModule'
 	},

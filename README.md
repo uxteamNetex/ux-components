@@ -8,10 +8,11 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
-### v.x.x.x:
+### v.4.4.0: (En progreso)
 
 **Cards**<br/>
 - Nuevo componente *ntx-card21*.
+- Nuevo componente *ntx-card22*.
 
 ------------------
 
