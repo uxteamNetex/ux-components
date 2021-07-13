@@ -6,6 +6,7 @@
     <div class="card22__subtitle">
       <span *ngIf="subtitle" class="card22__subtitle--text" matTooltip="{{subtitle}}">{{subtitle}}</span>
     </div>
+    <mat-icon *ngIf="icon" matTooltip="{{icon}}" class="icon-netex {{iconName}} card22__icon"></mat-icon>
   </mat-card-content>
   <div class="card22__image">
     <img *ngIf="image" src="{{image}}" alt="Card image">

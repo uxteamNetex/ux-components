@@ -23,11 +23,57 @@ export class ExamplesComponent implements OnInit {
 			image: '',
 			title: '',
 			subtitle: '',
+			icon: '',
+			iconName: '',
 		},
 		{
 			image: '',
 			title: '',
 			subtitle: '',
+			icon: '',
+			iconName: '',
+		},
+		{
+			image: '',
+			title: '',
+			subtitle: '',
+			icon: '',
+			iconName: '',
+		},
+		{
+			image: '',
+			title: '',
+			subtitle: '',
+			icon: '',
+			iconName: '',
+		},
+		{
+			image: '',
+			title: '',
+			subtitle: '',
+			icon: '',
+			iconName: '',
+		},
+		{
+			image: '',
+			title: '',
+			subtitle: '',
+			icon: '',
+			iconName: '',
+		},
+		{
+			image: '',
+			title: '',
+			subtitle: '',
+			icon: '',
+			iconName: '',
+		},
+		{
+			image: '',
+			title: '',
+			subtitle: '',
+			icon: '',
+			iconName: '',
 		}
 	];
 
@@ -41,11 +87,57 @@ export class ExamplesComponent implements OnInit {
 					image: 'assets/images/writting.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 					subtitle: '13 contenidos',
+					icon: 'Card bloqueada',
+			    iconName: 'icon-lock'
 				},
 				{
 					image: 'assets/images/background-profile-header.jpg',
 					title: 'Project name',
 					subtitle: '13 contenidos con texto muy largo',
+					icon: 'Card destacada',
+			    iconName: 'icon-star'
+				},
+				{
+					image: 'assets/images/bengal.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: '13 contenidos',
+					icon: '',
+			    iconName: ''
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					title: 'Project name',
+					subtitle: '13 contenidos con texto muy largo',
+					icon: '',
+			    iconName: ''
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: '',
+					icon: 'Card destacada',
+			    iconName: 'icon-star-solid'
+				},
+				{
+					image: 'assets/images/bg-03.png',
+					title: 'Project name',
+					subtitle: '',
+					icon: 'Card bloqueada',
+			    iconName: 'icon-lock'
+				},
+				{
+					image: 'assets/images/coffee.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: '',
+					icon: '',
+			    iconName: ''
+				},
+				{
+					image: 'assets/images/background-profile-header.jpg',
+					title: 'Project name',
+					subtitle: '',
+					icon: '',
+			    iconName: ''
 				}
 			];
 

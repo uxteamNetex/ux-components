@@ -10,6 +10,8 @@ export class Card22Component implements OnInit {
 	@Input() image: string;
 	@Input() title: string;
 	@Input() subtitle: string;
+	@Input() icon: string;
+	@Input() iconName: string;
 
 	constructor() { }
 

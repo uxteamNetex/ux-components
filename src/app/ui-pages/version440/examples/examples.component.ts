@@ -20,6 +20,23 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card22: any[] = [
+		{
+			image: '',
+			title: '',
+			subtitle: '',
+			icon: '',
+			iconName: '',
+		},
+		{
+			image: '',
+			title: '',
+			subtitle: '',
+			icon: '',
+			iconName: '',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -34,6 +51,23 @@ export class ExamplesComponent implements OnInit {
 				{
 					image: 'assets/images/background-profile-header.jpg',
 					title: 'Project name',
+				}
+			];
+
+			this.card22 = [
+				{
+					image: 'assets/images/bengal.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: '13 contenidos',
+					icon: 'Card bloqueada',
+			    iconName: 'icon-lock'
+				},
+				{
+					image: 'assets/images/coffee.jpg',
+					title: 'Project name',
+					subtitle: '13 contenidos con texto muy largo',
+					icon: '',
+			    iconName: ''
 				}
 			];
 

@@ -18,15 +18,18 @@ $block: "card22";
     .mat-card-content{
       background: rgba(0,0,0,0.4);
       bottom: 0;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
+      height: 94px;
       margin: 0;
       padding: 18px 12px;
-      width: calc(100% - 24px);
+      width: 100%;
       position: absolute;
       z-index: 9;
       .#{$block}__title{
         color: $color-white;
+        display: inline-table;
         font-family: Latobold;
         font-size: $font-size-16;
         line-height: 20px;
@@ -50,7 +53,7 @@ $block: "card22";
         line-height: 16px;
         max-height: 16px;
         min-height: 16px;
-        width: 100%;
+        width: calc(100% - 36px);
         word-wrap: break-word;
         overflow: hidden;
         text-transform: uppercase;
@@ -60,6 +63,15 @@ $block: "card22";
           /* autoprefixer: off */
           -webkit-box-orient: vertical;
         }
+      }
+      .#{$block}__icon{
+        bottom: 12px;
+        color: $color-white;
+        height: 24px;
+        margin-left: auto;
+        position: absolute;
+        right: 12px;
+        width: 24px;
       }
     }
     .#{$block}__image{

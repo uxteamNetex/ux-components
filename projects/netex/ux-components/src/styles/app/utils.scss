@@ -193,6 +193,14 @@ $block: "utils";
     display: flex !important;
     justify-content: center !important;
   }
+  &--flex {
+    display: flex !important;
+  }
+  &--flex-between {
+    align-items: center;
+    display: flex !important;
+    justify-content: space-between;
+  }
 
   //Tamaños fuente
   &--text-10 {
@@ -811,15 +819,5 @@ $block: "utils";
   //Anchos de columnas en tablas
   &--w-48 {
     width: $tableOptionsColumnWidth;
-  }
-
-  //Layouts
-  &--flex {
-    display: flex !important;
-  }
-  &--flex-center {
-    align-items: center !important;
-    display: flex !important;
-    justify-content: center !important;
   }
 }

@@ -32,6 +32,22 @@
           </div>
         </div>
 
+        <div class="whatsnew__content-block">
+          <h4>Card22 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">card22</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/card22/examples" (click)="setPath('card22')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:45%" *ngFor="let item of card22">
+              <ntx-card22
+              [image]="item.image"
+              [title]="item.title"
+              [subtitle]="item.subtitle"
+              [icon]="item.icon"
+              [iconName]="item.iconName"></ntx-card22>
+            </div>
+          </div>
+        </div>
+
         <h2 class="whatsnew__separation">
           <span class="whatsnew__separation--text">Bug fixing</span>
         </h2>
