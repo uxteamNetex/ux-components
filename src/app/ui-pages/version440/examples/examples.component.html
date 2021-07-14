@@ -26,6 +26,8 @@
           <div style="display: flex;justify-content: space-between;">
             <div style="width:45%" *ngFor="let item of card21">
               <ntx-card21
+                [bar]="item.bar"
+                [barColor]="item.barColor"
                 [image]="item.image"
                 [title]="item.title"></ntx-card21>
             </div>

@@ -1,4 +1,5 @@
 <mat-card class="card21">
+  <div *ngIf="bar" [ngStyle] = "{'background-color': barColor }" class="card21__bar"></div>
   <div class="card21__title utils--horizontal-align">
     <span *ngIf="title" class="card21__title--text" matTooltip="{{title}}">{{title}}</span>
   </div>

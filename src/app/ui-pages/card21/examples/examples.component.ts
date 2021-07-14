@@ -20,58 +20,86 @@ export class ExamplesComponent implements OnInit {
 
 	card21: any[] = [
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		}
@@ -85,58 +113,86 @@ export class ExamplesComponent implements OnInit {
 
 			this.card21 = [
 				{
+					bar: true,
+					barColor: '',
 					image: 'assets/images/writting.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: true,
+					barColor: '#9B2761',
 					image: 'assets/images/background-profile-header.jpg',
 					title: 'Project name',
 				},
 				{
+					bar: true,
+					barColor: '#5cce88',
 					image: 'assets/images/bg-01.png',
 					title: 'Project name',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/bg-02.png',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/bg-03.png',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/coffee.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/bengal.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/writting.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/background-profile-header.jpg',
 					title: 'Project name',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/bg-01.png',
 					title: 'Project name',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/bg-02.png',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/bg-03.png',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/coffee.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/bengal.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				}

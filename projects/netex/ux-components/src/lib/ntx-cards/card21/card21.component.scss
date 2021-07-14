@@ -13,6 +13,14 @@ $block: "card21";
       box-shadow: $shadow-hover;
       cursor: pointer;
     }
+    .#{$block}__bar{
+      background-color: $color-random2;
+      height: 6px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 9;
+    }
     .#{$block}__title{
       bottom: 30px;
       color: $color-white;

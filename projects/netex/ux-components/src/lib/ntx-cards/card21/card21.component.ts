@@ -9,6 +9,8 @@ export class Card21Component implements OnInit {
 
 	@Input() image: string;
 	@Input() title: string;
+	@Input() bar: boolean;
+	@Input() barColor: string;
 
 	constructor() { }
 

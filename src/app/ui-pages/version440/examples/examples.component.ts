@@ -11,10 +11,14 @@ export class ExamplesComponent implements OnInit {
 
 	card21: any[] = [
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		},
 		{
+			bar: '',
+			barColor: '',
 			image: '',
 			title: '',
 		}
@@ -45,10 +49,14 @@ export class ExamplesComponent implements OnInit {
 
 			this.card21 = [
 				{
+					bar: true,
+					barColor: '#5cce88',
 					image: 'assets/images/writting.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
+					bar: '',
+					barColor: '',
 					image: 'assets/images/background-profile-header.jpg',
 					title: 'Project name',
 				}
