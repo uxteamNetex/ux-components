@@ -1,0 +1,26 @@
+<div class="card23" (click)="onClickEvent()">
+  <div [ngStyle]="{'background-color': urlImage ? 'null' : '#eee'}" class="card23__badge">
+    <img
+        *ngIf="urlImage; else elseBlockBadge"
+        class="utils--img-cover"
+        src="{{ urlImage }}"
+        alt="{{ altImage }}">
+    <ng-template #elseBlockBadge>
+      <svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 24 24" width="64">
+        <path d="M0 0h24v24H0V0z" fill="none"/>
+        <path fill="#f9f9f9" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"/>
+      </svg>
+    </ng-template>
+  </div>
+  <div class="card23__info">
+    <p class="utils--margin-0 utils--text-16">
+        <span [ngStyle]="{'color': stColor}" [matTooltip]="suptitle">{{ suptitle }}</span>
+    </p>
+    <p class="utils--margin-top-8 utils--margin-bottom-12 utils--text-24 utils--text-grey-800 utils--bold-text">
+      <span [matTooltip]="title">{{ title }}</span>
+    </p>
+    <p class="card23__info--description utils--text-14 utils--margin-0 utils--text-grey-800 utils--lineclamp-2">
+       <span [matTooltip]="description">{{ description }}</span>
+    </p>
+  </div>
+</div>

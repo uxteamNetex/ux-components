@@ -13,6 +13,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Cards**<br/>
 - Nuevo componente *ntx-card21*.
 - Nuevo componente *ntx-card22*.
+- Nuevo componente *ntx-card23*.
 
 ------------------
 

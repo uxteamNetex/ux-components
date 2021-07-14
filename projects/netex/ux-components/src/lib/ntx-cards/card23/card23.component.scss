@@ -1,0 +1,32 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "card23";
+
+.#{$block} {
+  $blockHeight: 170px;  
+  @include card-white($blockHeight, 0);
+  font-family: Lato;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.16);
+  }
+  &__badge {
+    width: $blockHeight;
+    height: 100%;
+    flex: none;
+    svg {
+      display: block;
+      margin: auto;
+      height: 100%;
+    }
+  }
+  &__info {
+    padding: 24px;  
+    width: calc(100% - $blockHeight - 48px);
+    &--description {
+        line-height: 20px;
+        @include ellipsis-multiline(3);
+    }
+  }
+}

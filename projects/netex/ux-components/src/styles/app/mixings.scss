@@ -28,9 +28,9 @@
   /* autoprefixer: off */
 }
 
-@mixin card-white($height) {
+@mixin card-white($height, $br: 4px) {
   background-color: white;
-  border-radius: 4px;
+  border-radius: $br;
   box-sizing: border-box;
   box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
   width: 100%;
