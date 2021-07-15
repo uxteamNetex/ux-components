@@ -7,6 +7,7 @@ import { Version440RoutingModule } from './version440-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
 import {
+	NtxButtonsModule,
 	NtxCardsModule,
 	NtxExpansionPanelsModule
 } from '@netex/ux-components';
@@ -19,6 +20,7 @@ import {
 		MatIconModule,
 		MatGridListModule,
 		MatExpansionModule,
+		NtxButtonsModule,
 		NtxCardsModule,
 		NtxExpansionPanelsModule
 	]
