@@ -49,27 +49,29 @@
         <ntx-raised-icon-button [item] ="raisedIconButton"></ntx-raised-icon-button>
       </div>
       <div *ngIf="type.label==='raised round'" class="utils--flex">
-        <ntx-raised-round-button icon="icon-pencil" text="edit" color="primary"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
+        <ntx-raised-round-button iconLeft="icon-pencil" text="edit" color="primary"></ntx-raised-round-button>
+        <div style="margin-left:16px;"></div>
         <ntx-raised-round-button text="button" color="primary"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
+        <div style="margin-left:16px;"></div>
         <ntx-raised-round-button icon="icon-pencil" color="primary"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button text="link" color="primary" disabled="true"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-plus" text="action" color="violet"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
+        <div style="margin-left:16px;"></div>
+        <ntx-raised-round-button text="link" color="primary" [disabled]="true"></ntx-raised-round-button>
+        <div style="margin-left:16px;"></div>
+        <ntx-raised-round-button iconRight="icon-plus" text="action" color="violet"></ntx-raised-round-button>
+        <div style="margin-left:16px;"></div>
         <ntx-raised-round-button icon="icon-plus" color="violet"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
+        <div style="margin-left:16px;"></div>
         <ntx-raised-round-button icon="icon-send" text="action" color="green"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
+        <div style="margin-left:16px;"></div>
         <ntx-raised-round-button icon="icon-send" color="green"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
+        <div style="margin-left:16px;"></div>
         <ntx-raised-round-button icon="icon-home" text="action" color="accent"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
+        <div style="margin-left:16px;"></div>
         <ntx-raised-round-button icon="icon-home" color="accent"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-home" color="accent" disabled="true"></ntx-raised-round-button>
+        <div style="margin-left:16px;"></div>
+        <ntx-raised-round-button iconRight="icon-search" text="buscar" color="black"></ntx-raised-round-button>
+        <div style="margin-left:16px;"></div>
+        <ntx-raised-round-button iconRight="icon-arrow-right" text="comenzar" color="white"></ntx-raised-round-button>
       </div>
       <div *ngIf="type.label==='icon'">
           <ntx-icon-button text = "LearningCloud" iconName = "icon-logo-cloud" color="#F5AF2E" showBorder></ntx-icon-button>
@@ -89,10 +91,16 @@
           <ntx-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
       </div>
       <div *ngIf="type.label==='mini fab'">
-          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" color="white" bgColor="#1aa9e2"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" color="white" bgColor="#1aa9e2" disabled></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" color="black"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" color="black" disabled></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Download" iconName = "icon-download" color="white" bgColor="#D65292"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Download" iconName = "icon-download" color="white" bgColor="#D65292" disabled></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Search" iconName = "icon-search" color="white" bgColor="black"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Search" iconName = "icon-search" color="white" bgColor="black" disabled></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like-off" iconName = "icon-heart-off" color="red"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like-off" iconName = "icon-heart-off" color="red" disabled></ntx-mini-fab-button>
       </div>
       <div *ngIf="type.label==='rectangular'">
         <ntx-rectangular-button icon="icon-file" text="action"></ntx-rectangular-button>
