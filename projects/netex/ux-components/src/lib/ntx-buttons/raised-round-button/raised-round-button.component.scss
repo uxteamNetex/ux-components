@@ -35,7 +35,7 @@ $block: 'ntx-raised-round-button';
   &.green {
     background-color: $color-green;
     &:hover {
-      background-color: $color-green;
+      background-color: $color-green-hover;
     }
   }
   &.primary {
@@ -48,6 +48,20 @@ $block: 'ntx-raised-round-button';
     background-color: $color-violet;
     &:hover{
       background-color: $color-violet-hover;
+    }
+  }
+  &.black {
+    background-color: $color-black;
+    &:hover{
+      background-color: $color-accent-hover;
+    }
+  }
+  &.white {
+    background-color: $color-white;
+    color: $color-grey-800;
+    &:hover{
+      background-color: $color-black;
+      color: $color-white;
     }
   }
 }

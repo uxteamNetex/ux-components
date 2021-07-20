@@ -7,10 +7,12 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class RaisedRoundButtonComponent implements OnInit {
 
-	@Input() color: 'accent' | 'green' | 'primary' | 'violet' ;
+	@Input() color!: 'accent' | 'green' | 'primary' | 'violet' | 'black' | 'white';
 	@Input() disabled = false;
-	@Input() icon: string;
-	@Input() text: string;
+	@Input() icon!: string;
+	@Input() iconLeft!: string;
+	@Input() iconRight!: string;
+	@Input() text!: string;
 
 	@Output() clickButton = new EventEmitter<any>();
 

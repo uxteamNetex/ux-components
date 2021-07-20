@@ -1,4 +1,5 @@
 <button [ngClass]="getClasses()" [disabled]="disabled" (click)="onClickButton()">
-  <span *ngIf="icon" class="icon-netex {{icon}} utils--text-24"></span>
+  <span *ngIf="iconLeft || icon" class="icon-netex {{iconLeft || icon}} utils--text-24"></span>
   <span *ngIf="text" matTooltip="{{text}}" class="utils--text-14 utils--uppercase">{{text}}</span>
+  <span *ngIf="iconRight" class="icon-netex {{iconRight}} utils--text-24"></span>
 </button>
