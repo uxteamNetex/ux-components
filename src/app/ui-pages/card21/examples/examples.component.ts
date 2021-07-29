@@ -8,7 +8,15 @@ import { MatGridList } from '@angular/material';
 	styleUrls: ['./examples.component.scss']
 })
 export class ExamplesComponent implements OnInit {
+
+	selectedCardIndex: number;
+
+	checkIfSelected(i: number) {
+		return this.selectedCardIndex === i;
+	}
+
 	@ViewChild('grid') grid: MatGridList;
+	@ViewChild('grid2') grid2: MatGridList;
 
 	gridByBreakpoint = {
 		'ntx.xl': 5,
@@ -18,7 +26,7 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
-	card21: any[] = [
+	card21Group_1: any[] = [
 		{
 			bar: '',
 			barColor: '',
@@ -36,55 +44,9 @@ export class ExamplesComponent implements OnInit {
 			barColor: '',
 			image: '',
 			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
+		}
+	];
+	card21Group_2: any[] = [
 		{
 			bar: '',
 			barColor: '',
@@ -111,7 +73,7 @@ export class ExamplesComponent implements OnInit {
 
 		setTimeout(() => {
 
-			this.card21 = [
+			this.card21Group_1 = [
 				{
 					bar: true,
 					barColor: '',
@@ -119,81 +81,35 @@ export class ExamplesComponent implements OnInit {
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
-					bar: true,
-					barColor: '#9B2761',
-					image: 'assets/images/background-profile-header.jpg',
-					title: 'Project name',
+					bar: '',
+					barColor: '',
+					image: 'assets/images/bengal.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					bar: '',
+					barColor: '',
+					image: 'assets/images/bg-02.png',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				}
+			];
+			this.card21Group_2 = [
+				{
+					bar: '',
+					barColor: '',
+					image: 'assets/images/coffee.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				},
 				{
 					bar: true,
 					barColor: '#5cce88',
 					image: 'assets/images/bg-01.png',
-					title: 'Project name',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/bg-02.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/bg-03.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/coffee.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/bengal.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					title: 'Project name'
 				},
 				{
 					bar: '',
 					barColor: '',
 					image: 'assets/images/writting.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/background-profile-header.jpg',
-					title: 'Project name',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/bg-01.png',
-					title: 'Project name',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/bg-02.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/bg-03.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/coffee.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/bengal.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				}
 			];
@@ -202,11 +118,8 @@ export class ExamplesComponent implements OnInit {
 
 	}
 
-	// tslint:disable-next-line:use-life-cycle-interface
-	ngAfterContentInit() {
-		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
-			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
-		});
-	}
+	handleCard21Click(i: number, item: any) {
+		this.selectedCardIndex = i;
+	  }
 
 }

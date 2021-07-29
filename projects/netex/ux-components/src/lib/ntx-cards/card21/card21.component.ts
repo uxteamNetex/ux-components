@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
 	selector: 'ntx-card21',
@@ -11,10 +11,16 @@ export class Card21Component implements OnInit {
 	@Input() title: string;
 	@Input() bar: boolean;
 	@Input() barColor: string;
+	@Input() selected: boolean;
+
+	@Output() clickCard21Event = new EventEmitter();
 
 	constructor() { }
 
 	ngOnInit() {
 	}
 
+	public onClickEvent(_$event: any) {
+        this.clickCard21Event.emit(_$event);
+    }
 }

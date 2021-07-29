@@ -1,19 +1,22 @@
 <div class="page-layout">
   <div class="page-container">
-
-    <mat-grid-list #grid rowHeight="170px" gutterSize="20">
-
-      <mat-grid-tile *ngFor="let item of card21">
-
-        <ntx-card21
-          [bar]="item.bar"
-          [barColor]="item.barColor"
-          [image]="item.image"
-          [title]="item.title"></ntx-card21>
-
-      </mat-grid-tile>
-
-    </mat-grid-list>
-
+    <p class="utils--title-medium utils--margin-top-16 utils--margin-bottom-16">Non selectable cards</p>
+    <div>
+      <ntx-card21 *ngFor="let item of card21Group_1; let i = index"
+        [bar]="item.bar"
+        [barColor]="item.barColor"
+        [image]="item.image"
+        [title]="item.title"></ntx-card21>
+    </div>
+    <p class="utils--title-medium utils--margin-top-16 utils--margin-bottom-16">Selectable cards (showing arrow below it on click)</p>
+    <div>
+      <ntx-card21 *ngFor="let item of card21Group_2; let i = index"
+        [bar]="item.bar"
+        [barColor]="item.barColor"
+        [selected]="checkIfSelected(i)"
+        [image]="item.image"
+        [title]="item.title"
+        (clickCard21Event)="handleCard21Click(i, item)"></ntx-card21>
+    </div>
   </div>
 </div>

@@ -2,6 +2,13 @@
 
 .page-layout{
   background-color: $color-white;
+  .page-container {
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
   .mat-grid-tile{
     .mat-figure{
       align-items: flex-start;
