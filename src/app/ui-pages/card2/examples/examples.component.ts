@@ -17,190 +17,42 @@ export class ExamplesComponent implements OnInit {
 		'ntx.sm': 2,
 		'ntx.xs': 1
 	};
+	
 
-	card2: any[] = [
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-    },
-    {
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		},
-		{
-			image: '',
-			title: '',
-			options: '',
-		}
-	];
+	cards: any[];
 
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
 
-		setTimeout(() => {
-
-			this.card2 = [
+			this.cards = [
+				{
+					image: undefined,
+					title: undefined,
+					subtitle: undefined
+				},
 				{
 					image: 'assets/images/writting.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
+					options: 'true'
 				},
 				{
 					image: 'assets/images/bg-01.png',
-					title: 'Project name',
-					options: 'true',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle',
+					options: 'true'
 				},
 				{
 					image: 'assets/images/bg-02.png',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-03.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
+					subtitle: 'Subtitle'
 				},
 				{
 					image: 'assets/images/background-profile-header.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-01.png',
-					title: 'Project name',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/background-profile-header.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/writting.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-02.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-03.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/writting.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-03.png',
-					title: 'Project name',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-02.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/background-profile-header.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/writting.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-01.png',
-					title: 'Project name',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/background-profile-header.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					options: 'true',
+					selected: true
 				}
 			];
-
-		}, 5000);
 
 	}
 

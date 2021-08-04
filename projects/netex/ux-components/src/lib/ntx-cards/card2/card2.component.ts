@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
 	selector: 'ntx-card2',
@@ -23,8 +23,12 @@ export class Card2Component implements OnInit {
 	};
 
 	@Input() image: string;
-	@Input() title: string;
+	@Input() title: string = 'Title';
+	@Input() subtitle: string ;
 	@Input() options: boolean;
+	@Input() selected: boolean;
+
+	@Output() clickEvent = new EventEmitter();
 
 	constructor() { }
 
@@ -134,7 +138,14 @@ export class Card2Component implements OnInit {
 				},
 			]
 		};
+		console.log('selected', this.selected);
+		console.log('title', this.title);
 
+	}
+
+	public onClickEvent() {
+		console.log('Component ntx-card2 clicked!');
+		this.clickEvent.emit();
 	}
 
 }
