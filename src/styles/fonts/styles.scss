@@ -45,6 +45,11 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-palette-color {
+  &:before {
+    content: $icon-palette-color;
+  }
+}
 .icon-coin-star {
   &:before {
     content: $icon-coin-star;
