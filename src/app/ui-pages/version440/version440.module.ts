@@ -11,6 +11,7 @@ import {
 	NtxCardsModule,
 	NtxExpansionPanelsModule
 } from '@netex/ux-components';
+import { NtxMenusModule } from 'projects/netex/ux-components/src/public_api';
 
 @NgModule({
 	declarations: [DocumentationComponent, ExamplesComponent],
@@ -22,7 +23,8 @@ import {
 		MatExpansionModule,
 		NtxButtonsModule,
 		NtxCardsModule,
-		NtxExpansionPanelsModule
+		NtxExpansionPanelsModule,
+		NtxMenusModule
 	]
 })
 export class Version440Module { }

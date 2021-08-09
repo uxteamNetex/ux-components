@@ -322,8 +322,8 @@
           <p class="whatsnew__content-block--text utils--text-18">These changes will affect all the components that use this component, such as toolbars. You will have to update it in these components too.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/menus/documentation" (click)="setPath('menus')">link</a></p>
           <div style="display:flex">
-            <ntx-menu-toolbar-profile [userImage]="menuToolbarProfile.userImage" [userName]="menuToolbarProfile.userName" [actions]="menuToolbarProfile.actions"></ntx-menu-toolbar-profile>
-            <ntx-menu-toolbar-profile [showBadge]="true" [userImage]="menuToolbarProfile2.userImage" [userName]="menuToolbarProfile2.userName" [actions]="menuToolbarProfile2.actions"></ntx-menu-toolbar-profile>
+            <ntx-menu-toolbar-profile [user]="mtp1User" [options]="mtp1Options"></ntx-menu-toolbar-profile>
+            <ntx-menu-toolbar-profile [user]="mtp2User" [mainOption]="mtp2MainOption" [options]="mtp2Options"></ntx-menu-toolbar-profile>
           </div>
         </div>
 

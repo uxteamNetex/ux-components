@@ -1187,270 +1187,6 @@ export class ExamplesComponent implements OnInit {
 				},
 			]
 		};
-		this.menuToolbarProfile = {
-			userImage: 'assets/images/perfil.jpg',
-			userName: 'Carolina López',
-			actions: [
-				{
-					showUserInfo: true,
-					logo: 'assets/images/icon-netex.png',
-					logoName: 'Logo netex',
-					title: 'Carolina López',
-					subtitle: 'carolina.lopez',
-					url: 'http://google.es',
-					link: 'Accede a tu cuenta',
-					image: 'assets/images/perfil.jpg',
-					click: function() { alert('You\'ve clicked in \'Accede a tu cuenta\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Use as administrator\' option'); },
-					showButton: true,
-					titleButton: 'Use as administrator',
-					imageButton: 'assets/images/administrator-banner.png',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Notificaciones\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Notificaciones',
-					showMenuOptionBadge: true,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Novedades\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Novedades',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Manuales\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Manuales',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Netex Community\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Netex Community',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() {},
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: true,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Salir\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Salir',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				}
-			]
-		};
-		this.menuToolbarProfile2 = {
-			userImage: 'assets/images/user_female_02.jpg',
-			userName: 'Suzanne Axtens',
-			actions: [
-				{
-					showUserInfo: true,
-					logo: 'assets/images/icon-netex.png',
-					logoName: 'Logo netex',
-					title: 'Carolina López',
-					subtitle: 'carolina.lopez',
-					url: 'http://google.es',
-					link: 'Accede a tu cuenta',
-					image: 'assets/images/perfil.jpg',
-					click: function() { alert('You\'ve clicked in \'Archive\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: true,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Notificaciones\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Notificaciones',
-					showMenuOptionBadge: true,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Novedades\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Novedades',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: true,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Salir\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Salir',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				}
-			]
-		};
 
 		let arrColorLabel = ['black','blue','orange','lightblue','red', undefined];
 		this.tableData = this.arrayOfData.map(function(item) {
@@ -1463,6 +1199,62 @@ export class ExamplesComponent implements OnInit {
 
 	setPath(value: string) {
 		//this.tabsHeaderService.setPath(value);
-  }
+  	}
+
+	  mtp1User = {
+		'avatar': 'assets/images/perfil.jpg',
+		'fullname': 'Carolina López',
+		'username': 'carolina.lopez',
+		'companyLogo': 'assets/images/icon-netex.png',
+		'companyName': 'Logo netex',
+		'link': 'http://www.netexlearning.es',
+		'linkLabel': 'Accede a tu cuenta'
+	};
+
+	mtp1Options = [
+		{
+			'label': 'Notificaciones',
+			'badge': 29
+		},
+		{
+			'label': 'Novedades'
+		},
+		{
+			'label': 'Manuales'
+		},
+		{
+			'label': 'Netex Community'
+		}
+	];
+	mtp2User = {
+		'avatar': 'assets/images/user_female_02.jpg',
+		'fullname': 'Suzanne Axtens',
+		'username': 'suzanne.axtens',
+		'companyLogo': 'assets/images/icon-netex.png',
+		'companyName': 'Logo netex',
+		'link': 'http://www.netexlearning.es',
+		'linkLabel': 'Accede a tu cuenta'
+	};
+
+	mtp2Options = [
+		{
+			'label': 'Notificaciones',
+			'badge': 29
+		},
+		{
+			'label': 'Novedades'
+		},
+		{
+			'label': 'Manuales'
+		},
+		{
+			'label': 'Netex Community'
+		}
+	];
+
+	mtp2MainOption = {
+		label: 'Use as administrator',
+		img: 'assets/images/administrator-banner.png'
+	}
 
 }

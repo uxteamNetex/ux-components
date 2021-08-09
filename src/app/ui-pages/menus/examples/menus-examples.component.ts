@@ -56,50 +56,50 @@ export class MenusExamplesComponent implements OnInit {
 			click: () => void;
 		}[];
 	};
-	menuToolbarProfile: {
-		userImage: string;
-		userName: string;
-		actions: {
-			showUserInfo: boolean;
-			logo: string;
-			logoName: string;
-			title: string;
-			subtitle: string;
-			url: string;
-			link: string;
-			image: string;
-			click: () => void;
-			showButton: boolean;
-			titleButton: string;
-			imageButton: string;
-			showMenuOption: boolean;
-			menuOptionText: string;
-			showMenuOptionBadge: boolean;
-			showDivider: boolean;
-		}[];
-	};
-	menuToolbarProfile2: {
-		userImage: string;
-		userName: string;
-		actions: {
-			showUserInfo: boolean;
-			logo: string;
-			logoName: string;
-			title: string;
-			subtitle: string;
-			url: string;
-			link: string;
-			image: string;
-			click: () => void;
-			showButton: boolean;
-			titleButton: string;
-			imageButton: string;
-			showMenuOption: boolean;
-			menuOptionText: string;
-			showMenuOptionBadge: boolean;
-			showDivider: boolean;
-		}[];
-	};
+	// menuToolbarProfile: {
+	// 	userImage: string;
+	// 	userName: string;
+	// 	actions: {
+	// 		showUserInfo: boolean;
+	// 		logo: string;
+	// 		logoName: string;
+	// 		title: string;
+	// 		subtitle: string;
+	// 		url: string;
+	// 		link: string;
+	// 		image: string;
+	// 		click: () => void;
+	// 		showButton: boolean;
+	// 		titleButton: string;
+	// 		imageButton: string;
+	// 		showMenuOption: boolean;
+	// 		menuOptionText: string;
+	// 		showMenuOptionBadge: boolean;
+	// 		showDivider: boolean;
+	// 	}[];
+	// };
+	// menuToolbarProfile2: {
+	// 	userImage: string;
+	// 	userName: string;
+	// 	actions: {
+	// 		showUserInfo: boolean;
+	// 		logo: string;
+	// 		logoName: string;
+	// 		title: string;
+	// 		subtitle: string;
+	// 		url: string;
+	// 		link: string;
+	// 		image: string;
+	// 		click: () => void;
+	// 		showButton: boolean;
+	// 		titleButton: string;
+	// 		imageButton: string;
+	// 		showMenuOption: boolean;
+	// 		menuOptionText: string;
+	// 		showMenuOptionBadge: boolean;
+	// 		showDivider: boolean;
+	// 	}[];
+	// };
 	menulinkData: {
 		title: string;
 		icon: string;
@@ -320,270 +320,270 @@ export class MenusExamplesComponent implements OnInit {
 				},
 			]
 		};
-		this.menuToolbarProfile = {
-			userImage: 'assets/images/perfil.jpg',
-			userName: 'Carolina López',
-			actions: [
-				{
-					showUserInfo: true,
-					logo: 'assets/images/icon-netex.png',
-					logoName: 'Logo netex',
-					title: 'Carolina López',
-					subtitle: 'carolina.lopez',
-					url: 'http://google.es',
-					link: 'Accede a tu cuenta',
-					image: 'assets/images/perfil.jpg',
-					click: function() { alert('You\'ve clicked in \'Accede a tu cuenta\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Use as administrator\' option'); },
-					showButton: true,
-					titleButton: 'Use as administrator',
-					imageButton: 'assets/images/administrator-banner.png',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Notificaciones\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Notificaciones',
-					showMenuOptionBadge: true,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Novedades\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Novedades',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Manuales\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Manuales',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Netex Community\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Netex Community',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() {},
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: true,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Salir\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Salir',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				}
-			]
-		};
-		this.menuToolbarProfile2 = {
-			userImage: 'assets/images/user_female_02.jpg',
-			userName: 'Suzanne Axtens',
-			actions: [
-				{
-					showUserInfo: true,
-					logo: 'assets/images/icon-netex.png',
-					logoName: 'Logo netex',
-					title: 'Carolina López',
-					subtitle: 'carolina.lopez',
-					url: 'http://google.es',
-					link: 'Accede a tu cuenta',
-					image: 'assets/images/perfil.jpg',
-					click: function() { alert('You\'ve clicked in \'Archive\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: true,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Notificaciones\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Notificaciones',
-					showMenuOptionBadge: true,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Novedades\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Novedades',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: false,
-					menuOptionText: '',
-					showMenuOptionBadge: false,
-					showDivider: true,
-				},
-				{
-					showUserInfo: false,
-					logo: '',
-					logoName: '',
-					title: '',
-					subtitle: '',
-					url: '',
-					link: '',
-					image: '',
-					click: function() { alert('You\'ve clicked in \'Salir\' option'); },
-					showButton: false,
-					titleButton: '',
-					imageButton: '',
-					showMenuOption: true,
-					menuOptionText: 'Salir',
-					showMenuOptionBadge: false,
-					showDivider: false,
-				}
-			]
-		};
+		// this.menuToolbarProfile = {
+		// 	userImage: 'assets/images/perfil.jpg',
+		// 	userName: 'Carolina López',
+		// 	actions: [
+		// 		{
+		// 			showUserInfo: true,
+		// 			logo: 'assets/images/icon-netex.png',
+		// 			logoName: 'Logo netex',
+		// 			title: 'Carolina López',
+		// 			subtitle: 'carolina.lopez',
+		// 			url: 'http://google.es',
+		// 			link: 'Accede a tu cuenta',
+		// 			image: 'assets/images/perfil.jpg',
+		// 			click: function() { alert('You\'ve clicked in \'Accede a tu cuenta\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: false,
+		// 			menuOptionText: '',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Use as administrator\' option'); },
+		// 			showButton: true,
+		// 			titleButton: 'Use as administrator',
+		// 			imageButton: 'assets/images/administrator-banner.png',
+		// 			showMenuOption: false,
+		// 			menuOptionText: '',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Notificaciones\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: true,
+		// 			menuOptionText: 'Notificaciones',
+		// 			showMenuOptionBadge: true,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Novedades\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: true,
+		// 			menuOptionText: 'Novedades',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Manuales\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: true,
+		// 			menuOptionText: 'Manuales',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Netex Community\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: true,
+		// 			menuOptionText: 'Netex Community',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() {},
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: false,
+		// 			menuOptionText: '',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: true,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Salir\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: true,
+		// 			menuOptionText: 'Salir',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		}
+		// 	]
+		// };
+		// this.menuToolbarProfile2 = {
+		// 	userImage: 'assets/images/user_female_02.jpg',
+		// 	userName: 'Suzanne Axtens',
+		// 	actions: [
+		// 		{
+		// 			showUserInfo: true,
+		// 			logo: 'assets/images/icon-netex.png',
+		// 			logoName: 'Logo netex',
+		// 			title: 'Carolina López',
+		// 			subtitle: 'carolina.lopez',
+		// 			url: 'http://google.es',
+		// 			link: 'Accede a tu cuenta',
+		// 			image: 'assets/images/perfil.jpg',
+		// 			click: function() { alert('You\'ve clicked in \'Archive\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: false,
+		// 			menuOptionText: '',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: false,
+		// 			menuOptionText: '',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: true,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Notificaciones\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: true,
+		// 			menuOptionText: 'Notificaciones',
+		// 			showMenuOptionBadge: true,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Novedades\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: true,
+		// 			menuOptionText: 'Novedades',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: false,
+		// 			menuOptionText: '',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: true,
+		// 		},
+		// 		{
+		// 			showUserInfo: false,
+		// 			logo: '',
+		// 			logoName: '',
+		// 			title: '',
+		// 			subtitle: '',
+		// 			url: '',
+		// 			link: '',
+		// 			image: '',
+		// 			click: function() { alert('You\'ve clicked in \'Salir\' option'); },
+		// 			showButton: false,
+		// 			titleButton: '',
+		// 			imageButton: '',
+		// 			showMenuOption: true,
+		// 			menuOptionText: 'Salir',
+		// 			showMenuOptionBadge: false,
+		// 			showDivider: false,
+		// 		}
+		// 	]
+		// };
 		this.menulinkData = {
 			title: 'Click me!',
 			icon: 'icon-plus-circle',
@@ -632,5 +632,61 @@ export class MenusExamplesComponent implements OnInit {
 		  active: true
 		},
 
-	  ];
+	];
+
+	mtp1User = {
+		'avatar': 'assets/images/perfil.jpg',
+		'fullname': 'Carolina López',
+		'username': 'carolina.lopez',
+		'companyLogo': 'assets/images/icon-netex.png',
+		'companyName': 'Logo netex',
+		'link': 'http://www.netexlearning.es',
+		'linkLabel': 'Accede a tu cuenta'
+	};
+
+	mtp1Options = [
+		{
+			'label': 'Notificaciones',
+			'badge': 29
+		},
+		{
+			'label': 'Novedades'
+		},
+		{
+			'label': 'Manuales'
+		},
+		{
+			'label': 'Netex Community'
+		}
+	];
+	mtp2User = {
+		'avatar': 'assets/images/user_female_02.jpg',
+		'fullname': 'Suzanne Axtens',
+		'username': 'suzanne.axtens',
+		'companyLogo': 'assets/images/icon-netex.png',
+		'companyName': 'Logo netex',
+		'link': 'http://www.netexlearning.es',
+		'linkLabel': 'Accede a tu cuenta'
+	};
+
+	mtp2Options = [
+		{
+			'label': 'Notificaciones',
+			'badge': 29
+		},
+		{
+			'label': 'Novedades'
+		},
+		{
+			'label': 'Manuales'
+		},
+		{
+			'label': 'Netex Community'
+		}
+	];
+
+	mtp2MainOption = {
+		label: 'Use as administrator',
+		img: 'assets/images/administrator-banner.png'
+	}
 }

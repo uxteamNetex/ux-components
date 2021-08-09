@@ -87,4 +87,60 @@ export class ExamplesComponent implements OnInit {
 		//this.tabsHeaderService.setPath(value);
 	}
 
+	mtp1User = {
+		'avatar': 'assets/images/perfil.jpg',
+		'fullname': 'Carolina López',
+		'username': 'carolina.lopez',
+		'companyLogo': 'assets/images/icon-netex.png',
+		'companyName': 'Logo netex',
+		'link': 'http://www.netexlearning.es',
+		'linkLabel': 'Accede a tu cuenta'
+	};
+
+	mtp1Options = [
+		{
+			'label': 'Notificaciones',
+			'badge': 29
+		},
+		{
+			'label': 'Novedades'
+		},
+		{
+			'label': 'Manuales'
+		},
+		{
+			'label': 'Netex Community'
+		}
+	];
+	mtp2User = {
+		'avatar': 'assets/images/user_female_02.jpg',
+		'fullname': 'Suzanne Axtens',
+		'username': 'suzanne.axtens',
+		'companyLogo': 'assets/images/icon-netex.png',
+		'companyName': 'Logo netex',
+		'link': 'http://www.netexlearning.es',
+		'linkLabel': 'Accede a tu cuenta'
+	};
+
+	mtp2Options = [
+		{
+			'label': 'Notificaciones',
+			'badge': 29
+		},
+		{
+			'label': 'Novedades'
+		},
+		{
+			'label': 'Manuales'
+		},
+		{
+			'label': 'Netex Community'
+		}
+	];
+
+	mtp2MainOption = {
+		label: 'Use as administrator',
+		img: 'assets/images/administrator-banner.png'
+	}
+
 }

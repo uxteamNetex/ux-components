@@ -10,7 +10,7 @@
   </div>
   <div class="toolbar-searchbox__options utils--margin-right-16">
     <ntx-menu-avatar *ngIf="menuAvatarOptions && menuAvatarOptions.length > 0" [options]="menuAvatarOptions"></ntx-menu-avatar>
-    <ntx-menu-toolbar-profile [showBadge]="true" [userImage]="menuToolbarProfile.userImage" [userName]="menuToolbarProfile.userName" [actions]="menuToolbarProfile.actions"></ntx-menu-toolbar-profile>
+    <ntx-menu-toolbar-profile [user]="mtpUser" [options]="mtpOptions"></ntx-menu-toolbar-profile>
     <ntx-menu-toolbar-dashboard [apps]="apps"></ntx-menu-toolbar-dashboard>
   </div>
 </div>
