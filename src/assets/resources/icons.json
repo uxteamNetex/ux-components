@@ -780,6 +780,9 @@
             "className": "icon-palette-color"
         },
         {
+            "className": "icon-palette-color-solid"
+        },
+        {
             "className": "icon-paperclip"
         },
         {

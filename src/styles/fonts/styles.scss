@@ -45,6 +45,11 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-palette-color-solid {
+  &:before {
+    content: $icon-palette-color-solid; 
+  }
+}
 .icon-palette-color {
   &:before {
     content: $icon-palette-color;

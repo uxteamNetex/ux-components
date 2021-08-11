@@ -23,6 +23,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 **New icons**<br/>
 - icon-palette-color
+- icon-palette-color-solid
 
 **Menus**<br/>
 - Modificación componente *ntx-menu-toolbar-profile* simplificando la parametrización y añadiendo responsividad.
