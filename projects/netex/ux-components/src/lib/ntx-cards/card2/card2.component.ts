@@ -23,10 +23,14 @@ export class Card2Component implements OnInit {
 	};
 
 	@Input() image: string;
+	@Input() icon: string;
+	@Input() backgroundColor = '';
 	@Input() title: string = 'Title';
 	@Input() subtitle: string ;
 	@Input() options: boolean;
 	@Input() selected: boolean;
+	@Input() disabled: boolean;
+	@Input() hoverable: boolean;
 
 	@Output() clickEvent = new EventEmitter();
 
@@ -138,8 +142,6 @@ export class Card2Component implements OnInit {
 				},
 			]
 		};
-		console.log('selected', this.selected);
-		console.log('title', this.title);
 
 	}
 

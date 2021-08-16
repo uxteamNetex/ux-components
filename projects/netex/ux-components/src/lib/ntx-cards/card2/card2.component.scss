@@ -11,10 +11,6 @@ $block: "card2";
     margin: 8px;
     padding: 0;
     width: auto;
-    &:hover{
-      box-shadow: $shadow-hover;
-      cursor: pointer;
-    }
     .#{$block}__image{
       background-color: $color-grey-200;
       background-position: center;
@@ -31,6 +27,18 @@ $block: "card2";
         object-fit: cover;
         width: 100%;
       }
+      &-wrapper{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				&--icon{
+					color:$color-white;
+					height: 64px;
+					width: 64px;
+					font-size: 64px !important;
+				}
+			}
     }
     .mat-card-content{
       display: inline-flex;
@@ -62,6 +70,17 @@ $block: "card2";
       border: 3px solid $color-primary;
       border-radius: 8px;
     }
+    &.disabled {
+			.#{$block}__image, .#{$block}__title, .#{$block}__subtitle {
+				opacity: 0.5;
+			}
+		}
+		&.hoverable {
+			&:hover{
+				box-shadow: $shadow-hover;
+				cursor: pointer;
+			}
+		}
   }
 }
 

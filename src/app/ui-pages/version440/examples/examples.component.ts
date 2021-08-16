@@ -41,6 +41,30 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card2: any[] = [
+		{
+			image: '',
+			backgroundColor: '',
+			icon: '',
+			title: '',
+			options: ''
+		},
+		{
+			image: '',
+			backgroundColor: '',
+			icon: '',
+			title: '',
+			options: ''
+		},
+		{
+			image: '',
+			backgroundColor: '',
+			icon: '',
+			title: '',
+			options: ''
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -76,6 +100,32 @@ export class ExamplesComponent implements OnInit {
 					subtitle: '13 contenidos con texto muy largo',
 					icon: '',
 			    iconName: ''
+				}
+			];
+
+			this.card2 = [
+				{
+					image: '',
+					backgroundColor: '#E53B78',
+					icon: 'icon-palette-color-solid',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					options: 'true',
+					hoverable: true
+				},
+				{
+					image: 'assets/images/bg-02.png',
+					backgroundColor: '#E53B78',
+					icon: 'icon-palette-color-solid',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle',
+					disabled: true
+				},
+				{
+					image: 'assets/images/background-profile-header.jpg',
+					backgroundColor: '#E53B78',
+					icon: 'icon-palette-color-solid',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					selected: true
 				}
 			];
 

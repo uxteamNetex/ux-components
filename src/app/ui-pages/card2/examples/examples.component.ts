@@ -17,7 +17,7 @@ export class ExamplesComponent implements OnInit {
 		'ntx.sm': 2,
 		'ntx.xs': 1
 	};
-	
+
 
 	cards: any[];
 
@@ -32,23 +32,33 @@ export class ExamplesComponent implements OnInit {
 					subtitle: undefined
 				},
 				{
-					image: 'assets/images/writting.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					image: '',
+					backgroundColor: '#E53B78',
+					icon: 'icon-palette-color-solid',
+					title: 'No hoverable card project name that could be longer than just one line and will be shown with three dots',
 					options: 'true'
 				},
 				{
 					image: 'assets/images/bg-01.png',
+					backgroundColor: '#E53B78',
+					icon: 'icon-palette-color-solid',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 					subtitle: 'Subtitle',
-					options: 'true'
+					options: 'true',
+					hoverable: true
 				},
 				{
 					image: 'assets/images/bg-02.png',
+					backgroundColor: '#E53B78',
+					icon: 'icon-palette-color-solid',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle'
+					subtitle: 'Subtitle',
+					disabled: true
 				},
 				{
 					image: 'assets/images/background-profile-header.jpg',
+					backgroundColor: '#E53B78',
+					icon: 'icon-palette-color-solid',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 					selected: true
 				}

@@ -90,31 +90,21 @@
 
         <div class="whatsnew__content-block">
           <h4>Card2 component</h4>
-          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card2</span> component and we have added a skeleton loader. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card2</span> component and we have added a skeleton loader, a placeholder and 'disabled' and 'hoverable' states for the card. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card2/documentation" (click)="setPath('card2')">link</a></p>
           <div style="display: flex;justify-content: space-between;">
-            <div style="width: 204px;">
+            <div style="width:32%" *ngFor="let item of card2">
               <ntx-card2
-                image="assets/images/bg-01.png"
-                title="Project name that could be longer than just one line and will be shown with three dots"
-                subtitle="Subtitle"
-                selected="true"
-              ></ntx-card2>
-            </div>
-            <div style="width: 204px;">
-              <ntx-card2
-                image="assets/images/bg-02.png"
-                title="Project name that could be longer than just one line and will be shown with three dots"
-                subtitle="Subtitle"
-                options="true"
-              ></ntx-card2>
-            </div>
-            <div style="width: 204px;">
-              <ntx-card2
-                image="assets/images/bg-03.png"
-                title="Project name that could be longer than just one line and will be shown with three dots"
-                options="true"
-              ></ntx-card2>
+                [image]="item.image"
+                [backgroundColor]="item.backgroundColor"
+                [icon]="item.icon"
+                [title]="item.title"
+                [subtitle]="item.subtitle"
+                [selected]="item.selected"
+                [disabled]="item.disabled"
+                [hoverable]="item.hoverable"
+                [options]="item.options"
+                ></ntx-card2>
             </div>
           </div>
         </div>
