@@ -18,174 +18,51 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
-	card1: any[] = [
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		}
-	];
+	card1: any[] = [];
 
 
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
 
-		setTimeout(() => {
-
-			this.card1 = [
-				{
-					image: 'assets/images/writting.jpg',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
-				},
-				{
-					image: '',
-					initials: 'PN',
-					title: 'Project name',
-					subtitle: 'Subtitle',
-					options: '',
-				},
-				{
-					image: 'assets/images/bg-01.png',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-02.png',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: '',
-				},
-				{
-					image: 'assets/images/bg-03.png',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/writting.jpg',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/writting.jpg',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: '',
-				},
-				{
-					image: 'assets/images/bg-01.png',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-02.png',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/bg-03.png',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/writting.jpg',
-					initials: '',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle with a very long text in one line and three dots',
-					options: 'true',
-				}
-			];
-
-		}, 5000);
+		this.card1 = [
+			{
+				image: '',
+				initials: '',
+				title: '',
+				subtitle: '',
+				options: '',
+			},
+			{
+				image: 'assets/images/writting.jpg',
+				initials: '',
+				title: 'Disabled state: Project name that could be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle with a very long text in one line and three dots',
+				options: '',
+				disabled: true
+			},
+			{
+				image: '',
+				initials: 'PN',
+				title: 'Project name without image',
+				subtitle: 'Subtitle',
+				options: '',
+			},
+			{
+				image: 'assets/images/bg-01.png',
+				initials: '',
+				title: 'Project name that could be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle with a very long text in one line and three dots',
+				options: 'true',
+			},
+			{
+				image: 'assets/images/bg-02.png',
+				initials: '',
+				title: 'Project name that could be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle',
+				options: 'true',
+			}
+		];
 
 	}
 

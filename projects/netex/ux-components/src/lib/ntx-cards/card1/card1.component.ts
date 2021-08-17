@@ -28,6 +28,7 @@ export class Card1Component implements OnInit {
 	@Input() title: string;
 	@Input() subtitle: string;
 	@Input() options: boolean;
+	@Input() disabled: boolean;
 
 	constructor() { }
 

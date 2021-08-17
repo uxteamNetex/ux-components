@@ -89,6 +89,24 @@
         </h2>
 
         <div class="whatsnew__content-block">
+          <h4>Card1 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card1</span> component and we have added a 'disabled' state for the card. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card1/documentation" (click)="setPath('card1')">link</a></p>
+          <div style="display: flex;justify-content: space-between;">
+            <div style="width:47%" *ngFor="let item of card1">
+              <ntx-card1
+                [image]="item.image"
+                [initials]="item.initials"
+                [title]="item.title"
+                [subtitle]="item.subtitle"
+                [options]="item.options"
+                [disabled]="item.disabled"
+              ></ntx-card1>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>Card2 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have modified <span class="documentation-code">ntx-card2</span> component and we have added a skeleton loader, a placeholder and 'disabled' and 'hoverable' states for the card. For these changes some files (html, css and ts) have been modified. You will have to update the new changes so that this component looks correctly.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/card2/documentation" (click)="setPath('card2')">link</a></p>
