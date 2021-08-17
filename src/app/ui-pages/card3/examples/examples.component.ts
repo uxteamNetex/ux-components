@@ -18,81 +18,24 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
-	card3: any[] = [
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			subtitle2: '',
-			subtitle3: '',
-			subtitle3Color: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			subtitle2: '',
-			subtitle3: '',
-			subtitle3Color: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			subtitle2: '',
-			subtitle3: '',
-			subtitle3Color: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			subtitle2: '',
-			subtitle3: '',
-			subtitle3Color: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			subtitle2: '',
-			subtitle3: '',
-			subtitle3Color: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			subtitle2: '',
-			subtitle3: '',
-			subtitle3Color: '',
-			options: '',
-		}
-	];
+	card3: any[] = [];
 
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
-		setTimeout(() => {
 
 			this.card3 = [
+				{
+					image: '',
+					initials: '',
+					badgeColor: '',
+					title: '',
+					subtitle: '',
+					subtitle2: '',
+					subtitle3: '',
+					subtitle3Color: '',
+					options: '',
+				},
 				{
 					image: '',
 					initials: ' ',
@@ -103,6 +46,7 @@ export class ExamplesComponent implements OnInit {
 					subtitle3: 'Closed',
 					subtitle3Color: '#f05060',
 					options: '',
+					disabled: true
 				},
 				{
 					image: 'assets/images/bg-01.png',
@@ -136,32 +80,9 @@ export class ExamplesComponent implements OnInit {
 					subtitle3: ' ',
 					subtitle3Color: '',
 					options: '',
-				},
-				{
-					image: 'assets/images/bg-02.png',
-					initials: '',
-					badgeColor: '',
-					title: 'Agile Team Evaluation',
-					subtitle: '28/12/2020',
-					subtitle2: '10/22 Users',
-					subtitle3: 'Closed',
-					subtitle3Color: '#f05060',
-					options: '',
-				},
-				{
-					image: 'assets/images/bg-03.png',
-					initials: '',
-					badgeColor: '',
-					title: 'Evaluation name that could be longer than just one line and will be shown with three dots',
-					subtitle: '28/12/2020',
-					subtitle2: '10/22 Users',
-					subtitle3: 'Open',
-					subtitle3Color: '#5cce88',
-					options: 'true',
 				}
 			];
 
-		}, 5000);
 	}
 
 	// tslint:disable-next-line:use-life-cycle-interface

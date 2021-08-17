@@ -82,6 +82,31 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card3: any[] = [
+		{
+			image: '',
+			initials: '',
+			badgeColor: '',
+			title: '',
+			subtitle: '',
+			subtitle2: '',
+			subtitle3: '',
+			subtitle3Color: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			badgeColor: '',
+			title: '',
+			subtitle: '',
+			subtitle2: '',
+			subtitle3: '',
+			subtitle3Color: '',
+			options: '',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -162,6 +187,32 @@ export class ExamplesComponent implements OnInit {
 					subtitle: 'Subtitle with a very long text in one line and three dots',
 					options: 'true',
 				},
+			];
+
+			this.card3 = [
+				{
+					image: '',
+					initials: ' ',
+					badgeColor: 'orange',
+					title: 'Evaluation A',
+					subtitle: '20/12/2020',
+					subtitle2: '9/22 Users',
+					subtitle3: 'Closed',
+					subtitle3Color: '#f05060',
+					options: '',
+					disabled: true
+				},
+				{
+					image: 'assets/images/bg-01.png',
+					initials: '',
+					badgeColor: '',
+					title: 'Evaluation name that could be longer than just one line and will be shown with three dots',
+					subtitle: '28/12/2020',
+					subtitle2: '10/22 Users',
+					subtitle3: 'Open',
+					subtitle3Color: '#5cce88',
+					options: 'true',
+				}
 			];
 
 		}, 5000);

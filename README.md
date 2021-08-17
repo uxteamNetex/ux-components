@@ -16,6 +16,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Nuevo componente *ntx-card23*.
 - Modificación componente *ntx-card1*.
 - Modificación componente *ntx-card2*.
+- Modificación componente *ntx-card3*.
 
 **Buttons**<br/>
 - Modificación del componente *ntx-icon-button* parametrizando color y borde.

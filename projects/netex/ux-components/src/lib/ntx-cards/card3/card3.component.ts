@@ -17,6 +17,7 @@ export class Card3Component implements OnInit {
 	@Input() initials: string;
 	@Input() badgeColor?: string;
 	@Input() options: boolean;
+	@Input() disabled: boolean;
 
 	menuOptionsAdvanced: {
 		icon: string;
