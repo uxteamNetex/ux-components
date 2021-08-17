@@ -18,7 +18,6 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
-
 	cards: any[];
 
 	constructor(private observableMedia: ObservableMedia) { }
@@ -42,8 +41,8 @@ export class ExamplesComponent implements OnInit {
 					image: 'assets/images/bg-01.png',
 					backgroundColor: '#E53B78',
 					icon: 'icon-palette-color-solid',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: 'Subtitle',
+					title: 'P',
+					subtitle: 'S',
 					options: 'true',
 					hoverable: true
 				},
