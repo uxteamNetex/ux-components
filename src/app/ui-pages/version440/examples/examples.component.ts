@@ -107,6 +107,25 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card4: any[] = [
+		{
+			image: '',
+			initials: '',
+			badgeColor: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			image: '',
+			initials: '',
+			badgeColor: '',
+			title: '',
+			subtitle: '',
+			options: '',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -211,6 +230,26 @@ export class ExamplesComponent implements OnInit {
 					subtitle2: '10/22 Users',
 					subtitle3: 'Open',
 					subtitle3Color: '#5cce88',
+					options: 'true',
+				}
+			];
+
+			this.card4 = [
+				{
+					image: 'assets/images/perfil.jpg',
+					initials: '',
+					badgeColor: '',
+					title: 'María Cristina Martínez Casanueva',
+					subtitle: 'UX designer and web developer',
+					options: '',
+					disabled: true
+				},
+				{
+					image: '',
+					initials: ' ',
+					badgeColor: '#EE9A37',
+					title: 'Ana Pérez Lago',
+					subtitle: 'Front developer',
 					options: 'true',
 				}
 			];
