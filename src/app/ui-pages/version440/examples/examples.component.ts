@@ -144,6 +144,19 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card7: any[] = [
+		{
+			title: '',
+			subtitle: '',
+			options: '',
+		},
+		{
+			title: '',
+			subtitle: '',
+			options: '',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -288,6 +301,20 @@ export class ExamplesComponent implements OnInit {
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 					number: '',
 					options: 'true'
+				}
+			];
+
+			this.card7 = [
+				{
+					title: 'Disabled state: Card title that could not be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in two lines and three dots to see how it looks like in the card',
+					options: '',
+					disabled: true
+				},
+				{
+					title: 'Card title',
+					subtitle: 'Subtitle',
+					options: 'true',
 				}
 			];
 
