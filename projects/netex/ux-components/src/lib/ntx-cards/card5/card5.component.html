@@ -1,10 +1,10 @@
-<mat-card class="card5">
+<mat-card class="card5" [ngClass]="{'disabled': disabled}">
   <mat-card-content>
     <mat-card-title class="card5__title">
-      <span class="card5__title--text" matTooltip="Folder name has only one line and will be shown with three dots">Folder name has only one line and will be shown with three dots</span>
-      <span class="card5__title--number">(18)</span>
+      <span *ngIf="title" class="card5__title--text" matTooltip="{{title}}">{{title}}</span>
+      <span *ngIf="number" class="card5__title--number">{{number}}</span>
     </mat-card-title>
-    <div class="card5__options">
+    <div *ngIf="options" class="card5__options">
       <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
     </div>
   </mat-card-content>

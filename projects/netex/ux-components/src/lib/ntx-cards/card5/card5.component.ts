@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
 	selector: 'ntx-card5',
@@ -22,6 +22,11 @@ export class Card5Component implements OnInit {
 			click: () => void;
 		}[];
 	};
+
+	@Input() title: string;
+	@Input() number: string;
+	@Input() options: boolean;
+	@Input() disabled: boolean;
 
 	constructor() { }
 
