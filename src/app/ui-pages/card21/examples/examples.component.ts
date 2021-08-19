@@ -8,13 +8,6 @@ import { MatGridList } from '@angular/material';
 	styleUrls: ['./examples.component.scss']
 })
 export class ExamplesComponent implements OnInit {
-
-	selectedCardIndex: number;
-
-	checkIfSelected(i: number) {
-		return this.selectedCardIndex === i;
-	}
-
 	@ViewChild('grid') grid: MatGridList;
 	@ViewChild('grid2') grid2: MatGridList;
 
@@ -26,54 +19,26 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
-	card21Group_1: any[] = [
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		}
-	];
-	card21Group_2: any[] = [
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		},
-		{
-			bar: '',
-			barColor: '',
-			image: '',
-			title: '',
-		}
-	];
+	card21Group_1: any[] = [];
+	card21Group_2: any[] = [];
+
+	selectedCardIndex: number;
+
+	checkIfSelected(i: number) {
+		return this.selectedCardIndex === i;
+	}
 
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
 
-		setTimeout(() => {
-
 			this.card21Group_1 = [
+				{
+					bar: '',
+					barColor: '',
+					image: '',
+					title: '',
+				},
 				{
 					bar: true,
 					barColor: '',
@@ -93,7 +58,14 @@ export class ExamplesComponent implements OnInit {
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
 				}
 			];
+
 			this.card21Group_2 = [
+				{
+					bar: '',
+					barColor: '',
+					image: '',
+					title: '',
+				},
 				{
 					bar: '',
 					barColor: '',
@@ -114,12 +86,10 @@ export class ExamplesComponent implements OnInit {
 				}
 			];
 
-		}, 5000);
-
 	}
 
 	handleCard21Click(i: number, item: any) {
 		this.selectedCardIndex = i;
-	  }
+	}
 
 }
