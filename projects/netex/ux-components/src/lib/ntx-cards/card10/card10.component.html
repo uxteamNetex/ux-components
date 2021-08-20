@@ -1,16 +1,16 @@
-<div class="card card--outlined card10">
+<div class="card card--outlined card10" [ngClass]="{'disabled': disabled}">
   <div class="card10__badge">
-    <span class="utils--centered utils--text-14 utils--text-grey-700">10</span>
+    <span class="utils--centered utils--text-14 utils--text-grey-700">{{number}}</span>
   </div>
   <div class="card10__content">
     <div class="title utils--margin-top-8 utils--text-grey-700">
-      <ntx-input-no-label [placeholder]="'Add a text'"></ntx-input-no-label>
+      <ntx-input-no-label placeholder="{{title}}"></ntx-input-no-label>
     </div>
     <div class="subtitle utils--margin-bottom-20 utils--text-grey-800">
-      <ntx-textarea-no-label [placeholder]="'Add a description...'"></ntx-textarea-no-label>
+      <ntx-textarea-no-label placeholder="{{description}}"></ntx-textarea-no-label>
     </div>
     <div class="progress utils--margin-bottom-24">
-      <ntx-progress-bar-level value="78"></ntx-progress-bar-level>
+      <ntx-progress-bar-level value="{{progress}}"></ntx-progress-bar-level>
     </div>
   </div>
   <div class="card10__close-button">

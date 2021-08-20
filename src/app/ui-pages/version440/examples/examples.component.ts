@@ -170,6 +170,22 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card10 = [
+		{
+			number: '10',
+			title: 'Disabled state: Enter a title...',
+			description: 'Enter a description...',
+			progress: '87',
+			disabled: true
+		},
+		{
+			number: '7',
+			title: 'Enter a title...',
+			description: 'Enter a description...',
+			progress: '12'
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
