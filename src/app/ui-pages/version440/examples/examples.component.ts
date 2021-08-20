@@ -157,6 +157,19 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card8: any[] = [
+		{
+			title: '',
+			subtitle: '',
+			checkbox: '',
+		},
+		{
+			title: '',
+			subtitle: '',
+			checkbox: '',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -316,6 +329,20 @@ export class ExamplesComponent implements OnInit {
 					subtitle: 'Subtitle',
 					options: 'true',
 				}
+			];
+
+			this.card8 = [
+				{
+					title: 'Disabled state: Card title that could not be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in two lines and three dots to see how it looks like in the card',
+					checkbox: '',
+					disabled: true
+				},
+				{
+					title: 'Card title',
+					subtitle: 'Subtitle',
+					checkbox: 'true'
+				},
 			];
 
 		}, 5000);
