@@ -1,17 +1,22 @@
-<mat-card class="card13"
-          [ngClass]="{'card-selected': selected}">
+<mat-card class="card13" [ngClass]="{'selected': selected, 'disabled': disabled}">
+
   <mat-card-header class="card13__header">
     <mat-card-title class="card13__title">
-        <span class="utils--truncate1" [matTooltip]="data.title">{{ data.title }}</span>      
+        <span *ngIf="title" class="utils--truncate1" matTooltip="{{title}}">{{title}}</span>
     </mat-card-title>
-    <ntx-form-checkbox-circle class="card13__header--check" 
-          [color]="'primary'"
-          (checkboxChange)="onCardCheckboxChange($event)"></ntx-form-checkbox-circle>
+
+    <div *ngIf="checkbox" class="card13__header--check">
+      <ntx-form-checkbox-circle [color]="'primary'"
+        (checkboxChange)="onCardCheckboxChange($event)"></ntx-form-checkbox-circle>
+    </div>
   </mat-card-header>
+
   <mat-card-content class="card13__content">
     <mat-card-subtitle class="card13__subtitle">
-      <span class="utils--truncate2" [matTooltip]="data.description">{{ data.description }}</span>
-    </mat-card-subtitle> 
-    <ntx-form-select-thin></ntx-form-select-thin>
+      <span *ngIf="subtitle" class="utils--truncate2" matTooltip="{{subtitle}}">{{subtitle}}</span>
+    </mat-card-subtitle>
+    <div class="card13__select">
+      <ntx-form-select-thin *ngIf="select"></ntx-form-select-thin>
+    </div>
   </mat-card-content>
 </mat-card>

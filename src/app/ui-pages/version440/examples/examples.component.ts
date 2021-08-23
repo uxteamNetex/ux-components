@@ -211,6 +211,23 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card13 = [
+		{
+			title: '',
+			subtitle: '',
+			checkbox: '',
+			select: '',
+			disabled: false
+		},
+		{
+			title: '',
+			subtitle: '',
+			checkbox: '',
+			select: '',
+			disabled: false
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -407,6 +424,23 @@ export class ExamplesComponent implements OnInit {
 					icon2: 'icon-chat-bubble',
 					text2: '56',
 					buttons: 'true',
+					disabled: false
+				}
+			];
+
+			this.card13 = [
+				{
+					title: 'Disabled state: Card title that could not be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in two lines and three dots to see how it looks like in the card',
+					checkbox: 'true',
+					select: 'true',
+					disabled: true
+				},
+				{
+					title: 'Card title that could not be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle',
+					checkbox: 'true',
+					select: 'true',
 					disabled: false
 				}
 			];

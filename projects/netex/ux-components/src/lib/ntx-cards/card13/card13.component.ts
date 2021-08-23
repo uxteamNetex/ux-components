@@ -1,10 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { MatCheckboxChange } from '@angular/material';
-export interface Data {
-	title: string;
-	description: string;
-}
+
 @Component({
 	selector: 'ntx-card13',
 	templateUrl: './card13.component.html',
@@ -13,12 +9,12 @@ export interface Data {
 })
 export class Card13Component implements OnInit {
 
-	data: Data = {
-		title: 'Competency title with a very long text',
-		description: 'Description in a few words that could be one or two lines maximum and then three dots'
-	};
-
-	selected: boolean;
+	@Input() title: string;
+	@Input() subtitle: string;
+	@Input() checkbox: boolean;
+	@Input() select: boolean;
+	@Input() disabled: boolean;
+	@Input() selected: boolean;
 
 	constructor() { }
 
