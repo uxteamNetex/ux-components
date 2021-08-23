@@ -186,6 +186,31 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card12 = [
+		{
+			title: '',
+			backgroundColor: '',
+			options: '',
+			icon1: '',
+			text1: '',
+			icon2: '',
+			text2: '',
+			buttons: '',
+			disabled: false
+		},
+		{
+			title: '',
+			backgroundColor: '',
+			options: '',
+			icon1: '',
+			text1: '',
+			icon2: '',
+			text2: '',
+			buttons: '',
+			disabled: false
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -359,6 +384,31 @@ export class ExamplesComponent implements OnInit {
 					subtitle: 'Subtitle',
 					checkbox: 'true'
 				},
+			];
+
+			this.card12 = [
+				{
+					title: 'Disabled state: Card title that could be longer than just two lines and will be shown with three dots',
+					backgroundColor: '#279ED6',
+					options: '',
+					icon1: 'icon-users',
+					text1: '24',
+					icon2: '',
+					text2: '',
+					buttons: '',
+					disabled: true
+				},
+				{
+					title: 'Card title',
+					backgroundColor: '#9B2761',
+					options: '',
+					icon1: 'icon-archive',
+					text1: '8',
+					icon2: 'icon-chat-bubble',
+					text2: '56',
+					buttons: 'true',
+					disabled: false
+				}
 			];
 
 		}, 5000);
