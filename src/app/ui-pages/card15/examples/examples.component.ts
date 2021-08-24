@@ -2,11 +2,18 @@ import { AfterContentInit, Component, OnInit, ViewChild, ViewEncapsulation } fro
 import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 import { MatCardActions, MatGridList } from '@angular/material';
 
+const USER4 = {
+	background: '',
+	avatar: '',
+	name : '',
+	mail : '',
+};
 const USER1 = {
 	background: 'assets/images/bg-01.png',
 	avatar: 'assets/images/user_female_04.jpg',
 	name : 'Bernice Greaves',
 	mail : 'berni.graves@nydailynews.com',
+	disabled: true
 };
 const USER2 = {
 	background: 'assets/images/bg-02.png',
@@ -111,6 +118,7 @@ export class ExamplesComponent implements OnInit {
 	badge3 = BADGE3;
 	actions2 = ACTIONS2;
 	actions3 = ACTIONS3;
+	user4 = USER4;
 
 	constructor() { }
 

@@ -1,15 +1,20 @@
-<mat-card class="card14"
-          [ngClass]="{'card-selected': selected}">
+<mat-card class="card14">
+
   <mat-card-header class="card14__header">
     <mat-card-title class="card14__title utils--text-14">
-      <span class="utils--text-grey-800 utils--truncate1" [matTooltip]="data.title">{{ data.title }}</span>      
+      <span *ngIf="title" class="utils--text-grey-800 utils--truncate1" matTooltip="{{title}}">{{title}}</span>
     </mat-card-title>
-    <mat-icon class="icon-netex icon-check utils--text-18 utils--text-grey-600 utils--margin-right-4"></mat-icon>
-    <span class="utils--text-grey-600 utils--text-12 utils--uppercase">added</span>
+
+    <div *ngIf="state" class="card14__state">
+      <mat-icon class="icon-netex {{stateIcon}} utils--text-18 utils--text-grey-600 utils--margin-right-4"></mat-icon>
+      <span class="utils--text-grey-600 utils--text-12 utils--uppercase">{{stateText}}</span>
+    </div>
   </mat-card-header>
+
   <mat-card-content class="card14__content">
     <mat-card-subtitle class="card14__subtitle utils--text-14">
-      <span class="utils--$color-grey-700 utils--truncate2" [matTooltip]="data.description">{{ data.description }}</span>
-    </mat-card-subtitle> 
+      <span *ngIf="subtitle" class="utils--$color-grey-700 utils--truncate2" matTooltip="{{subtitle}}">{{subtitle}}</span>
+    </mat-card-subtitle>
   </mat-card-content>
+
 </mat-card>

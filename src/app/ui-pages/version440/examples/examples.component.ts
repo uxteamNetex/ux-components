@@ -1,6 +1,20 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 
+const USER4 = {
+	background: '',
+	avatar: '',
+	name : '',
+	mail : '',
+};
+const USER1 = {
+	background: 'assets/images/bg-01.png',
+	avatar: 'assets/images/user_female_04.jpg',
+	name : 'Bernice Greaves',
+	mail : 'berni.graves@nydailynews.com',
+	disabled: true
+};
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -8,6 +22,9 @@ import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 	encapsulation: ViewEncapsulation.None
 })
 export class ExamplesComponent implements OnInit {
+
+	user1 = USER1;
+	user4 = USER4;
 
 	card21: any[] = [
 		{
@@ -228,6 +245,23 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	card14 = [
+		{
+			title: '',
+			subtitle: '',
+			state: false,
+			stateIcon: '',
+			stateText: '',
+		},
+		{
+			title: '',
+			subtitle: '',
+			state: false,
+			stateIcon: '',
+			stateText: '',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -443,6 +477,23 @@ export class ExamplesComponent implements OnInit {
 					select: 'true',
 					disabled: false
 				}
+			];
+
+			this.card14 = [
+				{
+					title: 'Disabled state: Card title that could not be longer than just one line and will be shown with three dots',
+					subtitle: 'Subtitle with a very long text in two lines and three dots to see how it looks like in the card',
+					state: true,
+					stateIcon: 'icon-check',
+					stateText: 'Added',
+				},
+				{
+					title: 'Card title',
+					subtitle: 'Subtitle',
+					state: true,
+					stateIcon: 'icon-trash',
+					stateText: 'deleted',
+				},
 			];
 
 		}, 5000);
