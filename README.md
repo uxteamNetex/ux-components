@@ -33,6 +33,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Modificación del componente *ntx-icon-button* parametrizando color y borde.
 - Modificación del componente *ntx-raised-round-button* parametrizando la posición del icono y los colores.
 - Modificación del componente *ntx-mini-fab-button* parametrizando icono y colores.
+- Modificación del componente *ntx-raised-round-button* añadiendo un estado 'loading' que muestre un spinner.
 
 **New icons**<br/>
 - icon-palette-color

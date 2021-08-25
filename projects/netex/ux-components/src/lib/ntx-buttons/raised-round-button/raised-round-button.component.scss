@@ -7,6 +7,7 @@ $block: 'ntx-raised-round-button';
   border-radius: 21px;
   border: none;
   padding: 0 16px;
+  position: relative;
   display: inline-flex;
   font-family: Lato;
   font-weight: 500;
@@ -62,6 +63,24 @@ $block: 'ntx-raised-round-button';
     &:hover{
       background-color: $color-black;
       color: $color-white;
+    }
+  }
+  &.loading {
+    background-color: $color-grey-700;
+    color: $color-white;
+    span + .loader, .loader + span {
+      margin-left: 4px;
+    }
+    .loader-centered {
+      position: absolute;
+      left: calc(50% - 12px);
+      + span {
+        opacity: 0.4;
+        margin: 0;
+      }
+    }
+    &:hover {
+      background-color: $color-grey-700 !important;
     }
   }
 }

@@ -13,15 +13,17 @@ export class RaisedRoundButtonComponent implements OnInit {
 	@Input() iconLeft!: string;
 	@Input() iconRight!: string;
 	@Input() text!: string;
+	@Input() loading = false;
 
 	@Output() clickButton = new EventEmitter<any>();
+
 
 	constructor() { }
 
 	ngOnInit() { }
-
-	onClickButton() {
-		this.clickButton.emit(Event);
+	
+	onClickButton(el) {
+		this.clickButton.emit(el);
 	}
 
 	getClasses() {	

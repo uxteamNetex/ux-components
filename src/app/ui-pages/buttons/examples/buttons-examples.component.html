@@ -48,30 +48,35 @@
       <div *ngIf="type.label==='icon raised'">
         <ntx-raised-icon-button [item] ="raisedIconButton"></ntx-raised-icon-button>
       </div>
-      <div *ngIf="type.label==='raised round'" class="utils--flex">
-        <ntx-raised-round-button iconLeft="icon-pencil" text="edit" color="primary"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button text="button" color="primary"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button icon="icon-pencil" color="primary"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button text="link" color="primary" [disabled]="true"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button iconRight="icon-plus" text="action" color="violet"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button icon="icon-plus" color="violet"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button icon="icon-send" text="action" color="green"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button icon="icon-send" color="green"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button icon="icon-home" text="action" color="accent"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button icon="icon-home" color="accent"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button iconRight="icon-search" text="buscar" color="black"></ntx-raised-round-button>
-        <div style="margin-left:16px;"></div>
-        <ntx-raised-round-button iconRight="icon-arrow-right" text="comenzar" color="white"></ntx-raised-round-button>
+      <div *ngIf="type.label==='raised round'">
+        <div class="utils--margin-bottom-24">
+          <mat-slide-toggle [(ngModel)]="isLoading">{{isLoading?'Slide to hide loading state':'Slide to see loading state'}}</mat-slide-toggle>
+        </div>
+        <div class="utils--flex">
+          <ntx-raised-round-button iconRight="icon-search" text="buscar" color="black" [loading]="isLoading" (clickButton)="onClickButton(btn1)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button iconLeft="icon-pencil" text="edit" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn2)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button text="button" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn3)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button icon="icon-pencil" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn4)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button text="link" color="primary" [disabled]="true" [loading]="isLoading" (clickButton)="onClickButton(btn5)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button iconRight="icon-plus" text="action" color="violet" [loading]="isLoading" (clickButton)="onClickButton(btn6)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button icon="icon-plus" color="violet" [loading]="isLoading" (clickButton)="onClickButton(btn7)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button icon="icon-send" text="action" color="green" [loading]="isLoading" (clickButton)="onClickButton(btn8)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button icon="icon-send" color="green" [loading]="isLoading" (clickButton)="onClickButton(btn9)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button  icon="icon-home" text="action" color="accent" [loading]="isLoading" (clickButton)="onClickButton(btn10)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button  icon="icon-home" color="accent" [loading]="isLoading" (clickButton)="onClickButton(btn11)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button  iconRight="icon-arrow-right" text="comenzar" color="white" [loading]="isLoading" (clickButton)="onClickButton(btn13)"></ntx-raised-round-button>
+        </div>
       </div>
       <div *ngIf="type.label==='icon'">
           <ntx-icon-button text = "LearningCloud" iconName = "icon-logo-cloud" color="#F5AF2E" showBorder></ntx-icon-button>

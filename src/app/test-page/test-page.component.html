@@ -1,11 +1,59 @@
 <div class="page-layout">
   <div class="page-container">
-    <ntx-icon-button text = "Let's talk" iconName = "icon-chat-bubble" showBorder></ntx-icon-button>
-    <ntx-icon-button text = "Link" iconName = "icon-editor-linker-option" [disabled]="'true'"></ntx-icon-button>
-    <ntx-icon-button text = "Download" iconName = "icon-download" showBorder></ntx-icon-button>
-    <ntx-icon-button text = "Cloud" iconName = "icon-cloud" color="red" showBorder></ntx-icon-button>
+    <!-- <ntx-raised-round-button #btn1 iconRight="icon-search" text="buscar" color="black" [loading]="isClicked(btn1)" (clickButton)="onClickButton(btn1)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn2 iconLeft="icon-pencil" text="edit" color="primary" [loading]="isClicked(btn2)" (clickButton)="onClickButton(btn2)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn3 text="button" color="primary" [loading]="isClicked(btn3)" (clickButton)="onClickButton(btn3)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn4 icon="icon-pencil" color="primary" [loading]="isClicked(btn4)" (clickButton)="onClickButton(btn4)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn5 text="link" color="primary" [disabled]="true" [loading]="isClicked(btn5)" (clickButton)="onClickButton(btn5)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn6 iconRight="icon-plus" text="action" color="violet" [loading]="isClicked(btn6)" (clickButton)="onClickButton(btn6)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn7 icon="icon-plus" color="violet" [loading]="isClicked(btn7)" (clickButton)="onClickButton(btn7)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn8 icon="icon-send" text="action" color="green" [loading]="isClicked(btn8)" (clickButton)="onClickButton(btn8)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn9 icon="icon-send" color="green" [loading]="isClicked(btn9)" (clickButton)="onClickButton(btn9)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn10 icon="icon-home" text="action" color="accent" [loading]="isClicked(btn10)" (clickButton)="onClickButton(btn10)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn11 icon="icon-home" color="accent" [loading]="isClicked(btn11)" (clickButton)="onClickButton(btn11)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn12 iconRight="icon-search" text="buscar" color="black" [loading]="isClicked(btn12)" (clickButton)="onClickButton(btn12)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn13 iconRight="icon-arrow-right" text="comenzar" color="white" [loading]="isClicked(btn13)" (clickButton)="onClickButton(btn13)"></ntx-raised-round-button> -->
+    <div class="utils--margin-bottom-24">
+      <mat-slide-toggle [(ngModel)]="isLoading">{{isLoading?'Slide to hide loading state':'Slide to see loading state'}}</mat-slide-toggle>
+    </div>
+    <div class="utils--flex">
+      <ntx-raised-round-button #btn1 iconRight="icon-search" text="buscar" color="black" [loading]="isLoading" (clickButton)="onClickButton(btn1)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn2 iconLeft="icon-pencil" text="edit" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn2)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn3 text="button" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn3)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn4 icon="icon-pencil" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn4)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn5 text="link" color="primary" [disabled]="true" [loading]="isLoading" (clickButton)="onClickButton(btn5)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn6 iconRight="icon-plus" text="action" color="violet" [loading]="isLoading" (clickButton)="onClickButton(btn6)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn7 icon="icon-plus" color="violet" [loading]="isLoading" (clickButton)="onClickButton(btn7)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn8 icon="icon-send" text="action" color="green" [loading]="isLoading" (clickButton)="onClickButton(btn8)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn9 icon="icon-send" color="green" [loading]="isLoading" (clickButton)="onClickButton(btn9)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn10 icon="icon-home" text="action" color="accent" [loading]="isLoading" (clickButton)="onClickButton(btn10)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn11 icon="icon-home" color="accent" [loading]="isLoading" (clickButton)="onClickButton(btn11)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn12 iconRight="icon-search" text="buscar" color="black" [loading]="isLoading" (clickButton)="onClickButton(btn12)"></ntx-raised-round-button>
+      <div style="margin-left:16px;"></div>
+      <ntx-raised-round-button #btn13 iconRight="icon-arrow-right" text="comenzar" color="white" [loading]="isLoading" (clickButton)="onClickButton(btn13)"></ntx-raised-round-button>
+    </div>
   </div>
 </div>
-
-
-

@@ -251,6 +251,7 @@ export class ButtonsExamplesComponent implements OnInit {
 	textIconButton = TEXTICONBUTTON;
 
 	buttonTypes: ButtonType[];
+	isLoading: boolean;
 
 	constructor(
 		private buttonTypesService: ButtonTypesService
