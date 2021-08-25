@@ -1,6 +1,30 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 
+const DATA   = [
+	{
+		checked: false,
+		description: '',
+		state: 'completed'
+	},
+	{
+		checked: true,
+		description: 'Add a competency framework and at least one competency',
+		state: 'completed'
+	},
+	{
+		check: true,
+		description: 'Create a job role and assign it to several people',
+		state: 'current',
+		link: 'link'
+	},
+	{
+		check: true,
+		description: 'Another step to realize',
+		state: 'next'
+	}
+];
+
 const USER4 = {
 	background: '',
 	avatar: '',
@@ -23,6 +47,7 @@ const USER1 = {
 })
 export class ExamplesComponent implements OnInit {
 
+	data = DATA;
 	user1 = USER1;
 	user4 = USER4;
 
