@@ -25,6 +25,17 @@ const DATA   = [
 	}
 ];
 
+const CARD17 = {
+	title: 'Título del panel 1',
+	showLink: true,
+	icon: 'icon-plus-circle',
+};
+const CARD17B = {
+	title: '',
+	showSubtitle: true,
+	subtitle: '',
+};
+
 const USER4 = {
 	background: '',
 	avatar: '',
@@ -50,6 +61,8 @@ export class ExamplesComponent implements OnInit {
 	data = DATA;
 	user1 = USER1;
 	user4 = USER4;
+	card17 = CARD17;
+	card17B = CARD17B;
 
 	card21: any[] = [
 		{

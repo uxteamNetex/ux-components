@@ -25,6 +25,11 @@ const DATA4 = {
 	showSubtitle: true,
 	subtitle: 'Subtítulo',
 };
+const DATA5 = {
+	title: '',
+	showSubtitle: true,
+	subtitle: '',
+};
 
 @Component({
 	selector: 'app-examples',
@@ -32,20 +37,38 @@ const DATA4 = {
 	styleUrls: ['./examples.component.scss']
 })
 export class ExamplesComponent implements OnInit {
+	@ViewChild('grid') grid: MatGridList;
+
+	gridByBreakpoint = {
+		'ntx.xl': 1,
+		'ntx.lg': 1,
+		'ntx.md': 1,
+		'ntx.sm': 1,
+		'ntx.xs': 1
+	};
 
 	data1: Object;
 	data2: Object;
 	data3: Object;
 	data4: Object;
+	data5: Object;
 
-	constructor() {
+	constructor(private observableMedia: ObservableMedia) {
 		this.data1 = DATA1;
 		this.data2 = DATA2;
 		this.data3 = DATA3;
 		this.data4 = DATA4;
+		this.data5 = DATA5;
 	}
 
 	ngOnInit() {
+	}
+
+	// tslint:disable-next-line:use-life-cycle-interface
+	ngAfterContentInit() {
+		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
+			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
+		});
 	}
 
 }
