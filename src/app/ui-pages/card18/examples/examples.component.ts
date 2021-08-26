@@ -17,7 +17,9 @@ export class ExamplesComponent implements OnInit {
 				value: 80,
 				requiredValue: 50,
 				level: '4/5'
-			}
+			},
+			showScore: true,
+			disabled: false,
 	};
 	data2: ntxCard18Data = {
 		avatar: 'assets/images/app-catalogue.png',
@@ -28,21 +30,48 @@ export class ExamplesComponent implements OnInit {
 			value: 42,
 			requiredValue: 65,
 			level: undefined
-		}
+		},
+		showScore: true,
+		disabled: false,
 	};
 	data3: ntxCard18Data = {
 		avatar: 'assets/images/background-profile-header.jpg',
 		color: '#1D5D93',
 		title: 'Critical thinking & problem solving' ,
 		subtitle: '',
-		checked: true
+		checked: true,
+		showScore: true,
+		disabled: false,
 	};
 	data4: ntxCard18Data = {
 		avatar: undefined,
 		color: '#5cce88',
 		title: 'Verbal communication' ,
 		subtitle: 'Europe division > 2019 competencies',
-		checked: false
+		checked: false,
+		showScore: true,
+		disabled: false,
+	};
+	data5: ntxCard18Data = {
+		avatar: undefined,
+		color: '#E7575B',
+		title: 'Customer oriented' ,
+		subtitle: '',
+		showScore: true,
+		disabled: true,
+		progress: {
+			value: 80,
+			requiredValue: 50,
+			level: '4/5'
+		}
+	};
+	data6: ntxCard18Data = {
+		avatar: '',
+		color: '',
+		title: '' ,
+		subtitle: '',
+		showScore: false,
+		disabled: false,
 	};
 
 	constructor() {

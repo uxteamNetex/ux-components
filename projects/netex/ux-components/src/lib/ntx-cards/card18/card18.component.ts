@@ -10,7 +10,9 @@ export interface ntxCard18Data {
 		requiredValue: number,
 		level?: string
 	};
-	checked?: boolean
+	checked?: boolean;
+	disabled: boolean;
+	showScore: boolean;
 }
 
 @Component({

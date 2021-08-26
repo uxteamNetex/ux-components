@@ -36,6 +36,28 @@ const CARD17B = {
 	subtitle: '',
 };
 
+const CARD18 = {
+	avatar: undefined,
+	color: '#E7575B',
+	title: 'Customer oriented' ,
+	subtitle: '',
+	progress: {
+		value: 80,
+		requiredValue: 50,
+		level: '4/5'
+	},
+	showScore: true,
+	disabled: false,
+};
+const CARD18B = {
+	avatar: '',
+	color: '',
+	title: '' ,
+	subtitle: '',
+	showScore: false,
+	disabled: false,
+};
+
 const USER4 = {
 	background: '',
 	avatar: '',
@@ -63,6 +85,8 @@ export class ExamplesComponent implements OnInit {
 	user4 = USER4;
 	card17 = CARD17;
 	card17B = CARD17B;
+	card18 = CARD18;
+	card18B = CARD18B;
 
 	card21: any[] = [
 		{
