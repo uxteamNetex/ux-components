@@ -30,6 +30,12 @@ const DATA5 = {
 	showSubtitle: true,
 	subtitle: '',
 };
+const DATA6 = {
+	title: 'Título del panel 1',
+	showLink: true,
+	icon: 'icon-plus-circle',
+	disabled: true,
+};
 
 @Component({
 	selector: 'app-examples',
@@ -52,6 +58,7 @@ export class ExamplesComponent implements OnInit {
 	data3: Object;
 	data4: Object;
 	data5: Object;
+	data6: Object;
 
 	constructor(private observableMedia: ObservableMedia) {
 		this.data1 = DATA1;
@@ -59,6 +66,7 @@ export class ExamplesComponent implements OnInit {
 		this.data3 = DATA3;
 		this.data4 = DATA4;
 		this.data5 = DATA5;
+		this.data6 = DATA6;
 	}
 
 	ngOnInit() {

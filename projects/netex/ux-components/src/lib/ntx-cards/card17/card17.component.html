@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" [ngClass]="{'disabled': data.disabled}">
   <div class="header">
     <mat-icon *ngIf="data.iconTitle" class="icon-netex {{data.iconTitle}} {{data.iconTitleColor}} utils--margin-right-8"></mat-icon>
     <div class="text utils--text-20 utils--text-grey-800 utils--truncate">{{data.title}}</div>
