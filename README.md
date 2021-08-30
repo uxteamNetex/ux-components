@@ -39,6 +39,13 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **New icons**<br/>
 - icon-palette-color
 - icon-palette-color-solid
+- icon-flag-czech-republic
+- icon-flag-holland
+- icon-flag-poland
+- icon-flag-romania
+- icon-flag-russia
+- icon-flag-slovakia
+- icon-flag-turkey
 
 **Menus**<br/>
 - Modificación componente *ntx-menu-toolbar-profile* simplificando la parametrización y añadiendo responsividad.

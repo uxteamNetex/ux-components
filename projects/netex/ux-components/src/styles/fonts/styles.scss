@@ -45,6 +45,326 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-flag-czech-republic .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-czech-republic-path1;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-czech-republic .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-czech-republic-path2;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-czech-republic .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-czech-republic-path3;
+    color: rgb(65, 71, 155);
+  }
+}
+.icon-flag-czech-republic .path4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-czech-republic-path4;
+    color: rgb(221, 221, 221);
+  }
+}
+.icon-flag-holland .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-holland-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-holland .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-holland-path2;
+    color: rgb(65, 71, 155);
+  }
+}
+.icon-flag-holland .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-holland-path3;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-poland .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-poland-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-poland .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-poland-path2;
+    color: rgb(221, 221, 221);
+  }
+}
+.icon-flag-poland .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-poland-path3;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-romania .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-romania-path1;
+    color: rgb(255, 205, 5);
+  }
+}
+.icon-flag-romania .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-romania-path2;
+    color: rgb(65, 71, 155);
+  }
+}
+.icon-flag-romania .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-romania-path3;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-russia .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-russia-path1;
+    color: rgb(65, 71, 155);
+  }
+}
+.icon-flag-russia .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-russia-path2;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-russia .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-russia-path3;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-russia .path4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-russia-path4;
+    color: rgb(221, 221, 221);
+  }
+}
+.icon-flag-slovakia .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-slovakia-path1;
+    color: rgb(65, 71, 155);
+  }
+}
+.icon-flag-slovakia .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-slovakia-path2;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-slovakia .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-slovakia-path3;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-slovakia .path4 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-slovakia-path4;
+    color: rgb(221, 221, 221);
+  }
+}
+.icon-flag-slovakia .path5 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-slovakia-path5;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-slovakia .path6 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-slovakia-path6;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-slovakia .path7 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-slovakia-path7;
+    color: rgb(65, 71, 155);
+  }
+}
+.icon-flag-slovakia .path8 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-slovakia-path8;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-turkey .path1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-turkey-path1;
+    color: rgb(237, 31, 36);
+  }
+}
+.icon-flag-turkey .path2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-turkey-path2;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-flag-turkey .path3 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  &:before {
+    content: $icon-flag-turkey-path3;
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-palette-color-solid {
+  &:before {
+    content: $icon-palette-color-solid;
+  }
+}
+.icon-palette-color {
+  &:before {
+    content: $icon-palette-color;
+  }
+}
+
+
 .icon-coin-star {
   &:before {
     content: $icon-coin-star;
@@ -1151,7 +1471,7 @@
   top: 0;
   &:before {
     content: $icon-flag-galicia-path2;
-    color: rgb(221, 221, 221);
+    color: rgb(0, 153, 204);
   }
 }
 .icon-flag-galicia .path3 {
@@ -1162,7 +1482,7 @@
   top: 0;
   &:before {
     content: $icon-flag-galicia-path3;
-    color: rgb(0, 153, 204);
+    color: rgb(221, 221, 221);
   }
 }
 .icon-flag-germany .path1 {
