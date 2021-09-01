@@ -7,12 +7,16 @@ $block: "card19";
   font-family: Lato;
   display: flex;
   padding: 16px 4px 16px 16px;
+  position: relative;
   &__badge {
     background-color: $color-grey-200;
     border-radius: 4px;
-    width: 92px;
-    height: 92px;
     flex: none;
+    height: 92px;
+    min-height: 92px;
+    min-width: 92px;
+    overflow: hidden;
+    width: 92px;
     svg {
       display: block;
       margin: auto;
@@ -20,15 +24,54 @@ $block: "card19";
     }
   }
   &__info {
-    width: calc(100% - 92px - 52px);
+    width: calc(100% - 100px - 52px);
+    &--subtitle{
+      max-height: 14px;
+      min-height: 14px;
+      width: 100%;
+    }
+    &--title{
+      max-height: 22px;
+      min-height: 22px;
+      width: 100%;
+    }
     &--description {
         line-height: 20px;
+        max-height: 40px;
+        min-height: 40px;
+        width: 100%;
     }
   }
   &__menu {
-    width: 52px;
-    flex: none;
-    position: relative;
-    top: -10px;
+    position: absolute;
+    right: 2px;
+    top: 4px;
+  }
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    &:hover{
+      box-shadow: $shadow;
+    }
   }
 }
+
+/*Skeleton*/
+.#{$block} .#{$block}__badge:empty,
+.#{$block} .#{$block}__info .#{$block}__info--title:empty,
+.#{$block} .#{$block}__info .#{$block}__info--description:empty{
+  animation: loading 1.1s infinite linear;
+  background: #dedfe1;
+  background-image: -webkit-linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+  background-image: linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+  background-repeat: no-repeat;
+}
+@keyframes loading {
+  0% {
+    background-position: -100px;
+  }
+  100% {
+  background-position: 88px;
+  }
+}
+/*Fin Skeleton*/

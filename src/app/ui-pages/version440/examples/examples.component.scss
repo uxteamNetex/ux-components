@@ -157,7 +157,6 @@ $block: "whatsnew";
   }
 }
 
-
 .mat-basic-table{
   border-radius: 4px;
   box-shadow: $shadow;
@@ -241,6 +240,15 @@ $block: "whatsnew";
     padding: 0 16px;
   }
 
+}
+
+.utils--flex{
+  >*{
+    flex: 1 1 0px;
+    margin: 8px;
+    min-width: 267px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1280px) {

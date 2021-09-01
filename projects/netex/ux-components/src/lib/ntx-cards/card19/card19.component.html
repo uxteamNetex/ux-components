@@ -1,29 +1,29 @@
-<div class="card19" (click)="onClickEvent()">
-  <div class="card19__badge">
+<div class="card19" (click)="onClickEvent()" [ngClass]="{'disabled': disabled}">
+  <div class="card19__badge" *ngIf="badge">
     <img
         *ngIf="urlImage; else elseBlockBadge"
         class="utils--img-cover"
         src="{{ urlImage }}"
         alt="{{ altImage }}">
     <ng-template #elseBlockBadge>
-      <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
+      <svg *ngIf="BlockBadge" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
         <path d="M0 0h24v24H0V0z" fill="none"/>
         <path fill="#f9f9f9" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"/>
       </svg>
     </ng-template>
   </div>
   <div class="card19__info utils--padding-left-16">
-    <p class="utils--margin-0 utils--text-12 utils--uppercase utils--text-grey-700">
-        <span [matTooltip]="subtitle">{{ subtitle }}</span>
+    <p class="card19__info--subtitle utils--margin-0 utils--text-12 utils--uppercase utils--text-grey-700 utils--truncate1">
+        <span *ngIf="subtitle" matTooltip="{{subtitle}}">{{subtitle}}</span>
     </p>
-    <p class="utils--margin-top-4 utils--margin-bottom-12 utils--text-18 utils--text-grey-800">
-      <span [matTooltip]="title">{{ title }}</span>
+    <p class="card19__info--title utils--margin-top-4 utils--margin-bottom-12 utils--text-18 utils--text-grey-800 utils--lineclamp-1">
+      <span *ngIf="title" matTooltip="{{title}}">{{title}}</span>
     </p>
     <p class="card19__info--description utils--text-14 utils--margin-0 utils--text-grey-600 utils--lineclamp-2">
-       <span [matTooltip]="description">{{ description }}</span>
+       <span *ngIf="description" matTooltip="{{description}}">{{description}}</span>
     </p>
   </div>
-  <div class="card19__menu">
+  <div *ngIf="options" class="card19__menu">
     <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
   </div>
 </div>

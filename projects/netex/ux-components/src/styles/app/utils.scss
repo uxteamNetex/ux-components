@@ -126,7 +126,7 @@ $block: "utils";
 
 	&--truncate1 {
     display: -webkit-box;
-    max-width: max-content;
+    // max-width: max-content;
     overflow: hidden;
     word-break: break-word;
     -webkit-line-clamp: 1;
@@ -177,6 +177,10 @@ $block: "utils";
 
   &--centered {
     @include centerer;
+  }
+
+  &--lineclamp-1 {
+    @include ellipsis(1);
   }
 
   &--lineclamp-2 {
@@ -824,7 +828,7 @@ $block: "utils";
 
 .loader {
   border: 2px solid $color-white;
-  border-top: 2px solid $color-grey-700; 
+  border-top: 2px solid $color-grey-700;
   border-radius: 50%;
   width: 20px;
   height: 20px;

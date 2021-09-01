@@ -1,22 +1,44 @@
 <div class="page-layout">
   <div class="page-container">
-    <div class="utils--flex">
-      <ntx-card19></ntx-card19>
+    <div class="utils--flex" *ngFor="let item of card19">
+      <ntx-card19
+        [badge]="item.badge"
+        [BlockBadge]="item.BlockBadge"
+        [urlImage]="item.urlImage"
+        [altImage]="item.altImage"
+        [title]="item.title"
+        [subtitle]="item.subtitle"
+        [description]="item.description"
+        [options]="item.options"
+        [disabled]="item.disabled"></ntx-card19>
     </div>
     <div class="utils--flex">
-      <ntx-card19></ntx-card19>
-      <ntx-card19></ntx-card19>
+      <div *ngFor="let item of card19B">
+        <ntx-card19
+          [badge]="item.badge"
+          [BlockBadge]="item.BlockBadge"
+          [urlImage]="item.urlImage"
+          [altImage]="item.altImage"
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [description]="item.description"
+          [options]="item.options"
+          [disabled]="item.disabled"></ntx-card19>
+      </div>
     </div>
     <div class="utils--flex">
-      <ntx-card19></ntx-card19>
-      <ntx-card19></ntx-card19>
-      <ntx-card19></ntx-card19>
-    </div>
-    <div class="utils--flex">
-      <ntx-card19></ntx-card19>
-      <ntx-card19></ntx-card19>
-      <ntx-card19></ntx-card19>
-      <ntx-card19></ntx-card19>
+      <div *ngFor="let item of card19C">
+        <ntx-card19
+          [badge]="item.badge"
+          [BlockBadge]="item.BlockBadge"
+          [urlImage]="item.urlImage"
+          [altImage]="item.altImage"
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [description]="item.description"
+          [options]="item.options"
+          [disabled]="item.disabled"></ntx-card19>
+      </div>
     </div>
   </div>
 </div>
