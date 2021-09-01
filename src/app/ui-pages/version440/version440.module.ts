@@ -7,6 +7,7 @@ import { Version440RoutingModule } from './version440-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
 import {
+	NtxFormsModule,
 	NtxButtonsModule,
 	NtxCardsModule,
 	NtxExpansionPanelsModule
@@ -24,7 +25,8 @@ import { NtxMenusModule } from 'projects/netex/ux-components/src/public_api';
 		NtxButtonsModule,
 		NtxCardsModule,
 		NtxExpansionPanelsModule,
-		NtxMenusModule
+		NtxMenusModule,
+		NtxFormsModule
 	]
 })
 export class Version440Module { }

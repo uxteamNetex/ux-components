@@ -515,6 +515,12 @@ $block: "searchbox-filter-panel";
   ...
   }
   `;
+  code23 = `
+  ...
+  .mat-form-field-flex{
+    height: 52px;
+  ...
+  `;
 
   ngOnInit() {
   }

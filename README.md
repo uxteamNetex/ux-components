@@ -10,6 +10,10 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.4.0: (En progreso)
 
+**Forms**<br/>
+- Cambios en el css del componente input form (*ntx-form-input*).
+- Estilos css en el styles.css para controlar el alto de los label en los selects.
+
 **Cards**<br/>
 - Nuevo componente *ntx-card21*.
 - Nuevo componente *ntx-card22*.
