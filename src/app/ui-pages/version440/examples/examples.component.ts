@@ -326,6 +326,23 @@ export class ExamplesComponent implements OnInit {
 
 	card19B: any[] = [];
 
+	card20: any[] = [
+		{
+			showLink: '',
+			link: '',
+			image: '',
+			title: '',
+			subtitle: '',
+		},
+		{
+			showLink: '',
+			link: '',
+			image: '',
+			title: '',
+			subtitle: '',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -356,38 +373,6 @@ export class ExamplesComponent implements OnInit {
 		];
 
 		setTimeout(() => {
-
-			this.card21 = [
-				{
-					bar: true,
-					barColor: '#5cce88',
-					image: 'assets/images/writting.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-				},
-				{
-					bar: '',
-					barColor: '',
-					image: 'assets/images/background-profile-header.jpg',
-					title: 'Project name',
-				}
-			];
-
-			this.card22 = [
-				{
-					image: 'assets/images/bengal.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: '13 contenidos',
-					icon: 'Card bloqueada',
-			    iconName: 'icon-lock'
-				},
-				{
-					image: 'assets/images/coffee.jpg',
-					title: 'Project name',
-					subtitle: '13 contenidos con texto muy largo',
-					icon: '',
-			    iconName: ''
-				}
-			];
 
 			this.card2 = [
 				{
@@ -583,6 +568,56 @@ export class ExamplesComponent implements OnInit {
 					stateIcon: 'icon-trash',
 					stateText: 'deleted',
 				},
+			];
+
+			this.card20 = [
+				{
+					showLink: false,
+					link: '',
+					image: 'assets/images/writting.jpg',
+					title: 'Disabled state: Card title',
+					subtitle: 'Card subtitle',
+					disabled: true
+				},
+				{
+					showLink: true,
+					link: 'tublog.com',
+					image: 'assets/images/bg-03.png',
+					title: 'Title that could not be longer than one line and will be shown with three dots',
+          subtitle: 'Os alunos e alunas realizaram uma excursão no sábado passado com a equipe docente do primário para realizar uma reportaxe.',
+				}
+			];
+
+			this.card21 = [
+				{
+					bar: true,
+					barColor: '#5cce88',
+					image: 'assets/images/writting.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+				},
+				{
+					bar: '',
+					barColor: '',
+					image: 'assets/images/background-profile-header.jpg',
+					title: 'Project name',
+				}
+			];
+
+			this.card22 = [
+				{
+					image: 'assets/images/bengal.jpg',
+					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					subtitle: '13 contenidos',
+					icon: 'Card bloqueada',
+			    iconName: 'icon-lock'
+				},
+				{
+					image: 'assets/images/coffee.jpg',
+					title: 'Project name',
+					subtitle: '13 contenidos con texto muy largo',
+					icon: '',
+			    iconName: ''
+				}
 			];
 
 		}, 5000);
