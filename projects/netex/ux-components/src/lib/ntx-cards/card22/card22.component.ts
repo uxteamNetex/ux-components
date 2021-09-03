@@ -12,6 +12,7 @@ export class Card22Component implements OnInit {
 	@Input() subtitle: string;
 	@Input() icon: string;
 	@Input() iconName: string;
+	@Input() disabled: boolean;
 
 	constructor() { }
 

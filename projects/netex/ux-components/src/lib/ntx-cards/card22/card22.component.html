@@ -1,4 +1,4 @@
-<mat-card class="card22">
+<mat-card class="card22" [ngClass]="{'disabled': disabled}">
   <mat-card-content>
     <div class="card22__title">
       <span *ngIf="title" class="card22__title--text" matTooltip="{{title}}">{{title}}</span>

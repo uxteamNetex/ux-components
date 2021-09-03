@@ -2,12 +2,7 @@
 
 .page-layout{
   background-color: $color-white;
-  .mat-grid-tile{
-    .mat-figure{
-      align-items: flex-start;
-      ntx-card22 {
-        width: 100%;
-      }
-    }
-  }
+}
+ntx-card22 {
+  width: 100%;
 }

@@ -18,130 +18,79 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
-	card22: any[] = [
-		{
-			image: '',
-			title: '',
-			subtitle: '',
-			icon: '',
-			iconName: '',
-		},
-		{
-			image: '',
-			title: '',
-			subtitle: '',
-			icon: '',
-			iconName: '',
-		},
-		{
-			image: '',
-			title: '',
-			subtitle: '',
-			icon: '',
-			iconName: '',
-		},
-		{
-			image: '',
-			title: '',
-			subtitle: '',
-			icon: '',
-			iconName: '',
-		},
-		{
-			image: '',
-			title: '',
-			subtitle: '',
-			icon: '',
-			iconName: '',
-		},
-		{
-			image: '',
-			title: '',
-			subtitle: '',
-			icon: '',
-			iconName: '',
-		},
-		{
-			image: '',
-			title: '',
-			subtitle: '',
-			icon: '',
-			iconName: '',
-		},
-		{
-			image: '',
-			title: '',
-			subtitle: '',
-			icon: '',
-			iconName: '',
-		}
-	];
+	card22: any[] = [];
 
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
-		setTimeout(() => {
 
-			this.card22 = [
-				{
-					image: 'assets/images/writting.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: '13 contenidos',
-					icon: 'Card bloqueada',
-			    iconName: 'icon-lock'
-				},
-				{
-					image: 'assets/images/background-profile-header.jpg',
-					title: 'Project name',
-					subtitle: '13 contenidos con texto muy largo',
-					icon: 'Card destacada',
-			    iconName: 'icon-star'
-				},
-				{
-					image: 'assets/images/bengal.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: '13 contenidos',
-					icon: '',
-			    iconName: ''
-				},
-				{
-					image: 'assets/images/bg-01.png',
-					title: 'Project name',
-					subtitle: '13 contenidos con texto muy largo',
-					icon: '',
-			    iconName: ''
-				},
-				{
-					image: 'assets/images/bg-02.png',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: '',
-					icon: 'Card destacada',
-			    iconName: 'icon-star-solid'
-				},
-				{
-					image: 'assets/images/bg-03.png',
-					title: 'Project name',
-					subtitle: '',
-					icon: 'Card bloqueada',
-			    iconName: 'icon-lock'
-				},
-				{
-					image: 'assets/images/coffee.jpg',
-					title: 'Project name that could be longer than just one line and will be shown with three dots',
-					subtitle: '',
-					icon: '',
-			    iconName: ''
-				},
-				{
-					image: 'assets/images/background-profile-header.jpg',
-					title: 'Project name',
-					subtitle: '',
-					icon: '',
-			    iconName: ''
-				}
-			];
+		this.card22 = [
+			{
+				image: '',
+				title: '',
+				subtitle: '',
+				icon: '',
+				iconName: '',
+			},
+			{
+				image: 'assets/images/writting.jpg',
+				title: 'Disabled state: Card name that could be longer than just one line and will be shown with three dots',
+				subtitle: '13 contenidos',
+				icon: 'Card bloqueada',
+				iconName: 'icon-lock',
+				disabled: true
+			},
+			{
+				image: 'assets/images/background-profile-header.jpg',
+				title: 'Card name',
+				subtitle: '13 contenidos con texto muy largo',
+				icon: 'Card destacada',
+				iconName: 'icon-star'
+			},
+			{
+				image: 'assets/images/bengal.jpg',
+				title: 'Card name that could be longer than just one line and will be shown with three dots',
+				subtitle: '13 contenidos',
+				icon: '',
+				iconName: ''
+			},
+			{
+				image: 'assets/images/bg-01.png',
+				title: 'Card name',
+				subtitle: '13 contenidos con texto muy largo',
+				icon: '',
+				iconName: ''
+			},
+			{
+				image: 'assets/images/bg-02.png',
+				title: 'Card name that could be longer than just one line and will be shown with three dots',
+				subtitle: '',
+				icon: 'Card destacada',
+				iconName: 'icon-star-solid'
+			},
+			{
+				image: 'assets/images/bg-03.png',
+				title: 'Card name',
+				subtitle: '',
+				icon: 'Card bloqueada',
+				iconName: 'icon-lock'
+			},
+			{
+				image: 'assets/images/coffee.jpg',
+				title: 'Card name that could be longer than just one line and will be shown with three dots',
+				subtitle: '',
+				icon: '',
+				iconName: ''
+			},
+			{
+				image: 'assets/images/background-profile-header.jpg',
+				title: 'Card name',
+				subtitle: '',
+				icon: '',
+				iconName: ''
+			}
+		];
 
-		}, 5000);
 	}
 
 	// tslint:disable-next-line:use-life-cycle-interface

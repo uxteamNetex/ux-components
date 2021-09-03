@@ -10,7 +10,7 @@ $block: "card22";
     height: 220px;
     overflow: hidden;
     padding: 0;
-    width: 100%;
+    width: auto;
     &:hover{
       box-shadow: $shadow-hover;
       cursor: pointer;
@@ -81,6 +81,7 @@ $block: "card22";
       background-size: cover;
       height: 220px;
       min-width: 220px;
+      overflow: hidden;
       position: relative;
       width: 100%;
       img{
@@ -89,6 +90,13 @@ $block: "card22";
         width: 100%;
       }
     }
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      &:hover{
+        box-shadow: $shadow;
+      }
+		}
   }
 }
 
@@ -105,7 +113,7 @@ $block: "card22";
     background-position: -100px;
   }
   100% {
-    background-position: 100px;
+    background-position: 150px;
   }
 }
 /*Fin Skeleton*/
