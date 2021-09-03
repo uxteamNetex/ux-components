@@ -30,3 +30,9 @@ $block: "form-container";
     }
   }
 }
+
+.cdk-overlay-pane{
+  .mat-select-panel{
+    margin-top: 10px;
+  }
+}

@@ -12,7 +12,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 **Forms**<br/>
 - Cambios en el css del componente input form (*ntx-form-input*).
-- Estilos css en el styles.css para controlar el alto de los label en los selects.
+- Cambios en el css del componente select (*ntx-form-select*).
 
 **Cards**<br/>
 - Nuevo componente *ntx-card21*.
