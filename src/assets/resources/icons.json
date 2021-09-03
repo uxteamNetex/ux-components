@@ -81,6 +81,9 @@
             "className": "icon-calendar"
         },
         {
+            "className": "icon-calendar-check"
+        },
+        {
             "className": "icon-camera"
         },
         {
@@ -531,6 +534,9 @@
             "className": "icon-envelope"
         },
         {
+            "className": "icon-envelope-dot"
+        },
+        {
             "className": "icon-envelope-solid"
         },
         {
@@ -771,6 +777,9 @@
             "className": "icon-open-book"
         },
         {
+            "className": "icon-order-horizontally"
+        },
+        {
             "className": "icon-orderby"
         },
         {
@@ -895,6 +904,9 @@
         },
         {
             "className": "icon-smile"
+        },
+        {
+            "className": "icon-sort"
         },
         {
             "className": "icon-speaker"

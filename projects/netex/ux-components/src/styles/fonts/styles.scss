@@ -2,13 +2,14 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?q09fm6');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?q09fm6#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?q09fm6') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?q09fm6') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?q09fm6##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?2ps0bh');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?2ps0bh#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?2ps0bh') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?2ps0bh') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?2ps0bh##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 .mat-icon{
@@ -45,6 +46,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sort {
+  &:before {
+    content: $icon-sort; 
+  }
+}
+.icon-envelope-dot {
+  &:before {
+    content: $icon-envelope-dot; 
+  }
+}
+.icon-calendar-check {
+  &:before {
+    content: $icon-calendar-check; 
+  }
+}
+.icon-order-horizontally {
+  &:before {
+    content: $icon-order-horizontally; 
+  }
+}
 .icon-flag-czech-republic .path1 {
   position: absolute;
   left: 0;
@@ -363,8 +384,6 @@
     content: $icon-palette-color;
   }
 }
-
-
 .icon-coin-star {
   &:before {
     content: $icon-coin-star;
@@ -1752,11 +1771,6 @@
 .icon-user-group {
   &:before {
     content: $icon-user-group;
-  }
-}
-.icon-speacker {
-  &:before {
-    content: $icon-speacker;
   }
 }
 .icon-folder-closed-solid {
