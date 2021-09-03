@@ -6,7 +6,8 @@
         [bar]="item.bar"
         [barColor]="item.barColor"
         [image]="item.image"
-        [title]="item.title"></ntx-card21>
+        [title]="item.title"
+        [disabled]="item.disabled"></ntx-card21>
     </div>
     <p class="utils--title-medium utils--margin-top-16 utils--margin-bottom-16">Selectable cards (showing arrow below it on click)</p>
     <div>
@@ -16,6 +17,7 @@
         [selected]="checkIfSelected(i)"
         [image]="item.image"
         [title]="item.title"
+        [disabled]="item.disabled"
         (clickCard21Event)="handleCard21Click(i, item)"></ntx-card21>
     </div>
   </div>

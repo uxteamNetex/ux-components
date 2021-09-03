@@ -34,7 +34,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Modificación componente *ntx-card17* añadir skeleton de carga y estado disabled.
 - Modificación componente *ntx-card18* añadir skeleton de carga y estado disabled.
 - Modificación componente *ntx-card19* añadir skeleton de carga y estado disabled.
-- Modificación componente *ntx-card120* añadir estado disabled.
+- Modificación componente *ntx-card20* añadir estado disabled.
 
 **Buttons**<br/>
 - Modificación del componente *ntx-icon-button* parametrizando color y borde.

@@ -1,4 +1,4 @@
-<div class="card21" (click)="onClickEvent($event)" [ngClass]="{'selected': selected}">
+<div class="card21" (click)="onClickEvent($event)" [ngClass]="{'selected': selected, 'disabled': disabled}">
   <mat-card>
     <div *ngIf="bar" [ngStyle] = "{'background-color': barColor? barColor: null }" class="card21__bar"></div>
     <div class="card21__title utils--horizontal-align">

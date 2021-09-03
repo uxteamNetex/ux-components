@@ -12,6 +12,7 @@ export class Card21Component implements OnInit {
 	@Input() bar: boolean;
 	@Input() barColor: string;
 	@Input() selected: boolean;
+	@Input() disabled: boolean;
 
 	@Output() clickCard21Event = new EventEmitter();
 
@@ -21,6 +22,6 @@ export class Card21Component implements OnInit {
 	}
 
 	public onClickEvent(_$event: any) {
-        this.clickCard21Event.emit(_$event);
-    }
+		this.clickCard21Event.emit(_$event);
+	}
 }

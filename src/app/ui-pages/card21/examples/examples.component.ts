@@ -44,6 +44,7 @@ export class ExamplesComponent implements OnInit {
 					barColor: '',
 					image: 'assets/images/writting.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					disabled: true
 				},
 				{
 					bar: '',
@@ -71,6 +72,7 @@ export class ExamplesComponent implements OnInit {
 					barColor: '',
 					image: 'assets/images/coffee.jpg',
 					title: 'Project name that could be longer than just one line and will be shown with three dots',
+					disabled: true
 				},
 				{
 					bar: true,

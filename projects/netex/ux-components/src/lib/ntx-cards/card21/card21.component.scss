@@ -77,6 +77,13 @@ $block: "card21";
       display: block;
     }
   }
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    &:hover{
+      box-shadow: none;
+    }
+  }
 }
 .arrow-down {
   width: 0;
