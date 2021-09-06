@@ -13,6 +13,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Forms**<br/>
 - Cambios en el css del componente input form (*ntx-form-input*).
 - Cambios en el css del componente select (*ntx-form-select*).
+- Nuevo componente select de selección múltiple(*ntx-form-select-multiple*).
 
 **Cards**<br/>
 - Nuevo componente *ntx-card21*.
