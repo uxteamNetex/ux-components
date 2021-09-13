@@ -38,10 +38,19 @@
       title="{{'User toolbar options menu' | uppercase }}"
       subtitle="{{ '<ntx-menu-toolbar-profile>' }}">
         <div style="display:flex">
-          <ntx-menu-toolbar-profile [user]="mtp1User" [options]="mtp1Options"></ntx-menu-toolbar-profile>
-          <ntx-menu-toolbar-profile [user]="mtp2User" [mainOption]="mtp2MainOption" [options]="mtp2Options"></ntx-menu-toolbar-profile>
+          <ntx-menu-toolbar-profile isLoaded="true" [user]="mtp1User" [options]="mtp1Options"></ntx-menu-toolbar-profile>
+          <ntx-menu-toolbar-profile isLoaded="true" [user]="mtp2User" [mainOption]="mtp2MainOption" [options]="mtp2Options"></ntx-menu-toolbar-profile>
         </div>
       </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'User toolbar options menu with LOADING STATE' | uppercase }}"
+      subtitle="{{ '<ntx-menu-toolbar-profile>' }}">
+        <div style="display:flex">
+          <ntx-menu-toolbar-profile isLoading="true" [user]="mtp1User" [options]="mtp1Options"></ntx-menu-toolbar-profile>
+          <ntx-menu-toolbar-profile isLoading="true" [user]="mtp2User" [mainOption]="mtp2MainOption" [options]="mtp2Options"></ntx-menu-toolbar-profile>
+        </div>
+      </ntx-card-simple>  
 
     <ntx-card-simple
       title="{{'Menu avatar' | uppercase }}"
@@ -56,9 +65,15 @@
     </ntx-card-simple>
 
     <ntx-card-simple
+      title="{{'Dashboard menu (loading)' | uppercase }}"
+      subtitle="{{ '<ntx-menu-toolbar-dashboard>' }}">
+      <ntx-menu-toolbar-dashboard [apps]="{}" isLoading="true"></ntx-menu-toolbar-dashboard>
+    </ntx-card-simple>
+
+    <ntx-card-simple
       title="{{'Dashboard menu (failback)' | uppercase }}"
       subtitle="{{ '<ntx-menu-toolbar-dashboard>' }}">
-      <ntx-menu-toolbar-dashboard [apps]="{}"></ntx-menu-toolbar-dashboard>
+      <ntx-menu-toolbar-dashboard [apps]="{}" failback="true"></ntx-menu-toolbar-dashboard>
     </ntx-card-simple>
 
   </div>

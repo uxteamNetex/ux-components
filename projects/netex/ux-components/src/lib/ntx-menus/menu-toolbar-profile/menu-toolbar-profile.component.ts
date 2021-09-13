@@ -33,6 +33,8 @@ export class MenuToolbarProfileComponent implements OnInit {
 	@Input() user!: IUser;
 	@Input() mainOption!: IMainOption;
 	@Input() options!: IOption[];
+	@Input() isLoaded!: boolean;
+	@Input() isLoading!: boolean;
 
 	constructor() { }
 

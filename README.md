@@ -59,7 +59,8 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - icon-flag-turkey
 
 **Menus**<br/>
-- Modificación componente *ntx-menu-toolbar-profile* simplificando la parametrización y añadiendo responsividad.
+- Modificación componente *ntx-menu-toolbar-profile* simplificando la parametrización, añadiendo responsividad y un estado loading.
+- Modificación componente *ntx-menu-toolbar-dashboard* añadiendo un estado loading.
 
 **Expansion panels**<br/>
 - Nuevo componente expansion panel 2 (*ntx-expansion-panel2*)
