@@ -3,7 +3,7 @@
 </button>
 
 <mat-menu #menuOptions="matMenu" [overlapTrigger]="false" class="dashboard">
-  <div class="dashboard__grid" *ngIf="apps.length; else failback">
+  <div *ngIf="apps.length" class="dashboard__grid">
     <mat-grid-list cols="3" rowHeight="116px">
       <mat-grid-tile *ngFor="let app of apps">
         <a href="{{app.link}}">
@@ -13,13 +13,14 @@
       </mat-grid-tile>
     </mat-grid-list>
   </div>
-  <ng-template #failback>
-    <div class="utils--basic-text utils--align-center-text utils--padding-16">
-      <p>
-        <mat-icon class="icon-netex icon-warning icon-big utils--text-error"></mat-icon>
-      </p>
-      <p class="utils--text-grey-900 utils--bold-text">Oups!</p>
-      <p class="utils--text-14 utils--text-grey-700">{{failbackMsg}}</p>
-    </div>
-  </ng-template>
+  <div *ngIf="isLoading" class="utils--flex-center utils--padding-16">
+    <div class="loader"></div>
+  </div>
+  <div *ngIf="failback" class="utils--basic-text utils--align-center-text utils--padding-16">
+    <p>
+      <mat-icon class="icon-netex icon-warning icon-big utils--text-error"></mat-icon>
+    </p>
+    <p class="utils--text-grey-900 utils--bold-text">Oups!</p>
+    <p class="utils--text-14 utils--text-grey-700">{{failbackMsg}}</p>
+  </div>
 </mat-menu>

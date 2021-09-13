@@ -11,6 +11,10 @@ import { ViewEncapsulation } from '@angular/core';
 export class MenuToolbarDashboardComponent implements OnInit {
 
 	@Input() apps: any[];
+	@Input() isLoading: boolean;
+	@Input() isLoaded: boolean;
+	@Input() failback: boolean;
+
 	failbackMsg = `For some reason you don´t have access to this resource.
                   Please try again later, and if the problem persists contact the
                   administrator.`;
