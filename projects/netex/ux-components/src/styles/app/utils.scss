@@ -205,6 +205,10 @@ $block: "utils";
     display: flex !important;
     justify-content: space-between;
   }
+  &--flex-column {
+    display: flex !important;
+    flex-direction: column;
+  }
 
   //Tamaños fuente
   &--text-10 {

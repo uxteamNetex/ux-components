@@ -20,6 +20,24 @@
         </h2>
 
         <div class="whatsnew__content-block">
+          <h4>Expansion panel 2</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-expansion-panel2</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/expansion-panels/examples" (click)="setPath('expansion-panels')">link</a></p>
+          <ntx-expansion-panel2 [data]="panel2" iconArrow="">
+            <ng-template let-rowDetail #header>
+              <span>{{rowDetail.header}}</span>
+            </ng-template>
+            <ng-template let-rowDetail #body>
+              <div class="utils--flex-column">
+                <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [label]="'Calendario'"></ntx-form-checkbox>
+                <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [label]="'Aplicación 1'"></ntx-form-checkbox>
+                <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [label]="'Aplicación 2'"></ntx-form-checkbox>
+              </div>
+            </ng-template>
+          </ntx-expansion-panel2>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>Card21 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">card21</span> component.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/card21/examples" (click)="setPath('card21')">link</a></p>

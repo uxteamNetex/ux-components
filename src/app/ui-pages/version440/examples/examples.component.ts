@@ -343,6 +343,17 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	panel2 = [
+		{
+			'header': 'Mis calendarios',
+			'body': 'This is the panel body',
+		},
+		{
+			'header': 'Filtros',
+			'body': 'This is the panel body 2',
+		}
+	];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
@@ -366,6 +377,7 @@ export class ExamplesComponent implements OnInit {
 				altImage: 'Project image',
 				title: 'Project name that could be longer than just one line and will be shown with three dots',
 				subtitle: 'Subtitle with a very long text to see how it works',
+				// tslint:disable-next-line:max-line-length
 				description: 'Has maiorum habemus detraxit at. Timeam fabulas splendide et his. Facilisi aliquando sea ad, vel ne consetetur adversarium. Integre admodum et his, nominavi urbanitas et per, alii reprehendunt et qui. His ei meis legere nostro, eu kasd fabellas definiebas mei, in sea augue iriure.',
 				options: 'true',
 				disabled: false
@@ -584,7 +596,8 @@ export class ExamplesComponent implements OnInit {
 					link: 'tublog.com',
 					image: 'assets/images/bg-03.png',
 					title: 'Title that could not be longer than one line and will be shown with three dots',
-          subtitle: 'Os alunos e alunas realizaram uma excursão no sábado passado com a equipe docente do primário para realizar uma reportaxe.',
+					// tslint:disable-next-line:max-line-length
+					subtitle: 'Os alunos e alunas realizaram uma excursão no sábado passado com a equipe docente do primário para realizar uma reportaxe.',
 				}
 			];
 

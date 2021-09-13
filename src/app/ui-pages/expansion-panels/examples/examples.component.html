@@ -56,6 +56,21 @@
         </ng-template>
       </ntx-expansion-panels>
 
+      <div class="utils--margin-top-52"></div>
+
+      <ntx-expansion-panel2 [data]="panel2" iconArrow="">
+        <ng-template let-rowDetail #header>
+          <span>{{rowDetail.header}}</span>
+        </ng-template>
+        <ng-template let-rowDetail #body>
+          <div class="utils--flex-column">
+            <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [label]="'Calendario'"></ntx-form-checkbox>
+            <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [label]="'Aplicación 1'"></ntx-form-checkbox>
+            <ntx-form-checkbox [color]="'primary'" [checked]="'true'" [label]="'Aplicación 2'"></ntx-form-checkbox>
+          </div>
+        </ng-template>
+      </ntx-expansion-panel2>
+
     </ntx-card-simple>
 
   </div>

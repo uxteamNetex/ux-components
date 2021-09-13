@@ -251,6 +251,13 @@ $block: "whatsnew";
   }
 }
 
+ntx-form-checkbox {
+  align-items: center;
+  display: flex;
+  height: 36px;
+  padding: 0 0 0 4px;
+}
+
 @media (max-width: 1280px) {
   .#{$block}{
     .card-simple{

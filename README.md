@@ -61,6 +61,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Menus**<br/>
 - Modificación componente *ntx-menu-toolbar-profile* simplificando la parametrización y añadiendo responsividad.
 
+**Expansion panels**<br/>
+- Nuevo componente expansion panel 2 (*ntx-expansion-panel2*)
+
 ------------------
 
 ### v.4.3.3:
