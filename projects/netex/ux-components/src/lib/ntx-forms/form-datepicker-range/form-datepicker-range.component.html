@@ -1,10 +1,12 @@
 <div class="form-datepicker-range">
   <mat-form-field class="form-datepicker-range__date utils--margin-right-24">
+    <mat-label>Fecha</mat-label>
     <input 
       matInput 
       [matDatepicker]="pickerFrom" 
-      placeholder="Fecha"
-      readonly>
+      placeholder="DD/MM/YYYY"
+      (click)="pickerFrom.open()"
+      (keydown)="pickerFrom.close()">
     <mat-datepicker-toggle matSuffix [for]="pickerFrom">
       <mat-icon class="icon-netex icon-calendar" matDatepickerToggleIcon></mat-icon>
     </mat-datepicker-toggle>
@@ -28,11 +30,13 @@
     </mat-select>
   </mat-form-field>
   <mat-form-field class="form-datepicker-range__date">
+    <mat-label>Fecha</mat-label>
     <input 
       matInput 
       [matDatepicker]="pickerTo" 
-      placeholder="Fecha"
-      readonly>
+      placeholder="DD/MM/YYYY"
+      (click)="pickerTo.open()"
+      (keydown)="pickerTo.close()">
     <mat-datepicker-toggle matSuffix [for]="pickerTo">
       <mat-icon class="icon-netex icon-calendar" matDatepickerToggleIcon></mat-icon>
     </mat-datepicker-toggle>
