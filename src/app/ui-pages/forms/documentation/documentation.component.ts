@@ -521,14 +521,6 @@ $block: "searchbox-filter-panel";
     height: 52px;
   ...
   `;
-  code24 = `
-  ...
-  .cdk-overlay-pane{
-    .mat-select-panel{
-      margin-top: 10px;
-    }
-  }
-  `;
 
   ngOnInit() {
   }
