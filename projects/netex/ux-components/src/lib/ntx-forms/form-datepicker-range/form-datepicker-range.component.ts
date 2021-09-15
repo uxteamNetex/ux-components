@@ -48,6 +48,8 @@ export interface Option {
 export class FormDatepickerRangeComponent implements OnInit {
   
   hours: Option[] = [];
+  hourFrom: any;
+  hourTo: any;
 
   constructor() { }
 
@@ -68,6 +70,14 @@ export class FormDatepickerRangeComponent implements OnInit {
         }
       )
     }
+  }
+
+  onClickHourFromMenuItem(event, hour) {
+    this.hourFrom = hour;
+  }
+  
+  onClickHourToMenuItem(event, hour) {
+    this.hourTo = hour;
   }
 
 }

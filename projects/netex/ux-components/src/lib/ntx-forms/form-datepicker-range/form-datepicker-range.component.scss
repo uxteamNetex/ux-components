@@ -19,14 +19,24 @@ $block: "form-datepicker-range";
 
     &__hour {
         width: 88px !important;
-        .mat-select-arrow {
-            border: none;
-            height: 12px;
+        mat-icon {
+            font-size: 16px!important;
+            position: relative;
+            top: 3px;
+            font-weight: 600;
             &::after {
                 font-family: 'netex';
                 content: '\e92f';
-                left: -14px;
-                top: -4px;
+            }
+        }
+        &--panel {
+            max-height: 282px !important;
+            position: relative;
+            &.mat-menu-above {
+                top: -20px;
+            }
+            &.mat-menu-below {
+                top: 8px;
             }
         }
     }

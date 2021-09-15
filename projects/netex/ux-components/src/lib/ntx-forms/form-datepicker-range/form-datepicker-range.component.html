@@ -10,24 +10,50 @@
     <mat-datepicker-toggle matSuffix [for]="pickerFrom">
       <mat-icon class="icon-netex icon-calendar" matDatepickerToggleIcon></mat-icon>
     </mat-datepicker-toggle>
-    <mat-datepicker #pickerFrom></mat-datepicker>
+    <mat-datepicker panelClass="form-datepicker-range__date--panel" #pickerFrom></mat-datepicker>
   </mat-form-field>
   <mat-form-field class="form-datepicker-range__hour utils--margin-right-24">
-    <mat-select placeholder="Hora">
-      <mat-option *ngFor="let hour of hours" [value]="hour.value">
-        {{hour.viewValue}}
-      </mat-option>
-    </mat-select>
+    <mat-label>Hora</mat-label>
+    <input 
+      matInput 
+      placeholder="--:--" 
+      [(ngModel)]="hourFrom"
+      #menuTriggerHourFrom="matMenuTrigger"
+      [matMenuTriggerFor]="appMenuFrom"
+      (keydown)="menuTriggerHourFrom.closeMenu()">
+    <mat-icon matSuffix (click)="menuTriggerHourFrom.openMenu()"></mat-icon>
+    <mat-menu 
+      #appMenuFrom="matMenu"
+      [overlapTrigger]="false"
+      class="form-datepicker-range__hour--panel">
+      <button 
+        mat-menu-item 
+        *ngFor="let hour of hours"
+        (click)="onClickHourFromMenuItem($event, hour.value)">{{hour.viewValue}}</button>
+    </mat-menu>
   </mat-form-field>
   <div class="form-datepicker-range__separator utils--margin-right-24">
     <span>a</span>
   </div>
   <mat-form-field class="form-datepicker-range__hour utils--margin-right-24">
-    <mat-select placeholder="Hora">
-      <mat-option *ngFor="let hour of hours" [value]="hour.value">
-        {{hour.viewValue}}
-      </mat-option>
-    </mat-select>
+    <mat-label>Hora</mat-label>
+    <input 
+      matInput 
+      placeholder="--:--" 
+      [(ngModel)]="hourTo"
+      #menuTriggerHourTo="matMenuTrigger"
+      [matMenuTriggerFor]="appMenuTo"
+      (keydown)="menuTriggerHourTo.closeMenu()">
+    <mat-icon matSuffix (click)="menuTriggerHourTo.openMenu()"></mat-icon>
+    <mat-menu 
+      #appMenuTo="matMenu"
+      [overlapTrigger]="false"
+      class="form-datepicker-range__hour--panel">
+      <button 
+        mat-menu-item 
+        *ngFor="let hour of hours"
+        (click)="onClickHourToMenuItem($event, hour.value)">{{hour.viewValue}}</button>
+    </mat-menu>
   </mat-form-field>
   <mat-form-field class="form-datepicker-range__date">
     <mat-label>Fecha</mat-label>
