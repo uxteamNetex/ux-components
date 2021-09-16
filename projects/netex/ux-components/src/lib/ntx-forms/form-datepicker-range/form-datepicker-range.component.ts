@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
 import { NativeDateAdapter, DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material';
-import { MomentDateAdapter } from '@angular/material-moment-adapter';
 
 const monthNamesAlias = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", 
 "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
