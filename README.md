@@ -45,6 +45,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Modificación del componente *ntx-raised-round-button* añadiendo un estado 'loading' que muestre un spinner.
 
 **New icons**<br/>
+- icon-user-generic-line
 - icon-sort
 - icon-envelope-dot
 - icon-calendar-check

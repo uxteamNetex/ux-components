@@ -1017,6 +1017,9 @@
             "className": "icon-user-export"
         },
         {
+            "className": "icon-user-generic-line"
+        },
+        {
             "className": "icon-user-group"
         },
         {
