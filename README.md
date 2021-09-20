@@ -59,6 +59,8 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - icon-flag-russia
 - icon-flag-slovakia
 - icon-flag-turkey
+- icon-switch-off 
+- icon-switch-on
 
 **Menus**<br/>
 - Modificación componente *ntx-menu-toolbar-profile* simplificando la parametrización, añadiendo responsividad y un estado loading.

@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8j5ff3');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8j5ff3#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?8j5ff3') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?8j5ff3') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?8j5ff3##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wmkr0o');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wmkr0o#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wmkr0o') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wmkr0o') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wmkr0o##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -46,6 +46,16 @@ mat-icon{
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-switch-off {
+  &:before {
+    content: $icon-switch-off; 
+  }
+}
+.icon-switch-on {
+  &:before {
+    content: $icon-switch-on; 
+  }
+}
 .icon-user-generic-line {
   &:before {
     content: $icon-user-generic-line; 

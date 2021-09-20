@@ -921,6 +921,12 @@
             "className": "icon-star-solid"
         },
         {
+            "className": "icon-switch-off"
+        },
+        {
+            "className": "icon-switch-on"
+        },
+        {
             "className": "icon-tablet"
         },
         {
