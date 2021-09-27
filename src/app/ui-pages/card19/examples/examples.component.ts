@@ -21,6 +21,8 @@ export class ExamplesComponent implements OnInit {
 	card19: any[] = [];
 	card19B: any[] = [];
 	card19C: any[] = [];
+	card19D: any[] = [];
+	card19E: any[] = [];
 
 	// constructor(private observableMedia: ObservableMedia) { }
 
@@ -118,6 +120,81 @@ export class ExamplesComponent implements OnInit {
 				description: 'Integre admodum et his, nominavi urbanitas et per, alii reprehendunt et qui. His ei meis legere nostro, eu kasd fabellas definiebas mei, in sea augue iriure.',
 				options: 'true',
 				disabled: false
+			}
+		];
+		this.card19D = [
+			{
+				badge: true,
+				BlockBadge: true,
+				urlImage: 'assets/images/google-meet-logo.svg',
+				altImage: 'Zoom logo',
+				title: 'Small design: Unirse al aula online de Google Meet',
+				subtitle: '',
+				description: 'meet.google.com/mej-lood-crd/1234567890',
+				options: '',
+				action: '',
+				disabled: false,
+				small: true
+			},
+			{
+				badge: true,
+				BlockBadge: true,
+				urlImage: 'assets/images/zoom.png',
+				altImage: 'Zoom logo',
+				title: 'Small design: Unirse al aula online de Zoom',
+				subtitle: '',
+				description: 'https://zoom.us/j/8333764940440?pwd=Rpkjgsdkfudugsdougsoducgsdouvg',
+				options: '',
+				action: 'true',
+				actionTitle: 'Close',
+				actionIcon: 'icon-cross',
+				actionColor: '#666',
+				disabled: false,
+				small: true
+			}
+		];
+		this.card19E = [
+			{
+				badge: true,
+				BlockBadge: true,
+				urlImage: 'assets/images/google-meet-logo.svg',
+				altImage: 'Zoom logo',
+				title: 'XS design: Unirse al aula online de Google Meet',
+				subtitle: '',
+				description: 'meet.google.com/mej-lood-crd/1234567890',
+				options: '',
+				action: '',
+				disabled: false,
+				xs: true
+			},
+			{
+				badge: true,
+				BlockBadge: true,
+				urlImage: 'assets/images/microsoft-teams-logo.svg',
+				altImage: 'Zoom logo',
+				title: 'XS design: Unirse al aula online de Microsoft Teams',
+				subtitle: '',
+				description: 'https://teams.microsoft.com/team/1234567890',
+				options: '',
+				action: '',
+				disabled: false,
+				xs: true
+			},
+			{
+				badge: true,
+				BlockBadge: true,
+				urlImage: 'assets/images/zoom.png',
+				altImage: 'Zoom logo',
+				title: 'XS design: Unirse al aula online de Zoom',
+				subtitle: '',
+				description: 'https://zoom.us/j/8333764940440?pwd=Rpkjgsdkfudugsdougsoducgsdouvg',
+				options: '',
+				action: 'true',
+				actionTitle: 'Close',
+				actionIcon: 'icon-cross',
+				actionColor: '#666',
+				disabled: false,
+				xs: true
 			}
 		];
 

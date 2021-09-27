@@ -40,5 +40,44 @@
           [disabled]="item.disabled"></ntx-card19>
       </div>
     </div>
+    <div class="utils--flex">
+      <div *ngFor="let item of card19D">
+        <ntx-card19
+        [badge]="item.badge"
+        [BlockBadge]="item.BlockBadge"
+        [urlImage]="item.urlImage"
+        [altImage]="item.altImage"
+        [title]="item.title"
+        [subtitle]="item.subtitle"
+        [description]="item.description"
+        [options]="item.options"
+        [action]="item.action"
+        [actionTitle]="item.actionTitle"
+        [actionIcon]="item.actionIcon"
+        [actionColor]="item.actionColor"
+        [disabled]="item.disabled"
+        [small]="item.small"></ntx-card19>
+      </div>
+    </div>
+    <div class="utils--flex">
+      <div *ngFor="let item of card19E">
+        <ntx-card19
+        [badge]="item.badge"
+        [BlockBadge]="item.BlockBadge"
+        [urlImage]="item.urlImage"
+        [altImage]="item.altImage"
+        [title]="item.title"
+        [subtitle]="item.subtitle"
+        [description]="item.description"
+        [options]="item.options"
+        [action]="item.action"
+        [actionTitle]="item.actionTitle"
+        [actionIcon]="item.actionIcon"
+        [actionColor]="item.actionColor"
+        [disabled]="item.disabled"
+        [small]="item.small"
+        [xs]="item.xs"></ntx-card19>
+      </div>
+    </div>
   </div>
 </div>

@@ -15,7 +15,13 @@ export class Card19Component implements OnInit {
 	@Input() subtitle: string;
 	@Input() description: string;
 	@Input() options: boolean;
+	@Input() action: boolean;
+	@Input() actionTitle: string;
+	@Input() actionIcon: string;
+	@Input() actionColor: string;
 	@Input() disabled: boolean;
+	@Input() small: boolean;
+	@Input() xs: boolean;
 
 	@Output() clickEvent = new EventEmitter();
 
