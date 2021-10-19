@@ -8,8 +8,11 @@ import { DocumentationComponent } from './documentation/documentation.component'
 import { ExamplesComponent } from './examples/examples.component';
 import {
 	NtxFormsModule,
+	NtxListsModule,
+	NtxTablesModule,
 	NtxButtonsModule,
 	NtxCardsModule,
+	NtxToolbarModule,
 	NtxExpansionPanelsModule
 } from '@netex/ux-components';
 import { NtxMenusModule } from 'projects/netex/ux-components/src/public_api';
@@ -26,7 +29,10 @@ import { NtxMenusModule } from 'projects/netex/ux-components/src/public_api';
 		NtxCardsModule,
 		NtxExpansionPanelsModule,
 		NtxMenusModule,
-		NtxFormsModule
+		NtxFormsModule,
+		NtxListsModule,
+		NtxTablesModule,
+		NtxToolbarModule
 	]
 })
 export class Version440Module { }

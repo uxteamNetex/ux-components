@@ -20,6 +20,9 @@ $block: "searchbox-filter-panel";
         ntx-input-no-label, input{
             flex-grow: 1;
         }
+        .#{$block}__icon {
+          margin: 0 24px 0 0;
+        }
         .#{$block}__input {
             font-family: Lato;
             border-style: none;

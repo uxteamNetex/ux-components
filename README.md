@@ -15,6 +15,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Cambios en el html y css del componente select (*ntx-form-select*).
 - Nuevo componente select de selección múltiple(*ntx-form-select-multiple*).
 - Modificación del componente *ntx-form-datepicker-range* para que se abran los paneles (datepicker y selector de horas) al hacer click en los input correspondientes.
+- Cambios en el html y css del componente (*ntx-searchbox-filter-panel*).
 
 **Cards**<br/>
 - Nuevo componente *ntx-card21*.
@@ -68,6 +69,15 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 **Expansion panels**<br/>
 - Nuevo componente expansion panel 2 (*ntx-expansion-panel2*)
+
+**Lists**<br/>
+- Cambios en el html del componente (*ntx-list-two-lines-avatar*).
+
+**Tables**<br/>
+- Cambios en el html y css del componente (*ntx-selectable-table*).
+
+**Toolbars**<br/>
+- Cambios en el html y css del componente (*ntx-toolbar-searchbox*).
 
 ------------------
 

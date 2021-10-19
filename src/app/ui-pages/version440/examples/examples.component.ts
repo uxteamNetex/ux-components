@@ -72,6 +72,47 @@ const USER1 = {
 	disabled: true
 };
 
+const TWO_LINES_LIST_WITH_AVATAR = {
+	texts: [
+		{
+			title: 'Carolina López',
+			subtitle: 'carolina.lopez',
+			image: 'assets/images/perfil.jpg',
+			link: 'Go to learningCloud',
+			icon: 'icon-warning-solid',
+			iconColor: 'utils--text-warning',
+			text: undefined
+		},
+		{
+			title: 'María Fraga Colorado',
+			subtitle: 'maria.fraga',
+			image: 'assets/images/user_female_01.jpg',
+			link: undefined,
+			icon: 'icon-bell-solid',
+			iconColor: 'utils--text-error',
+			text: undefined
+		},
+		{
+			title: 'Antonio Prado',
+			subtitle: 'antonio.prado',
+			image: 'assets/images/user_male_02.png',
+			link: undefined,
+			icon: undefined,
+			iconColor: undefined,
+			text: undefined
+		},
+		{
+			title: 'José Antonio García',
+			subtitle: 'josean.garcia',
+			image: undefined,
+			link: undefined,
+			icon: undefined,
+			iconColor: undefined,
+			text: 'Est ei erat mucius quaeque ei his quas phaedrum.',
+		}
+	]
+};
+
 @Component({
 	selector: 'app-examples',
 	templateUrl: './examples.component.html',
@@ -81,6 +122,7 @@ const USER1 = {
 export class ExamplesComponent implements OnInit {
 
 	data = DATA;
+	data2 = TWO_LINES_LIST_WITH_AVATAR;
 	user1 = USER1;
 	user4 = USER4;
 	card17 = CARD17;
@@ -357,7 +399,6 @@ export class ExamplesComponent implements OnInit {
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
-
 		this.card19B = [
 			{
 				badge: true,
