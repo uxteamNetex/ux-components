@@ -18,6 +18,9 @@ $block: "toolbar-searchbox";
             height: 32px;
             display: inline-block;
         }
+        &--label {
+          margin: 0 0 0 24px;
+        }
     }
     .#{$block}__searchbox {
         flex-grow: 1;
