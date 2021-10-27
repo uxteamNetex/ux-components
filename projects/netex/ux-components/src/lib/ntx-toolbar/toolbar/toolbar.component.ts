@@ -13,7 +13,7 @@ export class ToolbarComponent implements OnInit {
 
 	ngOnInit() { }
 
-	mtpUser = {
+  mtp1User = {
 		'avatar': 'assets/images/perfil.jpg',
 		'fullname': 'Carolina López',
 		'username': 'carolina.lopez',
@@ -22,8 +22,7 @@ export class ToolbarComponent implements OnInit {
 		'link': 'http://www.netexlearning.es',
 		'linkLabel': 'Accede a tu cuenta'
 	};
-
-	mtpOptions = [
+  mtp1Options = [
 		{
 			'label': 'Notificaciones',
 			'badge': 29
@@ -38,4 +37,5 @@ export class ToolbarComponent implements OnInit {
 			'label': 'Netex Community'
 		}
 	];
+
 }

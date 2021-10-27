@@ -17,18 +17,16 @@ export class ToolbarSearchboxComponent implements OnInit {
 
 	ngOnInit() { }
 
-	mtpUser = {
+  mtp1User = {
 		'avatar': 'assets/images/perfil.jpg',
 		'fullname': 'Carolina López',
 		'username': 'carolina.lopez',
 		'companyLogo': 'assets/images/icon-netex.png',
 		'companyName': 'Logo netex',
-		'badge': 7,
 		'link': 'http://www.netexlearning.es',
 		'linkLabel': 'Accede a tu cuenta'
 	};
-
-	mtpOptions = [
+  mtp1Options = [
 		{
 			'label': 'Notificaciones',
 			'badge': 29
