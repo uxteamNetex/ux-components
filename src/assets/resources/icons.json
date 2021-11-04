@@ -648,6 +648,9 @@
             "className": "icon-heart-off"
         },
         {
+            "className": "icon-heart-solid"
+        },
+        {
             "className": "icon-home"
         },
         {
