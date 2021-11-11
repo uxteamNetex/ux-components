@@ -46,44 +46,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chart-solid {
+  &:before {
+    content: $icon-chart-solid;
+  }
+}
 .icon-heart-solid {
   &:before {
-    content: $icon-heart-solid; 
+    content: $icon-heart-solid;
   }
 }
 .icon-switch-off {
   &:before {
-    content: $icon-switch-off; 
+    content: $icon-switch-off;
   }
 }
 .icon-switch-on {
   &:before {
-    content: $icon-switch-on; 
+    content: $icon-switch-on;
   }
 }
 .icon-user-generic-line {
   &:before {
-    content: $icon-user-generic-line; 
+    content: $icon-user-generic-line;
   }
 }
 .icon-sort {
   &:before {
-    content: $icon-sort; 
+    content: $icon-sort;
   }
 }
 .icon-envelope-dot {
   &:before {
-    content: $icon-envelope-dot; 
+    content: $icon-envelope-dot;
   }
 }
 .icon-calendar-check {
   &:before {
-    content: $icon-calendar-check; 
+    content: $icon-calendar-check;
   }
 }
 .icon-order-horizontally {
   &:before {
-    content: $icon-order-horizontally; 
+    content: $icon-order-horizontally;
   }
 }
 .icon-flag-czech-republic .path1 {
