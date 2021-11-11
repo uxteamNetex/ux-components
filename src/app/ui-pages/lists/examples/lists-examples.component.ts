@@ -138,6 +138,21 @@ export class ListsExamplesComponent implements OnInit {
 
 	data = TWO_LINES_LIST_WITH_AVATAR;
 
+	menuOptions: {
+		icon: string;
+		actions: {
+			showmenuOptions: boolean;
+			showIconOptions: boolean;
+			showDivider: boolean;
+			showButtons: boolean;
+			iconOptions: string;
+			title: string;
+			buttonText: string;
+			disabled: boolean;
+			click: () => void;
+		}[];
+	};
+
 	list: Item[] = [
 		{
 			label: 'Customer oriented',
@@ -409,75 +424,44 @@ export class ListsExamplesComponent implements OnInit {
 
 	list5_1 = [
 		{
-			labelPrincipal: 'Web designer',
+			labelPrincipal: 'List option with link',
 			labelSecondary: '25%',
 			labelRouterLink: '/home'
-		},
-		{
-			labelPrincipal: 'Graphic designer / illustrator',
-			labelSecondary: '65%',
-			labelRouterLink: '/home'
-		},
-		{
-			labelPrincipal: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-			labelSecondary: '24%',
-			labelRouterLink: '/home'
 		}
 	];
-
 	list5_2 = [
 		{
-			labelPrincipal: 'Customer oriented',
+			labelPrincipal: 'List option with menu options',
 			labelSecondary: '80',
 			labelRouterLink: undefined
-		},
-		{
-			labelPrincipal: 'Graphic designer / illustrator',
-			labelSecondary: '78',
-			labelRouterLink: undefined
-		},
-		{
-			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-			labelSecondary: '67',
-			labelRouterLink: undefined
 		}
 	];
-
 	list5_3 = [
 		{
-			labelPrincipal: 'Customer oriented',
-			labelSecondary: undefined,
-			labelRouterLink: undefined
-		},
-		{
-			labelPrincipal: 'Graphic designer / illustrator',
-			labelSecondary: undefined,
-			labelRouterLink: undefined
-		},
-		{
 			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
 			labelSecondary: undefined,
 			labelRouterLink: undefined
 		}
 	];
-
 	list5_4 = [
 		{
 			avatar: 'assets/images/user_female_04.jpg',
 			labelPrincipal: 'Bernice Greaves',
 			labelSecondary: undefined,
 			labelRouterLink: undefined
-		},
+		}
+	];
+	list5_5 = [
 		{
-			avatar: 'assets/images/user_male_01.png',
-			labelPrincipal: 'Jerry Basile',
-			labelSecondary: undefined,
+			labelPrincipal: 'List option with slide',
+			labelSecondary: '',
 			labelRouterLink: undefined
-		},
+		}
+	];
+	list5_6 = [
 		{
-			avatar: 'assets/images/user_female_01.jpg',
-			labelPrincipal: 'Suzanne Axtens',
-			labelSecondary: undefined,
+			labelPrincipal: 'List option with button',
+			labelSecondary: '',
 			labelRouterLink: undefined
 		}
 	];
@@ -679,6 +663,44 @@ export class ListsExamplesComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
+		this.menuOptions = {
+			icon: 'icon-more-options',
+			actions: [
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: false,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: '',
+					title: 'Archive',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Archive\' option'); }
+				},
+				{
+					disabled: false,
+					showmenuOptions: true,
+					showIconOptions: true,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: 'icon-bell',
+					title: 'Notifications',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Notifications\' option'); }
+				},
+				{
+					disabled: true,
+					showmenuOptions: true,
+					showIconOptions: true,
+					showDivider: false,
+					showButtons: false,
+					iconOptions: 'icon-pencil',
+					title: 'Edit',
+					buttonText: '',
+					click: function() { alert('You\'ve clicked in \'Edit\' option'); }
+				}
+			]
+		};
 	}
 
 }

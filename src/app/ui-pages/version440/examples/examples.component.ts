@@ -130,6 +130,43 @@ export class ExamplesComponent implements OnInit {
 	card18 = CARD18;
 	card18B = CARD18B;
 
+	list5_1 = [
+		{
+			labelPrincipal: 'List option with link',
+			labelSecondary: '25%',
+			labelRouterLink: '/home'
+		}
+	];
+	list5_3 = [
+		{
+			labelPrincipal: 'Organisation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		}
+	];
+	list5_4 = [
+		{
+			avatar: 'assets/images/user_female_04.jpg',
+			labelPrincipal: 'Bernice Greaves',
+			labelSecondary: undefined,
+			labelRouterLink: undefined
+		}
+	];
+	list5_5 = [
+		{
+			labelPrincipal: 'List option with slide',
+			labelSecondary: '',
+			labelRouterLink: undefined
+		}
+	];
+	list5_6 = [
+		{
+			labelPrincipal: 'List option with button',
+			labelSecondary: '',
+			labelRouterLink: undefined
+		}
+	];
+
 	card21: any[] = [
 		{
 			bar: '',

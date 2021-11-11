@@ -38,27 +38,20 @@
     </ntx-card-simple>
 
     <ntx-card-simple
-      title="{{'LIST5 (variante 01)' }}"
-      subtitle="{{ '<ntx-list5 showBullet bulletType=\'badge\' badgeBgColor=\'#1FAE96\' showDivider [items]=list></ntx-list5>' }}">
-      <ntx-list5 showBullet bulletType="badge" badgeColor="#1FAE96" showDivider [items]=list5_1></ntx-list5>
-    </ntx-card-simple>
-
-    <ntx-card-simple
-      title="{{'LIST5 (variante 02)' }}"
-      subtitle="{{ '<ntx-list5 showBullet bulletType=\'icon\' iconName=\'icon-badge\' iconColor=\'#9A9DEB\' showDivider [items]=list></ntx-list5>' }}">
+      title="{{'LIST5' }}"
+      subtitle="{{ '<ntx-list5></ntx-list5>' }}">
+      <ntx-list5 showBullet bulletType="badge" badgeColor="#1FAE96" showDivider [items]=list5_1>80%</ntx-list5>
+      <ntx-list5 showBullet bulletType="avatar" showDivider [items]=list5_4></ntx-list5>
       <ntx-list5 showBullet bulletType="icon" iconName="icon-badge" iconColor="#9A9DEB" showDivider [items]=list5_3></ntx-list5>
-    </ntx-card-simple>
-
-    <ntx-card-simple
-      title="{{'LIST5 (variante 03)' }}"
-      subtitle="{{ '<ntx-list5 showDivider [items]=\'list\'></ntx-list5>' }}">
-        <ntx-list5 showDivider [items]=list5_2></ntx-list5>
-    </ntx-card-simple>
-
-    <ntx-card-simple
-      title="{{'LIST5 (variante 04)' }}"
-      subtitle="{{ '<ntx-list5 showBullet bulletType=\'avatar\' [items]=\'list\'></ntx-list5>' }}">
-        <ntx-list5 showBullet bulletType="avatar" [items]=list5_4></ntx-list5>
+      <ntx-list5 showDivider [items]=list5_2>
+        <ntx-menu-options [icon]="menuOptions.icon" [actions]="menuOptions.actions"></ntx-menu-options>
+      </ntx-list5>
+      <ntx-list5 [items]=list5_5 showDivider>
+        <ntx-form-slidetoggle [color]="'primary'"></ntx-form-slidetoggle>
+      </ntx-list5>
+      <ntx-list5 [items]=list5_6>
+        <ntx-raised-button [color]="'primary'">Button</ntx-raised-button>
+      </ntx-list5>
     </ntx-card-simple>
 
     <ntx-card-simple

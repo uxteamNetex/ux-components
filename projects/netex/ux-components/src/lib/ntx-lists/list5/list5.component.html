@@ -1,42 +1,42 @@
 <div class="list5">
   <div class="list5__item" *ngFor="let item of items">
-    <div
-      *ngIf="showBullet" 
+    <div *ngIf="showBullet"
       class="list5__item--bullet utils--flex-center utils--margin-right-16">
-        <span 
+        <span
           *ngIf ="bulletType === 'badge'"
           [ngStyle] = "{'background-color': badgeColor }"
           class="utils--align-center-text utils--text-white utils--text-16">{{item.labelPrincipal | slice:0:1}}</span>
-        <mat-icon 
-          *ngIf = "bulletType === 'icon'"  
+        <mat-icon
+          *ngIf = "bulletType === 'icon'"
           [ngStyle] = "{'color': iconColor }"
           class="icon-netex {{ iconName }} utils--text-28"></mat-icon>
-        <div 
-          matListAvatar 
+        <div
+          matListAvatar
           *ngIf="bulletType === 'avatar'"
           class="">
           <img src="{{item.avatar}}" alt="{{item.labelPrincipal + '&#32;image'}}">
         </div>
-        
+
     </div>
-    <div 
-      [ngClass] = "{'divider': showDivider }"
+    <div [ngClass] = "{'divider': showDivider }"
       class="list5__item--wrapper utils--text-16 utils--text-grey-800">
       <div class="label-principal">
-        <a 
+        <a
           *ngIf="item.labelRouterLink; else elseBlock"
-          [routerLink] = "item.labelRouterLink" 
+          [routerLink] = "item.labelRouterLink"
           (click) = "onLabelClick()"
-          class="link utils--text-primary"> 
+          class="link utils--text-primary">
             <span matTooltip = "{{item.labelPrincipal}}" class="">{{item.labelPrincipal}}</span>
         </a>
         <ng-template #elseBlock>
           <span class="label">{{item.labelPrincipal}}</span>
         </ng-template>
       </div>
-      <div
-        *ngIf="item.labelSecondary"
-        class="label-secondary utils--margin-left-16">{{item.labelSecondary}}</div>
+      <div class="label-secondary">
+        <ng-content></ng-content>
+      </div>
+      <!-- <div *ngIf="item.labelSecondary"
+        class="label-secondary utils--margin-left-16">{{item.labelSecondary}}</div> -->
     </div>
   </div>
 </div>
