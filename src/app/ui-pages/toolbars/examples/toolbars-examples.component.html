@@ -2,6 +2,14 @@
   <div class="page-container">
 
     <ntx-card-simple
+      title="{{ 'toolbar with tabs one line' | uppercase }}"
+      subtitle="{{ '<ntx-toolbar-tabs-one-line>' }}">
+        <ntx-toolbar-tabs-one-line imageText="Logo Netex Cuadrado" image="../../../assets/images/icon-netex.png" [apps]="apps"></ntx-toolbar-tabs-one-line>
+        <br/>
+        <ntx-toolbar-tabs-one-line imageText="Logo Netex" image="../../../assets/images/logo-netex-horizontal.svg" [apps]="apps"></ntx-toolbar-tabs-one-line>
+    </ntx-card-simple>
+
+    <ntx-card-simple
       title="{{ 'toolbar alert' | uppercase }}"
       subtitle="{{ '<ntx-toolbar-alert>' }}">
         <ntx-toolbar-alert [items] ="toolbarAlert"></ntx-toolbar-alert>
@@ -32,12 +40,9 @@
       subtitle="{{ type.selector }}">
         <ntx-toolbar-back [apps]="apps" *ngIf="type.label==='back toolbar'"></ntx-toolbar-back>
         <ntx-toolbar-tabs [apps]="apps" *ngIf="type.label==='toolbar with tabs'"></ntx-toolbar-tabs>
-        <ntx-toolbar-back-tabs [apps]="apps" *ngIf="type.label==='toolbar back tabs without action button'">
-        </ntx-toolbar-back-tabs>
-        <ntx-toolbar-back-tabs [apps]="apps" [action]="'launch'" *ngIf="type.label==='toolbar back tabs with action button'">
-        </ntx-toolbar-back-tabs>
-        <ntx-toolbar-back-tabs [apps]="apps" [action]="'finish'" *ngIf="type.label==='toolbar back tabs with another action button'">
-        </ntx-toolbar-back-tabs>
+        <ntx-toolbar-back-tabs [apps]="apps" *ngIf="type.label==='toolbar back tabs without action button'"></ntx-toolbar-back-tabs>
+        <ntx-toolbar-back-tabs [apps]="apps" [action]="'launch'" *ngIf="type.label==='toolbar back tabs with action button'"></ntx-toolbar-back-tabs>
+        <ntx-toolbar-back-tabs [apps]="apps" [action]="'finish'" *ngIf="type.label==='toolbar back tabs with another action button'"></ntx-toolbar-back-tabs>
     </ntx-card-simple>
 
   </div>

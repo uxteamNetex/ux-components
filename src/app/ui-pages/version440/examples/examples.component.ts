@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MediaChange, ObservableMedia } from '@angular/flex-layout';
+import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
 const DATA   = [
 	{
@@ -433,7 +434,10 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
-	constructor(private observableMedia: ObservableMedia) { }
+	constructor(private dashboardService: DashboardService) { }
+
+	apps: any[];
+	menuAvatarOptions: any[];
 
 	ngOnInit() {
 		this.card19B = [
@@ -460,6 +464,21 @@ export class ExamplesComponent implements OnInit {
 				options: 'true',
 				disabled: false
 			}
+		];
+		this.apps = this.dashboardService.getDashboardApps();
+		this.menuAvatarOptions = [
+			{
+				id: 1,
+				label: 'Suzanne Axtens',
+				src: 'assets/images/user_female_01.jpg',
+				active: false
+			},
+			{
+				id: 2,
+				label: 'Sara Dyhouse',
+				src: 'assets/images/user_female_02.jpg',
+				active: true
+			},
 		];
 
 		setTimeout(() => {

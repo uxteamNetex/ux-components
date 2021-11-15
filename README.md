@@ -84,6 +84,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Cambios en el html del componente (*ntx-toolbar*) para actualizar el menu de perfil.
 - Cambios en el html del componente (*ntx-toolbar-back*) para actualizar el menu de perfil.
 - Cambios en el html del componente (*ntx-toolbar-back-tabs*) para actualizar el menu de perfil.
+- Nuevo componente toolbar tabs one line (*ntx-toolbar-tabs-one-line*).
 
 ------------------
 
