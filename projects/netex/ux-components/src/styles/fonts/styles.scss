@@ -46,6 +46,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-carrusel {
+  &:before {
+    content: $icon-carrusel;
+  }
+}
 .icon-chart-solid {
   &:before {
     content: $icon-chart-solid;
