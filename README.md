@@ -64,6 +64,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - icon-switch-off 
 - icon-switch-on
 - icon-heart-solid
+- icon-carrusel
 
 **Menus**<br/>
 - Modificación componente *ntx-menu-toolbar-profile* simplificando la parametrización, añadiendo responsividad y un estado loading.
@@ -86,6 +87,8 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Cambios en el html del componente (*ntx-toolbar-back-tabs*) para actualizar el menu de perfil.
 - Nuevo componente toolbar tabs one line (*ntx-toolbar-tabs-one-line*).
 
+**Menus**<br/>
+- Cambios en el html y css del componente (*ntx-autocomplete-chip*) para añadir tooltips a las opciones del menú.
 ------------------
 
 ### v.4.3.3:

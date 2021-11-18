@@ -1,25 +1,25 @@
-<div class="form-container">
+<div class="ntx-autocomplete-chip">
 
-  <mat-form-field class="form-container__form-full-width">
+  <mat-form-field class="ntx-autocomplete-chip__form-full-width">
 
     <mat-chip-list #chipList>
       <mat-chip *ngFor="let tag of tags"
-                class="form-container__form-chip"
+                class="ntx-autocomplete-chip__form-chip"
                 [color]="color"
                 [selectable]="selectable"
                 [removable]="removable"
                 (removed)="remove(tag)">
-        <span matTooltip="{{tag}}" class="form-container__form-chip--text">{{tag}}</span>
+        <span matTooltip="{{tag}}" class="ntx-autocomplete-chip__form-chip--text">{{tag}}</span>
         <button mat-icon-button
                 matChipRemove
-                class="form-container__form-chip--button"
+                class="ntx-autocomplete-chip__form-chip--button"
                 *ngIf="removable">
           <mat-icon class="icon-netex icon-cross"></mat-icon>
         </button>
       </mat-chip>
       <input placeholder="Enter a tag..."
               #tagInput
-              class="form-container__form-input"
+              class="ntx-autocomplete-chip__form-input"
               [formControl]="tagCtrl"
               [matAutocomplete]="auto"
               [matChipInputFor]="chipList"
@@ -28,11 +28,13 @@
               (matChipInputTokenEnd)="add($event)">
     </mat-chip-list>
     <mat-autocomplete #auto="matAutocomplete"
-                      class="form-container__form-autocomplete"
+                      class="ntx-autocomplete-chip__form-autocomplete"
                       (optionSelected)="selected($event)">
       <mat-option *ngFor="let tag of filteredTags | async" [value]="tag">
-        <span class="form-container__item--matched">{{ getMatchedString(tag) }}</span>
-        <span class="form-container__item--unmatched">{{ getUnmatchedString(tag) }}</span>
+        <div class="ntx-autocomplete-chip__option-wrapper utils--truncate" matTooltip="{{tag}}">
+          <span class="ntx-autocomplete-chip__item--matched">{{ getMatchedString(tag) }}</span>
+          <span class="ntx-autocomplete-chip__item--unmatched">{{ getUnmatchedString(tag) }}</span>
+        </div>
       </mat-option>
     </mat-autocomplete>
 
