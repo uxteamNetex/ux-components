@@ -5,7 +5,7 @@
       <div class="whatsnew__header">
         <div class="whatsnew__header--texts">
           <h1 class="whatsnew__header--title">Release v4.4.0: ...</h1>
-          <p class="whatsnew__header--subtitle">x xxxx 2021</p>
+          <p class="whatsnew__header--subtitle">x xxxx 2022</p>
         </div>
         <img class="whatsnew__header--image" src="assets/images/rocket-5.png" alt="rocket image">
       </div>
@@ -625,6 +625,23 @@
               [subtitle]="item.subtitle"
               [disabled]="item.disabled"
               ></ntx-card20>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Google, Teams and zoom sign-in buttons component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added Google, Teams and zoom sign-in buttons component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can check changes and files afected in this <a class="" mat-list-item routerLink="/buttons/documentation" (click)="setPath('buttons')">link</a></p>
+          <div class="utils--flex">
+            <div class="">
+              <ntx-google-signin-button [selected]="false">Sign in with Google</ntx-google-signin-button>
+            </div>
+            <div class="utils--margin-left-24">
+              <ntx-zoom-signin-button [selected]="false"></ntx-zoom-signin-button>
+            </div>
+            <div class="utils--margin-left-24">
+              <ntx-teams-signin-button [selected]="false"></ntx-teams-signin-button>
             </div>
           </div>
         </div>
