@@ -18,6 +18,9 @@ import { LinkButtonComponent } from './link-button/link-button.component';
 import { StrokedToggleButtonComponent } from './stroked-toggle-button/stroked-toggle-button.component';
 import { RaisedRoundButtonComponent } from './raised-round-button/raised-round-button.component';
 import { RectangularButtonComponent } from './rectangular-button/rectangular-button.component';
+import { GoogleSigninButtonComponent } from './google-signin-button/google-signin-button.component';
+import { ZoomSigninButtonComponent } from './zoom-signin-button/zoom-signin-button.component';
+import { TeamsSigninButtonComponent } from './teams-signin-button/teams-signin-button.component';
 
 @NgModule({
 	imports: [
@@ -40,7 +43,10 @@ import { RectangularButtonComponent } from './rectangular-button/rectangular-but
 		FabSpeedDialButtonComponent,
 		LinkButtonComponent,
 		StrokedToggleButtonComponent,
-		RaisedRoundButtonComponent
+		RaisedRoundButtonComponent,
+		GoogleSigninButtonComponent,
+		ZoomSigninButtonComponent,
+		TeamsSigninButtonComponent
 	],
 	exports: [
 		RaisedButtonComponent,
@@ -57,7 +63,10 @@ import { RectangularButtonComponent } from './rectangular-button/rectangular-but
 		LinkButtonComponent,
 		StrokedToggleButtonComponent,
 		RaisedRoundButtonComponent,
-		RectangularButtonComponent
+		RectangularButtonComponent,
+		GoogleSigninButtonComponent,
+		ZoomSigninButtonComponent,
+		TeamsSigninButtonComponent
 	]
 })
 export class NtxButtonsModule { }
