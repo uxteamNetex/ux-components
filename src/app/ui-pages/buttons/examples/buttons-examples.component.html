@@ -1,10 +1,15 @@
 <div class="page-layout">
   <div class="page-container">
 
-    <ntx-card-simple title="{{'Stroked buttons' | uppercase }}"
-                      subtitle="{{ '<ntx-stroked-button>' }}"
-                      class="white-content">
-      <ntx-stroked-button [item3] ="strokedButton"></ntx-stroked-button>
+    <ntx-card-simple 
+      title="{{'Stroked buttons' | uppercase }}"
+      subtitle="{{ '<ntx-stroked-button>' }}">
+        <ntx-stroked-button title="aceptar" color="#1AA9E2"></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#1AA9E2" disabled></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#9B2761"></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#9B2761" disabled></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#412890"></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#412890" disabled></ntx-stroked-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon stroked buttons' | uppercase }}"

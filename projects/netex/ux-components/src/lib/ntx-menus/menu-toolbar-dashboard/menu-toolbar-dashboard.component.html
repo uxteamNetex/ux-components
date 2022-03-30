@@ -3,7 +3,7 @@
 </button>
 
 <mat-menu #menuOptions="matMenu" [overlapTrigger]="false" class="dashboard">
-  <div *ngIf="apps.length" class="dashboard__grid">
+  <div *ngIf="apps?.length" class="dashboard__grid">
     <mat-grid-list cols="3" rowHeight="116px">
       <mat-grid-tile *ngFor="let app of apps">
         <a href="{{app.link}}">

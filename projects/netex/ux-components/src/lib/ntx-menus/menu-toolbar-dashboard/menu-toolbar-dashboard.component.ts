@@ -10,7 +10,7 @@ import { ViewEncapsulation } from '@angular/core';
 
 export class MenuToolbarDashboardComponent implements OnInit {
 
-	@Input() apps: any[];
+	@Input() apps: any[] = [];
 	@Input() isLoading: boolean;
 	@Input() isLoaded: boolean;
 	@Input() failback: boolean;
@@ -22,6 +22,7 @@ export class MenuToolbarDashboardComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
+
 	}
 
 }

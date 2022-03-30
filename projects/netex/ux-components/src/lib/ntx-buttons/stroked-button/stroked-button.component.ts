@@ -7,7 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class StrokedButtonComponent implements OnInit {
 
-	@Input() item3: any;
+	@Input() color: string;
+  	@Input() disabled: string;
+  	@Input() title: string;
 
 	constructor() { }
 

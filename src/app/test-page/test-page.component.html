@@ -1,60 +1,7 @@
 <div class="page-layout">
   <div class="page-container">
-    <div>
-      <p>Formulario creacción de evento</p>
-    </div>
-    <label for="">Aula virtual</label>
-    <div class="utils--flex">
-      <div class="">
-        <ntx-google-signin-button [selected]="false">Sign in with Google</ntx-google-signin-button>
-      </div>
-      <div class="utils--margin-left-24">
-        <ntx-zoom-signin-button [selected]="false"></ntx-zoom-signin-button>
-      </div>
-      <div class="utils--margin-left-24">
-        <ntx-teams-signin-button [selected]="false"></ntx-teams-signin-button>
-      </div>
-    </div>
-    <div class="utils--margin-top-48"><p>Formulario edición de evento (aula virtual seleccionada es la de Google)</p></div>
-    <label for="">Aula virtual</label>
-    <div class="utils--flex">
-      <div class="">
-        <ntx-google-signin-button [selected]="true">Sign in with Google</ntx-google-signin-button>
-      </div>
-      <div class="utils--margin-left-24">
-        <ntx-zoom-signin-button [selected]="false"></ntx-zoom-signin-button>
-      </div>
-      <div class="utils--margin-left-24">
-        <ntx-teams-signin-button [selected]="false"></ntx-teams-signin-button>
-      </div>
-    </div>
-    <div class="utils--margin-top-48">
-      <p>Formulario edición de evento (aula virtual seleccionada es la de Zoom)</p>
-    </div>
-    <label for="">Aula virtual</label>
-    <div class="utils--flex">
-      <div class="">
-        <ntx-google-signin-button [selected]="false">Sign in with Google</ntx-google-signin-button>
-      </div>
-      <div class="utils--margin-left-24">
-        <ntx-zoom-signin-button [selected]="true"></ntx-zoom-signin-button>
-      </div>
-      <div class="utils--margin-left-24">
-        <ntx-teams-signin-button [selected]="false"></ntx-teams-signin-button>
-      </div>
-    </div>
-    <div class="utils--margin-top-48"><p>Formulario edición de evento (aula virtual seleccionada es la de Teams)</p></div>
-    <label for="">Aula virtual</label>
-    <div class="utils--flex">
-      <div class="">
-        <ntx-google-signin-button [selected]="false">Sign in with Google</ntx-google-signin-button>
-      </div>
-      <div class="utils--margin-left-24">
-        <ntx-zoom-signin-button [selected]="false"></ntx-zoom-signin-button>
-      </div>
-      <div class="utils--margin-left-24">
-        <ntx-teams-signin-button [selected]="true"></ntx-teams-signin-button>
-      </div>
-    </div>
+    <ntx-stroked-button title="aceptar" color="red"></ntx-stroked-button>
+    <ntx-stroked-button title="aceptar" color="red" disabled></ntx-stroked-button>
+    <ntx-stroked-button title="aceptar" color="primary" disabled></ntx-stroked-button>
   </div>
 </div>
