@@ -7,9 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class StrokedIconButtonComponent implements OnInit {
 
-	@Input() item: any;
+	@Input() disabled: string;
+	@Input() title: string;
+	@Input() color: string;
 	@Input() showIconLeft: boolean;
 	@Input() showIconRight: boolean;
+	@Input() icon: string;
 
 	constructor() { }
 

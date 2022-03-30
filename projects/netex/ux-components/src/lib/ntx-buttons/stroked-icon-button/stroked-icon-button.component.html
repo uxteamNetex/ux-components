@@ -1,8 +1,10 @@
-<button mat-stroked-button class="mat-stroked-button stroked-icon-button {{action.color}} {{action.disabled}}"
-        *ngFor="let action of item.actions">
-  <mat-icon *ngIf="action.showIconLeft"
-            class="icon-netex {{action.icon}}"></mat-icon>
-  <span class="stroked-icon-button__text" matTooltip="{{action.label}}">{{action.label}}</span>
-  <mat-icon *ngIf="action.showIconRight"
-            class="icon-netex {{action.icon}}"></mat-icon>
+<button 
+      mat-stroked-button
+      [style.color]="color"
+      [style.borderColor]="color"
+      [disabled]="disabled"
+      class="mat-stroked-button stroked-icon-button">
+            <mat-icon *ngIf="showIconLeft" class="icon-netex {{icon}}"></mat-icon>
+            <span class="stroked-icon-button__text" matTooltip="{{title}}">{{title}}</span>
+            <mat-icon *ngIf="showIconRight" class="icon-netex {{icon}}"></mat-icon>
 </button>

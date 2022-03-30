@@ -29,7 +29,7 @@
         background-color: $icon-button-hover;
       }
     }
-    &.disabled{
+    &[disabled]{
       cursor: not-allowed;
       opacity: 0.4;
       &:hover{
