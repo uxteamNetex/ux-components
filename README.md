@@ -47,6 +47,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Modificación del componente *ntx-raised-round-button* añadiendo un estado 'loading' que muestre un spinner.
 - Modificación del componente *ntx-stroked-button* parametrizándolo correctamente.
 - Modificación del componente *ntx-stroked-icon-button* parametrizándolo correctamente.
+- Modificación del componente *ntx-stroked-toggle-button* parametrizándolo correctamente.
 - Nuevo componente *ntx-google-signin-button*
 - Nuevo componente *ntx-teams-signin-button*
 - Nuevo componente *ntx-zoom-signin-button*

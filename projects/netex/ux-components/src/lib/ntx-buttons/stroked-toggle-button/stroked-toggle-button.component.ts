@@ -10,7 +10,10 @@ import { ViewEncapsulation } from '@angular/core';
 })
 export class StrokedToggleButtonComponent implements OnInit {
 
-	@Input() disabled: string;;
+	@Input() color: string;
+	@Input() disabled: string;
+	@Input() iconLeft: string;
+	@Input() iconRight: string;
 
 	constructor() { }
 
