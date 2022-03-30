@@ -12,10 +12,15 @@
         <ntx-stroked-button title="aceptar" color="#412890" disabled></ntx-stroked-button>
     </ntx-card-simple>
 
-    <ntx-card-simple title="{{'Icon stroked buttons' | uppercase }}"
-                      subtitle="{{ '<ntx-stroked-icon-button>' }}"
-                      class="white-content">
-      <ntx-stroked-icon-button [item] ="strokedIconButton"></ntx-stroked-icon-button>
+    <ntx-card-simple 
+      title="{{'Icon stroked buttons' | uppercase }}"
+      subtitle="{{ '<ntx-stroked-icon-button>' }}">
+        <ntx-stroked-icon-button showIconLeft="true" icon="icon-pencil" title="edit" color="#199AA8"></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconLeft="true" icon="icon-pencil" title="edit" color="#199AA8" disabled></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconRight="true" icon="icon-download" title="download" color="#B182A6"></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconRight="true" icon="icon-download" title="download" color="#B182A6" disabled></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconRight="true" icon="icon-arrow-right" title="next" color="#5cce88"></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconRight="true" icon="icon-arrow-right" title="next" color="#5cce88" disabled></ntx-stroked-icon-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon toggle buttons' | uppercase }}"
