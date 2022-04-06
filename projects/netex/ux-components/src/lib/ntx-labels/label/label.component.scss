@@ -1,6 +1,7 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
 div{
+    box-sizing: border-box;
   background-color: $color-label-grey; // default color
   border-radius: 4px;
   box-shadow: none;
@@ -8,23 +9,14 @@ div{
   display: inline-block;
   font-family: LatoMedium;
   font-size: $font-size-10;
-  margin: 0 4px;
   padding: 3px 8px;
   text-transform: uppercase;
   width: fit-content;
-  &.black{
-      background-color: $color-label-black;
-  }
-  &.blue{
-      background-color: $color-label-blue;
-  }
-  &.lightblue{
-      background-color: $color-label-lightblue;
-  }
-  &.orange{
-      background-color: $color-label-orange;
-  }
-  &.red{
-      background-color: $color-label-red;
-  }
+  max-width: 100%;
+    p {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

@@ -1,3 +1,4 @@
+import { getLocaleEraNames } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LabelComponent implements OnInit {
 
 	@Input() text: string;
-	@Input() color: 'black' | 'blue' | 'lightblue' | 'orange' | 'red' ;
+	@Input() color: string ;
 
 	constructor() { }
 

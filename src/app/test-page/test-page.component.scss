@@ -1,7 +1,5 @@
-label {
-    font-family: lato;
-    display: inline-block;
-    margin-bottom: 8px;
-    color: #333;
-    font-size: 12px;
+.label-container {
+    border: 1px solid black;
+    width: 160px;
+    height: 80px;
 }
