@@ -26,7 +26,17 @@
 
     <ntx-card-simple title="{{'Label round' | uppercase }}"
                       subtitle="{{ '<ntx-label-round>' }}">
-      <ntx-label-round [labels]=labelRound></ntx-label-round>
+      <div class="labels-container">
+        <ntx-label-round text="6"></ntx-label-round>
+        <ntx-label-round text="26" color="black"></ntx-label-round>
+        <ntx-label-round text="126" color="orange"></ntx-label-round>
+        <div style="width:120px">
+          <ntx-label-round text="lorem ipsum dolor sic amet " color="#333"></ntx-label-round> 
+        </div> 
+        <div style="width:106px">
+          <ntx-label-round text="Supercalifragilisticexpialidocious" color="green"></ntx-label-round> 
+        </div> 
+      </div>
     </ntx-card-simple>
 
   </div>
