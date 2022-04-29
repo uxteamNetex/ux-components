@@ -14,7 +14,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Cambios en el css del componente input form (*ntx-form-input*).
 - Cambios en el html y css del componente select (*ntx-form-select*).
 - Nuevo componente select de selección múltiple(*ntx-form-select-multiple*).
-- Modificación del componente *ntx-form-datepicker-range* para que se abran los paneles (datepicker y selector de horas) al hacer click en los input correspondientes.
+- Modificación del componente *ntx-form-datepicker-range* para que se abran los paneles (datepicker y selector de horas) al    hacer click en los input correspondientes.
 - Cambios en el html y css del componente (*ntx-searchbox-filter-panel*).
 - Cambios en el html y ts del componente (*ntx-form-slidetoggle*).
 
@@ -41,6 +41,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Modificación componente *ntx-card20* añadir estado disabled.
 
 **Buttons**<br/>
+- Modificación del componente *ntx-raised-button* parametrizando color y borde.
 - Modificación del componente *ntx-icon-button* parametrizando color y borde.
 - Modificación del componente *ntx-raised-round-button* parametrizando la posición del icono y los colores.
 - Modificación del componente *ntx-mini-fab-button* parametrizando icono y colores.
@@ -95,6 +96,10 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 **Menus**<br/>
 - Cambios en el html y css del componente (*ntx-autocomplete-chip*) para añadir tooltips a las opciones del menú.
+
+**Labels**<br/>
+- Cambios en el componente ntx-label *ntx-label*: Se parametriza el color y se hace adaptativo al padre.
+- Cambios en el componente ntx-label *ntx-label-round*: Se parametriza el color y se hace adaptativo al padre.
 ------------------
 
 ### v.4.3.3:

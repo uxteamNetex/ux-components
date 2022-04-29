@@ -6,6 +6,7 @@
   font-family: Lato;
   margin: 0 4px;
   text-transform: uppercase;
+  color: white;
   &.mat-primary{
     &:hover{
       background-color: $color-primary-hover;
@@ -27,5 +28,6 @@
   &[disabled]{
     cursor: not-allowed;
     opacity: 0.4;
+    color: white;
   }
 }

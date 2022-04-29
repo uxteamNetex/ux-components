@@ -52,10 +52,14 @@
                       title="{{type.label + ' buttons' | uppercase }}"
                       subtitle="{{ type.selector }}">
       <div *ngIf="type.label==='raised'">
-          <ntx-raised-button [color]="'primary'">Button</ntx-raised-button>
-          <ntx-raised-button [color]="'primary'" [disabled]="'true'">Link</ntx-raised-button>
-          <ntx-raised-button [color]="'accent'">Action</ntx-raised-button>
-          <ntx-raised-button [color]="'accent'" [disabled]="'true'">Action</ntx-raised-button>
+          <ntx-raised-button title="Button" color="black"></ntx-raised-button>
+          <ntx-raised-button title="Button" color="black" disabled></ntx-raised-button>
+          <ntx-raised-button title="Button" color="#1AA9E2"></ntx-raised-button>
+          <ntx-raised-button title="Button" color="#1AA9E2" disabled></ntx-raised-button>
+          <ntx-raised-button title="Button" color="rgb(214, 82, 146)"></ntx-raised-button>
+          <ntx-raised-button title="Button" color="rgb(214, 82, 146)" disabled></ntx-raised-button>
+          <ntx-raised-button title="Button" color="#412890"></ntx-raised-button>
+          <ntx-raised-button title="Button" color="#412890" disabled></ntx-raised-button>
       </div>
       <div *ngIf="type.label==='icon raised'">
         <ntx-raised-icon-button [item] ="raisedIconButton"></ntx-raised-icon-button>
