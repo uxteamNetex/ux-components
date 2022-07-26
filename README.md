@@ -10,6 +10,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.4.0: (En progreso)
 
+**Avatars**<br/>
+- Nuevo componente *ntx-simple-avatar*.
+
 **Forms**<br/>
 - Cambios en el css del componente input form (*ntx-form-input*).
 - Cambios en el html y css del componente select (*ntx-form-select*).

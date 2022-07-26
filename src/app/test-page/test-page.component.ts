@@ -9,22 +9,11 @@ import { MatGridList } from '@angular/material';
 })
 export class TestPageComponent implements OnInit {
 
-	// clickedElement : Renderer2;
-	isLoading : boolean;
-
 	constructor() {}
 
 	ngOnInit() {}
 
-	// onClickButton(element: Renderer2) {
-	// 	this.clickedElement = element;
-	// }
-	
-	// isClicked(element: Renderer2) {
-	// 	// setTimeout(() => {
-	// 	// 	this.clickedElement = undefined },8000
-	// 	// );
-	// 	return element === this.clickedElement;
-	// }
-
+	src_1 = 'assets/images/user_female_01.jpg';
+	src_2 = 'assets/images/user_male_01.png';
+	src_3 = 'assets/images/user_female_02.jpg';
 }

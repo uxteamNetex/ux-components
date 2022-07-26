@@ -3,6 +3,7 @@ import { SidenavService } from '../services/sidenav.service';
 import { TabsHeaderService } from '../services/tabs-header.service';
 
 const LINKS = [
+	'avatars',
 	'buttons',
 	'cards-catalog',
 	'chips',

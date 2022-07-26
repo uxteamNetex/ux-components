@@ -9,6 +9,10 @@ const routes: Routes = [
 		component: HomePageComponent
 	},
 	{
+		path: 'avatars',
+		loadChildren: './ui-pages/avatars/avatars.module#AvatarsModule'
+	},
+	{
 		path: 'buttons',
 		loadChildren: './ui-pages/buttons/buttons.module#ButtonsModule'
 	},
