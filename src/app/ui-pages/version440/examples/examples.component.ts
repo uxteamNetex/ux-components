@@ -439,6 +439,10 @@ export class ExamplesComponent implements OnInit {
 	apps: any[];
 	menuAvatarOptions: any[];
 
+	src_1 = 'assets/images/user_female_01.jpg';
+	src_2 = 'assets/images/user_male_01.png';
+	src_3 = 'assets/images/user_female_02.jpg';
+
 	ngOnInit() {
 		this.card19B = [
 			{

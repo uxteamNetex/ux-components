@@ -14,7 +14,8 @@ import {
 	NtxCardsModule,
 	NtxChipsModule,
 	NtxToolbarModule,
-	NtxExpansionPanelsModule
+	NtxExpansionPanelsModule,
+	NtxAvatarsModule
 } from '@netex/ux-components';
 import { NtxMenusModule } from 'projects/netex/ux-components/src/public_api';
 
@@ -34,7 +35,8 @@ import { NtxMenusModule } from 'projects/netex/ux-components/src/public_api';
 		NtxFormsModule,
 		NtxListsModule,
 		NtxTablesModule,
-		NtxToolbarModule
+		NtxToolbarModule,
+		NtxAvatarsModule
 	]
 })
 export class Version440Module { }
