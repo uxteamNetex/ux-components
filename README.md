@@ -13,6 +13,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Avatars**<br/>
 - Nuevo componente *ntx-simple-avatar*.
 - Nuevo componente *ntx-social-avatar*.
+- Nuevo componente *ntx-social-avatar-bubble*.
 
 **Forms**<br/>
 - Cambios en el css del componente input form (*ntx-form-input*).
