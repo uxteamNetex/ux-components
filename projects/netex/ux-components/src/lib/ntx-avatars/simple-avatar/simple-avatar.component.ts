@@ -1,3 +1,4 @@
+import { coerceBooleanProperty } from '@angular/cdk/coercion';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -9,6 +10,15 @@ export class SimpleAvatarComponent implements OnInit {
 
   @Input() label:string | undefined;
   @Input() src:string | undefined;
+
+  private _square: boolean;
+	get square(): boolean {
+		return this._square;
+	} 
+	@Input()
+	set square(value: boolean) {
+		this._square = coerceBooleanProperty(value);
+	}
 
   constructor() { }
 
