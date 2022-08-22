@@ -20,6 +20,15 @@ export class SocialAvatarComponent implements OnInit {
 		this._active = coerceBooleanProperty(value);
 	}
 
+  private _square: boolean;
+	get square(): boolean {
+		return this._square;
+	} 
+	@Input()
+	set square(value: boolean) {
+		this._square = coerceBooleanProperty(value);
+	}
+
   constructor() { }
 
   ngOnInit(): void {
