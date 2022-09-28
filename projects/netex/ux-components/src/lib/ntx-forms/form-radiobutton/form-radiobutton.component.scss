@@ -2,7 +2,7 @@
 
 $block: "ntx-radiobutton-group";
 
-&.#{$block} {
+.#{$block} {
   mat-radio-button {
     margin: 0 0 0 8px;
     &.mat-radio-disabled {
