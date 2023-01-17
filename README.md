@@ -8,6 +8,10 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
+### v.4.5.0: (En curso)
+
+------------------
+
 ### v.4.4.0:
 
 **Avatars**<br/>
@@ -105,6 +109,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Labels**<br/>
 - Cambios en el componente ntx-label *ntx-label*: Se parametriza el color y se hace adaptativo al padre.
 - Cambios en el componente ntx-label *ntx-label-round*: Se parametriza el color y se hace adaptativo al padre.
+
 ------------------
 
 ### v.4.3.3:
