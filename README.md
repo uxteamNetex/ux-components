@@ -10,6 +10,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.5.0: (En curso)
 
+**Cards**<br/>
+- Nuevo componente *ntx-card25*.
+
 ------------------
 
 ### v.4.4.0:
