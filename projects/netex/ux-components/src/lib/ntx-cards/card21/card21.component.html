@@ -1,0 +1,14 @@
+<div class="card21" (click)="onClickEvent($event)" [ngClass]="{'selected': selected, 'disabled': disabled}">
+  <mat-card>
+    <div *ngIf="bar" [ngStyle] = "{'background-color': barColor? barColor: null }" class="card21__bar"></div>
+    <div class="card21__title utils--horizontal-align">
+      <span *ngIf="title" class="card21__title--text" matTooltip="dfdsfdsf">{{title}}</span>
+    </div>
+    <div class="card21__image">
+      <img *ngIf="image" src="{{image}}" alt="Card image">
+      <div class="overlay"></div>
+    </div>
+  </mat-card>
+  <div class="arrow-down"></div>
+</div>
+

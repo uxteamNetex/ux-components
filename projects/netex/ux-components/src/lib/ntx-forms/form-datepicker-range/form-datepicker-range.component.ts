@@ -1,11 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
-import { MatDatepickerInputEvent, NativeDateAdapter, DateAdapter, MAT_DATE_FORMATS, MatDateFormats } from '@angular/material';
+import { NativeDateAdapter, DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material';
 
 const monthNamesAlias = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", 
 "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
 
 export class AppDateAdapter extends NativeDateAdapter {
+
+  parse(value: any): Date | null {
+
+    if ((typeof value === 'string') && (value.indexOf('/') > -1)) {
+      const str = value.split('/');
+
+      const year = Number(str[2]);
+      const month = Number(str[1]) - 1;
+      const date = Number(str[0]);
+
+      return new Date(year, month, date);
+    }
+    const timestamp = typeof value === 'number' ? value : Date.parse(value);
+    return isNaN(timestamp) ? null : new Date(timestamp);
+  }
+
   format(date: Date, displayFormat: Object): string {
     let day: string = date.getDate().toString();
     let month: string = monthNamesAlias[date.getMonth()];
@@ -29,14 +45,15 @@ export interface Option {
   encapsulation: ViewEncapsulation.None
 })
 export class FormDatepickerRangeComponent implements OnInit {
-
   
   hours: Option[] = [];
+  hourFrom: any;
+  hourTo: any;
 
   constructor() { }
 
   ngOnInit() {
-    //TODO - Function to generate list options
+    //Function to generate list options
     let minFragment: string, hourFragment: string, value: string, viewValue : string;
     for (var i = 0; i < 24; i++) {
       value = ((i<10) ? '0' + i.toString() : i.toString()) + ':00'; 
@@ -52,6 +69,14 @@ export class FormDatepickerRangeComponent implements OnInit {
         }
       )
     }
+  }
+
+  onClickHourFromMenuItem(event, hour) {
+    this.hourFrom = hour;
+  }
+  
+  onClickHourToMenuItem(event, hour) {
+    this.hourTo = hour;
   }
 
 }

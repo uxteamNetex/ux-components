@@ -7,15 +7,19 @@ import { NtxExpansionPanelsRoutingModule } from './ntx-expansion-panels-routing.
 import { ExpansionPanelsComponent } from './expansion-panels/expansion-panels.component';
 
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ExpansionPanel2Component } from './expansion-panel2/expansion-panel2.component';
 
 @NgModule({
-	declarations: [ExpansionPanelsComponent],
+	declarations: [ExpansionPanelsComponent, ExpansionPanel2Component],
 	imports: [
 		CommonModule,
 		NtxSharedModule,
 		NtxExpansionPanelsRoutingModule,
 		MatExpansionModule
 	],
-	exports: [ExpansionPanelsComponent],
+	exports: [
+		ExpansionPanelsComponent,
+		ExpansionPanel2Component
+	],
 })
 export class NtxExpansionPanelsModule { }

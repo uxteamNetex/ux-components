@@ -1,22 +1,24 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
-export interface IActionsMenuLinkComponent {
-	showUserInfo?: boolean;
-	logo: string;
-	logoName: string;
-	title: string;
-	subtitle: string;
-	url: string;
-	link: string;
-	image: string;
-	click: Function;
-	showButton?: boolean;
-	titleButton: string;
-	imageButton: string;
-	showMenuOption?: boolean;
-	menuOptionText: string;
-	showMenuOptionBadge?: boolean;
-	showDivider?: boolean;
+export interface IUser {
+	avatar: string,
+	fullname: string,
+	username: string,
+	companyLogo: string,
+	companyName: string,
+	badge?: number,
+	link: string,
+	linkLabel: string
+}
+
+export interface IOption {
+	label: string,
+	badge?: number
+}
+
+export interface IMainOption {
+	label: string,
+	img: string
 }
 
 @Component({
@@ -28,29 +30,14 @@ export interface IActionsMenuLinkComponent {
 
 export class MenuToolbarProfileComponent implements OnInit {
 
-	@Input() showUserInfo: any;
-	@Input() logo: string;
-	@Input() logoName: string;
-	@Input() title: string;
-	@Input() subtitle: string;
-	@Input() url: string;
-	@Input() link: string;
-	@Input() image: string;
-	@Input() showBadge: boolean;
-	@Input() userImage: string;
-	@Input() userName: string;
-	@Input() actions: IActionsMenuLinkComponent[];
-	@Input() showButton: any;
-	@Input() titleButton: string;
-	@Input() imageButton: string;
-	@Input() showMenuOption: any;
-	@Input() menuOptionText: string;
-	@Input() showMenuOptionBadge: any;
-	@Input() showDivider: any;
+	@Input() user!: IUser;
+	@Input() mainOption!: IMainOption;
+	@Input() options!: IOption[];
+	@Input() isLoaded!: boolean;
+	@Input() isLoading!: boolean;
 
 	constructor() { }
 
-	ngOnInit() {
-	}
+	ngOnInit() { }
 
 }

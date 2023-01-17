@@ -1,4 +1,4 @@
-<mat-card class="card20">
+<mat-card class="card20" [ngClass]="{'disabled': disabled}">
   <div class="card20__image">
     <img *ngIf="image" src="{{image}}" alt="Card image">
   </div>

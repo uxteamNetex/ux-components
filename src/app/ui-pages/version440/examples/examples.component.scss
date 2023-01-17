@@ -1,0 +1,280 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "whatsnew";
+.#{$block}{
+  .card-simple{
+    padding: 0;
+    .mat-card-content{
+      .#{$block}__header{
+        align-items: center;
+        background-color: #683C82;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        display: flex;
+        height: 356px;
+        justify-content: center;
+        position: relative;
+        top: -8px;
+        .#{$block}__header--texts{
+          max-width: 60%;
+          text-align: center;
+          .#{$block}__header--title{
+            color: $color-white;
+            font-family: latoBold;
+            font-size: $font-size-36;
+            line-height: 46px;
+            margin: 0 0 12px 0;
+          }
+          .#{$block}__header--subtitle{
+            color: $color-white;
+            font-family: latoBold;
+            font-size: $font-size-14;
+            line-height: 17px;
+            margin: 0;
+            opacity: 0.6;
+            text-transform: uppercase;
+          }
+        }
+        .#{$block}__header--image{
+          bottom: 0;
+          max-width: 350px;
+          position: absolute;
+          right: 0;
+        }
+      }
+      .#{$block}__content{
+        margin: 0 auto;
+        max-width: 720px;
+        padding-bottom: 32px;
+        .#{$block}__announcement{
+          background-color: $color-grey-200;
+          padding: 26px 18px;
+          text-align: center;
+          margin: 56px auto 0;
+          .#{$block}__announcement--text{
+            color: $color-grey-700;
+            font-size: $font-size-18;
+            line-height: 24px;
+            margin: 0;
+          }
+        }
+        .#{$block}__separation{
+          border-bottom: 1px solid $color-grey-400;
+          font-size: $font-size-28;
+          line-height: 20px;
+          letter-spacing: .5px;
+          margin: 36px auto 0;
+          text-align: center;
+          text-transform: uppercase;
+          .#{$block}__separation--text{
+            background: $color-white;
+            color: $color-primary;
+            font-size: $font-size-18;
+            font-weight: 400;
+            padding: 0 18px;
+            position: relative;
+            top: 10px;
+          }
+        }
+        .#{$block}__content-block{
+          margin: 56px 0 0 0;
+          .#{$block}__content-block--text{
+            line-height: 24px;
+            margin-bottom: 24px;
+            .documentation-code{
+              color: #E53B78;
+              font-size: 87%;
+              padding: 4px;
+            }
+          }
+          .#{$block}__content-block--image{
+            border-radius: 4px;
+            box-shadow: 0 0 0 1px #D5DCE1, 0 10px 30px rgba(0,0,0,.08);
+            margin: 0 auto;
+            max-width: 100%;
+            width: auto;
+          }
+          .#{$block}__content-block--points{
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 23px;
+            margin-top: 0;
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            li{
+              font-size: 17px;
+              line-height: 1.6;
+              margin-bottom: 23px;
+            }
+          }
+          .#{$block}__content-block--card{
+            &.w33{
+              width: 33%;
+            }
+            &.w50{
+              width: 50%;
+            }
+            ntx-card7 {
+              width: 100%;
+              margin: 0 8px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.icons-container{
+  display: flex;
+  flex-wrap: wrap;
+  .icon-container{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 0 calc(12% - 16px);
+    flex-direction: column;
+    margin: 40px 16px;
+    max-width: calc(12% - 16px);
+    min-width: calc(12% - 16px);
+    position: relative;
+    .mat-icon{
+      display: list-item;
+      overflow: hidden;
+    }
+    label{
+      font-size: 14px;
+      margin-top: 12px;
+      word-break: break-word;
+      text-align: center;
+    }
+  }
+}
+
+.mat-basic-table{
+  border-radius: 4px;
+  box-shadow: $shadow;
+  width: 100%;
+  .mat-basic-table__header{
+    background-color: $color-table-header-background;
+    color: $color-table-header-text;
+    font-family: LatoSemibold;
+    font-size: $font-size-12;
+    height: $tableHeaderHeight;
+    text-transform: uppercase;
+    th{
+      border-bottom: none;
+      color: $color-table-header-text;
+      &:first-of-type{
+        border-radius: 4px 0 0 0;
+        padding-left: 60px;
+      }
+      &:last-of-type{
+        border-radius: 0 4px 0 0;
+        padding-right: 60px;
+      }
+    }
+  }
+  .mat-basic-table__row{
+    height: $tableRowHeight;
+    &:last-of-type{
+      td{
+        &.mat-cell{
+          &:first-of-type{
+            border-radius: 0 0 0 4px;
+          }
+          &:last-of-type{
+            border-radius: 0 0 4px 0;
+          }
+        }
+      }
+    }
+    td{
+      &.mat-cell{
+        border-bottom-color: $color-grey-200;
+        color: $color-grey-700;
+        &:first-of-type{
+          padding-left: 60px;
+        }
+        &:last-of-type{
+          padding-right: 60px;
+        }
+      }
+    }
+  }
+}
+
+.radiobutton-example-table {
+  // width: calc(100% - 24px);
+  border-collapse: collapse;
+  tr:first-of-type{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #EEE;
+    text-transform: uppercase;
+  }
+  tr:not(:first-of-type) {
+    height: 60px;
+  }
+  th{
+    background-color: white;
+    text-align: left;
+    height: 48px;
+  }
+  td {
+    background-color: rgba(26, 169, 226, 0.05);
+    &:first-of-type {
+      border-right: 1px solid #EEE;
+    }
+    &:not(:first-of-type) {
+      min-width: 100px;
+    }
+  }
+  th,td {
+    padding: 0 16px;
+  }
+
+}
+
+.utils--flex{
+  >*{
+    flex: 1 1 0px;
+    margin: 8px;
+    min-width: 267px;
+    width: 100%;
+  }
+}
+
+ntx-form-checkbox {
+  align-items: center;
+  display: flex;
+  height: 36px;
+  padding: 0 0 0 4px;
+}
+
+@media (max-width: 1280px) {
+  .#{$block}{
+    .card-simple{
+      .mat-card-content{
+        .#{$block}__header{
+          height: 256px;
+          .#{$block}__header--texts{
+            .#{$block}__header--title{
+              font-size: $font-size-32;
+              line-height: 40px;
+            }
+          }
+          .#{$block}__header--image{
+            max-width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

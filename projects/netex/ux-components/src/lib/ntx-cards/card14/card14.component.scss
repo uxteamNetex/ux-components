@@ -5,34 +5,63 @@ $block: "card14";
 .#{$block}.mat-card {
   box-sizing: border-box;
   box-shadow: $shadow;
-  padding: 20px 16px 16px;
+  padding: 16px;
   &:hover{
     box-shadow: $shadow-hover;
   }
   .#{$block}__header {
+    display: block;
     .mat-card-header-text {
-      margin:0;
+      margin: 0 0 16px 0;
+      .#{$block}__title.mat-card-title {
+        font-family: latoBold;
+        margin-bottom: 0;
+        max-height: 16px;
+        min-height: 16px;
+        overflow: hidden;
+        opacity: 0.5;
+        width: 70%;
+      }
     }
-    .#{$block}__title.mat-card-title {
-      font-family: latoBold;
-      max-height: 16px;
-      margin-bottom: 16px;
-      overflow: hidden;
-      opacity: 0.5;
-    }
-    .icon-netex {
-      margin-left: auto;
-    }
-    span {
-      line-height: 1.5;
+    .#{$block}__state{
+      display: flex;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      .icon-netex {
+        margin-left: auto;
+      }
+      span {
+        line-height: 1.5;
+      }
     }
   }
   .#{$block}__subtitle {
     overflow: hidden;
     max-height: 36px;
+    min-height: 36px;
     opacity: 0.5;
   }
   span {
     line-height: 1.43;
   }
 }
+
+/*Skeleton*/
+.mat-card.#{$block} .#{$block}__header .mat-card-header-text .#{$block}__title:empty,
+.mat-card.#{$block} .#{$block}__content .#{$block}__subtitle:empty{
+  animation: loading 1.1s infinite linear;
+  background: #dedfe1;
+  background-image: -webkit-linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+  background-image: linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+  background-repeat: no-repeat;
+}
+@keyframes loading {
+  0% {
+    background-position: -100px;
+  }
+  100% {
+  background-position: 88px;
+  }
+}
+/*Fin Skeleton*/

@@ -12,6 +12,7 @@ export class Card20Component implements OnInit {
 	@Input() image: string;
 	@Input() title: string;
 	@Input() subtitle: string;
+	@Input() disabled: boolean;
 
 	constructor() { }
 

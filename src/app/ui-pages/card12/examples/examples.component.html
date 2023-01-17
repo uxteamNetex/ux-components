@@ -1,5 +1,23 @@
 <div class="page-layout">
   <div class="page-container">
-    <ntx-card12></ntx-card12>
+
+    <mat-grid-list #grid rowHeight="200px" gutterSize="12">
+
+      <mat-grid-tile *ngFor="let item of card12">
+        <ntx-card12
+          [title]="item.title"
+          [backgroundColor]="item.backgroundColor"
+          [options]="item.options"
+          [text1]="item.text1"
+          [text2]="item.text2"
+          [icon1]="item.icon1"
+          [icon2]="item.icon2"
+          [buttons]="item.buttons"
+          [disabled]="item.disabled"
+        ></ntx-card12>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
   </div>
 </div>

@@ -1,21 +1,24 @@
-<mat-card class="card12">
-  <div class="card12__contenido">
+<mat-card class="card12" [ngClass]="{'disabled': disabled}">
+  <div class="card12__contenido" [ngStyle]="{ 'background-color': backgroundColor }">
     <mat-card-header>
+
       <mat-card-title class="card12__title">
-        <span class="card12__title--text" matTooltip="Marketing y Comunicación de medios Digitales y un titulo muy largo">Marketing y Comunicación de medios Digitales y un titulo muy largo</span>
+        <span *ngIf="title" class="card12__title--text" matTooltip="{{title}}">{{title}}</span>
       </mat-card-title>
-      <div class="card12__options">
+
+      <div *ngIf="options" class="card12__options">
         <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
       </div>
+
     </mat-card-header>
     <mat-card-content>
-      <mat-icon class="icon-netex icon-users"></mat-icon>
-      <span>1</span>
-      <mat-icon class="icon-netex icon-briefcase"></mat-icon>
-      <span>1</span>
+      <mat-icon *ngIf="icon1" class="icon-netex {{icon1}}"></mat-icon>
+      <span>{{text1}}</span>
+      <mat-icon *ngIf="icon2" class="icon-netex {{icon2}}"></mat-icon>
+      <span>{{text2}}</span>
     </mat-card-content>
   </div>
-  <div class="card12__buttons">
+  <div *ngIf="buttons" class="card12__buttons">
     <button mat-mini-fab
             class="menu1 fab-secondary"
             color="secondary">

@@ -5,14 +5,23 @@ import { Observable } from 'rxjs';
 
 const DATA = [
 	{
+		checked: false,
+		description: '',
+		state: 'completed'
+	},
+	{
+		checked: true,
 		description: 'Add a competency framework and at least one competency',
 		state: 'completed'
 	},
 	{
+		check: true,
 		description: 'Create a job role and assign it to several people',
-		state: 'current'
+		state: 'current',
+		link: 'link'
 	},
 	{
+		check: true,
 		description: 'Another step to realize',
 		state: 'next'
 	}

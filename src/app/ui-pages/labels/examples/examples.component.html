@@ -3,12 +3,20 @@
 
     <ntx-card-simple title="{{'Label' | uppercase }}"
                       subtitle="{{ '<ntx-label>' }}">
-      <ntx-label text="justificada"></ntx-label>
-      <ntx-label text="bloqueado" color="black"></ntx-label>
-      <ntx-label text="inactivo" color="orange"></ntx-label>
-      <ntx-label text="ausente" color="red"></ntx-label>
-      <ntx-label text="presente" color="blue"></ntx-label>
-      <ntx-label text="retraso" color="lightblue"></ntx-label>
+      <div class="labels-container">
+        <ntx-label text="justificada"></ntx-label>
+        <ntx-label text="bloqueado" color="black"></ntx-label>
+        <ntx-label text="inactivo" color="orange"></ntx-label>
+        <ntx-label text="ausente" color="red"></ntx-label>
+        <ntx-label text="presente" color="blue"></ntx-label>
+        <ntx-label text="retraso" color="lightblue"></ntx-label> 
+        <div style="width:120px">
+          <ntx-label text="lorem ipsum dolor sic amet " color="#333"></ntx-label> 
+        </div> 
+        <div style="width:106px">
+          <ntx-label text="Supercalifragilisticexpialidocious" color="green"></ntx-label> 
+        </div> 
+      </div>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Label error' | uppercase }}"
@@ -18,7 +26,17 @@
 
     <ntx-card-simple title="{{'Label round' | uppercase }}"
                       subtitle="{{ '<ntx-label-round>' }}">
-      <ntx-label-round [labels]=labelRound></ntx-label-round>
+      <div class="labels-container">
+        <ntx-label-round text="6"></ntx-label-round>
+        <ntx-label-round text="26" color="black"></ntx-label-round>
+        <ntx-label-round text="126" color="orange"></ntx-label-round>
+        <div style="width:120px">
+          <ntx-label-round text="lorem ipsum dolor sic amet " color="#333"></ntx-label-round> 
+        </div> 
+        <div style="width:106px">
+          <ntx-label-round text="Supercalifragilisticexpialidocious" color="green"></ntx-label-round> 
+        </div> 
+      </div>
     </ntx-card-simple>
 
   </div>

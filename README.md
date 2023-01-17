@@ -8,6 +8,105 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
+### v.4.4.0: (En progreso)
+
+**Avatars**<br/>
+- Nuevo componente *ntx-simple-avatar*.
+- Nuevo componente *ntx-social-avatar*.
+- Nuevo componente *ntx-social-avatar-bubble*.
+
+**Forms**<br/>
+- Cambios en el css del componente input form (*ntx-form-input*).
+- Cambios en el html y css del componente select (*ntx-form-select*).
+- Nuevo componente select de selección múltiple(*ntx-form-select-multiple*).
+- Modificación del componente *ntx-form-datepicker-range* para que se abran los paneles (datepicker y selector de horas) al    hacer click en los input correspondientes.
+- Cambios en el html y css del componente (*ntx-searchbox-filter-panel*).
+- Cambios en el html y ts del componente (*ntx-form-slidetoggle*).
+
+**Cards**<br/>
+- Nuevo componente *ntx-card21*.
+- Nuevo componente *ntx-card22*.
+- Nuevo componente *ntx-card23*.
+- Modificación componente *ntx-card1*.
+- Modificación componente *ntx-card2*.
+- Modificación componente *ntx-card3*.
+- Modificación componente *ntx-card4*.
+- Modificación componente *ntx-card5* para parametrizar su contenido y añadir skeleton de carga.
+- Modificación componente *ntx-card7* para parametrizar su contenido y añadir skeleton de carga.
+- Modificación componente *ntx-card8* para parametrizar su contenido y añadir skeleton de carga.
+- Modificación componente *ntx-card10* para parametrizar su contenido.
+- Modificación componente *ntx-card12* para parametrizar su contenido.
+- Modificación componente *ntx-card13* para parametrizar su contenido.
+- Modificación componente *ntx-card14* para parametrizar su contenido.
+- Modificación componente *ntx-card15* y añadir skeleton de carga.
+- Modificación componente *ntx-card16* para parametrizar su contenido y añadir skeleton de carga.
+- Modificación componente *ntx-card17* añadir skeleton de carga y estado disabled.
+- Modificación componente *ntx-card18* añadir skeleton de carga y estado disabled.
+- Modificación componente *ntx-card19* añadir skeleton de carga, estado disabled y dos nuevas clases de diseño.
+- Modificación componente *ntx-card20* añadir estado disabled.
+
+**Buttons**<br/>
+- Modificación del componente *ntx-raised-button* parametrizando color y borde.
+- Modificación del componente *ntx-icon-button* parametrizando color y borde.
+- Modificación del componente *ntx-raised-round-button* parametrizando la posición del icono y los colores.
+- Modificación del componente *ntx-mini-fab-button* parametrizando icono y colores.
+- Modificación del componente *ntx-raised-round-button* añadiendo un estado 'loading' que muestre un spinner.
+- Modificación del componente *ntx-stroked-button* parametrizándolo correctamente.
+- Modificación del componente *ntx-stroked-icon-button* parametrizándolo correctamente.
+- Modificación del componente *ntx-stroked-toggle-button* parametrizándolo correctamente.
+- Nuevo componente *ntx-google-signin-button*
+- Nuevo componente *ntx-teams-signin-button*
+- Nuevo componente *ntx-zoom-signin-button*
+
+**New icons**<br/>
+- icon-user-generic-line
+- icon-sort
+- icon-envelope-dot
+- icon-calendar-check
+- icon-order-horizontally
+- icon-palette-color
+- icon-palette-color-solid
+- icon-flag-czech-republic
+- icon-flag-holland
+- icon-flag-poland
+- icon-flag-romania
+- icon-flag-russia
+- icon-flag-slovakia
+- icon-flag-turkey
+- icon-switch-off 
+- icon-switch-on
+- icon-heart-solid
+- icon-carrusel
+
+**Menus**<br/>
+- Modificación componente *ntx-menu-toolbar-profile* simplificando la parametrización, añadiendo responsividad y un estado loading.
+- Modificación componente *ntx-menu-toolbar-dashboard* añadiendo un estado loading.
+
+**Expansion panels**<br/>
+- Nuevo componente expansion panel 2 (*ntx-expansion-panel2*)
+
+**Lists**<br/>
+- Cambios en el html del componente (*ntx-list-two-lines-avatar*).
+- Cambios en el html y css del componente (*ntx-list5*).
+
+**Tables**<br/>
+- Cambios en el html y css del componente (*ntx-selectable-table*).
+
+**Toolbars**<br/>
+- Cambios en el html y css del componente (*ntx-toolbar-searchbox*).
+- Cambios en el html del componente (*ntx-toolbar*) para actualizar el menu de perfil.
+- Cambios en el html del componente (*ntx-toolbar-back*) para actualizar el menu de perfil.
+- Cambios en el html del componente (*ntx-toolbar-back-tabs*) para actualizar el menu de perfil.
+- Nuevo componente toolbar tabs one line (*ntx-toolbar-tabs-one-line*).
+
+**Menus**<br/>
+- Cambios en el html y css del componente (*ntx-autocomplete-chip*) para añadir tooltips a las opciones del menú.
+
+**Labels**<br/>
+- Cambios en el componente ntx-label *ntx-label*: Se parametriza el color y se hace adaptativo al padre.
+- Cambios en el componente ntx-label *ntx-label-round*: Se parametriza el color y se hace adaptativo al padre.
+------------------
+
 ### v.4.3.3:
 
 **Dialogs**<br/>

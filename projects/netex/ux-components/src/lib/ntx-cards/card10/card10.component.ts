@@ -10,7 +10,13 @@ import { FormControl } from '@angular/forms';
 export class Card10Component implements OnInit {
 
 	@Output() close = new EventEmitter();
-	
+
+	@Input() number: boolean;
+	@Input() title: string;
+	@Input() description: string;
+	@Input() progress: boolean;
+	@Input() disabled: boolean;
+
 	constructor() { }
 
 	ngOnInit() {}

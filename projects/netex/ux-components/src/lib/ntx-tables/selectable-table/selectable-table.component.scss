@@ -67,6 +67,11 @@ $block: "table-selectable";
     }
     .mat-cell {
       background-color: $color-white;
+      .mat-cell__text{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
 
     .mat-header-cell:first-of-type,

@@ -1,4 +1,4 @@
-<mat-card class="card4">
+<mat-card class="card4" [ngClass]="{'disabled': disabled}">
   <mat-card-content>
     <div mat-card-avatar class="card4__image" alt="Image">
       <img *ngIf="image" class="utils--vertical-align" src="{{image}}">

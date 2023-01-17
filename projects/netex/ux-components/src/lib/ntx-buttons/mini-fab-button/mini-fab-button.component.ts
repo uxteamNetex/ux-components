@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MiniFabButtonComponent implements OnInit {
 
 	@Input() color: string;
+	@Input() bgColor: string;
 	@Input() disabled: string;
 	@Input() iconName: string;
 	@Input() text: string;

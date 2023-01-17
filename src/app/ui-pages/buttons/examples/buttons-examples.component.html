@@ -1,21 +1,33 @@
 <div class="page-layout">
   <div class="page-container">
 
-    <ntx-card-simple title="{{'Stroked buttons' | uppercase }}"
-                      subtitle="{{ '<ntx-stroked-button>' }}"
-                      class="white-content">
-      <ntx-stroked-button [item3] ="strokedButton"></ntx-stroked-button>
+    <ntx-card-simple 
+      title="{{'Stroked buttons' | uppercase }}"
+      subtitle="{{ '<ntx-stroked-button>' }}">
+        <ntx-stroked-button title="aceptar" color="#1AA9E2"></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#1AA9E2" disabled></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#9B2761"></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#9B2761" disabled></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#412890"></ntx-stroked-button>
+        <ntx-stroked-button title="aceptar" color="#412890" disabled></ntx-stroked-button>
     </ntx-card-simple>
 
-    <ntx-card-simple title="{{'Icon stroked buttons' | uppercase }}"
-                      subtitle="{{ '<ntx-stroked-icon-button>' }}"
-                      class="white-content">
-      <ntx-stroked-icon-button [item] ="strokedIconButton"></ntx-stroked-icon-button>
+    <ntx-card-simple 
+      title="{{'Icon stroked buttons' | uppercase }}"
+      subtitle="{{ '<ntx-stroked-icon-button>' }}">
+        <ntx-stroked-icon-button showIconLeft="true" icon="icon-pencil" title="edit" color="#199AA8"></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconLeft="true" icon="icon-pencil" title="edit" color="#199AA8" disabled></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconRight="true" icon="icon-download" title="download" color="#B182A6"></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconRight="true" icon="icon-download" title="download" color="#B182A6" disabled></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconRight="true" icon="icon-arrow-right" title="next" color="#5cce88"></ntx-stroked-icon-button>
+        <ntx-stroked-icon-button showIconRight="true" icon="icon-arrow-right" title="next" color="#5cce88" disabled></ntx-stroked-icon-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Icon toggle buttons' | uppercase }}"
                       subtitle="{{ '<ntx-stroked-toggle-button>' }}">
-      <ntx-stroked-toggle-button></ntx-stroked-toggle-button>
+      <ntx-stroked-toggle-button color="#199AA8" iconLeft="icon-chevron-left" iconRight="icon-chevron-right"></ntx-stroked-toggle-button>
+      <ntx-stroked-toggle-button color="#5cce88" iconLeft="icon-caret-left" iconRight="icon-caret-right"></ntx-stroked-toggle-button>
+      <ntx-stroked-toggle-button color="#D65292" iconLeft="icon-arrow-back" iconRight="icon-arrow-right"></ntx-stroked-toggle-button>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Text buttons' | uppercase }}"
@@ -40,42 +52,58 @@
                       title="{{type.label + ' buttons' | uppercase }}"
                       subtitle="{{ type.selector }}">
       <div *ngIf="type.label==='raised'">
-          <ntx-raised-button [color]="'primary'">Button</ntx-raised-button>
-          <ntx-raised-button [color]="'primary'" [disabled]="'true'">Link</ntx-raised-button>
-          <ntx-raised-button [color]="'accent'">Action</ntx-raised-button>
-          <ntx-raised-button [color]="'accent'" [disabled]="'true'">Action</ntx-raised-button>
+          <ntx-raised-button title="Button" color="black"></ntx-raised-button>
+          <ntx-raised-button title="Button" color="black" disabled></ntx-raised-button>
+          <ntx-raised-button title="Button" color="#1AA9E2"></ntx-raised-button>
+          <ntx-raised-button title="Button" color="#1AA9E2" disabled></ntx-raised-button>
+          <ntx-raised-button title="Button" color="rgb(214, 82, 146)"></ntx-raised-button>
+          <ntx-raised-button title="Button" color="rgb(214, 82, 146)" disabled></ntx-raised-button>
+          <ntx-raised-button title="Button" color="#412890"></ntx-raised-button>
+          <ntx-raised-button title="Button" color="#412890" disabled></ntx-raised-button>
       </div>
       <div *ngIf="type.label==='icon raised'">
         <ntx-raised-icon-button [item] ="raisedIconButton"></ntx-raised-icon-button>
       </div>
-      <div *ngIf="type.label==='raised round'" class="utils--flex">
-        <ntx-raised-round-button icon="icon-pencil" text="edit" color="primary"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button text="button" color="primary"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-pencil" color="primary"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button text="link" color="primary" disabled="true"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-plus" text="action" color="violet"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-plus" color="violet"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-send" text="action" color="green"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-send" color="green"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-home" text="action" color="accent"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-home" color="accent"></ntx-raised-round-button>
-        <div class="utils--margin-left-12"></div>
-        <ntx-raised-round-button icon="icon-home" color="accent" disabled="true"></ntx-raised-round-button>
+      <div *ngIf="type.label==='raised round'">
+        <div class="utils--margin-bottom-24">
+          <mat-slide-toggle [(ngModel)]="isLoading">{{isLoading?'Slide to hide loading state':'Slide to see loading state'}}</mat-slide-toggle>
+        </div>
+        <div class="utils--flex">
+          <ntx-raised-round-button iconRight="icon-search" text="buscar" color="black" [loading]="isLoading" (clickButton)="onClickButton(btn1)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button iconLeft="icon-pencil" text="edit" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn2)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button text="button" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn3)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button icon="icon-pencil" color="primary" [loading]="isLoading" (clickButton)="onClickButton(btn4)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button text="link" color="primary" [disabled]="true" [loading]="isLoading" (clickButton)="onClickButton(btn5)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button iconRight="icon-plus" text="action" color="violet" [loading]="isLoading" (clickButton)="onClickButton(btn6)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button icon="icon-plus" color="violet" [loading]="isLoading" (clickButton)="onClickButton(btn7)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button icon="icon-send" text="action" color="green" [loading]="isLoading" (clickButton)="onClickButton(btn8)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button icon="icon-send" color="green" [loading]="isLoading" (clickButton)="onClickButton(btn9)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button  icon="icon-home" text="action" color="accent" [loading]="isLoading" (clickButton)="onClickButton(btn10)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button  icon="icon-home" color="accent" [loading]="isLoading" (clickButton)="onClickButton(btn11)"></ntx-raised-round-button>
+          <div style="margin-left:16px;"></div>
+          <ntx-raised-round-button  iconRight="icon-arrow-right" text="comenzar" color="white" [loading]="isLoading" (clickButton)="onClickButton(btn13)"></ntx-raised-round-button>
+        </div>
       </div>
       <div *ngIf="type.label==='icon'">
-          <ntx-icon-button text = "Let's talk" iconName = "icon-chat-bubble" [color]="'primary'"></ntx-icon-button>
-          <ntx-icon-button text = "Link" iconName = "icon-editor-linker-option" [color]="'primary'" [disabled]="'true'"></ntx-icon-button>
-          <ntx-icon-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-icon-button>
-          <ntx-icon-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button text = "LearningCloud" iconName = "icon-logo-cloud" color="#F5AF2E" showBorder></ntx-icon-button>
+          <ntx-icon-button text = "Twitter" iconName = "icon-logo-twitter" color="#00acee" ></ntx-icon-button>
+          <ntx-icon-button text = "Recycling is cool" iconName = "icon-recycle" color="#33691E" showBorder></ntx-icon-button>
+          <ntx-icon-button text = "Facebook" iconName = "icon-logo-facebook" color="#3b5998" ></ntx-icon-button>
+          <ntx-icon-button text = "Export" iconName = "icon-export-solid" color="#666" showBorder></ntx-icon-button>
+          <ntx-icon-button text = "Bookmark" iconName = "icon-bookmark-solid" showBorder></ntx-icon-button>
+          <ntx-icon-button text = "Configuración" iconName = "icon-gear-solid" [disabled]="'true'"></ntx-icon-button>
+          <ntx-icon-button text = "Corazón partío" iconName = "icon-heart-off" color="#FF91AF" showBorder></ntx-icon-button>
+
       </div>
       <div *ngIf="type.label==='fab'">
           <ntx-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-fab-button>
@@ -84,10 +112,16 @@
           <ntx-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-fab-button>
       </div>
       <div *ngIf="type.label==='mini fab'">
-          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" [color]="'primary'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" [color]="'primary'" [disabled]="'true'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button text = "Download" iconName = "icon-download" [color]="'accent'"></ntx-mini-fab-button>
-          <ntx-mini-fab-button text = "Cloud" iconName = "icon-cloud" [color]="'accent'" [disabled]="'true'"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" color="white" bgColor="#1aa9e2"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Add" iconName = "icon-plus" color="white" bgColor="#1aa9e2" disabled></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" color="black"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like" iconName = "icon-heart" color="black" disabled></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Download" iconName = "icon-download" color="white" bgColor="#D65292"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Download" iconName = "icon-download" color="white" bgColor="#D65292" disabled></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Search" iconName = "icon-search" color="white" bgColor="black"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Search" iconName = "icon-search" color="white" bgColor="black" disabled></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like-off" iconName = "icon-heart-off" color="red"></ntx-mini-fab-button>
+          <ntx-mini-fab-button text = "Like-off" iconName = "icon-heart-off" color="red" disabled></ntx-mini-fab-button>
       </div>
       <div *ngIf="type.label==='rectangular'">
         <ntx-rectangular-button icon="icon-file" text="action"></ntx-rectangular-button>

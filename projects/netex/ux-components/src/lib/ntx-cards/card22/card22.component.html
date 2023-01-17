@@ -1,0 +1,14 @@
+<mat-card class="card22" [ngClass]="{'disabled': disabled}">
+  <mat-card-content>
+    <div class="card22__title">
+      <span *ngIf="title" class="card22__title--text" matTooltip="{{title}}">{{title}}</span>
+    </div>
+    <div class="card22__subtitle">
+      <span *ngIf="subtitle" class="card22__subtitle--text" matTooltip="{{subtitle}}">{{subtitle}}</span>
+    </div>
+    <mat-icon *ngIf="icon" matTooltip="{{icon}}" class="icon-netex {{iconName}} card22__icon"></mat-icon>
+  </mat-card-content>
+  <div class="card22__image">
+    <img *ngIf="image" src="{{image}}" alt="Card image">
+  </div>
+</mat-card>

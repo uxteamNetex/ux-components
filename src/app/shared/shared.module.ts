@@ -17,7 +17,8 @@ import {
 	MatExpansionModule,
 	MatFormFieldModule,
 	MatSnackBarModule,
-	MatRadioModule
+	MatRadioModule,
+	MatSlideToggleModule
 } from '@angular/material';
 
 import {
@@ -42,7 +43,8 @@ import {
 	NtxEmptyPagesModule,
 	NtxSnackbarsModule,
 	NtxImagesSliderModule,
-	NtxExpansionPanelsModule
+	NtxExpansionPanelsModule,
+	NtxAvatarsModule
 } from '@netex/ux-components';
 
 import { AppRoutingModule } from '../app-routing.module';
@@ -69,6 +71,7 @@ import { FormsModule } from '@angular/forms';
 		MatExpansionModule,
 		MatFormFieldModule,
 		MatSnackBarModule,
+		MatSlideToggleModule,
 		MatRadioModule,
 		FormsModule
 	],
@@ -80,6 +83,7 @@ import { FormsModule } from '@angular/forms';
 		MatToolbarModule,
 		MatTableModule,
 		MatSidenavModule,
+		MatSlideToggleModule,
 		MatTabsModule,
 		PortalModule,
 		HeaderComponent,
@@ -110,7 +114,8 @@ import { FormsModule } from '@angular/forms';
 		NtxSnackbarsModule,
 		FormsModule,
 		NtxImagesSliderModule,
-		NtxExpansionPanelsModule
+		NtxExpansionPanelsModule,
+		NtxAvatarsModule
 	],
 	declarations: [
 		HeaderComponent,

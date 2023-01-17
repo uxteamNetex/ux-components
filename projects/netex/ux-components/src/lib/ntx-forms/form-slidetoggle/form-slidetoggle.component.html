@@ -3,5 +3,5 @@
   [color]="'primary'"
   [checked]="checked"
   [disabled]="disabled">
-    Slide me!
+    <span *ngIf="showText">{{showText}}</span>
 </mat-slide-toggle>

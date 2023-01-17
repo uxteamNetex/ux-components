@@ -28,6 +28,7 @@ import { InputNoLabelComponent } from './input-no-label/input-no-label.component
 import { TextareaNoLabelComponent } from './textarea-no-label/textarea-no-label.component';
 import { SearchboxFilterPanelComponent } from './searchbox-filter-panel/searchbox-filter-panel.component';
 import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
+import { FormSelectMultipleComponent } from './form-select-multiple/form-select-multiple.component';
 
 @NgModule({
 	imports: [
@@ -59,6 +60,7 @@ import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 		FormSearchboxComponent,
 		FormSearchboxBackgroundComponent,
 		FormSelectThinComponent,
+		FormSelectMultipleComponent,
 		FormInputAutocompleteComponent,
 		SearchboxFilterPanelComponent
 	],
@@ -81,6 +83,7 @@ import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 		FormSelectButtonComponent,
 		FormSelectNoBorderComponent,
 		FormSelectBorderButtonComponent,
+		FormSelectMultipleComponent,
 		FormInputNoLabelComponent,
 		InputNoLabelComponent,
 		FormSearchboxComponent,

@@ -1,0 +1,14 @@
+<mat-toolbar class="toolbar-tabs-one-line">
+  <div *ngIf="image" class="toolbar-tabs-one-line__logo">
+    <img src="{{image}}" alt="{{imageText}}">
+  </div>
+  <ntx-tabs-navigation></ntx-tabs-navigation>
+
+  <span class="toolbar-tabs-one-line__spacer"></span>
+
+  <button mat-icon-button class="toolbar-tabs-one-line__btn">
+    <mat-icon class="icon-netex icon-gear-solid"></mat-icon>
+  </button>
+  <ntx-menu-toolbar-profile isLoaded="true" [user]="mtp1User" [options]="mtp1Options"></ntx-menu-toolbar-profile>
+  <ntx-menu-toolbar-dashboard [apps]="apps"></ntx-menu-toolbar-dashboard>
+</mat-toolbar>

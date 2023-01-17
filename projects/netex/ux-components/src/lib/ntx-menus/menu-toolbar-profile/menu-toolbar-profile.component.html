@@ -4,12 +4,11 @@
   [matMenuTriggerFor]="menuOptions"
   (click)="$event.stopPropagation()">
     <div class="profile-menu-image">
-      <img class="utils--vertical-align" src="{{userImage}}" matTooltip="{{userName}}" alt="{{userName}}">
+      <img class="utils--vertical-align" src="{{user.avatar}}" matTooltip="{{user.fullname}}" alt="{{user.fullname}}">
     </div>
-    <span *ngIf="showBadge" class="menu-option-button__badge"
+    <span *ngIf="user.badge" class="menu-option-button__badge"
       matBadgeOverlap="false"
-      matBadge="2"
-      matBadgeHidden="false"
+      matBadge="{{user.badge}}"
       matBadgeSize="small"
       matBadgePosition="below">
   </span>
@@ -17,38 +16,52 @@
 
 <mat-menu #menuOptions="matMenu" [overlapTrigger]="false" class="mat-menu-options mat-menu-toolbar-profile">
 
-  <div *ngFor="let item of actions">
-    <mat-list *ngIf="item.showUserInfo" class="mat-menu-options__user-info">
-      <mat-list-item class="mat-menu-options__user-info--item">
-        <div matListAvatar class="mat-menu-options__user-info--logo">
-          <img class="utils--vertical-align" src="{{item.logo}}" alt="{{item.logoName}}">
-        </div>
-        <h4 mat-line matTooltip="{{item.title}}" class="mat-menu-options__user-info--title">{{item.title}}</h4>
-        <p mat-line class="mat-menu-options__user-info--subtitle"> {{item.subtitle}} </p>
-        <a matLine href="{{item.url}}" class="mat-menu-options__user-info--link">{{item.link}}</a>
-        <div class="mat-menu-options__user-info--image">
-          <img class="utils--vertical-align" src="{{item.image}}" alt="{{item.title}}">
-        </div>
-      </mat-list-item>
-    </mat-list>
+  <div>
 
-    <button *ngIf="item.showButton" mat-menu-item class="mat-menu-options__custom-app">
-      <span class="mat-menu-options__custom-app--text">{{item.titleButton}}</span>
-      <div class="mat-menu-options__custom-app--image">
-        <img class="utils--vertical-align" src="{{item.imageButton}}" alt="{{item.titleButton}}">
+      <mat-list class="mat-menu-options__user-info">
+        <mat-list-item class="mat-menu-options__user-info--item">
+          <div matListAvatar class="mat-menu-options__user-info--logo">
+            <img class="utils--vertical-align" src="{{user.companyLogo}}" alt="{{user.companyName}}">
+          </div>
+          <h4 mat-line matTooltip="{{user.fullname}}" class="mat-menu-options__user-info--title utils--truncate">{{user.fullname}}</h4>
+          <p mat-line class="mat-menu-options__user-info--subtitle utils--truncate">{{user.username}}</p>
+          <a matLine href="{{user.link}}" class="mat-menu-options__user-info--link utils--truncate">{{user.linkLabel}}</a>
+          <div class="mat-menu-options__user-info--image utils--margin-left-20">
+            <img class="utils--vertical-align" src="{{user.avatar}}" alt="{{user.fullname}}">
+          </div>
+        </mat-list-item>
+      </mat-list>
+      
+      <button *ngIf="mainOption" mat-menu-item class="mat-menu-options__custom-app">
+        <span class="mat-menu-options__custom-app--text">{{mainOption.label}}</span>
+        <div class="mat-menu-options__custom-app--image">
+          <img class="utils--vertical-align" src="{{mainOption.img}}" alt="{{mainOption.label}}">
+        </div>
+      </button>
+  
+      <mat-divider></mat-divider>
+  
+      <div *ngIf="isLoaded">
+        <button *ngFor="let option of options" mat-menu-item class="mat-menu-options__menu-item">
+            <span class="mat-menu-options__text-item">{{option.label}}</span>
+            <span *ngIf="option.badge"
+                  class="mat-menu-options__text-item"
+                  matBadgeOverlap="false"
+                  [matBadge]="option.badge"
+                  matBadgeSize="small"></span>
+        </button>
       </div>
+
+      <div *ngIf="isLoading" class="utils--flex-center utils--padding-16">
+        <div class="loader"></div>
+      </div>
+
+    <mat-divider></mat-divider>
+
+    <button mat-menu-item class="mat-menu-options__menu-item">
+      <span class="mat-menu-options__text-item">Salir</span>
     </button>
 
-    <button *ngIf="item.showMenuOption" mat-menu-item class="mat-menu-options__menu-item">
-      <span class="mat-menu-options__text-item">{{item.menuOptionText}}</span>
-      <span *ngIf="item.showMenuOptionBadge"
-            class="mat-menu-options__text-item"
-            matBadgeOverlap="false"
-            [matBadge]="29"
-            [matBadgeHidden]="false"
-            matBadgeSize="small"></span>
-    </button>
-    <mat-divider *ngIf="item.showDivider"></mat-divider>
   </div>
 
 </mat-menu>

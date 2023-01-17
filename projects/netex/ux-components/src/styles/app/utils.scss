@@ -126,7 +126,7 @@ $block: "utils";
 
 	&--truncate1 {
     display: -webkit-box;
-    max-width: max-content;
+    // max-width: max-content;
     overflow: hidden;
     word-break: break-word;
     -webkit-line-clamp: 1;
@@ -163,12 +163,24 @@ $block: "utils";
     top: 50%;
   }
 
+  &--horizontal-align {
+    left: 50%;
+    margin-right: -50% !important;
+    padding: 0;
+    position: absolute;
+    transform: translate(-50%, 0%);
+  }
+
   &--align-center-text {
     text-align: center;
   }
 
   &--centered {
     @include centerer;
+  }
+
+  &--lineclamp-1 {
+    @include ellipsis(1);
   }
 
   &--lineclamp-2 {
@@ -184,6 +196,18 @@ $block: "utils";
     align-items: center !important;
     display: flex !important;
     justify-content: center !important;
+  }
+  &--flex {
+    display: flex !important;
+  }
+  &--flex-between {
+    align-items: center;
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &--flex-column {
+    display: flex !important;
+    flex-direction: column;
   }
 
   //Tamaños fuente
@@ -804,14 +828,17 @@ $block: "utils";
   &--w-48 {
     width: $tableOptionsColumnWidth;
   }
+}
 
-  //Layouts
-  &--flex {
-    display: flex !important;
-  }
-  &--flex-center {
-    align-items: center !important;
-    display: flex !important;
-    justify-content: center !important;
-  }
+.loader {
+  border: 2px solid $color-white;
+  border-top: 2px solid $color-grey-700;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

@@ -1,10 +1,16 @@
 <div class="page-layout">
   <div class="page-container">
 
-    <mat-grid-list #grid rowHeight="120px">
+    <mat-grid-list #grid rowHeight="120px" gutterSize="0">
 
-      <mat-grid-tile *ngFor="let item of counter(16)">
-        <ntx-card7></ntx-card7>
+      <mat-grid-tile *ngFor="let item of card7">
+        <ntx-card7
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [options]="item.options"
+          [disabled]="item.disabled"
+          [selected]="item.selected"
+        ></ntx-card7>
       </mat-grid-tile>
 
     </mat-grid-list>

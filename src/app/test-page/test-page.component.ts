@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 import { MatGridList } from '@angular/material';
 
@@ -8,30 +8,12 @@ import { MatGridList } from '@angular/material';
 	styleUrls: ['./test-page.component.scss']
 })
 export class TestPageComponent implements OnInit {
-	showAlert: boolean = true;
 
-	@ViewChild('grid') grid: MatGridList;
-
-	gridByBreakpoint = {
-		'ntx.xl': 3,
-		'ntx.lg': 2,
-		'ntx.md': 2,
-		'ntx.sm': 2,
-		'ntx.xs': 1
-	};
-
-	constructor(private observableMedia: ObservableMedia) {}
+	constructor() {}
 
 	ngOnInit() {}
 
-	toggleAlert(): void {
-		this.showAlert = !this.showAlert;
-	}
-
-	ngAfterContentInit() {
-		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
-			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
-		});
-	}
-
+	src_1 = 'assets/images/user_female_01.jpg';
+	src_2 = 'assets/images/user_male_01.png';
+	src_3 = 'assets/images/user_female_02.jpg';
 }

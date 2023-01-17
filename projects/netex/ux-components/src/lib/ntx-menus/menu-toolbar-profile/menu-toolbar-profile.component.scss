@@ -38,13 +38,14 @@
 
 $block: "mat-menu-options";
 //Desplegable
-.mat-menu-panel{
+.#{$block}.mat-menu-panel{
+  min-width: 320px;
+  max-width: 384px;
+  width: 384px;
   &.mat-menu-options{
     &.mat-menu-toolbar-profile{
       border-radius: 4px;
       box-shadow: $shadow;
-      max-width: 384px;
-      min-width: 384px;
       text-align: center;
       .#{$block}__button{
         .mat-stroked-button{
@@ -77,15 +78,21 @@ $block: "mat-menu-options";
                 font-size: 16px;
                 line-height: 18px;
                 margin-bottom: 4px;
+                width: 100%;
+                text-align: initial;
               }
               .#{$block}__user-info--subtitle{
                 color: $color-grey-600;
                 font-family: Lato;
                 margin-bottom: 4px;
+                width: 100%;
+                text-align: initial;
               }
               .#{$block}__user-info--link{
                 color: $color-primary;
                 font-family: Lato;
+                width: 100%;
+                text-align: initial;
               }
             }
             .#{$block}__user-info--image{
@@ -106,14 +113,13 @@ $block: "mat-menu-options";
         }
       }
 
-
       .#{$block}__custom-app{
         align-items: center;
         background-color: $color-talentcloud;
         display: flex;
         height: 100px;
         justify-content: space-between;
-        margin-bottom: 8px;
+        margin-bottom: -8px;
         padding: 0 0 0 24px;
         .#{$block}__custom-app--text{
           color: $color-white;

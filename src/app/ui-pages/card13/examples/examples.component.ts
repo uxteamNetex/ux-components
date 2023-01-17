@@ -8,7 +8,7 @@ import { MatGridList } from '@angular/material';
 	styleUrls: ['./examples.component.scss'],
 	encapsulation: ViewEncapsulation.None
 })
-export class ExamplesComponent implements AfterContentInit {
+export class ExamplesComponent implements OnInit, AfterContentInit {
 	@ViewChild('grid') grid: MatGridList;
 
 	gridByBreakpoint = {
@@ -19,19 +19,52 @@ export class ExamplesComponent implements AfterContentInit {
 		'ntx.xs': 1
 	};
 
+	card13: any[] = [];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
-	// tslint:disable-next-line:use-life-cycle-interface
-	ngOnInit() {}
+	ngOnInit() {
+
+		this.card13 = [
+			{
+				title: '',
+				subtitle: '',
+				checkbox: '',
+				select: '',
+			},
+			{
+				title: 'Disabled state: Card title that could not be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle with a very long text in two lines and three dots to see how it looks like in the card',
+				checkbox: 'true',
+				select: 'true',
+				disabled: true
+			},
+			{
+				title: 'Card title that could not be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle',
+				checkbox: '',
+				select: 'true',
+			},
+			{
+				title: 'Card title that could not be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle with a very long text in two lines and three dots to see how it looks like in the card',
+				checkbox: 'true',
+				select: 'true',
+			},
+			{
+				title: 'Card title',
+				subtitle: 'Subtitle',
+				checkbox: 'true',
+				select: 'true',
+			}
+		];
+
+	}
 
 	ngAfterContentInit() {
 		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
 			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
 		});
-	}
-
-	counter(i: number) {
-		return new Array(i);
 	}
 
 }

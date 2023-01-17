@@ -30,6 +30,10 @@ import { Card17Component } from './card17/card17.component';
 import { Card18Component } from './card18/card18.component';
 import { Card19Component } from './card19/card19.component';
 import { Card20Component } from './card20/card20.component';
+import { Card21Component } from './card21/card21.component';
+import { Card22Component } from './card22/card22.component';
+import { Card23Component } from './card23/card23.component';
+import { Card24Component } from './card24/card24.component';
 
 
 @NgModule({
@@ -65,7 +69,11 @@ import { Card20Component } from './card20/card20.component';
 		Card17Component,
 		Card18Component,
 		Card19Component,
-		Card20Component
+		Card20Component,
+		Card21Component,
+		Card22Component,
+		Card23Component,
+		Card24Component
 	],
 	exports: [
 		CardSimpleComponent,
@@ -87,7 +95,11 @@ import { Card20Component } from './card20/card20.component';
 		Card17Component,
 		Card18Component,
 		Card19Component,
-		Card20Component
+		Card20Component,
+		Card21Component,
+		Card22Component,
+		Card23Component,
+		Card24Component
 	]
 })
 export class NtxCardsModule { }

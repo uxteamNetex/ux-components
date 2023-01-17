@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { MatCheckboxChange } from '@angular/material';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
 	selector: 'ntx-card7',
@@ -8,13 +7,6 @@ import { MatCheckboxChange } from '@angular/material';
 	encapsulation: ViewEncapsulation.None
 })
 export class Card7Component implements OnInit {
-
-	data: any = {
-		title: 'Competency title with a very long text',
-		description: 'Description in a few words that could be one or two lines maximum and then three dots'
-	};
-
-	selected: boolean;
 
 	menuOptionsAdvanced: {
 		icon: string;
@@ -30,6 +22,12 @@ export class Card7Component implements OnInit {
 			click: () => void;
 		}[];
 	};
+
+	@Input() title: string;
+	@Input() subtitle: string;
+	@Input() options: boolean;
+	@Input() disabled: boolean;
+	@Input() selected: boolean;
 
 	constructor() { }
 

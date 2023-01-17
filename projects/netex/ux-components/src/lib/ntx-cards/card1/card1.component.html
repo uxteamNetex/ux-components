@@ -1,4 +1,4 @@
-<mat-card class="card1">
+<mat-card class="card1" [ngClass]="{'disabled': disabled}">
   <mat-card-content>
     <div *ngIf="options" class="card1__options">
       <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>

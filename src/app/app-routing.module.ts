@@ -9,6 +9,10 @@ const routes: Routes = [
 		component: HomePageComponent
 	},
 	{
+		path: 'avatars',
+		loadChildren: './ui-pages/avatars/avatars.module#AvatarsModule'
+	},
+	{
 		path: 'buttons',
 		loadChildren: './ui-pages/buttons/buttons.module#ButtonsModule'
 	},
@@ -91,6 +95,22 @@ const routes: Routes = [
 	{
 		path: 'card20',
 		loadChildren: './ui-pages/card20/card20.module#Card20Module'
+	},
+	{
+		path: 'card21',
+		loadChildren: './ui-pages/card21/card21.module#Card21Module'
+	},
+	{
+		path: 'card22',
+		loadChildren: './ui-pages/card22/card22.module#Card22Module'
+	},
+	{
+		path: 'card23',
+		loadChildren: './ui-pages/card23/card23.module#Card23Module'
+	},
+	{
+		path: 'card24',
+		loadChildren: './ui-pages/card24/card24.module#Card24Module'
 	},
 	{
 		path: 'cards',
@@ -295,6 +315,10 @@ const routes: Routes = [
 	{
 		path: 'version433',
 		loadChildren: './ui-pages/version433/version433.module#Version433Module'
+	},
+	{
+		path: 'version440',
+		loadChildren: './ui-pages/version440/version440.module#Version440Module'
 	},
 	{ path: '',
 		redirectTo: '/home',

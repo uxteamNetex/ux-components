@@ -9,6 +9,7 @@ export class RaisedButtonComponent implements OnInit {
 
 	@Input() color: string;
 	@Input() disabled: string;
+	@Input() title: string;
 
 	constructor() { }
 

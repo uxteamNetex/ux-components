@@ -1,34 +1,9 @@
 <div class="page-layout">
-  <mat-toolbar *ngIf="showAlert">
-    <h2>Material Baseline</h2>
-    <button
-      mat-button
-      mat-icon-button
-      (click)="toggleAlert()">
-        <mat-icon class="icon-netex icon-cross utils--text-grey-600"></mat-icon>
-    </button>
-  </mat-toolbar>
-
   <div class="page-container">
-
-    <mat-grid-list #grid rowHeight="252px" gutterSize="0">
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
-        <ntx-card1></ntx-card1>
-      </mat-grid-tile>
-
-    </mat-grid-list>
-
+    <div class="label-container">
+      <ntx-social-avatar-bubble [src]="src_1" label="Naomi"></ntx-social-avatar-bubble>
+      <ntx-social-avatar-bubble [src]="src_2" label="Mark"></ntx-social-avatar-bubble>
+      <ntx-social-avatar-bubble [src]="src_3" label="Mackenzie Lorem" active></ntx-social-avatar-bubble>
+    </div>
   </div>
 </div>
-
-
-

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-examples',
-  templateUrl: './examples.component.html',
-  styleUrls: ['./examples.component.scss']
+	selector: 'app-examples',
+	templateUrl: './examples.component.html',
+	styleUrls: ['./examples.component.scss']
 })
 export class ExamplesComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() { }
+	ngOnInit() { }
 
   rbgData_1 = [
     {
@@ -94,6 +94,21 @@ export class ExamplesComponent implements OnInit {
       active: true
     },
 
+  ];
+
+  selectOptions = [
+    {
+      label:'Option 1',
+      value: 1
+    },
+    {
+      label:'Option 2',
+      value: 2
+    },
+    {
+      label:'Option 3',
+      value: 3
+    },
   ];
 
 }

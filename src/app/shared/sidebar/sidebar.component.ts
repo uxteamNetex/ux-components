@@ -3,6 +3,7 @@ import { SidenavService } from '../services/sidenav.service';
 import { TabsHeaderService } from '../services/tabs-header.service';
 
 const LINKS = [
+	'avatars',
 	'buttons',
 	'cards-catalog',
 	'chips',
@@ -136,6 +137,10 @@ const WHATSNEWS = [
 	{
 		linkName: 'version433',
 		label: 'version 4.3.3'
+	},
+	{
+		linkName: 'version440',
+		label: 'version 4.4.0'
 	}
 ];
 

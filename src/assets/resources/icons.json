@@ -81,6 +81,9 @@
             "className": "icon-calendar"
         },
         {
+            "className": "icon-calendar-check"
+        },
+        {
             "className": "icon-camera"
         },
         {
@@ -102,7 +105,13 @@
             "className": "icon-caret-up"
         },
         {
+            "className": "icon-carrusel"
+        },
+        {
             "className": "icon-channel"
+        },
+        {
+            "className": "icon-chart-solid"
         },
         {
             "className": "icon-chat-bubble"
@@ -531,6 +540,9 @@
             "className": "icon-envelope"
         },
         {
+            "className": "icon-envelope-dot"
+        },
+        {
             "className": "icon-envelope-solid"
         },
         {
@@ -640,6 +652,9 @@
         },
         {
             "className": "icon-heart-off"
+        },
+        {
+            "className": "icon-heart-solid"
         },
         {
             "className": "icon-home"
@@ -771,10 +786,19 @@
             "className": "icon-open-book"
         },
         {
+            "className": "icon-order-horizontally"
+        },
+        {
             "className": "icon-orderby"
         },
         {
             "className": "icon-organisation-chart"
+        },
+        {
+            "className": "icon-palette-color"
+        },
+        {
+            "className": "icon-palette-color-solid"
         },
         {
             "className": "icon-paperclip"
@@ -891,6 +915,9 @@
             "className": "icon-smile"
         },
         {
+            "className": "icon-sort"
+        },
+        {
             "className": "icon-speaker"
         },
         {
@@ -901,6 +928,12 @@
         },
         {
             "className": "icon-star-solid"
+        },
+        {
+            "className": "icon-switch-off"
+        },
+        {
+            "className": "icon-switch-on"
         },
         {
             "className": "icon-tablet"
@@ -997,6 +1030,9 @@
         },
         {
             "className": "icon-user-export"
+        },
+        {
+            "className": "icon-user-generic-line"
         },
         {
             "className": "icon-user-group"

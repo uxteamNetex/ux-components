@@ -358,6 +358,9 @@ $block: "utils";
   &--margin-0 {
 		margin: $separation-0 !important;
   }
+  &--margin-8 {
+		margin: $separation-8 !important;
+  }
 	&--margin-top-0 {
 		margin-top: $separation-0 !important;
 	}
@@ -557,6 +560,9 @@ $block: "utils";
   //Paddings
   &--padding-0 {
 		padding: $separation-0 !important;
+  }
+  &--padding-8 {
+		padding: $separation-8 !important;
   }
   &--padding-16 {
 		padding: $separation-16 !important;
@@ -766,6 +772,10 @@ $block: "utils";
   &--flex-vertical-center {
     align-items: center !important;
     display: flex !important;
+  }
+  &--flex-column {
+    display: flex !important;
+    flex-direction: column;
   }
 
   //Anchos de columnas en tablas

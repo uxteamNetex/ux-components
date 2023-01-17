@@ -1,5 +1,7 @@
-<button mat-raised-button class="mat-raised-button" [color]="color" [disabled]="disabled">
-  <span>
-    <ng-content></ng-content>
-  </span>
+<button 
+  mat-raised-button 
+  [style.backgroundColor]="color"  
+  [disabled]="disabled"
+  class="mat-raised-button">
+  <span>{{title}}</span>
 </button>

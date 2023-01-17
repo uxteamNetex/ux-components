@@ -18,9 +18,42 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
+	card5: any[] = [];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
-	ngOnInit() {}
+	ngOnInit() {
+
+		this.card5 = [
+			{
+				title: '',
+				number: '',
+				options: '',
+			},
+			{
+				title: 'Disabled state: Project name that could be longer than just one line and will be shown with three dots',
+				number: '(18)',
+				options: '',
+				disabled: true
+			},
+			{
+				title: 'Project name that could be longer than just one line and will be shown with three dots',
+				number: '(4)',
+				options: ''
+			},
+			{
+				title: 'Project name that could be longer than just one line and will be shown with three dots',
+				number: '',
+				options: 'true'
+			},
+			{
+				title: 'Project',
+				number: '(64)',
+				options: 'true'
+			}
+		];
+
+	}
 
 	// tslint:disable-next-line:use-life-cycle-interface
 	ngAfterContentInit() {

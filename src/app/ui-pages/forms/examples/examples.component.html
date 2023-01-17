@@ -88,6 +88,13 @@
       </div>
     </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Select multiple ' | uppercase }}"
+                      subtitle="{{ '<ntx-form-select-multiple>' }}">
+      <div style="width: 600px; margin: 0 auto;">
+        <ntx-form-select-multiple label="Lorem ipsum dolor sic amet" [options]="selectOptions"></ntx-form-select-multiple>
+      </div>
+    </ntx-card-simple>
+
     <ntx-card-simple title="{{'Datepicker' | uppercase }}"
                       subtitle="{{ '<ntx-form-datepicker>' }}">
       <div style="width: 600px; margin: 0 auto;">
@@ -155,7 +162,10 @@
 
     <ntx-card-simple title="{{'Slide toggle' | uppercase }}"
                       subtitle="{{ '<ntx-form-slidetoggle>' }}">
-      <ntx-form-slidetoggle [color]="'primary'"></ntx-form-slidetoggle>
+      <div class="utils--flex-column">
+        <ntx-form-slidetoggle [color]="'primary'"></ntx-form-slidetoggle>
+        <ntx-form-slidetoggle [color]="'primary'" showText ="slide me!"></ntx-form-slidetoggle>
+      </div>
     </ntx-card-simple>
 
     <ntx-card-simple title="{{'Slider' | uppercase }}"

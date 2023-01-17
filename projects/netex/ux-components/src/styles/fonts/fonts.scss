@@ -1,4 +1,5 @@
 $lato-font-path: "/assets/fonts/Lato" !default;
+$oswald-font-path: "/assets/fonts/Oswald" !default;
 
 @font-face{
   font-family:LatoBlack;
@@ -197,4 +198,15 @@ $lato-font-path: "/assets/fonts/Lato" !default;
   font-style:italic;
   font-weight:300;
   text-rendering:optimizeLegibility
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('#{$oswald-font-path}/oswald-regular-webfont.eot');
+  src: url('#{$oswald-font-path}/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('#{$oswald-font-path}/oswald-regular-webfont.woff2') format('woff2'),
+       url('#{$oswald-font-path}/oswald-regular-webfont.woff') format('woff'),
+       url('#{$oswald-font-path}/oswald-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

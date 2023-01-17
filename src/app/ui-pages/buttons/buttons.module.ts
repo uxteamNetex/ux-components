@@ -4,12 +4,13 @@ import { NgModule } from '@angular/core';
 import { ButtonsRoutingModule } from './buttons-routing.module';
 import { ButtonsDocComponent } from './documentation/buttons-doc.component';
 import { ButtonsExamplesComponent } from './examples/buttons-examples.component';
-import { MatExpansionModule } from '@angular/material';
+import { MatExpansionModule, MatSlideToggleModule } from '@angular/material';
 
 import {
   NtxButtonsModule,
   NtxCardsModule
 } from '@netex/ux-components';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -17,7 +18,9 @@ import {
     NtxButtonsModule,
     NtxCardsModule,
     ButtonsRoutingModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatSlideToggleModule,
+    FormsModule
   ],
   declarations: [
       ButtonsExamplesComponent,

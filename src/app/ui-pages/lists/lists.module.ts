@@ -6,7 +6,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import {
 	NtxCardsModule,
 	NtxMenusModule,
-	NtxListsModule
+	NtxListsModule,
+	NtxFormsModule,
+	NtxButtonsModule
 } from '@netex/ux-components';
 
 import { ListsRoutingModule } from './lists-routing.module';
@@ -23,7 +25,9 @@ import { FormsModule } from '@angular/forms';
 		NtxCardsModule,
 		NtxMenusModule,
 		NtxListsModule,
-		MatExpansionModule
+		MatExpansionModule,
+		NtxFormsModule,
+		NtxButtonsModule
 	],
 	declarations: [
 		ListsExamplesComponent,

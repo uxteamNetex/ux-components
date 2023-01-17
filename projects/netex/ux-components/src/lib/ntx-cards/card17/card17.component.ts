@@ -10,6 +10,7 @@ export class Card17Component implements OnInit {
 	@Input() data: any;
 	@Input() showLink: boolean;
 	@Input() showSubtitle: boolean;
+	@Input() disabled: boolean;
 
 	constructor() { }
 

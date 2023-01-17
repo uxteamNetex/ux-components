@@ -3,10 +3,10 @@
 $block: "card18";
 
 .#{$block} {
-    background-color: white;
+    background-color: $color-white;
     border-radius: 4px;
     box-sizing: border-box;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.16);
+    box-shadow: $shadow;
     font-family: Lato;
     width: 100%;
     display: grid;
@@ -36,6 +36,12 @@ $block: "card18";
     .#{$block}__title {
         grid-area: title;
         align-self: center;
+        span{
+          display: inline-block;
+          max-height: 22px;
+          min-height: 22px;
+          width: 90%;
+        }
     }
     .#{$block}__subtitle {
         grid-area: subtitle;
@@ -62,4 +68,30 @@ $block: "card18";
             }
         }
     }
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      &:hover{
+        box-shadow: $shadow;
+      }
+    }
 }
+
+/*Skeleton*/
+.#{$block} .#{$block}__avatar .#{$block}__avatar--alias:empty,
+.#{$block} .#{$block}__title span:empty{
+  animation: loading 1.1s infinite linear;
+  background: #dedfe1;
+  background-image: -webkit-linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+  background-image: linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+  background-repeat: no-repeat;
+}
+@keyframes loading {
+  0% {
+    background-position: -100px;
+  }
+  100% {
+  background-position: 88px;
+  }
+}
+/*Fin Skeleton*/

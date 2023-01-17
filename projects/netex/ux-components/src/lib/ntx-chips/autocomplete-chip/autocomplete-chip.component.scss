@@ -1,6 +1,6 @@
 @import "././projects/netex/ux-components/src/styles/app/utils";
 
-$block: "form-container";
+$block: "ntx-autocomplete-chip";
 
 .#{$block}{
   min-width: 150px;
@@ -51,9 +51,6 @@ $block: "form-container";
                 font-size: $font-size-16;
                 line-height: 24px;
               }
-              .#{$block}__form-autocomplete{
-
-              }
             }
           }
           .mat-form-field-underline{
@@ -62,6 +59,12 @@ $block: "form-container";
         }
       }
     }
+  }
+  &__option-wrapper {
+    display: inline-block;
+    max-width: 100%;
+    align-items: center;
+    padding-top: 20px;
   }
   &__item{
     &--matched {

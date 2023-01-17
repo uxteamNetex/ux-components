@@ -18,103 +18,29 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
-	card4: any[] = [
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-		{
-			image: '',
-			initials: '',
-			badgeColor: '',
-			title: '',
-			subtitle: '',
-			options: '',
-		},
-	];
+	card4: any[] = [];
 
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
 
-		setTimeout(() => {
-
 			this.card4 = [
+				{
+					image: '',
+					initials: '',
+					badgeColor: '',
+					title: '',
+					subtitle: '',
+					options: '',
+				},
 				{
 					image: 'assets/images/perfil.jpg',
 					initials: '',
 					badgeColor: '',
 					title: 'María Cristina Martínez Casanueva',
 					subtitle: 'UX designer and web developer',
-					options: 'true',
+					options: '',
+					disabled: true
 				},
 				{
 					image: '',
@@ -147,58 +73,8 @@ export class ExamplesComponent implements OnInit {
 					title: 'Beatriz Carrasco Pereira',
 					subtitle: 'Analist',
 					options: 'true',
-				},
-				{
-					image: 'assets/images/user_male_02.png',
-					initials: '',
-					badgeColor: '',
-					title: 'Antonio Huerta Vazquez',
-					subtitle: 'UX designer and web developer',
-					options: '',
-				},
-				{
-					image: 'assets/images/user_female_01.jpg',
-					initials: '',
-					badgeColor: '',
-					title: 'Ana Pérez Lago',
-					subtitle: 'Front developer',
-					options: 'true',
-				},
-				{
-					image: '',
-					initials: ' ',
-					badgeColor: '#199AA8',
-					title: 'Juan Ramón Suarez García',
-					subtitle: 'Marketing',
-					options: '',
-				},
-				{
-					image: '',
-					initials: ' ',
-					badgeColor: '#B182A6',
-					title: 'Laura Vila Pazos',
-					subtitle: 'Project manager',
-					options: 'true',
-				},
-				{
-					image: 'assets/images/user_female_03.jpg',
-					initials: '',
-					badgeColor: '',
-					title: 'Beatriz Carrasco Pereira',
-					subtitle: 'Analist',
-					options: '',
-				},
-				{
-					image: '',
-					initials: ' ',
-					badgeColor: '#AAD355',
-					title: 'Antonio Huerta Vazquez',
-					subtitle: 'UX designer and web developer',
-					options: 'true',
 				}
 			];
-
-		}, 5000);
 
 	}
 

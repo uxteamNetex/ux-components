@@ -1,0 +1,58 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "accordion2";
+
+.#{$block}{
+  .#{$block}-panel{
+    +.#{$block}-panel{
+      margin: 20px 0 0 0;
+    }
+    &.mat-expansion-panel{
+      background-color: transparent;
+      box-shadow: none;
+      cursor: pointer;
+    }
+    .#{$block}-panel-header{
+      color: $color-grey-800;
+      font-family: LatoSemibold;
+      font-size: 16px;
+      display: flex;
+      height: 36px !important;
+      line-height: 36px;
+      padding: 0 12px;
+      &:hover{
+        background-color: $color-grey-100;
+      }
+      &.arrow-hidden{
+        .mat-expansion-indicator{
+          display: none;
+        }
+      }
+      .mat-expansion-indicator{
+        color: $color-grey-800;
+        &:after{
+          border-style: none;
+          border-width: 0;
+          color: $color-grey-800;
+          content: "\e901";
+          font-family: netex;
+          font-size: 24px;
+          padding: 0;
+          transform: rotate(0deg);
+        }
+      }
+      .mat-content{
+        display: block;
+      }
+    }
+    .mat-expansion-panel-content{
+      .mat-expansion-panel-body{
+        padding: 0;
+        .#{$block}-panel-body{
+          margin: 8px 0 0 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

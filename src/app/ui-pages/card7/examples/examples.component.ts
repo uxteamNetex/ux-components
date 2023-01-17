@@ -18,9 +18,47 @@ export class ExamplesComponent implements OnInit {
 		'ntx.xs': 1
 	};
 
+	card7: any[] = [];
+
 	constructor(private observableMedia: ObservableMedia) { }
 
 	ngOnInit() {
+
+		this.card7 = [
+			{
+				title: '',
+				subtitle: '',
+				options: '',
+			},
+			{
+				title: 'Disabled state: Card title that could not be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle with a very long text in two lines and three dots to see how it looks like in the card',
+				options: '',
+				disabled: true
+			},
+			{
+				title: 'Card title that could not be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle',
+				options: '',
+			},
+			{
+				title: 'Card title that could not be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle',
+				options: 'true',
+			},
+			{
+				title: 'Card title',
+				subtitle: 'Subtitle',
+				options: 'true',
+			},
+			{
+				title: 'Card title that could not be longer than just one line and will be shown with three dots',
+				subtitle: 'Subtitle',
+				options: '',
+				selected: true
+			}
+		];
+
 	}
 
 	// tslint:disable-next-line:use-life-cycle-interface
@@ -28,10 +66,6 @@ export class ExamplesComponent implements OnInit {
 		this.observableMedia.asObservable().subscribe((change: MediaChange) => {
 			this.grid.cols = this.gridByBreakpoint[change.mqAlias];
 		});
-	}
-
-	counter(i: number) {
-		return new Array(i);
 	}
 
 }

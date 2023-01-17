@@ -1,11 +1,30 @@
-<mat-card class="card2">
+<mat-card class="card2"
+          [ngClass]="{'selected': selected, 'disabled': disabled, 'hoverable': hoverable}"
+          (click)="onClickEvent()">
   <div class="card2__image">
-    <img *ngIf="image" src="{{image}}" alt="Card image">
+    <img *ngIf="image; else placeholder" src="{{image}}" alt="Card image">
+    <ng-template #placeholder>
+			<div class="card2__image-wrapper"
+					 [ngStyle]="{ 'background-color': backgroundColor }">
+				<mat-icon matListIcon
+									class="card2__image-wrapper--icon icon-netex {{icon}}"></mat-icon>
+			</div>
+		</ng-template>
   </div>
   <mat-card-content>
-    <mat-card-title class="card2__title">
-      <span *ngIf="title" class="card2__title--text" matTooltip="{{title}}">{{title}}</span>
-    </mat-card-title>
+    <div class="card2__content">
+      <mat-card-title class="card2__title utils--text-16 utils--text-grey-800">
+        <span
+          *ngIf="title"
+          [className]="subtitle?'utils--truncate1':'utils--truncate2'"
+          matTooltip="{{title}}">{{title}}</span>
+      </mat-card-title>
+      <mat-card-subtitle
+        *ngIf="subtitle"
+        class="card2__subtitle utils--margin-top-8 utils--text-14 utils--text-grey-600">
+        <span matTooltip="{{subtitle}}">{{subtitle}}</span>
+      </mat-card-subtitle>
+    </div>
     <div *ngIf="options" class="card2__options">
       <ntx-menu-options [icon]="menuOptionsAdvanced.icon" [actions]="menuOptionsAdvanced.actions"></ntx-menu-options>
     </div>

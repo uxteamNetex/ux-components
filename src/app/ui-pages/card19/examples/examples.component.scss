@@ -1,4 +1,8 @@
-ntx-card19 {
-  margin: 8px;
-  width: 100%;
+.utils--flex{
+  >*{
+    flex: 1 1 0px;
+    margin: 8px;
+    min-width: 267px;
+    width: 100%;
+  }
 }

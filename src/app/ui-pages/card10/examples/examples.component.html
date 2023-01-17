@@ -1,8 +1,19 @@
 <div class="page-layout">
   <div class="page-container">
-    <ntx-card10 class="utils--margin-bottom-24"></ntx-card10>
-    <ntx-card10 class="utils--margin-bottom-24"></ntx-card10>
-    <ntx-card10 class="utils--margin-bottom-24"></ntx-card10>
-    <ntx-card10></ntx-card10>
+
+    <mat-grid-list #grid rowHeight="117px" gutterSize="20">
+
+      <mat-grid-tile *ngFor="let item of card10">
+        <ntx-card10
+          [number]="item.number"
+          [title]="item.title"
+          [description]="item.description"
+          [progress]="item.progress"
+          [disabled]="item.disabled"
+        ></ntx-card10>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
   </div>
 </div>

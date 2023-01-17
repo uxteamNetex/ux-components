@@ -39,7 +39,7 @@
               <div class="avatar-img">
                 <img mat-card-image class="utils--vertical-align" [src]="element.avatar" alt="User image">
               </div>
-              <span class="utils--truncate" [matTooltip]="element.name">
+              <span class="mat-cell__text" [matTooltip]="element.name">
                 {{element.name}}
               </span>
               <mat-icon *ngIf="showIcon" class="icon-netex {{element.icon}} {{element.iconColor}} utils--margin-left-12"></mat-icon>
@@ -50,7 +50,7 @@
         <ng-container matColumnDef="project">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Project </mat-header-cell>
           <mat-cell *matCellDef="let element">
-            <span class="utils--truncate" [matTooltip]="element.project">
+            <span class="mat-cell__text" [matTooltip]="element.project">
               {{element.project}}
             </span>
           </mat-cell>

@@ -1,0 +1,43 @@
+@import "././projects/netex/ux-components/src/styles/app/utils";
+
+$block: "ntx-form-select-multiple";
+
+.#{$block} {
+    .mat-select {
+        font-family: Lato;
+    }
+    .mat-form-field-underline {
+        display: none;
+        color: $color_black;
+    }
+    &.mat-form-field.mat-focused {
+        .mat-select-arrow, .mat-form-field-label {
+            color: $color-primary;
+        }
+    }
+    &__panel.mat-select-panel {
+        * {
+            font-family: Lato;
+            color: $color-grey-700;
+        }
+        max-height: 400px;
+        width: 296px;
+        position: relative;
+        top: 52px;
+        // left: 40px;
+        .mat-pseudo-checkbox {
+            width: 20px;
+            height: 20px;
+            border-width: 1px;
+            &.mat-pseudo-checkbox-checked {
+                background: $color-primary;
+                &::after {
+                    top: 3.75px;
+                    left: 3px;
+                    width: 11px;
+                    height: 5px;
+                }
+            }
+        }
+    }
+}

@@ -18,10 +18,14 @@ $block: "toolbar-searchbox";
             height: 32px;
             display: inline-block;
         }
+        &--label {
+          margin: 0 0 0 24px;
+        }
     }
     .#{$block}__searchbox {
         flex-grow: 1;
         flex-basis: 720px;
+        margin: 0 16px 0 0;
     }
     .#{$block}__options {
       flex-grow: 1;

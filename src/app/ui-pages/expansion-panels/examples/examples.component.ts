@@ -53,6 +53,17 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+	panel2 = [
+		{
+			'header': 'Mis calendarios',
+			'body': 'This is the panel body',
+		},
+		{
+			'header': 'Filtros',
+			'body': 'This is the panel body 2',
+		}
+	];
+
 
 	constructor() { }
 
