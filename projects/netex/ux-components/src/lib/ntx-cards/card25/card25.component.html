@@ -1,6 +1,10 @@
-<div class="ntx-card25">
-  <div class="avatar" [ngStyle]="{'background-image':'url(' + user.avatar + ')'}"></div>
-  <span matTooltip="{{user.name}}">{{user.name}}</span>
-  <span matTooltip="{{user.subtitle}}">{{user.subtitle}}</span>
-  <span matTooltip="{{user.description}}">{{user.description}}</span>
+<div class="card25" [ngClass]="{'mobile': mobile}">
+  <div *ngIf="image" class="card25__image" [ngStyle]="{'background-image':'url(' + image + ')'}"></div>
+  <div *ngIf="avatar" class="card25__avatar" [ngStyle]="{'background-image':'url(' + avatar + ')'}"></div>
+  <div class="card25__content">
+    <h4 [ngClass]="{'mobile': mobile}" matTooltip="{{title}}">{{title}}</h4>
+    <p class="card25__content--subtitle utils--tabsMetaChips" matTooltip="{{subtitle}}">{{subtitle}}</p>
+    <p class="card25__content--description utils--body" matTooltip="{{description}}">{{description}}</p>
+    <div class="">button</div>
+  </div>
 </div>

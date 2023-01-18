@@ -4,20 +4,55 @@
   box-sizing: border-box;
 }
 
-.ntx-card25 {
+$block: "card25";
+
+.#{$block} {
   background-color: $color-black;
+  border: 1px solid $color-grey-500;
   color: $color-white;
-  padding: 24px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 36px 56px;
   width: 600px;
-  .avatar {
+  &__image {
     background-position: center;
     background-size: cover;
-    background-color: $color-grey-400;
-    border-radius: 75px;
-    height: 150px;
+    height: 220px;
     margin: 0 auto;
     position: relative;
-    top: 55px;
-    width: 150px;
+    width: 220px;
+  }
+  &__avatar {
+    background-position: center;
+    background-size: cover;
+    background-color: $color-grey-600;
+    border-radius: 100px;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    width: 160px;
+  }
+  &__content {
+    h4{
+      margin: 0 0 16px 0;
+      text-align: center;
+    }
+    .card25__content--subtitle{
+      margin: 0 0 24px 0;
+      text-align: center;
+    }
+    .card25__content--description {
+      margin: 0 0 64px 0;
+      text-align: center;
+    }
+  }
+  &.mobile {
+    width: 336px;
+    &__content {
+      h4{
+
+      }
+    }
   }
 }

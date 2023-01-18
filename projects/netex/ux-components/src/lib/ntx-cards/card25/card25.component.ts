@@ -7,7 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class Card25Component implements OnInit {
 
-  @Input() user: any;
+  @Input() image: string;
+  @Input() avatar: string;
+  @Input() title: string;
+	@Input() subtitle: string;
+  @Input() description: string;
+  @Input() mobile: boolean;
 
   constructor() { }
 
