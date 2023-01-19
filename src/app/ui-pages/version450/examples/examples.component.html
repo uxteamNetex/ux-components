@@ -30,6 +30,21 @@
           </div>
         </div>
 
+        <div class="whatsnew__content-block">
+          <h4>Card25 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-card25</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/cards-catalog/examples" (click)="setPath('cards-catalog')">link</a></p>
+          <div class="utils--padding-8" *ngFor="let item of card25">
+            <ntx-card25
+              [image]="item.image"
+              [avatar]="item.avatar"
+              [title]="item.title"
+              [subtitle]="item.subtitle"
+              [description]="item.description"
+              [mobile]="item.mobile"></ntx-card25>
+          </div>
+        </div>
+
       </div>
 
     </ntx-card-simple>
