@@ -19,6 +19,17 @@
           <span class="whatsnew__separation--text">What’s new</span>
         </h2>
 
+        <div class="whatsnew__content-block">
+          <h4>Main button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-main-button</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/buttons/examples" (click)="setPath('buttons')">link</a></p>
+          <div style="background-color: #000; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <ntx-main-button tooltip="Action primary" type="primary" icon="add"></ntx-main-button>
+            <ntx-main-button title="Action primary" tooltip="Action primary" type="primary" icon="add"></ntx-main-button>
+            <ntx-main-button title="Action primary" tooltip="Action primary" type="primary" size="fullWidth"></ntx-main-button>
+          </div>
+        </div>
+
       </div>
 
     </ntx-card-simple>

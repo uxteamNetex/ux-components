@@ -8,6 +8,7 @@ import { DocumentationComponent } from './documentation/documentation.component'
 import { ExamplesComponent } from './examples/examples.component';
 import {
 	NtxCardsModule,
+  NtxButtonsModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -18,7 +19,8 @@ import {
     MatIconModule,
 		MatGridListModule,
 		MatExpansionModule,
-    NtxCardsModule
+    NtxCardsModule,
+    NtxButtonsModule
   ]
 })
 export class Version450Module { }

@@ -145,9 +145,23 @@
     <ntx-card-simple title="{{'Main button' | uppercase }}"
                       subtitle="{{ '<ntx-main-button>' }}"
                       class="black-bg">
-      <ntx-main-button title="Button" color="#fff"></ntx-main-button>
-      <ntx-main-button title="Button" color="#fff" disabled></ntx-main-button>
-      <ntx-main-button title="Button" color="#1AA9E2"></ntx-main-button>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <ntx-main-button title="Action primary" tooltip="Action primary" type="primary" icon="add"></ntx-main-button>
+        <ntx-main-button type="primary" tooltip="Add" icon="add"></ntx-main-button>
+        <ntx-main-button type="primary" tooltip="Add" icon="add" size="fullWidth"></ntx-main-button>
+        <ntx-main-button title="Action primary disabled full width" tooltip="Action primary disabled full width" type="primary" state="disabled" size="fullWidth"></ntx-main-button>
+        <ntx-main-button title="Action secondary" tooltip="Action secondary" type="secondary" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action secondary disabled" tooltip="Action secondary disabled" type="secondary" icon="add" state="disabled"></ntx-main-button>
+        <ntx-main-button title="Action tertiary" tooltip="Action tertiary" type="tertiary" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action tertiary disabled" tooltip="Action tertiary disabled" type="tertiary" icon="add" state="disabled"></ntx-main-button>
+        <ntx-main-button title="Action tertiary black" tooltip="Action tertiary black" type="tertiaryBlack" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action tertiary black disabled" tooltip="Action tertiary black disabled" type="tertiaryBlack" icon="add" state="disabled"></ntx-main-button>
+        <ntx-main-button type="rounded" tooltip="Add" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action rounded" tooltip="Action rounded" type="rounded" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action rounded disabled" tooltip="Action rounded disabled" type="rounded" icon="add" state="disabled"></ntx-main-button>
+        <ntx-main-button title="Action see more" tooltip="Action see more" type="seeMore" icon="expand_more"></ntx-main-button>
+        <ntx-main-button title="Action see more disabled" tooltip="Action see more disabled" type="seeMore" icon="expand_more" state="disabled"></ntx-main-button>
+      </div>
     </ntx-card-simple>
 
   </div>
