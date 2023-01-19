@@ -1,7 +1,7 @@
 <div class="page-layout">
   <div class="page-container">
 
-    <ntx-card-simple 
+    <ntx-card-simple
       title="{{'Stroked buttons' | uppercase }}"
       subtitle="{{ '<ntx-stroked-button>' }}">
         <ntx-stroked-button title="aceptar" color="#1AA9E2"></ntx-stroked-button>
@@ -12,7 +12,7 @@
         <ntx-stroked-button title="aceptar" color="#412890" disabled></ntx-stroked-button>
     </ntx-card-simple>
 
-    <ntx-card-simple 
+    <ntx-card-simple
       title="{{'Icon stroked buttons' | uppercase }}"
       subtitle="{{ '<ntx-stroked-icon-button>' }}">
         <ntx-stroked-icon-button showIconLeft="true" icon="icon-pencil" title="edit" color="#199AA8"></ntx-stroked-icon-button>
@@ -140,6 +140,14 @@
         <span class="utils--margin-left-24"></span>
         <ntx-link-button [rLink]="'path/to/route'">another action</ntx-link-button>
       </div>
+    </ntx-card-simple>
+
+    <ntx-card-simple title="{{'Main button' | uppercase }}"
+                      subtitle="{{ '<ntx-main-button>' }}"
+                      class="black-bg">
+      <ntx-main-button title="Button" color="#fff"></ntx-main-button>
+      <ntx-main-button title="Button" color="#fff" disabled></ntx-main-button>
+      <ntx-main-button title="Button" color="#1AA9E2"></ntx-main-button>
     </ntx-card-simple>
 
   </div>
