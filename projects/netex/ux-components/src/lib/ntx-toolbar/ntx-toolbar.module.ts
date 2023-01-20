@@ -15,6 +15,7 @@ import { ToolbarSearchboxComponent } from './toolbar-searchbox/toolbar-searchbox
 import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 import { ToolbarAlertComponent } from './toolbar-alert/toolbar-alert.component';
 import { ToolbarTabsOneLineComponent } from './toolbar-tabs-one-line/toolbar-tabs-one-line.component';
+import { MainHeaderComponent } from './main-header/main-header.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ToolbarTabsOneLineComponent } from './toolbar-tabs-one-line/toolbar-tab
 		ToolbarBackTabsComponent,
 		ToolbarSearchboxComponent,
 		ToolbarAlertComponent,
-		ToolbarTabsOneLineComponent
+		ToolbarTabsOneLineComponent,
+		MainHeaderComponent
 	],
 	exports: [
 		ToolbarComponent,
@@ -44,7 +46,8 @@ import { ToolbarTabsOneLineComponent } from './toolbar-tabs-one-line/toolbar-tab
 		ToolbarBackTabsComponent,
 		ToolbarSearchboxComponent,
 		ToolbarAlertComponent,
-		ToolbarTabsOneLineComponent
+		ToolbarTabsOneLineComponent,
+		MainHeaderComponent
 	]
 })
 export class NtxToolbarModule { }

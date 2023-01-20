@@ -1,6 +1,5 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
-import { MediaChange, ObservableMedia } from '@angular/flex-layout';
-import { MatGridList } from '@angular/material';
+import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
 @Component({
 	selector: 'app-test-page',
@@ -8,12 +7,12 @@ import { MatGridList } from '@angular/material';
 	styleUrls: ['./test-page.component.scss']
 })
 export class TestPageComponent implements OnInit {
+	apps: any[];
 
-	constructor() {}
+	constructor(private dashboardService: DashboardService) {}
 
-	ngOnInit() {}
+	ngOnInit() {
+		this.apps = this.dashboardService.getDashboardApps()
+	}
 
-	src_1 = 'assets/images/user_female_01.jpg';
-	src_2 = 'assets/images/user_male_01.png';
-	src_3 = 'assets/images/user_female_02.jpg';
 }

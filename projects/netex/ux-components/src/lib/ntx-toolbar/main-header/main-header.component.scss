@@ -1,0 +1,23 @@
+.ntx-main-header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 4px 4px 4px 16px;
+    .ntx-main-header__logo {
+        flex: 1;
+        @media (min-width: 744px) {
+            text-align: center;
+        }
+    }
+    .ntx-main-header__btn {
+        width: 48px;
+        height: 48px;
+        border: none;
+        background: none;
+        color: white;
+        cursor: pointer;
+        i {
+            font-size: 24px;
+        }
+    }
+}
