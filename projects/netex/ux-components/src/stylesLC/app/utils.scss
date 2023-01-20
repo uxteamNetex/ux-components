@@ -35,8 +35,13 @@ h5{
   color: $color-white;
   font-family: RobotoBold;
   font-size: $font-size-20;
+  font-weight: normal;
   line-height: 28px;
   margin: 0;
+  text-transform: none;
+}
+h5.regular{
+  font-family: RobotoRegular;
 }
 h1.mobile{
   color: $color-white;
@@ -69,6 +74,13 @@ h4.mobile{
 h5.mobile{
   color: $color-white;
   font-family: RobotoBold;
+  font-size: $font-size-16;
+  line-height: 20px;
+  margin: 0;
+}
+h5.mobile.regular{
+  color: $color-white;
+  font-family: RobotoRegular;
   font-size: $font-size-16;
   line-height: 20px;
   margin: 0;

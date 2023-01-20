@@ -39,21 +39,16 @@ $block: "card25";
       margin: 0 0 16px 0;
       text-align: center;
     }
-    .card25__content--subtitle{
+    .#{$block}__content--subtitle{
       margin: 0 0 24px 0;
       text-align: center;
     }
-    .card25__content--description {
+    .#{$block}__content--description {
       margin: 0 0 64px 0;
       text-align: center;
     }
   }
   &.mobile {
     width: 336px;
-    &__content {
-      h4{
-
-      }
-    }
   }
 }

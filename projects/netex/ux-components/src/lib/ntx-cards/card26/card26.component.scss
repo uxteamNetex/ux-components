@@ -1,0 +1,83 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+* {
+  box-sizing: border-box;
+}
+
+$block: "card26";
+
+.#{$block} {
+  border: 1px solid $color-primary-03;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 24px;
+  width: 282px;
+  &__image, &__avatar {
+    background-position: center;
+    background-size: cover;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    width: 160px;
+  }
+  &__avatar {
+    border-radius: 100px;
+  }
+  &__content {
+    h5{
+      text-align: center;
+    }
+    .#{$block}__content--title{
+      display: -webkit-box;
+      margin: 0 0 24px 0;
+      max-width: max-content;
+      overflow: hidden;
+      word-break: break-word;
+      -webkit-line-clamp: 2;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+    }
+    .#{$block}__content--label{
+      color: $color-grey-400;
+    }
+  }
+  &.highlighted{
+    border: 1px solid $color-primary;
+  }
+  &.textUnlimited{
+    .#{$block}__content {
+      .#{$block}__content--title{
+        -webkit-line-clamp: inherit;
+      }
+    }
+  }
+  &.tablet {
+    padding: 24px 16px;
+    width: 208px;
+    .#{$block}__image, .#{$block}__avatar {
+      height: 120px;
+      width: 120px;
+    }
+  }
+  &.mobile {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    width: 432px;
+    .#{$block}__image, .#{$block}__avatar {
+      height: 80px;
+      min-width: 80px;
+      width: 80px;
+    }
+    .#{$block}__content {
+      h5{
+        text-align: start;
+      }
+      .#{$block}__content--title{
+        margin: 0 0 12px 0;
+      }
+    }
+  }
+}
