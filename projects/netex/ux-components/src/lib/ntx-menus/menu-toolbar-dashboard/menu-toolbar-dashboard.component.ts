@@ -14,6 +14,7 @@ export class MenuToolbarDashboardComponent implements OnInit {
 	@Input() isLoading: boolean;
 	@Input() isLoaded: boolean;
 	@Input() failback: boolean;
+	@Input() theme: string;
 
 	failbackMsg = `For some reason you don´t have access to this resource.
                   Please try again later, and if the problem persists contact the

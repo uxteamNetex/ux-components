@@ -12,6 +12,9 @@
       &:hover{
         background-color: $icon-button-toolbar-hover;
       }
+      &.theme-dark {
+        color: white;
+      }
     }
   }
 }
@@ -45,6 +48,12 @@ $block: "dashboard";
       }
       span {
         max-width: 80%;
+      }
+    }
+    &.theme-dark {
+      background-color: black;
+      a span {
+        color: white;
       }
     }
   }
