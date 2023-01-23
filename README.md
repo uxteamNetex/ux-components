@@ -12,10 +12,14 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 **Cards**<br/>
 - Nuevo componente *ntx-card25*.
-- Nuevo componente *ntx-card6*.
+- Nuevo componente *ntx-card26*.
+- Nuevo componente *ntx-card27*.
 
 **Buttons**<br/>
 - Nuevo componente *ntx-main-button*.
+
+**Forms**<br/>
+- Nuevo componente *ntx-form-radiobutton-dark*.
 
 ------------------
 

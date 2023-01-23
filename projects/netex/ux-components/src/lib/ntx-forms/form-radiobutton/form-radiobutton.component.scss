@@ -12,6 +12,7 @@ $block: "ntx-radiobutton-group";
       .mat-radio-container{
         .mat-radio-outer-circle {
           border-width: 1px;
+          border-color: rgba(0, 0, 0, 0.54);
         }
         .mat-radio-inner-circle {
           height: 24px;
@@ -27,16 +28,26 @@ $block: "ntx-radiobutton-group";
   }
   &-grey {
     .mat-radio-button.mat-accent {
-      &.mat-radio-checked .mat-radio-outer-circle {
-        border-color: $color-grey-700;
-        ;
+      &.mat-radio-checked{
+        label.mat-radio-label{
+          .mat-radio-container{
+            .mat-radio-outer-circle {
+              border-color: $color-grey-700;
+            }
+          }
+        }
+        .mat-radio-inner-circle {
+          background-color: $color-grey-700;
+        }
       }
-      .mat-radio-inner-circle {
-        background-color: $color-grey-700;
-        ;
-      }
-      .mat-radio-ripple .mat-ripple-element {
-        background-color:rgba(0, 0, 0,.26);
+      label.mat-radio-label{
+        .mat-radio-container{
+          .mat-radio-ripple{
+            .mat-ripple-element {
+              background-color:rgba(0, 0, 0,.26);
+            }
+          }
+        }
       }
     }
   }

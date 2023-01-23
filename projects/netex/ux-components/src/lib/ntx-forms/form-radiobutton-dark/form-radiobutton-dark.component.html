@@ -1,13 +1,17 @@
 <mat-radio-group
+  class="ntx-radiobutton-dark"
   [disabled]="radioGroupdisabled"
   [labelPosition]="labelPosition"
-  [name]="radioGroupName"
-  [ngClass]="getClasses()">
+  [name]="radioGroupName">
   <mat-radio-button
     *ngFor="let element of data"
+    [hidden]="element.hidden"
     [checked]="element.checked"
     [disabled]="element.disabled"
     [value]="element.value">
-    {{element.label}}
+    <label *ngIf="element.label" class="utils--body">{{element.label}}</label>
+    <div class="content">
+      <ng-content></ng-content>
+    </div>
   </mat-radio-button>
 </mat-radio-group>

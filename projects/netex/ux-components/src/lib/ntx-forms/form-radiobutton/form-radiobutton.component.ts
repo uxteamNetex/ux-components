@@ -19,7 +19,7 @@ export interface ntxRadioButtonData {
 })
 export class FormRadiobuttonComponent implements OnInit {
 
-  @Input() color: 'grey' | 'blue' | 'lightblue' | 'orange' | 'red' ;
+  @Input() color: 'grey' | 'blue' | 'lightblue' | 'orange' | 'red' | 'themeDark' ;
   @Input() data: ntxRadioButtonData[];
   @Input() id: string;
   @Input() labelPosition: 'before' | 'after';
@@ -32,7 +32,7 @@ export class FormRadiobuttonComponent implements OnInit {
 
   ngOnInit() { }
 
-  getClasses() {	
+  getClasses() {
     return this.color ? 'ntx-radiobutton-group ntx-radiobutton-group-'+ this.color : 'ntx-radiobutton-group';
 	}
 

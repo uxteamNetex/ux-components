@@ -1,28 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MatExpansionModule, MatIconModule, MatGridListModule } from '@angular/material';
-
-import { Version450RoutingModule } from './version450-routing.module';
+import { Card27RoutingModule } from './card27-routing.module';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { ExamplesComponent } from './examples/examples.component';
+
 import {
-	NtxCardsModule,
-  NtxButtonsModule,
-  NtxFormsModule
+	NtxCardsModule
 } from '@netex/ux-components';
+
+import {
+	MatGridListModule, MatExpansionModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [DocumentationComponent, ExamplesComponent],
   imports: [
     CommonModule,
-    Version450RoutingModule,
-    MatIconModule,
-		MatGridListModule,
-		MatExpansionModule,
+    Card27RoutingModule,
     NtxCardsModule,
-    NtxButtonsModule,
-    NtxFormsModule
-  ]
+		MatGridListModule,
+		MatExpansionModule
+  ],
+  exports: [
+		MatGridListModule
+	]
 })
-export class Version450Module { }
+export class Card27Module { }

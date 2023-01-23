@@ -63,6 +63,32 @@
           </div>
         </div>
 
+        <div class="whatsnew__content-block">
+          <h4>Card27 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-card27</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/cards-catalog/examples" (click)="setPath('cards-catalog')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black" *ngFor="let item of card27">
+            <ntx-card27
+              [image]="item.image"
+              [title]="item.title"
+              [description]="item.description"
+              [label]="item.label"
+              [sizeCard]="item.sizeCard"
+              [sizeText]="item.sizeText"
+              [highlighted]="item.highlighted"
+              [textUnlimited]="item.textUnlimited"></ntx-card27>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Radiobutton dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-form-radiobutton-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/forms/examples" (click)="setPath('forms')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-form-radiobutton-dark radioGroupName="radiobuttondark-1" [data]="radiobuttondark"></ntx-form-radiobutton-dark>
+          </div>
+        </div>
+
       </div>
 
     </ntx-card-simple>

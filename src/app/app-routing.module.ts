@@ -120,6 +120,10 @@ const routes: Routes = [
 		path: 'card26',
 		loadChildren: './ui-pages/card26/card26.module#Card26Module'
 	},
+  {
+		path: 'card27',
+		loadChildren: './ui-pages/card27/card27.module#Card27Module'
+	},
 	{
 		path: 'cards',
 		loadChildren: './ui-pages/cards/cards.module#CardsModule'

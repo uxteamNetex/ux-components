@@ -10,6 +10,7 @@ export class ExamplesComponent implements OnInit {
 
   card25: any[] = [];
   card26: any[] = [];
+  card27: any[] = [];
 
   constructor() { }
 
@@ -30,9 +31,54 @@ export class ExamplesComponent implements OnInit {
         avatar: 'assets/images/user_male_01.png',
         title : 'Badge name in no more than two lines otherwise it gets truncated with an ellipse or even',
         subtitle : '1.046'
+      },
+      {
+				image: 'assets/images/badge2.png',
+        title : 'Badge name in no more than two lines otherwise it gets truncated with an ellipse or even',
+        label : 'RETRIEVED JULY 14, 2022',
+        sizeCard : 'mobile',
+        sizeText : 'mobile'
+      }
+		];
+
+    this.card27 = [
+			{
+        image: 'assets/images/bg-01.png',
+        label: 'http://google.es/hwtsyahefdb56yd29olc',
+        title : 'How to become the best team leader',
+        description : 'Toast notifications are a great way to give the user ephemeral, unobtrusive feedback about an action they have just carried out. We have a top-right desktop toast variant plus a bottom-centered mobile. Toast notifications are a great way to give the user ephemeral, unobtrusive feedback about an action they have just carried out. We have a top-right desktop toast variant plus a bottom-centered mobile.'
+      },
+      {
+				image: 'assets/images/bg-01.png',
+        label: 'http://google.es/hwtsyahefdb56yd29olc',
+        title : 'How to become the best team leader',
+        description : 'Toast notifications are a great way to give the user ephemeral, unobtrusive feedback about an action they have just carried out. We have a top-right desktop toast variant plus a bottom-centered mobile. Toast notifications are a great way to give the user ephemeral, unobtrusive feedback about an action they have just carried out. We have a top-right desktop toast variant plus a bottom-centered mobile.',
+        sizeCard : 'mobile',
+        sizeText : 'mobile'
       }
 		];
 
   }
+
+  radiobuttondark = [
+    {
+      label: 'Option one',
+      value: 1,
+      checked: true,
+      disabled: undefined
+    },
+    {
+      label: 'Option two',
+      value: 2,
+      checked: undefined,
+      disabled: undefined
+    },
+    {
+      label: 'Disabled option',
+      value: 3,
+      checked: undefined,
+      disabled: true
+    }
+  ];
 
 }

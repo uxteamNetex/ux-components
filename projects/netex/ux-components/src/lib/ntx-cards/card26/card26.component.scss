@@ -66,6 +66,7 @@ $block: "card26";
     flex-direction: row;
     padding: 16px;
     width: 432px;
+    white-space: break-spaces;
     .#{$block}__image, .#{$block}__avatar {
       height: 80px;
       min-width: 80px;

@@ -160,6 +160,43 @@
       </div>
     </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Radio button dark' | uppercase }}"
+                      subtitle="{{ '<ntx-form-radiobutton-dark>' }}"
+                      class="black-bg">
+      <div class="utils--basic-text utils--text-white utils--margin-bottom-16">example 08</div>
+      <ntx-form-radiobutton-dark radioGroupName="radiobuttondark-1" [data]="radiobuttondark"></ntx-form-radiobutton-dark>
+
+      <div class="utils--basic-text utils--text-white utils--margin-top-16 utils--margin-bottom-16">example 09</div>
+      <ntx-form-radiobutton-dark radioGroupName="radiobuttondark-2" [data]="radiobuttondark2"></ntx-form-radiobutton-dark>
+      <ntx-form-radiobutton-dark radioGroupName="radiobuttondark-2" [data]="radiobuttondark3">
+        <div *ngFor="let item of card26">
+          <ntx-card26
+            [image]="item.image"
+            [avatar]="item.avatar"
+            [title]="item.title"
+            [subtitle]="item.subtitle"
+            [label]="item.label"
+            [sizeCard]="item.sizeCard"
+            [sizeText]="item.sizeText"
+            [highlighted]="item.highlighted"
+            [textUnlimited]="item.textUnlimited"></ntx-card26>
+          </div>
+      </ntx-form-radiobutton-dark>
+      <ntx-form-radiobutton-dark radioGroupName="radiobuttondark-2" [data]="radiobuttondark3">
+        <div style="max-width: 432px;" *ngFor="let item of card27">
+          <ntx-card27
+              [image]="item.image"
+              [title]="item.title"
+              [description]="item.description"
+              [label]="item.label"
+              [sizeCard]="item.sizeCard"
+              [sizeText]="item.sizeText"
+              [highlighted]="item.highlighted"
+              [textUnlimited]="item.textUnlimited"></ntx-card27>
+          </div>
+      </ntx-form-radiobutton-dark>
+    </ntx-card-simple>
+
     <ntx-card-simple title="{{'Slide toggle' | uppercase }}"
                       subtitle="{{ '<ntx-form-slidetoggle>' }}">
       <div class="utils--flex-column">
