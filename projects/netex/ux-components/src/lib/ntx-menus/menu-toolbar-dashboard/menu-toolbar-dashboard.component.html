@@ -1,9 +1,17 @@
-<button mat-icon-button class="dashboard-menu menu-options-button" [matMenuTriggerFor]="menuOptions">
+<button 
+  mat-icon-button 
+  class="dashboard-menu menu-options-button"
+  [ngClass]="{'theme-dark': theme === 'dark'}" 
+  [matMenuTriggerFor]="menuOptions">
   <mat-icon class="icon-netex icon-dashboard"></mat-icon>
 </button>
 
-<mat-menu #menuOptions="matMenu" [overlapTrigger]="false" class="dashboard">
-  <div *ngIf="apps?.length" class="dashboard__grid">
+<mat-menu 
+  #menuOptions="matMenu" 
+  [overlapTrigger]="false" 
+  class="dashboard"
+  >
+  <div *ngIf="apps?.length" class="dashboard__grid" [ngClass]="{'theme-dark': theme === 'dark'}">
     <mat-grid-list cols="3" rowHeight="116px">
       <mat-grid-tile *ngFor="let app of apps">
         <a href="{{app.link}}">
