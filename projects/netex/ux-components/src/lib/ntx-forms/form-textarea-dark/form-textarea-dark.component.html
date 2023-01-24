@@ -1,0 +1,13 @@
+<div class="form-container-dark">
+
+  <div *ngIf="image" class="form-container-dark__image" [ngStyle]="{'background-image':'url(' + image + ')'}"></div>
+
+  <div class="form-container-dark__content">
+    <mat-form-field class="form-container-dark__input" appearance="fill">
+      <mat-label>{{placeholder}}</mat-label>
+      <textarea matInput class="form-container-dark__input--textarea utils--body"></textarea>
+    </mat-form-field>
+    <ntx-main-button class="utils--margin-left-auto" tooltip="{{textButton}}" type="tertiary">{{textButton}}</ntx-main-button>
+  </div>
+
+</div>

@@ -9,6 +9,7 @@ export class ExamplesComponent implements OnInit {
 
   card26: any[] = [];
   card27: any[] = [];
+  textareaDark: any[] = [];
 
 	constructor() { }
 
@@ -32,6 +33,13 @@ export class ExamplesComponent implements OnInit {
         highlighted: false
       },
 		];
+    this.textareaDark = [
+      {
+        image: 'assets/images/user_female_01.jpg',
+        placeholder: 'Leave a comment',
+        textButton: 'Send comment'
+      }
+    ];
   }
 
   rbgData_1 = [

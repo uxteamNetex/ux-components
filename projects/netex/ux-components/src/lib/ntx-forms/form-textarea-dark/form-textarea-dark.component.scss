@@ -1,0 +1,67 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+$block: "form-container-dark";
+
+.#{$block}{
+  min-width: 150px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 16px 24px 0;
+  .#{$block}__image {
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    height: 24px;
+    min-width: 24px;
+    overflow: hidden;
+    position: relative;
+    width: 24px;
+  }
+  .#{$block}__content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: end;
+    width: 100%;
+    .#{$block}__input{
+      &.mat-form-field{
+        &.mat-form-field-appearance-fill{
+          .mat-form-field-wrapper{
+            padding: 0;
+            .mat-form-field-flex{
+              background-color: $color-grey-700;
+              border-radius: 4px;
+              padding: 12px 16px 16px;
+              .mat-form-field-infix{
+                padding: 0;
+                .#{$block}__input--textarea{
+                  caret-color: $color-primary;
+                  font-size: $font-size-16;
+                  line-height: 24px;
+                }
+                .mat-form-field-label-wrapper{
+                  .mat-form-field-label{
+                    color: $color-primary;
+                  }
+                }
+              }
+            }
+            .mat-form-field-underline{
+              background-color: transparent;
+              &:before{
+                background-color: transparent;
+              }
+              .mat-form-field-ripple{
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

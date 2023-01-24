@@ -45,6 +45,17 @@
       </div>
     </ntx-card-simple>
 
+    <ntx-card-simple title="{{'Textarea dark' | uppercase }}"
+                      subtitle="{{ '<ntx-form-textarea-dark>' }}"
+                        class="black-bg">
+      <div style="margin: 0 auto;" *ngFor="let item of textareaDark">
+        <ntx-form-textarea-dark
+          [image]="item.image"
+          [placeholder]="item.placeholder"
+          [textButton]="textButton"></ntx-form-textarea-dark>
+      </div>
+    </ntx-card-simple>
+
     <ntx-card-simple title="{{'Isolated textarea without label' | uppercase }}"
                       subtitle="{{ '<ntx-textarea-no-label>' }}">
       <div class="textarea-no-label__container">
