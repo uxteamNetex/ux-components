@@ -9,7 +9,8 @@ import { ExamplesComponent } from './examples/examples.component';
 import {
 	NtxCardsModule,
   NtxButtonsModule,
-  NtxFormsModule
+  NtxFormsModule,
+  NtxProgressBarModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -22,7 +23,8 @@ import {
 		MatExpansionModule,
     NtxCardsModule,
     NtxButtonsModule,
-    NtxFormsModule
+    NtxFormsModule,
+    NtxProgressBarModule
   ]
 })
 export class Version450Module { }

@@ -166,6 +166,10 @@ $block: "whatsnew";
   }
 }
 
+ntx-progress-bar-dark{
+  display: block;
+}
+
 @media (max-width: 1280px) {
   .#{$block}{
     .card-simple{
