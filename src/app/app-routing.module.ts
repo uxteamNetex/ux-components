@@ -136,6 +136,10 @@ const routes: Routes = [
 		path: 'colours',
 		loadChildren: './ui-pages/colours/colours.module#ColoursModule'
 	},
+  {
+		path: 'comments',
+		loadChildren: './ui-pages/comments/comments.module#CommentsModule'
+	},
 	{
 		path: 'detail-panel',
 		loadChildren: './ui-pages/detail-panel/detail-panel.module#DetailPanelModule'

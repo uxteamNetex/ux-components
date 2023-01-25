@@ -659,6 +659,34 @@ export class ListsExamplesComponent implements OnInit {
 			iconColor: '#EE9A37',
 		}
 	];
+  list10Dark = [
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star_border',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star_border',
+			iconColor: '#fff',
+      iconSize: '18px',
+		}
+	];
+
 
 	constructor() { }
 

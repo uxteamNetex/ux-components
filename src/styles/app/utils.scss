@@ -772,6 +772,10 @@ $block: "utils";
     display: flex !important;
     justify-content: center !important;
   }
+  &--flex-end {
+    display: flex !important;
+    justify-content: end !important;
+  }
   &--flex-vertical-center {
     align-items: center !important;
     display: flex !important;

@@ -210,6 +210,10 @@ $block: "utils";
   &--flex {
     display: flex !important;
   }
+  &--flex-end {
+    display: flex !important;
+    justify-content: end !important;
+  }
   &--flex-between {
     align-items: center;
     display: flex !important;

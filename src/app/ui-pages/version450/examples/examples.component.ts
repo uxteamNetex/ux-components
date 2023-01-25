@@ -13,6 +13,34 @@ export class ExamplesComponent implements OnInit {
   card27: any[] = [];
   textareaDark: any[] = [];
 
+  list10Dark = [
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star_border',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star_border',
+			iconColor: '#fff',
+      iconSize: '18px',
+		}
+	];
+
   constructor() { }
 
   ngOnInit() {

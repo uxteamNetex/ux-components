@@ -1,0 +1,14 @@
+<div class="comment-dark {{type}}">
+  <div *ngIf="image" class="comment-dark__image" [ngStyle]="{'background-image':'url(' + image + ')'}"></div>
+  <div class="comment-dark__content">
+    <div class="utils--flex-between">
+      <h5>{{title}}</h5>
+      <div class="comment-dark__header--info utils--flex-center">
+        <p class="utils--body">{{time}}</p>
+        <ntx-list10-dark *ngIf="score" [items]=list10Dark></ntx-list10-dark>
+      </div>
+    </div>
+    <p class="utils--body">{{text}}</p>
+    <ng-content></ng-content>
+  </div>
+</div>

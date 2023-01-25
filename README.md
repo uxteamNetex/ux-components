@@ -24,6 +24,12 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Progress bar**<br/>
 - Nuevo componente *ntx-progress-bar-dark*.
 
+**Lists**<br/>
+- Nuevo componente *ntx-list10-dark*.
+
+**Comments**<br/>
+- Nuevo componente *ntx-comment-dark*.
+
 ------------------
 
 ### v.4.4.0:

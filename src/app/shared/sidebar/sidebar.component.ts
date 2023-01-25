@@ -7,6 +7,7 @@ const LINKS = [
 	'buttons',
 	'cards-catalog',
 	'chips',
+  'comments',
 	'detail-panel',
 	'dialogs',
 	'drag-and-drop',

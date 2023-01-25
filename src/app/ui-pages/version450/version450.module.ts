@@ -10,7 +10,9 @@ import {
 	NtxCardsModule,
   NtxButtonsModule,
   NtxFormsModule,
-  NtxProgressBarModule
+  NtxProgressBarModule,
+  NtxListsModule,
+  NtxCommentsModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -24,7 +26,9 @@ import {
     NtxCardsModule,
     NtxButtonsModule,
     NtxFormsModule,
-    NtxProgressBarModule
+    NtxProgressBarModule,
+    NtxListsModule,
+    NtxCommentsModule
   ]
 })
 export class Version450Module { }

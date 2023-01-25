@@ -1,0 +1,9 @@
+<div class="list10Black">
+  <div class="list10Black__icons">
+    <span *ngFor="let item of items"
+          class="material-icons-outlined"
+          [ngStyle] = "{'color': item.iconColor, 'font-size': item.iconSize}">
+          {{item.icon}}
+    </span>
+  </div>
+</div>

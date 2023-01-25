@@ -44,7 +44,8 @@ import {
 	NtxSnackbarsModule,
 	NtxImagesSliderModule,
 	NtxExpansionPanelsModule,
-	NtxAvatarsModule
+	NtxAvatarsModule,
+  NtxCommentsModule
 } from '@netex/ux-components';
 
 import { AppRoutingModule } from '../app-routing.module';
@@ -115,7 +116,8 @@ import { FormsModule } from '@angular/forms';
 		FormsModule,
 		NtxImagesSliderModule,
 		NtxExpansionPanelsModule,
-		NtxAvatarsModule
+		NtxAvatarsModule,
+    NtxCommentsModule
 	],
 	declarations: [
 		HeaderComponent,

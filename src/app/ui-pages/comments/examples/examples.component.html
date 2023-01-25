@@ -1,0 +1,60 @@
+<div class="page-layout">
+  <div class="page-container">
+
+    <ntx-card-simple title="{{'Comment dark' | uppercase }}"
+                      subtitle="{{ '<ntx-comment-dark>' }}"
+                      class="black-bg">
+
+      <div style="max-width: 480px; display: flex; flex-direction: column; gap: 36px">
+        <ntx-comment-dark
+          image="assets/images/user_female_01.jpg"
+          title="John Doe"
+          time="a few seconds ago"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget euismod aeu fames diam enim, tellus. A ullamcorper ultrices eget in."
+          score="true">
+          <div class="utils--flex-end">
+            <ntx-main-button title="Edit" tooltip="Edit" type="tertiary"></ntx-main-button>
+            <ntx-main-button title="Delete" tooltip="Delete" type="tertiary" state="disabled"></ntx-main-button>
+          </div>
+        </ntx-comment-dark>
+
+        <ntx-comment-dark
+          image="assets/images/user_female_01.jpg"
+          title="John Doe"
+          time="a few seconds ago"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget euismod aeu fames diam enim, tellus. A ullamcorper ultrices eget in.">
+          <div class="utils--flex-end">
+            <ntx-main-button title="Reply" tooltip="Reply" type="tertiary"></ntx-main-button>
+          </div>
+        </ntx-comment-dark>
+
+        <ntx-comment-dark
+          image="assets/images/user_female_01.jpg"
+          title="John Doe"
+          time="a few seconds ago"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget euismod aeu fames diam enim, tellus. A ullamcorper ultrices eget in.">
+          <ntx-form-textarea-dark
+            placeholder="Add a public comment">
+          </ntx-form-textarea-dark>
+          <div class="utils--flex-end">
+            <ntx-main-button title="Reply" tooltip="Reply" type="tertiary"></ntx-main-button>
+          </div>
+        </ntx-comment-dark>
+
+        <ntx-comment-dark
+          type="reply"
+          image="assets/images/user_female_01.jpg"
+          title="John Doe"
+          time="a few seconds ago"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget euismod aeu fames diam enim, tellus. A ullamcorper ultrices eget in.">
+        </ntx-comment-dark>
+
+        <ntx-comment-dark
+          text="There are no comments. Be the first to add one.">
+        </ntx-comment-dark>
+      </div>
+
+    </ntx-card-simple>
+
+  </div>
+</div>

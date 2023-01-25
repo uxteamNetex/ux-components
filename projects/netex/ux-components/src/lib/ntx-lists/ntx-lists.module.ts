@@ -28,6 +28,7 @@ import { List7Component } from './list7/list7.component';
 import { List8Component } from './list8/list8.component';
 import { List9Component } from './list9/list9.component';
 import { List10Component } from './list10/list10.component';
+import { List10DarkComponent } from './list10-dark/list10-dark.component';
 
 @NgModule({
 	imports: [
@@ -59,7 +60,8 @@ import { List10Component } from './list10/list10.component';
 		List7Component,
 		List8Component,
 		List9Component,
-		List10Component
+		List10Component,
+		List10DarkComponent
 	],
 	exports: [
 		ListTwoLinesAvatarComponent,
@@ -81,6 +83,7 @@ import { List10Component } from './list10/list10.component';
 		List8Component,
 		List9Component,
 		List10Component,
+    List10DarkComponent,
 		ListSidemenuComponent
 	]
 })

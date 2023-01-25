@@ -1,0 +1,12 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+$block: "list10Black";
+
+.#{$block}{
+  .#{$block}__icons{
+    display: flex;
+    .icon-netex{
+      color: $color-grey-400;
+    }
+  }
+}
