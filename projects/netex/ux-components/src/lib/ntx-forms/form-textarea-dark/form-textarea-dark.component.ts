@@ -10,7 +10,6 @@ export class FormTextareaDarkComponent implements OnInit {
 
   @Input() image: string;
   @Input() placeholder: string;
-  @Input() textButton: string;
 
   constructor() { }
 

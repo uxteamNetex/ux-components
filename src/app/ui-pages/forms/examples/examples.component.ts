@@ -36,8 +36,10 @@ export class ExamplesComponent implements OnInit {
     this.textareaDark = [
       {
         image: 'assets/images/user_female_01.jpg',
-        placeholder: 'Leave a comment',
-        textButton: 'Send comment'
+        placeholder: 'Leave a comment'
+      },
+      {
+        placeholder: 'Leave a comment'
       }
     ];
   }

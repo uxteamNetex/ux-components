@@ -51,8 +51,12 @@
       <div style="margin: 0 auto;" *ngFor="let item of textareaDark">
         <ntx-form-textarea-dark
           [image]="item.image"
-          [placeholder]="item.placeholder"
-          [textButton]="textButton"></ntx-form-textarea-dark>
+          [placeholder]="item.placeholder">
+          <div class="utils--flex utils--margin-left-auto">
+            <ntx-main-button title="Cancel" tooltip="Cancel" type="tertiary"></ntx-main-button>
+            <ntx-main-button title="Send comment" tooltip="Send comment" type="tertiary" state="disabled"></ntx-main-button>
+          </div>
+        </ntx-form-textarea-dark>
       </div>
     </ntx-card-simple>
 

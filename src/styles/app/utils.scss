@@ -505,6 +505,9 @@ $block: "utils";
   &--margin-bottom-100 {
 		margin-bottom: $separation-100 !important;
   }
+  &--margin-left-auto {
+		margin-left: auto !important;
+	}
 	&--margin-left-0 {
 		margin-left: $separation-0 !important;
 	}

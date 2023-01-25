@@ -100,6 +100,22 @@
           </div>
         </div>
 
+        <div class="whatsnew__content-block">
+          <h4>Textarea dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-form-textarea-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/form-controls/examples" (click)="setPath('form-controls')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black" *ngFor="let item of textareaDark">
+            <ntx-form-textarea-dark
+              [image]="item.image"
+              [placeholder]="item.placeholder">
+              <div class="utils--flex utils--margin-left-auto">
+                <ntx-main-button title="Cancel" tooltip="Cancel" type="tertiary"></ntx-main-button>
+                <ntx-main-button title="Send comment" tooltip="Send comment" type="tertiary" state="disabled"></ntx-main-button>
+              </div>
+            </ntx-form-textarea-dark>
+          </div>
+        </div>
+
       </div>
 
     </ntx-card-simple>

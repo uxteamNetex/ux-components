@@ -5,7 +5,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 
 import {
   NtxFormsModule,
-  NtxCardsModule
+  NtxCardsModule,
+  NtxButtonsModule
 } from '@netex/ux-components';
 
 import { FormsRoutingModule } from './forms-routing.module';
@@ -17,6 +18,7 @@ import { ExamplesComponent } from './examples/examples.component';
     CommonModule,
     NtxFormsModule,
     NtxCardsModule,
+    NtxButtonsModule,
     FormsRoutingModule,
     MatExpansionModule
   ],
