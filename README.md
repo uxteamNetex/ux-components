@@ -30,6 +30,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Comments**<br/>
 - Nuevo componente *ntx-comment-dark*.
 
+**Tabs**<br/>
+- Nuevo componente *ntx-tabs-dark*.
+
 ------------------
 
 ### v.4.4.0:

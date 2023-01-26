@@ -1,5 +1,21 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
+const TABSDARK = {
+	actions: [
+		{
+			title: 'First tab',
+		},
+    {
+			title: 'Second tab',
+			state: 'selected',
+		},
+    {
+			title: 'Third tab',
+			state: 'disabled',
+		}
+	]
+};
+
 @Component({
   selector: 'app-examples',
   templateUrl: './examples.component.html',
@@ -12,6 +28,8 @@ export class ExamplesComponent implements OnInit {
   card26: any[] = [];
   card27: any[] = [];
   textareaDark: any[] = [];
+
+  tabsDark = TABSDARK;
 
   list10Dark = [
 		{
