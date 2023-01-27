@@ -33,6 +33,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Tabs**<br/>
 - Nuevo componente *ntx-tabs-dark*.
 
+**Progress spinner**<br/>
+- Nuevo componente *ntx-progress-circle*.
+
 ------------------
 
 ### v.4.4.0:

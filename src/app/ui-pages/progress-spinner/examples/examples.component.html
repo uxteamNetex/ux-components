@@ -1,8 +1,17 @@
 <div class="page-layout">
   <div class="page-container">
+
     <ntx-card-simple title="{{'Progress spinner' | uppercase }}"
                       subtitle="{{ '<ntx-progress-spinner>' }}">
       <ntx-progress-spinner class="utils--margin-top-24 utils--margin-bottom-24" [color]="'primary'" [diameter]="60" [strokeWidth]="3"></ntx-progress-spinner>
     </ntx-card-simple>
+
+    <ntx-card-simple title="{{'Progress circle' | uppercase }}"
+                      subtitle="{{ '<ntx-progress-circle>' }}"
+                      class="black-bg">
+      <ntx-progress-circle class="utils--inline-block" [color]="'primary'" [color2]="'accent'" [diameter]="80" [strokeWidth]="8" [value]="53" [value2]="100"></ntx-progress-circle>
+      <ntx-progress-circle class="utils--inline-block" [color]="'green-lime'" [color2]="'accent'" [diameter]="120" [strokeWidth]="12" [value]="76" [value2]="100"></ntx-progress-circle>
+    </ntx-card-simple>
+
   </div>
 </div>

@@ -785,6 +785,10 @@ $block: "utils";
     flex-direction: column;
   }
 
+  &--inline-block {
+    display: inline-block;
+  }
+
   //Anchos de columnas en tablas
   &--w-48 {
     width: $tableOptionsColumnWidth;
