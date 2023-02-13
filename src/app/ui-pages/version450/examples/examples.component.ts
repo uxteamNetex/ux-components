@@ -27,6 +27,7 @@ export class ExamplesComponent implements OnInit {
   card25: any[] = [];
   card26: any[] = [];
   card27: any[] = [];
+  card28: any[] = [];
   textareaDark: any[] = [];
 
   tabsDark = TABSDARK;
@@ -102,6 +103,16 @@ export class ExamplesComponent implements OnInit {
         description : 'Toast notifications are a great way to give the user ephemeral, unobtrusive feedback about an action they have just carried out. We have a top-right desktop toast variant plus a bottom-centered mobile. Toast notifications are a great way to give the user ephemeral, unobtrusive feedback about an action they have just carried out. We have a top-right desktop toast variant plus a bottom-centered mobile.',
         sizeCard : 'mobile',
         sizeText : 'mobile'
+      }
+		];
+
+    this.card28 = [
+			{
+        image: 'assets/images/user_male_02.png',
+        label: '13/02/2023',
+        title : 'John Tabalot',
+        subtitle : 'UX Designer - UX Deparment',
+        description : 'Evaluation 12345abc'
       }
 		];
 

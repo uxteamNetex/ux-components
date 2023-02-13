@@ -114,6 +114,9 @@ export class ExamplesComponent implements OnInit {
   card27() {
 		this.router.navigate(['card27']);
 	}
+  card28() {
+		this.router.navigate(['card28']);
+	}
 
 	ngOnInit() {
 		this.menuOptionsAdvanced = {
