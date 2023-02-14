@@ -47,7 +47,7 @@
 
     <ntx-card-simple title="{{'Textarea dark' | uppercase }}"
                       subtitle="{{ '<ntx-form-textarea-dark>' }}"
-                        class="black-bg">
+                      class="black-bg">
       <div style="margin: 0 auto;" *ngFor="let item of textareaDark">
         <ntx-form-textarea-dark
           [image]="item.image"
@@ -71,6 +71,14 @@
                       subtitle="{{ '<ntx-form-select>' }}">
       <div style="width: 600px; margin: 0 auto;">
         <ntx-form-select></ntx-form-select>
+      </div>
+    </ntx-card-simple>
+
+    <ntx-card-simple title="{{'Select dark' | uppercase }}"
+                      subtitle="{{ '<ntx-form-select-dark>' }}"
+                      class="black-bg">
+      <div style="width: 600px; margin: 0 auto;">
+        <ntx-form-select-dark [options]="selectDarkOptions"></ntx-form-select-dark>
       </div>
     </ntx-card-simple>
 

@@ -185,5 +185,24 @@ export class ExamplesComponent implements OnInit {
       value: 3
     },
   ];
+  selectDarkOptions = [
+    {
+      label:'Option 1',
+      value: 0
+    },
+    {
+      label:'Option 2',
+      value: 1
+    },
+    {
+      label:'Option 3',
+      value: 2
+    },
+    {
+      label:'Option 4 (Disabled) lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet vestibulum nisi, vel viverra magna.',
+      value: 3,
+      disabled: true
+    },
+  ];
 
 }

@@ -31,6 +31,7 @@ import { NtxButtonsModule } from '../ntx-buttons/ntx-buttons.module';
 import { FormSelectMultipleComponent } from './form-select-multiple/form-select-multiple.component';
 import { FormRadiobuttonDarkComponent } from './form-radiobutton-dark/form-radiobutton-dark.component';
 import { FormTextareaDarkComponent } from './form-textarea-dark/form-textarea-dark.component';
+import { FormSelectDarkComponent } from './form-select-dark/form-select-dark.component';
 
 @NgModule({
 	imports: [
@@ -66,7 +67,8 @@ import { FormTextareaDarkComponent } from './form-textarea-dark/form-textarea-da
 		FormInputAutocompleteComponent,
 		SearchboxFilterPanelComponent,
 		FormRadiobuttonDarkComponent,
-		FormTextareaDarkComponent
+		FormTextareaDarkComponent,
+		FormSelectDarkComponent
 	],
 	entryComponents: [
 		FormInputComponent,
@@ -96,7 +98,8 @@ import { FormTextareaDarkComponent } from './form-textarea-dark/form-textarea-da
 		FormInputAutocompleteComponent,
 		SearchboxFilterPanelComponent,
     FormRadiobuttonDarkComponent,
-    FormTextareaDarkComponent
+    FormTextareaDarkComponent,
+    FormSelectDarkComponent
 	]
 })
 export class NtxFormsModule { }
