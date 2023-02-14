@@ -60,6 +60,8 @@ export class ExamplesComponent implements OnInit {
 		}
 	];
 
+  list11: any[] = [];
+
   constructor() { }
 
   ngOnInit() {
@@ -122,6 +124,32 @@ export class ExamplesComponent implements OnInit {
         placeholder: 'Leave a comment'
       }
     ];
+
+    this.list11 = [
+			{
+        icon: 'military_tech',
+        title: 'Soft Skills',
+        label: '87',
+        showProgressBar: true,
+        progressBarColor: 'primary',
+        progressBarValue: '87'
+      },
+      {
+        title: 'Project management',
+        showProgressBar: true,
+        progressBarColor: 'error',
+        progressBarValue: '28',
+        progressBarRequiredValue: '73'
+      },
+      {
+        icon: 'star',
+        title: 'Project management',
+        showProgressBar: true,
+        progressBarColor: 'green-lime',
+        progressBarValue: '51',
+        progressBarRequiredValue: '23'
+      },
+		];
 
   }
 

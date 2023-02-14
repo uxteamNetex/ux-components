@@ -1,0 +1,14 @@
+<div class="list11">
+  <span *ngIf="icon" class="material-icons utils--icon-24 utils--c-white">{{icon}}</span>
+  <div class="list11__content">
+    <div class="utils--flex-between">
+      <h5 class="list11__content--title utils--bodyBold" matTooltip="{{title}}">{{title}}</h5>
+      <p *ngIf="label" class="utils--bodyBold" matTooltip="{{label}}">{{label}}</p>
+    </div>
+    <ntx-progress-bar-dark
+      *ngIf="showProgressBar"
+      color="{{progressBarColor}}"
+      value="{{progressBarValue}}"
+      requiredValue="{{progressBarRequiredValue}}"></ntx-progress-bar-dark>
+  </div>
+</div>

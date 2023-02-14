@@ -27,6 +27,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 **Lists**<br/>
 - Nuevo componente *ntx-list10-dark*.
+- Nuevo componente *ntx-list11*.
 
 **Comments**<br/>
 - Nuevo componente *ntx-comment-dark*.

@@ -138,6 +138,11 @@ $block: "utils";
     margin: 0;
     text-transform: uppercase;
   }
+
+  &--icon-24 {
+		font-size: $font-size-icon-24 !important;
+  }
+
   &--truncate {
 		white-space: nowrap;
 		overflow: hidden;
@@ -222,6 +227,11 @@ $block: "utils";
   &--flex-column {
     display: flex !important;
     flex-direction: column;
+  }
+
+  //Colores de texto
+  &--c-white {
+    color: $color-white !important;
   }
 
   //Colores de fondo - Escala de grises

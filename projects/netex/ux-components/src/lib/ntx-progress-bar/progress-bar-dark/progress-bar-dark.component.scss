@@ -5,6 +5,15 @@ $block: "progress-bar-dark";
 .#{$block}{
   display: block;
   position: relative;
+  .#{$block}__required-value-mark {
+    width: 0;
+    position: relative;
+    transform: translateX(-5px);
+    border-width: 5px 5px 0 5px;
+    border-color: $color-white transparent transparent;
+    border-style: solid;
+    transition: left 0.25s ease-in-out;
+  }
   .#{$block}__bolita{
     background-color: $color-primary;
     border-radius: 2px;

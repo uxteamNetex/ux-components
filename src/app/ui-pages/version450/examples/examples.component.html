@@ -95,8 +95,8 @@
           <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/progress-bar/examples" (click)="setPath('progress-bar')">link</a></p>
           <div class="utils--padding-8 utils--bc-black">
             <ntx-progress-bar-dark class="utils--margin-top-24 utils--margin-bottom-24" color="primary" [value]="'52'"></ntx-progress-bar-dark>
-            <ntx-progress-bar-dark class="utils--margin-top-24 utils--margin-bottom-24" color="success" [value]="'78'"></ntx-progress-bar-dark>
-            <ntx-progress-bar-dark class="utils--margin-top-24 utils--margin-bottom-24" color="error" [value]="'34'"></ntx-progress-bar-dark>
+            <ntx-progress-bar-dark class="utils--margin-top-24 utils--margin-bottom-24" color="success" [value]="'78'" [requiredValue]="'42'"></ntx-progress-bar-dark>
+            <ntx-progress-bar-dark class="utils--margin-top-24 utils--margin-bottom-24" color="error" [value]="'34'" [requiredValue]="'65'"></ntx-progress-bar-dark>
           </div>
         </div>
 
@@ -173,6 +173,23 @@
               [subtitle]="item.subtitle"
               [description]="item.description"
               [label]="item.label"></ntx-card28>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List11 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-list11</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black" *ngFor="let item of list11">
+            <ntx-list11
+              [icon]="item.icon"
+              [title]="item.title"
+              [label]="item.label"
+              [showProgressBar]="item.showProgressBar"
+              [progressBarColor]="item.progressBarColor"
+              [progressBarValue]="item.progressBarValue"
+              [progressBarRequiredValue]="item.progressBarRequiredValue"
+              ></ntx-list11>
           </div>
         </div>
 

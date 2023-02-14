@@ -10,6 +10,7 @@ export class ProgressBarDarkComponent implements OnInit {
 
   @Input() color!: 'primary' | 'success' | 'error' | 'green-lime';
   @Input() value: number;
+  @Input() requiredValue: number;
 
   constructor() { }
 

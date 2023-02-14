@@ -1,4 +1,9 @@
 <div class="progress-bar-dark">
+  <div
+    *ngIf="requiredValue"
+    class="progress-bar-dark__required-value-mark utils--margin-bottom-4"
+    [style.left]="requiredValue + '%'"
+  ></div>
   <mat-progress-bar class="progress-bar-dark__bar"
                     [ngClass]="getClasses()"
                     [value]="value"
