@@ -1,0 +1,95 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+$block: "ntx-form-datepicker-dark";
+
+.#{$block}{
+  &.mat-form-field{
+    &.mat-form-field-appearance-legacy{
+      width: 100%;
+      /**Escrito**/
+      &.mat-form-field-should-float{
+        .mat-form-field-wrapper{
+          .mat-form-field-flex{
+            .mat-form-field-infix{
+              height: 52px;
+              .mat-form-field-label-wrapper{
+                .mat-form-field-label{
+                  top: 40px;
+                }
+              }
+            }
+          }
+          .mat-form-field-underline{
+            .mat-form-field-ripple{
+              background: transparent;
+            }
+          }
+        }
+        /**Focus**/
+        &.mat-focused{
+          .mat-form-field-wrapper{
+            .mat-form-field-flex{
+              background-color: $color-grey-600;
+            }
+          }
+        }
+      }
+      .mat-form-field-wrapper{
+        .mat-form-field-flex{
+          align-items: center;
+          background-color: $color-grey-700;
+          border-radius: 4px;
+          padding: 0 16px;
+          cursor: pointer;
+          &:hover{
+            background-color: $color-grey-600;
+          }
+          .mat-form-field-infix{
+            border-top: 0;
+            height: 36px;
+            .#{$block}_datepicker{
+              &.mat-input-element{
+                caret-color: $color-primary;
+                padding-top: 24px;
+              }
+            }
+            .mat-form-field-label-wrapper{
+              .mat-form-field-label{
+                top: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cdk-overlay-pane{
+  .mat-datepicker-content{
+    &.mat-primary{
+      .#{$block}_datepicker--panel{
+        background-color: $color-grey-700;
+        color: $color-white;
+        .mat-calendar-arrow{
+          border-top-color: $color-white;
+        }
+        .mat-calendar-previous-button,
+        .mat-calendar-next-button,
+        .mat-calendar-table-header,
+        .mat-calendar-table-header-divider::after,
+        .mat-calendar-body-label,
+        .mat-calendar-body-cell-content{
+          color: $color-white;
+        }
+        .mat-calendar-body-today:not(.mat-calendar-body-selected){
+          border-color: $color-white;
+        }
+        .mat-calendar-body-selected{
+          background-color: $color-white;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}

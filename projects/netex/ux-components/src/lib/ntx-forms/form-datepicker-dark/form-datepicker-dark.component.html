@@ -1,0 +1,13 @@
+<mat-form-field class="ntx-form-datepicker-dark">
+  <mat-label class="utils--body">{{label}}</mat-label>
+  <input matInput
+        class="ntx-form-datepicker-dark_datepicker utils--body"
+        [matDatepicker]="pickerFrom"
+        placeholder="{{placeholder}}"
+        (click)="pickerFrom.open()"
+        (keydown)="pickerFrom.close()">
+  <mat-datepicker-toggle matSuffix [for]="pickerFrom">
+    <span class="material-icons-outlined utils--icon-24 utils--c-white" matDatepickerToggleIcon>expand_more</span>
+  </mat-datepicker-toggle>
+  <mat-datepicker panelClass="ntx-form-datepicker-dark_datepicker--panel" #pickerFrom></mat-datepicker>
+</mat-form-field>
