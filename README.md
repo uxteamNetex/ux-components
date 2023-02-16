@@ -23,6 +23,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 - Nuevo componente *ntx-form-radiobutton-dark*.
 - Nuevo componente *ntx-form-select-dark*.
 - Nuevo componente *ntx-form-datepicker-dark*.
+- Nuevo componente *ntx-form-searchbox-dark*.
 
 **Progress bar**<br/>
 - Nuevo componente *ntx-progress-bar-dark*.
