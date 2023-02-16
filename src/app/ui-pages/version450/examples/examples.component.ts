@@ -28,6 +28,7 @@ export class ExamplesComponent implements OnInit {
   card26: any[] = [];
   card27: any[] = [];
   card28: any[] = [];
+  card29: any[] = [];
   textareaDark: any[] = [];
 
   tabsDark = TABSDARK;
@@ -115,6 +116,14 @@ export class ExamplesComponent implements OnInit {
         title : 'John Tabalot',
         subtitle : 'UX Designer - UX Deparment',
         description : 'Evaluation 12345abc'
+      }
+		];
+
+    this.card29 = [
+			{
+        bgColor: '#18c283',
+        score: '8/10',
+        title : 'Is the score for John Tabalot in this competence as a result of the initial survey you’ve taken before. Please keep this in mind to choose one of the following answers!',
       }
 		];
 
