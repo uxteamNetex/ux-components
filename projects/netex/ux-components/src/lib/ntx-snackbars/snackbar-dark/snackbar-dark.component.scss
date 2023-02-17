@@ -1,0 +1,42 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+$block: "ntx-snackbar-dark";
+
+.style-success{
+  background-color: $color-error;
+  border-radius: 0;
+  box-shadow: none;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 320px;
+  padding: 16px;
+}
+
+.cdk-overlay-pane{
+  .mat-snack-bar-container{
+    &.ntx-snackbar-dark_panel{
+      background-color: $color-primary;
+      border-radius: 0;
+      box-shadow: none;
+      color: $color-black;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 320px;
+      padding: 16px;
+    }
+    &.ntx-snackbar-dark_panel--error{
+      background-color: $color-error;
+      border-radius: 0;
+      box-shadow: none;
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 320px;
+      padding: 16px;
+    }
+  }
+}

@@ -1,9 +1,29 @@
 <div class="page-layout">
     <div class="page-container">
+
         <ntx-card-simple title="Custom snackbars" subtitle="Click on the button to open each snackbar">
-            <div class="panels__container">
-                <ntx-snackbar></ntx-snackbar>
-            </div>
-          </ntx-card-simple>
+          <div class="panels__container">
+              <ntx-snackbar></ntx-snackbar>
+          </div>
+        </ntx-card-simple>
+
+        <ntx-card-simple title="Custom snackbars" subtitle="Click on the button to open each snackbar">
+          <div class="panels__container">
+
+            <button mat-button (click)="openSnackBarCustom()" aria-label="Show an example snack-bar">
+              Show snack-bar Custom
+            </button>
+
+            <button mat-button (click)="openSnackBarNormal()">
+              Show snack-bar Normal
+            </button>
+
+            <button mat-stroked-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+              Pizza party
+            </button>
+
+          </div>
+        </ntx-card-simple>
+
     </div>
 </div>
