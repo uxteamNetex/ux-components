@@ -5,13 +5,19 @@
       <div style="height:20px"></div>
       <ntx-main-header></ntx-main-header>
       <div style="height:20px"></div>
-      <ntx-progress-button></ntx-progress-button>
-      <ntx-progress-button [progress]="12" [background]="'red'"></ntx-progress-button>
-      <ntx-progress-button [progress]="12"></ntx-progress-button>
-      <ntx-progress-button [progress]="25"></ntx-progress-button>
-      <ntx-progress-button [progress]="50"></ntx-progress-button>
-      <ntx-progress-button [progress]="75"></ntx-progress-button>
-      <ntx-progress-button [progress]="100"></ntx-progress-button>
+      <div style="display:flex">
+        <ntx-progress-button></ntx-progress-button>
+        <ntx-progress-button [progress]="12" [background]="'red'"></ntx-progress-button>
+        <ntx-progress-button [progress]="12"></ntx-progress-button>
+        <ntx-progress-button [progress]="25"></ntx-progress-button>
+        <ntx-progress-button [progress]="50"></ntx-progress-button>
+        <ntx-progress-button [progress]="75"></ntx-progress-button>
+        <ntx-progress-button [progress]="100"></ntx-progress-button>
+      </div>
+      <div style="height:20px"></div>
+      <div style="display:flex;background-color: black;">
+        <ntx-bubble-button></ntx-bubble-button>
+      </div>
     </div>
   </div>
 </div>

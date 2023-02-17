@@ -1,0 +1,27 @@
+.ntx-bubble-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 6px;
+    }
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+    color: white;
+    .bubble {
+        width: 12px;
+        height: 12px;
+        background-color: #f05060;
+        font-size: 8px;
+        font-family: RobotoBold;
+        position: relative;
+        top: -6px;
+        left: -12px;
+        border-radius: 50%;
+    }
+}
