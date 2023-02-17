@@ -19,6 +19,8 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 **Buttons**<br/>
 - Nuevo componente *ntx-main-button*.
+- Nuevo componente *ntx-progress-button*.
+- Nuevo componente *ntx-bubble-button*.
 
 **Forms**<br/>
 - Nuevo componente *ntx-form-radiobutton-dark*.
