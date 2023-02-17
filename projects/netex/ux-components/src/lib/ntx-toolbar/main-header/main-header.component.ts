@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ntx-main-header',
@@ -7,13 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MainHeaderComponent implements OnInit {
 
-  @Input() src: string;
-  @Input() apps: any[];
-
   constructor() { }
 
   ngOnInit() {
-    
   }
 
 }

@@ -1,0 +1,10 @@
+<div class="ntx-progress-button utils--flex-center" 
+    (click)="onClickButton($event)">
+    <div 
+        [ngStyle]="{'background': 'conic-gradient(white ' + degProgress + 'deg, grey 0deg)'}"
+        class="outer">
+            <div 
+                [ngStyle]="{'background': background}"
+                class="inner utils--flex-center">{{progress}}</div>
+    </div>
+</div>

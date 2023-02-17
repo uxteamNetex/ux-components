@@ -15,6 +15,7 @@ import { ToolbarSearchboxComponent } from './toolbar-searchbox/toolbar-searchbox
 import { NtxFormsModule } from '../ntx-forms/ntx-forms.module';
 import { ToolbarAlertComponent } from './toolbar-alert/toolbar-alert.component';
 import { ToolbarTabsOneLineComponent } from './toolbar-tabs-one-line/toolbar-tabs-one-line.component';
+import { MainHeaderAppsComponent } from './main-header-apps/main-header-apps.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 
 
@@ -36,6 +37,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 		ToolbarSearchboxComponent,
 		ToolbarAlertComponent,
 		ToolbarTabsOneLineComponent,
+		MainHeaderAppsComponent,
 		MainHeaderComponent
 	],
 	exports: [
@@ -47,6 +49,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 		ToolbarSearchboxComponent,
 		ToolbarAlertComponent,
 		ToolbarTabsOneLineComponent,
+		MainHeaderAppsComponent,
 		MainHeaderComponent
 	]
 })

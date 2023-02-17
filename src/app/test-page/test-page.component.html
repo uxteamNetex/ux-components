@@ -1,7 +1,17 @@
 <div class="page-layout">
   <div class="page-container">
     <div class="label-container">
-      <!-- <ntx-main-header src="../../assets/images/logo-ntx-lcloud.png" [apps]="apps"></ntx-main-header> -->
+      <ntx-main-header-apps src="../../assets/images/logo-ntx-lcloud.png" [apps]="apps"></ntx-main-header-apps>
+      <div style="height:20px"></div>
+      <ntx-main-header></ntx-main-header>
+      <div style="height:20px"></div>
+      <ntx-progress-button></ntx-progress-button>
+      <ntx-progress-button [progress]="12" [background]="'red'"></ntx-progress-button>
+      <ntx-progress-button [progress]="12"></ntx-progress-button>
+      <ntx-progress-button [progress]="25"></ntx-progress-button>
+      <ntx-progress-button [progress]="50"></ntx-progress-button>
+      <ntx-progress-button [progress]="75"></ntx-progress-button>
+      <ntx-progress-button [progress]="100"></ntx-progress-button>
     </div>
   </div>
 </div>

@@ -3,21 +3,19 @@
     display: flex;
     align-items: center;
     padding: 4px 4px 4px 16px;
-    .ntx-main-header__logo {
+    &__menu {}
+    &__searcher {}
+    &__title {
         flex: 1;
-        @media (min-width: 744px) {
-            text-align: center;
+        text-align: center;
+        .label {
+            color: white;
+        }
+        .logo {
+            
         }
     }
-    .ntx-main-header__btn {
-        width: 48px;
-        height: 48px;
-        border: none;
-        background: none;
-        color: white;
-        cursor: pointer;
-        i {
-            font-size: 24px;
-        }
-    }
+    &__progress {}
+    &__info {}
+    &__user {}
 }

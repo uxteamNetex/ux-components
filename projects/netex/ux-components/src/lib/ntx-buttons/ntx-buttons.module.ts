@@ -22,6 +22,7 @@ import { GoogleSigninButtonComponent } from './google-signin-button/google-signi
 import { ZoomSigninButtonComponent } from './zoom-signin-button/zoom-signin-button.component';
 import { TeamsSigninButtonComponent } from './teams-signin-button/teams-signin-button.component';
 import { MainButtonComponent } from './main-button/main-button.component';
+import { ProgressButtonComponent } from './progress-button/progress-button.component';
 
 @NgModule({
 	imports: [
@@ -48,7 +49,8 @@ import { MainButtonComponent } from './main-button/main-button.component';
 		GoogleSigninButtonComponent,
 		ZoomSigninButtonComponent,
 		TeamsSigninButtonComponent,
-		MainButtonComponent
+		MainButtonComponent,
+		ProgressButtonComponent
 	],
 	exports: [
 		RaisedButtonComponent,
@@ -69,7 +71,8 @@ import { MainButtonComponent } from './main-button/main-button.component';
 		GoogleSigninButtonComponent,
 		ZoomSigninButtonComponent,
 		TeamsSigninButtonComponent,
-    MainButtonComponent
+    	MainButtonComponent,
+		ProgressButtonComponent
 	]
 })
 export class NtxButtonsModule { }
