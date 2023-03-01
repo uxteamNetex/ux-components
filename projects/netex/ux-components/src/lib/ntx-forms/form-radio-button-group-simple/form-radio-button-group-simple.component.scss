@@ -1,0 +1,50 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+.form-radio-button-group-simple {
+    .mat-radio-group {
+        .mat-radio-button {
+            display: block;
+            &:not(:last-of-type) {
+                margin-bottom: 8px;
+            }
+            .mat-radio-label {
+                display: flex;
+                white-space: normal;
+                .mat-radio-label-content {
+                    flex: 1;
+                    padding-left: 12px;
+                }
+            }
+            &.hidden {
+                .mat-radio-label {
+                    .mat-radio-container {
+                        visibility: hidden;
+                        width: 0;
+                    }
+                    .mat-radio-label-content {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__content-box {
+        box-sizing: border-box;
+        padding: 24px;
+        min-height: 72px;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        background-color: white;
+        .title {
+            font-size: 20px;
+            font-family: RobotoBold;
+            line-height: 28px;
+        }
+        .description {
+            font-size: 16px;
+            font-family: RobotoRegular;
+        }
+        &.selected {
+            box-shadow: inset 0 0 0 1px $color-grey-400
+        }
+    }
+}
