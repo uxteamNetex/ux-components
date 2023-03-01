@@ -78,6 +78,9 @@ $block: "whatsnew";
         }
         .#{$block}__content-block{
           margin: 56px 0 0 0;
+          h4 {
+            color: $color-grey-800;
+          }
           .#{$block}__content-block--text{
             line-height: 24px;
             margin-bottom: 24px;

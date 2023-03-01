@@ -10,6 +10,9 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 
 ### v.4.5.0: (En curso)
 
+**Toolbars**<br/>
+- Nuevo componente *ntx-main-header*.
+
 **Cards**<br/>
 - Nuevo componente *ntx-card25*.
 - Nuevo componente *ntx-card26*.

@@ -3,19 +3,4 @@
     display: flex;
     align-items: center;
     padding: 4px 4px 4px 16px;
-    &__menu {}
-    &__searcher {}
-    &__title {
-        flex: 1;
-        text-align: center;
-        .label {
-            color: white;
-        }
-        .logo {
-            
-        }
-    }
-    &__progress {}
-    &__info {}
-    &__user {}
 }

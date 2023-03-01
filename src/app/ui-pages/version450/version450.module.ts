@@ -14,7 +14,8 @@ import {
   NtxListsModule,
   NtxCommentsModule,
   NtxTabsModule,
-  NtxProgressSpinnerModule
+  NtxProgressSpinnerModule,
+  NtxToolbarModule
 } from '@netex/ux-components';
 
 @NgModule({
@@ -32,7 +33,8 @@ import {
     NtxListsModule,
     NtxCommentsModule,
     NtxTabsModule,
-    NtxProgressSpinnerModule
+    NtxProgressSpinnerModule,
+    NtxToolbarModule
   ]
 })
 export class Version450Module { }

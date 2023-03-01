@@ -55,6 +55,44 @@
         </div>
 
         <div class="whatsnew__content-block">
+          <h4>Main header component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-main-header</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/toolbars/examples" (click)="setPath('toolbars')">link</a></p>
+          <div style="display: flex;flex-direction: column;row-gap: 16px;">
+            <ntx-main-header>
+              <ntx-main-button type="rounded" tooltip="Menu" icon="menu"></ntx-main-button>
+              <ntx-main-button type="rounded" tooltip="Search" icon="search"></ntx-main-button>
+              <img class="utils--margin-0-auto" src="../../assets/images/logo-ntx-lcloud.png" alt="">  
+              <ntx-main-button title="Action" tooltip="Add" type="tertiary" icon="add"></ntx-main-button>
+              <ntx-bubble-button [count]="7"></ntx-bubble-button>
+          </ntx-main-header>
+          <ntx-main-header>
+              <img class="utils--margin-right-auto" src="../../assets/images/logo-ntx-lcloud.png" alt="">  
+              <ntx-main-button type="rounded" tooltip="Add" icon="add"></ntx-main-button>
+              <ntx-bubble-button [count]="7"></ntx-bubble-button>
+          </ntx-main-header>
+          <ntx-main-header>
+            <ntx-main-button type="rounded" tooltip="Back" icon="arrow_back"></ntx-main-button>
+            <div class="utils--text-white utils--truncate utils--margin-0-auto">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam sit accusantium at iste expedita modi est blanditiis molestias in tenetur consequatur similique repellat ipsa, tempore labore doloremque amet voluptas distinctio.
+            </div>
+            <ntx-progress-button [progress]="35"></ntx-progress-button>
+            <ntx-main-button type="rounded" tooltip="Info" icon="info"></ntx-main-button>
+            <ntx-bubble-button [count]="9"></ntx-bubble-button>
+        </ntx-main-header>
+        <ntx-main-header>
+          <div class="utils--margin-left-auto utils--margin-right-80">
+            <ntx-main-button type="rounded" tooltip="Explore" icon="explore"></ntx-main-button>
+          </div>
+          <ntx-main-button type="rounded" tooltip="Menu" icon="menu"></ntx-main-button>
+          <div class="utils--margin-right-auto utils--margin-left-80">
+            <ntx-main-button type="rounded" tooltip="Search" icon="search"></ntx-main-button>
+          </div>  
+        </ntx-main-header>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
           <h4>Card25 component</h4>
           <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-card25</span> component.</p>
           <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/cards-catalog/examples" (click)="setPath('cards-catalog')">link</a></p>

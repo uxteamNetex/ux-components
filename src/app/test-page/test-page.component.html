@@ -3,7 +3,13 @@
     <div class="label-container">
       <ntx-main-header-apps src="../../assets/images/logo-ntx-lcloud.png" [apps]="apps"></ntx-main-header-apps>
       <div style="height:20px"></div>
-      <ntx-main-header></ntx-main-header>
+      <ntx-main-header>
+        <ntx-main-button type="rounded" tooltip="menu" icon="menu"></ntx-main-button>
+        <ntx-main-button type="rounded" tooltip="menu" icon="search"></ntx-main-button>
+        <ntx-main-button title="Action" tooltip="Action" type="tertiary" icon="add"></ntx-main-button>
+        <ntx-progress-button [progress]="12"></ntx-progress-button>
+        <ntx-bubble-button [count]="4"></ntx-bubble-button>
+      </ntx-main-header>
       <div style="height:20px"></div>
       <div style="display:flex">
         <ntx-progress-button></ntx-progress-button>
@@ -16,7 +22,7 @@
       </div>
       <div style="height:20px"></div>
       <div style="display:flex;background-color: black;">
-        <ntx-bubble-button></ntx-bubble-button>
+        <ntx-bubble-button [count]="7"></ntx-bubble-button>
       </div>
     </div>
   </div>
