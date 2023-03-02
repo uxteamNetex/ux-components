@@ -1,4 +1,9 @@
-<div class="form-radio-button-group-simple">
+<div 
+  [ngClass]="{
+    'theme-dark-flat': themeDarkFlat,
+    'theme-dark-stroked': themeDarkStroked
+  }" 
+  class="form-radio-button-group-simple">
   <mat-radio-group>
     <mat-radio-button 
       *ngFor="let element of data" 

@@ -2,9 +2,11 @@
   <div class="page-container">
     <div class="label-container">
       <div style="margin: 16px 0;font-weight: bold;">RadioButton group with visible buttons</div>
-      <ntx-form-radio-button-group-simple [data]="data"></ntx-form-radio-button-group-simple>
-      <div style="margin: 24px 0 16px 0;font-weight: bold;">RadioButton group with invisible buttons</div>
-      <ntx-form-radio-button-group-simple [data]="data" hideRadioButtons></ntx-form-radio-button-group-simple>
+      <ntx-form-radio-button-group [data]="data01"></ntx-form-radio-button-group>
+      <div style="margin: 24px 0 16px 0;font-weight: bold;">RadioButton group (theme-dark-flat)</div>
+      <ntx-form-radio-button-group [data]="data01" themeDarkFlat></ntx-form-radio-button-group>
+      <div style="margin: 24px 0 16px 0;font-weight: bold;">RadioButton group (theme-dark-stroked)</div>
+      <ntx-form-radio-button-group [data]="data02" hideRadioButtons themeDarkStroked></ntx-form-radio-button-group>
     </div>
   </div>
 </div>

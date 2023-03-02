@@ -10,14 +10,15 @@ export interface radioButtonElement {
 }
 
 @Component({
-  selector: 'ntx-form-radio-button-group-simple',
-  templateUrl: './form-radio-button-group-simple.component.html',
-  styleUrls: ['./form-radio-button-group-simple.component.scss'],
+  selector: 'ntx-form-radio-button-group',
+  templateUrl: './form-radio-button-group.component.html',
+  styleUrls: ['./form-radio-button-group.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class FormRadioButtonGroupSimpleComponent implements OnInit {
+export class FormRadioButtonGroupComponent implements OnInit {
 
   @Input() data: radioButtonElement[];
+
   private _hideRadioButtons: boolean;
 	get hideRadioButtons(): boolean {
 		return this._hideRadioButtons;
@@ -26,6 +27,24 @@ export class FormRadioButtonGroupSimpleComponent implements OnInit {
 	set hideRadioButtons(value: boolean) {
 		this._hideRadioButtons = coerceBooleanProperty(value);
 	}
+  
+  private _themeDarkFlat: boolean;
+	get themeDarkFlat(): boolean {
+		return this._themeDarkFlat;
+	} 
+	@Input()
+	set themeDarkFlat(value: boolean) {
+		this._themeDarkFlat = coerceBooleanProperty(value);
+	}
+
+  private _themeDarkStroked: boolean;
+	get themeDarkStroked(): boolean {
+		return this._themeDarkStroked;
+	} 
+	@Input()
+	set themeDarkStroked(value: boolean) {
+		this._themeDarkStroked = coerceBooleanProperty(value);
+	}
 
   @Output() radioButtonChange = new EventEmitter<MatRadioChange>();
 
@@ -33,8 +52,7 @@ export class FormRadioButtonGroupSimpleComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   onChangeRadioButton(event: MatRadioChange, element) {
     this.selectedElement = element;

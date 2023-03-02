@@ -37,14 +37,56 @@
         .title {
             font-size: 20px;
             font-family: RobotoBold;
-            line-height: 28px;
+            line-height: 36px;
         }
         .description {
             font-size: 16px;
             font-family: RobotoRegular;
+            line-height: 24px;
         }
         &.selected {
             box-shadow: inset 0 0 0 1px $color-grey-400
         }
+    }
+    &.theme-dark-flat {
+        .mat-radio-outer-circle {
+            border-color: rgba($color: rgb(255, 255, 255), $alpha: 0.3);
+        }
+        .mat-radio-checked {
+            .mat-radio-outer-circle {
+                border-color: white;
+            }
+            .mat-radio-inner-circle {
+                background-color: white;
+            }
+        }
+        .form-radio-button-group-simple__content-box {
+            background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.1);
+            .title {
+                color: white;
+            }
+            .description {
+                color: #ccc;
+            }
+            &.selected {
+                background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.3);
+                box-shadow: none;
+            }
+        } 
+    }
+    &.theme-dark-stroked {
+        .form-radio-button-group-simple__content-box {
+            background-color: black;
+            box-shadow: inset 0 0 0 1px rgba($color: rgb(255, 255, 255), $alpha: 0.3);
+            .title {
+                color: white;
+            }
+            .description {
+                color: white;
+            }
+            &.selected {
+                box-shadow: inset 0 0 0 1px $color-grey-400;
+            }
+        } 
     }
 }
