@@ -1,12 +1,11 @@
 <div class="page-layout">
   <div class="page-container">
     <div class="label-container">
-      <div style="margin: 16px 0;font-weight: bold;">RadioButton group with visible buttons</div>
-      <ntx-form-radio-button-group [data]="data01"></ntx-form-radio-button-group>
-      <div style="margin: 24px 0 16px 0;font-weight: bold;">RadioButton group (theme-dark-flat)</div>
-      <ntx-form-radio-button-group [data]="data01" themeDarkFlat></ntx-form-radio-button-group>
-      <div style="margin: 24px 0 16px 0;font-weight: bold;">RadioButton group (theme-dark-stroked)</div>
-      <ntx-form-radio-button-group [data]="data02" hideRadioButtons themeDarkStroked></ntx-form-radio-button-group>
+      <!-- <ntx-progress-circle class="utils--inline-block" [color]="'primary'" [color2]="'accent'" [diameter]="80" [strokeWidth]="8" [value]="53" [value2]="100"></ntx-progress-circle> -->
+      <ntx-progress-circle class="utils--inline-block" [color]="'green-lime'" [color2]="'accent'" [diameter]="180" [strokeWidth]="12" [value]="76" [value2]="100"></ntx-progress-circle>
+      <ntx-progress-circle class="utils--inline-block" color="#F05060" [color2]="'accent'" [diameter]="180" [strokeWidth]="12" [value]="76" [value2]="100" showInnerValue></ntx-progress-circle>
+      <ntx-progress-circle class="utils--inline-block" [color]="'green-lime'" [color2]="'accent'" [diameter]="180" [strokeWidth]="12" [value]="76" [value2]="100" showInnerValue innerValueColor="red"></ntx-progress-circle>
+      <ntx-progress-circle class="utils--inline-block" [color]="'green-lime'" [color2]="'accent'" [diameter]="180" [strokeWidth]="12" [value]="76" [value2]="100" showInnerValue innerValueColor="orange" innerValueFontSize="24px"></ntx-progress-circle>
     </div>
   </div>
 </div>

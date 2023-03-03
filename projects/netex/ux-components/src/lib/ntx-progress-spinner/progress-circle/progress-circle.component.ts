@@ -1,3 +1,4 @@
+import { coerceBooleanProperty } from '@angular/cdk/coercion';
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -14,10 +15,21 @@ export class ProgressCircleComponent implements OnInit {
   @Input() value: number;
   @Input() color2: string;
   @Input() value2: number;
+  @Input() innerValueColor: string;
+  @Input() innerValueFontSize: string;
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  private _showInnerValue: boolean;
+	get showInnerValue(): boolean {
+		return this._showInnerValue;
+	} 
+	@Input()
+	set showInnerValue(value: boolean) {
+		this._showInnerValue = coerceBooleanProperty(value);
+	}
 
 }

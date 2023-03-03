@@ -9,8 +9,11 @@
     <ntx-card-simple title="{{'Progress circle' | uppercase }}"
                       subtitle="{{ '<ntx-progress-circle>' }}"
                       class="black-bg">
-      <ntx-progress-circle class="utils--inline-block" [color]="'primary'" [color2]="'accent'" [diameter]="80" [strokeWidth]="8" [value]="53" [value2]="100"></ntx-progress-circle>
-      <ntx-progress-circle class="utils--inline-block" [color]="'green-lime'" [color2]="'accent'" [diameter]="120" [strokeWidth]="12" [value]="76" [value2]="100"></ntx-progress-circle>
+                      <div style="display: flex;column-gap: 16px; align-items: center;">
+                        <ntx-progress-circle class="utils--inline-block" [color]="'primary'" [color2]="'accent'" [diameter]="80" [strokeWidth]="8" [value]="53" [value2]="100"></ntx-progress-circle>
+                        <ntx-progress-circle class="utils--inline-block" [color]="'green-lime'" [color2]="'accent'" [diameter]="180" [strokeWidth]="12" [value]="76" [value2]="100" showInnerValue></ntx-progress-circle>
+                        <ntx-progress-circle class="utils--inline-block" [color]="'green-lime'" [color2]="'accent'" [diameter]="180" [strokeWidth]="12" [value]="76" [value2]="100" showInnerValue innerValueColor="white" innerValueFontSize="36px"></ntx-progress-circle>
+                      </div>
     </ntx-card-simple>
 
   </div>

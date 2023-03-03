@@ -35,4 +35,13 @@ $block: "progress-circle-container";
       }
     }
   }
+  .progress-data-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 36px;
+    font-family: RobotoRegular;
+    color: black;
+  }
 }

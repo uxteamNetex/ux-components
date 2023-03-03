@@ -13,4 +13,9 @@
                       mode="determinate"
                       [value]="value2">
   </mat-progress-spinner>
+  <span 
+     *ngIf="showInnerValue"
+     [style.color]="innerValueColor"
+     [style.fontSize]="innerValueFontSize"
+     class="progress-data-value">{{value}}%</span>
 </div>
