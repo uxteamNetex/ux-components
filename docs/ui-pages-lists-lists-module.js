@@ -99,7 +99,7 @@ var ListsDocComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-layout\">\r\n  <div class=\"page-container\">\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List sidemenu' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-sidemenu>' }}\">\r\n      <ntx-list-sidemenu [user] =\"user\"></ntx-list-sidemenu>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List 1' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list1>' }}\">\r\n        <ntx-list1 [data]=list1></ntx-list1>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST 2 (variante 1)'  }}\"\r\n      subtitle=\"{{ '<ntx-list2 showGenericBullet bulletIconName=\\'icon-badge\\' bulletIconColor=\\'#9A9DEB\\' [data]=data></ntx-list2>' }}\">\r\n        <ntx-list2 showGenericBullet bulletIconName=\"icon-badge\" bulletIconColor=\"#9A9DEB\" [data]=list2_2></ntx-list2>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST 2 (variante 2)'  }}\"\r\n      subtitle=\"{{ '<ntx-list2 [data]=data></ntx-list2>' }}\">\r\n        <ntx-list2  [data]=list2_1></ntx-list2>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List 3' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list3>' }}\">\r\n        <ntx-list3 [data]=list3></ntx-list3>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List 4' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list4>' }}\">\r\n        <ntx-list4 listTitle=\"list title\" actionLabel=\"action\" actionIcon=\"icon-plus-circle\" [items]=list4Items></ntx-list4>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST5' }}\"\r\n      subtitle=\"{{ '<ntx-list5></ntx-list5>' }}\">\r\n      <ntx-list5 showBullet bulletType=\"badge\" badgeColor=\"#1FAE96\" showDivider [items]=list5_1>80%</ntx-list5>\r\n      <ntx-list5 showBullet bulletType=\"avatar\" showDivider [items]=list5_4></ntx-list5>\r\n      <ntx-list5 showBullet bulletType=\"icon\" iconName=\"icon-badge\" iconColor=\"#9A9DEB\" showDivider [items]=list5_3></ntx-list5>\r\n      <ntx-list5 showDivider [items]=list5_2>\r\n        <ntx-menu-options [icon]=\"menuOptions.icon\" [actions]=\"menuOptions.actions\"></ntx-menu-options>\r\n      </ntx-list5>\r\n      <ntx-list5 [items]=list5_5 showDivider>\r\n        <ntx-form-slidetoggle [color]=\"'primary'\"></ntx-form-slidetoggle>\r\n      </ntx-list5>\r\n      <ntx-list5 [items]=list5_6>\r\n        <ntx-raised-button [color]=\"'primary'\">Button</ntx-raised-button>\r\n      </ntx-list5>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST6'}}\"\r\n      subtitle=\"{{ '<ntx-list6 [items]=\\'list\\'></ntx-list6>' }}\">\r\n        <ntx-list6 [items]=list6></ntx-list6>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST7'}}\"\r\n      subtitle=\"{{ '<ntx-list7 [items]=\\'list\\'></ntx-list7>' }}\">\r\n        <ntx-list7 [items]=list7></ntx-list7>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST8'}}\"\r\n      subtitle=\"{{ '<ntx-list8 [items]=list8></ntx-list8>' }}\">\r\n        <ntx-list8 [items]=list8></ntx-list8>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST9'}}\"\r\n      subtitle=\"{{ '<ntx-list9 [items]=list9></ntx-list9>' }}\">\r\n        <ntx-list9 [items]=list9></ntx-list9>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST10'}}\"\r\n      subtitle=\"{{ '<ntx-list10 [items]=list10></ntx-list10>' }}\">\r\n      <div class=\"utils--flex\">\r\n        <ntx-list10 title=\"Originalidad\" [items]=list10></ntx-list10>\r\n        <ntx-list10 [items]=list10b></ntx-list10>\r\n      </div>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'One line list with avatar' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-one-line-avatar>' }}\">\r\n        <ntx-list-one-line-avatar></ntx-list-one-line-avatar>\r\n        <ntx-list-one-line-avatar></ntx-list-one-line-avatar>\r\n        <ntx-list-one-line-avatar></ntx-list-one-line-avatar>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'Two lines list with avatar' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-two-lines-avatar>' }}\">\r\n        <ntx-list-two-lines-avatar [data] =\"data\"></ntx-list-two-lines-avatar>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'Multi list with icon' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-two-multilines-icon>' }}\">\r\n        <ntx-list-multilines-icon [data]=\"listMultilineIconData\"></ntx-list-multilines-icon>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'One line list' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-one-line>' }}\">\r\n      <ntx-list-one-line [data]=list></ntx-list-one-line>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'One line list with options' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-one-line-options>' }}\">\r\n      <ntx-list-one-line-options></ntx-list-one-line-options>\r\n      <ntx-list-one-line-options></ntx-list-one-line-options>\r\n      <ntx-list-one-line-options [level]=\"'3/5'\"></ntx-list-one-line-options>\r\n      <ntx-list-one-line-options [level]=\"'3/5'\"></ntx-list-one-line-options>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'One line navigable list' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-one-line-navigable>' }}\">\r\n        <ntx-list-one-line-navigable></ntx-list-one-line-navigable>\r\n        <ntx-list-one-line-navigable></ntx-list-one-line-navigable>\r\n        <ntx-list-one-line-navigable></ntx-list-one-line-navigable>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List horizontal' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-horizontal>' }}\">\r\n        <ntx-list-horizontal></ntx-list-horizontal>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List horizontal with icons' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-horizontal-icon>' }}\">\r\n        <ntx-list-horizontal-icon></ntx-list-horizontal-icon>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      class=\"horizontal-cards\"\r\n      title=\"{{'Two lines vertical list with avatar' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-two-lines-avatar-vertical>' }}\">\r\n        <ntx-list-two-lines-avatar-vertical></ntx-list-two-lines-avatar-vertical>\r\n        <ntx-list-two-lines-avatar-vertical></ntx-list-two-lines-avatar-vertical>\r\n        <ntx-list-two-lines-avatar-vertical></ntx-list-two-lines-avatar-vertical>\r\n    </ntx-card-simple>\r\n\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"page-layout\">\r\n  <div class=\"page-container\">\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List sidemenu' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-sidemenu>' }}\">\r\n      <ntx-list-sidemenu [user] =\"user\"></ntx-list-sidemenu>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List 1' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list1>' }}\">\r\n        <ntx-list1 [data]=list1></ntx-list1>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST 2 (variante 1)'  }}\"\r\n      subtitle=\"{{ '<ntx-list2 showGenericBullet bulletIconName=\\'icon-badge\\' bulletIconColor=\\'#9A9DEB\\' [data]=data></ntx-list2>' }}\">\r\n        <ntx-list2 showGenericBullet bulletIconName=\"icon-badge\" bulletIconColor=\"#9A9DEB\" [data]=list2_2></ntx-list2>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST 2 (variante 2)'  }}\"\r\n      subtitle=\"{{ '<ntx-list2 [data]=data></ntx-list2>' }}\">\r\n        <ntx-list2  [data]=list2_1></ntx-list2>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List 3' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list3>' }}\">\r\n        <ntx-list3 [data]=list3></ntx-list3>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List 4' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list4>' }}\">\r\n        <ntx-list4 listTitle=\"list title\" actionLabel=\"action\" actionIcon=\"icon-plus-circle\" [items]=list4Items></ntx-list4>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST5' }}\"\r\n      subtitle=\"{{ '<ntx-list5></ntx-list5>' }}\">\r\n      <ntx-list5 showBullet bulletType=\"badge\" badgeColor=\"#1FAE96\" showDivider [items]=list5_1>80%</ntx-list5>\r\n      <ntx-list5 showBullet bulletType=\"avatar\" showDivider [items]=list5_4></ntx-list5>\r\n      <ntx-list5 showBullet bulletType=\"icon\" iconName=\"icon-badge\" iconColor=\"#9A9DEB\" showDivider [items]=list5_3></ntx-list5>\r\n      <ntx-list5 showDivider [items]=list5_2>\r\n        <ntx-menu-options [icon]=\"menuOptions.icon\" [actions]=\"menuOptions.actions\"></ntx-menu-options>\r\n      </ntx-list5>\r\n      <ntx-list5 [items]=list5_5 showDivider>\r\n        <ntx-form-slidetoggle [color]=\"'primary'\"></ntx-form-slidetoggle>\r\n      </ntx-list5>\r\n      <ntx-list5 [items]=list5_6>\r\n        <ntx-raised-button [color]=\"'primary'\">Button</ntx-raised-button>\r\n      </ntx-list5>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST6'}}\"\r\n      subtitle=\"{{ '<ntx-list6 [items]=\\'list\\'></ntx-list6>' }}\">\r\n        <ntx-list6 [items]=list6></ntx-list6>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST7'}}\"\r\n      subtitle=\"{{ '<ntx-list7 [items]=\\'list\\'></ntx-list7>' }}\">\r\n        <ntx-list7 [items]=list7></ntx-list7>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST8'}}\"\r\n      subtitle=\"{{ '<ntx-list8 [items]=list8></ntx-list8>' }}\">\r\n        <ntx-list8 [items]=list8></ntx-list8>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST9'}}\"\r\n      subtitle=\"{{ '<ntx-list9 [items]=list9></ntx-list9>' }}\">\r\n        <ntx-list9 [items]=list9></ntx-list9>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST10'}}\"\r\n      subtitle=\"{{ '<ntx-list10 [items]=list10></ntx-list10>' }}\">\r\n      <div class=\"utils--flex\">\r\n        <ntx-list10 title=\"Originalidad\" [items]=list10></ntx-list10>\r\n        <ntx-list10 [items]=list10b></ntx-list10>\r\n      </div>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST10-DARK'}}\"\r\n      subtitle=\"{{ '<ntx-list10-dark></ntx-list10-dark>' }}\"\r\n      class=\"black-bg\">\r\n        <ntx-list10-dark [items]=list10Dark></ntx-list10-dark>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'LIST11'}}\"\r\n      subtitle=\"{{ '<ntx-list11></ntx-list11>' }}\"\r\n      class=\"black-bg\">\r\n      <div class=\"utils--margin-bottom-24\" *ngFor=\"let item of list11\">\r\n        <ntx-list11\r\n          [icon]=\"item.icon\"\r\n          [title]=\"item.title\"\r\n          [label]=\"item.label\"\r\n          [showProgressBar]=\"item.showProgressBar\"\r\n          [progressBarColor]=\"item.progressBarColor\"\r\n          [progressBarValue]=\"item.progressBarValue\"\r\n          [progressBarRequiredValue]=\"item.progressBarRequiredValue\"\r\n          ></ntx-list11>\r\n      </div>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'One line list with avatar' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-one-line-avatar>' }}\">\r\n        <ntx-list-one-line-avatar></ntx-list-one-line-avatar>\r\n        <ntx-list-one-line-avatar></ntx-list-one-line-avatar>\r\n        <ntx-list-one-line-avatar></ntx-list-one-line-avatar>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'Two lines list with avatar' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-two-lines-avatar>' }}\">\r\n        <ntx-list-two-lines-avatar [data] =\"data\"></ntx-list-two-lines-avatar>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'Multi list with icon' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-two-multilines-icon>' }}\">\r\n        <ntx-list-multilines-icon [data]=\"listMultilineIconData\"></ntx-list-multilines-icon>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'One line list' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-one-line>' }}\">\r\n      <ntx-list-one-line [data]=list></ntx-list-one-line>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'One line list with options' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-one-line-options>' }}\">\r\n      <ntx-list-one-line-options></ntx-list-one-line-options>\r\n      <ntx-list-one-line-options></ntx-list-one-line-options>\r\n      <ntx-list-one-line-options [level]=\"'3/5'\"></ntx-list-one-line-options>\r\n      <ntx-list-one-line-options [level]=\"'3/5'\"></ntx-list-one-line-options>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'One line navigable list' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-one-line-navigable>' }}\">\r\n        <ntx-list-one-line-navigable></ntx-list-one-line-navigable>\r\n        <ntx-list-one-line-navigable></ntx-list-one-line-navigable>\r\n        <ntx-list-one-line-navigable></ntx-list-one-line-navigable>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List horizontal' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-horizontal>' }}\">\r\n        <ntx-list-horizontal></ntx-list-horizontal>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'List horizontal with icons' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-horizontal-icon>' }}\">\r\n        <ntx-list-horizontal-icon></ntx-list-horizontal-icon>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      class=\"horizontal-cards\"\r\n      title=\"{{'Two lines vertical list with avatar' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-list-two-lines-avatar-vertical>' }}\">\r\n        <ntx-list-two-lines-avatar-vertical></ntx-list-two-lines-avatar-vertical>\r\n        <ntx-list-two-lines-avatar-vertical></ntx-list-two-lines-avatar-vertical>\r\n        <ntx-list-two-lines-avatar-vertical></ntx-list-two-lines-avatar-vertical>\r\n    </ntx-card-simple>\r\n\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -710,6 +710,34 @@ var ListsExamplesComponent = /** @class */ (function () {
                 iconColor: '#EE9A37',
             }
         ];
+        this.list10Dark = [
+            {
+                icon: 'star',
+                iconColor: '#fff',
+                iconSize: '18px',
+            },
+            {
+                icon: 'star',
+                iconColor: '#fff',
+                iconSize: '18px',
+            },
+            {
+                icon: 'star',
+                iconColor: '#fff',
+                iconSize: '18px',
+            },
+            {
+                icon: 'star_border',
+                iconColor: '#fff',
+                iconSize: '18px',
+            },
+            {
+                icon: 'star_border',
+                iconColor: '#fff',
+                iconSize: '18px',
+            }
+        ];
+        this.list11 = [];
     }
     ListsExamplesComponent.prototype.ngOnInit = function () {
         this.menuOptions = {
@@ -750,6 +778,46 @@ var ListsExamplesComponent = /** @class */ (function () {
                 }
             ]
         };
+        this.list11 = [
+            {
+                icon: 'military_tech',
+                title: 'Soft Skills',
+                label: '87',
+                showProgressBar: true,
+                progressBarColor: 'primary',
+                progressBarValue: '87'
+            },
+            {
+                icon: 'military_tech',
+                title: 'Design systems',
+                label: '62',
+                showProgressBar: true,
+                progressBarColor: 'success',
+                progressBarValue: '62',
+                progressBarRequiredValue: '48'
+            },
+            {
+                title: 'Project management',
+                showProgressBar: true,
+                progressBarColor: 'error',
+                progressBarValue: '28',
+                progressBarRequiredValue: '73'
+            },
+            {
+                icon: 'military_tech',
+                title: 'Project management',
+                showProgressBar: true,
+                progressBarColor: 'green-lime',
+                progressBarValue: '51',
+                progressBarRequiredValue: '23'
+            },
+            {
+                icon: 'star',
+                title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet imperdiet fermentum. Sed enim velit, porttitor id tempus tincidunt, pellentesque et quam. Pellentesque tincidunt lacus vitae purus mattis porttitor. Proin nec feugiat sem.',
+                label: '100',
+                showProgressBar: false,
+            },
+        ];
     };
     ListsExamplesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

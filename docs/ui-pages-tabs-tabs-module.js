@@ -63,7 +63,7 @@ var TabsDocComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-layout\">\r\n  <div class=\"page-container\">\r\n    <ntx-card-simple\r\n      title=\"{{'Tabs' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-tabs>' }}\">\r\n        <ntx-tabs></ntx-tabs>\r\n    </ntx-card-simple>\r\n    <ntx-card-simple\r\n      title=\"{{'Navigation tabs' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-tabs-navigation>' }}\">\r\n        <ntx-tabs-navigation></ntx-tabs-navigation>\r\n    </ntx-card-simple>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"page-layout\">\r\n  <div class=\"page-container\">\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'Tabs' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-tabs>' }}\">\r\n        <ntx-tabs></ntx-tabs>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'Navigation tabs' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-tabs-navigation>' }}\">\r\n        <ntx-tabs-navigation></ntx-tabs-navigation>\r\n    </ntx-card-simple>\r\n\r\n    <ntx-card-simple\r\n      title=\"{{'Tabs dark' | uppercase }}\"\r\n      subtitle=\"{{ '<ntx-tabs-dark>' }}\"\r\n        class=\"black-bg\">\r\n        <ntx-tabs-dark [user] =\"tabsDark\"></ntx-tabs-dark>\r\n    </ntx-card-simple>\r\n\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -92,8 +92,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 
 
+var TABSDARK = {
+    actions: [
+        {
+            title: 'First tab',
+        },
+        {
+            title: 'Second tab',
+            state: 'selected',
+        },
+        {
+            title: 'Third tab',
+            state: 'disabled',
+        }
+    ]
+};
 var TabsExamplesComponent = /** @class */ (function () {
     function TabsExamplesComponent() {
+        this.tabsDark = TABSDARK;
     }
     TabsExamplesComponent.prototype.ngOnInit = function () {
     };
