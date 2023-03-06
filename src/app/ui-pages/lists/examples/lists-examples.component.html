@@ -88,6 +88,30 @@
     </ntx-card-simple>
 
     <ntx-card-simple
+      title="{{'LIST10-DARK'}}"
+      subtitle="{{ '<ntx-list10-dark></ntx-list10-dark>' }}"
+      class="black-bg">
+        <ntx-list10-dark [items]=list10Dark></ntx-list10-dark>
+    </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'LIST11'}}"
+      subtitle="{{ '<ntx-list11></ntx-list11>' }}"
+      class="black-bg">
+      <div class="utils--margin-bottom-24" *ngFor="let item of list11">
+        <ntx-list11
+          [icon]="item.icon"
+          [title]="item.title"
+          [label]="item.label"
+          [showProgressBar]="item.showProgressBar"
+          [progressBarColor]="item.progressBarColor"
+          [progressBarValue]="item.progressBarValue"
+          [progressBarRequiredValue]="item.progressBarRequiredValue"
+          ></ntx-list11>
+      </div>
+    </ntx-card-simple>
+
+    <ntx-card-simple
       title="{{'One line list with avatar' | uppercase }}"
       subtitle="{{ '<ntx-list-one-line-avatar>' }}">
         <ntx-list-one-line-avatar></ntx-list-one-line-avatar>

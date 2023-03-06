@@ -1,0 +1,11 @@
+<mat-form-field class="ntx-form-select-dark">
+  <mat-select
+    panelClass="ntx-form-select-dark_panel"
+    class="ntx-form-select-dark_select utils--body"
+    [(value)]="selected"
+    [disabled]="disableSelect.value">
+    <mat-option *ngFor="let option of options"
+      value="{{option.value}}"
+      [disabled]="option.disabled">{{option.label}}</mat-option>
+  </mat-select>
+</mat-form-field>

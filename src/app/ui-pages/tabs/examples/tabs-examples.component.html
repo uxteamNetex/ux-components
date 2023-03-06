@@ -1,14 +1,24 @@
 <div class="page-layout">
   <div class="page-container">
+
     <ntx-card-simple
       title="{{'Tabs' | uppercase }}"
       subtitle="{{ '<ntx-tabs>' }}">
         <ntx-tabs></ntx-tabs>
     </ntx-card-simple>
+
     <ntx-card-simple
       title="{{'Navigation tabs' | uppercase }}"
       subtitle="{{ '<ntx-tabs-navigation>' }}">
         <ntx-tabs-navigation></ntx-tabs-navigation>
     </ntx-card-simple>
+
+    <ntx-card-simple
+      title="{{'Tabs dark' | uppercase }}"
+      subtitle="{{ '<ntx-tabs-dark>' }}"
+        class="black-bg">
+        <ntx-tabs-dark [user] ="tabsDark"></ntx-tabs-dark>
+    </ntx-card-simple>
+
   </div>
 </div>

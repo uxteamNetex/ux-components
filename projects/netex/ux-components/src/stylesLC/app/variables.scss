@@ -1,0 +1,48 @@
+$layout-breakpoint-md:     1480px !default;
+
+//Variables para tamaños de iconos
+$font-size-icon-18:   18px;
+$font-size-icon-24:   24px;
+$font-size-icon-48:   48px;
+$font-size-icon-72:   72px;
+
+//Variables para tamaños de texto
+$font-size-12:        12px;
+$font-size-16:        16px;
+$font-size-18:        18px;
+$font-size-20:        20px;
+$font-size-22:        22px;
+$font-size-28:        28px;
+$font-size-36:        36px;
+$font-size-48:        48px;
+$font-size-64:        64px;
+
+//Variables para márgenes y paddings
+$separation-0: 0;
+$separation-8: 8px;
+$separation-16: 16px;
+$separation-24: 24px;
+$separation-32: 32px;
+$separation-40: 40px;
+$separation-48: 48px;
+$separation-56: 56px;
+$separation-64: 64px;
+$separation-72: 72px;
+$separation-80: 80px;
+$separation-88: 88px;
+$separation-128: 128px;
+$separation-160: 160px;
+$separation-200: 200px;
+
+//Sombras
+$shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+$shadow-hover: 0 0 14px 0 rgba(0, 0, 0, 0.26);
+$shadow-navbar: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+//Hover
+$icon-button-hover: rgba(0, 0, 0, 0.06);
+$icon-button-toolbar-hover: rgba(255, 255, 255, 0.16);
+
+//Toolbar
+$toolbarHeight: 56px;
+$headerHeight: 104px;

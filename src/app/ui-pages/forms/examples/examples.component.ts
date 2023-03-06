@@ -7,9 +7,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExamplesComponent implements OnInit {
 
+  card26: any[] = [];
+  card27: any[] = [];
+  textareaDark: any[] = [];
+
 	constructor() { }
 
-	ngOnInit() { }
+	ngOnInit() {
+    this.card26 = [
+      {
+        title : 'Lorem ipsum dolor sit amet consectetur adipiscing elit tristique justo commodo, quam leo faucibus mauris conubia ultricies eu id donec facilisis maecenas consectetur adipiscing elit tristique justo commodo.',
+        sizeCard : 'mobile',
+        sizeText : 'mobile',
+        textUnlimited: true,
+        highlighted: false
+      }
+    ];
+    this.card27 = [
+			{
+        image: 'assets/images/bg-01.png',
+        label: 'http://google.es/hwtsyahefdb56yd29olchwtsyahefdb56yd29olc',
+        title : 'How to become the best team leader',
+        description : 'Toast notifications are a great way to give the user ephemeral, unobtrusive feedback about an action they have just carried out. We have a top-right desktop toast variant plus a bottom-centered mobile.',
+        textUnlimited: true,
+        highlighted: false
+      },
+		];
+    this.textareaDark = [
+      {
+        image: 'assets/images/user_female_01.jpg',
+        placeholder: 'Leave a comment'
+      },
+      {
+        placeholder: 'Leave a comment'
+      }
+    ];
+  }
 
   rbgData_1 = [
     {
@@ -79,7 +112,49 @@ export class ExamplesComponent implements OnInit {
       disabled: undefined
     }
   ];
-
+  radiobuttondark = [
+    {
+      label: 'Option one',
+      value: 1,
+      checked: true,
+      disabled: undefined
+    },
+    {
+      label: 'Option two',
+      value: 2,
+      checked: undefined,
+      disabled: undefined
+    },
+    {
+      label: 'Disabled option',
+      value: 3,
+      checked: undefined,
+      disabled: true
+    }
+  ];
+  radiobuttondark2 = [
+    {
+      label: 'Option one',
+      value: 1,
+      checked: true,
+      disabled: true,
+      hidden : true,
+    }
+  ];
+  radiobuttondark3 = [
+    {
+      value: 2,
+      checked: undefined,
+      disabled: undefined
+    }
+  ];
+  radiobuttondark4 = [
+    {
+      value: 3,
+      checked: undefined,
+      disabled: undefined
+    }
+  ];
   selectAvatarOptions=[
     {
       id: 1,
@@ -110,5 +185,45 @@ export class ExamplesComponent implements OnInit {
       value: 3
     },
   ];
+  selectDarkOptions = [
+    {
+      label:'Option 1',
+      value: 0
+    },
+    {
+      label:'Option 2',
+      value: 1
+    },
+    {
+      label:'Option 3',
+      value: 2
+    },
+    {
+      label:'Option 4 (Disabled) lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet vestibulum nisi, vel viverra magna.',
+      value: 3,
+      disabled: true
+    },
+  ];
+
+  data01 = [{
+    title: '',
+    description: 'La pregunta no es pertinente / NS /NC / No posee esta competencia.',
+    value: '0'
+  },
+  {
+    title: '1. Leader in results',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    value: '1'
+  },
+  {
+    title: '2. Results oriented',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    value: '2'
+  },
+  {
+    title: '3. Not very good with results',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    value: '3'
+  }];
 
 }

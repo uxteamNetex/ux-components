@@ -1,0 +1,97 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+.mainButton{
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-family: RobotoMedium;
+  font-size: 16px;
+  gap: 8px;
+  height: 48px;
+  justify-content: center;
+  padding: 12px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
+  &.primary{
+    background-color: $color-primary;
+    color: $color-button-text;
+    &:hover{
+      background-color: $color-primary-hover;
+    }
+    &.disabled{
+      background-color: $color-primary-04;
+      color: $color-button-text-04;
+      pointer-events: none;
+    }
+  }
+  &.secondary{
+    background-color: $color-primary-01;
+    border: 1px solid $color-primary-03;
+    color: $color-primary;
+    &:hover{
+      background-color: $color-primary-03;
+    }
+    &.disabled{
+      background-color: $color-black-01;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+  &.tertiary{
+    background-color: transparent;
+    color: $color-primary;
+    &:hover{
+      background-color: $color-primary-01;
+    }
+    &.disabled{
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+  &.tertiaryBlack{
+    background-color: $color-black;
+    color: $color-primary;
+    &:hover{
+      background-color: $color-grey-700;
+    }
+    &.disabled{
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+  &.rounded{
+    background-color: transparent;
+    border-radius: 100px;
+    color: $color-primary;
+    padding: 12px;
+    &:hover{
+      background-color: $color-primary-01;
+    }
+    &.disabled{
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+  &.seeMore{
+    background-color: transparent;
+    color: $color-primary;
+    height: auto;
+    padding: 8px;
+    text-transform: none;
+    &:hover{
+      background-color: $color-primary-01;
+    }
+    &.disabled{
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+  &.fullWidth{
+    width: 100%;
+  }
+}

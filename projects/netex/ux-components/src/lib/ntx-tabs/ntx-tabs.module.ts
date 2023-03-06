@@ -5,6 +5,7 @@ import { NtxSharedModule } from '../ntx-shared/ntx-shared.module';
 import { NtxTabsRoutingModule } from './ntx-tabs-routing.module';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabsNavigationComponent } from './tabs-navigation/tabs-navigation.component';
+import { TabsDarkComponent } from './tabs-dark/tabs-dark.component';
 
 @NgModule({
   imports: [
@@ -14,11 +15,13 @@ import { TabsNavigationComponent } from './tabs-navigation/tabs-navigation.compo
   ],
   declarations: [
     TabsComponent,
-    TabsNavigationComponent
+    TabsNavigationComponent,
+    TabsDarkComponent
   ],
   exports: [
     TabsComponent,
-    TabsNavigationComponent
+    TabsNavigationComponent,
+    TabsDarkComponent
   ]
 })
 export class NtxTabsModule { }

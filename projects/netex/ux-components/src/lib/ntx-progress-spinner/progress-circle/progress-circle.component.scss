@@ -1,0 +1,47 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+$block: "progress-circle-container";
+
+.#{$block}{
+  position: relative;
+  .progress-circle-value{
+    display: inline-block;
+    z-index: 9;
+    &.mat-progress-spinner{
+      circle{
+        stroke-linecap: round;
+      }
+    }
+  }
+  .progress-circle-background{
+    display: inline;
+    left: 0;
+    position: absolute;
+  }
+  .mat-progress-spinner{
+    &.mat-primary{
+      circle{
+        stroke: $color-primary;
+      }
+    }
+    &.mat-accent{
+      circle{
+        stroke: $color-grey-500;
+      }
+    }
+    &.mat-green-lime{
+      circle{
+        stroke: #D1F057;
+      }
+    }
+  }
+  .progress-data-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 36px;
+    font-family: RobotoRegular;
+    color: black;
+  }
+}

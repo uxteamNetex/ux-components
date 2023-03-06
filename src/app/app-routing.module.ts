@@ -112,6 +112,26 @@ const routes: Routes = [
 		path: 'card24',
 		loadChildren: './ui-pages/card24/card24.module#Card24Module'
 	},
+  {
+		path: 'card25',
+		loadChildren: './ui-pages/card25/card25.module#Card25Module'
+	},
+  {
+		path: 'card26',
+		loadChildren: './ui-pages/card26/card26.module#Card26Module'
+	},
+  {
+		path: 'card27',
+		loadChildren: './ui-pages/card27/card27.module#Card27Module'
+	},
+  {
+		path: 'card28',
+		loadChildren: './ui-pages/card28/card28.module#Card28Module'
+	},
+  {
+		path: 'card29',
+		loadChildren: './ui-pages/card29/card29.module#Card29Module'
+	},
 	{
 		path: 'cards',
 		loadChildren: './ui-pages/cards/cards.module#CardsModule'
@@ -123,6 +143,10 @@ const routes: Routes = [
 	{
 		path: 'colours',
 		loadChildren: './ui-pages/colours/colours.module#ColoursModule'
+	},
+  {
+		path: 'comments',
+		loadChildren: './ui-pages/comments/comments.module#CommentsModule'
 	},
 	{
 		path: 'detail-panel',
@@ -319,6 +343,10 @@ const routes: Routes = [
 	{
 		path: 'version440',
 		loadChildren: './ui-pages/version440/version440.module#Version440Module'
+	},
+  {
+		path: 'version450',
+		loadChildren: './ui-pages/version450/version450.module#Version450Module'
 	},
 	{ path: '',
 		redirectTo: '/home',

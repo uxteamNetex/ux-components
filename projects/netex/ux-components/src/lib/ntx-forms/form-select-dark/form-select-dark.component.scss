@@ -1,0 +1,76 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+$block: "ntx-form-select-dark";
+
+.#{$block}{
+  width: 100%;
+  &.mat-focused{
+    .mat-form-field-ripple{
+      background-color: transparent;
+    }
+  }
+  .mat-form-field-wrapper{
+    .mat-form-field-flex{
+      background-color: $color-grey-700;
+      border-radius: 4px;
+      &:hover{
+        background-color: $color-grey-600;
+      }
+      .mat-form-field-infix{
+        border-top: 0;
+        padding: 12px 16px;
+        .#{$block}_select{
+          .mat-select-trigger{
+            width: 100%;
+            .mat-select-value{
+              .mat-select-value-text{
+                color: $color-white;
+              }
+            }
+            .mat-select-arrow-wrapper{
+              .mat-select-arrow{
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .mat-form-field-underline{
+      background-color: transparent;
+    }
+  }
+}
+
+.cdk-overlay-pane{
+  .mat-select-panel{
+    &.mat-primary{
+      &.#{$block}_panel{
+        background-color: $color-grey-700;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+        max-width: 320px;
+        padding: 8px 0;
+        .mat-option{
+          color: $color-grey-400;
+          font-family: RobotoMedium;
+          font-size: 16px;
+          line-height: auto;
+          text-transform: uppercase;
+          &.mat-option-disabled{
+            cursor: not-allowed;
+            opacity: 0.5;
+            &:hover{
+              background: transparent;
+              color: $color-grey-400;
+            }
+          }
+          &.mat-selected,
+          &:hover{
+            background: transparent;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}

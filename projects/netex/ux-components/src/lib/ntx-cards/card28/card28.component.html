@@ -1,0 +1,11 @@
+<div class="card28">
+  <div *ngIf="image" class="card28__image" [ngStyle]="{'background-image':'url(' + image + ')'}"></div>
+  <div class="card28__content">
+    <div class="utils--flex-between">
+      <h5 *ngIf="title" class="card28__content--title utils--menuSubItem" matTooltip="{{title}}">{{title}}</h5>
+      <p *ngIf="label" class="card28__content--label utils--tabsMetaChips" matTooltip="{{label}}">{{label}}</p>
+    </div>
+    <p *ngIf="subtitle" class="card28__content--subtitle utils--tabsMetaChips" matTooltip="{{subtitle}}">{{subtitle}}</p>
+    <p *ngIf="description" class="utils--body card28__content--description" matTooltip="{{description}}">{{description}}</p>
+  </div>
+</div>

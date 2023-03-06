@@ -5,6 +5,7 @@ import { SnackbarsRoutingModule } from './snackbars-routing.module';
 import { MatExpansionModule } from '@angular/material';
 
 import { SnackbarsExamplesComponent } from './examples/snackbars-examples.component';
+import { CustomSnackBarComponent } from './examples/snackbars-examples.component';
 import { SnackbarsDocComponent } from './documentation/snackbars-doc.component';
 import { NtxCardsModule, NtxSnackbarsModule } from '@netex/ux-components';
 
@@ -18,6 +19,7 @@ import { NtxCardsModule, NtxSnackbarsModule } from '@netex/ux-components';
   ],
   declarations: [
     SnackbarsExamplesComponent,
+    CustomSnackBarComponent,
     SnackbarsDocComponent
   ]
 })

@@ -1,0 +1,6 @@
+<nav mat-tab-nav-bar class="tabs-dark">
+  <a mat-tab-link
+    *ngFor="let action of user.actions"
+    class="tabs-dark__tab utils--tabsMetaChips {{action.state}}"
+    matTooltip="{{action.title}}">{{action.title}}</a>
+</nav>

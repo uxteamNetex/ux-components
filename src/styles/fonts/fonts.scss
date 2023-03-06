@@ -1,4 +1,24 @@
 $lato-font-path: "/assets/fonts/Lato" !default;
+$roboto-font-path: "/assets/fonts/Roboto" !default;
+
+@font-face {
+  font-family:RobotoBold;
+  src: url('#{$roboto-font-path}/roboto-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:RobotoMedium;
+  src: url('#{$roboto-font-path}/roboto-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:RobotoRegular;
+  src: url('#{$roboto-font-path}/roboto-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face{
   font-family:LatoBlack;

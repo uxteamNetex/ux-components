@@ -1,0 +1,55 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+* {
+  box-sizing: border-box;
+}
+
+$block: "card25";
+
+.#{$block} {
+  background-color: $color-black-03;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.75);
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+  padding: 24px 36px 56px;
+  width: auto;
+  &__image {
+    background-position: center;
+    background-size: cover;
+    height: 220px;
+    margin: 0 auto;
+    position: relative;
+    width: 220px;
+  }
+  &__avatar {
+    background-position: center;
+    background-size: cover;
+    background-color: $color-grey-600;
+    border-radius: 100px;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    width: 160px;
+  }
+  &__content {
+    h4{
+      margin: 0 0 16px 0;
+      text-align: center;
+    }
+    .#{$block}__content--subtitle{
+      margin: 0 0 24px 0;
+      text-align: center;
+    }
+    .#{$block}__content--description {
+      margin: 0 0 64px 0;
+      text-align: center;
+    }
+  }
+  &.mobile {
+    width: 336px;
+  }
+}

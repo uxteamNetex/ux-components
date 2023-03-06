@@ -65,6 +65,15 @@
           background-color: $color-grey-300;
         }
       }
+      &.black-bg{
+        mat-card{
+          background-color: $color-black;
+          color: $color-white;
+          .mat-card-subtitle{
+            color: $color-white;
+          }
+        }
+      }
       &:first-of-type{
         mat-card{
           margin: 0;

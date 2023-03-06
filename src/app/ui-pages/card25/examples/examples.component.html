@@ -1,0 +1,17 @@
+<div class="page-layout" style="background-image: url(assets/images/bengal.jpg); background-size: cover;">
+  <div class="page-container">
+
+    <div class="utils--flex">
+      <div class="utils--padding-8" *ngFor="let item of card25">
+        <ntx-card25
+          [image]="item.image"
+          [avatar]="item.avatar"
+          [title]="item.title"
+          [subtitle]="item.subtitle"
+          [description]="item.description"
+          [mobile]="item.mobile"></ntx-card25>
+      </div>
+    </div>
+
+  </div>
+</div>

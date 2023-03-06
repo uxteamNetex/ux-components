@@ -53,7 +53,7 @@ const RAISEDICONBUTTON = {
 	actions: [
 		{
 			label: 'Link',
-			color: 'primary',
+			color: '#D1F057',
 			icon: 'icon-paperclip',
 			showIconLeft: true,
 			showIconRight: false,

@@ -1,6 +1,5 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
-import { MediaChange, ObservableMedia } from '@angular/flex-layout';
-import { MatGridList } from '@angular/material';
+import { DashboardService } from 'src/app/shared/services/dashboard.service';
 
 @Component({
 	selector: 'app-test-page',
@@ -9,11 +8,51 @@ import { MatGridList } from '@angular/material';
 })
 export class TestPageComponent implements OnInit {
 
-	constructor() {}
+	data01: any[];
+	data02: any[];
 
-	ngOnInit() {}
+	apps: any[];
 
-	src_1 = 'assets/images/user_female_01.jpg';
-	src_2 = 'assets/images/user_male_01.png';
-	src_3 = 'assets/images/user_female_02.jpg';
+	constructor(private dashboardService: DashboardService) {}
+
+	ngOnInit() {
+		this.apps = this.dashboardService.getDashboardApps();
+		this.data01 = [{
+			title: '',
+			description: 'La pregunta no es pertinente / NS /NC / No posee esta competencia.',
+			value: '0'
+		},
+		{
+			title: '1. Leader in results',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			value: '1'
+		},
+		{
+			title: '2. Results oriented',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			value: '2'
+		},
+		{
+			title: '3. Not very good with results',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+			value: '3'
+		}];
+
+		this.data02 = [{
+			title: '',
+			description: 'Yes, indeed. He/She always takes the reins of the team when making strategic decisions.',
+			value: '0'
+		},
+		{
+			title: '',
+			description: 'Sometimes. He/She never takes the reins of the team when making strategic desicions.',
+			value: '1'
+		},
+		{
+			title: '',
+			description: 'No, he/she is not. He/She never takes the reins of the team when making strategic decisions.',
+			value: '2'
+		}];
+	}
+
 }

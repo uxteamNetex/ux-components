@@ -1,7 +1,7 @@
 <div class="page-layout">
   <div class="page-container">
 
-    <ntx-card-simple 
+    <ntx-card-simple
       title="{{'Stroked buttons' | uppercase }}"
       subtitle="{{ '<ntx-stroked-button>' }}">
         <ntx-stroked-button title="aceptar" color="#1AA9E2"></ntx-stroked-button>
@@ -12,7 +12,7 @@
         <ntx-stroked-button title="aceptar" color="#412890" disabled></ntx-stroked-button>
     </ntx-card-simple>
 
-    <ntx-card-simple 
+    <ntx-card-simple
       title="{{'Icon stroked buttons' | uppercase }}"
       subtitle="{{ '<ntx-stroked-icon-button>' }}">
         <ntx-stroked-icon-button showIconLeft="true" icon="icon-pencil" title="edit" color="#199AA8"></ntx-stroked-icon-button>
@@ -142,5 +142,48 @@
       </div>
     </ntx-card-simple>
 
-  </div>
+    <ntx-card-simple title="{{'Main button' | uppercase }}"
+                      subtitle="{{ '<ntx-main-button>' }}"
+                      class="black-bg">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <ntx-main-button title="Action primary" tooltip="Action primary" type="primary" icon="add"></ntx-main-button>
+        <ntx-main-button type="primary" tooltip="Add" icon="add"></ntx-main-button>
+        <ntx-main-button type="primary" tooltip="Add" icon="add" size="fullWidth"></ntx-main-button>
+        <ntx-main-button title="Action primary disabled full width" tooltip="Action primary disabled full width" type="primary" state="disabled" size="fullWidth"></ntx-main-button>
+        <ntx-main-button title="Action secondary" tooltip="Action secondary" type="secondary" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action secondary disabled" tooltip="Action secondary disabled" type="secondary" icon="add" state="disabled"></ntx-main-button>
+        <ntx-main-button title="Action tertiary" tooltip="Action tertiary" type="tertiary" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action tertiary disabled" tooltip="Action tertiary disabled" type="tertiary" icon="add" state="disabled"></ntx-main-button>
+        <ntx-main-button title="Action tertiary black" tooltip="Action tertiary black" type="tertiaryBlack" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action tertiary black disabled" tooltip="Action tertiary black disabled" type="tertiaryBlack" icon="add" state="disabled"></ntx-main-button>
+        <ntx-main-button type="rounded" tooltip="Add" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action rounded" tooltip="Action rounded" type="rounded" icon="add"></ntx-main-button>
+        <ntx-main-button title="Action rounded disabled" tooltip="Action rounded disabled" type="rounded" icon="add" state="disabled"></ntx-main-button>
+        <ntx-main-button title="Action see more" tooltip="Action see more" type="seeMore" icon="expand_more"></ntx-main-button>
+        <ntx-main-button title="Action see more disabled" tooltip="Action see more disabled" type="seeMore" icon="expand_more" state="disabled"></ntx-main-button>
+      </div>
+    </ntx-card-simple>
+    <ntx-card-simple 
+      title="{{'Progress button' | uppercase }}"
+      subtitle="{{ '<ntx-progress-button>' }}"
+      class="black-bg">
+        <div style="display: flex; gap: 12px;">
+          <ntx-progress-button></ntx-progress-button>
+          <ntx-progress-button [progress]="35"></ntx-progress-button>
+          <ntx-progress-button [progress]="12" [background]="'rgb(214, 82, 146)'"></ntx-progress-button>
+          <ntx-progress-button [progress]="25" [background]="'rgb(26, 169, 226)'"></ntx-progress-button>
+          <ntx-progress-button [progress]="50" [background]="'#44ab00'"></ntx-progress-button>
+          <ntx-progress-button [progress]="75" [background]="'rgb(65, 40, 144)'"></ntx-progress-button>
+          <ntx-progress-button [progress]="100"></ntx-progress-button>
+        </div>
+      </ntx-card-simple>
+
+    <ntx-card-simple 
+      title="{{'Bubble button' | uppercase }}"
+      subtitle="{{ '<ntx-bubble-button>' }}"
+      class="black-bg">
+        <div style="display: flex; gap: 12px;">
+          <ntx-bubble-button [count]="7"></ntx-bubble-button>
+        </div>
+      </ntx-card-simple>
 </div>

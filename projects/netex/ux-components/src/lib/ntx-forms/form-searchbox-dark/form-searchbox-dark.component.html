@@ -1,0 +1,9 @@
+<mat-form-field class="form-searchbox-dark" floatLabel="never">
+
+  <ntx-main-button type="rounded" tooltip="{{tooltipButtonSearch}}" icon="search"></ntx-main-button>
+
+  <input class="form-searchbox-dark__input utils--body" placeholder="{{placeholder}}" matInput type="search" [(ngModel)]="value">
+
+  <ntx-main-button *ngIf="value" type="rounded" tooltip="{{tooltipButtonClear}}" icon="close" (click)="value=''"></ntx-main-button>
+
+</mat-form-field>

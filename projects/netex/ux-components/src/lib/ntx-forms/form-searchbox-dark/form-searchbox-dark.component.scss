@@ -1,0 +1,66 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+$block: "form-searchbox-dark";
+
+.#{$block}{
+  width: 100%;
+  &.mat-form-field{
+    &.mat-form-field-appearance-legacy{
+      &.mat-focused{
+        .mat-form-field-wrapper{
+          .mat-form-field-flex{
+            .mat-form-field-infix{
+              .mat-form-field-label-wrapper{
+                .mat-form-field-label {
+                  color: $color-grey-700;
+                }
+              }
+            }
+          }
+          .mat-form-field-underline{
+            .mat-form-field-ripple{
+              height: 0;
+            }
+          }
+        }
+      }
+      .mat-form-field-wrapper{
+        padding-bottom: 0;
+        .mat-form-field-flex{
+          background-color: $color-grey-700;
+          border-radius: 4px;
+          padding: 0 4px;
+          .mat-form-field-infix{
+            align-items: center;
+            border: none;
+            display: flex;
+            height: 48px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: auto;
+            .mat-input-element{
+              caret-color: $color-primary;
+              height: 48px;
+              width: 100%;
+            }
+            .mat-form-field-label-wrapper{
+              left: 50px;
+              width: calc(100% - 50px);
+              .mat-form-field-label {
+                color: $color-white;
+                font-family: RobotoRegular;
+                font-size: $font-size-16;
+                line-height: 24px;
+                top: 24px;
+              }
+            }
+          }
+        }
+        .mat-form-field-underline{
+          height: 0;
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
   [labelPosition]="labelPosition"
   [name]="radioGroupName"
   [ngClass]="getClasses()">
-  <mat-radio-button 
+  <mat-radio-button
     *ngFor="let element of data"
     [checked]="element.checked"
     [disabled]="element.disabled"

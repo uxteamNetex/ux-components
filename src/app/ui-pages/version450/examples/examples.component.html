@@ -1,0 +1,315 @@
+<div class="page-layout">
+  <div class="page-container">
+    <ntx-card-simple class="whatsnew">
+
+      <div class="whatsnew__header">
+        <div class="whatsnew__header--texts">
+          <h1 class="whatsnew__header--title">Release v4.5.0: New components and bug fixing</h1>
+          <p class="whatsnew__header--subtitle">6 marzo 2023</p>
+        </div>
+        <img class="whatsnew__header--image" src="assets/images/rocket-7.png" alt="rocket image">
+      </div>
+
+      <div class="whatsnew__content">
+        <div class="whatsnew__announcement">
+          <p class="whatsnew__announcement--text">What’s new section is our monthly update that highlights recent product improvements we’ve made so you can easily stay up to date on what’s new.</p>
+        </div>
+
+        <h2 class="whatsnew__separation">
+          <span class="whatsnew__separation--text">What’s new</span>
+        </h2>
+
+        <div class="whatsnew__content-block">
+          <h4>Main button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-main-button</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/buttons/examples" (click)="setPath('buttons')">link</a></p>
+          <div style="background-color: #000; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <ntx-main-button tooltip="Action primary" type="primary" icon="add"></ntx-main-button>
+            <ntx-main-button title="Action primary" tooltip="Action primary" type="primary" icon="add"></ntx-main-button>
+            <ntx-main-button title="Action primary" tooltip="Action primary" type="primary" size="fullWidth"></ntx-main-button>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Progress button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-progress-button</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/buttons/examples" (click)="setPath('buttons')">link</a></p>
+          <div style="background-color: #000; padding: 24px; display: flex; gap: 12px;">
+            <ntx-progress-button></ntx-progress-button>
+            <ntx-progress-button [progress]="35"></ntx-progress-button>
+            <ntx-progress-button [progress]="12" [background]="'rgb(214, 82, 146)'"></ntx-progress-button>
+            <ntx-progress-button [progress]="25" [background]="'rgb(26, 169, 226)'"></ntx-progress-button>
+            <ntx-progress-button [progress]="50" [background]="'#44ab00'"></ntx-progress-button>
+            <ntx-progress-button [progress]="75" [background]="'rgb(65, 40, 144)'"></ntx-progress-button>
+            <ntx-progress-button [progress]="100"></ntx-progress-button>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Bubble button component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-bubble-button</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/buttons/examples" (click)="setPath('buttons')">link</a></p>
+          <div style="background-color: #000; padding: 24px; display: flex; gap: 12px;">
+            <ntx-bubble-button [count]="7"></ntx-bubble-button>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Main header component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-main-header</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/toolbars/examples" (click)="setPath('toolbars')">link</a></p>
+          <div style="display: flex;flex-direction: column;row-gap: 16px;">
+            <ntx-main-header>
+              <ntx-main-button type="rounded" tooltip="Menu" icon="menu"></ntx-main-button>
+              <ntx-main-button type="rounded" tooltip="Search" icon="search"></ntx-main-button>
+              <img class="utils--margin-0-auto" src="../../assets/images/logo-ntx-lcloud.png" alt="">  
+              <ntx-main-button title="Action" tooltip="Add" type="tertiary" icon="add"></ntx-main-button>
+              <ntx-bubble-button [count]="7"></ntx-bubble-button>
+          </ntx-main-header>
+          <ntx-main-header>
+              <img class="utils--margin-right-auto" src="../../assets/images/logo-ntx-lcloud.png" alt="">  
+              <ntx-main-button type="rounded" tooltip="Add" icon="add"></ntx-main-button>
+              <ntx-bubble-button [count]="7"></ntx-bubble-button>
+          </ntx-main-header>
+          <ntx-main-header>
+            <ntx-main-button type="rounded" tooltip="Back" icon="arrow_back"></ntx-main-button>
+            <div class="utils--text-white utils--truncate utils--margin-0-auto">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam sit accusantium at iste expedita modi est blanditiis molestias in tenetur consequatur similique repellat ipsa, tempore labore doloremque amet voluptas distinctio.
+            </div>
+            <ntx-progress-button [progress]="35"></ntx-progress-button>
+            <ntx-main-button type="rounded" tooltip="Info" icon="info"></ntx-main-button>
+            <ntx-bubble-button [count]="9"></ntx-bubble-button>
+        </ntx-main-header>
+        <ntx-main-header>
+          <div class="utils--margin-left-auto utils--margin-right-80">
+            <ntx-main-button type="rounded" tooltip="Explore" icon="explore"></ntx-main-button>
+          </div>
+          <ntx-main-button type="rounded" tooltip="Menu" icon="menu"></ntx-main-button>
+          <div class="utils--margin-right-auto utils--margin-left-80">
+            <ntx-main-button type="rounded" tooltip="Search" icon="search"></ntx-main-button>
+          </div>  
+        </ntx-main-header>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Form Radio Group component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-form-radio-button-group</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/forms/examples" (click)="setPath('forms')">link</a></p>
+          <div style="margin: 24px 0 16px 0;font-weight: bold;">RadioButton group (theme-dark-flat)</div>
+          <div style="background-color: #000; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <ntx-form-radio-button-group [data]="data01" themeDarkFlat></ntx-form-radio-button-group>
+          </div>
+          <div style="margin: 24px 0 16px 0;font-weight: bold;">RadioButton group (theme-dark-stroked and hidden radiobuttons)</div>
+          <div style="background-color: #000; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <ntx-form-radio-button-group [data]="data02" hideRadioButtons themeDarkStroked></ntx-form-radio-button-group>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card25 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-card25</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/cards-catalog/examples" (click)="setPath('cards-catalog')">link</a></p>
+          <div class="utils--padding-8" *ngFor="let item of card25">
+            <ntx-card25
+              [image]="item.image"
+              [avatar]="item.avatar"
+              [title]="item.title"
+              [subtitle]="item.subtitle"
+              [description]="item.description"
+              [mobile]="item.mobile"></ntx-card25>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card26 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-card26</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/cards-catalog/examples" (click)="setPath('cards-catalog')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black" *ngFor="let item of card26">
+            <ntx-card26
+              [image]="item.image"
+              [avatar]="item.avatar"
+              [title]="item.title"
+              [subtitle]="item.subtitle"
+              [label]="item.label"
+              [sizeCard]="item.sizeCard"
+              [sizeText]="item.sizeText"
+              [highlighted]="item.highlighted"
+              [textUnlimited]="item.textUnlimited"></ntx-card26>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card27 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-card27</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/cards-catalog/examples" (click)="setPath('cards-catalog')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black" *ngFor="let item of card27">
+            <ntx-card27
+              [image]="item.image"
+              [title]="item.title"
+              [description]="item.description"
+              [label]="item.label"
+              [sizeCard]="item.sizeCard"
+              [sizeText]="item.sizeText"
+              [highlighted]="item.highlighted"
+              [textUnlimited]="item.textUnlimited"></ntx-card27>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Radiobutton dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-form-radiobutton-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/forms/examples" (click)="setPath('forms')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-form-radiobutton-dark radioGroupName="radiobuttondark-1" [data]="radiobuttondark"></ntx-form-radiobutton-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Progress bar dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-progress-bar-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/progress-bar/examples" (click)="setPath('progress-bar')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-progress-bar-dark class="utils--margin-top-24 utils--margin-bottom-24" color="primary" [value]="'52'"></ntx-progress-bar-dark>
+            <ntx-progress-bar-dark class="utils--margin-top-24 utils--margin-bottom-24" color="success" [value]="'78'" [requiredValue]="'42'"></ntx-progress-bar-dark>
+            <ntx-progress-bar-dark class="utils--margin-top-24 utils--margin-bottom-24" color="error" [value]="'34'" [requiredValue]="'65'"></ntx-progress-bar-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Textarea dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-form-textarea-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/form-controls/examples" (click)="setPath('form-controls')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black" *ngFor="let item of textareaDark">
+            <ntx-form-textarea-dark
+              [image]="item.image"
+              [placeholder]="item.placeholder">
+              <div class="utils--flex utils--margin-left-auto">
+                <ntx-main-button title="Cancel" tooltip="Cancel" type="tertiary"></ntx-main-button>
+                <ntx-main-button title="Send comment" tooltip="Send comment" type="tertiary" state="disabled"></ntx-main-button>
+              </div>
+            </ntx-form-textarea-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List10 dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-list10-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-list10-dark [items]=list10Dark></ntx-list10-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Comment dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-comment-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/comments/examples" (click)="setPath('comments')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-comment-dark
+              image="assets/images/user_female_01.jpg"
+              title="John Doe"
+              time="a few seconds ago"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget euismod aeu fames diam enim, tellus. A ullamcorper ultrices eget in."
+              score="true">
+              <div class="utils--flex-end">
+                <ntx-main-button title="Edit" tooltip="Edit" type="tertiary"></ntx-main-button>
+                <ntx-main-button title="Delete" tooltip="Delete" type="tertiary" state="disabled"></ntx-main-button>
+              </div>
+            </ntx-comment-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Tabs dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-tabs-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/tabs/examples" (click)="setPath('tabs')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-tabs-dark [user] ="tabsDark"></ntx-tabs-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Progress circle component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-progress-circle</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/progress-spinner/examples" (click)="setPath('progress-spinner')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-progress-circle class="utils--inline-block" [color]="'green-lime'" [color2]="'accent'" [diameter]="120" [strokeWidth]="12" [value]="76" [value2]="100"></ntx-progress-circle>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card28 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-card28</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/cards-catalog/examples" (click)="setPath('cards-catalog')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black" *ngFor="let item of card28">
+            <ntx-card28
+              [image]="item.image"
+              [title]="item.title"
+              [subtitle]="item.subtitle"
+              [description]="item.description"
+              [label]="item.label"></ntx-card28>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>List11 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-list11</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/lists/examples" (click)="setPath('lists')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black" *ngFor="let item of list11">
+            <ntx-list11
+              [icon]="item.icon"
+              [title]="item.title"
+              [label]="item.label"
+              [showProgressBar]="item.showProgressBar"
+              [progressBarColor]="item.progressBarColor"
+              [progressBarValue]="item.progressBarValue"
+              [progressBarRequiredValue]="item.progressBarRequiredValue"
+              ></ntx-list11>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Select dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-form-select-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/forms/examples" (click)="setPath('forms')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-form-select-dark [options]="selectDarkOptions"></ntx-form-select-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Datepicker dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-form-datepicker-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/forms/examples" (click)="setPath('forms')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-form-datepicker-dark label="Fecha de inicio" placeholder="DD/MM/YYYY"></ntx-form-datepicker-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Searchbox dark component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-form-searchbox-dark</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/forms/examples" (click)="setPath('forms')">link</a></p>
+          <div class="utils--padding-8 utils--bc-black">
+            <ntx-form-searchbox-dark tooltipButtonSearch="Search" placeholder="Search something..." tooltipButtonClear="Clear"></ntx-form-searchbox-dark>
+          </div>
+        </div>
+
+        <div class="whatsnew__content-block">
+          <h4>Card29 component</h4>
+          <p class="whatsnew__content-block--text utils--text-18">In this version we have added <span class="documentation-code">ntx-card29</span> component.</p>
+          <p class="whatsnew__content-block--text utils--text-18">You can see the component in this <a class="" mat-list-item routerLink="/cards-catalog/examples" (click)="setPath('cards-catalog')">link</a></p>
+          <div class="utils--padding-8" *ngFor="let item of card29">
+            <ntx-card29
+              [bgColor]="item.bgColor"
+              [score]="item.score"
+              [title]="item.title"></ntx-card29>
+          </div>
+        </div>
+
+      </div>
+
+    </ntx-card-simple>
+  </div>
+</div>

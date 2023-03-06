@@ -1,0 +1,29 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+* {
+  box-sizing: border-box;
+}
+
+$block: "list11";
+
+.#{$block} {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    .#{$block}__content--title{
+      display: -webkit-box;
+      max-width: max-content;
+      overflow: hidden;
+      word-break: break-word;
+      -webkit-line-clamp: 1;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+    }
+  }
+}

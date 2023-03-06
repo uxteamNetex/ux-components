@@ -1,0 +1,21 @@
+<div 
+  [ngClass]="{
+    'theme-dark-flat': themeDarkFlat,
+    'theme-dark-stroked': themeDarkStroked
+  }" 
+  class="form-radio-button-group-simple">
+  <mat-radio-group>
+    <mat-radio-button 
+      *ngFor="let element of data" 
+      [value]="element.value"
+      (change)="onChangeRadioButton($event, element)"
+      [class.hidden]="hideRadioButtons">
+      <div 
+        [class.selected]="element === selectedElement"
+        class="form-radio-button-group-simple__content-box">
+        <div class="title">{{element.title}}</div>
+        <div class="description">{{element.description}}</div>
+      </div>
+    </mat-radio-button>
+  </mat-radio-group>
+</div>

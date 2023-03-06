@@ -1,0 +1,55 @@
+@import "././projects/netex/ux-components/src/stylesLC/app/utils";
+
+$block: "ntx-radiobutton-dark";
+
+.#{$block} {
+  mat-radio-button {
+    margin: 0 0 0 8px;
+    &.mat-radio-disabled {
+      opacity: 0.5;
+    }
+    &.mat-radio-checked{
+      label.mat-radio-label{
+        .mat-radio-container{
+          .mat-radio-outer-circle {
+            border-color: $color-white;
+            border-width: 2px;
+          }
+        }
+      }
+      .mat-radio-inner-circle {
+        background-color: $color-white;
+      }
+    }
+    label.mat-radio-label{
+      color: $color-grey-500;
+      white-space: normal;
+      .mat-radio-container{
+        .mat-radio-outer-circle {
+          border-color: $color-primary-03;
+        }
+        .mat-radio-inner-circle {
+          height: 24px;
+          left: -2px;
+          top: -2px;
+          width: 24px;
+        }
+        .mat-radio-ripple{
+          .mat-ripple-element {
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+      .mat-radio-label-content{
+        padding: 0 8px;
+      }
+    }
+    &[hidden]{
+      label.mat-radio-label{
+        .mat-radio-container{
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

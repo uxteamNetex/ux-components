@@ -355,6 +355,9 @@ $block: "utils";
   }
 
   //Márgenes
+  &--margin-0-auto {
+    margin: 0 auto !important;
+  }
   &--margin-0 {
 		margin: $separation-0 !important;
   }
@@ -505,6 +508,9 @@ $block: "utils";
   &--margin-bottom-100 {
 		margin-bottom: $separation-100 !important;
   }
+  &--margin-left-auto {
+		margin-left: auto !important;
+	}
 	&--margin-left-0 {
 		margin-left: $separation-0 !important;
 	}
@@ -769,6 +775,10 @@ $block: "utils";
     display: flex !important;
     justify-content: center !important;
   }
+  &--flex-end {
+    display: flex !important;
+    justify-content: end !important;
+  }
   &--flex-vertical-center {
     align-items: center !important;
     display: flex !important;
@@ -776,6 +786,10 @@ $block: "utils";
   &--flex-column {
     display: flex !important;
     flex-direction: column;
+  }
+
+  &--inline-block {
+    display: inline-block;
   }
 
   //Anchos de columnas en tablas

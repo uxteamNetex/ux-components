@@ -8,6 +8,48 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 * [COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA](doc/COMO_CREAR_COMPONENTES_EN_LA_LIBRERIA.md)
 * [COMO_PUBLICAR_LA_LIBRERIA](doc/COMO_PUBLICAR_LA_LIBRERIA.md)
 
+### v.4.5.0: (En curso)
+
+**Toolbars**<br/>
+- Nuevo componente *ntx-main-header*.
+
+**Cards**<br/>
+- Nuevo componente *ntx-card25*.
+- Nuevo componente *ntx-card26*.
+- Nuevo componente *ntx-card27*.
+- Nuevo componente *ntx-card28*.
+- Nuevo componente *ntx-card29*.
+
+**Buttons**<br/>
+- Nuevo componente *ntx-main-button*.
+- Nuevo componente *ntx-progress-button*.
+- Nuevo componente *ntx-bubble-button*.
+
+**Forms**<br/>
+- Nuevo componente *ntx-form-radiobutton-dark*.
+- Nuevo componente *ntx-form-select-dark*.
+- Nuevo componente *ntx-form-datepicker-dark*.
+- Nuevo componente *ntx-form-searchbox-dark*.
+- Nuevo componente *ntx-form-radio-button-group*.
+
+**Progress bar**<br/>
+- Nuevo componente *ntx-progress-bar-dark*.
+
+**Lists**<br/>
+- Nuevo componente *ntx-list10-dark*.
+- Nuevo componente *ntx-list11*.
+
+**Comments**<br/>
+- Nuevo componente *ntx-comment-dark*.
+
+**Tabs**<br/>
+- Nuevo componente *ntx-tabs-dark*.
+
+**Progress spinner**<br/>
+- Nuevo componente *ntx-progress-circle*.
+
+------------------
+
 ### v.4.4.0:
 
 **Avatars**<br/>
@@ -105,6 +147,7 @@ En la carpeta `doc` se pueden encontrar los siguientes ficheros de documentació
 **Labels**<br/>
 - Cambios en el componente ntx-label *ntx-label*: Se parametriza el color y se hace adaptativo al padre.
 - Cambios en el componente ntx-label *ntx-label-round*: Se parametriza el color y se hace adaptativo al padre.
+
 ------------------
 
 ### v.4.3.3:

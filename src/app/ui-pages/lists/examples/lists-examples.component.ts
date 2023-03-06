@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { PRIMARY_OUTLET } from '@angular/router';
 
 export interface Item {
 	label: string;
@@ -659,6 +660,35 @@ export class ListsExamplesComponent implements OnInit {
 			iconColor: '#EE9A37',
 		}
 	];
+  list10Dark = [
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star_border',
+			iconColor: '#fff',
+      iconSize: '18px',
+		},
+		{
+			icon: 'star_border',
+			iconColor: '#fff',
+      iconSize: '18px',
+		}
+	];
+
+  list11: any[] = [];
 
 	constructor() { }
 
@@ -701,6 +731,47 @@ export class ListsExamplesComponent implements OnInit {
 				}
 			]
 		};
+
+    this.list11 = [
+			{
+        icon: 'military_tech',
+        title: 'Soft Skills',
+        label: '87',
+        showProgressBar: true,
+        progressBarColor: 'primary',
+        progressBarValue: '87'
+      },
+      {
+        icon: 'military_tech',
+        title: 'Design systems',
+        label: '62',
+        showProgressBar: true,
+        progressBarColor: 'success',
+        progressBarValue: '62',
+        progressBarRequiredValue: '48'
+      },
+      {
+        title: 'Project management',
+        showProgressBar: true,
+        progressBarColor: 'error',
+        progressBarValue: '28',
+        progressBarRequiredValue: '73'
+      },
+      {
+        icon: 'military_tech',
+        title: 'Project management',
+        showProgressBar: true,
+        progressBarColor: 'green-lime',
+        progressBarValue: '51',
+        progressBarRequiredValue: '23'
+      },
+      {
+        icon: 'star',
+        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet imperdiet fermentum. Sed enim velit, porttitor id tempus tincidunt, pellentesque et quam. Pellentesque tincidunt lacus vitae purus mattis porttitor. Proin nec feugiat sem.',
+        label: '100',
+        showProgressBar: false,
+      },
+		];
 	}
 
 }

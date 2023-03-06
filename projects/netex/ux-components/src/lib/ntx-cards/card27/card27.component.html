@@ -1,0 +1,8 @@
+<div class="card27 {{sizeCard}}" [ngClass]="{'highlighted': highlighted, 'textUnlimited': textUnlimited}">
+  <div *ngIf="image" class="card27__image" [ngStyle]="{'background-image':'url(' + image + ')'}"></div>
+  <div class="card27__content">
+    <p *ngIf="label" class="card27__content--label utils--tabsMetaChips" matTooltip="{{label}}">{{label}}</p>
+    <h5 *ngIf="title" class="card27__content--title {{sizeText}}" matTooltip="{{title}}">{{title}}</h5>
+    <p class="utils--body card27__content--description {{sizeText}}" matTooltip="{{description}}">{{description}}</p>
+  </div>
+</div>
