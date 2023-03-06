@@ -1,0 +1,1079 @@
+[
+        {
+            "className": "icon-apple"
+        },
+        {
+            "className": "icon-archive"
+        },
+        {
+            "className": "icon-archive-solid"
+        },
+        {
+            "className": "icon-arrow-back"
+        },
+        {
+            "className": "icon-arrow-bottom"
+        },
+        {
+            "className": "icon-arrow-bottom-solid"
+        },
+        {
+            "className": "icon-arrow-right"
+        },
+        {
+            "className": "icon-arrow-right-solid"
+        },
+        {
+            "className": "icon-arrow-top"
+        },
+        {
+            "className": "icon-arrow-top-solid"
+        },
+        {
+            "className": "icon-attached-file"
+        },
+        {
+            "className": "icon-backpack"
+        },
+        {
+            "className": "icon-badge"
+        },
+        {
+            "className": "icon-bell"
+        },
+        {
+            "className": "icon-bell-solid"
+        },
+        {
+            "className": "icon-binoculars"
+        },
+        {
+            "className": "icon-binoculars-off"
+        },
+        {
+            "className": "icon-block"
+        },
+        {
+            "className": "icon-bookmark"
+        },
+        {
+            "className": "icon-bookmark-solid"
+        },
+        {
+            "className": "icon-border-all"
+        },
+        {
+            "className": "icon-border-down"
+        },
+        {
+            "className": "icon-border-left"
+        },
+        {
+            "className": "icon-border-right"
+        },
+        {
+            "className": "icon-border-up"
+        },
+        {
+            "className": "icon-briefcase"
+        },
+        {
+            "className": "icon-calendar"
+        },
+        {
+            "className": "icon-calendar-check"
+        },
+        {
+            "className": "icon-camera"
+        },
+        {
+            "className": "icon-car"
+        },
+        {
+            "className": "icon-car-solid"
+        },
+        {
+            "className": "icon-caret-down"
+        },
+        {
+            "className": "icon-caret-left"
+        },
+        {
+            "className": "icon-caret-right"
+        },
+        {
+            "className": "icon-caret-up"
+        },
+        {
+            "className": "icon-carrusel"
+        },
+        {
+            "className": "icon-channel"
+        },
+        {
+            "className": "icon-chart-solid"
+        },
+        {
+            "className": "icon-chat-bubble"
+        },
+        {
+            "className": "icon-chat-bubble-question"
+        },
+        {
+            "className": "icon-chat-bubble-smile"
+        },
+        {
+            "className": "icon-chat-bubble-solid"
+        },
+        {
+            "className": "icon-chat-bubbles"
+        },
+        {
+            "className": "icon-check"
+        },
+        {
+            "className": "icon-check-circle"
+        },
+        {
+            "className": "icon-check-circle-solid"
+        },
+        {
+            "className": "icon-check-double"
+        },
+        {
+            "className": "icon-check-shield"
+        },
+        {
+            "className": "icon-chest"
+        },
+        {
+            "className": "icon-chevron-down"
+        },
+        {
+            "className": "icon-chevron-left"
+        },
+        {
+            "className": "icon-chevron-right"
+        },
+        {
+            "className": "icon-chevron-up"
+        },
+        {
+            "className": "icon-circle-90"
+        },
+        {
+            "className": "icon-circle-180"
+        },
+        {
+            "className": "icon-circle-270"
+        },
+        {
+            "className": "icon-circle-360"
+        },
+        {
+            "className": "icon-city-berlin"
+        },
+        {
+            "className": "icon-city-tokyo"
+        },
+        {
+            "className": "icon-city-vegas"
+        },
+        {
+            "className": "icon-city-vienna"
+        },
+        {
+            "className": "icon-clear"
+        },
+        {
+            "className": "icon-clipboard-list"
+        },
+        {
+            "className": "icon-clock"
+        },
+        {
+            "className": "icon-clock-solid"
+        },
+        {
+            "className": "icon-clock-loading"
+        },
+        {
+            "className": "icon-clock-loading-inverse"
+        },
+        {
+            "className": "icon-cloud"
+        },
+        {
+            "className": "icon-coin"
+        },
+        {
+            "className": "icon-coin-star"
+        },
+        {
+            "className": "icon-collections"
+        },
+        {
+            "className": "icon-columns"
+        },
+        {
+            "className": "icon-columns-solid"
+        },
+        {
+            "className": "icon-compass"
+        },
+        {
+            "className": "icon-competency"
+        },
+        {
+            "className": "icon-compose"
+        },
+        {
+            "className": "icon-construction-barrier"
+        },
+        {
+            "className": "icon-create"
+        },
+        {
+            "className": "icon-crop"
+        },
+        {
+            "className": "icon-cross"
+        },
+        {
+            "className": "icon-cross-circle"
+        },
+        {
+            "className": "icon-cross-circle-solid"
+        },
+        {
+            "className": "icon-davinci"
+        },
+        {
+            "className": "icon-dashboard"
+        },
+        {
+            "className": "icon-desktop"
+        },
+        {
+            "className": "icon-dislike"
+        },
+        {
+            "className": "icon-download"
+        },
+        {
+            "className": "icon-drag"
+        },
+        {
+            "className": "icon-drag-reorder"
+        },
+        {
+            "className": "icon-drop"
+        },
+        {
+            "className": "icon-duplicate"
+        },
+        {
+            "className": "icon-duplicate-search"
+        },
+        {
+            "className": "icon-editor-accordion"
+        },
+        {
+            "className": "icon-editor-activity"
+        },
+        {
+            "className": "icon-editor-activity-statement"
+        },
+        {
+            "className": "icon-editor-area"
+        },
+        {
+            "className": "icon-editor-audio"
+        },
+        {
+            "className": "icon-editor-audio-gallery"
+        },
+        {
+            "className": "icon-editor-audio-gallery-item"
+        },
+        {
+            "className": "icon-editor-before-after"
+        },
+        {
+            "className": "icon-editor-block"
+        },
+        {
+            "className": "icon-editor-carrousel"
+        },
+        {
+            "className": "icon-editor-circle"
+        },
+        {
+            "className": "icon-editor-clicksmap"
+        },
+        {
+            "className": "icon-editor-close-button"
+        },
+        {
+            "className": "icon-editor-column"
+        },
+        {
+            "className": "icon-editor-compose"
+        },
+        {
+            "className": "icon-editor-connector-video-interactive"
+        },
+        {
+            "className": "icon-editor-copyright"
+        },
+        {
+            "className": "icon-editor-downloads-popup"
+        },
+        {
+            "className": "icon-editor-drag-activity"
+        },
+        {
+            "className": "icon-editor-dropdown-activity"
+        },
+        {
+            "className": "icon-editor-educaplay"
+        },
+        {
+            "className": "icon-editor-end-drag-activity"
+        },
+        {
+            "className": "icon-editor-external-animation"
+        },
+        {
+            "className": "icon-editor-fill-gap-activity"
+        },
+        {
+            "className": "icon-editor-flip-image"
+        },
+        {
+            "className": "icon-editor-footer-reference"
+        },
+        {
+            "className": "icon-editor-fullcontainer"
+        },
+        {
+            "className": "icon-editor-gallery"
+        },
+        {
+            "className": "icon-editor-glossary"
+        },
+        {
+            "className": "icon-editor-glossary-connector"
+        },
+        {
+            "className": "icon-editor-glossary-links-item"
+        },
+        {
+            "className": "icon-editor-glossary-popup"
+        },
+        {
+            "className": "icon-editor-grid"
+        },
+        {
+            "className": "icon-editor-help-popup"
+        },
+        {
+            "className": "icon-editor-hotspot"
+        },
+        {
+            "className": "icon-editor-iframe"
+        },
+        {
+            "className": "icon-editor-image"
+        },
+        {
+            "className": "icon-editor-image-exchange"
+        },
+        {
+            "className": "icon-editor-instruction"
+        },
+        {
+            "className": "icon-editor-interactive-activity"
+        },
+        {
+            "className": "icon-editor-interactive-timeline-item"
+        },
+        {
+            "className": "icon-editor-launcher"
+        },
+        {
+            "className": "icon-editor-link"
+        },
+        {
+            "className": "icon-editor-linker-activity"
+        },
+        {
+            "className": "icon-editor-linker-option"
+        },
+        {
+            "className": "icon-editor-linker-question"
+        },
+        {
+            "className": "icon-editor-logo"
+        },
+        {
+            "className": "icon-editor-matrix-multiple-activity"
+        },
+        {
+            "className": "icon-editor-matrix-single-activity"
+        },
+        {
+            "className": "icon-editor-multiple-choice-activity"
+        },
+        {
+            "className": "icon-editor-negative-feedback"
+        },
+        {
+            "className": "icon-editor-one-choice-activity"
+        },
+        {
+            "className": "icon-editor-page"
+        },
+        {
+            "className": "icon-editor-panel"
+        },
+        {
+            "className": "icon-editor-parallax"
+        },
+        {
+            "className": "icon-editor-pdf"
+        },
+        {
+            "className": "icon-editor-popup-single"
+        },
+        {
+            "className": "icon-editor-positive-feedback"
+        },
+        {
+            "className": "icon-editor-presentation"
+        },
+        {
+            "className": "icon-editor-project-data-link"
+        },
+        {
+            "className": "icon-editor-quiz"
+        },
+        {
+            "className": "icon-editor-quiz-connector"
+        },
+        {
+            "className": "icon-editor-quote"
+        },
+        {
+            "className": "icon-editor-reinforcement-activity"
+        },
+        {
+            "className": "icon-editor-row"
+        },
+        {
+            "className": "icon-editor-show-close-button"
+        },
+        {
+            "className": "icon-editor-show-search"
+        },
+        {
+            "className": "icon-editor-scorm-player"
+        },
+        {
+            "className": "icon-editor-screen"
+        },
+        {
+            "className": "icon-editor-screen-title"
+        },
+        {
+            "className": "icon-editor-separator"
+        },
+        {
+            "className": "icon-editor-svg-animation"
+        },
+        {
+            "className": "icon-editor-table"
+        },
+        {
+            "className": "icon-editor-tabs"
+        },
+        {
+            "className": "icon-editor-taptap-activity"
+        },
+        {
+            "className": "icon-editor-text"
+        },
+        {
+            "className": "icon-editor-timeline"
+        },
+        {
+            "className": "icon-editor-tracking-summary"
+        },
+        {
+            "className": "icon-editor-true-false-activity"
+        },
+        {
+            "className": "icon-editor-unit-menu"
+        },
+        {
+            "className": "icon-editor-video"
+        },
+        {
+            "className": "icon-editor-video-interactive"
+        },
+        {
+            "className": "icon-editor-video-online"
+        },
+        {
+            "className": "icon-editor-vimeo"
+        },
+        {
+            "className": "icon-editor-widget"
+        },
+        {
+            "className": "icon-editor-widget-area"
+        },
+        {
+            "className": "icon-editor-youtube"
+        },
+        {
+            "className": "icon-envelope"
+        },
+        {
+            "className": "icon-envelope-dot"
+        },
+        {
+            "className": "icon-envelope-solid"
+        },
+        {
+            "className": "icon-euro"
+        },
+        {
+            "className": "icon-evaluation"
+        },
+        {
+            "className": "icon-evaluation-solid"
+        },
+        {
+            "className": "icon-export"
+        },
+        {
+            "className": "icon-export-solid"
+        },
+        {
+            "className": "icon-eye"
+        },
+        {
+            "className": "icon-eye-off"
+        },
+        {
+            "className": "icon-face-sad"
+        },
+        {
+            "className": "icon-file"
+        },
+        {
+            "className": "icon-file-abc"
+        },
+        {
+            "className": "icon-file-arrow-up"
+        },
+        {
+            "className": "icon-file-pdf"
+        },
+        {
+            "className": "icon-file-plus"
+        },
+        {
+            "className": "icon-file-zip"
+        },
+        {
+            "className": "icon-filter-circle"
+        },
+        {
+            "className": "icon-flag"
+        },
+        {
+            "className": "icon-flag-refresh"
+        },
+        {
+            "className": "icon-folder"
+        },
+        {
+            "className": "icon-folder-closed"
+        },
+        {
+            "className": "icon-folder-closed-solid"
+        },
+        {
+            "className": "icon-folder-plus"
+        },
+        {
+            "className": "icon-forbidden"
+        },
+        {
+            "className": "icon-forbidden-shield"
+        },
+        {
+            "className": "icon-form-input"
+        },
+        {
+            "className": "icon-fullscreen"
+        },
+        {
+            "className": "icon-funnel-solid"
+        },
+        {
+            "className": "icon-gamepad"
+        },
+        {
+            "className": "icon-gear"
+        },
+        {
+            "className": "icon-gear-solid"
+        },
+        {
+            "className": "icon-gift"
+        },
+        {
+            "className": "icon-globe"
+        },
+        {
+            "className": "icon-graduation-hat"
+        },
+        {
+            "className": "icon-grid"
+        },
+        {
+            "className": "icon-hard-disk"
+        },
+        {
+            "className": "icon-heart"
+        },
+        {
+            "className": "icon-heart-off"
+        },
+        {
+            "className": "icon-heart-solid"
+        },
+        {
+            "className": "icon-home"
+        },
+        {
+            "className": "icon-home-solid"
+        },
+        {
+            "className": "icon-image"
+        },
+        {
+            "className": "icon-inbox-solid"
+        },
+        {
+            "className": "icon-index"
+        },
+        {
+            "className": "icon-index-off"
+        },
+        {
+            "className": "icon-info-circle"
+        },
+        {
+            "className": "icon-info-circle-solid"
+        },
+        {
+            "className": "icon-laptop"
+        },
+        {
+            "className": "icon-launch-external"
+        },
+        {
+            "className": "icon-less-circle"
+        },
+        {
+            "className": "icon-less-circle-solid"
+        },
+        {
+            "className": "icon-light-bulb"
+        },
+        {
+            "className": "icon-like"
+        },
+        {
+            "className": "icon-link"
+        },
+        {
+            "className": "icon-link-broken"
+        },
+        {
+            "className": "icon-list"
+        },
+        {
+            "className": "icon-location"
+        },
+        {
+            "className": "icon-location-solid"
+        },
+        {
+            "className": "icon-lock"
+        },
+        {
+            "className": "icon-lock-solid"
+        },
+        {
+            "className": "icon-logo-cloud"
+        },
+        {
+            "className": "icon-logo-cloud-solid"
+        },
+        {
+            "className": "icon-logo-facebook"
+        },
+        {
+            "className": "icon-logo-linkedin"
+        },
+        {
+            "className": "icon-logo-play"
+        },
+        {
+            "className": "icon-logo-twitter"
+        },
+        {
+            "className": "icon-logout"
+        },
+        {
+            "className": "icon-magazine"
+        },
+        {
+            "className": "icon-mailbox"
+        },
+        {
+            "className": "icon-menu"
+        },
+        {
+            "className": "icon-mission-block"
+        },
+        {
+            "className": "icon-mission-block-center"
+        },
+        {
+            "className": "icon-mission-block-left"
+        },
+        {
+            "className": "icon-mission-block-right"
+        },
+        {
+            "className": "icon-mobile"
+        },
+        {
+            "className": "icon-modal"
+        },
+        {
+            "className": "icon-more-options"
+        },
+        {
+            "className": "icon-move"
+        },
+        {
+            "className": "icon-multiple-classroom"
+        },
+        {
+            "className": "icon-navigation-header"
+        },
+        {
+            "className": "icon-notebook"
+        },
+        {
+            "className": "icon-open-book"
+        },
+        {
+            "className": "icon-order-horizontally"
+        },
+        {
+            "className": "icon-orderby"
+        },
+        {
+            "className": "icon-organisation-chart"
+        },
+        {
+            "className": "icon-palette-color"
+        },
+        {
+            "className": "icon-palette-color-solid"
+        },
+        {
+            "className": "icon-paperclip"
+        },
+        {
+            "className": "icon-paperplane"
+        },
+        {
+            "className": "icon-pathway"
+        },
+        {
+            "className": "icon-pencil"
+        },
+        {
+            "className": "icon-pencil-circle-dotted"
+        },
+        {
+            "className": "icon-pencil-solid"
+        },
+        {
+            "className": "icon-pin-checked-solid"
+        },
+        {
+            "className": "icon-pin-solid"
+        },
+        {
+            "className": "icon-play"
+        },
+        {
+            "className": "icon-plus"
+        },
+        {
+            "className": "icon-plus-circle"
+        },
+        {
+            "className": "icon-poweroff"
+        },
+        {
+            "className": "icon-publish"
+        },
+        {
+            "className": "icon-question-circle"
+        },
+        {
+            "className": "icon-rank"
+        },
+        {
+            "className": "icon-recycle"
+        },
+        {
+            "className": "icon-redo"
+        },
+        {
+            "className": "icon-redo-filled"
+        },
+        {
+            "className": "icon-refresh"
+        },
+        {
+            "className": "icon-reply"
+        },
+        {
+            "className": "icon-reply-solid"
+        },
+        {
+            "className": "icon-reply-all-solid"
+        },
+        {
+            "className": "icon-reports"
+        },
+        {
+            "className": "icon-resize"
+        },
+        {
+            "className": "icon-restore"
+        },
+        {
+            "className": "icon-rotate-left"
+        },
+        {
+            "className": "icon-rotate-right"
+        },
+        {
+            "className": "icon-save"
+        },
+        {
+            "className": "icon-save-solid"
+        },
+        {
+            "className": "icon-scanning"
+        },
+        {
+            "className": "icon-search"
+        },
+        {
+            "className": "icon-see-more-dots"
+        },
+        {
+            "className": "icon-send"
+        },
+        {
+            "className": "icon-send-solid"
+        },
+        {
+            "className": "icon-send-off"
+        },
+        {
+            "className": "icon-share"
+        },
+        {
+            "className": "icon-shopping-basket"
+        },
+        {
+            "className": "icon-smile"
+        },
+        {
+            "className": "icon-sort"
+        },
+        {
+            "className": "icon-speaker"
+        },
+        {
+            "className": "icon-sprint"
+        },
+        {
+            "className": "icon-star"
+        },
+        {
+            "className": "icon-star-solid"
+        },
+        {
+            "className": "icon-switch-off"
+        },
+        {
+            "className": "icon-switch-on"
+        },
+        {
+            "className": "icon-tablet"
+        },
+        {
+            "className": "icon-tags"
+        },
+        {
+            "className": "icon-tags-menu"
+        },
+        {
+            "className": "icon-teacher"
+        },
+        {
+            "className": "icon-telephone"
+        },
+        {
+            "className": "icon-thumb-activity"
+        },
+        {
+            "className": "icon-thumb-audio"
+        },
+        {
+            "className": "icon-thumb-levelup"
+        },
+        {
+            "className": "icon-thumb-link"
+        },
+        {
+            "className": "icon-thumb-presentation"
+        },
+        {
+            "className": "icon-thumb-quiz"
+        },
+        {
+            "className": "icon-thumb-timeline"
+        },
+        {
+            "className": "icon-thumb-video"
+        },
+        {
+            "className": "icon-timeline"
+        },
+        {
+            "className": "icon-trash"
+        },
+        {
+            "className": "icon-trash-solid"
+        },
+        {
+            "className": "icon-trophy"
+        },
+        {
+            "className": "icon-trophy-solid"
+        },
+        {
+            "className": "icon-undo"
+        },
+        {
+            "className": "icon-undo-filled"
+        },
+        {
+            "className": "icon-unlock"
+        },
+        {
+            "className": "icon-unlock-solid"
+        },
+        {
+            "className": "icon-upload"
+        },
+        {
+            "className": "icon-user"
+        },
+        {
+            "className": "icon-user-bubble"
+        },
+        {
+            "className": "icon-user-card"
+        },
+        {
+            "className": "icon-user-change"
+        },
+        {
+            "className": "icon-user-check"
+        },
+        {
+            "className": "icon-user-circle"
+        },
+        {
+            "className": "icon-user-clipboard"
+        },
+        {
+            "className": "icon-user-edit"
+        },
+        {
+            "className": "icon-user-export"
+        },
+        {
+            "className": "icon-user-generic-line"
+        },
+        {
+            "className": "icon-user-group"
+        },
+        {
+            "className": "icon-user-hat"
+        },
+        {
+            "className": "icon-user-less"
+        },
+        {
+            "className": "icon-user-plus"
+        },
+        {
+            "className": "icon-user-settings"
+        },
+        {
+            "className": "icon-user-queue"
+        },
+        {
+            "className": "icon-users"
+        },
+        {
+            "className": "icon-users-arrow-bottom"
+        },
+        {
+            "className": "icon-users-plus"
+        },
+        {
+            "className": "icon-versions"
+        },
+        {
+            "className": "icon-view-bounding-box"
+        },
+        {
+            "className": "icon-video"
+        },
+        {
+            "className": "icon-warning"
+        },
+        {
+            "className": "icon-warning-solid"
+        }
+]

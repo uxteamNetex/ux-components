@@ -1,0 +1,42 @@
+[
+    {
+        "label": "raised",
+        "selector": "<ntx-raised-button>"
+    },
+    {
+        "label": "icon raised",
+        "selector": "<ntx-raised-icon-button>"
+    },
+    {
+      "label": "raised round",
+      "selector": "<ntx-raised-round-button>"
+    },
+    {
+        "label": "icon",
+        "selector": "<ntx-icon-button>"
+    },
+    {
+        "label": "fab",
+        "selector": "<ntx-fab-button>"
+    },
+    {
+        "label": "mini fab",
+        "selector": "<ntx-mini-fab-button>"
+    },
+    {
+        "label": "square",
+        "selector": "<ntx-square-button>"
+    },
+    {
+        "label": "rectangular",
+        "selector": "<ntx-rectangular-button>"
+    },
+    {
+      "label": "speed dial",
+      "selector": "<ntx-fab-speed-dial-button>"
+    },
+    {
+      "label": "link",
+      "selector": "<ntx-link-button>"
+    }
+]

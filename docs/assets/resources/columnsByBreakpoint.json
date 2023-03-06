@@ -1,0 +1,30 @@
+{
+  "32221" : {
+		"ntx.xl": 3,
+		"ntx.lg": 2,
+		"ntx.md": 2,
+		"ntx.sm": 2,
+		"ntx.xs": 1
+  },
+  "43221" : {
+		"ntx.xl": 4,
+		"ntx.lg": 3,
+		"ntx.md": 2,
+		"ntx.sm": 2,
+		"ntx.xs": 1
+  },
+  "53321" : {
+		"ntx.xl": 4,
+		"ntx.lg": 3,
+		"ntx.md": 2,
+		"ntx.sm": 2,
+		"ntx.xs": 1
+	},
+  "54321" : {
+		"ntx.xl": 5,
+		"ntx.lg": 4,
+		"ntx.md": 3,
+		"ntx.sm": 2,
+		"ntx.xs": 1
+  }
+}
